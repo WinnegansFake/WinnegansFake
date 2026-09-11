@@ -288,6 +288,53 @@ export const BUILTIN_THEMES: ReadingTheme[] = [
       selectionText: '#fef3c7',
     },
   },
+  // 13. Gruvbox Dark (Pavel Pertsev)
+  {
+    id: 'gruvbox-dark',
+    name: 'Gruvbox Dark',
+    description: 'Retro groove dark palette by Pavel Pertsev: warm dark background (#282828) with high-contrast light fg (#ebdbb2) and soothing warm accents.',
+    category: 'gruvbox',
+    isDark: true,
+    colors: {
+      bg: '#282828', // dark0
+      text: '#ebdbb2', // light1
+      textMuted: '#a89984', // dark4
+      cardBg: '#3c3836', // dark1
+      border: '#504945', // dark2
+      accent: '#fabd2f', // bright_yellow
+      accentHover: '#fe8019', // bright_orange
+      ring: '#d79921', // neutral_yellow
+      readerBg: '#282828',
+      readerText: '#fbf1c7', // light0 for peak reading clarity
+      readerCoord: '#928374', // gray
+      selectionBg: '#504945', // dark2
+      selectionText: '#fbf1c7',
+    },
+  },
+
+  // 14. Gruvbox Light (Pavel Pertsev)
+  {
+    id: 'gruvbox-light',
+    name: 'Gruvbox Light',
+    description: 'Retro groove light palette by Pavel Pertsev: soft light parchment background (#fbf1c7) with dark0 (#282828) text.',
+    category: 'gruvbox',
+    isDark: false,
+    colors: {
+      bg: '#fbf1c7', // light0
+      text: '#3c3836', // dark1
+      textMuted: '#7c6f64', // dark4
+      cardBg: '#ebdbb2', // light1
+      border: '#d5c4a1', // light2
+      accent: '#b57614', // neutral_yellow
+      accentHover: '#af3a03', // neutral_orange
+      ring: '#b57614', // neutral_yellow
+      readerBg: '#fbf1c7',
+      readerText: '#282828', // dark0 for sharp high contrast
+      readerCoord: '#928374', // gray
+      selectionBg: '#d5c4a1', // light2
+      selectionText: '#282828',
+    },
+  },
 ];
 
 export const DEFAULT_THEME_ID = 'slate-midnight';

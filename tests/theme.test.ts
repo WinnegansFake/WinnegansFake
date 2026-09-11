@@ -86,6 +86,28 @@ describe('@winnegans/theme Package', () => {
     expect(solLight.colors.readerText.toLowerCase()).toBe('#586e75'); // base01
   });
 
+  it('should include Gruvbox Dark and Light themes with authentic palette', () => {
+    const gruvDark = getThemeById('gruvbox-dark');
+    expect(gruvDark).toBeDefined();
+    expect(gruvDark.category).toBe('gruvbox');
+    expect(gruvDark.isDark).toBe(true);
+    expect(gruvDark.colors.bg.toLowerCase()).toBe('#282828');
+    expect(gruvDark.colors.cardBg.toLowerCase()).toBe('#3c3836');
+    expect(gruvDark.colors.text.toLowerCase()).toBe('#ebdbb2');
+    expect(gruvDark.colors.readerBg.toLowerCase()).toBe('#282828');
+    expect(gruvDark.colors.readerText.toLowerCase()).toBe('#fbf1c7');
+
+    const gruvLight = getThemeById('gruvbox-light');
+    expect(gruvLight).toBeDefined();
+    expect(gruvLight.category).toBe('gruvbox');
+    expect(gruvLight.isDark).toBe(false);
+    expect(gruvLight.colors.bg.toLowerCase()).toBe('#fbf1c7');
+    expect(gruvLight.colors.text.toLowerCase()).toBe('#3c3836');
+    expect(gruvLight.colors.cardBg.toLowerCase()).toBe('#ebdbb2');
+    expect(gruvLight.colors.readerBg.toLowerCase()).toBe('#fbf1c7');
+    expect(gruvLight.colors.readerText.toLowerCase()).toBe('#282828');
+  });
+
   it('should allow building a custom theme with overrides', () => {
     const custom = createCustomTheme('obsidian-oled', 'My Custom Ruby OLED', {
       accent: '#ff0055',

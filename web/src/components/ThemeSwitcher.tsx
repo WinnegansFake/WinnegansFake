@@ -13,6 +13,8 @@ import {
   RotateCcw,
   Cookie,
   Trash2,
+  Compass,
+  Flame,
 } from 'lucide-react';
 import { useTheme } from './ThemeContext';
 import { ReadingTheme, ThemeCategory } from '@winnegans/theme';
@@ -51,7 +53,8 @@ export function ThemeSwitcher() {
     { id: 'all', label: 'All Themes', icon: Palette },
     { id: 'light', label: 'Daylight', icon: Sun },
     { id: 'oled', label: 'Obsidian OLED', icon: Smartphone },
-    { id: 'solarized', label: 'Solarized', icon: Sun },
+    { id: 'solarized', label: 'Solarized', icon: Compass },
+    { id: 'gruvbox', label: 'Gruvbox', icon: Flame },
     { id: 'dark-red', label: 'Dark Red Night', icon: Moon },
     { id: 'dark-ambient', label: 'Dark Ambient', icon: Eye },
     { id: 'fun', label: 'Fun & Creative', icon: Sparkles },
