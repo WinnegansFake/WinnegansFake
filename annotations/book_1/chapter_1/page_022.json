@@ -5,10 +5,34 @@
   "page_number": 22,
   "annotations": [
     {
+      "id": "022.03-8e3e",
+      "line_number": 3,
+      "target_phrase": "Hilary",
+      "annotation_text": "Kidnapping of Hilary (022.03): the second twin son (Shaun / St. Hilary / cheerfulness), abducted on the Prankquean's second visit and transformed into a 'tristian' (gloomy Christian), swapping emotional poles with his brother.",
+      "categories": [
+        "twins",
+        "shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "021.22",
+        "219.01",
+        "403.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "022.06-c92d",
       "line_number": 6,
       "target_phrase": "set",
-      "annotation_text": "Egyptian eschatology \"set\" on page 22 (\"The Fall of Finnegan\"): within the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Gods (Theocratic) passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
+      "annotation_text": "Egyptian eschatology \"set\" on page 22 (\"The Fall of Finnegan\"): within the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Gods (Theocratic) passage \u2014 the dream-journey through the underworld (Tuat) toward solar rebirth.",
       "categories": [
         "egyptian-mythology",
         "book-of-the-dead",
@@ -33,10 +57,34 @@
       ]
     },
     {
+      "id": "022.09-f739",
+      "line_number": 9,
+      "target_phrase": "three times",
+      "annotation_text": "Triadic repetition (022.09): the Prankquean visits three times, mirroring the three books of Finnegans Wake and Giambattista Vico's three historical ages (Divine, Heroic, Human) before the thunderclap of the fourth.",
+      "categories": [
+        "vico",
+        "triad",
+        "folktale",
+        "cyclical"
+      ],
+      "cross_references": [
+        "003.02",
+        "023.05",
+        "257.27"
+      ],
+      "sources": [
+        "Beckett, Samuel. Dante... Bruno. Vico.. Joyce. https://archive.org/details/ourexagminationr0000unse"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "022.10-a54d",
       "line_number": 10,
       "target_phrase": "night",
-      "annotation_text": "Oneiric dimension \"night\" on page 22 (\"The Fall of Finnegan\"): the nocturnal consciousness surfaces within the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape. During this Age of Gods (Theocratic) phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "annotation_text": "Oneiric dimension \"night\" on page 22 (\"The Fall of Finnegan\"): the nocturnal consciousness surfaces within the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape. During this Age of Gods (Theocratic) phase, Joyce reconstructs the sleeping body's sensory deprivation \u2014 dimmed sight, distorted hearing, dream-logic association \u2014 transforming somatic experience into polyphonic language.",
       "categories": [
         "oneiric",
         "night-mind",
@@ -54,6 +102,103 @@
         "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
         "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
         "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "022.14-e9ed",
+      "line_number": 14,
+      "target_phrase": "shut the door",
+      "annotation_text": "Inhospitable closing \"shut the door\" (022.14): Jarl van Hoother slamming the heavy portal against the feminine traveler, violating ancient Brehon hospitality laws and provoking divine reprisal.",
+      "categories": [
+        "hospitality",
+        "brehon-law",
+        "celtic",
+        "conflict"
+      ],
+      "cross_references": [
+        "021.05",
+        "139.14"
+      ],
+      "sources": [
+        "O'Rahilly, T.F. Early Irish History and Mythology. https://archive.org/details/earlyirishhistor0000orah"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "022.20-6d36",
+      "line_number": 20,
+      "target_phrase": "treaty of peace",
+      "annotation_text": "The Howth Treaty (022.20): reconciliation between the Jarl and the Prankquean, establishing the historic Howth Castle pledge to always keep the gates unlocked and set an extra cover at the family dinner table for travelers.",
+      "categories": [
+        "treaty",
+        "howth-castle",
+        "reconciliation",
+        "tradition"
+      ],
+      "cross_references": [
+        "003.02",
+        "021.05"
+      ],
+      "sources": [
+        "Joyce, P.W. Old Celtic Romances. https://www.gutenberg.org/ebooks/34190"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "022.26-14b2",
+      "line_number": 26,
+      "target_phrase": "thunderclap prelude",
+      "annotation_text": "Climactic herald (022.26): Jarl van Hoother emerges in heavy plate armor amidst lightning and booming sky, setting the stage for the second hundred-letter thunderword on page 23.",
+      "categories": [
+        "thunderclap",
+        "vico",
+        "voice-of-god",
+        "armor"
+      ],
+      "cross_references": [
+        "003.15",
+        "023.05"
+      ],
+      "sources": [
+        "FWEET: Thunderword guides. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "022.26-2a7b",
+      "line_number": 26,
+      "target_phrase": "porter",
+      "annotation_text": "Tavern/jury motif \"porter\" on page 22 (\"The Fall of Finnegan\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape. During this Age of Gods (Theocratic) phase, they judge, condemn, and demand another round \u2014 the Greek chorus of middle-class Dublin gossip.",
+      "categories": [
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
+      ],
+      "cross_references": [
+        "309.01",
+        "311.05",
+        "333.20",
+        "370.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
+        "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -82,34 +227,6 @@
         "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
         "FWEET: HCE concordance entries. https://www.fweet.org",
         "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "022.26-2a7b",
-      "line_number": 26,
-      "target_phrase": "porter",
-      "annotation_text": "Tavern/jury motif \"porter\" on page 22 (\"The Fall of Finnegan\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape. During this Age of Gods (Theocratic) phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
-      "categories": [
-        "twelve-jurors",
-        "pub-life",
-        "chapelizod",
-        "trial"
-      ],
-      "cross_references": [
-        "309.01",
-        "311.05",
-        "333.20",
-        "370.01"
-      ],
-      "sources": [
-        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
-        "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
-        "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

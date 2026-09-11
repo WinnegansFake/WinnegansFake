@@ -5,6 +5,32 @@
   "page_number": 628,
   "annotations": [
     {
+      "id": "628.01-925a",
+      "line_number": 1,
+      "target_phrase": "cold mad feary father",
+      "annotation_text": "Return to the Ocean (628.01): ALP as the freshwater River Liffey pouring into Dublin Bay, terrified yet yearning to dissolve into the cold, salty Atlantic Ocean ('my cold mad feary father').",
+      "categories": [
+        "ocean",
+        "alp",
+        "river-liffey",
+        "dissolution"
+      ],
+      "cross_references": [
+        "003.01",
+        "196.01",
+        "627.34",
+        "628.16"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "FWEET: ALP final monologue. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "628.01-a8ac",
       "line_number": 1,
       "target_phrase": "sad and weary I go back to you, my cold father",
@@ -76,6 +102,31 @@
       ]
     },
     {
+      "id": "628.06-7165",
+      "line_number": 6,
+      "target_phrase": "mememormee",
+      "annotation_text": "Fluvial memento mori \"mememormee\" (628.06): fuses French 'm'aimer' (to love me), Latin 'memento mori' (remember you must die), and English 'remember me', echoing Dido's dying lament in Purcell's opera.",
+      "categories": [
+        "memento-mori",
+        "dido",
+        "opera",
+        "purcell",
+        "memory"
+      ],
+      "cross_references": [
+        "628.01",
+        "628.10"
+      ],
+      "sources": [
+        "Purcell, Henry. Dido and Aeneas. https://imslp.org/wiki/Dido_and_Aeneas,_Z.626_(Purcell,_Henry)",
+        "Contemporary Literature Press: Classical Lexicon. https://editura.mttlc.ro"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "628.07-3334",
       "line_number": 7,
       "target_phrase": "Carry me along, taddy, like you done through the toy fair!",
@@ -113,6 +164,29 @@
       ],
       "sources": [
         "Dante Alighieri. Purgatorio (Canto II: The Angelic Boatman). https://dante.mcl.ac.uk/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "628.10-5df1",
+      "line_number": 10,
+      "target_phrase": "Bussoftlhee",
+      "annotation_text": "Dying kiss \"Bussoftlhee\" (628.10): German 'Buss' (kiss) + 'kiss softly' + 'bosom softly' + 'blest of thee'. The tender final embrace as the river merges into the sea.",
+      "categories": [
+        "german-loanwords",
+        "kiss",
+        "lyricism",
+        "dissolution"
+      ],
+      "cross_references": [
+        "628.06",
+        "628.14"
+      ],
+      "sources": [
+        "Contemporary Literature Press: German in FW. https://editura.mttlc.ro"
       ],
       "contributors": [
         "joycean-scholar",
@@ -191,6 +265,29 @@
       ]
     },
     {
+      "id": "628.14-c25a",
+      "line_number": 14,
+      "target_phrase": "Lps",
+      "annotation_text": "Acoustic expiration \"Lps\" (628.14): water lapping against the strand, the whispering of 'lips', and the dying expiration of breath as consciousness fades into silence.",
+      "categories": [
+        "onomatopoeia",
+        "breath",
+        "acoustics",
+        "lips"
+      ],
+      "cross_references": [
+        "628.10",
+        "628.16"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "628.14-dcbf",
       "line_number": 14,
       "target_phrase": "Paris, 1922-1939",
@@ -204,6 +301,32 @@
       "sources": [
         "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
         "National Library of Ireland: James Joyce Collection. https://www.nli.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "628.16-919b",
+      "line_number": 16,
+      "target_phrase": "A way a lone a last a loved a long the",
+      "annotation_text": "The Infinite Loop (628.16): the dying sentence ends without terminal punctuation on the definite article 'the', looping across the book's 625 pages to join line 003.01: 'riverrun, past Eve and Adam's...'. Genetic manuscripts (Dirk Van Hulle) show Joyce deleted 'a lost' to create a 7-beat iambic meter replicating incoming tides.",
+      "categories": [
+        "infinite-loop",
+        "vico",
+        "ricorso",
+        "genetics",
+        "riverrun"
+      ],
+      "cross_references": [
+        "003.01",
+        "593.01",
+        "628.01"
+      ],
+      "sources": [
+        "Van Hulle, Dirk. Textual Genetics of Finnegans Wake. https://archive.org/details/textualgeneticso00vanh",
+        "JJDA: Finnegans Wake Isotext. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",

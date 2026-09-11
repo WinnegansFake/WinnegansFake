@@ -27,10 +27,33 @@
       ]
     },
     {
+      "id": "416.08-3e52",
+      "line_number": 8,
+      "target_phrase": "The Gracehoper's song",
+      "annotation_text": "The lyrical apologia (416.08): the starving Gracehoper sings a philosophical poem to the well-fed Ondt, declaring that while the insect body perishes in winter, art and creative joy survive mortal death.",
+      "categories": [
+        "poetry",
+        "apologia",
+        "gracehoper",
+        "immortality"
+      ],
+      "cross_references": [
+        "414.14",
+        "416.18"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "416.16-e7b7",
       "line_number": 16,
       "target_phrase": "corbicule, which plight!",
-      "annotation_text": "Mid-page polysemic node on page 416 (\"Shaun the Post (First Watch)\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 416 (\"Shaun the Post (First Watch)\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -42,6 +65,53 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "416.18-26e8",
+      "line_number": 18,
+      "target_phrase": "forgiveness of the brother",
+      "annotation_text": "Fraternal reconciliation (416.18): the Gracehoper forgives the Ondt's stinginess, recognizing that their mutual opposition is the dialectical condition of life itself (Giordano Bruno's coincidentia oppositorum).",
+      "categories": [
+        "bruno",
+        "coincidentia-oppositorum",
+        "reconciliation",
+        "dialectic"
+      ],
+      "cross_references": [
+        "003.02",
+        "416.08"
+      ],
+      "sources": [
+        "Beckett, Samuel. Dante... Bruno. Vico.. Joyce. https://archive.org/details/ourexagminationr0000unse"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "416.28-960b",
+      "line_number": 28,
+      "target_phrase": "winter of mortality",
+      "annotation_text": "Viconian winter (416.28): the freezing snows of the Human Age falling upon the world, heralding the coming death of the cycle and the inevitable return of spring ricorso.",
+      "categories": [
+        "vico",
+        "winter",
+        "ricorso",
+        "mortality"
+      ],
+      "cross_references": [
+        "003.02",
+        "416.08",
+        "593.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart"
       ],
       "contributors": [
         "joycean-scholar",

@@ -27,10 +27,57 @@
       ]
     },
     {
+      "id": "338.05-2dbd",
+      "line_number": 5,
+      "target_phrase": "Buckley and the Russian General",
+      "annotation_text": "The Buckley parable (338.05): an anecdote celebrated by Joyce's father. Irish private Buckley spots a decorated Russian General defecating in a battlefield trench and prepares to shoot him.",
+      "categories": [
+        "buckley",
+        "russian-general",
+        "patricide",
+        "folklore"
+      ],
+      "cross_references": [
+        "337.15",
+        "338.15",
+        "338.32"
+      ],
+      "sources": [
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "FinnegansWeb: Buckley and the Russian General. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "338.15-2fdc",
+      "line_number": 15,
+      "target_phrase": "pity turned to rage",
+      "annotation_text": "Moral hesitation (338.15): Buckley initially pities the vulnerable general in his exposed, helpless posture of excretion, but compassion turns to fury when he witnesses the general desecrate the soil.",
+      "categories": [
+        "compassion",
+        "scatological",
+        "psychology"
+      ],
+      "cross_references": [
+        "338.05",
+        "338.25"
+      ],
+      "sources": [
+        "Norris, Margot. The Decentered Universe. https://archive.org/details/decentereduniver0000norr"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "338.16-d7c1",
       "line_number": 16,
       "target_phrase": "moulday side gubernier-gerenal",
-      "annotation_text": "Mid-page polysemic node on page 338 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 338 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -42,6 +89,52 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "338.25-5e90",
+      "line_number": 25,
+      "target_phrase": "green sod desecration",
+      "annotation_text": "The insult to the sod (338.25): the general wipes his backside with a fresh clump of green grass/sod. The green sod symbolizes Ireland, triggering Buckley's patriotic fury at imperial desecration.",
+      "categories": [
+        "green-sod",
+        "nationalism",
+        "patriotism",
+        "ireland"
+      ],
+      "cross_references": [
+        "338.05",
+        "338.15"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "338.32-9928",
+      "line_number": 32,
+      "target_phrase": "patricidal shot",
+      "annotation_text": "The Oedipal shot (338.32): Buckley fires, shooting the general in the buttocks. In Freudian and Viconian terms, this represents the rising son overthrowing and castrating the oppressive patriarchal authority.",
+      "categories": [
+        "patricide",
+        "oedipal",
+        "psychoanalysis",
+        "vico"
+      ],
+      "cross_references": [
+        "003.15",
+        "338.05"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
       ],
       "contributors": [
         "joycean-scholar",

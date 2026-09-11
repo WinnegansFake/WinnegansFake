@@ -27,6 +27,72 @@
       ]
     },
     {
+      "id": "048.02-56c1",
+      "line_number": 2,
+      "target_phrase": "judicial proceedings",
+      "annotation_text": "Chapter 3 is deeply modeled on judicial proceedings, complete with witnesses, testimony, and cross-examination. HCE's guilt is interrogated publicly.",
+      "categories": [
+        "trial",
+        "law",
+        "structural"
+      ],
+      "cross_references": [
+        "049.01",
+        "090.31"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "048.04-1137",
+      "line_number": 4,
+      "target_phrase": "four judges",
+      "annotation_text": "The Four Old Men (Mamalujo) act as judges here. They represent the Four Evangelists and the Four Provinces of Ireland (Ulster, Munster, Leinster, Connacht).",
+      "categories": [
+        "mamalujo",
+        "trial",
+        "evangelists"
+      ],
+      "cross_references": [
+        "383.01",
+        "075.01"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "048.06-bba7",
+      "line_number": 6,
+      "target_phrase": "absentia",
+      "annotation_text": "HCE is tried in absentia. He is the sleeping dreamer, incapacitated and unable to speak in his own defense against the growing rumors.",
+      "categories": [
+        "hce",
+        "trial",
+        "dreamer"
+      ],
+      "cross_references": [
+        "049.05",
+        "075.12"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "048.09-32e2",
       "line_number": 9,
       "target_phrase": "maggies",
@@ -44,7 +110,7 @@
         "279.01"
       ],
       "sources": [
-        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "B\u00e9dier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
         "Genetic Joyce Studies: Issy notebooks. https://www.geneticjoycestudies.org",
         "FWEET: Issy / Isolde concordance. https://www.fweet.org"
@@ -58,7 +124,7 @@
       "id": "048.11-1770",
       "line_number": 11,
       "target_phrase": "Coleman Lucan taking",
-      "annotation_text": "Mid-page polysemic node on page 48 (\"The Trial of HCE\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 48 (\"The Trial of HCE\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -70,6 +136,71 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "048.12-513d",
+      "line_number": 12,
+      "target_phrase": "twelve",
+      "annotation_text": "The twelve jurors condemning HCE correlate with the twelve apostles, the twelve months of the year, and the signs of the zodiac.",
+      "categories": [
+        "twelve-jurors",
+        "zodiac",
+        "apostles"
+      ],
+      "cross_references": [
+        "217.02",
+        "260.05"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "048.14-e124",
+      "line_number": 14,
+      "target_phrase": "witness",
+      "annotation_text": "The testimony of various witnesses in the trial, often unreliable and conflicting, adding to the kaleidoscopic nature of truth in the Wake.",
+      "categories": [
+        "trial",
+        "testimony",
+        "epistemology"
+      ],
+      "cross_references": [
+        "049.08",
+        "090.31"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "048.16-ca98",
+      "line_number": 16,
+      "target_phrase": "cross-examination",
+      "annotation_text": "The legalistic questioning structure mirrors formal cross-examination but devolves into linguistic play and evasion.",
+      "categories": [
+        "trial",
+        "law",
+        "linguistics"
+      ],
+      "cross_references": [
+        "049.10"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8"
       ],
       "contributors": [
         "joycean-scholar",

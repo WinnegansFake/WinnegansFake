@@ -8,7 +8,7 @@
       "id": "337.10-7d2d",
       "line_number": 10,
       "target_phrase": "letter",
-      "annotation_text": "The Letter motif \"letter\" on page 337 (\"The Tavern\"): ALP's mysterious document — scratched from the midden by Biddy Doran the Hen — represents the genesis of all writing within HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging. During this Age of Heroes phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
+      "annotation_text": "The Letter motif \"letter\" on page 337 (\"The Tavern\"): ALP's mysterious document \u2014 scratched from the midden by Biddy Doran the Hen \u2014 represents the genesis of all writing within HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging. During this Age of Heroes phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
       "categories": [
         "the-letter",
         "textual-criticism",
@@ -36,7 +36,7 @@
       "id": "337.12-2245",
       "line_number": 12,
       "target_phrase": "night",
-      "annotation_text": "Oneiric dimension \"night\" on page 337 (\"The Tavern\"): the nocturnal consciousness surfaces within HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging. During this Age of Heroes phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "annotation_text": "Oneiric dimension \"night\" on page 337 (\"The Tavern\"): the nocturnal consciousness surfaces within HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging. During this Age of Heroes phase, Joyce reconstructs the sleeping body's sensory deprivation \u2014 dimmed sight, distorted hearing, dream-logic association \u2014 transforming somatic experience into polyphonic language.",
       "categories": [
         "oneiric",
         "night-mind",
@@ -54,6 +54,77 @@
         "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
         "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
         "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "337.15-ee26",
+      "line_number": 15,
+      "target_phrase": "Butt and Taff",
+      "annotation_text": "Butt and Taff television duo (337.15): Shem and Shaun appearing as comic cross-talkers on a tavern television screen, narrating the famous story of Buckley and the Russian General.",
+      "categories": [
+        "butt-and-taff",
+        "television",
+        "mass-media",
+        "shem-and-shaun"
+      ],
+      "cross_references": [
+        "309.01",
+        "337.25",
+        "338.05"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "FWEET: Butt and Taff entries. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "337.25-0ec1",
+      "line_number": 25,
+      "target_phrase": "television broadcast",
+      "annotation_text": "Technological modernity (337.25): Joyce incorporates 1930s cathode-ray tube television technology ('the baird' / John Logie Baird), static interference, and scanning lines into the dream fabric.",
+      "categories": [
+        "television",
+        "technology",
+        "modernism",
+        "broadcast"
+      ],
+      "cross_references": [
+        "337.15",
+        "338.05"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Mechanical Muse. https://archive.org/details/mechanicalmuse0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "337.32-15db",
+      "line_number": 32,
+      "target_phrase": "Crimean War",
+      "annotation_text": "Historical setting (337.32): the Battle of Inkerman / Siege of Sevastopol (1854\u20131855) during the Crimean War, where Irish soldiers in the British army encountered imperial Russian forces.",
+      "categories": [
+        "crimean-war",
+        "military-history",
+        "nineteenth-century"
+      ],
+      "cross_references": [
+        "008.09",
+        "337.15",
+        "338.05"
+      ],
+      "sources": [
+        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
       ],
       "contributors": [
         "joycean-scholar",

@@ -30,7 +30,7 @@
       "id": "526.08-3807",
       "line_number": 8,
       "target_phrase": "Shem",
-      "annotation_text": "Fraternal archetype \"Shem\" on page 526 (\"The Inquest of Yawn\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Men phase.",
+      "annotation_text": "Fraternal archetype \"Shem\" on page 526 (\"The Inquest of Yawn\"): the opposing sons \u2014 Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) \u2014 manifest here within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Men phase.",
       "categories": [
         "twins",
         "shem-and-shaun",
@@ -58,7 +58,7 @@
       "id": "526.14-a3af",
       "line_number": 14,
       "target_phrase": "folley will where",
-      "annotation_text": "Mid-page polysemic node on page 526 (\"The Inquest of Yawn\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 526 (\"The Inquest of Yawn\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -70,6 +70,76 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "526.20-3b59",
+      "line_number": 20,
+      "target_phrase": "Issy before the mirror",
+      "annotation_text": "The dressing table soliloquy (526.20): Issy sits before her bedroom looking-glass, addressing her specular reflection as a secret twin sister, confidante, and rival in erotic narcissism.",
+      "categories": [
+        "issy",
+        "mirror",
+        "narcissism",
+        "psychology"
+      ],
+      "cross_references": [
+        "220.04",
+        "526.28",
+        "527.08"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "FWEET: Issy mirror entries. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "526.28-01a5",
+      "line_number": 28,
+      "target_phrase": "Dr. Morton Prince",
+      "annotation_text": "Psychiatric source (526.28): Joyce drew on Dr. Morton Prince's landmark 1906 case study 'The Dissociation of a Personality', which tracked the split identities of Christine Beauchamp and her mischievous alter-ego 'Sally'.",
+      "categories": [
+        "morton-prince",
+        "dissociation",
+        "psychiatry",
+        "alter-ego"
+      ],
+      "cross_references": [
+        "526.20",
+        "527.08"
+      ],
+      "sources": [
+        "Prince, Morton. The Dissociation of a Personality. https://archive.org/details/dissociationofpe00prin"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "526.35-ebcc",
+      "line_number": 35,
+      "target_phrase": "looking-glass sister",
+      "annotation_text": "The dual daughter (526.35): Issy splits into two distinct voices\u2014the demure, obedient Catholic schoolgirl and the seductive, spiteful shadow self.",
+      "categories": [
+        "dual-personality",
+        "shadow-self",
+        "split-ego"
+      ],
+      "cross_references": [
+        "526.20",
+        "527.28"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart"
       ],
       "contributors": [
         "joycean-scholar",

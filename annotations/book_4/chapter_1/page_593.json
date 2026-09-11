@@ -8,7 +8,7 @@
       "id": "593.01-a946",
       "line_number": 1,
       "target_phrase": "Sandhyas! Sandhyas! Sandhyas!",
-      "annotation_text": "Page 593 opens Book 4, Chapter 1 (\"The Ricorso — Dawn\") during the Ricorso (The Return) phase. This passage continues dawn breaking over Dublin Bay, St. Kevin bathing at Glendalough, St. Patrick vs. the Archdruid Balkelly, ALP's dissolving final monologue into the sea, featuring St. Kevin, St. Patrick, Balkelly, ALP. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "annotation_text": "Page 593 opens Book 4, Chapter 1 (\"The Ricorso \u2014 Dawn\") during the Ricorso (The Return) phase. This passage continues dawn breaking over Dublin Bay, St. Kevin bathing at Glendalough, St. Patrick vs. the Archdruid Balkelly, ALP's dissolving final monologue into the sea, featuring St. Kevin, St. Patrick, Balkelly, ALP. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
       "categories": [
         "structural",
         "narrative-strata",
@@ -27,10 +27,36 @@
       ]
     },
     {
+      "id": "593.01-c314",
+      "line_number": 1,
+      "target_phrase": "Sandhyas! Sandhyas! Sandhyas!",
+      "annotation_text": "Cosmic dawn chant (593.01): Sanskrit 'sandhy\u0101' (twilight, the sacred junction between night and morning / Hindu dawn prayer) fused with Catholic liturgical chant 'Sanctus, Sanctus, Sanctus', opening the ricorso.",
+      "categories": [
+        "sandhyas",
+        "sanskrit",
+        "sanctus",
+        "ricorso",
+        "dawn"
+      ],
+      "cross_references": [
+        "003.01",
+        "591.01",
+        "628.16"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "593.10-4e66",
       "line_number": 10,
       "target_phrase": "dawn. breeding bradsted",
-      "annotation_text": "Mid-page polysemic node on page 593 (\"The Ricorso — Dawn\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Ricorso (The Return) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 593 (\"The Ricorso \u2014 Dawn\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Ricorso (The Return) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -49,10 +75,34 @@
       ]
     },
     {
+      "id": "593.10-abf5",
+      "line_number": 10,
+      "target_phrase": "Pu Nuseht",
+      "annotation_text": "Solar boustrophedon \"Pu Nuseht\" (593.10): \"The Sun Up\" written in reverse mirror-spelling, representing the solar disc bursting over Howth Head and dispersing the nocturnal dream-shadows.",
+      "categories": [
+        "mirror-writing",
+        "sun-up",
+        "solar-symbolism",
+        "howth"
+      ],
+      "cross_references": [
+        "003.02",
+        "593.01",
+        "593.28"
+      ],
+      "sources": [
+        "FWEET: Pu Nuseht entries. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "593.17-12dd",
       "line_number": 17,
       "target_phrase": "night",
-      "annotation_text": "Oneiric dimension \"night\" on page 593 (\"The Ricorso — Dawn\"): the nocturnal consciousness surfaces within dawn breaking over Dublin Bay, St. Kevin bathing at Glendalough, St. Patrick vs. the Archdruid Balkelly, ALP's dissolving final monologue into the sea. During this Ricorso (The Return) phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "annotation_text": "Oneiric dimension \"night\" on page 593 (\"The Ricorso \u2014 Dawn\"): the nocturnal consciousness surfaces within dawn breaking over Dublin Bay, St. Kevin bathing at Glendalough, St. Patrick vs. the Archdruid Balkelly, ALP's dissolving final monologue into the sea. During this Ricorso (The Return) phase, Joyce reconstructs the sleeping body's sensory deprivation \u2014 dimmed sight, distorted hearing, dream-logic association \u2014 transforming somatic experience into polyphonic language.",
       "categories": [
         "oneiric",
         "night-mind",
@@ -70,6 +120,54 @@
         "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
         "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
         "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "593.20-3d28",
+      "line_number": 20,
+      "target_phrase": "Coming Forth by Day",
+      "annotation_text": "Egyptian Book of the Dead title (593.20): Book IV corresponds to the ancient Egyptian funerary papyrus title 'R\u0101u nu pert em hru' (Chapters of Coming Forth by Day), signaling spiritual resurrection.",
+      "categories": [
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "resurrection",
+        "coming-forth-by-day"
+      ],
+      "cross_references": [
+        "024.12",
+        "470.15",
+        "593.01"
+      ],
+      "sources": [
+        "Budge, E.A. Wallis. The Book of the Dead. https://www.gutenberg.org/ebooks/1300",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "593.28-7ddc",
+      "line_number": 28,
+      "target_phrase": "solar bark of Ra",
+      "annotation_text": "The Sun God's barge (593.28): Ra completing his nocturnal passage through the 12 caverns of the underworld (Amduat) to dawn upon Dublin Bay, renewing the cosmic order.",
+      "categories": [
+        "ra",
+        "solar-bark",
+        "amduat",
+        "egyptian"
+      ],
+      "cross_references": [
+        "593.01",
+        "593.10"
+      ],
+      "sources": [
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net"
       ],
       "contributors": [
         "joycean-scholar",

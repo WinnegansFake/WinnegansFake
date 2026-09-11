@@ -27,10 +27,82 @@
       ]
     },
     {
+      "id": "330.02-c97598c2",
+      "line_number": 2,
+      "target_phrase": "dispute over fit",
+      "annotation_text": "The central conflict between Kersse and the Captain reaches its peak, illustrating the impossibility of perfectly tailoring Irishness to an outsider.",
+      "categories": [
+        "norwegian-captain",
+        "conflict"
+      ],
+      "cross_references": [
+        "309.13",
+        "331.05"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "330.06-41782faf",
+      "line_number": 6,
+      "target_phrase": "hunchback cannot be fitted",
+      "annotation_text": "The physical deformity of the Captain ensures he cannot be easily measured or fitted, symbolizing the rugged, untamable nature of the invader.",
+      "categories": [
+        "metaphor",
+        "hce-motif"
+      ],
+      "cross_references": [
+        "309.05",
+        "331.10"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "330.09-332149e2",
+      "line_number": 9,
+      "target_phrase": "sails away",
+      "annotation_text": "Refusing to pay for the ruined suit, the Captain abruptly departs. This flight represents the cyclical withdrawal of the invading forces.",
+      "categories": [
+        "norwegian-captain",
+        "departure"
+      ],
+      "cross_references": [
+        "309.11",
+        "332.05"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "330.14-ebf1",
       "line_number": 14,
       "target_phrase": "used dripping layers",
-      "annotation_text": "Mid-page polysemic node on page 330 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 330 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -42,6 +114,126 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "330.14-d84809f5",
+      "line_number": 14,
+      "target_phrase": "refusing to pay",
+      "annotation_text": "The economic dispute underscores the mercenary aspects of the Viking invasions and the resulting cultural debts left unpaid.",
+      "categories": [
+        "economics",
+        "history"
+      ],
+      "cross_references": [
+        "309.08",
+        "332.12"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "330.18-14cb52d6",
+      "line_number": 18,
+      "target_phrase": "converts to Christianity",
+      "annotation_text": "In the final cyclical iteration, the Captain returns and accepts baptism, mirroring the historical Christianization of the Norse settlements in Ireland.",
+      "categories": [
+        "religion",
+        "assimilation"
+      ],
+      "cross_references": [
+        "309.16",
+        "333.15"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "330.21-c51d04fa",
+      "line_number": 21,
+      "target_phrase": "integrates into Irish culture",
+      "annotation_text": "The resolution of the tale shows the once-hostile foreigner becoming foundational to the new, hybridized local society.",
+      "categories": [
+        "history",
+        "assimilation"
+      ],
+      "cross_references": [
+        "309.16",
+        "333.20"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "330.26-6625492c",
+      "line_number": 26,
+      "target_phrase": "marries tailor's daughter",
+      "annotation_text": "The union with ALP's avatar permanently anchors the wandering sea-captain to the domestic, riverine landscape of Dublin.",
+      "categories": [
+        "alp-motif",
+        "marriage"
+      ],
+      "cross_references": [
+        "309.27",
+        "334.05"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "330.29-747a98ea",
+      "line_number": 29,
+      "target_phrase": "Pukkelsen returns",
+      "annotation_text": "The inevitable return of the Captain completes the Viconian ricorso, bringing the chaotic energy of the sea back into the tavern's orbit.",
+      "categories": [
+        "vico",
+        "norwegian-captain"
+      ],
+      "cross_references": [
+        "309.19",
+        "334.10"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
       ],
       "contributors": [
         "joycean-scholar",

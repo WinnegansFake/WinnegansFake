@@ -30,7 +30,7 @@
       "id": "527.06-8238",
       "line_number": 6,
       "target_phrase": "night",
-      "annotation_text": "Oneiric dimension \"night\" on page 527 (\"The Inquest of Yawn\"): the nocturnal consciousness surfaces within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. During this Age of Men phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "annotation_text": "Oneiric dimension \"night\" on page 527 (\"The Inquest of Yawn\"): the nocturnal consciousness surfaces within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. During this Age of Men phase, Joyce reconstructs the sleeping body's sensory deprivation \u2014 dimmed sight, distorted hearing, dream-logic association \u2014 transforming somatic experience into polyphonic language.",
       "categories": [
         "oneiric",
         "night-mind",
@@ -55,10 +55,33 @@
       ]
     },
     {
+      "id": "527.08-92c2",
+      "line_number": 8,
+      "target_phrase": "Lacanian mirror stage",
+      "annotation_text": "Specular ego-formation (527.08): prefigures Jacques Lacan's psychoanalytic 'mirror stage', where identity is alienatingly mediated through external visual reflection, making narcissism the foundation of desire.",
+      "categories": [
+        "lacan",
+        "mirror-stage",
+        "psychoanalysis",
+        "narcissism"
+      ],
+      "cross_references": [
+        "526.20",
+        "527.18"
+      ],
+      "sources": [
+        "Norris, Margot. The Decentered Universe. https://archive.org/details/decentereduniver0000norr"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "527.17-cad7",
       "line_number": 17,
       "target_phrase": "everything boyproof knicks.",
-      "annotation_text": "Mid-page polysemic node on page 527 (\"The Inquest of Yawn\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 527 (\"The Inquest of Yawn\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -70,6 +93,53 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "527.18-e2b5",
+      "line_number": 18,
+      "target_phrase": "cosmetic vanity",
+      "annotation_text": "The boudoir inventory (527.18): powder puffs, tortoise-shell hairpins, rose water, and lavender soap act as the theatrical props through which the adolescent feminine identity is constructed.",
+      "categories": [
+        "cosmetics",
+        "boudoir",
+        "vanity",
+        "feminine"
+      ],
+      "cross_references": [
+        "526.20",
+        "527.08"
+      ],
+      "sources": [
+        "FWEET: Cosmetic entries. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "527.28-24ef",
+      "line_number": 28,
+      "target_phrase": "incestuous gossip",
+      "annotation_text": "Confidential whispers (527.28): Issy whispers forbidden erotic fantasies about her twin brothers Shem and Shaun to the glass, teasingly scheming to play one brother against the other.",
+      "categories": [
+        "incest",
+        "brothers",
+        "fantasy",
+        "gossip"
+      ],
+      "cross_references": [
+        "169.01",
+        "219.10",
+        "526.20"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
       ],
       "contributors": [
         "joycean-scholar",

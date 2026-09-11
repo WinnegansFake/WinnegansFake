@@ -5,10 +5,35 @@
   "page_number": 220,
   "annotations": [
     {
+      "id": "220.04-002c",
+      "line_number": 4,
+      "target_phrase": "The Seven Rainbow Girls",
+      "annotation_text": "The Prismatic Septet (220.04): Issy multiplies into seven attendants personifying the colors of the visible spectrum: Red (Rubretta), Orange (Arancia), Yellow (Lettucia), Green (Veronique), Blue (Celeste), Indigo (Indigota), Violet (Viola).",
+      "categories": [
+        "rainbow-girls",
+        "spectrum",
+        "prismatic",
+        "issy"
+      ],
+      "cross_references": [
+        "219.18",
+        "220.12",
+        "611.20"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "220.08-57c1",
       "line_number": 8,
       "target_phrase": "CHUFF",
-      "annotation_text": "Fraternal archetype \"CHUFF\" on page 220 (\"The Mime of Mick, Nick and the Maggies\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Heroes phase.",
+      "annotation_text": "Fraternal archetype \"CHUFF\" on page 220 (\"The Mime of Mick, Nick and the Maggies\"): the opposing sons \u2014 Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) \u2014 manifest here within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Heroes phase.",
       "categories": [
         "twins",
         "shem-and-shaun",
@@ -33,10 +58,33 @@
       ]
     },
     {
+      "id": "220.12-9c3f",
+      "line_number": 12,
+      "target_phrase": "Floras",
+      "annotation_text": "The floral chorus (220.12): the dancing maidens named after blooming flowers, personifying springtime youth and the regenerative vegetative force of nature.",
+      "categories": [
+        "floras",
+        "botany",
+        "spring",
+        "mythology"
+      ],
+      "cross_references": [
+        "220.04",
+        "220.20"
+      ],
+      "sources": [
+        "Frazer, Sir James George. The Golden Bough. https://www.gutenberg.org/ebooks/3623"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "220.14-7d70",
       "line_number": 14,
       "target_phrase": "set",
-      "annotation_text": "Egyptian eschatology \"set\" on page 220 (\"The Mime of Mick, Nick and the Maggies\"): within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Heroes passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
+      "annotation_text": "Egyptian eschatology \"set\" on page 220 (\"The Mime of Mick, Nick and the Maggies\"): within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Heroes passage \u2014 the dream-journey through the underworld (Tuat) toward solar rebirth.",
       "categories": [
         "egyptian-mythology",
         "book-of-the-dead",
@@ -54,6 +102,53 @@
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
         "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
         "FWEET: Egyptian mythology concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "220.20-155b",
+      "line_number": 20,
+      "target_phrase": "Noah's covenant",
+      "annotation_text": "Biblical covenant (220.20): the rainbow of Genesis 9 appearing when the sunlight of father HCE strikes the falling rain of mother ALP, promising cosmic renewal after catastrophic flood.",
+      "categories": [
+        "biblical",
+        "noah",
+        "covenant",
+        "genesis"
+      ],
+      "cross_references": [
+        "003.15",
+        "220.04"
+      ],
+      "sources": [
+        "The Latin Vulgate Bible: Genesis 9. https://www.biblegateway.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "220.28-9efb",
+      "line_number": 28,
+      "target_phrase": "Glugg's failure",
+      "annotation_text": "Glugg's humiliation (220.28): failing all three guesses, Glugg is mocked by the dancing girls and flies into bitter rage, prefiguring the artist's withdrawal into resentful solitary exile.",
+      "categories": [
+        "glugg",
+        "exile",
+        "humiliation",
+        "shem"
+      ],
+      "cross_references": [
+        "169.01",
+        "219.10",
+        "220.04"
+      ],
+      "sources": [
+        "FWEET: Glugg concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

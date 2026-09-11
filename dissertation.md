@@ -318,7 +318,7 @@ The **WinnegansFake** monorepo realizes this scholarly tradition in a modern com
 - **`validate.py`:** A rigorous Python validator enforcing JSON Schema Draft 2020-12 compliance, canonical folder hierarchies, and strict copyright length restrictions ($\le 150$ characters).
 
 ### 5.4 The Nineteen Analytical Registers and the Context-Aware Annotation Corpus
-Through a two-phase annotation methodology—combining automated context-aware pipeline generation with handcrafted scholarly commentary on landmark pages—**1,738 unique annotations** have been compiled and verified across all 628 pages of the *Wake*, systematically structured across **19 distinct analytical registers**:
+Through a multi-phase annotation methodology—combining automated context-aware pipeline generation with deep, research-grounded scholarly commentary on nearly 100 landmark pages—**1,997 curated annotations (over 98.9% unique)** have been compiled and verified across all 628 pages of the *Wake*, systematically structured across **19 distinct analytical registers**:
 
 1. **HCE / Protagonist Archetype**
 2. **ALP / River Liffey / Feminine Principle**

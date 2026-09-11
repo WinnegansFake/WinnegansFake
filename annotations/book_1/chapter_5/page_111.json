@@ -27,10 +27,34 @@
       ]
     },
     {
+      "id": "111.02-f5e5",
+      "line_number": 2,
+      "target_phrase": "mamafesta",
+      "annotation_text": "Maternal manifesto \"mamafesta\" (111.02): portmanteau of mama + manifesto. Anna Livia's formal legal and emotional defense of her fallen husband HCE, dictated to Shem the Penman and carried across the world.",
+      "categories": [
+        "mamafesta",
+        "alp",
+        "feminine-principle",
+        "defense"
+      ],
+      "cross_references": [
+        "104.01",
+        "110.33",
+        "196.01"
+      ],
+      "sources": [
+        "FWEET: Mamafesta concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "111.05-18fe",
       "line_number": 5,
       "target_phrase": "scratching",
-      "annotation_text": "The Letter motif \"scratching\" on page 111 (\"The Letter from the Midden\"): ALP's mysterious document — scratched from the midden by Biddy Doran the Hen — represents the genesis of all writing within Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. During this Age of Gods phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
+      "annotation_text": "The Letter motif \"scratching\" on page 111 (\"The Letter from the Midden\"): ALP's mysterious document \u2014 scratched from the midden by Biddy Doran the Hen \u2014 represents the genesis of all writing within Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. During this Age of Gods phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
       "categories": [
         "the-letter",
         "textual-criticism",
@@ -55,10 +79,34 @@
       ]
     },
     {
+      "id": "111.15-a32e",
+      "line_number": 15,
+      "target_phrase": "funferall",
+      "annotation_text": "Portmanteau \"funferall\" (111.15): funeral + fun-for-all. Encapsulates the traditional Irish wake where mourning for the deceased patriarch Tim Finnegan transforms into a carnivalesque riot of whiskey, dance, and resurrection.",
+      "categories": [
+        "funferall",
+        "carnivalesque",
+        "tim-finnegan",
+        "wake"
+      ],
+      "cross_references": [
+        "003.15",
+        "006.26",
+        "111.02"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "111.16-f879",
       "line_number": 16,
       "target_phrase": "sign shall they",
-      "annotation_text": "Mid-page polysemic node on page 111 (\"The Letter from the Midden\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 111 (\"The Letter from the Midden\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -70,6 +118,51 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "111.20-c822",
+      "line_number": 20,
+      "target_phrase": "tea stains and punctures",
+      "annotation_text": "Forensic paleography (111.20): the letter's material blemishes\u2014brown tea stains, grease spots, and hen-pecked punctures\u2014parody textual criticism and forensic document examination.",
+      "categories": [
+        "paleography",
+        "textual-criticism",
+        "satire"
+      ],
+      "cross_references": [
+        "110.15",
+        "119.10"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "111.28-f4ca",
+      "line_number": 28,
+      "target_phrase": "higher criticism",
+      "annotation_text": "Parody of Higher Criticism (111.28): Joyce satirizes 19th-century German Biblical scholarship (Wellhausen, Strauss) that disassembled sacred texts into disparate source fragments (J, E, D, P documents).",
+      "categories": [
+        "higher-criticism",
+        "biblical",
+        "satire",
+        "theology"
+      ],
+      "cross_references": [
+        "111.20",
+        "119.15"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8"
       ],
       "contributors": [
         "joycean-scholar",

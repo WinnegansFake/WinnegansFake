@@ -27,6 +27,31 @@
       ]
     },
     {
+      "id": "195.02-4cdc",
+      "line_number": 2,
+      "target_phrase": "Lift it, Anna, lift it, my life!",
+      "annotation_text": "Invocation of the Mother (195.02): Mercius/Shem cries out to Anna Livia Plurabelle at the moment of despair. Maternal grace intervenes to wash away fraternal hatred and guilt.",
+      "categories": [
+        "alp",
+        "maternal-grace",
+        "invocation",
+        "forgiveness"
+      ],
+      "cross_references": [
+        "193.31",
+        "194.05",
+        "196.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "FWEET: Lift it Anna. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "195.04-cfde",
       "line_number": 4,
       "target_phrase": "Anna Livia",
@@ -48,6 +73,54 @@
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
         "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
         "FWEET: ALP / River Liffey concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "195.08-0572",
+      "line_number": 8,
+      "target_phrase": "surging waters",
+      "annotation_text": "The acoustic arrival of the river (195.08): the text dissolves into watery onomatopoeia as the River Liffey floods the scene, preparing for the washerwomen gossiping on page 196.",
+      "categories": [
+        "waters",
+        "onomatopoeia",
+        "river-liffey",
+        "acoustics"
+      ],
+      "cross_references": [
+        "003.01",
+        "195.02",
+        "196.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "195.15-9351",
+      "line_number": 15,
+      "target_phrase": "transition to Chapter 8",
+      "annotation_text": "Structural threshold (195.15): closes Book I, Chapter 7 and opens Book I, Chapter 8. The masculine ideological confrontation of the sons is superseded by the feminine laundry of the mother.",
+      "categories": [
+        "structural",
+        "transitions",
+        "vico",
+        "feminine-principle"
+      ],
+      "cross_references": [
+        "169.01",
+        "195.02",
+        "196.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart"
       ],
       "contributors": [
         "joycean-scholar",

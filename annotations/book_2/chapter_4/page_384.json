@@ -5,6 +5,32 @@
   "page_number": 384,
   "annotations": [
     {
+      "id": "384.01-8c03",
+      "line_number": 1,
+      "target_phrase": "Three quarks for Muster Mark!",
+      "annotation_text": "Subatomic origin \"Three quarks\" (384.01): the seabirds scream across Dublin Bay, mocking King Mark. Famous source for Murray Gell-Mann's 1964 coining of the subatomic particle 'quark', blending bird squawks, German 'Quark' (curds/nonsense), and tavern orders for three quarts.",
+      "categories": [
+        "quark",
+        "physics",
+        "gell-mann",
+        "tristan-and-isolde",
+        "birds"
+      ],
+      "cross_references": [
+        "383.01",
+        "384.10",
+        "385.05"
+      ],
+      "sources": [
+        "Gell-Mann, Murray. The Quark and the Jaguar. https://archive.org/details/quarkjaguar00gell",
+        "FWEET: Three quarks entries. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "384.04-185e",
       "line_number": 4,
       "target_phrase": "four",
@@ -149,6 +175,28 @@
       ]
     },
     {
+      "id": "384.10-61a6",
+      "line_number": 10,
+      "target_phrase": "German Quark",
+      "annotation_text": "German etymology \"Quark\" (384.10): German 'Quark' (curds / cottage cheese; colloquially 'rubbish' or 'worthless trash'), insulting the cuckolded King Mark as an impotent, sour remnant.",
+      "categories": [
+        "german-loanwords",
+        "etymology",
+        "satire"
+      ],
+      "cross_references": [
+        "384.01",
+        "384.18"
+      ],
+      "sources": [
+        "Contemporary Literature Press: German in FW. https://editura.mttlc.ro"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "384.12-0935",
       "line_number": 12,
       "target_phrase": "four",
@@ -214,6 +262,52 @@
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
         "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
         "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "384.18-e1bb",
+      "line_number": 18,
+      "target_phrase": "all beside the mark",
+      "annotation_text": "Punning triple target (384.18): (1) King Mark of Cornwall, (2) his sailing vessel/bark, and (3) missing the target ('beside the mark'), highlighting his failure to keep young Isolde's love.",
+      "categories": [
+        "king-mark",
+        "wordplay",
+        "tristan-and-isolde"
+      ],
+      "cross_references": [
+        "383.01",
+        "384.01"
+      ],
+      "sources": [
+        "B\u00e9dier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "384.28-f77a",
+      "line_number": 28,
+      "target_phrase": "Four Old Men in rowboat",
+      "annotation_text": "Mamalujo voyeurs (384.28): the Four Old Men (Matthew, Mark, Luke, John / four provinces) drift in their rowboat, spying with senile drooling envy upon young Tristan and Isolde embracing on the ship deck.",
+      "categories": [
+        "mamalujo",
+        "voyeurism",
+        "four-annalists",
+        "senility"
+      ],
+      "cross_references": [
+        "095.27",
+        "383.01",
+        "385.05"
+      ],
+      "sources": [
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu"
       ],
       "contributors": [
         "joycean-scholar",

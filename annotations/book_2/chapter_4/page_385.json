@@ -5,10 +5,56 @@
   "page_number": 385,
   "annotations": [
     {
+      "id": "385.05-5cc0",
+      "line_number": 5,
+      "target_phrase": "chorus of seabirds",
+      "annotation_text": "Marine bird catalogue (385.05): terns, gulls, cormorants, and capercallzies squawking in cacophony above the waves, acting as a noisy Greek chorus celebrating the lovers' illicit kiss.",
+      "categories": [
+        "birds",
+        "ornithology",
+        "chorus",
+        "acoustics"
+      ],
+      "cross_references": [
+        "384.01",
+        "385.15"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "385.15-aff1",
+      "line_number": 15,
+      "target_phrase": "Wagnerian Liebestod",
+      "annotation_text": "Wagnerian parody (385.15): allusions to Richard Wagner's opera 'Tristan und Isolde', parodying the chromatic Tristan chord, the magic love potion, and the tragic love-death (Liebestod).",
+      "categories": [
+        "wagner",
+        "opera",
+        "liebestod",
+        "music"
+      ],
+      "cross_references": [
+        "383.01",
+        "385.05"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "385.24-7dbe",
       "line_number": 24,
       "target_phrase": "night",
-      "annotation_text": "Oneiric dimension \"night\" on page 385 (\"Tristan and Isolde\"): the nocturnal consciousness surfaces within the voyage of Tristan and Isolde observed by the Four Old Men as seagulls, Wagnerian chromatic motifs, King Mark's displacement. During this Age of Heroes (closing) phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "annotation_text": "Oneiric dimension \"night\" on page 385 (\"Tristan and Isolde\"): the nocturnal consciousness surfaces within the voyage of Tristan and Isolde observed by the Four Old Men as seagulls, Wagnerian chromatic motifs, King Mark's displacement. During this Age of Heroes (closing) phase, Joyce reconstructs the sleeping body's sensory deprivation \u2014 dimmed sight, distorted hearing, dream-logic association \u2014 transforming somatic experience into polyphonic language.",
       "categories": [
         "oneiric",
         "night-mind",
@@ -26,6 +72,29 @@
         "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
         "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
         "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "385.25-c366",
+      "line_number": 25,
+      "target_phrase": "Children of Lir",
+      "annotation_text": "Celtic mythological parallel (385.25): the four swans of the Children of Lir, condemned by a jealous stepmother to wander the seas of Ireland for 900 years, echoing Mamalujo and the lovers.",
+      "categories": [
+        "children-of-lir",
+        "celtic-mythology",
+        "swans",
+        "folklore"
+      ],
+      "cross_references": [
+        "003.04",
+        "385.05"
+      ],
+      "sources": [
+        "Joyce, P.W. Old Celtic Romances. https://www.gutenberg.org/ebooks/34190"
       ],
       "contributors": [
         "joycean-scholar",

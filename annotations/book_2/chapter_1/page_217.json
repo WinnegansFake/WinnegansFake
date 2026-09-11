@@ -8,7 +8,7 @@
       "id": "217.02-2bdb",
       "line_number": 2,
       "target_phrase": "Bar",
-      "annotation_text": "Tavern/jury motif \"Bar\" on page 217 (\"The Mime of Mick, Nick and the Maggies\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. During this Age of Heroes phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
+      "annotation_text": "Tavern/jury motif \"Bar\" on page 217 (\"The Mime of Mick, Nick and the Maggies\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. During this Age of Heroes phase, they judge, condemn, and demand another round \u2014 the Greek chorus of middle-class Dublin gossip.",
       "categories": [
         "twelve-jurors",
         "pub-life",
@@ -33,6 +33,137 @@
       ]
     },
     {
+      "id": "217.03-e9e7",
+      "line_number": 3,
+      "target_phrase": "pantomime",
+      "annotation_text": "The chapter functions as a children's pantomime or play performed on the green outside HCE's pub, exploring sibling rivalry and sexual awakening.",
+      "categories": [
+        "pantomime",
+        "children",
+        "structural"
+      ],
+      "cross_references": [
+        "219.01",
+        "257.27"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "217.05-bd2e",
+      "line_number": 5,
+      "target_phrase": "Glugg",
+      "annotation_text": "Glugg is the Shem-figure in the mime: the devil, the loser, who repeatedly fails to guess the color 'heliotrope' chosen by the girls.",
+      "categories": [
+        "shem",
+        "glugg",
+        "devil"
+      ],
+      "cross_references": [
+        "217.18",
+        "225.01"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "217.07-d26f",
+      "line_number": 7,
+      "target_phrase": "Chuff",
+      "annotation_text": "Chuff is the Shaun-figure in the mime: the angel, the favorite, who succeeds and is adored by the Rainbow Girls.",
+      "categories": [
+        "shaun",
+        "chuff",
+        "angel"
+      ],
+      "cross_references": [
+        "222.01",
+        "234.01"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "217.10-5981",
+      "line_number": 10,
+      "target_phrase": "heliotrope",
+      "annotation_text": "The secret color 'heliotrope' (purple) that Glugg fails to guess. It signifies both a flower that turns to the sun and the hidden mystery of female sexuality.",
+      "categories": [
+        "color",
+        "heliotrope",
+        "sexuality"
+      ],
+      "cross_references": [
+        "223.28",
+        "233.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "217.12-256b",
+      "line_number": 12,
+      "target_phrase": "Twenty-eight",
+      "annotation_text": "The twenty-eight Rainbow Girls (with Issy as the 29th) who circle the boys in the mime. They correspond to the days of February and the lunar cycle.",
+      "categories": [
+        "rainbow-girls",
+        "issy",
+        "numerology"
+      ],
+      "cross_references": [
+        "217.16",
+        "236.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "217.14-249b",
+      "line_number": 14,
+      "target_phrase": "Angelus",
+      "annotation_text": "The ringing of the Angelus bell structures the chapter, tolling three times to mark the progression of evening and the eventual end of the children's playtime.",
+      "categories": [
+        "liturgy",
+        "bell",
+        "time"
+      ],
+      "cross_references": [
+        "258.25"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "217.16-dd52",
       "line_number": 16,
       "target_phrase": "Maggies",
@@ -50,7 +181,7 @@
         "279.01"
       ],
       "sources": [
-        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "B\u00e9dier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
         "Genetic Joyce Studies: Issy notebooks. https://www.geneticjoycestudies.org",
         "FWEET: Issy / Isolde concordance. https://www.fweet.org"
@@ -64,7 +195,7 @@
       "id": "217.18-dc07",
       "line_number": 18,
       "target_phrase": "GLUGG",
-      "annotation_text": "Fraternal archetype \"GLUGG\" on page 217 (\"The Mime of Mick, Nick and the Maggies\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Heroes phase.",
+      "annotation_text": "Fraternal archetype \"GLUGG\" on page 217 (\"The Mime of Mick, Nick and the Maggies\"): the opposing sons \u2014 Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) \u2014 manifest here within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Heroes phase.",
       "categories": [
         "twins",
         "shem-and-shaun",

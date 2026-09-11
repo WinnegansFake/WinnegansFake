@@ -8,7 +8,7 @@
       "id": "299.08-188d",
       "line_number": 8,
       "target_phrase": "thunder",
-      "annotation_text": "Viconian marker \"thunder\" on page 299 (\"The Night Lessons\"): Giambattista Vico's cyclical philosophy — divine, heroic, and human ages followed by thundering ricorso — structures this passage within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. The current Age of Heroes phase shapes the language, institutional imagery, and historical echoes of the dream.",
+      "annotation_text": "Viconian marker \"thunder\" on page 299 (\"The Night Lessons\"): Giambattista Vico's cyclical philosophy \u2014 divine, heroic, and human ages followed by thundering ricorso \u2014 structures this passage within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. The current Age of Heroes phase shapes the language, institutional imagery, and historical echoes of the dream.",
       "categories": [
         "vico",
         "ricorso",
@@ -33,10 +33,35 @@
       ]
     },
     {
+      "id": "299.15-1f72",
+      "line_number": 15,
+      "target_phrase": "The Doodles family",
+      "annotation_text": "Issy's footnote 4 (299.15): \"The Doodles family\" accompanies Joyce's explicit printing of his private structural sigla symbols into the body of the published book: rotated E, Delta, Shem, Shaun, Inverted T, Mamalujo X, and Square.",
+      "categories": [
+        "the-doodles-family",
+        "sigla",
+        "issy",
+        "metafiction"
+      ],
+      "cross_references": [
+        "119.10",
+        "260.01",
+        "299.20"
+      ],
+      "sources": [
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "JJDA: Notons and Sigla. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "299.20-8e09",
       "line_number": 20,
       "target_phrase": "Guinness",
-      "annotation_text": "Tavern/jury motif \"Guinness\" on page 299 (\"The Night Lessons\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. During this Age of Heroes phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
+      "annotation_text": "Tavern/jury motif \"Guinness\" on page 299 (\"The Night Lessons\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. During this Age of Heroes phase, they judge, condemn, and demand another round \u2014 the Greek chorus of middle-class Dublin gossip.",
       "categories": [
         "twelve-jurors",
         "pub-life",
@@ -61,10 +86,34 @@
       ]
     },
     {
+      "id": "299.20-fbc2",
+      "line_number": 20,
+      "target_phrase": "sigla symbols",
+      "annotation_text": "The geometric shorthand (299.20): explained in Joyce's 24 March 1924 letter to Harriet Shaw Weaver. The characters are not conventional realistic persons but fluid archetypes designated by abstract typographical icons.",
+      "categories": [
+        "sigla",
+        "harriet-shaw-weaver",
+        "typography",
+        "archetypes"
+      ],
+      "cross_references": [
+        "299.15",
+        "299.28"
+      ],
+      "sources": [
+        "Ellmann, Richard. Letters of James Joyce. https://archive.org/details/lettersofjamesjo0001joyc",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "299.21-44a6",
       "line_number": 21,
       "target_phrase": "Hen",
-      "annotation_text": "The Letter motif \"Hen\" on page 299 (\"The Night Lessons\"): ALP's mysterious document — scratched from the midden by Biddy Doran the Hen — represents the genesis of all writing within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. During this Age of Heroes phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
+      "annotation_text": "The Letter motif \"Hen\" on page 299 (\"The Night Lessons\"): ALP's mysterious document \u2014 scratched from the midden by Biddy Doran the Hen \u2014 represents the genesis of all writing within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. During this Age of Heroes phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
       "categories": [
         "the-letter",
         "textual-criticism",
@@ -82,6 +131,29 @@
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
         "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net",
         "Finwake.com: Chapter I.5 annotations. http://www.finwake.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "299.28-3fb5",
+      "line_number": 28,
+      "target_phrase": "meta-fictional exposure",
+      "annotation_text": "Deconstructive revelation (299.28): by allowing the teenage daughter Issy to mockingly label the core cast as 'doodles' in a footnote, Joyce humorously undercuts his own monumental mythological scaffolding.",
+      "categories": [
+        "metafiction",
+        "irony",
+        "issy",
+        "deconstruction"
+      ],
+      "cross_references": [
+        "299.15",
+        "526.20"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn"
       ],
       "contributors": [
         "joycean-scholar",

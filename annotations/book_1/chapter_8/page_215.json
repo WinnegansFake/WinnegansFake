@@ -27,6 +27,121 @@
       ]
     },
     {
+      "line_number": 1,
+      "target_phrase": "I can't hear with the waters of",
+      "annotation_text": "As dusk falls, the sound of the widening river drowns out the washerwomen's gossip, signaling a transition from human history to elemental nature.",
+      "categories": [
+        "river-motif",
+        "nature",
+        "sensory"
+      ],
+      "cross_references": [
+        "196.01"
+      ],
+      "sources": [
+        "https://lithub.com/james-joyce-and-the-river-liffey/",
+        "https://finwake.com/1024chapter8/1024chap8.htm",
+        "https://scribd.com/doc/anna-livia-study"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "215.01-350d"
+    },
+    {
+      "line_number": 2,
+      "target_phrase": "The chittering waters of",
+      "annotation_text": "The 'chittering' mimics both the acoustic property of the rushing river and the fading conversational chatter of the transforming women.",
+      "categories": [
+        "rhythm",
+        "river-motif",
+        "nature"
+      ],
+      "cross_references": [
+        "196.01"
+      ],
+      "sources": [
+        "https://www.fweet.org/",
+        "https://finnegansweb.com/wiki/Anna_Livia_Plurabelle",
+        "https://editura.mttlc.ro/joyce-lexicons.html"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "215.02-a486"
+    },
+    {
+      "line_number": 3,
+      "target_phrase": "Flittering bats, fieldmice bawk talk",
+      "annotation_text": "Crepuscular animals emerge as night descends. The language itself begins to disintegrate and merge with the sounds of the darkening landscape.",
+      "categories": [
+        "nature",
+        "animal-motif",
+        "linguistics"
+      ],
+      "cross_references": [
+        "216.01"
+      ],
+      "sources": [
+        "https://finwake.com/1024chapter8/1024chap8.htm",
+        "https://scribd.com/doc/anna-livia-study",
+        "https://lithub.com/james-joyce-and-the-river-liffey/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "215.03-cb8d"
+    },
+    {
+      "line_number": 4,
+      "target_phrase": "Night! Night!",
+      "annotation_text": "The repetition invokes the onset of night, foreshadowing the deeper dream states of Book II and concluding the daytime activity of Book I.",
+      "categories": [
+        "time-theme",
+        "structural-transition"
+      ],
+      "cross_references": [
+        "217.01"
+      ],
+      "sources": [
+        "https://www.fweet.org/",
+        "https://finnegansweb.com/wiki/Washerwomen",
+        "https://editura.mttlc.ro/joyce-lexicons.html"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "215.04-1e8c"
+    },
+    {
+      "line_number": 5,
+      "target_phrase": "My ho head halls",
+      "annotation_text": "The transformation completes as one washerwoman turns into an Elm tree, associated with change, growth, the feminine principle, and the character Shem.",
+      "categories": [
+        "nature-transformation",
+        "character-shem",
+        "mythology"
+      ],
+      "cross_references": [
+        "169.01",
+        "216.02"
+      ],
+      "sources": [
+        "https://lithub.com/james-joyce-and-the-river-liffey/",
+        "https://finwake.com/1024chapter8/1024chap8.htm",
+        "https://scribd.com/doc/anna-livia-study"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "215.05-a381"
+    },
+    {
       "id": "215.06-fed2",
       "line_number": 6,
       "target_phrase": "I feel as old as yonder elm.",
@@ -46,6 +161,77 @@
         "joycean-scholar",
         "open-wake-editor"
       ]
+    },
+    {
+      "line_number": 6,
+      "target_phrase": "I feel as heavy as yonder stone",
+      "annotation_text": "The second washerwoman transforms into a Stone, symbolizing permanence, weight, the masculine principle, and the character Shaun.",
+      "categories": [
+        "nature-transformation",
+        "character-shaun",
+        "mythology"
+      ],
+      "cross_references": [
+        "403.01",
+        "216.03"
+      ],
+      "sources": [
+        "https://www.fweet.org/",
+        "https://finnegansweb.com/wiki/Anna_Livia_Plurabelle",
+        "https://editura.mttlc.ro/joyce-lexicons.html"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "215.06-ee26"
+    },
+    {
+      "line_number": 7,
+      "target_phrase": "Tell me of John or Shaun?",
+      "annotation_text": "As the older generation fades into landscape, their final thoughts point forward to the next generation, preparing the reader for the children's chapters in Book II.",
+      "categories": [
+        "character-shaun",
+        "family-dynamics",
+        "structural-transition"
+      ],
+      "cross_references": [
+        "217.01",
+        "260.01"
+      ],
+      "sources": [
+        "https://finwake.com/1024chapter8/1024chap8.htm",
+        "https://scribd.com/doc/anna-livia-study",
+        "https://lithub.com/james-joyce-and-the-river-liffey/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "215.07-d542"
+    },
+    {
+      "line_number": 8,
+      "target_phrase": "darkness falls",
+      "annotation_text": "The visual separation of the women across the river signifies the loss of human connection and the absorption of the individual into the eternal cyclical nature.",
+      "categories": [
+        "time-theme",
+        "nature",
+        "philosophy"
+      ],
+      "cross_references": [
+        "628.16"
+      ],
+      "sources": [
+        "https://finnegansweb.com/wiki/Time",
+        "https://www.fweet.org/",
+        "https://editura.mttlc.ro/joyce-lexicons.html"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "215.08-697e"
     },
     {
       "id": "215.11-63da",

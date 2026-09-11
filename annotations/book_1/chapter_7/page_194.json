@@ -55,10 +55,57 @@
       ]
     },
     {
+      "id": "194.05-3e95",
+      "line_number": 5,
+      "target_phrase": "Mercius",
+      "annotation_text": "Shem as Mercius (194.05): Shem takes the persona of Mercy, confession, and the suffering artist-pariah. Acknowledging his lowliness and bodily defects, he asserts the spiritual necessity of art.",
+      "categories": [
+        "mercius",
+        "shem",
+        "the-artist",
+        "confession"
+      ],
+      "cross_references": [
+        "169.01",
+        "185.32",
+        "193.31"
+      ],
+      "sources": [
+        "Norris, Margot. The Decentered Universe. https://archive.org/details/decentereduniver0000norr"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "194.12-c20e",
+      "line_number": 12,
+      "target_phrase": "spiritual defense",
+      "annotation_text": "The artist's apologia (194.12): Mercius articulates Joyce's defense of avant-garde modernism against bourgeois Philistinism\u2014art must confront darkness and decay to achieve authentic epiphany.",
+      "categories": [
+        "modernism",
+        "poetics",
+        "apologia",
+        "epiphany"
+      ],
+      "cross_references": [
+        "185.32",
+        "194.05"
+      ],
+      "sources": [
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "194.16-bb2e",
       "line_number": 16,
       "target_phrase": "cubilibum your secret",
-      "annotation_text": "Mid-page polysemic node on page 194 (\"Shem the Penman\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 194 (\"Shem the Penman\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -70,6 +117,29 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "194.22-d8dc",
+      "line_number": 22,
+      "target_phrase": "alshemist",
+      "annotation_text": "Alchemical portmanteau \"alshemist\" (194.22): alchemist + Shem. Shem transmutes the base matter of guilt, excretion, and mortal failure into the golden scripture of Finnegans Wake.",
+      "categories": [
+        "alchemy",
+        "transmutation",
+        "shem",
+        "poetics"
+      ],
+      "cross_references": [
+        "185.32",
+        "194.05"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
       ],
       "contributors": [
         "joycean-scholar",

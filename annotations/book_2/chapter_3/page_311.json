@@ -27,10 +27,58 @@
       ]
     },
     {
+      "id": "311.05-0dff",
+      "line_number": 5,
+      "target_phrase": "The Norwegian Captain",
+      "annotation_text": "The Norwegian Captain tale (311.05): pub raconteur story based on an anecdote told by John Stanislaus Joyce. A hunchbacked Norse sea-captain (HCE avatar) arrives in Dublin demanding a bespoke suit from tailor Kersse.",
+      "categories": [
+        "norwegian-captain",
+        "kersse-the-tailor",
+        "vikings",
+        "tavern-tales"
+      ],
+      "cross_references": [
+        "309.01",
+        "311.12",
+        "312.06"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "FinnegansWeb: Norwegian Captain. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "311.12-46ab",
+      "line_number": 12,
+      "target_phrase": "Kersse the Tailor",
+      "annotation_text": "Kersse the Tailor (311.12): German 'Kirsche' (cherry) + kersey wool cloth + French 'caresse' + Irish 'ciar' (dark). Represents native Irish craftsmanship coping with demanding foreign invaders.",
+      "categories": [
+        "kersse",
+        "tailor",
+        "craftsmanship",
+        "etymology"
+      ],
+      "cross_references": [
+        "311.05",
+        "312.06"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "311.16-b7de",
       "line_number": 16,
       "target_phrase": "done, neat trig.",
-      "annotation_text": "Mid-page polysemic node on page 311 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 311 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -42,6 +90,52 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "311.20-5d51",
+      "line_number": 20,
+      "target_phrase": "Ship's Husband",
+      "annotation_text": "The Ship's Husband (311.20): Philip McCann, Dublin ship's chandler and Joyce's godfather, acting as commercial intermediary and negotiator between the foreign captain and the local tailor.",
+      "categories": [
+        "ships-husband",
+        "mccann",
+        "dublin-biography",
+        "trade"
+      ],
+      "cross_references": [
+        "311.05",
+        "311.28"
+      ],
+      "sources": [
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "311.28-d89d",
+      "line_number": 28,
+      "target_phrase": "Viking invasion of Dublin",
+      "annotation_text": "Historical allegory (311.28): the commercial dispute over tailoring mirrors the historical Norse settlement of Dublin (Dyflin) in the 9th century, exploring how invaders are domesticated through local trade and marriage.",
+      "categories": [
+        "vikings",
+        "dublin-history",
+        "norse",
+        "colonization"
+      ],
+      "cross_references": [
+        "016.02",
+        "311.05"
+      ],
+      "sources": [
+        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
       ],
       "contributors": [
         "joycean-scholar",

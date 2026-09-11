@@ -26,6 +26,99 @@
       ]
     },
     {
+      "line_number": 1,
+      "target_phrase": "Shem the Penman",
+      "annotation_text": "Introduces Shem, Joyce's self-portrait as the exiled, misunderstood avant-garde artist. He is the polar opposite of his brother Shaun.",
+      "categories": [
+        "character-shem",
+        "biographical",
+        "art-motif"
+      ],
+      "cross_references": [
+        "185.01",
+        "403.01"
+      ],
+      "sources": [
+        "https://cuni.cz/shem-analysis",
+        "https://medium.com/shem-analysis",
+        "https://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "169.01-8303"
+    },
+    {
+      "line_number": 2,
+      "target_phrase": "polar opposite",
+      "annotation_text": "Shem embodies introversion, artistic exile, and failure, standing in stark contrast to Shaun's extroversion, political success, and public conformity.",
+      "categories": [
+        "character-shem",
+        "character-shaun",
+        "brother-conflict"
+      ],
+      "cross_references": [
+        "429.01",
+        "403.01"
+      ],
+      "sources": [
+        "https://medium.com/shem-analysis",
+        "https://thesuspendedsentence.com/",
+        "https://editura.mttlc.ro/joyce-lexicons.html"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "169.02-4921"
+    },
+    {
+      "line_number": 3,
+      "target_phrase": "introvert vs. extrovert",
+      "annotation_text": "The dichotomy between the brothers draws heavily on Giordano Bruno's theory of the coincidence of contraries, essential to the Wake's structure.",
+      "categories": [
+        "philosophy",
+        "brother-conflict"
+      ],
+      "cross_references": [
+        "260.01"
+      ],
+      "sources": [
+        "https://cuni.cz/shem-analysis",
+        "https://finnegansweb.com/wiki/Shem_the_Penman",
+        "https://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "169.03-b59a"
+    },
+    {
+      "line_number": 4,
+      "target_phrase": "artist vs. politician",
+      "annotation_text": "Shem's role as the creative but socially despised artist highlights Joyce's own fraught relationship with Irish politics and society.",
+      "categories": [
+        "biographical",
+        "politics",
+        "art-motif"
+      ],
+      "cross_references": [
+        "185.01"
+      ],
+      "sources": [
+        "https://thesuspendedsentence.com/",
+        "https://medium.com/shem-analysis",
+        "https://cuni.cz/shem-analysis"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "169.04-2675"
+    },
+    {
       "id": "169.05-9d39",
       "line_number": 5,
       "target_phrase": "lowly fraud",
@@ -44,6 +137,96 @@
         "joycean-scholar",
         "open-wake-editor"
       ]
+    },
+    {
+      "line_number": 5,
+      "target_phrase": "exile vs. success",
+      "annotation_text": "Reflects Joyce's self-imposed exile in Europe to write freely, juxtaposed against the superficial acclaim of those who stayed behind.",
+      "categories": [
+        "biographical",
+        "exile"
+      ],
+      "cross_references": [
+        "185.01"
+      ],
+      "sources": [
+        "https://cuni.cz/shem-analysis",
+        "https://finwake.com/1024chapter7/1024chap7.htm",
+        "https://editura.mttlc.ro/joyce-lexicons.html"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "169.05-e721"
+    },
+    {
+      "line_number": 6,
+      "target_phrase": "Shaunish voice",
+      "annotation_text": "The entire chapter is narrated by a hostile 'Shaunish' voice, a brilliant ironic device Joyce uses to defend himself by mocking his critics.",
+      "categories": [
+        "narrative-voice",
+        "irony",
+        "character-shaun"
+      ],
+      "cross_references": [
+        "403.01"
+      ],
+      "sources": [
+        "https://medium.com/shem-analysis",
+        "https://www.fweet.org/",
+        "https://thesuspendedsentence.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "169.06-5cf2"
+    },
+    {
+      "line_number": 7,
+      "target_phrase": "hostile to Shem",
+      "annotation_text": "The narrator's vehement attacks on Shem's character, hygiene, and morals catalogue every criticism leveled against Joyce's own work.",
+      "categories": [
+        "biographical",
+        "literary-criticism"
+      ],
+      "cross_references": [
+        "185.01"
+      ],
+      "sources": [
+        "https://cuni.cz/shem-analysis",
+        "https://editura.mttlc.ro/joyce-lexicons.html",
+        "https://finnegansweb.com/wiki/Shem_the_Penman"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "169.07-6732"
+    },
+    {
+      "line_number": 8,
+      "target_phrase": "ironically to defend himself",
+      "annotation_text": "By adopting the persona of his fiercest detractors, Joyce neutralizes their attacks, turning their vitriol into the substance of his art.",
+      "categories": [
+        "art-motif",
+        "irony",
+        "biographical"
+      ],
+      "cross_references": [
+        "169.06"
+      ],
+      "sources": [
+        "https://thesuspendedsentence.com/",
+        "https://medium.com/shem-analysis",
+        "https://finwake.com/1024chapter7/1024chap7.htm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "169.08-9fe9"
     },
     {
       "id": "169.11-b41b",

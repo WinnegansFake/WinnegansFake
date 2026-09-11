@@ -55,10 +55,57 @@
       ]
     },
     {
+      "id": "381.05-ff0f",
+      "line_number": 5,
+      "target_phrase": "drinking the dregs",
+      "annotation_text": "Consuming the dregs (381.05): the solitary monarch/publican wanders from table to table, draining the dregs and heeltaps left in every pint glass and tumbler, absorbing the collective liquid sins of his citizens.",
+      "categories": [
+        "heeltaps",
+        "dregs",
+        "communion",
+        "hce"
+      ],
+      "cross_references": [
+        "380.25",
+        "381.15",
+        "381.25"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "381.15-29e0",
+      "line_number": 15,
+      "target_phrase": "heeltapping",
+      "annotation_text": "Ritual heeltapping (381.15): downing the dregs of stout and ale acts as an inverted secular Eucharist, where the king internalizes the physical waste of his community.",
+      "categories": [
+        "eucharist",
+        "ritual",
+        "stout",
+        "drinking"
+      ],
+      "cross_references": [
+        "111.15",
+        "381.05"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "381.17-8c7a",
       "line_number": 17,
       "target_phrase": "Dreans Ergen Adams",
-      "annotation_text": "Mid-page polysemic node on page 381 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 381 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -70,6 +117,30 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "381.25-8780",
+      "line_number": 25,
+      "target_phrase": "collapse on the floor",
+      "annotation_text": "The Fall of the Monarch (381.25): overwhelmed by intoxication, HCE collapses dead-drunk upon the sawdust floorboards, mirroring the setting of the sun and Tim Finnegan's mortal fall.",
+      "categories": [
+        "the-fall",
+        "collapse",
+        "solar-hero",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.15",
+        "380.25",
+        "381.05"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart"
       ],
       "contributors": [
         "joycean-scholar",

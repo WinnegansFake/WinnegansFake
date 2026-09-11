@@ -5,10 +5,56 @@
   "page_number": 35,
   "annotations": [
     {
+      "id": "035.05-1370",
+      "line_number": 5,
+      "target_phrase": "oriuolate",
+      "annotation_text": "Italian etymology \"oriuolate\" (035.05): Italian 'oriuolo' / 'orologio' (clock/watch). The Cad lacked a timepiece of his own, and HCE's inability to give a simple answer triggers the unraveling of the patriarch's reputation.",
+      "categories": [
+        "italian-loanwords",
+        "time",
+        "etymology"
+      ],
+      "cross_references": [
+        "034.12",
+        "035.24"
+      ],
+      "sources": [
+        "Contemporary Literature Press: Italian in FW. https://editura.mttlc.ro"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "035.12-8458",
+      "line_number": 12,
+      "target_phrase": "two nursery-maids",
+      "annotation_text": "The feminine pair (035.12): the two girls in the bushes of Phoenix Park, alleged victims/temptresses of HCE's voyeuristic transgression. They symbolize Issy and her split mirror-twin, or youthful incarnations of ALP.",
+      "categories": [
+        "phoenix-park",
+        "two-maidens",
+        "issy",
+        "temptation"
+      ],
+      "cross_references": [
+        "008.20",
+        "034.34",
+        "220.04"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "035.14-05e5",
       "line_number": 14,
       "target_phrase": "Guinness",
-      "annotation_text": "Tavern/jury motif \"Guinness\" on page 35 (\"The Encounter in Phoenix Park\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe. During this Age of Gods phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
+      "annotation_text": "Tavern/jury motif \"Guinness\" on page 35 (\"The Encounter in Phoenix Park\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe. During this Age of Gods phase, they judge, condemn, and demand another round \u2014 the Greek chorus of middle-class Dublin gossip.",
       "categories": [
         "twelve-jurors",
         "pub-life",
@@ -26,6 +72,30 @@
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
         "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
         "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "035.18-ddaa",
+      "line_number": 18,
+      "target_phrase": "three soldiers",
+      "annotation_text": "The military witnesses (035.18): three British Coldstream Guards / privates observing HCE from behind trees in Phoenix Park. Representing public surveillance, the sons, and the Trinity, forming Joyce's structural 2 + 3 motif.",
+      "categories": [
+        "three-soldiers",
+        "surveillance",
+        "phoenix-park",
+        "witnesses"
+      ],
+      "cross_references": [
+        "008.21",
+        "035.12",
+        "045.22"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart"
       ],
       "contributors": [
         "joycean-scholar",
@@ -54,6 +124,30 @@
         "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
         "FWEET: HCE concordance entries. https://www.fweet.org",
         "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "035.24-e41c",
+      "line_number": 24,
+      "target_phrase": "the rumor spreads",
+      "annotation_text": "Viral propagation of scandal (035.24): the Cad reports HCE's suspicious stammer to his wife, who whispers it to her priest, passing through barbers, grocers, and pub patrons until it envelops all of Dublin.",
+      "categories": [
+        "gossip",
+        "rumor",
+        "dublin-society",
+        "scandal"
+      ],
+      "cross_references": [
+        "034.12",
+        "044.20",
+        "045.01"
+      ],
+      "sources": [
+        "FWEET: Gossip motifs. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

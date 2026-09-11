@@ -5,23 +5,24 @@
   "page_number": 8,
   "annotations": [
     {
-      "id": "008.08-1ce9",
+      "id": "008.08-ca5b",
       "line_number": 8,
       "target_phrase": "museyroom",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (museyroom), dramatizing imperial warfare as domestic quarrel.",
+      "annotation_text": "The introduction to the 'Willingdone Museyroom', which serves simultaneously as the Wellington Monument in Phoenix Park, the National Museum of Ireland, and a giant midden heap. It meta-textually represents the Wake itself as a repository of historical fragments.",
       "categories": [
         "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
+        "museum",
+        "meta-commentary"
       ],
       "cross_references": [
-        "003.01"
+        "104.10",
+        "003.15"
       ],
       "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+        "Gordon, John. Finnegans Blog: Page 8. https://johngordonfinnegan.weebly.com/page-8.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_8",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Wikipedia: Wellington Monument, Dublin. https://en.wikipedia.org/wiki/Wellington_Monument,_Dublin"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,23 +30,23 @@
       ]
     },
     {
-      "id": "008.09-bba3",
+      "id": "008.09-b5c4",
       "line_number": 9,
-      "target_phrase": "Museyroom",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Museyroom), dramatizing imperial warfare as domestic quarrel.",
+      "target_phrase": "Mind your hats goan in",
+      "annotation_text": "Kate the cleaner acts as the tour guide, warning visitors (readers) of the low entryway. This establishes the structural metaphor of entering a burial mound or ancient tumulus.",
       "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
+        "tumulus",
+        "kate",
+        "museum"
       ],
       "cross_references": [
-        "003.01"
+        "011.35"
       ],
       "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+        "Gordon, John. Finnegans Blog: Page 8. https://johngordonfinnegan.weebly.com/page-8.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_8",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Wikipedia: Wellington Monument, Dublin. https://en.wikipedia.org/wiki/Wellington_Monument,_Dublin"
       ],
       "contributors": [
         "joycean-scholar",
@@ -53,23 +54,47 @@
       ]
     },
     {
-      "id": "008.14-b363",
+      "id": "008.10-b259",
+      "line_number": 10,
+      "target_phrase": "Willingdone",
+      "annotation_text": "The Duke of Wellington ('Willingdone') emerges as a surrogate for HCE. As an Irish-born British hero, he embodies the theme of empire-building and the masculine historical figure who must inevitably fall.",
+      "categories": [
+        "hce",
+        "wellington",
+        "history"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Blog: Page 8. https://johngordonfinnegan.weebly.com/page-8.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_8",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Wikipedia: Wellington Monument, Dublin. https://en.wikipedia.org/wiki/Wellington_Monument,_Dublin"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "008.14-d6d7",
       "line_number": 14,
-      "target_phrase": "Lipoleum",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Lipoleum), dramatizing imperial warfare as domestic quarrel.",
+      "target_phrase": "bullseye",
+      "annotation_text": "A reference to the Magazine Fort in Phoenix Park. The tour maps Waterloo topography onto Dublin landmarks, conflating military defense with domestic architecture.",
       "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
+        "phoenix-park",
+        "military",
+        "topography"
       ],
       "cross_references": [
-        "003.01"
+        "030.01"
       ],
       "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+        "Gordon, John. Finnegans Blog: Page 8. https://johngordonfinnegan.weebly.com/page-8.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_8",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Wikipedia: Wellington Monument, Dublin. https://en.wikipedia.org/wiki/Wellington_Monument,_Dublin"
       ],
       "contributors": [
         "joycean-scholar",
@@ -77,23 +102,24 @@
       ]
     },
     {
-      "id": "008.15-0cff",
-      "line_number": 15,
-      "target_phrase": "Willingdone",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "id": "008.16-0f0a",
+      "line_number": 16,
+      "target_phrase": "tip",
+      "annotation_text": "A multi-layered motif. The tour guide solicits a gratuity, but 'tip' also refers to a rubbish tip (midden), pointing to the Wake's nature as a chaotic dump of history, and the sound of the falling giant.",
       "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
+        "midden",
+        "leitmotif",
+        "kate"
       ],
       "cross_references": [
-        "003.01"
+        "104.10",
+        "003.15"
       ],
       "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+        "Gordon, John. Finnegans Blog: Page 8. https://johngordonfinnegan.weebly.com/page-8.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_8",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Wikipedia: Wellington Monument, Dublin. https://en.wikipedia.org/wiki/Wellington_Monument,_Dublin"
       ],
       "contributors": [
         "joycean-scholar",
@@ -101,23 +127,22 @@
       ]
     },
     {
-      "id": "008.19-11fc",
-      "line_number": 19,
-      "target_phrase": "lipoleum",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (lipoleum), dramatizing imperial warfare as domestic quarrel.",
+      "id": "008.17-7494",
+      "line_number": 17,
+      "target_phrase": "Prooshious",
+      "annotation_text": "The Prussians, specifically Bl\u00fccher, arriving at Waterloo. In the Museyroom's domestic drama, historical forces are reduced to squabbling neighbors or rival suitors.",
       "categories": [
-        "wellington",
         "waterloo",
-        "military-history",
-        "museyroom"
+        "history"
       ],
       "cross_references": [
-        "003.01"
+        "009.23"
       ],
       "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+        "Gordon, John. Finnegans Blog: Page 8. https://johngordonfinnegan.weebly.com/page-8.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_8",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Wikipedia: Wellington Monument, Dublin. https://en.wikipedia.org/wiki/Wellington_Monument,_Dublin"
       ],
       "contributors": [
         "joycean-scholar",
@@ -125,119 +150,46 @@
       ]
     },
     {
-      "id": "008.21-5eae",
+      "id": "008.20-5867",
+      "line_number": 20,
+      "target_phrase": "hney",
+      "annotation_text": "The sound of Wellington's famous horse, Copenhagen. The horse represents the animal vitality of the empire builder, echoing the equestrian statues of Dublin.",
+      "categories": [
+        "wellington",
+        "animals"
+      ],
+      "cross_references": [
+        "009.11"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Blog: Page 8. https://johngordonfinnegan.weebly.com/page-8.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_8",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Wikipedia: Wellington Monument, Dublin. https://en.wikipedia.org/wiki/Wellington_Monument,_Dublin"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "008.21-6920",
       "line_number": 21,
-      "target_phrase": "lipoleum",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (lipoleum), dramatizing imperial warfare as domestic quarrel.",
+      "target_phrase": "marmaladise",
+      "annotation_text": "Napoleon's famous quote about making marmalade of Wellington's troops is domesticized. War is translated into kitchen squabbles, reducing the epic to the mundane.",
       "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
+        "napoleon",
+        "domestic",
+        "waterloo"
       ],
       "cross_references": [
-        "003.01"
+        "009.30"
       ],
       "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "008.22-0561",
-      "line_number": 22,
-      "target_phrase": "lipoleum",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (lipoleum), dramatizing imperial warfare as domestic quarrel.",
-      "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "008.28-6cdb",
-      "line_number": 28,
-      "target_phrase": "Willingdone",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
-      "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "008.29-4fac",
-      "line_number": 29,
-      "target_phrase": "Willingdone",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
-      "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "008.30-06e4",
-      "line_number": 30,
-      "target_phrase": "Willingdone",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
-      "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+        "Gordon, John. Finnegans Blog: Page 8. https://johngordonfinnegan.weebly.com/page-8.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_8",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Wikipedia: Wellington Monument, Dublin. https://en.wikipedia.org/wiki/Wellington_Monument,_Dublin"
       ],
       "contributors": [
         "joycean-scholar",

@@ -27,10 +27,36 @@
       ]
     },
     {
+      "id": "045.01-f5a2",
+      "line_number": 1,
+      "target_phrase": "The Ballad of Persse O'Reilly",
+      "annotation_text": "The Ballad of Persse O'Reilly opening (045.01): Hosty the balladeer performs his scurrilous street satire mocking HCE. Fuses French 'perce-oreille' (earwig, boring into the ear) with 1916 Easter Rising leaders Patrick Pearse and The O'Rahilly.",
+      "categories": [
+        "ballad",
+        "hosty",
+        "persse-oreilly",
+        "satire",
+        "1916-rising"
+      ],
+      "cross_references": [
+        "030.01",
+        "045.03",
+        "046.04"
+      ],
+      "sources": [
+        "O'Lochlainn, Colm. Irish Street Ballads. https://archive.org/details/irishstreetballa0000oloc",
+        "Finnegans Wake Notes: Chapter 2. https://finneganswakenotes.com/chapter-2/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "045.02-1844",
       "line_number": 2,
       "target_phrase": "Wall",
-      "annotation_text": "Fall/resurrection motif \"Wall\" on page 45 (\"The Encounter in Phoenix Park\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden — all converge within HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe. The comic-cosmic Fall during the Age of Gods phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
+      "annotation_text": "Fall/resurrection motif \"Wall\" on page 45 (\"The Encounter in Phoenix Park\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden \u2014 all converge within HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe. The comic-cosmic Fall during the Age of Gods phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
       "categories": [
         "the-fall",
         "humpty-dumpty",
@@ -55,10 +81,57 @@
       ]
     },
     {
+      "id": "045.03-1a68",
+      "line_number": 3,
+      "target_phrase": "Humpty Dumpty",
+      "annotation_text": "Cosmic egg \"Humpty Dumpty\" (045.03): HCE identified with the nursery-rhyme egg whose shattering fall cannot be repaired by 'all the king's men' (the 12 Dublin jurors). The fall from the wall is simultaneously the Fall of Adam and Tim Finnegan.",
+      "categories": [
+        "humpty-dumpty",
+        "the-fall",
+        "nursery-rhymes",
+        "cosmic-egg"
+      ],
+      "cross_references": [
+        "003.15",
+        "045.01",
+        "316.16"
+      ],
+      "sources": [
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "045.08-98f2",
+      "line_number": 8,
+      "target_phrase": "perce-oreille",
+      "annotation_text": "Entomological pun \"perce-oreille\" (045.08): French for earwig, the insect reputed to crawl into sleepers' ears. Provides the phonetic foundation for Humphrey Chimpden Earwicker's surname, representing whispered gossip.",
+      "categories": [
+        "earwig",
+        "french-puns",
+        "etymology",
+        "earwicker"
+      ],
+      "cross_references": [
+        "030.01",
+        "045.01"
+      ],
+      "sources": [
+        "Contemporary Literature Press: French in FW. https://editura.mttlc.ro"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "045.09-0c8e",
       "line_number": 9,
       "target_phrase": "seven Sundays week,",
-      "annotation_text": "Mid-page polysemic node on page 45 (\"The Encounter in Phoenix Park\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 45 (\"The Encounter in Phoenix Park\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -70,6 +143,54 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "045.14-7ad1",
+      "line_number": 14,
+      "target_phrase": "Magazine Wall",
+      "annotation_text": "The Magazine Wall in Phoenix Park (045.14): the physical wall from which Humpty Dumpty falls, invoking Jonathan Swift's celebrated 1737 epigram: 'Behold a proof of Irish sense! / Here Irish wit is seen! / When nothing's left that's worth defence, / We build a Magazine.'",
+      "categories": [
+        "swift",
+        "magazine-wall",
+        "phoenix-park",
+        "epigram"
+      ],
+      "cross_references": [
+        "008.09",
+        "045.03",
+        "140.08"
+      ],
+      "sources": [
+        "Swift, Jonathan. Poetical Works. https://archive.org/details/poeticalworksofj00swif",
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "045.22-6fdb",
+      "line_number": 22,
+      "target_phrase": "all the king's men",
+      "annotation_text": "The Twelve Jurors as King's Men (045.22): the twelve citizens of Dublin and the customers of HCE's tavern who fail to reassemble the shattered patriarch, judging him with mock solemnity.",
+      "categories": [
+        "twelve-jurors",
+        "trial",
+        "nursery-rhymes"
+      ],
+      "cross_references": [
+        "045.03",
+        "048.01",
+        "309.01"
+      ],
+      "sources": [
+        "FWEET: Twelve concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

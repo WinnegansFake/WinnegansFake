@@ -30,7 +30,7 @@
       "id": "110.07-9001",
       "line_number": 7,
       "target_phrase": "repeation that lutran",
-      "annotation_text": "Mid-page polysemic node on page 110 (\"The Letter from the Midden\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 110 (\"The Letter from the Midden\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -42,6 +42,101 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "110.15-5a3c",
+      "line_number": 15,
+      "target_phrase": "Biddy Doran",
+      "annotation_text": "Biddy Doran the Hen (110.15): Belinda of the Dorans, the little scratching hen who unearths the sacred manuscript from the rubbish mound. She personifies the archaeological impulse, the Irish peasant woman, and the monastic scribe.",
+      "categories": [
+        "biddy-doran",
+        "the-hen",
+        "the-letter",
+        "archaeology"
+      ],
+      "cross_references": [
+        "104.01",
+        "111.02",
+        "119.10"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "110.22-22d7",
+      "line_number": 22,
+      "target_phrase": "the midden dump",
+      "annotation_text": "The Midden Dump in Orange, Mass. (110.22): historical landfill containing discarded refuse of civilization. In Joyce's schema, waste matter is never lost; the dump preserves the palimpsest of all human literature awaiting resurrection.",
+      "categories": [
+        "midden",
+        "waste-theory",
+        "palimpsest",
+        "resurrection"
+      ],
+      "cross_references": [
+        "075.12",
+        "110.15",
+        "111.02"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "110.28-eca4",
+      "line_number": 28,
+      "target_phrase": "orange peel",
+      "annotation_text": "Orange peel fragment (110.28): remnants of domestic consumption protecting the underlying vellum letter. Simultaneously evokes William of Orange (King Billy, Battle of the Boyne 1690) and Protestant-Catholic tensions.",
+      "categories": [
+        "orange-peel",
+        "william-of-orange",
+        "irish-history"
+      ],
+      "cross_references": [
+        "110.22",
+        "111.02"
+      ],
+      "sources": [
+        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "110.33-8683",
+      "line_number": 33,
+      "target_phrase": "the letter in the heap",
+      "annotation_text": "The Letter from Boston (110.33): ALP's mamafesta scratched from the dirt. In Egyptian parallels (Mark Troy), this recovered missive represents Isis collecting the dismembered fragments of Osiris's body from the mud of the Nile.",
+      "categories": [
+        "the-letter",
+        "osiris",
+        "egyptian-mythology",
+        "mamafesta"
+      ],
+      "cross_references": [
+        "104.01",
+        "111.02",
+        "470.15"
+      ],
+      "sources": [
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net"
       ],
       "contributors": [
         "joycean-scholar",

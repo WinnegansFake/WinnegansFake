@@ -27,10 +27,34 @@
       ]
     },
     {
+      "id": "312.06-ee3d",
+      "line_number": 6,
+      "target_phrase": "the shifting hump",
+      "annotation_text": "The movable hump (312.06): the suit never fits because the Captain's hunchback keeps shifting with the swell of the sea waves. Symbolizes HCE's fluctuating moral guilt and bodily deformity.",
+      "categories": [
+        "hump",
+        "hce",
+        "guilt",
+        "deformity"
+      ],
+      "cross_references": [
+        "311.05",
+        "312.15",
+        "316.16"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "312.10-5276",
       "line_number": 10,
       "target_phrase": "occasional conformity, with",
-      "annotation_text": "Mid-page polysemic node on page 312 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 312 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -42,6 +66,75 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "312.15-9ffc",
+      "line_number": 15,
+      "target_phrase": "refusal to pay",
+      "annotation_text": "The mariner's departure (312.15): the Captain curses the tailor, refuses to pay for the ill-fitting suit, and sails back to sea, repeating the conflict across three seven-year cycles.",
+      "categories": [
+        "voyage",
+        "conflict",
+        "cyclical",
+        "triad"
+      ],
+      "cross_references": [
+        "022.09",
+        "311.05",
+        "312.22"
+      ],
+      "sources": [
+        "FWEET: Norwegian Captain concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "312.22-7e3e",
+      "line_number": 22,
+      "target_phrase": "Flying Dutchman",
+      "annotation_text": "The Flying Dutchman myth (312.22): the Captain embodies the cursed mariner doomed to wander stormy seas until redeemed by the love and domestic sacrament of a faithful woman.",
+      "categories": [
+        "flying-dutchman",
+        "opera",
+        "wagner",
+        "redemption"
+      ],
+      "cross_references": [
+        "312.15",
+        "383.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "312.30-bb71",
+      "line_number": 30,
+      "target_phrase": "Scandinavian vocabulary",
+      "annotation_text": "Norse linguistic layer (312.30): Joyce saturates the text with Scandinavian loanwords (Danish, Norwegian, Swedish) reflecting the Norse maritime heritage of Dublin.",
+      "categories": [
+        "scandinavian-loanwords",
+        "norwegian",
+        "linguistics"
+      ],
+      "cross_references": [
+        "311.05",
+        "312.06"
+      ],
+      "sources": [
+        "Contemporary Literature Press: Scandinavian Languages in FW. https://editura.mttlc.ro"
       ],
       "contributors": [
         "joycean-scholar",

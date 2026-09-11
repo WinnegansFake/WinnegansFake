@@ -27,10 +27,59 @@
       ]
     },
     {
+      "id": "293.01-c9fd",
+      "line_number": 1,
+      "target_phrase": "Euclid's Elements Book I Prop 1",
+      "annotation_text": "Euclid's first proposition (293.01): constructing an equilateral triangle on a given finite straight line using intersecting circles. Joyce adapts John Casey's 'The First Six Books of the Elements of Euclid' (Dublin, 1885).",
+      "categories": [
+        "geometry",
+        "euclid",
+        "quadrivium",
+        "casey"
+      ],
+      "cross_references": [
+        "260.01",
+        "293.08",
+        "294.05"
+      ],
+      "sources": [
+        "Casey, John. The First Six Books of the Elements of Euclid. https://archive.org/details/firstsixbooksof00case",
+        "Ricorso.net: Euclid in FW. https://www.ricorso.net"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "293.08-efc4",
+      "line_number": 8,
+      "target_phrase": "vesica piscis",
+      "annotation_text": "The mystical mandorla (293.08): the intersection of two equal circles whose perimeters pass through each other's centers, representing sacred architectural geometry, the fish symbol of Christ, and female anatomy.",
+      "categories": [
+        "vesica-piscis",
+        "sacred-geometry",
+        "mandorla",
+        "anatomy"
+      ],
+      "cross_references": [
+        "293.01",
+        "293.15",
+        "294.05"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "293.10-c934",
       "line_number": 10,
       "target_phrase": "Turnpike under Great",
-      "annotation_text": "Mid-page polysemic node on page 293 (\"The Night Lessons\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 293 (\"The Night Lessons\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -42,6 +91,30 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "293.15-c0a8",
+      "line_number": 15,
+      "target_phrase": "triangle A-P-L",
+      "annotation_text": "The Delta symbol (293.15): the apex and base points of the equilateral triangle form the letters A-P-L ($\\Delta$), representing Anna Livia Plurabelle, the River Liffey delta, and maternal reproductive anatomy.",
+      "categories": [
+        "delta",
+        "alp",
+        "sigla",
+        "geometry"
+      ],
+      "cross_references": [
+        "003.01",
+        "196.01",
+        "293.08"
+      ],
+      "sources": [
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu"
       ],
       "contributors": [
         "joycean-scholar",

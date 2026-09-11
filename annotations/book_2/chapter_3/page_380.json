@@ -55,10 +55,34 @@
       ]
     },
     {
+      "id": "380.08-6ce6",
+      "line_number": 8,
+      "target_phrase": "Closing Time",
+      "annotation_text": "Tavern curfew (380.08): the barman's ritual cry \"Time, gentlemen, please!\" brings the chaotic drinking in HCE's Chapelizod pub to an end, clearing the room of customers.",
+      "categories": [
+        "closing-time",
+        "pub-life",
+        "chapelizod",
+        "curfew"
+      ],
+      "cross_references": [
+        "139.14",
+        "309.01",
+        "380.25"
+      ],
+      "sources": [
+        "FWEET: Tavern closing entries. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "380.16-5f0b",
       "line_number": 16,
       "target_phrase": "still such eminent",
-      "annotation_text": "Mid-page polysemic node on page 380 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 380 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -70,6 +94,53 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "380.18-d842",
+      "line_number": 18,
+      "target_phrase": "departure of the twelve",
+      "annotation_text": "Exodus of the Jurors (380.18): the twelve patrons stumble out into the Dublin night, leaving the weary publican HCE alone to clean up the spilled drinks and historical debris.",
+      "categories": [
+        "twelve-jurors",
+        "departure",
+        "night"
+      ],
+      "cross_references": [
+        "309.01",
+        "380.08"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census. https://archive.org/details/thirdcensusoffin0000glas"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "380.25-be1d",
+      "line_number": 25,
+      "target_phrase": "Roderick O'Conor",
+      "annotation_text": "The Last High King (380.25): HCE is identified with Ruaidhr\u00ed Ua Conchobair (d. 1198), the last High King of Ireland before the Anglo-Norman invasion. One of Joyce's earliest written sketches (1923).",
+      "categories": [
+        "roderick-oconor",
+        "high-king",
+        "irish-history",
+        "early-sketches"
+      ],
+      "cross_references": [
+        "016.02",
+        "380.08",
+        "381.05"
+      ],
+      "sources": [
+        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt",
+        "JJDA: Roderick O'Conor sketch. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",

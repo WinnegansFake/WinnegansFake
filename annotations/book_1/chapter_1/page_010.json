@@ -5,47 +5,23 @@
   "page_number": 10,
   "annotations": [
     {
-      "id": "010.01-889d",
-      "line_number": 1,
-      "target_phrase": "Willingdone",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
-      "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "010.02-4c38",
+      "id": "010.02-ef3f",
       "line_number": 2,
-      "target_phrase": "Willingdone",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "target_phrase": "crossgunn",
+      "annotation_text": "The 'crossgunn' evokes the battle crossfire while simultaneously hinting at crossed legs or sexual entanglement, continuing the overlay of the Waterloo battle onto a sexual encounter.",
       "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
+        "battle",
+        "sexuality",
+        "waterloo"
       ],
       "cross_references": [
-        "003.01"
+        "009.04"
       ],
       "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
       ],
       "contributors": [
         "joycean-scholar",
@@ -53,47 +29,22 @@
       ]
     },
     {
-      "id": "010.04-8674",
-      "line_number": 4,
-      "target_phrase": "Willingdone",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
-      "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "010.06-286f",
+      "id": "010.06-99f6",
       "line_number": 6,
-      "target_phrase": "Willingdone",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "target_phrase": "ruse",
+      "annotation_text": "Willingdone's 'ruse' refers to his tactical maneuvers at Waterloo, but also the general deceptiveness of history. It hints at the peeping-tom nature of his telescope use.",
       "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
+        "voyeurism",
+        "waterloo"
       ],
       "cross_references": [
-        "003.01"
+        "009.06"
       ],
       "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
       ],
       "contributors": [
         "joycean-scholar",
@@ -101,71 +52,23 @@
       ]
     },
     {
-      "id": "010.08-9985",
-      "line_number": 8,
-      "target_phrase": "Willingdone",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
-      "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "010.10-c683",
-      "line_number": 10,
-      "target_phrase": "Willingdone",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
-      "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "010.11-16de",
+      "id": "010.11-cf06",
       "line_number": 11,
-      "target_phrase": "Willingdone",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "target_phrase": "cambronne",
+      "annotation_text": "A veiled reference to General Cambronne's famous response 'Merde!' at Waterloo. In the Wake, this becomes part of the thunderous collapse of order, bringing the high-flown military rhetoric down to the scatalogical.",
       "categories": [
-        "wellington",
         "waterloo",
-        "military-history",
-        "museyroom"
+        "scatology",
+        "french"
       ],
       "cross_references": [
-        "003.01"
+        "003.15"
       ],
       "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
       ],
       "contributors": [
         "joycean-scholar",
@@ -173,47 +76,23 @@
       ]
     },
     {
-      "id": "010.14-e3e4",
-      "line_number": 14,
-      "target_phrase": "Willingdone",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
-      "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "010.15-dc93",
+      "id": "010.15-68d8",
       "line_number": 15,
-      "target_phrase": "Willingdone",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "target_phrase": "megaphog",
+      "annotation_text": "The megaphone used by the combatants (or the museum guide) blasts commands. It echoes the voice of God or the thunderclap that initially felled Finnegan.",
       "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
+        "thunderclap",
+        "communication"
       ],
       "cross_references": [
-        "003.01"
+        "003.15",
+        "113.09"
       ],
       "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
       ],
       "contributors": [
         "joycean-scholar",
@@ -221,23 +100,24 @@
       ]
     },
     {
-      "id": "010.19-f0ef",
-      "line_number": 19,
-      "target_phrase": "museyroom",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (museyroom), dramatizing imperial warfare as domestic quarrel.",
+      "id": "010.18-8842",
+      "line_number": 18,
+      "target_phrase": "magpies",
+      "annotation_text": "The magpies parallel the two jinnies/girls in the park. Birds frequently act as messengers or omens of the female presence (ALP) observing the male downfall.",
       "categories": [
-        "wellington",
-        "waterloo",
-        "military-history",
-        "museyroom"
+        "birds",
+        "alp",
+        "primal-scene"
       ],
       "cross_references": [
-        "003.01"
+        "009.04",
+        "196.01"
       ],
       "sources": [
-        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
-        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
       ],
       "contributors": [
         "joycean-scholar",
@@ -245,23 +125,45 @@
       ]
     },
     {
-      "id": "010.25-f2a9",
+      "id": "010.22-cb28",
+      "line_number": 22,
+      "target_phrase": "seeboy",
+      "annotation_text": "The 'seeboy' (sepoy) introduces the Indian mutiny into the Waterloo schema. The Museyroom collapses all of Britain's imperial conflicts into a single continuous diorama of conquest and rebellion.",
+      "categories": [
+        "imperialism",
+        "rebellion"
+      ],
+      "cross_references": [
+        "009.09"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.25-fe21",
       "line_number": 25,
-      "target_phrase": "four",
-      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "target_phrase": "bloodied",
+      "annotation_text": "The bloody aftermath of the battle. The physical violence of history is presented as a slapstick comedy or a childish brawl in the Phoenix Park mud.",
       "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
+        "waterloo",
+        "violence"
       ],
       "cross_references": [
-        "003.01"
+        "008.10"
       ],
       "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
       ],
       "contributors": [
         "joycean-scholar",
@@ -269,23 +171,23 @@
       ]
     },
     {
-      "id": "010.28-5ee9",
-      "line_number": 28,
-      "target_phrase": "seven",
-      "annotation_text": "Joyce's recurring mystical or structural number (seven): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "id": "010.29-1a4c",
+      "line_number": 29,
+      "target_phrase": "pennon",
+      "annotation_text": "The military pennon or flag. It also links to Shem the Penman\u2014the writer who must record this chaotic history, turning the sword into the pen.",
       "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
+        "shem",
+        "writing",
+        "military"
       ],
       "cross_references": [
-        "003.01"
+        "169.01"
       ],
       "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
       ],
       "contributors": [
         "joycean-scholar",

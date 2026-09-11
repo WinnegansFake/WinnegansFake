@@ -5,6 +5,56 @@
   "page_number": 119,
   "annotations": [
     {
+      "id": "119.10-9ee6",
+      "line_number": 10,
+      "target_phrase": "In the name of Annah the Allmaziful",
+      "annotation_text": "Islamic-Celtic parody (119.10): parodies the Islamic Bismillah invocation (\"Bismillah ar-Rahman ar-Rahim\" - In the name of God, the Merciful, the Compassionate) fused with Anna Livia Plurabelle as the mother deity.",
+      "categories": [
+        "bismillah",
+        "islamic-allusions",
+        "alp",
+        "sacred-texts"
+      ],
+      "cross_references": [
+        "104.01",
+        "111.02",
+        "196.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Annah the Allmaziful. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "119.15-07ee",
+      "line_number": 15,
+      "target_phrase": "Sir Edward Sullivan",
+      "annotation_text": "Sullivan's Book of Kells parody (119.15): Joyce mirrors Sir Edward Sullivan's 1914 introduction to 'The Book of Kells' (The Studio), adopting Sullivan's ecstatic prose style to describe the barnyard letter's microscopic calligraphy.",
+      "categories": [
+        "book-of-kells",
+        "sullivan",
+        "manuscript-culture",
+        "art-criticism"
+      ],
+      "cross_references": [
+        "119.10",
+        "120.08",
+        "122.20"
+      ],
+      "sources": [
+        "Sullivan, Sir Edward. The Book of Kells. https://www.gutenberg.org/ebooks/16436",
+        "Trinity College Dublin: Book of Kells. https://digitalcollections.tcd.ie/concern/works/hm50tr726"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "119.15-226b",
       "line_number": 15,
       "target_phrase": "Earwicker",
@@ -64,7 +114,7 @@
       "id": "119.20-3e86",
       "line_number": 20,
       "target_phrase": "hen",
-      "annotation_text": "The Letter motif \"hen\" on page 119 (\"The Letter from the Midden\"): ALP's mysterious document — scratched from the midden by Biddy Doran the Hen — represents the genesis of all writing within Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. During this Age of Gods phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
+      "annotation_text": "The Letter motif \"hen\" on page 119 (\"The Letter from the Midden\"): ALP's mysterious document \u2014 scratched from the midden by Biddy Doran the Hen \u2014 represents the genesis of all writing within Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. During this Age of Gods phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
       "categories": [
         "the-letter",
         "textual-criticism",
@@ -82,6 +132,28 @@
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
         "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net",
         "Finwake.com: Chapter I.5 annotations. http://www.finwake.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "119.22-5eb7",
+      "line_number": 22,
+      "target_phrase": "illuminated manuscript",
+      "annotation_text": "Sacred vellum comparison (119.22): the stained barnyard note is treated with the veneration accorded to Ireland's greatest medieval illuminated Gospel book, equating everyday modern ephemera with ancient sacred art.",
+      "categories": [
+        "vellum",
+        "monastic-culture",
+        "celtic-art"
+      ],
+      "cross_references": [
+        "119.15",
+        "122.35"
+      ],
+      "sources": [
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -109,6 +181,30 @@
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
         "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
         "FWEET: Numerological concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "119.30-9b4f",
+      "line_number": 30,
+      "target_phrase": "boustrophedon",
+      "annotation_text": "Archaic script \"boustrophedon\" (119.30): Greek 'ox-turning' script, reading alternately from left-to-right and right-to-left. Reflects the bidirectional, cyclical movement of Joyce's own prose.",
+      "categories": [
+        "boustrophedon",
+        "greek",
+        "paleography",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01",
+        "119.10",
+        "628.16"
+      ],
+      "sources": [
+        "Contemporary Literature Press: Classical Lexicon. https://editura.mttlc.ro"
       ],
       "contributors": [
         "joycean-scholar",

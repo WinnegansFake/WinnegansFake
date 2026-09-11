@@ -71,10 +71,53 @@
       ]
     },
     {
+      "id": "003.01-8a1d",
+      "line_number": 1,
+      "target_phrase": "riverrun",
+      "annotation_text": "The mid-sentence lowercase opening thrusts the reader in media res into an eternal stream of consciousness. It connects etymologically to French 'r\u00eaverons' (let us dream together) and links with the book's final words 'a long the' to form a never-ending circle.",
+      "categories": [
+        "stream-of-consciousness",
+        "french",
+        "circularity",
+        "dream"
+      ],
+      "cross_references": [
+        "628.16"
+      ],
+      "sources": [
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake",
+        "Scholarly analyses of Wakean circularity. https://fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.01-3ba4",
+      "line_number": 1,
+      "target_phrase": "Eve and Adam's",
+      "annotation_text": "Joyce's inversion of 'Adam and Eve' to 'Eve and Adam's' restores primacy to Eve, subverting the patriarchal narrative. This structural reversal establishes the text's pervasive pattern of reversed and cyclical causality.",
+      "categories": [
+        "feminism",
+        "biblical",
+        "causality",
+        "inversion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Finnegans Web. http://finnegansweb.com/wiki/index.php/Page_3"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "003.02-94ed",
       "line_number": 2,
       "target_phrase": "commodius vicus of recirculation",
-      "annotation_text": "Multilingual pun fusing the Roman Emperor Commodus, English 'commodious' (spacious/convenient), Latin 'vicus' (lane, street, village), and Giambattista Vico (1668–1744), the Italian philosopher whose cycle of history (divine, heroic, human, ricorso) provides the scaffolding for Finnegans Wake.",
+      "annotation_text": "Multilingual pun fusing the Roman Emperor Commodus, English 'commodious' (spacious/convenient), Latin 'vicus' (lane, street, village), and Giambattista Vico (1668\u20131744), the Italian philosopher whose cycle of history (divine, heroic, human, ricorso) provides the scaffolding for Finnegans Wake.",
       "categories": [
         "vico",
         "philosophy",
@@ -119,6 +162,51 @@
       ]
     },
     {
+      "id": "003.02-26bf",
+      "line_number": 2,
+      "target_phrase": "commodius vicus of recirculation",
+      "annotation_text": "'Commodius' carries a double meaning, denoting both spatial capacity (commodious) and the scatological (commode). Together, the phrase signals that the narrative follows Giambattista Vico's cyclical pattern of rise, fall, and resurrection.",
+      "categories": [
+        "vico",
+        "scatological",
+        "cycle-of-history",
+        "pun"
+      ],
+      "cross_references": [
+        "003.12"
+      ],
+      "sources": [
+        "Scholarly search results on Viconian cycles. https://fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.02-324e",
+      "line_number": 2,
+      "target_phrase": "Howth Castle and Environs",
+      "annotation_text": "This phrase contains the first occurrence of the protagonist's initials, H.C.E. Howth Head is mythologically identified with the head of sleeping giant Finn MacCool, while Howth Castle is a real medieval estate inhabited by the St. Lawrence family.",
+      "categories": [
+        "hce",
+        "finn-maccool",
+        "dublin-landmarks",
+        "mythology"
+      ],
+      "cross_references": [
+        "003.16"
+      ],
+      "sources": [
+        "Wikipedia: Howth Castle. https://en.wikipedia.org/wiki/Howth_Castle",
+        "Scholarly sources on Finn MacCool. https://fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "003.03-bde3",
       "line_number": 3,
       "target_phrase": "Sir Tristram, violer d'amores",
@@ -134,7 +222,7 @@
         "398.29"
       ],
       "sources": [
-        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "B\u00e9dier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
         "Wagner, Richard. Tristan und Isolde Libretto. https://en.wikipedia.org/wiki/Tristan_und_Isolde"
       ],
       "contributors": [
@@ -211,7 +299,7 @@
       "id": "003.05-3ed2",
       "line_number": 5,
       "target_phrase": "penisolate war",
-      "annotation_text": "Triple pun: the Peninsular War (1807–1814) fought by the Duke of Wellington, the \"peninsular\" isolation of Howth and Ireland, and Tristram's sexual / phallic conquest (\"penis-isolate\").",
+      "annotation_text": "Triple pun: the Peninsular War (1807\u20131814) fought by the Duke of Wellington, the \"peninsular\" isolation of Howth and Ireland, and Tristram's sexual / phallic conquest (\"penis-isolate\").",
       "categories": [
         "wellington",
         "war",
@@ -468,7 +556,7 @@
       "id": "003.12-45da",
       "line_number": 12,
       "target_phrase": "ringsome on the aquaface",
-      "annotation_text": "The circular rainbow reflecting upon the primordial waters of the deep (Genesis 1:2: \"and the Spirit of God moved upon the face of the waters\"). German \"Wasserfläche\" (water surface) and Latin \"aqua\".",
+      "annotation_text": "The circular rainbow reflecting upon the primordial waters of the deep (Genesis 1:2: \"and the Spirit of God moved upon the face of the waters\"). German \"Wasserfl\u00e4che\" (water surface) and Latin \"aqua\".",
       "categories": [
         "genesis",
         "creation",
@@ -528,6 +616,30 @@
       "sources": [
         "Vico, Giambattista. The New Science (The Thunder and the Giant Age). https://plato.stanford.edu/entries/vico/",
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.12-468b",
+      "line_number": 12,
+      "target_phrase": "bababadalgharaghtakamminarronnkonnbronntqnnerronntuonnthunntrovarrhounawnskawntoohoohoordenenthurnuk",
+      "annotation_text": "Etymological breakdown: 'bababadal' (Tower of Babel), 'gharaghta' (Hindi/Arabic), 'kamminar' (Japanese), 'ronnkonn' (General Cambronne's Waterloo 'Merde!'), 'bronn' (Greek), 'tonnerron' (French), 'tuonn' (Italian), 'thunn' (English), 'trovarr' (Portuguese), 'hounawnskawn' (Swedish/Irish), 'toohoohoordenen' (Danish), 'thurnuk' (Irish). Originally fewer letters, Joyce added 'babab' to hit the symbolic 100-letter total.",
+      "categories": [
+        "etymology",
+        "babel",
+        "thunderclap",
+        "linguistics"
+      ],
+      "cross_references": [
+        "023.05",
+        "044.20"
+      ],
+      "sources": [
+        "Finnegans Web. http://finnegansweb.com/wiki/index.php/Page_3",
+        "Stack Exchange Literature. https://literature.stackexchange.com/"
       ],
       "contributors": [
         "joycean-scholar",

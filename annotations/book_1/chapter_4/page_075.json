@@ -27,10 +27,76 @@
       ]
     },
     {
+      "id": "075.02-5cc9",
+      "line_number": 2,
+      "target_phrase": "Finn MacCool",
+      "annotation_text": "HCE is buried in the landscape, his sleeping body echoing the myth of the giant Finn MacCool, whose body supposedly forms the geography of Dublin.",
+      "categories": [
+        "hce",
+        "finn-maccool",
+        "mythology"
+      ],
+      "cross_references": [
+        "003.15",
+        "023.05"
+      ],
+      "sources": [
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "075.05-7bd0",
+      "line_number": 5,
+      "target_phrase": "Four Old Men",
+      "annotation_text": "The Four Old Men (Mamalujo) survey HCE's grave, functioning as historians or annalists examining the past.",
+      "categories": [
+        "mamalujo",
+        "history",
+        "burial"
+      ],
+      "cross_references": [
+        "048.04",
+        "383.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "075.08-bba9",
+      "line_number": 8,
+      "target_phrase": "mound",
+      "annotation_text": "The burial mound links Irish prehistoric cairns with Egyptian pyramids, transforming the Dublin landscape into a site of universal mythic resonance.",
+      "categories": [
+        "burial",
+        "egyptian-mythology",
+        "geography"
+      ],
+      "cross_references": [
+        "026.01",
+        "104.01"
+      ],
+      "sources": [
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
       "id": "075.11-41f0",
       "line_number": 11,
       "target_phrase": "knew't, that with",
-      "annotation_text": "Mid-page polysemic node on page 75 (\"The Burial of HCE\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods (transition) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "annotation_text": "Mid-page polysemic node on page 75 (\"The Burial of HCE\"): Joyce weaves multilingual puns across 60+ languages \u2014 etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods (transition) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
@@ -42,6 +108,71 @@
         "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
         "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "075.12-b6fb",
+      "line_number": 12,
+      "target_phrase": "Kate",
+      "annotation_text": "Kate the Slop: the female domestic figure who tends the house and by extension, the grave/mound, embodying the cyclical continuity of life.",
+      "categories": [
+        "kate",
+        "domestic",
+        "burial"
+      ],
+      "cross_references": [
+        "008.08",
+        "141.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "075.14-aa61",
+      "line_number": 14,
+      "target_phrase": "letter-in-the-midden",
+      "annotation_text": "The archaeological mound is also the midden-heap where the mysterious letter from Boston is found, equating the buried giant with the buried text.",
+      "categories": [
+        "the-letter",
+        "archaeology",
+        "writing"
+      ],
+      "cross_references": [
+        "104.20",
+        "113.09"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "075.16-9531",
+      "line_number": 16,
+      "target_phrase": "survey",
+      "annotation_text": "The act of surveying the grave by Mamalujo parodies antiquarian scholarship and the attempt to impose order on the chaotic past.",
+      "categories": [
+        "mamalujo",
+        "scholarship",
+        "history"
+      ],
+      "cross_references": [
+        "383.05"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8"
       ],
       "contributors": [
         "joycean-scholar",
