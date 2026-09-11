@@ -8,18 +8,20 @@
       "id": "257.01-3d22",
       "line_number": 1,
       "target_phrase": "Izzy",
-      "annotation_text": "Issy (Isolde), the daughter and split-personality siren looking into her looking-glass, represented in the motif \"Izzy\".",
+      "annotation_text": "Issy (Isolde), the seductive daughter and split-personality siren conversing with her mirror reflection, represented in the motif \"Izzy\".",
       "categories": [
         "issy",
         "mirror-twin",
-        "tristan-and-isolde"
+        "tristan-and-isolde",
+        "psychology"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Genetic Joyce Studies: Finnegans Wake Notebooks. https://www.geneticjoycestudies.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,10 +29,34 @@
       ]
     },
     {
-      "id": "257.24-8290",
+      "id": "257.02-24d9",
+      "line_number": 2,
+      "target_phrase": "stella",
+      "annotation_text": "Satirical and biographical presence of Jonathan Swift (stella): Dean of St. Patrick's Cathedral, his dual lovers Stella and Vanessa (mirroring Issy), and his ferocious political satires.",
+      "categories": [
+        "jonathan-swift",
+        "dublin-history",
+        "eighteenth-century",
+        "satire"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Swift, Jonathan. Gulliver's Travels. https://www.gutenberg.org/ebooks/829",
+        "Swift, Jonathan. A Tale of a Tub. https://www.gutenberg.org/ebooks/4737",
+        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "257.24-a399",
       "line_number": 24,
-      "target_phrase": "ryzooysphalnabortansporthaokansakroidverjkapakkapuk",
-      "annotation_text": "One of the ten 100-letter polysyllabic thunderclaps of Finnegans Wake, synthesizing words for thunder across world languages to signal the awe-inspiring divine voice and human institution of society.",
+      "target_phrase": "Lukkedoerendunandurraskewdylooshoofermoyportertoo",
+      "annotation_text": "One of the ten 100-letter polysyllabic thunderclaps of Finnegans Wake, synthesizing words for thunder across ten world languages to signal the divine voice awakening primitive human institutions.",
       "categories": [
         "thunderclap",
         "vico",
@@ -42,7 +68,8 @@
       ],
       "sources": [
         "Vico, Giambattista. Scienza Nuova (On the Thunder and Law). https://plato.stanford.edu/entries/vico/",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Fweet.org: 100-letter Thunder Words. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

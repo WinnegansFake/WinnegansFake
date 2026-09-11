@@ -12,7 +12,8 @@
       "categories": [
         "alp",
         "river-liffey",
-        "feminine-principle"
+        "feminine-principle",
+        "waters"
       ],
       "cross_references": [
         "003.01"
@@ -20,7 +21,8 @@
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,14 +30,39 @@
       ]
     },
     {
-      "id": "553.22-6068",
+      "id": "553.21-fc24",
+      "line_number": 21,
+      "target_phrase": "wall",
+      "annotation_text": "The theme of the cosmic and comic Fall (wall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "553.22-4bd7",
       "line_number": 22,
       "target_phrase": "plurabelle",
       "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"plurabelle\".",
       "categories": [
         "alp",
         "river-liffey",
-        "feminine-principle"
+        "feminine-principle",
+        "waters"
       ],
       "cross_references": [
         "003.01"
@@ -43,7 +70,8 @@
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

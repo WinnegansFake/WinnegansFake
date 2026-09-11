@@ -5,43 +5,23 @@
   "page_number": 427,
   "annotations": [
     {
-      "id": "427.01-cf81",
-      "line_number": 1,
-      "target_phrase": "slackfoot, linkman laizurely,",
-      "annotation_text": "Structural opening of Book 3, Chapter 1, page 427. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
-      "categories": [
-        "structural",
-        "narrative-strata",
-        "book-3"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "427.15-a9ce",
+      "id": "427.15-183b",
       "line_number": 15,
       "target_phrase": "Shaun",
-      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Shaun\".",
+      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Shaun\".",
       "categories": [
         "twins",
         "shem-and-shaun",
-        "brother-battle"
+        "brother-battle",
+        "dialectic"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
       ],
       "contributors": [
         "joycean-scholar",
@@ -49,21 +29,23 @@
       ]
     },
     {
-      "id": "427.16-d2d0",
-      "line_number": 16,
-      "target_phrase": "hardest throes, beyond",
-      "annotation_text": "Mid-page polysemic discourse on page 427: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "427.28-b3ca",
+      "line_number": 28,
+      "target_phrase": "twelve",
+      "annotation_text": "Joyce's recurring mystical or structural number (twelve): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",

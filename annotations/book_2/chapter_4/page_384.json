@@ -5,22 +5,23 @@
   "page_number": 384,
   "annotations": [
     {
-      "id": "384.09-1375",
-      "line_number": 9,
-      "target_phrase": "Luke",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "id": "384.04-185e",
+      "line_number": 4,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
-        "mamalujo",
-        "four-annalists",
-        "provinces-of-ireland",
-        "gospels"
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,7 +29,151 @@
       ]
     },
     {
-      "id": "384.13-d058",
+      "id": "384.05-ebf3",
+      "line_number": 5,
+      "target_phrase": "waves",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "evangelists"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com",
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "384.06-c8ef",
+      "line_number": 6,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "384.07-175c",
+      "line_number": 7,
+      "target_phrase": "waves",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "evangelists"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com",
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "384.09-9623",
+      "line_number": 9,
+      "target_phrase": "Luke",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "evangelists"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com",
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "384.10-1374",
+      "line_number": 10,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "384.12-0935",
+      "line_number": 12,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "384.13-f10c",
       "line_number": 13,
       "target_phrase": "Amen",
       "annotation_text": "Liturgical or ecclesiastical allusion (Amen): weaving Catholic ritual, Latin prayers, and sacramental language into the domestic nighttime dream.",
@@ -43,7 +188,56 @@
       ],
       "sources": [
         "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
-        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/"
+        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/",
+        "Frazer, Sir James George. Folk-Lore in the Old Testament. https://archive.org/details/folkloreinoldtes01frazuoft"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "384.17-69f1",
+      "line_number": 17,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "384.30-b7f3",
+      "line_number": 30,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",

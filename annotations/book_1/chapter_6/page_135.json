@@ -8,19 +8,20 @@
       "id": "135.01-b1a5",
       "line_number": 1,
       "target_phrase": "mark",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
       "categories": [
         "mamalujo",
         "four-annalists",
         "provinces-of-ireland",
-        "gospels"
+        "evangelists"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+        "The Four Gospels (King James Bible). https://www.biblegateway.com",
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,21 +29,24 @@
       ]
     },
     {
-      "id": "135.01-a40c",
-      "line_number": 1,
-      "target_phrase": "cornerwall melking mark",
-      "annotation_text": "Structural opening of Book 1, Chapter 6, page 135. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "135.06-38d3",
+      "line_number": 6,
+      "target_phrase": "porter",
+      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"porter\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-1"
+        "hce",
+        "leitmotif",
+        "protagonist",
+        "archetype"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -50,21 +54,45 @@
       ]
     },
     {
-      "id": "135.17-3847",
-      "line_number": 17,
-      "target_phrase": "Scholarland; walked many",
-      "annotation_text": "Mid-page polysemic discourse on page 135: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "135.20-1344",
+      "line_number": 20,
+      "target_phrase": "set",
+      "annotation_text": "Ancient Egyptian eschatology (set): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "135.30-9e66",
+      "line_number": 30,
+      "target_phrase": "night",
+      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
       ],
       "contributors": [
         "joycean-scholar",

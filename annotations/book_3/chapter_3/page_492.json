@@ -5,21 +5,22 @@
   "page_number": 492,
   "annotations": [
     {
-      "id": "492.01-84dc",
-      "line_number": 1,
-      "target_phrase": "voice that, nice",
-      "annotation_text": "Structural opening of Book 3, Chapter 3, page 492. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "492.14-6899",
+      "line_number": 14,
+      "target_phrase": "bottle",
+      "annotation_text": "The Twelve Jurors / Tavern Drinkers (bottle): representing the chorus of public opinion, the twelve signs of the Zodiac, the Apostles, and the customers gossiping in HCE's Chapelizod pub.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-3"
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +28,23 @@
       ]
     },
     {
-      "id": "492.16-946c",
-      "line_number": 16,
-      "target_phrase": "orders sedown chair",
-      "annotation_text": "Mid-page polysemic discourse on page 492: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "492.20-23d5",
+      "line_number": 20,
+      "target_phrase": "seven",
+      "annotation_text": "Joyce's recurring mystical or structural number (seven): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",

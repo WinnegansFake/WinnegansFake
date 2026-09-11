@@ -5,21 +5,23 @@
   "page_number": 579,
   "annotations": [
     {
-      "id": "579.01-cb4d",
-      "line_number": 1,
-      "target_phrase": "shipchild with waif",
-      "annotation_text": "Structural opening of Book 3, Chapter 4, page 579. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "579.11-23d4",
+      "line_number": 11,
+      "target_phrase": "Monks",
+      "annotation_text": "The Book of Kells manuscript tradition (Monks): Joyce equates the text of Finnegans Wake and the Hen's letter to the labyrinthine Celtic interlacing and enigmatic Latin glosses of the 8th-century Gospel book.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-3"
+        "book-of-kells",
+        "manuscript-culture",
+        "celtic-art",
+        "epigraphy"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Trinity College Dublin: The Book of Kells Online. https://digitalcollections.tcd.ie/concern/works/hm50tr726",
+        "Sullivan, Sir Edward. The Book of Kells. https://www.gutenberg.org/ebooks/16436",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +29,70 @@
       ]
     },
     {
-      "id": "579.16-a4b5",
-      "line_number": 16,
-      "target_phrase": "eating. Drudge after",
-      "annotation_text": "Mid-page polysemic discourse on page 579: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "579.15-5760",
+      "line_number": 15,
+      "target_phrase": "Bottle",
+      "annotation_text": "The Twelve Jurors / Tavern Drinkers (Bottle): representing the chorus of public opinion, the twelve signs of the Zodiac, the Apostles, and the customers gossiping in HCE's Chapelizod pub.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "579.22-a793",
+      "line_number": 22,
+      "target_phrase": "fall",
+      "annotation_text": "The theme of the cosmic and comic Fall (fall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "579.28-77ba",
+      "line_number": 28,
+      "target_phrase": "seven",
+      "annotation_text": "Joyce's recurring mystical or structural number (seven): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",

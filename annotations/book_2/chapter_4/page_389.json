@@ -5,21 +5,23 @@
   "page_number": 389,
   "annotations": [
     {
-      "id": "389.01-5c52",
-      "line_number": 1,
-      "target_phrase": "sages Plymouth brethren,",
-      "annotation_text": "Structural opening of Book 2, Chapter 4, page 389. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "389.03-cd72",
+      "line_number": 3,
+      "target_phrase": "twelve",
+      "annotation_text": "Joyce's recurring mystical or structural number (twelve): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-2"
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +29,71 @@
       ]
     },
     {
-      "id": "389.16-8ff4",
-      "line_number": 16,
-      "target_phrase": "trunks, miss!) present",
-      "annotation_text": "Mid-page polysemic discourse on page 389: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "389.05-5602",
+      "line_number": 5,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "389.22-df4f",
+      "line_number": 22,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "389.27-e659",
+      "line_number": 27,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",

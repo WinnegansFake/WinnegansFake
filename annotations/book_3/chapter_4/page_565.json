@@ -5,22 +5,22 @@
   "page_number": 565,
   "annotations": [
     {
-      "id": "565.07-7983",
-      "line_number": 7,
-      "target_phrase": "mark",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "id": "565.03-6a66",
+      "line_number": 3,
+      "target_phrase": "tap",
+      "annotation_text": "The Twelve Jurors / Tavern Drinkers (tap): representing the chorus of public opinion, the twelve signs of the Zodiac, the Apostles, and the customers gossiping in HCE's Chapelizod pub.",
       "categories": [
-        "mamalujo",
-        "four-annalists",
-        "provinces-of-ireland",
-        "gospels"
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,21 +28,47 @@
       ]
     },
     {
-      "id": "565.08-bf10",
+      "id": "565.07-1de7",
+      "line_number": 7,
+      "target_phrase": "mark",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "evangelists"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com",
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "565.08-8d0a",
       "line_number": 8,
       "target_phrase": "jerry",
-      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"jerry\".",
+      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"jerry\".",
       "categories": [
         "twins",
         "shem-and-shaun",
-        "brother-battle"
+        "brother-battle",
+        "dialectic"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
       ],
       "contributors": [
         "joycean-scholar",

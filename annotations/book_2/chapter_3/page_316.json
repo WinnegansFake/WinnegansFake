@@ -5,21 +5,23 @@
   "page_number": 316,
   "annotations": [
     {
-      "id": "316.01-fa63",
-      "line_number": 1,
-      "target_phrase": "Pukkelsen, tilltold. That",
-      "annotation_text": "Structural opening of Book 2, Chapter 3, page 316. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "316.12-47b4",
+      "line_number": 12,
+      "target_phrase": "seven",
+      "annotation_text": "Joyce's recurring mystical or structural number (seven): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-2"
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -30,7 +32,7 @@
       "id": "316.13-80ff",
       "line_number": 13,
       "target_phrase": "dump",
-      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (dump), representing the genesis of writing, literature, and decipherment.",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (dump), representing the genesis of writing, literature, and the archaeological decipherment of history.",
       "categories": [
         "the-letter",
         "textual-criticism",
@@ -42,29 +44,8 @@
       ],
       "sources": [
         "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "316.16-733e",
-      "line_number": 16,
-      "target_phrase": "Jorum's locquor f'^L",
-      "annotation_text": "Mid-page polysemic discourse on page 316: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
-      "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net"
       ],
       "contributors": [
         "joycean-scholar",

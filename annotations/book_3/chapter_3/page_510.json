@@ -5,21 +5,22 @@
   "page_number": 510,
   "annotations": [
     {
-      "id": "510.01-73b3",
-      "line_number": 1,
-      "target_phrase": "Booms bombs heavy",
-      "annotation_text": "Structural opening of Book 3, Chapter 3, page 510. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "510.09-9f9e",
+      "line_number": 9,
+      "target_phrase": "Guinness",
+      "annotation_text": "The Twelve Jurors / Tavern Drinkers (Guinness): representing the chorus of public opinion, the twelve signs of the Zodiac, the Apostles, and the customers gossiping in HCE's Chapelizod pub.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-3"
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +28,47 @@
       ]
     },
     {
-      "id": "510.15-bf64",
-      "line_number": 15,
-      "target_phrase": "brandywine bankrompers, trou",
-      "annotation_text": "Mid-page polysemic discourse on page 510: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "510.17-e26d",
+      "line_number": 17,
+      "target_phrase": "bottle",
+      "annotation_text": "The Twelve Jurors / Tavern Drinkers (bottle): representing the chorus of public opinion, the twelve signs of the Zodiac, the Apostles, and the customers gossiping in HCE's Chapelizod pub.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "510.18-6559",
+      "line_number": 18,
+      "target_phrase": "porter",
+      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"porter\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist",
+        "archetype"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",

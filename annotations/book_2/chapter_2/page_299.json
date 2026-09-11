@@ -5,21 +5,23 @@
   "page_number": 299,
   "annotations": [
     {
-      "id": "299.01-57c8",
-      "line_number": 1,
-      "target_phrase": "Canine Venus sublimated",
-      "annotation_text": "Structural opening of Book 2, Chapter 2, page 299. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "299.08-188d",
+      "line_number": 8,
+      "target_phrase": "thunder",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"thunder\".",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-2"
+        "vico",
+        "ricorso",
+        "philosophy-of-history",
+        "giambattista-vico"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
+        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +29,22 @@
       ]
     },
     {
-      "id": "299.13-450d",
-      "line_number": 13,
-      "target_phrase": "brainbox. Hear where",
-      "annotation_text": "Mid-page polysemic discourse on page 299: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "299.20-8e09",
+      "line_number": 20,
+      "target_phrase": "Guinness",
+      "annotation_text": "The Twelve Jurors / Tavern Drinkers (Guinness): representing the chorus of public opinion, the twelve signs of the Zodiac, the Apostles, and the customers gossiping in HCE's Chapelizod pub.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
       ],
       "contributors": [
         "joycean-scholar",
@@ -52,7 +55,7 @@
       "id": "299.21-44a6",
       "line_number": 21,
       "target_phrase": "Hen",
-      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (Hen), representing the genesis of writing, literature, and decipherment.",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (Hen), representing the genesis of writing, literature, and the archaeological decipherment of history.",
       "categories": [
         "the-letter",
         "textual-criticism",
@@ -64,7 +67,8 @@
       ],
       "sources": [
         "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net"
       ],
       "contributors": [
         "joycean-scholar",

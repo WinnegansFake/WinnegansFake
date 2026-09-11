@@ -5,21 +5,23 @@
   "page_number": 69,
   "annotations": [
     {
-      "id": "069.01-f4f4",
-      "line_number": 1,
-      "target_phrase": "not, been expression,",
-      "annotation_text": "Structural opening of Book 1, Chapter 3, page 69. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "069.05-1245",
+      "line_number": 5,
+      "target_phrase": "wall",
+      "annotation_text": "The theme of the cosmic and comic Fall (wall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-1"
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +29,23 @@
       ]
     },
     {
-      "id": "069.16-a7c0",
-      "line_number": 16,
-      "target_phrase": "yearlyng goat (cadet)",
-      "annotation_text": "Mid-page polysemic discourse on page 69: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "069.06-a3a1",
+      "line_number": 6,
+      "target_phrase": "wall",
+      "annotation_text": "The theme of the cosmic and comic Fall (wall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
       ],
       "contributors": [
         "joycean-scholar",

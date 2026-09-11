@@ -5,21 +5,23 @@
   "page_number": 124,
   "annotations": [
     {
-      "id": "124.01-f26c",
-      "line_number": 1,
-      "target_phrase": "fact that pierced",
-      "annotation_text": "Structural opening of Book 1, Chapter 5, page 124. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "124.03-2ce9",
+      "line_number": 3,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-1"
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +29,23 @@
       ]
     },
     {
-      "id": "124.16-afaf",
-      "line_number": 16,
-      "target_phrase": "first boys' best",
-      "annotation_text": "Mid-page polysemic discourse on page 124: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "124.05-048a",
+      "line_number": 5,
+      "target_phrase": "wall",
+      "annotation_text": "The theme of the cosmic and comic Fall (wall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
       ],
       "contributors": [
         "joycean-scholar",
@@ -52,7 +56,7 @@
       "id": "124.24-4723",
       "line_number": 24,
       "target_phrase": "letter",
-      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (letter), representing the genesis of writing, literature, and decipherment.",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (letter), representing the genesis of writing, literature, and the archaeological decipherment of history.",
       "categories": [
         "the-letter",
         "textual-criticism",
@@ -64,7 +68,8 @@
       ],
       "sources": [
         "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net"
       ],
       "contributors": [
         "joycean-scholar",

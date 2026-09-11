@@ -5,21 +5,23 @@
   "page_number": 282,
   "annotations": [
     {
-      "id": "282.01-46b9",
-      "line_number": 1,
-      "target_phrase": "Tricks stunts. Truckeys",
-      "annotation_text": "Structural opening of Book 2, Chapter 2, page 282. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "282.08-9078",
+      "line_number": 8,
+      "target_phrase": "swift",
+      "annotation_text": "Satirical and biographical presence of Jonathan Swift (swift): Dean of St. Patrick's Cathedral, his dual lovers Stella and Vanessa (mirroring Issy), and his ferocious political satires.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-2"
+        "jonathan-swift",
+        "dublin-history",
+        "eighteenth-century",
+        "satire"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Swift, Jonathan. Gulliver's Travels. https://www.gutenberg.org/ebooks/829",
+        "Swift, Jonathan. A Tale of a Tub. https://www.gutenberg.org/ebooks/4737",
+        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +29,23 @@
       ]
     },
     {
-      "id": "282.13-8f23",
-      "line_number": 13,
-      "target_phrase": "pickpocketprod, pickpocketpromise upwithem.",
-      "annotation_text": "Mid-page polysemic discourse on page 282: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "282.15-a421",
+      "line_number": 15,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",

@@ -8,18 +8,20 @@
       "id": "337.04-d078",
       "line_number": 4,
       "target_phrase": "divine",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"divine\".",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"divine\".",
       "categories": [
         "vico",
         "ricorso",
-        "philosophy-of-history"
+        "philosophy-of-history",
+        "giambattista-vico"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
+        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -30,7 +32,7 @@
       "id": "337.10-3567",
       "line_number": 10,
       "target_phrase": "letter",
-      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (letter), representing the genesis of writing, literature, and decipherment.",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (letter), representing the genesis of writing, literature, and the archaeological decipherment of history.",
       "categories": [
         "the-letter",
         "textual-criticism",
@@ -42,7 +44,31 @@
       ],
       "sources": [
         "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "337.12-f0f3",
+      "line_number": 12,
+      "target_phrase": "night",
+      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
       ],
       "contributors": [
         "joycean-scholar",

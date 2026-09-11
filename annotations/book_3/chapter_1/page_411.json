@@ -5,7 +5,31 @@
   "page_number": 411,
   "annotations": [
     {
-      "id": "411.10-b429",
+      "id": "411.05-7c65",
+      "line_number": 5,
+      "target_phrase": "fall",
+      "annotation_text": "The theme of the cosmic and comic Fall (fall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "411.10-463e",
       "line_number": 10,
       "target_phrase": "Amen",
       "annotation_text": "Liturgical or ecclesiastical allusion (Amen): weaving Catholic ritual, Latin prayers, and sacramental language into the domestic nighttime dream.",
@@ -20,7 +44,8 @@
       ],
       "sources": [
         "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
-        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/"
+        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/",
+        "Frazer, Sir James George. Folk-Lore in the Old Testament. https://archive.org/details/folkloreinoldtes01frazuoft"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,10 +53,10 @@
       ]
     },
     {
-      "id": "411.18-5567",
+      "id": "411.18-c20e",
       "line_number": 18,
       "target_phrase": "Patrick",
-      "annotation_text": "Mythological and folkloric archetype (Patrick): invoking the ancient Fianna cycle, heroic legend, and the patron saints of early Celtic Christianity.",
+      "annotation_text": "Mythological and folkloric archetype (Patrick): invoking the ancient Fianna cycle, heroic legends of Ireland, and the patron saints of early Celtic Christianity.",
       "categories": [
         "irish-mythology",
         "celtic-lore",
@@ -43,7 +68,8 @@
       ],
       "sources": [
         "MacKillop, James. Dictionary of Celtic Mythology. https://www.oxfordreference.com",
-        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465"
+        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465",
+        "Standish O'Grady. Silva Gadelica. https://archive.org/details/silvagadelicaiix01ograuoft"
       ],
       "contributors": [
         "joycean-scholar",
@@ -51,21 +77,23 @@
       ]
     },
     {
-      "id": "411.20-2cc1",
+      "id": "411.20-873e",
       "line_number": 20,
       "target_phrase": "Shaun",
-      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Shaun\".",
+      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Shaun\".",
       "categories": [
         "twins",
         "shem-and-shaun",
-        "brother-battle"
+        "brother-battle",
+        "dialectic"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
       ],
       "contributors": [
         "joycean-scholar",
@@ -73,21 +101,23 @@
       ]
     },
     {
-      "id": "411.22-03c7",
+      "id": "411.22-53a3",
       "line_number": 22,
       "target_phrase": "Shaun",
-      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Shaun\".",
+      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Shaun\".",
       "categories": [
         "twins",
         "shem-and-shaun",
-        "brother-battle"
+        "brother-battle",
+        "dialectic"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
       ],
       "contributors": [
         "joycean-scholar",

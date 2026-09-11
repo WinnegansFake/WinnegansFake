@@ -19,7 +19,8 @@
       ],
       "sources": [
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,7 +28,30 @@
       ]
     },
     {
-      "id": "270.13-c798",
+      "id": "270.11-cf93",
+      "line_number": 11,
+      "target_phrase": "set",
+      "annotation_text": "Ancient Egyptian eschatology (set): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
+      "categories": [
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "270.13-3116",
       "line_number": 13,
       "target_phrase": "minute. spitter that",
       "annotation_text": "Mid-page polysemic discourse on page 270: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
@@ -41,7 +65,8 @@
       ],
       "sources": [
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

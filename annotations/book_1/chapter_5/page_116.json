@@ -5,43 +5,23 @@
   "page_number": 116,
   "annotations": [
     {
-      "id": "116.01-564b",
-      "line_number": 1,
-      "target_phrase": "affect, singsing Salaman",
-      "annotation_text": "Structural opening of Book 1, Chapter 5, page 116. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
-      "categories": [
-        "structural",
-        "narrative-strata",
-        "book-1"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "116.16-4b8f",
+      "id": "116.16-5456",
       "line_number": 16,
-      "target_phrase": "wall (sinsin! sinsin!)",
-      "annotation_text": "Mid-page polysemic discourse on page 116: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "target_phrase": "wall",
+      "annotation_text": "The theme of the cosmic and comic Fall (wall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
       ],
       "contributors": [
         "joycean-scholar",
@@ -49,21 +29,23 @@
       ]
     },
     {
-      "id": "116.26-21ad",
+      "id": "116.26-e2d6",
       "line_number": 26,
       "target_phrase": "human",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"human\".",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"human\".",
       "categories": [
         "vico",
         "ricorso",
-        "philosophy-of-history"
+        "philosophy-of-history",
+        "giambattista-vico"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
+        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
       ],
       "contributors": [
         "joycean-scholar",

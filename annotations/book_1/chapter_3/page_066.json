@@ -5,32 +5,10 @@
   "page_number": 66,
   "annotations": [
     {
-      "id": "066.01-ccd5",
-      "line_number": 1,
-      "target_phrase": "several earmarks design,",
-      "annotation_text": "Structural opening of Book 1, Chapter 3, page 66. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
-      "categories": [
-        "structural",
-        "narrative-strata",
-        "book-1"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "066.11-0f4d",
+      "id": "066.11-0b63",
       "line_number": 11,
       "target_phrase": "envelope",
-      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (envelope), representing the genesis of writing, literature, and decipherment.",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (envelope), representing the genesis of writing, literature, and the archaeological decipherment of history.",
       "categories": [
         "the-letter",
         "textual-criticism",
@@ -42,7 +20,8 @@
       ],
       "sources": [
         "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net"
       ],
       "contributors": [
         "joycean-scholar",
@@ -50,21 +29,47 @@
       ]
     },
     {
-      "id": "066.16-258f",
-      "line_number": 16,
-      "target_phrase": "lappish language with",
-      "annotation_text": "Mid-page polysemic discourse on page 66: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "066.12-c4a2",
+      "line_number": 12,
+      "target_phrase": "seven",
+      "annotation_text": "Joyce's recurring mystical or structural number (seven): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "066.18-07c4",
+      "line_number": 18,
+      "target_phrase": "swift",
+      "annotation_text": "Satirical and biographical presence of Jonathan Swift (swift): Dean of St. Patrick's Cathedral, his dual lovers Stella and Vanessa (mirroring Issy), and his ferocious political satires.",
+      "categories": [
+        "jonathan-swift",
+        "dublin-history",
+        "eighteenth-century",
+        "satire"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Swift, Jonathan. Gulliver's Travels. https://www.gutenberg.org/ebooks/829",
+        "Swift, Jonathan. A Tale of a Tub. https://www.gutenberg.org/ebooks/4737",
+        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre"
       ],
       "contributors": [
         "joycean-scholar",

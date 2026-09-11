@@ -5,21 +5,22 @@
   "page_number": 555,
   "annotations": [
     {
-      "id": "555.12-2c59",
-      "line_number": 12,
-      "target_phrase": "Kevin",
-      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Kevin\".",
+      "id": "555.03-8edc",
+      "line_number": 3,
+      "target_phrase": "night",
+      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
       "categories": [
-        "twins",
-        "shem-and-shaun",
-        "brother-battle"
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +28,94 @@
       ]
     },
     {
-      "id": "555.15-3db9",
-      "line_number": 15,
-      "target_phrase": "Jerry",
-      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Jerry\".",
+      "id": "555.05-2873",
+      "line_number": 5,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "555.12-af75",
+      "line_number": 12,
+      "target_phrase": "Kevin",
+      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Kevin\".",
       "categories": [
         "twins",
         "shem-and-shaun",
-        "brother-battle"
+        "brother-battle",
+        "dialectic"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "555.15-fd94",
+      "line_number": 15,
+      "target_phrase": "Jerry",
+      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Jerry\".",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "555.16-ef07",
+      "line_number": 16,
+      "target_phrase": "night",
+      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
       ],
       "contributors": [
         "joycean-scholar",

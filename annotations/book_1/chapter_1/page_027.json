@@ -8,18 +8,20 @@
       "id": "027.04-845e",
       "line_number": 4,
       "target_phrase": "Kevin",
-      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Kevin\".",
+      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Kevin\".",
       "categories": [
         "twins",
         "shem-and-shaun",
-        "brother-battle"
+        "brother-battle",
+        "dialectic"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +29,47 @@
       ]
     },
     {
-      "id": "027.08-36e5",
-      "line_number": 8,
-      "target_phrase": "Jerry",
-      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Jerry\".",
+      "id": "027.06-dc78",
+      "line_number": 6,
+      "target_phrase": "postman",
+      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"postman\".",
       "categories": [
         "twins",
         "shem-and-shaun",
-        "brother-battle"
+        "brother-battle",
+        "dialectic"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "027.08-5b3f",
+      "line_number": 8,
+      "target_phrase": "Jerry",
+      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Jerry\".",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
       ],
       "contributors": [
         "joycean-scholar",

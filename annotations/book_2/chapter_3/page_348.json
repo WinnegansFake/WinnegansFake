@@ -5,66 +5,46 @@
   "page_number": 348,
   "annotations": [
     {
-      "id": "348.01-0ab8",
-      "line_number": 1,
-      "target_phrase": "laddios), how, col?",
-      "annotation_text": "Structural opening of Book 2, Chapter 3, page 348. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
-      "categories": [
-        "structural",
-        "narrative-strata",
-        "book-2"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "348.16-a740",
-      "line_number": 16,
-      "target_phrase": "Conno O'Cannochar this",
-      "annotation_text": "Mid-page polysemic discourse on page 348: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
-      "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "348.19-e9ad",
+      "id": "348.19-ef67",
       "line_number": 19,
       "target_phrase": "mark",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
       "categories": [
         "mamalujo",
         "four-annalists",
         "provinces-of-ireland",
-        "gospels"
+        "evangelists"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+        "The Four Gospels (King James Bible). https://www.biblegateway.com",
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "348.27-4599",
+      "line_number": 27,
+      "target_phrase": "set",
+      "annotation_text": "Ancient Egyptian eschatology (set): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
+      "categories": [
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
       ],
       "contributors": [
         "joycean-scholar",

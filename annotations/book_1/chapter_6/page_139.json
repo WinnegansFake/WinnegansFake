@@ -5,21 +5,22 @@
   "page_number": 139,
   "annotations": [
     {
-      "id": "139.01-e4ea",
+      "id": "139.01-05c0",
       "line_number": 1,
-      "target_phrase": "nature veiled world",
-      "annotation_text": "Structural opening of Book 1, Chapter 6, page 139. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "target_phrase": "set",
+      "annotation_text": "Ancient Egyptian eschatology (set): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-1"
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,10 +28,33 @@
       ]
     },
     {
-      "id": "139.11-6d78",
+      "id": "139.09-f052",
+      "line_number": 9,
+      "target_phrase": "night",
+      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "139.11-df60",
       "line_number": 11,
       "target_phrase": "Finn MacCool",
-      "annotation_text": "Mythological and folkloric archetype (Finn MacCool): invoking the ancient Fianna cycle, heroic legend, and the patron saints of early Celtic Christianity.",
+      "annotation_text": "Mythological and folkloric archetype (Finn MacCool): invoking the ancient Fianna cycle, heroic legends of Ireland, and the patron saints of early Celtic Christianity.",
       "categories": [
         "irish-mythology",
         "celtic-lore",
@@ -42,7 +66,8 @@
       ],
       "sources": [
         "MacKillop, James. Dictionary of Celtic Mythology. https://www.oxfordreference.com",
-        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465"
+        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465",
+        "Standish O'Grady. Silva Gadelica. https://archive.org/details/silvagadelicaiix01ograuoft"
       ],
       "contributors": [
         "joycean-scholar",
@@ -50,21 +75,92 @@
       ]
     },
     {
-      "id": "139.16-a835",
-      "line_number": 16,
-      "target_phrase": "her, bergs Iceland",
-      "annotation_text": "Mid-page polysemic discourse on page 139: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "139.14-90bc",
+      "line_number": 14,
+      "target_phrase": "night",
+      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "139.16-4968",
+      "line_number": 16,
+      "target_phrase": "waves",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "evangelists"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com",
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "139.23-d46f",
+      "line_number": 23,
+      "target_phrase": "night",
+      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "139.25-17f8",
+      "line_number": 25,
+      "target_phrase": "darkness",
+      "annotation_text": "The nocturnal oneiric dimension (darkness): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
       ],
       "contributors": [
         "joycean-scholar",

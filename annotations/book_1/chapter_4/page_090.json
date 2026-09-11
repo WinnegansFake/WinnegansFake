@@ -5,21 +5,22 @@
   "page_number": 90,
   "annotations": [
     {
-      "id": "090.01-69bb",
-      "line_number": 1,
-      "target_phrase": "whence this second",
-      "annotation_text": "Structural opening of Book 1, Chapter 4, page 90. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "090.08-990d",
+      "line_number": 8,
+      "target_phrase": "night",
+      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-1"
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +28,23 @@
       ]
     },
     {
-      "id": "090.17-a9be",
+      "id": "090.17-9cee",
       "line_number": 17,
-      "target_phrase": "Gemellus then said",
-      "annotation_text": "Mid-page polysemic discourse on page 90: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "target_phrase": "brother",
+      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"brother\".",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
       ],
       "contributors": [
         "joycean-scholar",
@@ -49,10 +52,57 @@
       ]
     },
     {
-      "id": "090.28-19d5",
+      "id": "090.19-e71b",
+      "line_number": 19,
+      "target_phrase": "wall",
+      "annotation_text": "The theme of the cosmic and comic Fall (wall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "090.27-5dcf",
+      "line_number": 27,
+      "target_phrase": "night",
+      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "090.28-951c",
       "line_number": 28,
       "target_phrase": "Bladyughfoulmoecklenburgwhurawhorascortastrumpapomanennykocksapastippata",
-      "annotation_text": "One of the ten 100-letter polysyllabic thunderclaps of Finnegans Wake, synthesizing words for thunder across world languages to signal the awe-inspiring divine voice and human institution of society.",
+      "annotation_text": "One of the ten 100-letter polysyllabic thunderclaps of Finnegans Wake, synthesizing words for thunder across ten world languages to signal the divine voice awakening primitive human institutions.",
       "categories": [
         "thunderclap",
         "vico",
@@ -64,7 +114,8 @@
       ],
       "sources": [
         "Vico, Giambattista. Scienza Nuova (On the Thunder and Law). https://plato.stanford.edu/entries/vico/",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Fweet.org: 100-letter Thunder Words. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

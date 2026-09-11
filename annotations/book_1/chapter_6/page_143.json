@@ -5,21 +5,23 @@
   "page_number": 143,
   "annotations": [
     {
-      "id": "143.03-17fa",
-      "line_number": 3,
-      "target_phrase": "human",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"human\".",
+      "id": "143.01-9ce1",
+      "line_number": 1,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
-        "vico",
-        "ricorso",
-        "philosophy-of-history"
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +29,47 @@
       ]
     },
     {
-      "id": "143.24-8620",
+      "id": "143.03-dd64",
+      "line_number": 3,
+      "target_phrase": "human",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"human\".",
+      "categories": [
+        "vico",
+        "ricorso",
+        "philosophy-of-history",
+        "giambattista-vico"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
+        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "143.24-c2a9",
       "line_number": 24,
       "target_phrase": "pepette",
-      "annotation_text": "Issy (Isolde), the daughter and split-personality siren looking into her looking-glass, represented in the motif \"pepette\".",
+      "annotation_text": "Issy (Isolde), the seductive daughter and split-personality siren conversing with her mirror reflection, represented in the motif \"pepette\".",
       "categories": [
         "issy",
         "mirror-twin",
-        "tristan-and-isolde"
+        "tristan-and-isolde",
+        "psychology"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Genetic Joyce Studies: Finnegans Wake Notebooks. https://www.geneticjoycestudies.org"
       ],
       "contributors": [
         "joycean-scholar",

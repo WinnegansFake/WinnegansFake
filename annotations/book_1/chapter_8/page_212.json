@@ -5,21 +5,23 @@
   "page_number": 212,
   "annotations": [
     {
-      "id": "212.14-d0f2",
-      "line_number": 14,
-      "target_phrase": "Izzy",
-      "annotation_text": "Issy (Isolde), the daughter and split-personality siren looking into her looking-glass, represented in the motif \"Izzy\".",
+      "id": "212.13-2237",
+      "line_number": 13,
+      "target_phrase": "daughter",
+      "annotation_text": "Issy (Isolde), the seductive daughter and split-personality siren conversing with her mirror reflection, represented in the motif \"daughter\".",
       "categories": [
         "issy",
         "mirror-twin",
-        "tristan-and-isolde"
+        "tristan-and-isolde",
+        "psychology"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Genetic Joyce Studies: Finnegans Wake Notebooks. https://www.geneticjoycestudies.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +29,47 @@
       ]
     },
     {
-      "id": "212.15-490e",
+      "id": "212.14-8763",
+      "line_number": 14,
+      "target_phrase": "Izzy",
+      "annotation_text": "Issy (Isolde), the seductive daughter and split-personality siren conversing with her mirror reflection, represented in the motif \"Izzy\".",
+      "categories": [
+        "issy",
+        "mirror-twin",
+        "tristan-and-isolde",
+        "psychology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Genetic Joyce Studies: Finnegans Wake Notebooks. https://www.geneticjoycestudies.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "212.15-596b",
       "line_number": 15,
       "target_phrase": "Shem",
-      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Shem\".",
+      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Shem\".",
       "categories": [
         "twins",
         "shem-and-shaun",
-        "brother-battle"
+        "brother-battle",
+        "dialectic"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
       ],
       "contributors": [
         "joycean-scholar",
@@ -49,10 +77,34 @@
       ]
     },
     {
-      "id": "212.18-54f2",
+      "id": "212.17-d6cd",
+      "line_number": 17,
+      "target_phrase": "tale of a tub",
+      "annotation_text": "Satirical and biographical presence of Jonathan Swift (tale of a tub): Dean of St. Patrick's Cathedral, his dual lovers Stella and Vanessa (mirroring Issy), and his ferocious political satires.",
+      "categories": [
+        "jonathan-swift",
+        "dublin-history",
+        "eighteenth-century",
+        "satire"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Swift, Jonathan. Gulliver's Travels. https://www.gutenberg.org/ebooks/829",
+        "Swift, Jonathan. A Tale of a Tub. https://www.gutenberg.org/ebooks/4737",
+        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "212.18-b7cc",
       "line_number": 18,
       "target_phrase": "envelope",
-      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (envelope), representing the genesis of writing, literature, and decipherment.",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (envelope), representing the genesis of writing, literature, and the archaeological decipherment of history.",
       "categories": [
         "the-letter",
         "textual-criticism",
@@ -64,7 +116,8 @@
       ],
       "sources": [
         "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net"
       ],
       "contributors": [
         "joycean-scholar",

@@ -5,21 +5,23 @@
   "page_number": 587,
   "annotations": [
     {
-      "id": "587.01-b4e7",
-      "line_number": 1,
-      "target_phrase": "waker oats livery.",
-      "annotation_text": "Structural opening of Book 3, Chapter 4, page 587. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "587.13-b92d",
+      "line_number": 13,
+      "target_phrase": "wall",
+      "annotation_text": "The theme of the cosmic and comic Fall (wall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-3"
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +29,22 @@
       ]
     },
     {
-      "id": "587.16-abab",
-      "line_number": 16,
-      "target_phrase": "refugee, didn't Jimmy?",
-      "annotation_text": "Mid-page polysemic discourse on page 587: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "587.14-2bf1",
+      "line_number": 14,
+      "target_phrase": "bar",
+      "annotation_text": "The Twelve Jurors / Tavern Drinkers (bar): representing the chorus of public opinion, the twelve signs of the Zodiac, the Apostles, and the customers gossiping in HCE's Chapelizod pub.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
       ],
       "contributors": [
         "joycean-scholar",
@@ -52,18 +55,20 @@
       "id": "587.20-54fd",
       "line_number": 20,
       "target_phrase": "sutton",
-      "annotation_text": "Dublin geographical anchor (sutton): grounding the cosmic oneiric myth in the tangible stone, water, and hills of County Dublin and the River Liffey.",
+      "annotation_text": "Dublin geographical anchor (sutton): grounding the cosmic nocturnal dream in the tangible stone, water, bridges, and hills of Dublin and the River Liffey.",
       "categories": [
         "dublin-topography",
         "geography",
-        "landmarks"
+        "landmarks",
+        "urban-history"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
-        "Dublin Historical Record. https://www.jstor.org/journal/dublhiste"
+        "Dublin Historical Record (JSTOR). https://www.jstor.org/journal/dublhiste",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [
         "joycean-scholar",

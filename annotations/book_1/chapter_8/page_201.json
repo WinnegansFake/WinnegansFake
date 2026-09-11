@@ -19,7 +19,8 @@
       ],
       "sources": [
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -30,18 +31,20 @@
       "id": "201.15-8994",
       "line_number": 15,
       "target_phrase": "Clontarf",
-      "annotation_text": "Dublin geographical anchor (Clontarf): grounding the cosmic oneiric myth in the tangible stone, water, and hills of County Dublin and the River Liffey.",
+      "annotation_text": "Dublin geographical anchor (Clontarf): grounding the cosmic nocturnal dream in the tangible stone, water, bridges, and hills of Dublin and the River Liffey.",
       "categories": [
         "dublin-topography",
         "geography",
-        "landmarks"
+        "landmarks",
+        "urban-history"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
-        "Dublin Historical Record. https://www.jstor.org/journal/dublhiste"
+        "Dublin Historical Record (JSTOR). https://www.jstor.org/journal/dublhiste",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -63,7 +66,8 @@
       ],
       "sources": [
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

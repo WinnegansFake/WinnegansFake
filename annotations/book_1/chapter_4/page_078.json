@@ -19,7 +19,8 @@
       ],
       "sources": [
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -30,18 +31,20 @@
       "id": "078.10-b14c",
       "line_number": 10,
       "target_phrase": "divine",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"divine\".",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"divine\".",
       "categories": [
         "vico",
         "ricorso",
-        "philosophy-of-history"
+        "philosophy-of-history",
+        "giambattista-vico"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
+        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -63,7 +66,8 @@
       ],
       "sources": [
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

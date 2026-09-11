@@ -5,21 +5,23 @@
   "page_number": 385,
   "annotations": [
     {
-      "id": "385.01-90a1",
-      "line_number": 1,
-      "target_phrase": "cuddling kiddling her^",
-      "annotation_text": "Structural opening of Book 2, Chapter 4, page 385. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "385.07-5ad9",
+      "line_number": 7,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-2"
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +29,23 @@
       ]
     },
     {
-      "id": "385.17-c785",
-      "line_number": 17,
-      "target_phrase": "yore. Matt Marcus,",
-      "annotation_text": "Mid-page polysemic discourse on page 385: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "385.24-2a96",
+      "line_number": 24,
+      "target_phrase": "four",
+      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -52,7 +56,7 @@
       "id": "385.31-e15a",
       "line_number": 31,
       "target_phrase": "Ossian",
-      "annotation_text": "Mythological and folkloric archetype (Ossian): invoking the ancient Fianna cycle, heroic legend, and the patron saints of early Celtic Christianity.",
+      "annotation_text": "Mythological and folkloric archetype (Ossian): invoking the ancient Fianna cycle, heroic legends of Ireland, and the patron saints of early Celtic Christianity.",
       "categories": [
         "irish-mythology",
         "celtic-lore",
@@ -64,7 +68,8 @@
       ],
       "sources": [
         "MacKillop, James. Dictionary of Celtic Mythology. https://www.oxfordreference.com",
-        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465"
+        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465",
+        "Standish O'Grady. Silva Gadelica. https://archive.org/details/silvagadelicaiix01ograuoft"
       ],
       "contributors": [
         "joycean-scholar",

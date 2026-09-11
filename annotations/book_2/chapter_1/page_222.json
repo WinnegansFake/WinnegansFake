@@ -5,29 +5,7 @@
   "page_number": 222,
   "annotations": [
     {
-      "id": "222.01-92c5",
-      "line_number": 1,
-      "target_phrase": "ment pit. Accidental",
-      "annotation_text": "Structural opening of Book 2, Chapter 1, page 222. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
-      "categories": [
-        "structural",
-        "narrative-strata",
-        "book-2"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "222.04-a054",
+      "id": "222.04-4384",
       "line_number": 4,
       "target_phrase": "exodus",
       "annotation_text": "Liturgical or ecclesiastical allusion (exodus): weaving Catholic ritual, Latin prayers, and sacramental language into the domestic nighttime dream.",
@@ -42,7 +20,8 @@
       ],
       "sources": [
         "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
-        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/"
+        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/",
+        "Frazer, Sir James George. Folk-Lore in the Old Testament. https://archive.org/details/folkloreinoldtes01frazuoft"
       ],
       "contributors": [
         "joycean-scholar",
@@ -50,21 +29,22 @@
       ]
     },
     {
-      "id": "222.15-989a",
-      "line_number": 15,
-      "target_phrase": "Wedding Neid Moorning",
-      "annotation_text": "Mid-page polysemic discourse on page 222: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "222.08-5bf0",
+      "line_number": 8,
+      "target_phrase": "bottle",
+      "annotation_text": "The Twelve Jurors / Tavern Drinkers (bottle): representing the chorus of public opinion, the twelve signs of the Zodiac, the Apostles, and the customers gossiping in HCE's Chapelizod pub.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
       ],
       "contributors": [
         "joycean-scholar",

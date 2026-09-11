@@ -5,21 +5,22 @@
   "page_number": 249,
   "annotations": [
     {
-      "id": "249.01-3a3a",
-      "line_number": 1,
-      "target_phrase": "prawn while squirt",
-      "annotation_text": "Structural opening of Book 2, Chapter 1, page 249. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "249.02-a94b",
+      "line_number": 2,
+      "target_phrase": "sleep",
+      "annotation_text": "The nocturnal oneiric dimension (sleep): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-2"
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,43 +28,23 @@
       ]
     },
     {
-      "id": "249.14-1fbf",
-      "line_number": 14,
-      "target_phrase": "keep your other",
-      "annotation_text": "Mid-page polysemic discourse on page 249: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
-      "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "249.21-326f",
+      "id": "249.21-5ef7",
       "line_number": 21,
       "target_phrase": "shem",
-      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"shem\".",
+      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"shem\".",
       "categories": [
         "twins",
         "shem-and-shaun",
-        "brother-battle"
+        "brother-battle",
+        "dialectic"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
       ],
       "contributors": [
         "joycean-scholar",

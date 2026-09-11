@@ -12,7 +12,8 @@
       "categories": [
         "hce",
         "leitmotif",
-        "protagonist"
+        "protagonist",
+        "archetype"
       ],
       "cross_references": [
         "003.01"
@@ -20,7 +21,8 @@
       "sources": [
         "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
         "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
-        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -35,7 +37,8 @@
       "categories": [
         "hce",
         "leitmotif",
-        "protagonist"
+        "protagonist",
+        "archetype"
       ],
       "cross_references": [
         "003.01"
@@ -43,7 +46,8 @@
       "sources": [
         "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
         "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
-        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -54,18 +58,20 @@
       "id": "073.12-aae4",
       "line_number": 12,
       "target_phrase": "heroic",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"heroic\".",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"heroic\".",
       "categories": [
         "vico",
         "ricorso",
-        "philosophy-of-history"
+        "philosophy-of-history",
+        "giambattista-vico"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
+        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -73,21 +79,70 @@
       ]
     },
     {
-      "id": "073.25-cec9",
+      "id": "073.14-4488",
+      "line_number": 14,
+      "target_phrase": "fall",
+      "annotation_text": "The theme of the cosmic and comic Fall (fall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "073.22-62fd",
+      "line_number": 22,
+      "target_phrase": "Bar",
+      "annotation_text": "The Twelve Jurors / Tavern Drinkers (Bar): representing the chorus of public opinion, the twelve signs of the Zodiac, the Apostles, and the customers gossiping in HCE's Chapelizod pub.",
+      "categories": [
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "073.25-3d05",
       "line_number": 25,
       "target_phrase": "Howth",
-      "annotation_text": "Dublin geographical anchor (Howth): grounding the cosmic oneiric myth in the tangible stone, water, and hills of County Dublin and the River Liffey.",
+      "annotation_text": "Dublin geographical anchor (Howth): grounding the cosmic nocturnal dream in the tangible stone, water, bridges, and hills of Dublin and the River Liffey.",
       "categories": [
         "dublin-topography",
         "geography",
-        "landmarks"
+        "landmarks",
+        "urban-history"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
-        "Dublin Historical Record. https://www.jstor.org/journal/dublhiste"
+        "Dublin Historical Record (JSTOR). https://www.jstor.org/journal/dublhiste",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -95,21 +150,23 @@
       ]
     },
     {
-      "id": "073.26-fc01",
+      "id": "073.26-1dfd",
       "line_number": 26,
       "target_phrase": "human",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"human\".",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"human\".",
       "categories": [
         "vico",
         "ricorso",
-        "philosophy-of-history"
+        "philosophy-of-history",
+        "giambattista-vico"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
+        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
       ],
       "contributors": [
         "joycean-scholar",

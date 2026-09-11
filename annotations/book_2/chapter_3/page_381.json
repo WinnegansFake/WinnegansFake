@@ -19,7 +19,8 @@
       ],
       "sources": [
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,7 +28,31 @@
       ]
     },
     {
-      "id": "381.17-e032",
+      "id": "381.05-1d30",
+      "line_number": 5,
+      "target_phrase": "Tuatha",
+      "annotation_text": "Mythological and folkloric archetype (Tuatha): invoking the ancient Fianna cycle, heroic legends of Ireland, and the patron saints of early Celtic Christianity.",
+      "categories": [
+        "irish-mythology",
+        "celtic-lore",
+        "folklore",
+        "saints"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "MacKillop, James. Dictionary of Celtic Mythology. https://www.oxfordreference.com",
+        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465",
+        "Standish O'Grady. Silva Gadelica. https://archive.org/details/silvagadelicaiix01ograuoft"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "381.17-8c7a",
       "line_number": 17,
       "target_phrase": "Dreans Ergen Adams",
       "annotation_text": "Mid-page polysemic discourse on page 381: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
@@ -41,7 +66,8 @@
       ],
       "sources": [
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

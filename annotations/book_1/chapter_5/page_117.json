@@ -5,21 +5,22 @@
   "page_number": 117,
   "annotations": [
     {
-      "id": "117.01-c0a0",
+      "id": "117.01-bd0f",
       "line_number": 1,
-      "target_phrase": "ages. Thief night,",
-      "annotation_text": "Structural opening of Book 1, Chapter 5, page 117. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "target_phrase": "night",
+      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-1"
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +28,23 @@
       ]
     },
     {
-      "id": "117.16-46a5",
-      "line_number": 16,
-      "target_phrase": "thee, Sitys, talkatalka",
-      "annotation_text": "Mid-page polysemic discourse on page 117: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "117.04-7aa7",
+      "line_number": 4,
+      "target_phrase": "daughter",
+      "annotation_text": "Issy (Isolde), the seductive daughter and split-personality siren conversing with her mirror reflection, represented in the motif \"daughter\".",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "issy",
+        "mirror-twin",
+        "tristan-and-isolde",
+        "psychology"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
+        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Genetic Joyce Studies: Finnegans Wake Notebooks. https://www.geneticjoycestudies.org"
       ],
       "contributors": [
         "joycean-scholar",

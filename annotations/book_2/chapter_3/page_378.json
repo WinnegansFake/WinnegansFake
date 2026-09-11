@@ -5,21 +5,23 @@
   "page_number": 378,
   "annotations": [
     {
-      "id": "378.01-ce78",
-      "line_number": 1,
-      "target_phrase": "ours. your balloons,",
-      "annotation_text": "Structural opening of Book 2, Chapter 3, page 378. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "378.08-a229",
+      "line_number": 8,
+      "target_phrase": "lewdningbluebolteredallucktruckalltraumconductor",
+      "annotation_text": "One of the ten 100-letter polysyllabic thunderclaps of Finnegans Wake, synthesizing words for thunder across ten world languages to signal the divine voice awakening primitive human institutions.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-2"
+        "thunderclap",
+        "vico",
+        "voice-of-god",
+        "onomatopoeia"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Vico, Giambattista. Scienza Nuova (On the Thunder and Law). https://plato.stanford.edu/entries/vico/",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Fweet.org: 100-letter Thunder Words. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -30,41 +32,20 @@
       "id": "378.10-d2be",
       "line_number": 10,
       "target_phrase": "mark",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
       "categories": [
         "mamalujo",
         "four-annalists",
         "provinces-of-ireland",
-        "gospels"
+        "evangelists"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "378.16-3a5d",
-      "line_number": 16,
-      "target_phrase": "Palace agus Walsall",
-      "annotation_text": "Mid-page polysemic discourse on page 378: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
-      "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "The Four Gospels (King James Bible). https://www.biblegateway.com",
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
       ],
       "contributors": [
         "joycean-scholar",

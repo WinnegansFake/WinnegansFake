@@ -5,21 +5,22 @@
   "page_number": 324,
   "annotations": [
     {
-      "id": "324.01-1d6d",
-      "line_number": 1,
-      "target_phrase": "first foetotype (Trolldedroll,",
-      "annotation_text": "Structural opening of Book 2, Chapter 3, page 324. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "324.12-0d4a",
+      "line_number": 12,
+      "target_phrase": "set",
+      "annotation_text": "Ancient Egyptian eschatology (set): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-2"
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +28,22 @@
       ]
     },
     {
-      "id": "324.14-b1c0",
-      "line_number": 14,
-      "target_phrase": "Rowdiose wodhalooing. Theirs",
-      "annotation_text": "Mid-page polysemic discourse on page 324: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "324.13-76f0",
+      "line_number": 13,
+      "target_phrase": "set",
+      "annotation_text": "Ancient Egyptian eschatology (set): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
       ],
       "contributors": [
         "joycean-scholar",
@@ -52,18 +54,20 @@
       "id": "324.16-ec22",
       "line_number": 16,
       "target_phrase": "Clontarf",
-      "annotation_text": "Dublin geographical anchor (Clontarf): grounding the cosmic oneiric myth in the tangible stone, water, and hills of County Dublin and the River Liffey.",
+      "annotation_text": "Dublin geographical anchor (Clontarf): grounding the cosmic nocturnal dream in the tangible stone, water, bridges, and hills of Dublin and the River Liffey.",
       "categories": [
         "dublin-topography",
         "geography",
-        "landmarks"
+        "landmarks",
+        "urban-history"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
-        "Dublin Historical Record. https://www.jstor.org/journal/dublhiste"
+        "Dublin Historical Record (JSTOR). https://www.jstor.org/journal/dublhiste",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [
         "joycean-scholar",

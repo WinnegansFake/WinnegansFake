@@ -8,18 +8,20 @@
       "id": "420.14-e64a",
       "line_number": 14,
       "target_phrase": "Shaun",
-      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Shaun\".",
+      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Shaun\".",
       "categories": [
         "twins",
         "shem-and-shaun",
-        "brother-battle"
+        "brother-battle",
+        "dialectic"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
       ],
       "contributors": [
         "joycean-scholar",
@@ -34,7 +36,8 @@
       "categories": [
         "alp",
         "river-liffey",
-        "feminine-principle"
+        "feminine-principle",
+        "waters"
       ],
       "cross_references": [
         "003.01"
@@ -42,7 +45,8 @@
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -53,18 +57,20 @@
       "id": "420.17-2290",
       "line_number": 17,
       "target_phrase": "11 32",
-      "annotation_text": "Joyce's recurring mystical and historical number (11 32): 1132 (the date of St. Malachy, Dublin's fall, and mathematical doubling 566 x 2) signifying resurrection and human history.",
+      "annotation_text": "Joyce's recurring mystical or structural number (11 32): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
         "numerology",
         "cabala",
-        "leitmotif"
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",

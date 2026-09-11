@@ -5,36 +5,15 @@
   "page_number": 512,
   "annotations": [
     {
-      "id": "512.01-3b32",
-      "line_number": 1,
-      "target_phrase": "Lollgoll! don't soye",
-      "annotation_text": "Structural opening of Book 3, Chapter 3, page 512. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
-      "categories": [
-        "structural",
-        "narrative-strata",
-        "book-3"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "512.05-2a11",
+      "id": "512.05-ef5a",
       "line_number": 5,
       "target_phrase": "liffey",
       "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"liffey\".",
       "categories": [
         "alp",
         "river-liffey",
-        "feminine-principle"
+        "feminine-principle",
+        "waters"
       ],
       "cross_references": [
         "003.01"
@@ -42,7 +21,8 @@
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -50,21 +30,22 @@
       ]
     },
     {
-      "id": "512.14-668d",
-      "line_number": 14,
-      "target_phrase": "absquelitteris puttagonnianne herreraism",
-      "annotation_text": "Mid-page polysemic discourse on page 512: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "512.20-f4fe",
+      "line_number": 20,
+      "target_phrase": "bar",
+      "annotation_text": "The Twelve Jurors / Tavern Drinkers (bar): representing the chorus of public opinion, the twelve signs of the Zodiac, the Apostles, and the customers gossiping in HCE's Chapelizod pub.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
       ],
       "contributors": [
         "joycean-scholar",

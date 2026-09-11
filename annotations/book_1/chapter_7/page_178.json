@@ -5,21 +5,22 @@
   "page_number": 178,
   "annotations": [
     {
-      "id": "178.01-c0ad",
-      "line_number": 1,
-      "target_phrase": "lionses Lumdrum hivanhoesed",
-      "annotation_text": "Structural opening of Book 1, Chapter 7, page 178. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "178.21-5f48",
+      "line_number": 21,
+      "target_phrase": "set",
+      "annotation_text": "Ancient Egyptian eschatology (set): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-1"
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +28,23 @@
       ]
     },
     {
-      "id": "178.17-0538",
-      "line_number": 17,
-      "target_phrase": "natural school treat",
-      "annotation_text": "Mid-page polysemic discourse on page 178: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "178.24-eb57",
+      "line_number": 24,
+      "target_phrase": "telescope",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (telescope), dramatizing imperial warfare as domestic quarrel.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
+        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
       ],
       "contributors": [
         "joycean-scholar",

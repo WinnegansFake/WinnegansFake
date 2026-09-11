@@ -5,10 +5,34 @@
   "page_number": 176,
   "annotations": [
     {
-      "id": "176.05-a299",
+      "id": "176.04-35cd",
+      "line_number": 4,
+      "target_phrase": "Wall",
+      "annotation_text": "The theme of the cosmic and comic Fall (Wall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "176.05-20a5",
       "line_number": 5,
       "target_phrase": "Letter",
-      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (Letter), representing the genesis of writing, literature, and decipherment.",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (Letter), representing the genesis of writing, literature, and the archaeological decipherment of history.",
       "categories": [
         "the-letter",
         "textual-criticism",
@@ -20,7 +44,8 @@
       ],
       "sources": [
         "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,10 +53,10 @@
       ]
     },
     {
-      "id": "176.09-502b",
+      "id": "176.09-39e7",
       "line_number": 9,
       "target_phrase": "Waterloo",
-      "annotation_text": "The Wellington/Waterloo battlefield motif centered in the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Waterloo), dramatizing imperial warfare as domestic quarrel.",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered on the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Waterloo), dramatizing imperial warfare as domestic quarrel.",
       "categories": [
         "wellington",
         "waterloo",
@@ -43,7 +68,8 @@
       ],
       "sources": [
         "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
-        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135"
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
+        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
       ],
       "contributors": [
         "joycean-scholar",

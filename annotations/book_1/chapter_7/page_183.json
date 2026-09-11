@@ -5,21 +5,24 @@
   "page_number": 183,
   "annotations": [
     {
-      "id": "183.01-ac0a",
-      "line_number": 1,
-      "target_phrase": "hydrants zolfor scoppialamina",
-      "annotation_text": "Structural opening of Book 1, Chapter 7, page 183. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "183.22-3721",
+      "line_number": 22,
+      "target_phrase": "washerwomen",
+      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"washerwomen\".",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-1"
+        "alp",
+        "river-liffey",
+        "feminine-principle",
+        "waters"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +30,23 @@
       ]
     },
     {
-      "id": "183.17-0517",
-      "line_number": 17,
-      "target_phrase": "intentions, curried notes,",
-      "annotation_text": "Mid-page polysemic discourse on page 183: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "183.29-951b",
+      "line_number": 29,
+      "target_phrase": "broken",
+      "annotation_text": "The theme of the cosmic and comic Fall (broken): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
       ],
       "contributors": [
         "joycean-scholar",

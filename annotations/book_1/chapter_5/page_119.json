@@ -12,7 +12,8 @@
       "categories": [
         "hce",
         "leitmotif",
-        "protagonist"
+        "protagonist",
+        "archetype"
       ],
       "cross_references": [
         "003.01"
@@ -20,7 +21,8 @@
       "sources": [
         "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
         "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
-        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -35,7 +37,8 @@
       "categories": [
         "alp",
         "river-liffey",
-        "feminine-principle"
+        "feminine-principle",
+        "waters"
       ],
       "cross_references": [
         "003.01"
@@ -43,7 +46,8 @@
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -54,7 +58,7 @@
       "id": "119.20-3e86",
       "line_number": 20,
       "target_phrase": "hen",
-      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (hen), representing the genesis of writing, literature, and decipherment.",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (hen), representing the genesis of writing, literature, and the archaeological decipherment of history.",
       "categories": [
         "the-letter",
         "textual-criticism",
@@ -66,7 +70,8 @@
       ],
       "sources": [
         "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net"
       ],
       "contributors": [
         "joycean-scholar",
@@ -77,18 +82,20 @@
       "id": "119.23-34b0",
       "line_number": 23,
       "target_phrase": "1132",
-      "annotation_text": "Joyce's recurring mystical and historical number (1132): 1132 (the date of St. Malachy, Dublin's fall, and mathematical doubling 566 x 2) signifying resurrection and human history.",
+      "annotation_text": "Joyce's recurring mystical or structural number (1132): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
       "categories": [
         "numerology",
         "cabala",
-        "leitmotif"
+        "leitmotif",
+        "symbolism"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
       ],
       "contributors": [
         "joycean-scholar",

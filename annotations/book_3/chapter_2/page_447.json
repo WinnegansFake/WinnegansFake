@@ -8,19 +8,20 @@
       "id": "447.12-a62b",
       "line_number": 12,
       "target_phrase": "Luke",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
       "categories": [
         "mamalujo",
         "four-annalists",
         "provinces-of-ireland",
-        "gospels"
+        "evangelists"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+        "The Four Gospels (King James Bible). https://www.biblegateway.com",
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
       ],
       "contributors": [
         "joycean-scholar",
@@ -31,18 +32,20 @@
       "id": "447.14-c3e9",
       "line_number": 14,
       "target_phrase": "Castleknock",
-      "annotation_text": "Dublin geographical anchor (Castleknock): grounding the cosmic oneiric myth in the tangible stone, water, and hills of County Dublin and the River Liffey.",
+      "annotation_text": "Dublin geographical anchor (Castleknock): grounding the cosmic nocturnal dream in the tangible stone, water, bridges, and hills of Dublin and the River Liffey.",
       "categories": [
         "dublin-topography",
         "geography",
-        "landmarks"
+        "landmarks",
+        "urban-history"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
         "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
-        "Dublin Historical Record. https://www.jstor.org/journal/dublhiste"
+        "Dublin Historical Record (JSTOR). https://www.jstor.org/journal/dublhiste",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [
         "joycean-scholar",

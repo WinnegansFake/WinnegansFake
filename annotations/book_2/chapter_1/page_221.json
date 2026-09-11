@@ -5,7 +5,30 @@
   "page_number": 221,
   "annotations": [
     {
-      "id": "221.01-0723",
+      "id": "221.01-a71e",
+      "line_number": 1,
+      "target_phrase": "CUSTOMERS",
+      "annotation_text": "The Twelve Jurors / Tavern Drinkers (CUSTOMERS): representing the chorus of public opinion, the twelve signs of the Zodiac, the Apostles, and the customers gossiping in HCE's Chapelizod pub.",
+      "categories": [
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "221.01-1cbb",
       "line_number": 1,
       "target_phrase": "CUSTOMERS (Components Afterhour",
       "annotation_text": "Structural opening of Book 2, Chapter 1, page 221. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
@@ -19,7 +42,8 @@
       ],
       "sources": [
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,7 +51,7 @@
       ]
     },
     {
-      "id": "221.16-6048",
+      "id": "221.16-fd70",
       "line_number": 16,
       "target_phrase": "t-^^ glaning mangrovemazes",
       "annotation_text": "Mid-page polysemic discourse on page 221: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
@@ -41,7 +65,8 @@
       ],
       "sources": [
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

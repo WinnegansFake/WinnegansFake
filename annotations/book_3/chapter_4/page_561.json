@@ -5,21 +5,24 @@
   "page_number": 561,
   "annotations": [
     {
-      "id": "561.01-8d07",
-      "line_number": 1,
-      "target_phrase": "reachy skeer Still",
-      "annotation_text": "Structural opening of Book 3, Chapter 4, page 561. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "561.03-e97a",
+      "line_number": 3,
+      "target_phrase": "Porter",
+      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"Porter\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-3"
+        "hce",
+        "leitmotif",
+        "protagonist",
+        "archetype"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -27,21 +30,23 @@
       ]
     },
     {
-      "id": "561.16-4c64",
-      "line_number": 16,
-      "target_phrase": "that legend golden.",
-      "annotation_text": "Mid-page polysemic discourse on page 561: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "561.14-63a9",
+      "line_number": 14,
+      "target_phrase": "mirror",
+      "annotation_text": "Issy (Isolde), the seductive daughter and split-personality siren conversing with her mirror reflection, represented in the motif \"mirror\".",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "issy",
+        "mirror-twin",
+        "tristan-and-isolde",
+        "psychology"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
+        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Genetic Joyce Studies: Finnegans Wake Notebooks. https://www.geneticjoycestudies.org"
       ],
       "contributors": [
         "joycean-scholar",
