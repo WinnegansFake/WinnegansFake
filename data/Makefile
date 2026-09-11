@@ -1,3 +1,11 @@
 finneganswake00joycuoft.epub:
-	wget https://archive.org/download/finneganswake00joycuoft/finneganswake00joycuoft.epub
-	unzip finneganswake00joycuoft.epub
+	@if command -v curl > /dev/null; then \
+		curl -fSL -o $@ "https://archive.org/download/finneganswake00joycuoft/finneganswake00joycuoft.epub"; \
+	elif command -v wget > /dev/null; then \
+		wget -O $@ "https://archive.org/download/finneganswake00joycuoft/finneganswake00joycuoft.epub"; \
+	else \
+		echo "Error: Neither curl nor wget available."; exit 1; \
+	fi
+	@if command -v unzip > /dev/null; then \
+		unzip -q -o $@ 2>/dev/null || true; \
+	fi

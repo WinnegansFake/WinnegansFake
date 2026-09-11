@@ -37,6 +37,11 @@ jobs:
       - name: Build Workspace Packages
         run: pnpm build:packages
 
+      - name: Fetch Source EPUB (for integration tests)
+        run: |
+          mkdir -p data
+          curl -fSL --retry 3 --connect-timeout 10 -o data/finneganswake00joycuoft.epub "https://archive.org/download/finneganswake00joycuoft/finneganswake00joycuoft.epub" || echo "Archive.org download failed; tests will use offline fixture fallback"
+
       - name: Run Vitest Suite
         run: pnpm test
 
