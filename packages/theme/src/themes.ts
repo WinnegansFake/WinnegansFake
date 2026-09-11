@@ -335,6 +335,102 @@ export const BUILTIN_THEMES: ReadingTheme[] = [
       selectionText: '#282828',
     },
   },
+
+  // 15. Catppuccin Latte (Soothing Warm Light)
+  {
+    id: 'catppuccin-latte',
+    name: 'Catppuccin Latte',
+    description: 'Catppuccin’s light flavor: warm base (#eff1f5) background, text (#4c4f69), and lavender (#7287fd) accents.',
+    category: 'catppuccin',
+    isDark: false,
+    colors: {
+      bg: '#eff1f5', // base
+      text: '#4c4f69', // text
+      textMuted: '#6c6f85', // subtext0
+      cardBg: '#e6e9ef', // mantle
+      border: '#ccd0da', // surface0
+      accent: '#7287fd', // lavender
+      accentHover: '#1e66f5', // blue
+      ring: '#8839ef', // mauve
+      readerBg: '#eff1f5',
+      readerText: '#4c4f69',
+      readerCoord: '#9ca0b0', // overlay0
+      selectionBg: '#ccd0da', // surface0
+      selectionText: '#4c4f69',
+    },
+  },
+
+  // 16. Catppuccin Frappé (Low-contrast Dark)
+  {
+    id: 'catppuccin-frappe',
+    name: 'Catppuccin Frappé',
+    description: 'Catppuccin’s balanced dark flavor: muted base (#303446) background, text (#c6d0f5), and mauve (#ca9ee6) accents.',
+    category: 'catppuccin',
+    isDark: true,
+    colors: {
+      bg: '#303446', // base
+      text: '#c6d0f5', // text
+      textMuted: '#a5adce', // subtext0
+      cardBg: '#292c3c', // mantle
+      border: '#414559', // surface0
+      accent: '#ca9ee6', // mauve
+      accentHover: '#8caaee', // blue
+      ring: '#babbf1', // lavender
+      readerBg: '#303446',
+      readerText: '#c6d0f5',
+      readerCoord: '#737994', // overlay0
+      selectionBg: '#414559', // surface0
+      selectionText: '#c6d0f5',
+    },
+  },
+
+  // 17. Catppuccin Macchiato (Medium-contrast Dark)
+  {
+    id: 'catppuccin-macchiato',
+    name: 'Catppuccin Macchiato',
+    description: 'Catppuccin’s medium dark flavor: rich base (#24273a) background, text (#cad3f5), and lavender (#b7bdf8) accents.',
+    category: 'catppuccin',
+    isDark: true,
+    colors: {
+      bg: '#24273a', // base
+      text: '#cad3f5', // text
+      textMuted: '#a5adcb', // subtext0
+      cardBg: '#1e2030', // mantle
+      border: '#363a4f', // surface0
+      accent: '#c6a0f6', // mauve
+      accentHover: '#8aadf4', // blue
+      ring: '#b7bdf8', // lavender
+      readerBg: '#24273a',
+      readerText: '#cad3f5',
+      readerCoord: '#6e738d', // overlay0
+      selectionBg: '#363a4f', // surface0
+      selectionText: '#cad3f5',
+    },
+  },
+
+  // 18. Catppuccin Mocha (High-contrast Dark)
+  {
+    id: 'catppuccin-mocha',
+    name: 'Catppuccin Mocha',
+    description: 'Catppuccin’s deep dark flavor: base (#1e1e2e) background, crisp text (#cdd6f4), and mauve (#cba6f7) accents.',
+    category: 'catppuccin',
+    isDark: true,
+    colors: {
+      bg: '#1e1e2e', // base
+      text: '#cdd6f4', // text
+      textMuted: '#a6adc8', // subtext0
+      cardBg: '#181825', // mantle
+      border: '#313244', // surface0
+      accent: '#cba6f7', // mauve
+      accentHover: '#89b4fa', // blue
+      ring: '#b4befe', // lavender
+      readerBg: '#1e1e2e',
+      readerText: '#cdd6f4',
+      readerCoord: '#6c7086', // overlay0
+      selectionBg: '#313244', // surface0
+      selectionText: '#cdd6f4',
+    },
+  },
 ];
 
 export const DEFAULT_THEME_ID = 'slate-midnight';

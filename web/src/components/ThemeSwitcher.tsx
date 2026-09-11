@@ -15,6 +15,7 @@ import {
   Trash2,
   Compass,
   Flame,
+  Coffee,
 } from 'lucide-react';
 import { useTheme } from './ThemeContext';
 import { ReadingTheme, ThemeCategory } from '@winnegans/theme';
@@ -55,6 +56,7 @@ export function ThemeSwitcher() {
     { id: 'oled', label: 'Obsidian OLED', icon: Smartphone },
     { id: 'solarized', label: 'Solarized', icon: Compass },
     { id: 'gruvbox', label: 'Gruvbox', icon: Flame },
+    { id: 'catppuccin', label: 'Catppuccin', icon: Coffee },
     { id: 'dark-red', label: 'Dark Red Night', icon: Moon },
     { id: 'dark-ambient', label: 'Dark Ambient', icon: Eye },
     { id: 'fun', label: 'Fun & Creative', icon: Sparkles },

@@ -108,6 +108,38 @@ describe('@winnegans/theme Package', () => {
     expect(gruvLight.colors.readerText.toLowerCase()).toBe('#282828');
   });
 
+  it('should include all 4 Catppuccin flavors (Latte, Frappé, Macchiato, Mocha)', () => {
+    const latte = getThemeById('catppuccin-latte');
+    expect(latte).toBeDefined();
+    expect(latte.category).toBe('catppuccin');
+    expect(latte.isDark).toBe(false);
+    expect(latte.colors.bg.toLowerCase()).toBe('#eff1f5'); // base
+    expect(latte.colors.cardBg.toLowerCase()).toBe('#e6e9ef'); // mantle
+    expect(latte.colors.text.toLowerCase()).toBe('#4c4f69'); // text
+
+    const frappe = getThemeById('catppuccin-frappe');
+    expect(frappe).toBeDefined();
+    expect(frappe.category).toBe('catppuccin');
+    expect(frappe.isDark).toBe(true);
+    expect(frappe.colors.bg.toLowerCase()).toBe('#303446');
+    expect(frappe.colors.text.toLowerCase()).toBe('#c6d0f5');
+
+    const macchiato = getThemeById('catppuccin-macchiato');
+    expect(macchiato).toBeDefined();
+    expect(macchiato.category).toBe('catppuccin');
+    expect(macchiato.isDark).toBe(true);
+    expect(macchiato.colors.bg.toLowerCase()).toBe('#24273a');
+    expect(macchiato.colors.text.toLowerCase()).toBe('#cad3f5');
+
+    const mocha = getThemeById('catppuccin-mocha');
+    expect(mocha).toBeDefined();
+    expect(mocha.category).toBe('catppuccin');
+    expect(mocha.isDark).toBe(true);
+    expect(mocha.colors.bg.toLowerCase()).toBe('#1e1e2e');
+    expect(mocha.colors.text.toLowerCase()).toBe('#cdd6f4');
+    expect(mocha.colors.accent.toLowerCase()).toBe('#cba6f7');
+  });
+
   it('should allow building a custom theme with overrides', () => {
     const custom = createCustomTheme('obsidian-oled', 'My Custom Ruby OLED', {
       accent: '#ff0055',
