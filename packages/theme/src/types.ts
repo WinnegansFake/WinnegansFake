@@ -76,3 +76,14 @@ export interface BookmarkCookiePayload {
   duration: CookieDuration;
   customDays?: number;
 }
+
+export interface EpubCookiePayload {
+  version: '1.0.0';
+  location: string; // URL, file path, or file name
+  sourceType?: 'url' | 'local-path' | 'file-name';
+  fileName?: string;
+  savedAt: string; // ISO timestamp
+  duration: CookieDuration;
+  customDays?: number;
+}
+

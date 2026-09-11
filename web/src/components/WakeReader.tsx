@@ -43,7 +43,10 @@ import {
   RotateCcw,
   FolderTree,
   GraduationCap,
-  BookmarkCheck
+  BookmarkCheck,
+  Link2,
+  FolderOpen,
+  Settings,
 } from 'lucide-react';
 import {
   getBasePath,
@@ -67,6 +70,15 @@ import { AnnotationHoverPopup, HoverPopupData } from './AnnotationHoverPopup';
 import { segmentAnnotatedLine } from '@/lib/lineAnnotator';
 import { useBookmarks } from './BookmarkContext';
 import { BookmarksModal } from './BookmarksModal';
+import {
+  readEpubCookie,
+  writeEpubCookie,
+  deleteEpubCookie,
+  EpubCookiePayload,
+  CookieDuration,
+  getDurationLabel,
+} from '@winnegans/theme';
+import { EpubSourceModal } from './EpubSourceModal';
 
 export function WakeReader() {
   const [currentPage, setCurrentPage] = useState<number>(3);
@@ -78,6 +90,9 @@ export function WakeReader() {
   const [epubFileName, setEpubFileName] = useState<string>('');
   const [rawHtml, setRawHtml] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'line-indexed' | 'raw-epub'>('line-indexed');
+  const [epubModalOpen, setEpubModalOpen] = useState<boolean>(false);
+  const [savedEpubCookie, setSavedEpubCookie] = useState<EpubCookiePayload | null>(null);
+  const [epubLocation, setEpubLocation] = useState<string>('');
 
   // Fullscreen & Reading View states
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
@@ -182,6 +197,23 @@ export function WakeReader() {
           if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }, 350);
       }
+
+      // Check for saved EPUB location in cookie
+      const saved = readEpubCookie();
+      if (saved && saved.location) {
+        setSavedEpubCookie(saved);
+        setEpubLocation(saved.location);
+        // If it is a fetchable URL or relative path, attempt to load automatically
+        if (
+          saved.location.startsWith('http://') ||
+          saved.location.startsWith('https://') ||
+          saved.location.startsWith('/')
+        ) {
+          loadEpubFromUrl(saved.location, saved.duration, saved.customDays, false).catch((err) => {
+            console.warn('Auto-loading saved EPUB URL failed:', err);
+          });
+        }
+      }
     }
   }, []);
 
@@ -216,18 +248,88 @@ export function WakeReader() {
     }
   };
 
-  // Handle EPUB file upload
-  const handleEpubFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (!files || files.length === 0) return;
-    const file = files[0];
+  // Load EPUB from URL with user-specified duration saved in cookie
+  const loadEpubFromUrl = async (
+    url: string,
+    duration: CookieDuration = 'forever',
+    customDays?: number,
+    showFeedback: boolean = true
+  ): Promise<boolean> => {
+    try {
+      setLoading(true);
+      if (showFeedback) {
+        setFeedback({ type: 'info', message: `Fetching and indexing EPUB from ${url}...` });
+      }
+      const pageCount = await browserEpub.parseFromUrl(url);
+      setEpubLoaded(true);
+      const fname = browserEpub.getLoadedFileName();
+      setEpubFileName(fname);
+      setEpubLocation(url);
 
+      const payload: EpubCookiePayload = {
+        version: '1.0.0',
+        location: url,
+        sourceType: 'url',
+        fileName: fname,
+        savedAt: new Date().toISOString(),
+        duration,
+        customDays,
+      };
+      writeEpubCookie(payload);
+      setSavedEpubCookie(payload);
+
+      const pageData = await browserEpub.getPage(currentPage);
+      if (pageData) {
+        setLines(pageData.lines);
+        setRawHtml(pageData.rawHtml);
+      }
+
+      if (showFeedback) {
+        setFeedback({
+          type: 'success',
+          message: `Successfully loaded EPUB (${pageCount} pages parsed) and saved location in cookie (${getDurationLabel(duration, customDays)})!`,
+        });
+      }
+      return true;
+    } catch (err: any) {
+      console.error('Error fetching EPUB from URL:', err);
+      if (showFeedback) {
+        setFeedback({
+          type: 'error',
+          message: `Failed to fetch EPUB: ${err.message}`,
+        });
+      }
+      return false;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Load EPUB from local File and remember reference in cookie
+  const loadEpubFromFile = async (
+    file: File,
+    duration: CookieDuration = 'forever',
+    customDays?: number
+  ): Promise<boolean> => {
     try {
       setLoading(true);
       setFeedback({ type: 'info', message: `Unpacking and indexing ${file.name} in browser memory...` });
       const pageCount = await browserEpub.parseFile(file, file.name);
       setEpubLoaded(true);
       setEpubFileName(file.name);
+      setEpubLocation(file.name);
+
+      const payload: EpubCookiePayload = {
+        version: '1.0.0',
+        location: file.name,
+        sourceType: 'file-name',
+        fileName: file.name,
+        savedAt: new Date().toISOString(),
+        duration,
+        customDays,
+      };
+      writeEpubCookie(payload);
+      setSavedEpubCookie(payload);
 
       const pageData = await browserEpub.getPage(currentPage);
       if (pageData) {
@@ -237,17 +339,32 @@ export function WakeReader() {
 
       setFeedback({
         type: 'success',
-        message: `Successfully loaded ${file.name} (${pageCount} pages parsed). Book text is now rendered side-by-side with annotations!`,
+        message: `Successfully loaded ${file.name} (${pageCount} pages parsed) and remembered in cookie (${getDurationLabel(duration, customDays)})!`,
       });
+      return true;
     } catch (err: any) {
-      console.error('Error parsing EPUB:', err);
+      console.error('Error parsing EPUB file:', err);
       setFeedback({
         type: 'error',
         message: `Failed to parse EPUB archive: ${err.message}`,
       });
+      return false;
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleClearEpubCookie = () => {
+    deleteEpubCookie();
+    setSavedEpubCookie(null);
+    setFeedback({ type: 'info', message: 'EPUB location cookie cleared.' });
+  };
+
+  // Handle EPUB file upload from hidden file input
+  const handleEpubFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
+    await loadEpubFromFile(files[0]);
   };
 
   // Save annotation (in-memory update with export capability)
@@ -783,17 +900,36 @@ export function WakeReader() {
               accept=".epub"
               className="hidden"
             />
-            <button
-              onClick={() => fileInputRef.current?.click()}
-              className={`inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
-                epubLoaded
-                  ? 'bg-emerald-950 text-emerald-300 border border-emerald-500/40 shadow-sm'
-                  : 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/30'
-              }`}
-            >
-              <FileUp className="w-3.5 h-3.5" />
-              <span>{epubLoaded ? 'EPUB Loaded' : 'Load Local EPUB'}</span>
-            </button>
+            <div className="inline-flex rounded-lg shadow-sm">
+              <button
+                onClick={() => (epubLoaded ? setEpubModalOpen(true) : fileInputRef.current?.click())}
+                className={`inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-l-lg text-xs font-medium transition-all ${
+                  epubLoaded
+                    ? 'bg-emerald-950 text-emerald-300 border border-emerald-500/40 shadow-sm'
+                    : 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/30'
+                }`}
+                title={
+                  epubLoaded
+                    ? `EPUB Loaded: ${epubFileName} (${savedEpubCookie ? `Location saved in cookie: ${savedEpubCookie.location}` : 'No cookie saved'})`
+                    : 'Load Local EPUB File'
+                }
+              >
+                <FileUp className="w-3.5 h-3.5" />
+                <span>{epubLoaded ? 'EPUB Loaded' : 'Load EPUB'}</span>
+              </button>
+              <button
+                onClick={() => setEpubModalOpen(true)}
+                className={`px-2 py-1.5 rounded-r-lg border-l text-xs transition-colors cursor-pointer ${
+                  epubLoaded
+                    ? 'bg-emerald-900/70 hover:bg-emerald-800 text-emerald-200 border border-emerald-500/40 border-l-emerald-500/20'
+                    : 'bg-indigo-700 hover:bg-indigo-600 text-white border-l-indigo-500/30'
+                }`}
+                title="EPUB Source Location & Cookie Persistence Settings"
+                aria-label="EPUB Source Location & Cookie Persistence Settings"
+              >
+                <Settings className="w-3.5 h-3.5" />
+              </button>
+            </div>
 
             <button
               onClick={exportCurrentPageJson}
@@ -913,40 +1049,95 @@ export function WakeReader() {
                   <em>Finnegans Wake</em> is protected under U.S. copyright law through <strong>December 31, 2035</strong>. To ensure complete legal compliance, this static website does not host or distribute the copyrighted book text.
                 </p>
                 <p className="text-slate-300 leading-relaxed">
-                  All <strong>scholarly annotations and glosses</strong> are 100% open-source and displayed in the right panel. To read the authentic book text alongside these annotations, you have two zero-friction options:
+                  All <strong>scholarly annotations and glosses</strong> are 100% open-source and displayed in the right panel. To read the authentic book text alongside these annotations, set your local EPUB or source URL (saved in your cookie for as long as you want):
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+
+                {/* Cookie Saved EPUB Location Card */}
+                {savedEpubCookie && (
+                  <div className="p-3.5 rounded-xl bg-emerald-950/60 border border-emerald-500/50 flex items-center justify-between flex-wrap gap-3 animate-in fade-in">
+                    <div className="space-y-0.5">
+                      <div className="flex items-center space-x-1.5 text-emerald-300 font-mono text-xs font-semibold">
+                        <Link2 className="w-4 h-4 text-emerald-400" />
+                        <span>EPUB Location in Cookie ({getDurationLabel(savedEpubCookie.duration, savedEpubCookie.customDays)}):</span>
+                      </div>
+                      <div className="text-[11px] font-mono text-emerald-400/90 truncate max-w-md">
+                        {savedEpubCookie.location}
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      {savedEpubCookie.location.startsWith('http') || savedEpubCookie.location.startsWith('/') ? (
+                        <button
+                          onClick={() => loadEpubFromUrl(savedEpubCookie.location, savedEpubCookie.duration, savedEpubCookie.customDays)}
+                          className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white transition-all shadow-sm cursor-pointer"
+                        >
+                          Load from Saved Location
+                        </button>
+                      ) : (
+                        <button
+                          onClick={() => fileInputRef.current?.click()}
+                          className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white transition-all shadow-sm cursor-pointer"
+                        >
+                          Select {savedEpubCookie.fileName || 'Local File'}
+                        </button>
+                      )}
+                      <button
+                        onClick={() => setEpubModalOpen(true)}
+                        className="px-2.5 py-1.5 rounded-lg text-xs border border-inherit/30 hover:bg-inherit/40 opacity-80 hover:opacity-100 transition-colors cursor-pointer"
+                      >
+                        Configure
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
                   <div className="p-3 bg-slate-900 rounded-lg border border-slate-800 space-y-2">
                     <div className="font-semibold text-white text-xs flex items-center space-x-1.5">
                       <FileUp className="w-3.5 h-3.5 text-emerald-400" />
-                      <span>Option 1: Load Local EPUB</span>
+                      <span>1: Load Local File</span>
                     </div>
                     <p className="text-[11px] text-slate-400">
-                      Download the public scan from Archive.org, then click below to unzip and read in your browser:
+                      Select your downloaded EPUB from disk (saves reference in cookie):
                     </p>
                     <button
                       onClick={() => fileInputRef.current?.click()}
-                      className="w-full py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-medium transition-all"
+                      className="w-full py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-medium transition-all cursor-pointer"
                     >
-                      Select finneganswake00joycuoft.epub
+                      Select .epub
+                    </button>
+                  </div>
+
+                  <div className="p-3 bg-slate-900 rounded-lg border border-slate-800 space-y-2">
+                    <div className="font-semibold text-white text-xs flex items-center space-x-1.5">
+                      <Link2 className="w-3.5 h-3.5 text-cyan-400" />
+                      <span>2: Set EPUB URL</span>
+                    </div>
+                    <p className="text-[11px] text-slate-400">
+                      Configure EPUB URL or local server endpoint stored in cookie:
+                    </p>
+                    <button
+                      onClick={() => setEpubModalOpen(true)}
+                      className="w-full py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-medium transition-all cursor-pointer"
+                    >
+                      Set Location URL
                     </button>
                   </div>
 
                   <div className="p-3 bg-slate-900 rounded-lg border border-slate-800 space-y-2">
                     <div className="font-semibold text-white text-xs flex items-center space-x-1.5">
                       <ExternalLink className="w-3.5 h-3.5 text-indigo-400" />
-                      <span>Option 2: Download Scan</span>
+                      <span>3: Download Scan</span>
                     </div>
                     <p className="text-[11px] text-slate-400">
-                      Grab the 1.5MB EPUB archive from Internet Archive directly to your laptop:
+                      Grab the 1.5MB EPUB archive directly from Internet Archive:
                     </p>
                     <a
                       href={ARCHIVE_EPUB_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block text-center w-full py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 transition-all"
+                      className="block text-center w-full py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 transition-all cursor-pointer"
                     >
-                      Download EPUB from Archive.org
+                      Archive.org Scan
                     </a>
                   </div>
                 </div>
@@ -1518,6 +1709,29 @@ export function WakeReader() {
                   </span>
                 )}
               </button>
+
+              {/* EPUB Source Location & Cookie Button */}
+              <button
+                onClick={() => setEpubModalOpen(true)}
+                className={`inline-flex items-center space-x-1 px-2 py-1 rounded-lg text-xs border transition-colors cursor-pointer ${
+                  epubLoaded
+                    ? 'bg-emerald-950/80 text-emerald-300 border-emerald-500/40 shadow-sm'
+                    : 'border-inherit/30 bg-inherit/40 opacity-70 hover:opacity-100 hover:bg-inherit/60'
+                }`}
+                title={
+                  epubLoaded
+                    ? `EPUB Active: ${epubFileName} (${savedEpubCookie ? `Saved in cookie: ${savedEpubCookie.location}` : 'No cookie saved'})`
+                    : 'Set EPUB Location & Cookie'
+                }
+              >
+                <Link2 className="w-3.5 h-3.5 text-indigo-400" />
+                <span className="hidden xl:inline text-[11px] font-mono">
+                  {epubLoaded ? 'EPUB' : 'EPUB Location'}
+                </span>
+                {savedEpubCookie && (
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" title="Location saved in cookie"></span>
+                )}
+              </button>
             </div>
 
             {/* Right: Text Zoom & Controls & Exit Fullscreen */}
@@ -1625,13 +1839,35 @@ export function WakeReader() {
                       <p className="text-xs leading-relaxed opacity-80">
                         To protect Joyce&apos;s copyrighted text under Title 17 U.S.C. § 107, please select your local EPUB file (or downloaded scan from Archive.org). Text will appear centered with interactive hover popups.
                       </p>
+                      {savedEpubCookie && (
+                        <div className="p-3 rounded-lg bg-emerald-950/60 border border-emerald-500/40 text-xs font-mono text-emerald-300 flex items-center justify-between gap-2 text-left">
+                          <div className="truncate">
+                            <span className="font-semibold">Saved EPUB:</span> {savedEpubCookie.location}
+                          </div>
+                          {(savedEpubCookie.location.startsWith('http') || savedEpubCookie.location.startsWith('/')) && (
+                            <button
+                              onClick={() => loadEpubFromUrl(savedEpubCookie.location, savedEpubCookie.duration, savedEpubCookie.customDays)}
+                              className="px-2.5 py-1 rounded bg-emerald-600 hover:bg-emerald-500 text-white text-[11px] font-sans font-medium shrink-0 cursor-pointer"
+                            >
+                              Load Now
+                            </button>
+                          )}
+                        </div>
+                      )}
                       <div className="pt-2 flex flex-wrap justify-center gap-3">
                         <button
                           onClick={() => fileInputRef.current?.click()}
-                          className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-medium shadow-md transition-all flex items-center space-x-2"
+                          className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-medium shadow-md transition-all flex items-center space-x-2 cursor-pointer"
                         >
                           <FileUp className="w-4 h-4" />
-                          <span>Load Local finneganswake00joycuoft.epub</span>
+                          <span>Load Local .epub File</span>
+                        </button>
+                        <button
+                          onClick={() => setEpubModalOpen(true)}
+                          className="px-4 py-2 rounded-xl border border-inherit/40 hover:bg-inherit/40 text-xs font-medium transition-all flex items-center space-x-2 cursor-pointer"
+                        >
+                          <Link2 className="w-4 h-4 text-indigo-400" />
+                          <span>Configure EPUB Location / Cookie</span>
                         </button>
                       </div>
                     </div>
@@ -2415,6 +2651,19 @@ export function WakeReader() {
             }, 180);
           }
         }}
+      />
+
+      {/* 7. EPUB Source Location & Cookie Persistence Modal */}
+      <EpubSourceModal
+        isOpen={epubModalOpen}
+        onClose={() => setEpubModalOpen(false)}
+        currentLocation={epubLocation}
+        isLoaded={epubLoaded}
+        loadedFileName={epubFileName}
+        savedCookiePayload={savedEpubCookie}
+        onLoadFromUrl={loadEpubFromUrl}
+        onSelectLocalFile={loadEpubFromFile}
+        onClearCookie={handleClearEpubCookie}
       />
     </div>
   );

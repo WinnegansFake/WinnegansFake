@@ -3,10 +3,12 @@ import {
   ThemeCookiePayload,
   BookmarkCookiePayload,
   BookmarkItem,
+  EpubCookiePayload,
 } from './types.js';
 
 export const THEME_COOKIE_NAME = 'wf_theme_prefs';
 export const BOOKMARK_COOKIE_NAME = 'wf_bookmarks';
+export const EPUB_COOKIE_NAME = 'wf_epub';
 
 /**
  * Converts a human-readable duration and optional customDays into seconds for Max-Age.
@@ -163,4 +165,55 @@ export function deleteBookmarkCookie(): void {
   if (typeof document === 'undefined') return;
   document.cookie = `${BOOKMARK_COOKIE_NAME}=; path=/; max-age=0; SameSite=Lax`;
 }
+
+/**
+ * Parses client document.cookie string for the EPUB source location payload.
+ */
+export function readEpubCookie(): EpubCookiePayload | null {
+  if (typeof document === 'undefined') return null;
+
+  const cookies = document.cookie ? document.cookie.split('; ') : [];
+  for (const cookie of cookies) {
+    const [name, ...rest] = cookie.split('=');
+    if (name === EPUB_COOKIE_NAME) {
+      try {
+        const decoded = decodeURIComponent(rest.join('='));
+        return JSON.parse(decoded) as EpubCookiePayload;
+      } catch (err) {
+        console.warn('Failed to parse EPUB location cookie:', err);
+        return null;
+      }
+    }
+  }
+  return null;
+}
+
+/**
+ * Writes the EPUB source location to document.cookie with user-configured duration.
+ */
+export function writeEpubCookie(payload: EpubCookiePayload): void {
+  if (typeof document === 'undefined') return;
+
+  const serialized = encodeURIComponent(JSON.stringify(payload));
+  const maxAge = getDurationSeconds(payload.duration, payload.customDays);
+
+  let cookieString = `${EPUB_COOKIE_NAME}=${serialized}; path=/; SameSite=Lax`;
+  if (maxAge !== null) {
+    cookieString += `; max-age=${maxAge}`;
+  }
+  if (typeof window !== 'undefined' && window.location.protocol === 'https:') {
+    cookieString += '; Secure';
+  }
+
+  document.cookie = cookieString;
+}
+
+/**
+ * Deletes the EPUB location cookie.
+ */
+export function deleteEpubCookie(): void {
+  if (typeof document === 'undefined') return;
+  document.cookie = `${EPUB_COOKIE_NAME}=; path=/; max-age=0; SameSite=Lax`;
+}
+
 

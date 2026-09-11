@@ -21,6 +21,7 @@ class BrowserEpubService {
   private pageMap: Map<number, { href: string; text: string }> = new Map();
   private loaded: boolean = false;
   private fileName: string = '';
+  private sourceLocation: string = '';
 
   public isLoaded(): boolean {
     return this.loaded;
@@ -30,10 +31,30 @@ class BrowserEpubService {
     return this.fileName;
   }
 
-  public async parseFile(file: File | ArrayBuffer, name: string = 'finneganswake00joycuoft.epub'): Promise<number> {
+  public getLoadedSource(): string {
+    return this.sourceLocation || this.fileName;
+  }
+
+  public async parseFromUrl(url: string, name?: string): Promise<number> {
+    const res = await fetch(url);
+    if (!res.ok) {
+      throw new Error(`Failed to fetch EPUB from ${url} (HTTP ${res.status}: ${res.statusText})`);
+    }
+    const buffer = await res.arrayBuffer();
+    const derivedName = name || url.split('/').pop()?.split('?')[0] || 'finneganswake00joycuoft.epub';
+    this.sourceLocation = url;
+    return this.parseFile(buffer, derivedName, url);
+  }
+
+  public async parseFile(
+    file: File | ArrayBuffer,
+    name: string = 'finneganswake00joycuoft.epub',
+    location?: string
+  ): Promise<number> {
     const zip = await JSZip.loadAsync(file);
     this.zip = zip;
     this.fileName = name;
+    this.sourceLocation = location || (typeof File !== 'undefined' && file instanceof File ? file.name : name);
     this.manifest.clear();
     this.spine = [];
     this.pageMap.clear();

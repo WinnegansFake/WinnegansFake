@@ -15,6 +15,10 @@ import {
   writeBookmarkCookie,
   readBookmarkCookie,
   deleteBookmarkCookie,
+  EPUB_COOKIE_NAME,
+  writeEpubCookie,
+  readEpubCookie,
+  deleteEpubCookie,
 } from '../packages/theme/src/index.js';
 
 describe('@winnegans/theme Package', () => {
@@ -116,6 +120,46 @@ describe('@winnegans/theme Package', () => {
     const afterDelete = readBookmarkCookie();
     expect(afterDelete).toBeNull();
   });
+
+  it('should read, write, and delete EPUB location cookie with user-specified duration', () => {
+    let mockCookie = '';
+    (globalThis as any).document = {
+      get cookie() {
+        return mockCookie;
+      },
+      set cookie(val: string) {
+        const nameVal = val.split(';')[0];
+        if (val.includes('max-age=0')) {
+          mockCookie = '';
+        } else {
+          mockCookie = nameVal;
+        }
+      },
+    };
+
+    const epubPayload = {
+      version: '1.0.0' as const,
+      location: 'https://archive.org/download/finneganswake00joycuoft/finneganswake00joycuoft.epub',
+      sourceType: 'url' as const,
+      fileName: 'finneganswake00joycuoft.epub',
+      savedAt: new Date().toISOString(),
+      duration: 'forever' as const,
+    };
+
+    writeEpubCookie(epubPayload);
+    expect(mockCookie).toContain(EPUB_COOKIE_NAME);
+
+    const retrieved = readEpubCookie();
+    expect(retrieved).toBeDefined();
+    expect(retrieved?.location).toBe(epubPayload.location);
+    expect(retrieved?.sourceType).toBe('url');
+    expect(retrieved?.duration).toBe('forever');
+
+    deleteEpubCookie();
+    const afterDelete = readEpubCookie();
+    expect(afterDelete).toBeNull();
+  });
+
 
   it('should include official Solarized Dark and Light themes per Ethan Schoonover specification', () => {
     const solDark = getThemeById('solarized-dark');
