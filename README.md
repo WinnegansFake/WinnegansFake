@@ -6,6 +6,23 @@ Inspired by this [tiktok video](https://www.tiktok.com/@lily76412/video/76619245
 
 ---
 
+## 🎓 Central Thesis & Critical Monograph: `dissertation.md`
+
+The intellectual foundation and central focus of this entire repository is articulated in our comprehensive academic treatise:
+
+### 📖 [Read the Full Dissertation: `dissertation.md`](dissertation.md)
+> **"The Architecture of the Night Mind: A Polyphonic Dissertation on the Cosmology, Philology, Genetic Manuscripts, and Computational Hermeneutics of James Joyce’s *Finnegans Wake*"**
+
+This 6,300+ word monograph synthesizes the collected knowledge of the *WinnegansFake* corpus into an enduring theoretical and computational reference work, exploring:
+1. **The Epistemological Horizon & The Zero-Copyright Imperative:** The 17-year nocturnal composition in Paris (1922–1939), John Bishop’s somatic philology of the sleeping body, and the software engineering architecture that decouples copyrighted source texts from open-source CC BY-SA 4.0 metadata coordinates (`PPP.LL`).
+2. **Macro-Cosmology:** Giambattista Vico’s *Scienza Nuova* (1725), the ideal eternal history (*storia ideale eterna*), the three cyclical ages (Divine, Heroic, Human), the cataclysmic *ricorso*, and Giordano Bruno of Nola’s dialectic of *coincidentia oppositorum*.
+3. **Micro-Cosmology & Sigla:** Analysis of the Buffalo Notebooks and Joyce's hieroglyphic sigla notation—$\rotatebox[origin=c]{180}{\text{E}}$ (HCE), $\Delta$ (ALP), $[$ (Shem the Penman), $]$ (Shaun the Post), $\vdash$ (Issy and the 28 Rainbow Girls), and $\top$ (Mamalujo / The Four Masters).
+4. **Philological Polyphony & The Intertextual Tapestry:** The quantum portmanteau across sixty languages, acoustic theology of the ten 100-letter thunderclaps (1,001 letters), the *Book of Kells* (*Tunc* page), the Egyptian *Book of the Dead* (Osiris/Isis), *Tristan und Isolde*, Jonathan Swift's dual loves (Stella & Vanessa), Henrik Ibsen's *Master Builder*, and the ballad of Tim Finnegan.
+5. **Computational Hermeneutics & The Digital Humanities:** The evolution of *Wake* scholarship from Campbell & Robinson and Roland McHugh to FWEET, the James Joyce Digital Archive (JJDA), and the modern *WinnegansFake* monorepo spanning 18 analytical registers across 1,850+ curated annotations.
+6. **Comprehensive Web Bibliography:** Active, curated links to authoritative digital scans on the Internet Archive, Project Gutenberg, CELT (UCC), Stanford Encyclopedia of Philosophy, and genetic scholarship portals.
+
+---
+
 ## ⚖️ Copyright Notice & Why Book Text is Omitted
 
 James Joyce's *Finnegans Wake* (published in 1939) remains protected under **United States copyright law through the end of 2035** (95 years from publication date). 
