@@ -47,6 +47,11 @@ export function Footer() {
                   Local Setup & EPUB Guide
                 </Link>
               </li>
+              <li>
+                <Link href="/contribute" className="hover:text-emerald-300 transition-colors">
+                  How to Contribute Annotations (PRs)
+                </Link>
+              </li>
             </ul>
           </div>
 

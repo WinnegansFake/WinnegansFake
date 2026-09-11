@@ -32,6 +32,7 @@ export function Navigation() {
     { href: '/reader', label: 'Interactive Reader', icon: BookOpen },
     { href: '/dissertation', label: 'Dissertation', icon: GraduationCap },
     { href: '/guide', label: 'Local Setup & EPUB', icon: Terminal },
+    { href: '/contribute', label: 'Contribute Annotations', icon: Layers },
   ];
 
   const isActive = (href: string) => {

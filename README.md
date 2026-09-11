@@ -12,6 +12,7 @@ Visit the complete interactive static site deployed on GitHub Pages:
 - **[Interactive Scholarly Reader](https://tekromancy.github.io/WinnegansFake/reader/)**: Browse all 630 pages with 19 analytical registers, or load your local EPUB directly in your browser.
 - **[Doctoral Dissertation](https://tekromancy.github.io/WinnegansFake/dissertation/)**: Read the complete scholarly monograph on the cosmology, philology, and legal architecture.
 - **[Local Setup & EPUB Guide](https://tekromancy.github.io/WinnegansFake/guide/)**: Complete guide to downloading the EPUB from Archive.org and running the application locally.
+- **[Contributing Annotations & Pull Requests Guide](https://tekromancy.github.io/WinnegansFake/contribute/)**: Step-by-step tutorial on Git workflows, branches, schemas, and opening pull requests.
 
 ---
 
