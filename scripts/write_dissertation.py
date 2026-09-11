@@ -317,7 +317,7 @@ In the 21st century, *Wake* scholarship migrated to digital databases:
 The **WinnegansFake** monorepo realizes this scholarly tradition in a modern computational stack:
 - **`packages/epub-reader`:** A zero-dependency, pure TypeScript library written without binary bindings. It parses ZIP central directories, reads the Open Packaging Format (OPF) manifest, builds the spine, and segments OCR text into standard ~36 lines per page.
 - **`web/`:** A Next.js 16 (Turbopack) web application utilizing Tailwind CSS and React 19. It streams pages directly from local archive buffers via `/api/epub`, serves line-indexed metadata through `/api/annotations`, and provides an inline collaborative editor for community contributions.
-- **`validate.py`:** A rigorous Python validator enforcing JSON Schema Draft 2020-12 compliance, canonical folder hierarchies, and strict copyright length restrictions ($\le 150$ characters).
+- **`validate.js`:** A rigorous Node.js validator enforcing JSON Schema Draft 2020-12 compliance, canonical folder hierarchies, and strict copyright length restrictions ($\le 150$ characters).
 
 ### 5.4 The Eighteen Analytical Registers and the Corpus of 1,850 Curated Annotations
 Through the automated pipeline developed in this project, **1,850 scholarly annotations** have been compiled and verified across all 628 pages of the *Wake*, systematically structured across **18 distinct analytical registers**:

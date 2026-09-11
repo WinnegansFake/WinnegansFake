@@ -122,7 +122,7 @@ To protect both scholarly open access and community software tools, this project
    Licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).  
    Any commentary, glosses, etymologies, or analyses contributed to this repository belong to the commons and can be shared and adapted with attribution.
 
-2. **Code & Tooling (`validate.py`, CI workflows, ingestion utilities):**  
+2. **Code & Tooling (`validate.js`, CI workflows, ingestion utilities):**  
    Licensed under the [GNU General Public License v3.0 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 ---
@@ -147,7 +147,7 @@ WinnegansFake/
 │   └── book_4/
 ├── schemas/
 │   └── page-annotation.schema.json        # JSON Schema Draft 2020-12
-├── validate.py                            # PR linting & copyright guard script
+├── validate.js                            # PR linting & copyright guard script
 └── README.md
 ```
 
@@ -221,14 +221,17 @@ We welcome contributions from scholars, readers, students, and enthusiasts!
    ```
 
 4. **Verify Locally with the Validation Tool:**
-   Ensure you have Python 3.10+ and `jsonschema` installed:
+   Ensure your annotations conform strictly to the schema and zero-copyright guardrails:
    ```bash
-   pip install jsonschema
-   python validate.py
+   pnpm validate
+   # Or run directly:
+   node validate.js
    ```
    To validate only your modified file:
    ```bash
-   python validate.py --path annotations/book_1/chapter_1/page_004.json
+   pnpm validate:file annotations/book_1/chapter_1/page_004.json
+   # Or run directly:
+   node validate.js --path annotations/book_1/chapter_1/page_004.json
    ```
 
 5. **Commit and Push:**
@@ -240,5 +243,5 @@ We welcome contributions from scholars, readers, students, and enthusiasts!
 
 6. **Open a Pull Request:**
    - Submit your PR against the `main` branch.
-   - The automated GitHub Actions CI workflow will immediately run `validate.py`.
+   - The automated GitHub Actions CI workflow will immediately run `node validate.js`.
    - Once all automated checks pass, maintainers will review the submission for scholarly depth and copyright adherence.

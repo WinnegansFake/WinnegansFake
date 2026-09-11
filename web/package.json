@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "validate": "python3 ../validate.py",
+    "validate": "node ../validate.js",
     "index:epub": "python3 ../build_page_index.py"
   },
   "dependencies": {

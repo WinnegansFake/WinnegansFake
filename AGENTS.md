@@ -33,8 +33,12 @@ This repository uses **pnpm** (NOT `npm` or `yarn`) as the sole package manager 
 - Before creating a PR or committing changes, run:
   ```bash
   # Validate JSON schema and line rules
-  python validate.py
+  pnpm validate
+  # (or: node validate.js)
+
+  # Run vitest suite
+  pnpm test
 
   # Test build the web app
-  cd web && pnpm build
+  pnpm build
   ```
