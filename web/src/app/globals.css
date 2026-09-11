@@ -116,6 +116,32 @@ article.prose blockquote {
   background-color: var(--wf-accent-hover) !important;
 }
 
+/* Interactive Annotated Phrases in original book text */
+.wf-annotated-phrase {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--wf-accent);
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0 1px;
+  transition: background-color 0.15s ease, text-decoration-color 0.15s ease, color 0.15s ease;
+}
+
+.wf-annotated-phrase:hover,
+.wf-annotated-phrase:focus-visible {
+  background-color: color-mix(in srgb, var(--wf-accent) 18%, transparent);
+  text-decoration-style: solid;
+  outline: none;
+}
+
+/* Fullscreen distraction-free zen mode */
+.wf-fullscreen-overlay {
+  background-color: var(--wf-reader-bg) !important;
+  color: var(--wf-reader-text) !important;
+}
+
 /* =========================================================================
    Obsidian Crimson Theme (#000000 background, #9A2F2F foreground):
    Ensure all fonts and text across the entire interface are subdued reds,
@@ -363,3 +389,20 @@ article.prose blockquote {
   background-color: #330a0a !important;
   color: #b83a3a !important;
 }
+
+/* Annotated phrases in obsidian crimson */
+[data-theme="obsidian-crimson"] .wf-annotated-phrase {
+  text-decoration-color: #ba3939 !important;
+  color: #ba3939 !important;
+}
+[data-theme="obsidian-crimson"] .wf-annotated-phrase:hover,
+[data-theme="obsidian-crimson"] .wf-annotated-phrase:focus-visible {
+  background-color: #330a0a !important;
+  color: #d64545 !important;
+}
+
+[data-theme="obsidian-crimson"] .wf-fullscreen-overlay {
+  background-color: #000000 !important;
+  color: #9a2f2f !important;
+}
+

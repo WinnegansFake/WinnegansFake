@@ -29,7 +29,13 @@ import {
   Filter,
   Layers,
   Sparkles,
-  AlertCircle
+  AlertCircle,
+  Maximize2,
+  Minimize2,
+  ZoomIn,
+  ZoomOut,
+  Type,
+  X
 } from 'lucide-react';
 import {
   getBasePath,
@@ -39,6 +45,8 @@ import {
   GITHUB_REPO_URL
 } from '@/lib/constants';
 import { browserEpub, ParsedEpubPage } from '@/lib/epubReader';
+import { AnnotationHoverPopup, HoverPopupData } from './AnnotationHoverPopup';
+import { segmentAnnotatedLine } from '@/lib/lineAnnotator';
 
 export function WakeReader() {
   const [currentPage, setCurrentPage] = useState<number>(3);
@@ -50,6 +58,13 @@ export function WakeReader() {
   const [epubFileName, setEpubFileName] = useState<string>('');
   const [rawHtml, setRawHtml] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'line-indexed' | 'raw-epub'>('line-indexed');
+
+  // Fullscreen & Reading View states
+  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
+  const [fullscreenFontSize, setFullscreenFontSize] = useState<number>(18);
+  const [fullscreenShowNotes, setFullscreenShowNotes] = useState<boolean>(false);
+  const [hoverPopup, setHoverPopup] = useState<HoverPopupData | null>(null);
+  const popupTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // Filters & search
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -250,6 +265,171 @@ export function WakeReader() {
     return matchesSearch && matchesRegister;
   });
 
+  // Hover popup handlers
+  const handlePhraseMouseEnter = (
+    phrase: string,
+    lineNumber: number,
+    annotations: AnnotationItem[],
+    targetEl: HTMLElement
+  ) => {
+    if (popupTimeoutRef.current) {
+      clearTimeout(popupTimeoutRef.current);
+      popupTimeoutRef.current = null;
+    }
+    const rect = targetEl.getBoundingClientRect();
+    setHoverPopup({
+      phrase,
+      pageNumber: currentPage,
+      lineNumber,
+      annotations,
+      anchorRect: {
+        top: rect.top,
+        bottom: rect.bottom,
+        left: rect.left,
+        right: rect.right,
+        width: rect.width,
+        height: rect.height,
+      },
+    });
+  };
+
+  const handlePhraseMouseLeave = () => {
+    popupTimeoutRef.current = setTimeout(() => {
+      setHoverPopup(null);
+    }, 220);
+  };
+
+  const handlePopupMouseEnter = () => {
+    if (popupTimeoutRef.current) {
+      clearTimeout(popupTimeoutRef.current);
+      popupTimeoutRef.current = null;
+    }
+  };
+
+  const handlePopupMouseLeave = () => {
+    popupTimeoutRef.current = setTimeout(() => {
+      setHoverPopup(null);
+    }, 220);
+  };
+
+  const handleSelectAnnotationFromPopup = (id: string) => {
+    setSelectedAnnotationId(id);
+    if (isFullscreen) {
+      setFullscreenShowNotes(true);
+    }
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 60);
+  };
+
+  const toggleFullscreen = () => {
+    if (!isFullscreen) {
+      setIsFullscreen(true);
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      }
+    } else {
+      setIsFullscreen(false);
+      if (document.fullscreenElement && document.exitFullscreen) {
+        document.exitFullscreen().catch(() => {});
+      }
+    }
+  };
+
+  // Keyboard navigation & Fullscreen shortcut (F to toggle, Esc to exit)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement;
+      if (
+        target.tagName === 'INPUT' ||
+        target.tagName === 'TEXTAREA' ||
+        target.tagName === 'SELECT' ||
+        target.isContentEditable
+      ) {
+        return;
+      }
+
+      if (e.key === 'f' || e.key === 'F') {
+        e.preventDefault();
+        toggleFullscreen();
+      } else if (e.key === 'Escape') {
+        if (hoverPopup) {
+          setHoverPopup(null);
+        } else if (isFullscreen) {
+          setIsFullscreen(false);
+          if (document.fullscreenElement && document.exitFullscreen) {
+            document.exitFullscreen().catch(() => {});
+          }
+        }
+      } else if (isFullscreen) {
+        if (e.key === 'ArrowRight' || e.key === 'n') {
+          goToPage(currentPage + 1);
+        } else if (e.key === 'ArrowLeft' || e.key === 'p') {
+          goToPage(currentPage - 1);
+        } else if (e.key === '+' || e.key === '=') {
+          setFullscreenFontSize((prev) => Math.min(26, prev + 2));
+        } else if (e.key === '-' || e.key === '_') {
+          setFullscreenFontSize((prev) => Math.max(14, prev - 2));
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isFullscreen, hoverPopup, currentPage]);
+
+  // Sync state if user exits native fullscreen via browser Esc
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      if (!document.fullscreenElement && isFullscreen) {
+        setIsFullscreen(false);
+      }
+    };
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+  }, [isFullscreen]);
+
+  // Render annotated line with hover popups
+  const renderAnnotatedLineText = (l: PageLine, lineAnns: AnnotationItem[]) => {
+    const segments = segmentAnnotatedLine(l.text, lineAnns);
+    return (
+      <p className="flex-1 font-serif wf-reader-line">
+        {segments.map((seg, idx) => {
+          if (seg.type === 'text') {
+            return <span key={idx}>{seg.text}</span>;
+          }
+          return (
+            <span
+              key={idx}
+              tabIndex={0}
+              role="button"
+              className="wf-annotated-phrase"
+              title={`Hover to see ${seg.annotations.length} annotation${seg.annotations.length > 1 ? 's' : ''}`}
+              onMouseEnter={(e) =>
+                handlePhraseMouseEnter(seg.phrase, l.line, seg.annotations, e.currentTarget)
+              }
+              onMouseLeave={handlePhraseMouseLeave}
+              onFocus={(e) =>
+                handlePhraseMouseEnter(seg.phrase, l.line, seg.annotations, e.currentTarget)
+              }
+              onBlur={handlePhraseMouseLeave}
+              onClick={() => {
+                if (seg.annotations[0]) {
+                  handleSelectAnnotationFromPopup(seg.annotations[0].id);
+                }
+              }}
+            >
+              {seg.text}
+            </span>
+          );
+        })}
+      </p>
+    );
+  };
+
   const bookInfo = getBookAndChapterInfo(currentPage);
 
   return (
@@ -348,6 +528,16 @@ export function WakeReader() {
             >
               <PlusCircle className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">Add Note</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={toggleFullscreen}
+              className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm transition-all"
+              title="Enter Fullscreen Zen Reading Mode (Press F)"
+            >
+              <Maximize2 className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Fullscreen</span>
             </button>
           </div>
         </div>
@@ -451,7 +641,17 @@ export function WakeReader() {
                     {annotationsData.annotations.map((ann) => (
                       <div
                         key={ann.id}
+                        tabIndex={0}
                         onClick={() => setSelectedAnnotationId(ann.id)}
+                        onMouseEnter={(e) =>
+                          handlePhraseMouseEnter(
+                            ann.target_phrase,
+                            ann.line_number,
+                            [ann],
+                            e.currentTarget
+                          )
+                        }
+                        onMouseLeave={handlePhraseMouseLeave}
                         className={`p-3 rounded-xl border transition-all cursor-pointer ${
                           selectedAnnotationId === ann.id
                             ? 'bg-emerald-950/40 border-emerald-500/50 shadow-md'
@@ -478,7 +678,7 @@ export function WakeReader() {
               </div>
             </div>
           ) : (
-            /* EPUB IS LOADED: Render the line segmented text */
+            /* EPUB IS LOADED: Render the line segmented text with interactive hover popups */
             <div className="space-y-1.5 font-serif text-sm leading-relaxed select-text">
               {lines.map((l) => {
                 const lineAnns = (annotationsData?.annotations || []).filter((a) => a.line_number === l.line);
@@ -499,9 +699,7 @@ export function WakeReader() {
                     <span className="font-mono text-[11px] wf-reader-coord w-8 flex-shrink-0 select-none pt-0.5">
                       {String(l.line).padStart(2, '0')}
                     </span>
-                    <p className="flex-1 font-serif wf-reader-line">
-                      {l.text}
-                    </p>
+                    {renderAnnotatedLineText(l, lineAnns)}
                     <div className="flex items-center space-x-1 opacity-0 group-hover:opacity-100 transition-opacity ml-2">
                       <button
                         onClick={() => setIsCreatingForLine(l.line)}
@@ -512,11 +710,25 @@ export function WakeReader() {
                       </button>
                     </div>
                     {hasAnns && (
-                      <span className="ml-2 flex-shrink-0 select-none">
-                        <span className="inline-flex items-center justify-center px-1.5 py-0.5 text-[10px] font-mono rounded bg-emerald-950 text-emerald-300 border border-emerald-500/40">
+                      <button
+                        type="button"
+                        onClick={() => setSelectedAnnotationId(lineAnns[0].id)}
+                        onMouseEnter={(e) =>
+                          handlePhraseMouseEnter(
+                            `Line ${l.line}`,
+                            l.line,
+                            lineAnns,
+                            e.currentTarget
+                          )
+                        }
+                        onMouseLeave={handlePhraseMouseLeave}
+                        className="ml-2 flex-shrink-0 select-none cursor-pointer"
+                        title="Hover to view glosses, click to select"
+                      >
+                        <span className="inline-flex items-center justify-center px-1.5 py-0.5 text-[10px] font-mono rounded bg-emerald-950 text-emerald-300 border border-emerald-500/40 hover:border-emerald-400 transition-colors">
                           {lineAnns.length} note{lineAnns.length > 1 ? 's' : ''}
                         </span>
-                      </span>
+                      </button>
                     )}
                   </div>
                 );
@@ -724,6 +936,348 @@ export function WakeReader() {
           </div>
         </section>
       </div>
+
+      {/* 4. Fullscreen Zen Reading Mode Overlay */}
+      {isFullscreen && (
+        <div
+          role="region"
+          aria-label="Fullscreen Zen Reader"
+          className="fixed inset-0 z-50 overflow-y-auto wf-fullscreen-overlay flex flex-col select-text transition-colors"
+        >
+          {/* Zen Sticky Header */}
+          <header className="sticky top-0 z-40 wf-nav-surface backdrop-blur-md border-b border-inherit/40 px-4 sm:px-8 py-3 flex items-center justify-between shadow-md transition-colors">
+            {/* Left: Book & Chapter Breadcrumb */}
+            <div className="flex items-center space-x-3">
+              <div className="w-8 h-8 rounded-lg bg-emerald-950/80 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
+                <BookOpen className="w-4 h-4" />
+              </div>
+              <div>
+                <h1 className="font-serif font-bold text-sm sm:text-base leading-tight">
+                  Finnegans Wake &bull; Book {bookInfo.bookRoman}, Chapter {bookInfo.chapter}
+                </h1>
+                <p className="text-[11px] opacity-70 italic truncate max-w-xs sm:max-w-md">
+                  {bookInfo.chapterTitle}
+                </p>
+              </div>
+            </div>
+
+            {/* Center: Quick Page Navigation */}
+            <div className="flex items-center space-x-2">
+              <button
+                onClick={() => goToPage(currentPage - 1)}
+                disabled={currentPage <= 1}
+                className="p-1.5 rounded-lg border border-inherit/40 hover:bg-inherit/40 disabled:opacity-30 transition-all"
+                title="Previous Page (← or p)"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+              <span className="font-mono text-xs px-2.5 py-1 rounded bg-inherit/40 border border-inherit/30">
+                Page {currentPage} / 628
+              </span>
+              <button
+                onClick={() => goToPage(currentPage + 1)}
+                disabled={currentPage >= 628}
+                className="p-1.5 rounded-lg border border-inherit/40 hover:bg-inherit/40 disabled:opacity-30 transition-all"
+                title="Next Page (→ or n)"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
+
+            {/* Right: Text Zoom & Controls & Exit Fullscreen */}
+            <div className="flex items-center space-x-2">
+              {/* Font Size Zoom */}
+              <div className="hidden sm:flex items-center space-x-1 border border-inherit/30 rounded-lg p-0.5">
+                <button
+                  onClick={() => setFullscreenFontSize((prev) => Math.max(14, prev - 2))}
+                  className="p-1 rounded hover:bg-inherit/60 transition-colors"
+                  title="Decrease font size (-)"
+                >
+                  <ZoomOut className="w-3.5 h-3.5" />
+                </button>
+                <span className="text-[11px] font-mono px-1 select-none">
+                  {fullscreenFontSize}px
+                </span>
+                <button
+                  onClick={() => setFullscreenFontSize((prev) => Math.min(26, prev + 2))}
+                  className="p-1 rounded hover:bg-inherit/60 transition-colors"
+                  title="Increase font size (+)"
+                >
+                  <ZoomIn className="w-3.5 h-3.5" />
+                </button>
+              </div>
+
+              {/* Toggle Notes Drawer Button in Fullscreen */}
+              <button
+                onClick={() => setFullscreenShowNotes(!fullscreenShowNotes)}
+                className={`inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border transition-colors ${
+                  fullscreenShowNotes
+                    ? 'bg-emerald-950 text-emerald-300 border-emerald-500/50'
+                    : 'border-inherit/40 hover:bg-inherit/40'
+                }`}
+                title="Toggle annotations drawer in fullscreen"
+              >
+                <Bookmark className="w-3.5 h-3.5" />
+                <span className="hidden md:inline">
+                  Notes ({filteredAnnotations.length})
+                </span>
+              </button>
+
+              {/* Exit Fullscreen Button */}
+              <button
+                onClick={toggleFullscreen}
+                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm transition-all"
+                title="Exit Fullscreen (Esc or F)"
+              >
+                <Minimize2 className="w-3.5 h-3.5" />
+                <span>Exit Fullscreen</span>
+              </button>
+            </div>
+          </header>
+
+          {/* Fullscreen Body Content */}
+          <div className="flex-1 flex max-w-7xl w-full mx-auto p-4 sm:p-8 gap-8 items-start">
+            {/* Reading Column */}
+            <main
+              className={`flex-1 transition-all mx-auto ${
+                fullscreenShowNotes ? 'max-w-3xl' : 'max-w-4xl'
+              }`}
+            >
+              <div className="p-6 sm:p-12 rounded-2xl wf-card-surface border shadow-2xl space-y-6 transition-colors">
+                <div className="flex items-center justify-between pb-3 border-b border-inherit/30 text-xs font-mono opacity-80">
+                  <span className="font-semibold">
+                    CANONICAL TEXT &bull; JOYCE PAGE {String(currentPage).padStart(3, '0')}
+                  </span>
+                  <span className="hidden sm:inline">
+                    Hover words for instant annotation popups
+                  </span>
+                </div>
+
+                {!epubLoaded ? (
+                  /* Notice when EPUB not yet loaded */
+                  <div className="space-y-6 py-6">
+                    <div className="p-6 rounded-xl border border-inherit/40 bg-inherit/30 space-y-4 text-center max-w-xl mx-auto">
+                      <BookOpen className="w-10 h-10 mx-auto text-emerald-400 opacity-90" />
+                      <h2 className="text-base font-serif font-bold">
+                        Read the Original Text in Fullscreen
+                      </h2>
+                      <p className="text-xs leading-relaxed opacity-80">
+                        To protect Joyce&apos;s copyrighted text under Title 17 U.S.C. § 107, please select your local EPUB file (or downloaded scan from Archive.org). Text will appear centered with interactive hover popups.
+                      </p>
+                      <div className="pt-2 flex flex-wrap justify-center gap-3">
+                        <button
+                          onClick={() => fileInputRef.current?.click()}
+                          className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-medium shadow-md transition-all flex items-center space-x-2"
+                        >
+                          <FileUp className="w-4 h-4" />
+                          <span>Load Local finneganswake00joycuoft.epub</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Annotated Phrases on this page preview */}
+                    <div className="space-y-3 pt-4">
+                      <h3 className="text-xs font-mono uppercase tracking-wider font-semibold opacity-75">
+                        Annotated Phrases on Page {String(currentPage).padStart(3, '0')} (Hover for Popups):
+                      </h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        {annotationsData?.annotations.map((ann) => (
+                          <div
+                            key={ann.id}
+                            tabIndex={0}
+                            onClick={() => handleSelectAnnotationFromPopup(ann.id)}
+                            onMouseEnter={(e) =>
+                              handlePhraseMouseEnter(
+                                ann.target_phrase,
+                                ann.line_number,
+                                [ann],
+                                e.currentTarget
+                              )
+                            }
+                            onMouseLeave={handlePhraseMouseLeave}
+                            className={`p-3 rounded-xl border transition-all cursor-pointer ${
+                              selectedAnnotationId === ann.id
+                                ? 'bg-emerald-950/60 border-emerald-500/50 shadow-md'
+                                : 'border-inherit/30 hover:border-inherit/60'
+                            }`}
+                          >
+                            <div className="flex items-center justify-between text-[11px] opacity-70 mb-1 font-mono">
+                              <span className="text-emerald-400 font-bold">
+                                Line {String(ann.line_number).padStart(2, '0')}
+                              </span>
+                              <span>{ann.id}</span>
+                            </div>
+                            <div className="font-serif text-sm">
+                              &ldquo;{ann.target_phrase}&rdquo;
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  /* EPUB IS LOADED: Display text lines in fullscreen */
+                  <div
+                    className="space-y-2 select-text"
+                    style={{
+                      fontSize: `${fullscreenFontSize}px`,
+                      lineHeight: '1.8',
+                    }}
+                  >
+                    {lines.map((l) => {
+                      const lineAnns = (annotationsData?.annotations || []).filter(
+                        (a) => a.line_number === l.line
+                      );
+                      const hasAnns = lineAnns.length > 0;
+                      const isSelected = lineAnns.some(
+                        (a) => a.id === selectedAnnotationId
+                      );
+
+                      return (
+                        <div
+                          key={l.line}
+                          className={`group flex items-start py-1 px-3 rounded-xl transition-colors ${
+                            isSelected
+                              ? 'bg-emerald-950/40 border border-emerald-500/40'
+                              : hasAnns
+                              ? 'hover:bg-inherit/40'
+                              : 'hover:bg-inherit/20'
+                          }`}
+                        >
+                          <span
+                            className="font-mono text-xs opacity-50 w-10 flex-shrink-0 select-none pt-1"
+                            title={`Page ${currentPage}, Line ${l.line}`}
+                          >
+                            {String(l.line).padStart(2, '0')}
+                          </span>
+                          {renderAnnotatedLineText(l, lineAnns)}
+                          {hasAnns && (
+                            <button
+                              type="button"
+                              onClick={() => handleSelectAnnotationFromPopup(lineAnns[0].id)}
+                              onMouseEnter={(e) =>
+                                handlePhraseMouseEnter(
+                                  `Line ${l.line}`,
+                                  l.line,
+                                  lineAnns,
+                                  e.currentTarget
+                                )
+                              }
+                              onMouseLeave={handlePhraseMouseLeave}
+                              className="ml-3 flex-shrink-0 select-none cursor-pointer pt-1"
+                              title="Hover to view glosses, click to inspect"
+                            >
+                              <span className="inline-flex items-center justify-center px-2 py-0.5 text-[10px] font-mono rounded bg-emerald-950 text-emerald-300 border border-emerald-500/40 hover:border-emerald-400 transition-colors">
+                                {lineAnns.length} note{lineAnns.length > 1 ? 's' : ''}
+                              </span>
+                            </button>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            </main>
+
+            {/* Optional Fullscreen Slide-in Notes Drawer */}
+            {fullscreenShowNotes && (
+              <aside className="w-96 flex-shrink-0 p-5 rounded-2xl wf-card-surface border shadow-2xl space-y-4 max-h-[calc(100vh-8rem)] overflow-y-auto sticky top-20 animate-in slide-in-from-right-10 duration-200">
+                <div className="flex items-center justify-between pb-3 border-b border-inherit/40">
+                  <div className="flex items-center space-x-2">
+                    <Bookmark className="w-4 h-4 text-emerald-400" />
+                    <span className="font-mono font-semibold text-xs">
+                      Page Annotations ({filteredAnnotations.length})
+                    </span>
+                  </div>
+                  <button
+                    onClick={() => setFullscreenShowNotes(false)}
+                    className="p-1 rounded opacity-60 hover:opacity-100"
+                    title="Close notes drawer"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                </div>
+
+                <div className="space-y-3 text-xs">
+                  {filteredAnnotations.map((ann) => (
+                    <div
+                      key={ann.id}
+                      onClick={() => setSelectedAnnotationId(ann.id)}
+                      className={`p-3 rounded-xl border transition-all cursor-pointer space-y-1.5 ${
+                        selectedAnnotationId === ann.id
+                          ? 'bg-emerald-950/50 border-emerald-500/60'
+                          : 'border-inherit/30 hover:border-inherit/60'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between text-[11px] font-mono opacity-80">
+                        <span className="text-emerald-400 font-bold">
+                          Line {String(ann.line_number).padStart(2, '0')}
+                        </span>
+                        <span>{ann.id}</span>
+                      </div>
+                      <p className="font-serif italic font-semibold">
+                        &ldquo;{ann.target_phrase}&rdquo;
+                      </p>
+                      <p className="leading-relaxed opacity-90 text-[11px]">
+                        {ann.annotation_text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </aside>
+            )}
+          </div>
+
+          {/* Floating Zen Navigation Pill at bottom */}
+          <footer className="sticky bottom-4 z-40 flex justify-center pointer-events-none pb-2">
+            <div className="pointer-events-auto flex items-center space-x-3 px-5 py-2.5 rounded-full wf-card-surface border shadow-2xl backdrop-blur-lg text-xs">
+              <button
+                onClick={() => goToPage(currentPage - 1)}
+                disabled={currentPage <= 1}
+                className="flex items-center space-x-1 opacity-70 hover:opacity-100 disabled:opacity-30 transition-opacity"
+                title="Previous page (← or p)"
+              >
+                <ChevronLeft className="w-3.5 h-3.5" />
+                <span>Prev</span>
+              </button>
+              <span className="opacity-30">&bull;</span>
+              <span className="font-mono font-medium">
+                Page {currentPage} of 628
+              </span>
+              <span className="opacity-30">&bull;</span>
+              <button
+                onClick={() => goToPage(currentPage + 1)}
+                disabled={currentPage >= 628}
+                className="flex items-center space-x-1 opacity-70 hover:opacity-100 disabled:opacity-30 transition-opacity"
+                title="Next page (→ or n)"
+              >
+                <span>Next</span>
+                <ChevronRight className="w-3.5 h-3.5" />
+              </button>
+              <span className="opacity-30">&bull;</span>
+              <button
+                onClick={toggleFullscreen}
+                className="flex items-center space-x-1 text-emerald-400 hover:underline font-mono"
+                title="Exit Fullscreen (Esc or F)"
+              >
+                <span>Exit Fullscreen [Esc]</span>
+              </button>
+            </div>
+          </footer>
+        </div>
+      )}
+
+      {/* 5. Hover Popup for Annotated Phrases & Lines */}
+      {hoverPopup && (
+        <AnnotationHoverPopup
+          data={hoverPopup}
+          onClose={() => setHoverPopup(null)}
+          onSelectAnnotation={handleSelectAnnotationFromPopup}
+          onMouseEnter={handlePopupMouseEnter}
+          onMouseLeave={handlePopupMouseLeave}
+        />
+      )}
     </div>
   );
 }
