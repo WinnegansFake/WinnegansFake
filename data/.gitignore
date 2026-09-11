@@ -1,4 +1,10 @@
-finneganswake00joycuoft.epub
-EPUB
-META-INF
+# Never commit any copyrighted source files, epubs, or extracted data
+finneganswake*
+*.epub
+EPUB/
+META-INF/
 mimetype
+*.html
+*.json
+!Makefile
+!.gitignore

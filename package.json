@@ -1,0 +1,38 @@
+{
+  "name": "winnegans-fake",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Crowdsourced scholarly annotation repository and viewer for James Joyce's Finnegans Wake",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter @winnegans/epub-reader build && pnpm --filter web build",
+    "start": "pnpm --filter web start",
+    "lint": "pnpm --filter web lint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "validate": "uv run --with jsonschema python3 validate.py || python3 validate.py",
+    "validate:file": "uv run --with jsonschema python3 validate.py --path || python3 validate.py --path",
+    "index:epub": "python3 build_page_index.py",
+    "fetch:data": "make -C data",
+    "signatures:gen": "python3 generate_signatures.py",
+    "signatures:verify": "python3 verify_data.py",
+    "setup": "pnpm install && make -C data && python3 build_page_index.py && python3 verify_data.py",
+    "check": "pnpm validate && pnpm signatures:verify && pnpm test && pnpm build"
+  },
+  "packageManager": "pnpm@12.3.4",
+  "keywords": [
+    "finnegans-wake",
+    "james-joyce",
+    "annotations",
+    "literature",
+    "open-source"
+  ],
+  "author": "WinnegansFake Contributors",
+  "license": "CC-BY-SA-4.0",
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "jsonschema": "^1.5.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@winnegans/epub-reader",
+  "version": "0.1.0",
+  "description": "Zero-dependency pure TypeScript library to read and extract chapters, spine, and pages directly from .epub archives",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "epub",
+    "reader",
+    "zip",
+    "parser"
+  ],
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsup": "^8.4.0",
+    "typescript": "^5"
+  }
+}

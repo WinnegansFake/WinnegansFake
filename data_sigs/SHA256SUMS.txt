@@ -1,0 +1,2 @@
+c1d1f8f43da0c249f966d880f75818bf394129e79de1ebab912b591fda2209f2  data/Makefile
+93f80a2bd54e7c804b7cd0e88553315e3ebdba449a8a08dc83cd3a8c0e00e773  data/finneganswake00joycuoft.epub

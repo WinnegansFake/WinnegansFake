@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/WinnegansFake/WinnegansFake/main/schemas/page-annotation.schema.json",
   "title": "PageAnnotation",
-  "description": "Schema defining collaborative annotations for a single page of Finnegans Wake using standard academic pagination.",
+  "description": "Schema defining collaborative annotations for a single page of Finnegans Wake using standard academic pagination (pages 1 through 628).",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -32,9 +32,9 @@
     },
     "page_number": {
       "type": "integer",
-      "minimum": 3,
+      "minimum": 1,
       "maximum": 628,
-      "description": "Standard pagination page number (3 through 628)."
+      "description": "Pagination page number (1 through 628, where pp. 1-2 encompass half-title and frontispiece)."
     },
     "annotations": {
       "type": "array",
@@ -54,7 +54,7 @@
           "id": {
             "type": "string",
             "pattern": "^[0-9]{3}\\.[0-9]{2}-[a-f0-9]{4,12}$",
-            "description": "Unique annotation identifier incorporating page.line and short hash/token, e.g. 003.01-a1b2."
+            "description": "Unique annotation identifier incorporating page.line and short hash/token, e.g. 001.01-a1b2."
           },
           "line_number": {
             "type": "integer",
@@ -75,7 +75,7 @@
           },
           "categories": {
             "type": "array",
-            "description": "Thematic or analytical tags (e.g., etymology, motif, music, folklore, Dublin topography).",
+            "description": "Thematic or analytical tags (e.g., etymology, motif, music, folklore, Dublin topography, front-matter).",
             "items": {
               "type": "string",
               "pattern": "^[a-z0-9-]+$"
@@ -84,7 +84,7 @@
           },
           "cross_references": {
             "type": "array",
-            "description": "Other page and line occurrences in standard notation (e.g., ['004.18', '383.01']).",
+            "description": "Other page and line occurrences in standard notation (e.g., ['004.18', '628.16']).",
             "items": {
               "type": "string",
               "pattern": "^[0-9]{3}\\.[0-9]{2}$"
