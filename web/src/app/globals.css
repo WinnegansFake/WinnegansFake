@@ -115,3 +115,251 @@ article.prose blockquote {
 .wf-accent-btn:hover {
   background-color: var(--wf-accent-hover) !important;
 }
+
+/* =========================================================================
+   Obsidian Crimson Theme (#000000 background, #9A2F2F foreground):
+   Ensure all fonts and text across the entire interface are subdued reds,
+   and absolutely nothing is white or light gray.
+   ========================================================================= */
+[data-theme="obsidian-crimson"] {
+  --color-white: #a63030 !important;
+  --color-slate-50: #a63030 !important;
+  --color-slate-100: #9a2f2f !important;
+  --color-slate-200: #8c2828 !important;
+  --color-slate-300: #7a2222 !important;
+  --color-slate-400: #6f2222 !important;
+  --color-slate-500: #5c1818 !important;
+  --color-slate-600: #4a1313 !important;
+  --color-slate-700: #380e0e !important;
+  --color-slate-800: #200808 !important;
+  --color-slate-900: #0a0202 !important;
+  --color-slate-950: #000000 !important;
+
+  --color-gray-50: #a63030 !important;
+  --color-gray-100: #9a2f2f !important;
+  --color-gray-200: #8c2828 !important;
+  --color-gray-300: #7a2222 !important;
+  --color-gray-400: #6f2222 !important;
+  --color-zinc-50: #a63030 !important;
+  --color-zinc-100: #9a2f2f !important;
+  --color-zinc-200: #8c2828 !important;
+  --color-zinc-300: #7a2222 !important;
+  --color-zinc-400: #6f2222 !important;
+
+  --color-emerald-300: #b33535 !important;
+  --color-emerald-400: #a63030 !important;
+  --color-emerald-500: #9a2f2f !important;
+  --color-emerald-600: #380e0e !important;
+  --color-emerald-700: #260909 !important;
+  --color-emerald-950: #120404 !important;
+
+  --color-indigo-400: #a63030 !important;
+  --color-indigo-500: #9a2f2f !important;
+  --color-indigo-600: #380e0e !important;
+  --color-indigo-700: #260909 !important;
+  --color-indigo-950: #120404 !important;
+}
+
+/* Headings in Obsidian Crimson */
+[data-theme="obsidian-crimson"] h1,
+[data-theme="obsidian-crimson"] h2,
+[data-theme="obsidian-crimson"] h3,
+[data-theme="obsidian-crimson"] h4,
+[data-theme="obsidian-crimson"] h5,
+[data-theme="obsidian-crimson"] h6 {
+  color: #b33535 !important;
+}
+
+/* Body copy, spans, labels, lists, strong, em */
+[data-theme="obsidian-crimson"] p,
+[data-theme="obsidian-crimson"] span,
+[data-theme="obsidian-crimson"] li,
+[data-theme="obsidian-crimson"] label,
+[data-theme="obsidian-crimson"] dt,
+[data-theme="obsidian-crimson"] dd,
+[data-theme="obsidian-crimson"] td,
+[data-theme="obsidian-crimson"] th,
+[data-theme="obsidian-crimson"] strong,
+[data-theme="obsidian-crimson"] em,
+[data-theme="obsidian-crimson"] blockquote {
+  color: #9a2f2f !important;
+}
+
+/* Muted text & coordinates */
+[data-theme="obsidian-crimson"] small,
+[data-theme="obsidian-crimson"] .wf-reader-coord,
+[data-theme="obsidian-crimson"] .text-slate-400,
+[data-theme="obsidian-crimson"] .text-slate-500,
+[data-theme="obsidian-crimson"] .text-gray-400,
+[data-theme="obsidian-crimson"] .text-gray-500,
+[data-theme="obsidian-crimson"] .text-zinc-400,
+[data-theme="obsidian-crimson"] .text-zinc-500 {
+  color: #6f2222 !important;
+}
+
+/* Eliminate white utility classes across all elements */
+[data-theme="obsidian-crimson"] .text-white,
+[data-theme="obsidian-crimson"] [class*="text-white"],
+[data-theme="obsidian-crimson"] .text-slate-100,
+[data-theme="obsidian-crimson"] .text-slate-200,
+[data-theme="obsidian-crimson"] .text-slate-300 {
+  color: #9a2f2f !important;
+}
+
+[data-theme="obsidian-crimson"] .hover\:text-white:hover,
+[data-theme="obsidian-crimson"] [class*="hover:text-white"]:hover {
+  color: #ba3939 !important;
+}
+
+/* Buttons and action elements */
+[data-theme="obsidian-crimson"] .wf-accent-btn {
+  background-color: #300a0a !important;
+  color: #b33535 !important;
+  border: 1px solid #4a1212 !important;
+}
+
+[data-theme="obsidian-crimson"] .wf-accent-btn:hover {
+  background-color: #440e0e !important;
+  color: #c93b3b !important;
+}
+
+[data-theme="obsidian-crimson"] button.bg-emerald-600,
+[data-theme="obsidian-crimson"] a.bg-emerald-600,
+[data-theme="obsidian-crimson"] button.bg-indigo-600,
+[data-theme="obsidian-crimson"] a.bg-indigo-600 {
+  background-color: #300a0a !important;
+  color: #b33535 !important;
+  border: 1px solid #4a1212 !important;
+}
+
+[data-theme="obsidian-crimson"] button.bg-emerald-600:hover,
+[data-theme="obsidian-crimson"] a.bg-emerald-600:hover,
+[data-theme="obsidian-crimson"] button.bg-indigo-600:hover,
+[data-theme="obsidian-crimson"] a.bg-indigo-600:hover {
+  background-color: #440e0e !important;
+  color: #c93b3b !important;
+}
+
+[data-theme="obsidian-crimson"] button {
+  color: #9a2f2f !important;
+}
+
+/* Links & interactive items */
+[data-theme="obsidian-crimson"] a {
+  color: #a83232 !important;
+}
+
+[data-theme="obsidian-crimson"] a:hover {
+  color: #c93b3b !important;
+}
+
+/* Navigation bar, headers and surfaces */
+[data-theme="obsidian-crimson"] nav,
+[data-theme="obsidian-crimson"] header,
+[data-theme="obsidian-crimson"] .wf-nav-surface {
+  background-color: #050101 !important;
+  border-color: #240808 !important;
+}
+
+[data-theme="obsidian-crimson"] nav a,
+[data-theme="obsidian-crimson"] nav span,
+[data-theme="obsidian-crimson"] header a,
+[data-theme="obsidian-crimson"] header span {
+  color: #9a2f2f !important;
+}
+
+/* Form controls & inputs */
+[data-theme="obsidian-crimson"] input,
+[data-theme="obsidian-crimson"] textarea,
+[data-theme="obsidian-crimson"] select {
+  background-color: #080202 !important;
+  color: #9a2f2f !important;
+  border-color: #330c0c !important;
+}
+
+[data-theme="obsidian-crimson"] input::placeholder,
+[data-theme="obsidian-crimson"] textarea::placeholder {
+  color: #591616 !important;
+}
+
+/* Cards, sidebars, dialogue & modal surfaces */
+[data-theme="obsidian-crimson"] .wf-card-surface,
+[data-theme="obsidian-crimson"] .bg-slate-900,
+[data-theme="obsidian-crimson"] .bg-slate-950,
+[data-theme="obsidian-crimson"] [class*="bg-slate-900"],
+[data-theme="obsidian-crimson"] [class*="bg-slate-950"] {
+  background-color: #050101 !important;
+  border-color: #240808 !important;
+}
+
+/* Badges & tags */
+[data-theme="obsidian-crimson"] .bg-emerald-950\/80,
+[data-theme="obsidian-crimson"] .bg-indigo-950\/80,
+[data-theme="obsidian-crimson"] [class*="bg-emerald-950"],
+[data-theme="obsidian-crimson"] [class*="bg-indigo-950"] {
+  background-color: #1a0505 !important;
+  border-color: #380e0e !important;
+  color: #8c2828 !important;
+}
+
+/* Borders with white or light opacity */
+[data-theme="obsidian-crimson"] [class*="border-white"] {
+  border-color: #380e0e !important;
+}
+
+/* Code blocks and pre elements */
+[data-theme="obsidian-crimson"] pre,
+[data-theme="obsidian-crimson"] code,
+[data-theme="obsidian-crimson"] kbd {
+  background-color: #080202 !important;
+  color: #8c2828 !important;
+  border-color: #240808 !important;
+}
+
+/* SVG icons */
+[data-theme="obsidian-crimson"] svg {
+  color: inherit !important;
+}
+
+/* Typography Prose in Obsidian Crimson */
+[data-theme="obsidian-crimson"] .prose,
+[data-theme="obsidian-crimson"] .prose-invert {
+  --tw-prose-body: #9a2f2f !important;
+  --tw-prose-headings: #b33535 !important;
+  --tw-prose-lead: #9a2f2f !important;
+  --tw-prose-links: #c93b3b !important;
+  --tw-prose-bold: #b33535 !important;
+  --tw-prose-counters: #6f2222 !important;
+  --tw-prose-bullets: #6f2222 !important;
+  --tw-prose-hr: #2a0c0c !important;
+  --tw-prose-quotes: #9a2f2f !important;
+  --tw-prose-quote-borders: #420f0f !important;
+  --tw-prose-captions: #6f2222 !important;
+  --tw-prose-code: #9a2f2f !important;
+  --tw-prose-pre-code: #9a2f2f !important;
+  --tw-prose-pre-bg: #080202 !important;
+  --tw-prose-th-borders: #2a0c0c !important;
+  --tw-prose-td-borders: #2a0c0c !important;
+  --tw-prose-invert-body: #9a2f2f !important;
+  --tw-prose-invert-headings: #b33535 !important;
+  --tw-prose-invert-lead: #9a2f2f !important;
+  --tw-prose-invert-links: #c93b3b !important;
+  --tw-prose-invert-bold: #b33535 !important;
+  --tw-prose-invert-counters: #6f2222 !important;
+  --tw-prose-invert-bullets: #6f2222 !important;
+  --tw-prose-invert-hr: #2a0c0c !important;
+  --tw-prose-invert-quotes: #9a2f2f !important;
+  --tw-prose-invert-quote-borders: #420f0f !important;
+  --tw-prose-invert-captions: #6f2222 !important;
+  --tw-prose-invert-code: #9a2f2f !important;
+  --tw-prose-invert-pre-code: #9a2f2f !important;
+  --tw-prose-invert-pre-bg: #080202 !important;
+  --tw-prose-invert-th-borders: #2a0c0c !important;
+  --tw-prose-invert-td-borders: #2a0c0c !important;
+}
+
+/* Text selections */
+[data-theme="obsidian-crimson"] ::selection {
+  background-color: #330a0a !important;
+  color: #b83a3a !important;
+}

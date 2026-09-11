@@ -140,7 +140,7 @@ describe('@winnegans/theme Package', () => {
     expect(mocha.colors.accent.toLowerCase()).toBe('#cba6f7');
   });
 
-  it('should include Obsidian Crimson theme with #000000 bg and #9A2F2F fg', () => {
+  it('should include Obsidian Crimson theme with #000000 bg and #9A2F2F fg and no white fonts', () => {
     const crimsonOled = getThemeById('obsidian-crimson');
     expect(crimsonOled).toBeDefined();
     expect(crimsonOled.isDark).toBe(true);
@@ -148,6 +148,35 @@ describe('@winnegans/theme Package', () => {
     expect(crimsonOled.colors.text.toLowerCase()).toBe('#9a2f2f');
     expect(crimsonOled.colors.readerBg.toLowerCase()).toBe('#000000');
     expect(crimsonOled.colors.readerText.toLowerCase()).toBe('#9a2f2f');
+    expect(crimsonOled.colors.textMuted.toLowerCase()).toBe('#6f2222');
+    expect(crimsonOled.colors.readerCoord.toLowerCase()).toBe('#5a1d1d');
+    expect(crimsonOled.colors.selectionBg.toLowerCase()).toBe('#330a0a');
+    expect(crimsonOled.colors.selectionText.toLowerCase()).toBe('#b83a3a');
+
+    // Verify absolutely no color in the Obsidian Crimson palette is white or near-white
+    const colorValues = Object.values(crimsonOled.colors);
+    for (const hex of colorValues) {
+      expect(hex.toLowerCase()).not.toBe('#ffffff');
+      expect(hex.toLowerCase()).not.toBe('#fff');
+
+      // Parse hex to RGB and ensure red dominance (no white/gray/light shades)
+      const cleanHex = hex.replace('#', '');
+      const r = parseInt(cleanHex.substring(0, 2), 16);
+      const g = parseInt(cleanHex.substring(2, 4), 16);
+      const b = parseInt(cleanHex.substring(4, 6), 16);
+
+      // Either pure black (#000000) or subdued red where R is strictly greater than G and B
+      if (r === 0 && g === 0 && b === 0) {
+        // Pure pitch black
+        expect(r).toBe(0);
+      } else {
+        // Subdued red: Red must dominate green and blue by a significant margin, and green/blue must be dark
+        expect(r).toBeGreaterThan(g);
+        expect(r).toBeGreaterThan(b);
+        expect(g).toBeLessThan(80); // Subdued, not bright or white
+        expect(b).toBeLessThan(80);
+      }
+    }
   });
 
   it('should allow building a custom theme with overrides', () => {

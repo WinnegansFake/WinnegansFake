@@ -436,7 +436,7 @@ export const BUILTIN_THEMES: ReadingTheme[] = [
   {
     id: 'obsidian-crimson',
     name: 'Obsidian Crimson',
-    description: 'Pure pitch-black OLED background (#000000) with deep blood-red foreground (#9A2F2F) for darkroom night reading.',
+    description: 'Pure pitch-black OLED background (#000000) with deep blood-red foreground (#9A2F2F) and subdued red fonts for darkroom night reading.',
     category: 'dark-red',
     isDark: true,
     colors: {
@@ -451,8 +451,8 @@ export const BUILTIN_THEMES: ReadingTheme[] = [
       readerBg: '#000000',
       readerText: '#9a2f2f',
       readerCoord: '#5a1d1d',
-      selectionBg: '#3d1212',
-      selectionText: '#ff8a8a',
+      selectionBg: '#330a0a',
+      selectionText: '#b83a3a',
     },
   },
 ];
