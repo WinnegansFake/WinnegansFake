@@ -49,4 +49,21 @@ describe('@winnegans/epub-reader Core Engine', () => {
     expect(cssBuffer).toBeInstanceOf(Buffer);
     expect(cssBuffer.length).toBeGreaterThan(50);
   });
+
+  it('should extract EPUB metadata generically', () => {
+    const meta = archive.getMetadata();
+    expect(meta).toBeDefined();
+    expect(meta.identifier).toBeDefined();
+    expect(meta.identifier).toContain('0d197583');
+  });
+
+  it('should support switching to generic SequentialSpineMapper', async () => {
+    const sequentialArchive = await EpubArchive.open(EPUB_PATH, {
+      mapper: new (await import('../packages/epub-reader/src/index.js')).SequentialSpineMapper(),
+    });
+    expect(sequentialArchive.getIndexedPageCount()).toBeGreaterThan(100);
+    const p1 = await sequentialArchive.getPage(1);
+    expect(p1.pageNumber).toBe(1);
+    expect(p1.lines.length).toBeGreaterThan(0);
+  });
 });

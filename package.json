@@ -5,7 +5,8 @@
   "description": "Crowdsourced scholarly annotation repository and viewer for James Joyce's Finnegans Wake",
   "scripts": {
     "dev": "node scripts/sync_public_annotations.js && pnpm --filter web dev",
-    "build": "pnpm --filter @winnegans/epub-reader build && pnpm --filter web build",
+    "build:packages": "pnpm --filter \"./packages/*\" build",
+    "build": "pnpm build:packages && pnpm --filter web build",
     "start": "pnpm --filter web start",
     "lint": "pnpm --filter web lint",
     "test": "vitest run",

@@ -1,0 +1,40 @@
+{
+  "name": "@winnegans/validator",
+  "version": "0.1.0",
+  "description": "Configurable linter, schema validator, and copyright-guardrail checker for book annotations",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "winnegans-validate": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts src/cli.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts src/cli.ts --format cjs,esm --dts --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "validator",
+    "linter",
+    "annotation",
+    "schema",
+    "copyright-guardrail"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "dependencies": {
+    "@winnegans/core": "link:../core",
+    "jsonschema": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsup": "^8.4.0",
+    "typescript": "^5"
+  }
+}

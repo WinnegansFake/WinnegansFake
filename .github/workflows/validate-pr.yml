@@ -34,8 +34,8 @@ jobs:
       - name: Run Schema & Copyright Validation
         run: node validate.js --schema schemas/page-annotation.schema.json --path annotations
 
-      - name: Build Libraries
-        run: pnpm --filter @winnegans/epub-reader build
+      - name: Build Workspace Packages
+        run: pnpm build:packages
 
       - name: Run Vitest Suite
         run: pnpm test

@@ -42,4 +42,18 @@ describe('Monorepo & Package Resolution', () => {
     expect(fs.existsSync(path.join(readerDist, 'index.mjs'))).toBe(true);
     expect(fs.existsSync(path.join(readerDist, 'index.d.ts'))).toBe(true);
   });
+
+  it('should verify @winnegans/core exports and build artifacts exist', () => {
+    const coreDist = path.join(REPO_ROOT, 'packages', 'core', 'dist');
+    expect(fs.existsSync(path.join(coreDist, 'index.js'))).toBe(true);
+    expect(fs.existsSync(path.join(coreDist, 'index.mjs'))).toBe(true);
+    expect(fs.existsSync(path.join(coreDist, 'index.d.ts'))).toBe(true);
+  });
+
+  it('should verify @winnegans/validator exports and build artifacts exist', () => {
+    const valDist = path.join(REPO_ROOT, 'packages', 'validator', 'dist');
+    expect(fs.existsSync(path.join(valDist, 'index.js'))).toBe(true);
+    expect(fs.existsSync(path.join(valDist, 'index.mjs'))).toBe(true);
+    expect(fs.existsSync(path.join(valDist, 'index.d.ts'))).toBe(true);
+  });
 });
