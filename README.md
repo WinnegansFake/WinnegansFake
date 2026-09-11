@@ -2,6 +2,8 @@
 
 An open-source, crowdsourced scholarly annotation engine for James Joyce’s *Finnegans Wake*.
 
+Inspired by this [tiktok video](https://www.tiktok.com/@lily76412/video/7661924549893655839?_r=1&_t=ZN-99VlBXRExiY)
+
 ---
 
 ## ⚖️ Copyright Notice & Why Book Text is Omitted
