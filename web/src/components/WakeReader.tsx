@@ -670,6 +670,47 @@ export function WakeReader() {
                         </div>
                       )}
 
+                      {/* Academic Sources & Bibliography */}
+                      {ann.sources && ann.sources.length > 0 && (
+                        <div className="text-[11px] text-slate-400 bg-slate-950/60 border border-slate-800 rounded-lg p-2.5 mb-2.5 space-y-1">
+                          <div className="font-semibold text-[10px] text-indigo-400 uppercase tracking-wider flex items-center gap-1">
+                            <BookOpen className="w-3 h-3" />
+                            <span>Sources & Bibliography</span>
+                          </div>
+                          <ul className="space-y-1 pl-1 text-[11px] leading-relaxed">
+                            {ann.sources.map((src, idx) => {
+                              // If source contains a URL, render with clickable anchor
+                              const urlMatch = src.match(/(https?:\/\/[^\s]+)/);
+                              if (urlMatch) {
+                                const url = urlMatch[0];
+                                const parts = src.split(url);
+                                return (
+                                  <li key={idx} className="text-slate-300">
+                                    {parts[0]}
+                                    <a
+                                      href={url}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      onClick={(e) => e.stopPropagation()}
+                                      className="inline-flex items-center text-indigo-400 hover:text-indigo-300 hover:underline break-all font-mono text-[10px] mx-1"
+                                    >
+                                      {url}
+                                      <ExternalLink className="w-2.5 h-2.5 ml-0.5 inline" />
+                                    </a>
+                                    {parts[1]}
+                                  </li>
+                                );
+                              }
+                              return (
+                                <li key={idx} className="text-slate-300">
+                                  {src}
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </div>
+                      )}
+
                       {/* Contributors footer */}
                       <div className="pt-2 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-500">
                         <span className="flex items-center">

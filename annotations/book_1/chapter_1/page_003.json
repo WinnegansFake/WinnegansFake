@@ -5,7 +5,7 @@
   "page_number": 3,
   "annotations": [
     {
-      "id": "003.01-8f2c",
+      "id": "003.01-c2dc",
       "line_number": 1,
       "target_phrase": "riverrun",
       "annotation_text": "Compound opening word indicating circularity and eternal return (Giambattista Vico's ricorso). Resumes the incomplete sentence closing the novel on page 628 ('A way a lone a last a loved a long the'). Also invokes the River Liffey flowing through Dublin, personified as Anna Livia Plurabelle (ALP).",
@@ -20,8 +20,8 @@
         "628.16"
       ],
       "sources": [
-        "McHugh, Roland. Annotations to Finnegans Wake (4th ed.).",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake."
+        "McHugh, Roland. Annotations to Finnegans Wake (4th ed.). https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "id": "003.01-b31a",
+      "id": "003.01-2a45",
       "line_number": 1,
       "target_phrase": "Eve and Adam's",
       "annotation_text": "Inversion of Adam and Eve, evoking original sin and human genesis while locating the reader precisely in Dublin: the popular name for the Church of the Immaculate Conception on Merchant's Quay near the Liffey.",
@@ -41,17 +41,40 @@
       ],
       "cross_references": [],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake."
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Dublin Historical Record: Adam and Eve's Church. https://www.jstor.org/stable/30104271"
       ],
       "contributors": [
-        "joycean-scholar"
+        "joycean-scholar",
+        "open-wake-editor"
       ]
     },
     {
-      "id": "003.04-c54d",
-      "line_number": 4,
+      "id": "003.01-d239",
+      "line_number": 1,
+      "target_phrase": "swerve of shore to bend of bay",
+      "annotation_text": "Refers to the curved Dublin coastline from Howth Head around Dublin Bay and Sutton isthmus to Dalkey, tracing the geographical embrace of the bay where the Liffey enters the Irish Sea.",
+      "categories": [
+        "dublin-geography",
+        "topography",
+        "liffey"
+      ],
+      "cross_references": [
+        "003.02"
+      ],
+      "sources": [
+        "Norris, David and Flint, Carl. Joyce for Beginners. https://archive.org/details/joyceforbeginner0000norr"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.02-94ed",
+      "line_number": 2,
       "target_phrase": "commodius vicus of recirculation",
-      "annotation_text": "Multilingual pun fusing the Roman Emperor Commodus, English 'commodious' (spacious/convenient), Latin 'vicus' (lane, street, village), and Giambattista Vico (1668–1744), the Italian philosopher whose cycle of history (divine, heroic, human, ricorso) provides the scaffolding for Finnegans Wake.",
+      "annotation_text": "Multilingual pun fusing the Roman Emperor Commodus, English 'commodious' (spacious/convenient), Latin 'vicus' (lane, street, village), and Giambattista Vico (1668\u20131744), the Italian philosopher whose cycle of history (divine, heroic, human, ricorso) provides the scaffolding for Finnegans Wake.",
       "categories": [
         "vico",
         "philosophy",
@@ -63,11 +86,633 @@
         "215.12"
       ],
       "sources": [
-        "Ellmann, Richard. James Joyce (New and Revised ed.).",
-        "Vico, Giambattista. Scienza Nuova (1725)."
+        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
       ],
       "contributors": [
-        "vico-reader"
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.02-6de9",
+      "line_number": 2,
+      "target_phrase": "Howth Castle and Environs",
+      "annotation_text": "Acronym HCE, establishing the universal everyman protagonist Humphrey Chimpden Earwicker. Geographically, Howth Castle situated on the peninsula guarding the northern entrance to Dublin Bay.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "dublin-landmarks",
+        "earwicker"
+      ],
+      "cross_references": [
+        "030.01",
+        "032.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Howth Castle Estate History. https://howthcastle.ie/history/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.03-bde3",
+      "line_number": 3,
+      "target_phrase": "Sir Tristram, violer d'amores",
+      "annotation_text": "Evokes Sir Tristram of Lyonesse from Arthurian legend and Wagner's opera Tristan und Isolde. \"violer d'amores\" puns on viol d'amour (instrument) and viola d'amore / violator of love (viol/rape). Tristram was born in Armorica (Brittany).",
+      "categories": [
+        "tristan-and-isolde",
+        "arthurian",
+        "music",
+        "wagner"
+      ],
+      "cross_references": [
+        "384.01",
+        "398.29"
+      ],
+      "sources": [
+        "B\u00e9dier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "Wagner, Richard. Tristan und Isolde Libretto. https://en.wikipedia.org/wiki/Tristan_und_Isolde"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.03-5108",
+      "line_number": 3,
+      "target_phrase": "passencore rearrived",
+      "annotation_text": "French \"pas encore\" (not yet) fused with \"rearrived\". Announces the pre-historical mythical timeframe where actions have both not yet occurred and are perpetually repeating in Viconian ricorso.",
+      "categories": [
+        "french",
+        "ricorso",
+        "time",
+        "syntax"
+      ],
+      "cross_references": [
+        "003.08",
+        "003.09"
+      ],
+      "sources": [
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification for Incaminasion of Work in Progress. https://archive.org/details/ourexagminationr0000unse"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.04-78cc",
+      "line_number": 4,
+      "target_phrase": "North Armorica",
+      "annotation_text": "Armorica was the ancient Celtic name for Brittany (Northwestern France), from where Tristram hailed. Fuses with \"North America\" to foreshadow the transatlantic migration of Irish descendants.",
+      "categories": [
+        "geography",
+        "celtic",
+        "brittany",
+        "america"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Caesar, Julius. Commentarii de Bello Gallico. https://www.thelatinlibrary.com/caesar/gall.html"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.04-9743",
+      "line_number": 4,
+      "target_phrase": "scraggy isthmus of Europe Minor",
+      "annotation_text": "Geographical and bodily metaphor: refers to Ireland as a jagged protrusion off Europe, the Sutton isthmus connecting Howth to the Dublin mainland, and phallic/anatomical topography.",
+      "categories": [
+        "topography",
+        "ireland",
+        "anatomy",
+        "howth"
+      ],
+      "cross_references": [
+        "003.05"
+      ],
+      "sources": [
+        "O'Hehir, Brendan. A Gaelic Lexicon for Finnegans Wake. https://archive.org/details/gaeliclexiconfor0000oheh"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.05-3ed2",
+      "line_number": 5,
+      "target_phrase": "penisolate war",
+      "annotation_text": "Triple pun: the Peninsular War (1807\u20131814) fought by the Duke of Wellington, the \"peninsular\" isolation of Howth and Ireland, and Tristram's sexual / phallic conquest (\"penis-isolate\").",
+      "categories": [
+        "wellington",
+        "war",
+        "pun",
+        "phallic"
+      ],
+      "cross_references": [
+        "008.09",
+        "010.01"
+      ],
+      "sources": [
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.05-b7d5",
+      "line_number": 5,
+      "target_phrase": "topsawyer's rocks by the stream Oconee",
+      "annotation_text": "Allusion to Mark Twain (Samuel Clemens) and Tom Sawyer. The Oconee River flows through Laurens County and the city of Dublin, Georgia, founded by Peter Sawyer, an immigrant from Dublin, Ireland.",
+      "categories": [
+        "twain",
+        "american-literature",
+        "geography",
+        "dublin-georgia"
+      ],
+      "cross_references": [
+        "003.06"
+      ],
+      "sources": [
+        "Twain, Mark. The Adventures of Tom Sawyer. https://www.gutenberg.org/ebooks/74",
+        "New Georgia Encyclopedia: Dublin, Georgia. https://www.georgiaencyclopedia.org/articles/counties-cities-neighborhoods/dublin/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.06-54fc",
+      "line_number": 6,
+      "target_phrase": "Laurens County's gorgios",
+      "annotation_text": "Laurens County, Georgia (containing Dublin, GA). \"gorgios\" is Romani (Gypsy) slang for non-Gypsies / gentiles, contrasting with the indigenous and wandering tribes.",
+      "categories": [
+        "romani",
+        "georgia",
+        "slang",
+        "dialect"
+      ],
+      "cross_references": [
+        "003.05"
+      ],
+      "sources": [
+        "Borrow, George. Romano Lavo-Lil: Word-Book of the Romany. https://www.gutenberg.org/ebooks/2951"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.07-649a",
+      "line_number": 7,
+      "target_phrase": "doublin their mumper",
+      "annotation_text": "Pun on Dublin, doubling numbers, and \"mumper\" (an old cant/slang term for a beggar or vagabond; also mumbling). Highlights the proliferation of duplicate Dublins across the globe.",
+      "categories": [
+        "dublin",
+        "slang",
+        "cant",
+        "doubling"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Grose, Francis. 1811 Dictionary of the Vulgar Tongue. https://www.gutenberg.org/ebooks/5402"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.07-012f",
+      "line_number": 7,
+      "target_phrase": "avoice from afire bellowsed mishe mishe to tauftauf thuartpeatrick",
+      "annotation_text": "Synthesizes God's voice from the burning bush to Moses (Exodus 3:2) with Saint Patrick. \"Mishe mishe\" is Irish \"Mise, mise\" (\"I am, I am\"); \"tauftauf\" is German \"taufen\" (to baptize); \"thuartpeatrick\" blends \"Thou art Peter\" (Matthew 16:18: Tu es Petrus) with Patrick.",
+      "categories": [
+        "st-patrick",
+        "biblical",
+        "irish-gaelic",
+        "german",
+        "baptism"
+      ],
+      "cross_references": [
+        "003.08",
+        "611.04"
+      ],
+      "sources": [
+        "The Confession of Saint Patrick. https://www.confessio.ie/etexts/confessio_english#",
+        "Vulgate Latin Bible: Exodus 3 and Matthew 16. https://www.biblegateway.com/passage/?search=Matthew+16%3A18&version=VULGATE"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.08-4b1b",
+      "line_number": 8,
+      "target_phrase": "venissoon after",
+      "annotation_text": "Fuses \"very soon after\", venison (the hunted deer; Jacob's deception of Isaac with savory venison), and \"venison\" / \"Venus\" (erotic pursuit and fertility).",
+      "categories": [
+        "biblical",
+        "jacob-and-esau",
+        "wordplay",
+        "mythology"
+      ],
+      "cross_references": [
+        "003.09"
+      ],
+      "sources": [
+        "Genesis 27 (Jacob and Esau with Isaac's venison). https://www.biblegateway.com/passage/?search=Genesis+27&version=KJV"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.09-f852",
+      "line_number": 9,
+      "target_phrase": "kidscad buttended a bland old isaac",
+      "annotation_text": "Allusion to the biblical patriarch Isaac in Genesis 27, deceived by his cad son Jacob (wearing goatskin kid) who supplanted Esau. Also echoes Parnell (\"the Chief\"), Charles Stewart Parnell's betrayal, and elder generations displaced by youth.",
+      "categories": [
+        "biblical",
+        "jacob-and-esau",
+        "patriarch",
+        "parnell"
+      ],
+      "cross_references": [
+        "003.08"
+      ],
+      "sources": [
+        "Frazer, Sir James George. Folk-Lore in the Old Testament. https://archive.org/details/folkloreinoldtes01frazuoft"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.09-62a5",
+      "line_number": 9,
+      "target_phrase": "all's fair in vanessy",
+      "annotation_text": "Blends the proverb \"all's fair in love and war\" with Jonathan Swift's Esther Vanhomrigh (\"Vanessa\"), whose tortured romantic triangle with Swift and Esther Johnson (\"Stella\") mirrors the two warring temptresses of the Wake (Issy and her mirror).",
+      "categories": [
+        "swift",
+        "vanessa",
+        "stella",
+        "dublin-history",
+        "proverb"
+      ],
+      "cross_references": [
+        "003.10",
+        "211.20"
+      ],
+      "sources": [
+        "Swift, Jonathan. Cadenus and Vanessa (1726). https://en.wikipedia.org/wiki/Cadenus_and_Vanessa",
+        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.10-d18b",
+      "line_number": 10,
+      "target_phrase": "sosie sesthers wroth with twone nathandjoe",
+      "annotation_text": "French \"sosie\" (double/twin/lookalike) + sisters: Stella and Vanessa wrathful with Jonathan Swift (\"twone\" = two + one; \"nathandjoe\" = Nathan + Joe / Jonathan Swift). Also evokes Swift's Tale of a Tub.",
+      "categories": [
+        "swift",
+        "doubles",
+        "french",
+        "issies",
+        "triangles"
+      ],
+      "cross_references": [
+        "003.09"
+      ],
+      "sources": [
+        "Swift, Jonathan. A Tale of a Tub (1704). https://www.gutenberg.org/ebooks/4737"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.10-da89",
+      "line_number": 10,
+      "target_phrase": "Rot a peck of pa's malt had Jhem or Shen brewed",
+      "annotation_text": "Parody of \"This is the House That Jack Built\" (\"This is the malt that lay in the house that Jack built\"). Introduces the twin sons Shem the Penman and Shaun the Post (\"Jhem or Shen\"), Jameson and Guinness malt brews, and the sins of the father.",
+      "categories": [
+        "nursery-rhyme",
+        "shem-and-shaun",
+        "brewing",
+        "twins"
+      ],
+      "cross_references": [
+        "003.11",
+        "169.01",
+        "404.01"
+      ],
+      "sources": [
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1",
+        "History of Guinness Brewery at St. James's Gate. https://www.guinness-storehouse.com/en/our-story"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.11-815d",
+      "line_number": 11,
+      "target_phrase": "arclight and rory end to the regginbrow",
+      "annotation_text": "Electric arc lighting combined with \"rory\" (Irish \"ruadh\", red, or Latin \"ros/roris\", dew/dawn), aurora, and Rory O'Conor (last High King of Ireland). \"regginbrow\" is inverted German \"Regenbogen\" (rainbow), signalling God's covenant with Noah after the deluge.",
+      "categories": [
+        "rainbow",
+        "german",
+        "genesis",
+        "noah",
+        "rory-oconor"
+      ],
+      "cross_references": [
+        "003.12",
+        "023.01"
+      ],
+      "sources": [
+        "Genesis 9:13 (The Covenant of the Rainbow). https://www.biblegateway.com/passage/?search=Genesis+9%3A13&version=KJV",
+        "MacKillop, James. Dictionary of Celtic Mythology: Rory O'Conor. https://www.oxfordreference.com/view/10.1093/acref/9780198609674.001.0001/acref-9780198609674-e-2727"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.12-45da",
+      "line_number": 12,
+      "target_phrase": "ringsome on the aquaface",
+      "annotation_text": "The circular rainbow reflecting upon the primordial waters of the deep (Genesis 1:2: \"and the Spirit of God moved upon the face of the waters\"). German \"Wasserfl\u00e4che\" (water surface) and Latin \"aqua\".",
+      "categories": [
+        "genesis",
+        "creation",
+        "rainbow",
+        "latin"
+      ],
+      "cross_references": [
+        "003.11"
+      ],
+      "sources": [
+        "Hayman, David. The 'Wake' in Transit. https://archive.org/details/wakeintransit0000haym"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.12-9ed3",
+      "line_number": 12,
+      "target_phrase": "The fall",
+      "annotation_text": "Capitalized cosmogonic Fall: Lucifer's fall from heaven, Adam and Eve's fall in Eden, Humpty Dumpty's fall from the wall, Tim Finnegan's fall from the ladder in the ballad, and Wall Street's stock crash of 1929.",
+      "categories": [
+        "fall",
+        "theology",
+        "humpty-dumpty",
+        "finnegan"
+      ],
+      "cross_references": [
+        "003.14",
+        "004.15"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.12-943b",
+      "line_number": 12,
+      "target_phrase": "bababadalgharaghtakamminarronnkonnbronntqnnerronntuonnthunntrovarrhounawnskawntoohoohoordenenthurnuk",
+      "annotation_text": "First of the ten 100-letter thunderclaps (this opening one has 101 letters). In Vico's philosophy, thunder is the terrifying voice of God that drives primitive humanity into caves to establish language, religion, and marriage. Fuses words for thunder from 10 languages: Hindi, Arabic, Greek, Japanese, French, Italian, Irish, Swedish, Danish, English.",
+      "categories": [
+        "thunderclap",
+        "vico",
+        "etymology",
+        "languages",
+        "voice-of-god"
+      ],
+      "cross_references": [
+        "023.05",
+        "044.20"
+      ],
+      "sources": [
+        "Vico, Giambattista. The New Science (The Thunder and the Giant Age). https://plato.stanford.edu/entries/vico/",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.13-e902",
+      "line_number": 13,
+      "target_phrase": "once wallstrait oldparr is retaled early in bed",
+      "annotation_text": "Conflates Wall Street financial collapse (1929) with Thomas Parr (\"Old Parr\"), an English centenarian said to have lived to 152 years; also echoes Humpty Dumpty who sat on a wall, and bedtime stories / wake gossip.",
+      "categories": [
+        "wall-street",
+        "old-parr",
+        "folklore",
+        "aging"
+      ],
+      "cross_references": [
+        "003.14"
+      ],
+      "sources": [
+        "Dictionary of National Biography: Thomas Parr. https://en.wikipedia.org/wiki/Old_Tom_Parr"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.14-463e",
+      "line_number": 14,
+      "target_phrase": "christian minstrelsy",
+      "annotation_text": "Refers to John Keble's popular devotional poetry collection \"The Christian Year\" (1827) and traditional minstrel songs, ballads, and wandering street bards chronicling the human condition.",
+      "categories": [
+        "hymnology",
+        "minstrelsy",
+        "poetry",
+        "ballads"
+      ],
+      "cross_references": [
+        "003.15"
+      ],
+      "sources": [
+        "Keble, John. The Christian Year. https://www.gutenberg.org/ebooks/15440"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.14-519e",
+      "line_number": 14,
+      "target_phrase": "The great fall of the offwall entailed at such short notice",
+      "annotation_text": "Connects Humpty Dumpty with feudal legal property \"entail\" and the suddenness of catastrophic downfall in both cosmic and comic registers.",
+      "categories": [
+        "law",
+        "humpty-dumpty",
+        "comedy",
+        "tragedy"
+      ],
+      "cross_references": [
+        "003.12"
+      ],
+      "sources": [
+        "Blackstone, Sir William. Commentaries on the Laws of England (On Estates in Tail). https://avalon.law.yale.edu/subject_menus/blackstone.asp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.15-5c98",
+      "line_number": 15,
+      "target_phrase": "pftjschute of Finnegan, erse solid man",
+      "annotation_text": "The comic sound effect of falling (\"pftj\") and \"chute\" (French chute: fall/descent). Tim Finnegan of the Irish-American comic street ballad \"Finnegan's Wake\" who fell from a ladder drunk, and \"erse solid man\" (Irish solid man; also Earth / ear / solid citizen).",
+      "categories": [
+        "ballad",
+        "finnegan",
+        "irish",
+        "humor",
+        "french"
+      ],
+      "cross_references": [
+        "004.10"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake (Traditional Irish-American Street Ballad). https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "O'Lochlainn, Colm. Irish Street Ballads. https://archive.org/details/irishstreetballa0000oloc"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.16-a31d",
+      "line_number": 16,
+      "target_phrase": "humptyhillhead of humself prumptly sends an unquiring one well to the west",
+      "annotation_text": "Humpty Dumpty blended with Howth Hill (the giant HCE's head in the Dublin landscape, lying with head at Howth in the east and feet to the west in the Phoenix Park). Promptly / inquisitorially looking westward.",
+      "categories": [
+        "humpty-dumpty",
+        "hce",
+        "topography",
+        "landscape-giant"
+      ],
+      "cross_references": [
+        "003.17"
+      ],
+      "sources": [
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.17-37ff",
+      "line_number": 17,
+      "target_phrase": "tumptytumtoes: and their upturapikepointandplace",
+      "annotation_text": "The recumbent giant's upturned toes pointing up at Castleknock in Phoenix Park, marking the western extremity of the dormant titan's recumbent body.",
+      "categories": [
+        "hce",
+        "phoenix-park",
+        "topography",
+        "anatomy"
+      ],
+      "cross_references": [
+        "003.18"
+      ],
+      "sources": [
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.18-0184",
+      "line_number": 18,
+      "target_phrase": "knock out in the park where oranges have been laid to rust",
+      "annotation_text": "Knockmaroon Gate and Castleknock in Phoenix Park. \"Oranges\" refers to King William III (William of Orange) and the Orangemen of the Battle of the Boyne (1690), contrasted with the Irish Green (\"rust upon the green\").",
+      "categories": [
+        "phoenix-park",
+        "william-of-orange",
+        "boyne",
+        "irish-history",
+        "color-symbolism"
+      ],
+      "cross_references": [
+        "003.19"
+      ],
+      "sources": [
+        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.19-862f",
+      "line_number": 19,
+      "target_phrase": "devlinsfirst loved livvy",
+      "annotation_text": "Origin of love and Dublin: Dublin's first (devil's first) love for the River Liffey (Anna Livia Plurabelle, \"livvy\"). Conflates Dublin foundation, Adam and Eve, Lucifer, and the eternal romance of landscape and river.",
+      "categories": [
+        "alp",
+        "liffey",
+        "dublin",
+        "origin-myth",
+        "adam-and-eve"
+      ],
+      "cross_references": [
+        "003.01",
+        "215.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
       ]
     }
   ]
