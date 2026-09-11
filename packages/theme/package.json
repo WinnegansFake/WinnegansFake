@@ -1,0 +1,35 @@
+{
+  "name": "@winnegans/theme",
+  "version": "0.1.0",
+  "description": "Universal literary reading theme switcher, palettes, customizer, and privacy-first cookie management",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "theme",
+    "reading",
+    "typography",
+    "palette",
+    "cookie-consent",
+    "oled",
+    "dark-mode"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}

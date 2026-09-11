@@ -375,7 +375,7 @@ export function WakeReader() {
       {/* 3. Main Split View: Left = Book Lines, Right = Annotations */}
       <div className="max-w-7xl mx-auto w-full px-4 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start flex-1">
         {/* LEFT COLUMN: Book Text (or Local EPUB Prompt) */}
-        <section className="lg:col-span-7 bg-slate-900/70 border border-slate-800 rounded-2xl p-5 sm:p-7 shadow-xl space-y-4">
+        <section className="lg:col-span-7 wf-reader-viewport border border-slate-800 rounded-2xl p-5 sm:p-7 shadow-xl space-y-4 transition-colors">
           <div className="flex items-center justify-between pb-3 border-b border-slate-800 text-xs font-mono text-slate-400">
             <div className="flex items-center space-x-2">
               <BookOpen className="w-4 h-4 text-emerald-400" />
@@ -479,7 +479,7 @@ export function WakeReader() {
             </div>
           ) : (
             /* EPUB IS LOADED: Render the line segmented text */
-            <div className="space-y-1.5 font-serif text-slate-200 text-sm leading-relaxed select-text">
+            <div className="space-y-1.5 font-serif text-sm leading-relaxed select-text">
               {lines.map((l) => {
                 const lineAnns = (annotationsData?.annotations || []).filter((a) => a.line_number === l.line);
                 const hasAnns = lineAnns.length > 0;
@@ -496,10 +496,10 @@ export function WakeReader() {
                         : 'hover:bg-slate-900'
                     }`}
                   >
-                    <span className="font-mono text-[11px] text-slate-500 w-8 flex-shrink-0 select-none pt-0.5">
+                    <span className="font-mono text-[11px] wf-reader-coord w-8 flex-shrink-0 select-none pt-0.5">
                       {String(l.line).padStart(2, '0')}
                     </span>
-                    <p className="flex-1 font-serif text-slate-200">
+                    <p className="flex-1 font-serif wf-reader-line">
                       {l.text}
                     </p>
                     <div className="flex items-center space-x-1 opacity-0 group-hover:opacity-100 transition-opacity ml-2">

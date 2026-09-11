@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Dynamic Theme Variables populated by @winnegans/theme */
+  --wf-bg: #020617;
+  --wf-text: #f1f5f9;
+  --wf-text-muted: #94a3b8;
+  --wf-card-bg: #0f172a;
+  --wf-border: #1e293b;
+  --wf-accent: #10b981;
+  --wf-accent-hover: #34d399;
+  --wf-ring: #059669;
+  --wf-reader-bg: #0b1120;
+  --wf-reader-text: #f8fafc;
+  --wf-reader-coord: #64748b;
+  --wf-selection-bg: #065f46;
+  --wf-selection-text: #ecfdf5;
+
+  --background: var(--wf-bg);
+  --foreground: var(--wf-text);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--wf-bg);
+  --color-foreground: var(--wf-text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background-color: var(--wf-bg);
+  color: var(--wf-text);
+  font-family: var(--wf-font-family, var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif);
+  font-size: var(--wf-font-size, 16px);
+  line-height: var(--wf-line-height, 1.6);
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+::selection {
+  background-color: var(--wf-selection-bg);
+  color: var(--wf-selection-text);
+}
+
+/* Reader Typography Engine classes */
+.wf-reader-viewport {
+  background-color: var(--wf-reader-bg) !important;
+  color: var(--wf-reader-text) !important;
+}
+
+.wf-reader-line {
+  color: var(--wf-reader-text);
+}
+
+.wf-reader-coord {
+  color: var(--wf-reader-coord);
+}
+
+.wf-card-surface {
+  background-color: var(--wf-card-bg);
+  border-color: var(--wf-border);
+}
+
+.wf-accent-btn {
+  background-color: var(--wf-accent);
+  color: #ffffff;
+}
+.wf-accent-btn:hover {
+  background-color: var(--wf-accent-hover);
 }

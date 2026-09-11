@@ -1,0 +1,250 @@
+import { ReadingTheme } from './types.js';
+
+export const BUILTIN_THEMES: ReadingTheme[] = [
+  // 1. Light Daylight Theme (pure white with deep black font)
+  {
+    id: 'daylight-pure',
+    name: 'Daylight White',
+    description: 'Crisp, high-contrast pure white (#FFFFFF) with solid black font for bright sunlight and daytime reading.',
+    category: 'light',
+    isDark: false,
+    colors: {
+      bg: '#ffffff',
+      text: '#000000',
+      textMuted: '#4b5563',
+      cardBg: '#f9fafb',
+      border: '#e5e7eb',
+      accent: '#059669',
+      accentHover: '#047857',
+      ring: '#10b981',
+      readerBg: '#ffffff',
+      readerText: '#000000',
+      readerCoord: '#6b7280',
+      selectionBg: '#a7f3d0',
+      selectionText: '#064e3b',
+    },
+  },
+
+  // 2. Warm Book Parchment
+  {
+    id: 'warm-parchment',
+    name: 'Book Parchment',
+    description: 'Subtle warm cream and antique paper tones that eliminate eye fatigue for marathon scholarly reading.',
+    category: 'light',
+    isDark: false,
+    colors: {
+      bg: '#fbf7ee',
+      text: '#2c2416',
+      textMuted: '#786851',
+      cardBg: '#f4ede0',
+      border: '#e2d5be',
+      accent: '#b45309',
+      accentHover: '#92400e',
+      ring: '#d97706',
+      readerBg: '#fefcf8',
+      readerText: '#231d12',
+      readerCoord: '#8c7b64',
+      selectionBg: '#fed7aa',
+      selectionText: '#451a03',
+    },
+  },
+
+  // 3. Obsidian Pure OLED (Absolute #000000 and #FFFFFF)
+  {
+    id: 'obsidian-oled',
+    name: 'Obsidian OLED',
+    description: 'True pitch-black (#000000) pixels with stark white (#FFFFFF) text for zero power emission on OLED displays.',
+    category: 'oled',
+    isDark: true,
+    colors: {
+      bg: '#000000',
+      text: '#ffffff',
+      textMuted: '#9ca3af',
+      cardBg: '#080808',
+      border: '#262626',
+      accent: '#10b981',
+      accentHover: '#34d399',
+      ring: '#059669',
+      readerBg: '#000000',
+      readerText: '#ffffff',
+      readerCoord: '#737373',
+      selectionBg: '#064e3b',
+      selectionText: '#ecfdf5',
+    },
+  },
+
+  // 4. Crimson Midnight (Soothing Dark Red for Night Vision)
+  {
+    id: 'dark-crimson',
+    name: 'Crimson Midnight',
+    description: 'Deep nocturnal maroon and soft burgundy red to preserve scotopic night vision and circadian rhythm.',
+    category: 'dark-red',
+    isDark: true,
+    colors: {
+      bg: '#140507',
+      text: '#fecdd3',
+      textMuted: '#fda4af',
+      cardBg: '#220a0d',
+      border: '#4c1117',
+      accent: '#e11d48',
+      accentHover: '#f43f5e',
+      ring: '#fb7185',
+      readerBg: '#0e0304',
+      readerText: '#ffe4e6',
+      readerCoord: '#9f1239',
+      selectionBg: '#881337',
+      selectionText: '#fff1f2',
+    },
+  },
+
+  // 5. Blood Orange Ember (Dark Red / Ember)
+  {
+    id: 'dark-ember',
+    name: 'Blood Ember',
+    description: 'Smoldering dark embers and ruby tones engineered for dim bedrooms and late-night Joyce study.',
+    category: 'dark-red',
+    isDark: true,
+    colors: {
+      bg: '#180806',
+      text: '#fed7aa',
+      textMuted: '#fb923c',
+      cardBg: '#270e0a',
+      border: '#541c14',
+      accent: '#ea580c',
+      accentHover: '#f97316',
+      ring: '#fb923c',
+      readerBg: '#110504',
+      readerText: '#ffedd5',
+      readerCoord: '#9a3412',
+      selectionBg: '#7c2d12',
+      selectionText: '#fff7ed',
+    },
+  },
+
+  // 6. Deep Wine Burgundy (Velvet Red)
+  {
+    id: 'dark-burgundy',
+    name: 'Burgundy Velvet',
+    description: 'Rich vintage port-wine red and aged rose gold highlights for gentle, atmospheric night reading.',
+    category: 'dark-red',
+    isDark: true,
+    colors: {
+      bg: '#190a12',
+      text: '#fce7f3',
+      textMuted: '#f472b6',
+      cardBg: '#28101e',
+      border: '#581c3f',
+      accent: '#db2777',
+      accentHover: '#ec4899',
+      ring: '#f472b6',
+      readerBg: '#12060d',
+      readerText: '#fdf2f8',
+      readerCoord: '#9d174d',
+      selectionBg: '#831843',
+      selectionText: '#fdf2f8',
+    },
+  },
+
+  // 7. Slate Midnight (The Classic Winnegans Dark)
+  {
+    id: 'slate-midnight',
+    name: 'Slate Midnight (Default)',
+    description: 'The standard WinnegansFake scholarly palette: deep indigo-slate with radiant emerald annotations.',
+    category: 'dark-ambient',
+    isDark: true,
+    colors: {
+      bg: '#020617',
+      text: '#f1f5f9',
+      textMuted: '#94a3b8',
+      cardBg: '#0f172a',
+      border: '#1e293b',
+      accent: '#10b981',
+      accentHover: '#34d399',
+      ring: '#059669',
+      readerBg: '#0b1120',
+      readerText: '#f8fafc',
+      readerCoord: '#64748b',
+      selectionBg: '#065f46',
+      selectionText: '#ecfdf5',
+    },
+  },
+
+  // 8. Cyberpunk Neon (Fun & Vibrant)
+  {
+    id: 'neon-cyberpunk',
+    name: 'Cyberpunk Neon',
+    description: 'Electrifying dark synthwave with hot neon cyan, electric purple, and high-energy contrasts.',
+    category: 'fun',
+    isDark: true,
+    colors: {
+      bg: '#0b0813',
+      text: '#f5f3ff',
+      textMuted: '#c4b5fd',
+      cardBg: '#161026',
+      border: '#3b2d5a',
+      accent: '#06b6d4',
+      accentHover: '#22d3ee',
+      ring: '#a855f7',
+      readerBg: '#07050d',
+      readerText: '#ffffff',
+      readerCoord: '#8b5cf6',
+      selectionBg: '#4c1d95',
+      selectionText: '#f5f3ff',
+    },
+  },
+
+  // 9. Forest Glade (Earthy Emerald)
+  {
+    id: 'forest-glade',
+    name: 'Emerald Forest',
+    description: 'Deep pine woods and mossy greens inspired by the fertile riverbanks of the River Liffey.',
+    category: 'creative',
+    isDark: true,
+    colors: {
+      bg: '#04130c',
+      text: '#ecfdf5',
+      textMuted: '#6ee7b7',
+      cardBg: '#0a2318',
+      border: '#134e35',
+      accent: '#10b981',
+      accentHover: '#34d399',
+      ring: '#059669',
+      readerBg: '#030e09',
+      readerText: '#f0fdf4',
+      readerCoord: '#059669',
+      selectionBg: '#064e3b',
+      selectionText: '#d1fae5',
+    },
+  },
+
+  // 10. Solarized Dublin Amber (Scholarly Vintage)
+  {
+    id: 'solarized-amber',
+    name: 'Dublin Amber',
+    description: 'Muted warm solarized dark background with incandescent honey and amber highlights.',
+    category: 'dark-ambient',
+    isDark: true,
+    colors: {
+      bg: '#14120e',
+      text: '#fef3c7',
+      textMuted: '#fcd34d',
+      cardBg: '#211d17',
+      border: '#453a29',
+      accent: '#f59e0b',
+      accentHover: '#fbbf24',
+      ring: '#d97706',
+      readerBg: '#0e0c09',
+      readerText: '#fffbeb',
+      readerCoord: '#b45309',
+      selectionBg: '#78350f',
+      selectionText: '#fef3c7',
+    },
+  },
+];
+
+export const DEFAULT_THEME_ID = 'slate-midnight';
+
+export function getThemeById(themeId: string): ReadingTheme {
+  const found = BUILTIN_THEMES.find((t) => t.id === themeId);
+  return found || BUILTIN_THEMES[6]; // default to slate-midnight
+}

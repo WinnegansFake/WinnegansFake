@@ -146,6 +146,18 @@ importers:
         specifier: ^5
         version: 5.9.3
 
+  packages/theme:
+    devDependencies:
+      '@types/node':
+        specifier: ^20
+        version: 20.19.43
+      tsup:
+        specifier: ^8.5.1
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.28)(supports-color@7.2.0)(typescript@5.9.3)
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
   packages/validator:
     dependencies:
       '@winnegans/core':
@@ -170,6 +182,9 @@ importers:
       '@winnegans/epub-reader':
         specifier: link:../packages/epub-reader
         version: link:../packages/epub-reader
+      '@winnegans/theme':
+        specifier: link:../packages/theme
+        version: link:../packages/theme
       jsonschema:
         specifier: ^1.5.0
         version: 1.5.0

@@ -14,6 +14,7 @@ import {
   Layers
 } from 'lucide-react';
 import { GITHUB_REPO_URL } from '@/lib/constants';
+import { ThemeSwitcher } from './ThemeSwitcher';
 
 function GithubIcon({ className = "w-4 h-4" }: { className?: string }) {
   return (
@@ -90,6 +91,7 @@ export function Navigation() {
 
           {/* Right Action buttons */}
           <div className="hidden md:flex items-center space-x-3">
+            <ThemeSwitcher />
             <div className="flex items-center space-x-1 text-[11px] font-mono text-slate-400 bg-slate-900/80 px-2.5 py-1 rounded-md border border-slate-800">
               <Shield className="w-3.5 h-3.5 text-emerald-400" />
               <span>Zero-Copyright Architecture</span>
@@ -141,10 +143,9 @@ export function Navigation() {
             );
           })}
           <div className="pt-3 border-t border-slate-800 flex items-center justify-between">
-            <span className="text-xs text-slate-400 flex items-center gap-1">
-              <Shield className="w-3.5 h-3.5 text-emerald-400" />
-              Zero Copyright
-            </span>
+            <div className="flex items-center space-x-2">
+              <ThemeSwitcher />
+            </div>
             <a
               href={GITHUB_REPO_URL}
               target="_blank"
