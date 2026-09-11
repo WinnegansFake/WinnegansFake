@@ -69,6 +69,7 @@ import { browserEpub, ParsedEpubPage } from '@/lib/epubReader';
 import { AnnotationHoverPopup, HoverPopupData } from './AnnotationHoverPopup';
 import { segmentAnnotatedLine } from '@/lib/lineAnnotator';
 import { useBookmarks } from './BookmarkContext';
+import { useSearch } from './SearchContext';
 import { BookmarksModal } from './BookmarksModal';
 import {
   readEpubCookie,
@@ -110,6 +111,12 @@ export function WakeReader() {
     isLineBookmarked,
     setShowBookmarksModal,
   } = useBookmarks();
+
+  const {
+    openSearch,
+    registerNavigateHandler,
+    registerEpubModalHandler,
+  } = useSearch();
 
   // Filters, layers & sorting
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -236,7 +243,28 @@ export function WakeReader() {
       }
       window.history.replaceState({}, '', url.toString());
     }
+    if (line) {
+      setTimeout(() => {
+        const el = document.getElementById(`line-${line}`);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 200);
+    }
   };
+
+  useEffect(() => {
+    registerNavigateHandler((p: number, l?: number) => {
+      goToPage(p, l);
+    });
+    registerEpubModalHandler(() => {
+      setEpubModalOpen(true);
+    });
+    return () => {
+      registerNavigateHandler(null);
+      registerEpubModalHandler(null);
+    };
+  }, [registerNavigateHandler, registerEpubModalHandler]);
 
   const handlePageSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -597,7 +625,7 @@ export function WakeReader() {
         return;
       }
 
-      if (e.key === 'f' || e.key === 'F') {
+      if ((e.key === 'f' || e.key === 'F') && !e.ctrlKey && !e.metaKey && !e.altKey) {
         e.preventDefault();
         toggleFullscreen();
       } else if (e.key === 'Escape') {
@@ -972,6 +1000,20 @@ export function WakeReader() {
               </span>
             </button>
 
+            {/* Universal Search Button */}
+            <button
+              type="button"
+              onClick={() => openSearch()}
+              className="inline-flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 transition-colors cursor-pointer"
+              title="Search entire text and annotations (Ctrl+F or /)"
+            >
+              <Search className="w-3.5 h-3.5 text-emerald-400" />
+              <span className="hidden sm:inline">Search</span>
+              <kbd className="hidden md:inline-block px-1 py-0.2 text-[9px] font-mono text-slate-400 bg-slate-900 rounded border border-slate-700/80">
+                Ctrl+F
+              </kbd>
+            </button>
+
             {/* Open Bookmarks List / Cookie Retention Manager */}
             <button
               onClick={() => setShowBookmarksModal(true)}
@@ -1327,18 +1369,29 @@ export function WakeReader() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search lemmas, glosses, scholars, tags..."
-              className="w-full bg-slate-950 border border-slate-800 rounded-lg pl-8 pr-8 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500 font-sans"
+              placeholder="Search page lemmas, glosses, tags..."
+              className="w-full bg-slate-950 border border-slate-800 rounded-lg pl-8 pr-28 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500 font-sans"
             />
-            {searchQuery && (
+            <div className="absolute right-2 top-1.5 flex items-center space-x-1">
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="p-1 text-slate-500 hover:text-slate-300"
+                  title="Clear page search"
+                >
+                  <X className="w-3 h-3" />
+                </button>
+              )}
               <button
-                onClick={() => setSearchQuery('')}
-                className="absolute right-2.5 top-2.5 text-slate-500 hover:text-slate-300"
-                title="Clear search"
+                type="button"
+                onClick={() => openSearch(searchQuery || undefined)}
+                className="inline-flex items-center space-x-1 px-1.5 py-0.5 rounded text-[10px] font-mono bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-emerald-400 border border-slate-800 hover:border-emerald-500/40 cursor-pointer"
+                title="Search across all 628 pages and entire text (Ctrl+F)"
               >
-                <X className="w-3.5 h-3.5" />
+                <span>Global</span>
+                <span className="text-[9px] text-slate-500">⌘F</span>
               </button>
-            )}
+            </div>
           </div>
 
           {/* Layering & Sorting Toolbar */}
@@ -1756,6 +1809,16 @@ export function WakeReader() {
                   <ZoomIn className="w-3.5 h-3.5" />
                 </button>
               </div>
+
+              {/* Universal Search in Fullscreen */}
+              <button
+                onClick={() => openSearch()}
+                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border border-inherit/40 hover:bg-inherit/40 transition-colors cursor-pointer"
+                title="Universal search across all 628 pages and text (Ctrl+F or /)"
+              >
+                <Search className="w-3.5 h-3.5 text-emerald-400" />
+                <span className="hidden sm:inline">Search</span>
+              </button>
 
               {/* Toggle Notes Drawer Button in Fullscreen */}
               <button

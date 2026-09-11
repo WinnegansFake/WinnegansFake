@@ -228,6 +228,58 @@ class BrowserEpubService {
 
     return lines;
   }
+
+  public searchText(query: string, maxResults: number = 80): TextSearchResult[] {
+    if (!this.loaded || !query || !query.trim()) return [];
+    const q = query.trim().toLowerCase();
+    const results: TextSearchResult[] = [];
+
+    for (const [pageNum, entry] of this.pageMap.entries()) {
+      if (!entry.text) continue;
+      const lower = entry.text.toLowerCase();
+      if (!lower.includes(q)) continue;
+
+      const lines = this.segmentLines(entry.text, pageNum);
+      for (const l of lines) {
+        const lineLower = l.text.toLowerCase();
+        const idx = lineLower.indexOf(q);
+        if (idx !== -1) {
+          const start = Math.max(0, idx - 45);
+          const end = Math.min(l.text.length, idx + q.length + 45);
+          const snippet =
+            (start > 0 ? '…' : '') +
+            l.text.substring(start, end).trim() +
+            (end < l.text.length ? '…' : '');
+
+          results.push({
+            page: pageNum,
+            line: l.line,
+            lineText: l.text,
+            snippet,
+            matchIndex: idx,
+            matchLength: q.length,
+          });
+
+          if (results.length >= maxResults) {
+            return results;
+          }
+        }
+      }
+    }
+
+    return results;
+  }
+}
+
+export interface TextSearchResult {
+  page: number;
+  line: number;
+  lineText: string;
+  snippet: string;
+  matchIndex: number;
+  matchLength: number;
 }
 
 export const browserEpub = new BrowserEpubService();
+
+

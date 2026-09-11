@@ -13,10 +13,12 @@ import {
   Shield,
   Layers,
   Bookmark,
+  Search,
 } from 'lucide-react';
 import { GITHUB_REPO_URL } from '@/lib/constants';
 import { ThemeSwitcher } from './ThemeSwitcher';
 import { useBookmarks } from './BookmarkContext';
+import { useSearch } from './SearchContext';
 import { BookmarksModal } from './BookmarksModal';
 
 function GithubIcon({ className = "w-4 h-4" }: { className?: string }) {
@@ -31,6 +33,7 @@ export function Navigation() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { bookmarks, setShowBookmarksModal } = useBookmarks();
+  const { openSearch } = useSearch();
 
   const navLinks = [
     { href: '/', label: 'Overview', icon: Compass },
@@ -95,6 +98,21 @@ export function Navigation() {
 
           {/* Right Action buttons */}
           <div className="hidden md:flex items-center space-x-2.5">
+            {/* Universal Search Trigger */}
+            <button
+              type="button"
+              onClick={() => openSearch()}
+              className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-800 hover:border-slate-700 transition-colors cursor-pointer group"
+              title="Search text, lemmas, glosses, scholars, tags (Ctrl+F or /)"
+              aria-label="Universal Search"
+            >
+              <Search className="w-3.5 h-3.5 text-emerald-400 group-hover:text-emerald-300" />
+              <span className="text-slate-300 group-hover:text-white">Search</span>
+              <kbd className="hidden lg:inline-block px-1.5 py-0.5 text-[10px] font-mono rounded bg-slate-800/90 text-slate-400 border border-slate-700/60 shadow-xs">
+                Ctrl F
+              </kbd>
+            </button>
+
             <button
               type="button"
               onClick={() => setShowBookmarksModal(true)}
@@ -128,6 +146,15 @@ export function Navigation() {
 
           {/* Mobile menu button */}
           <div className="flex md:hidden items-center space-x-2">
+            <button
+              type="button"
+              onClick={() => openSearch()}
+              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white"
+              title="Search (Ctrl+F or /)"
+              aria-label="Search"
+            >
+              <Search className="w-4 h-4 text-emerald-400" />
+            </button>
             <button
               type="button"
               onClick={() => setShowBookmarksModal(true)}
@@ -175,6 +202,22 @@ export function Navigation() {
               </Link>
             );
           })}
+          <button
+            type="button"
+            onClick={() => {
+              setMobileMenuOpen(false);
+              openSearch();
+            }}
+            className="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900 transition-all cursor-pointer"
+          >
+            <div className="flex items-center space-x-2">
+              <Search className="w-4 h-4 text-emerald-400" />
+              <span>Universal Search</span>
+            </div>
+            <kbd className="px-1.5 py-0.5 text-[10px] font-mono rounded bg-slate-800 text-slate-400 border border-slate-700">
+              Ctrl+F
+            </kbd>
+          </button>
           <button
             type="button"
             onClick={() => {

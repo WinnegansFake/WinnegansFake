@@ -19,6 +19,8 @@ function syncAnnotations() {
   }
 
   let count = 0;
+  const searchIndex = [];
+
   function walk(dir) {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
     for (const ent of entries) {
@@ -29,12 +31,61 @@ function syncAnnotations() {
         const dest = path.join(TARGET_DIR, ent.name);
         fs.copyFileSync(full, dest);
         count++;
+
+        try {
+          const raw = fs.readFileSync(full, 'utf8');
+          const content = JSON.parse(raw);
+          const pageMatch = ent.name.match(/page_(\d+)\.json/);
+          const pageNum = pageMatch ? parseInt(pageMatch[1], 10) : content.page_number;
+
+          if (content.annotations && Array.isArray(content.annotations)) {
+            for (const ann of content.annotations) {
+              const scholars = [];
+              if (ann.author) scholars.push(ann.author);
+              if (ann.citations && Array.isArray(ann.citations)) {
+                for (const cit of ann.citations) {
+                  if (typeof cit === 'string') {
+                    scholars.push(cit);
+                  } else if (cit && cit.author) {
+                    scholars.push(cit.author);
+                  }
+                }
+              }
+
+              searchIndex.push({
+                id: ann.id,
+                page: pageNum,
+                line: ann.line_number,
+                lemma: ann.target_text || '',
+                quote: ann.quote || '',
+                gloss: ann.note || '',
+                registers: ann.registers || [],
+                tags: ann.tags || [],
+                scholars: Array.from(new Set(scholars)),
+                displayAuthor:
+                  ann.author ||
+                  (ann.citations && ann.citations[0]
+                    ? typeof ann.citations[0] === 'string'
+                      ? ann.citations[0]
+                      : ann.citations[0].author
+                    : undefined),
+              });
+            }
+          }
+        } catch (err) {
+          // ignore parse errors for non-page JSONs
+        }
       }
     }
   }
 
   walk(SOURCE_DIR);
   console.log(`✅ Synchronized ${count} annotation files into web/public/annotations/`);
+
+  // Write compiled search index
+  const indexDest = path.join(REPO_ROOT, 'web', 'public', 'search_index.json');
+  fs.writeFileSync(indexDest, JSON.stringify(searchIndex), 'utf8');
+  console.log(`✅ Built search index with ${searchIndex.length} annotations at web/public/search_index.json`);
 
   const dissSrc = path.join(REPO_ROOT, 'dissertation.md');
   const dissDest = path.join(REPO_ROOT, 'web', 'public', 'dissertation.md');

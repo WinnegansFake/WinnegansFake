@@ -5,6 +5,8 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeContext";
 import { BookmarkProvider } from "@/components/BookmarkContext";
+import { SearchProvider } from "@/components/SearchContext";
+import { SearchModal } from "@/components/SearchModal";
 import { CookieConsentModal } from "@/components/CookieConsentModal";
 
 const geistSans = Geist({
@@ -48,12 +50,15 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans">
         <ThemeProvider>
           <BookmarkProvider>
-            <Navigation />
-            <div className="flex-1 flex flex-col">
-              {children}
-            </div>
-            <Footer />
-            <CookieConsentModal />
+            <SearchProvider>
+              <Navigation />
+              <div className="flex-1 flex flex-col">
+                {children}
+              </div>
+              <Footer />
+              <SearchModal />
+              <CookieConsentModal />
+            </SearchProvider>
           </BookmarkProvider>
         </ThemeProvider>
       </body>
