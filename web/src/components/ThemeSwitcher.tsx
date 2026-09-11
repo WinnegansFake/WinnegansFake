@@ -32,6 +32,7 @@ export function ThemeSwitcher() {
     hasStoredCookie,
     clearCookieAndReset,
     storedCookieDuration,
+    isMounted,
   } = useTheme();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -81,9 +82,9 @@ export function ThemeSwitcher() {
       >
         <span
           className="w-3.5 h-3.5 rounded-full border border-white/20 shadow-inner"
-          style={{ backgroundColor: currentTheme.colors.bg }}
+          style={{ backgroundColor: isMounted ? currentTheme.colors.bg : '#020617' }}
         />
-        <span className="hidden sm:inline">{currentTheme.name}</span>
+        <span className="hidden sm:inline">{isMounted ? currentTheme.name : 'Midnight Slate'}</span>
         <Palette className="w-3.5 h-3.5 text-emerald-400 group-hover:rotate-12 transition-transform" />
       </button>
 

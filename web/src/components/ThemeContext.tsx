@@ -41,6 +41,7 @@ interface ThemeContextValue {
   clearCookieAndReset: () => void;
   hasStoredCookie: boolean;
   storedCookieDuration: CookieDuration | null;
+  isMounted: boolean;
 }
 
 const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
@@ -50,6 +51,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const [overrides, setOverrides] = useState<CustomThemeOverrides>({});
   const [hasStoredCookie, setHasStoredCookie] = useState<boolean>(false);
   const [storedCookieDuration, setStoredCookieDuration] = useState<CookieDuration | null>(null);
+  const [isMounted, setIsMounted] = useState<boolean>(false);
 
   // Cookie Prompt Modal State
   const [pendingCookieChange, setPendingCookieChange] = useState<boolean>(false);
@@ -60,6 +62,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   // Load from cookie or local state on mount
   useEffect(() => {
+    setIsMounted(true);
     const cookieData = readThemeCookie();
     if (cookieData && cookieData.themeId) {
       setThemeId(cookieData.themeId);
@@ -190,6 +193,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
         clearCookieAndReset,
         hasStoredCookie,
         storedCookieDuration,
+        isMounted,
       }}
     >
       {children}
