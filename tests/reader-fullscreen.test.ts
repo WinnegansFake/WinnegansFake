@@ -97,4 +97,57 @@ describe('Reader Fullscreen & Annotation Hover Popup Integration', () => {
       ]);
     }
   });
+
+  it('correctly parses Table of Contents structure for Dissertation Fullscreen navigation', () => {
+    const sampleMarkdown = `
+# The Architecture of the Night Mind
+
+## 1. Prolegomena to a Night Language
+Overview text.
+
+### 1.1 The Polyglot Matrix
+Details on multilingual portmanteaus.
+
+## 2. Viconian Ricorso and Cyclical Historiography
+Cosmological cycle.
+`;
+
+    const lines = sampleMarkdown.split('\n');
+    const toc: Array<{ id: string; title: string; level: number }> = [];
+
+    for (const line of lines) {
+      const h2Match = line.match(/^##\s+(.*)$/);
+      if (h2Match) {
+        const rawTitle = h2Match[1].replace(/[*_]/g, '').trim();
+        const id = rawTitle
+          .toLowerCase()
+          .replace(/[^\w\s-]/g, '')
+          .replace(/\s+/g, '-');
+        toc.push({ id, title: rawTitle, level: 2 });
+        continue;
+      }
+
+      const h3Match = line.match(/^###\s+(.*)$/);
+      if (h3Match) {
+        const rawTitle = h3Match[1].replace(/[*_]/g, '').trim();
+        const id = rawTitle
+          .toLowerCase()
+          .replace(/[^\w\s-]/g, '')
+          .replace(/\s+/g, '-');
+        toc.push({ id, title: rawTitle, level: 3 });
+      }
+    }
+
+    expect(toc).toHaveLength(3);
+    expect(toc[0].title).toBe('1. Prolegomena to a Night Language');
+    expect(toc[0].level).toBe(2);
+    expect(toc[0].id).toBe('1-prolegomena-to-a-night-language');
+
+    expect(toc[1].title).toBe('1.1 The Polyglot Matrix');
+    expect(toc[1].level).toBe(3);
+
+    expect(toc[2].title).toBe('2. Viconian Ricorso and Cyclical Historiography');
+    expect(toc[2].level).toBe(2);
+  });
 });
+
