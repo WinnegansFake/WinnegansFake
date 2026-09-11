@@ -9,11 +9,11 @@
 
 ## Abstract
 
-This dissertation provides an exhaustive critical inquiry into the cosmic architecture, philological mechanisms, genetic manuscript evolution, and digital hermeneutics of James Joyce’s final masterpiece, *Finnegans Wake* (1939). For over eight decades, the *Wake* has stood as the quintessential puzzle of modernist and avant-garde literature—a text operating entirely within the nocturnal consciousness of the "night mind," polyvocally orchestrated across more than sixty world languages, and structured upon Giambattista Vico’s cyclical philosophy of eternal return (*ricorso*) and Giordano Bruno’s dialectic of the coincidence of opposites (*coincidentia oppositorum*).
+This dissertation provides an exhaustive critical inquiry into the cosmic architecture, philological mechanisms, genetic manuscript evolution, and digital hermeneutics of James Joyce’s final masterpiece, *Finnegans Wake* (1939). For over eight decades, the *Wake* has stood as the quintessential puzzle of modernist and avant-garde literature—a text operating entirely within the nocturnal consciousness of the "night mind," polyvocally orchestrated across more than eighty world languages, and structured upon Giambattista Vico’s cyclical philosophy of eternal return (*ricorso*) and Giordano Bruno’s dialectic of the coincidence of opposites (*coincidentia oppositorum*).
 
 Simultaneously, this study confronts the peculiar socio-legal crisis surrounding Joyce’s work: although James Joyce died in 1941, *Finnegans Wake* remains strictly protected under United States copyright law through the end of 2035. This dissertation expounds the philosophical foundations and software engineering architecture of the **WinnegansFake** repository—a zero-copyright digital apparatus that decouples the protected source text from open, community-driven metadata glosses. By mapping granular annotations, textual genetics, and web-linked bibliographies to universal page-and-line coordinates (`PPP.LL`), the project demonstrates how open-source computational systems can build a comprehensive, crowdsourced critical edition while rigorously honoring international copyright boundaries.
 
-Through an analysis spanning the macro-cosmological structure of the four books, the micro-typology of Joyce's notebook *sigla* (HCE, ALP, Shem, Shaun, Issy, and Mamalujo), the acoustic theology of the ten hundred-letter thunderclaps, and the historical tapestry of Dublin topography, Irish mythology, and classical texts, this dissertation synthesizes the collected knowledge of the *WinnegansFake* corpus into an enduring theoretical and computational reference work.
+Through an analysis spanning the macro-cosmological structure of the four books, the micro-typology of Joyce's notebook *sigla* (HCE, ALP, Shem, Shaun, Issy, and Mamalujo), the sacred geometry of the Euclidean diagram on page 293, the acoustic theology of the ten hundred-letter thunderclaps, and the historical tapestry of Dublin topography, Irish mythology, music hall ballads, and classical texts, this dissertation synthesizes the collected knowledge of the *WinnegansFake* corpus into an enduring theoretical and computational reference work.
 
 ---
 
@@ -38,21 +38,25 @@ Through an analysis spanning the macro-cosmological structure of the four books,
    - 3.6 ⊥ (Mamalujo) — The Four Evangelists, Provinces, Judges, and Squawking Gulls
    - 3.7 S (The Twelve Customers) — Public Opinion, the Zodiac, and the Mourners
 4. [Chapter IV: Philological Polyphony, Linguistic Alchemy, and Intertextuality](#chapter-iv-philological-polyphony-linguistic-alchemy-and-intertextuality)
-   - 4.1 The Quantum Portmanteau: Polysemy Across Sixty Languages
+   - 4.1 The Quantum Portmanteau: Polysemy Across Eighty Languages ("Wakese")
    - 4.2 The Ten Hundred-Letter Thunderclaps: The Acoustic Vocable of the Divine
-   - 4.3 Dublin Topography as an Archetypal Palimpsest
-   - 4.4 The Intertextual Tapestry:
-     - 4.4.1 The *Book of Kells* and the Sacred Geometry of the *Tunc* Page
-     - 4.4.2 The Egyptian *Book of the Dead* and the Resurrection of Osiris
-     - 4.4.3 Arthurian Legend and Wagnerian Chromaticism: *Tristan und Isolde*
-     - 4.4.4 Jonathan Swift’s Satire and the Dual Muses: Stella and Vanessa
-     - 4.4.5 Henrik Ibsen and the Dizzying Fall of the Master Builder
-     - 4.4.6 Street Ballads, Minstrelsy, and the Myth of Tim Finnegan
+   - 4.3 The Sacred Geometry of Nightlessons: The Euclidean Diagram at Page 293
+   - 4.4 Musicology, Street Ballads, and the Satirical *Rann*
+   - 4.5 Dublin Topography as an Archetypal Palimpsest
+   - 4.6 The Intertextual Tapestry:
+     - 4.6.1 The *Book of Kells* and the Sacred Geometry of the *Tunc* Page
+     - 4.6.2 The Egyptian *Book of the Dead* and the Resurrection of Osiris
+     - 4.6.3 Arthurian Legend and Wagnerian Chromaticism: *Tristan und Isolde*
+     - 4.6.4 Jonathan Swift’s Satire and the Dual Muses: Stella and Vanessa
+     - 4.6.5 Henrik Ibsen and the Dizzying Fall of the Master Builder
+     - 4.6.6 Street Ballads, Minstrelsy, and the Myth of Tim Finnegan
+     - 4.6.7 The Particle Physics Epiphany: Murray Gell-Mann and the "Quark"
 5. [Chapter V: Computational Hermeneutics & The Digital Humanities](#chapter-v-computational-hermeneutics--the-digital-humanities)
    - 5.1 The Lineage of *Wake* Concordances: From Campbell & Robinson to Roland McHugh
-   - 5.2 The Digital Frontier: FWEET, the James Joyce Digital Archive (JJDA), and Genetic Editions
-   - 5.3 The Architecture of *WinnegansFake*: Pure TypeScript EPUB Parsing and Next.js Streaming
-   - 5.4 The Eighteen Analytical Registers and the Corpus of 1,850 Curated Annotations
+   - 5.2 The Textual Editing Wars: The 1939 Errata and the Rose/O'Hanlon "Restored" Controversy
+   - 5.3 The Digital Frontier: FWEET, the James Joyce Digital Archive (JJDA), and Genetic Editions
+   - 5.4 The Architecture of *WinnegansFake*: Pure TypeScript EPUB Parsing and Next.js Streaming
+   - 5.5 The Eighteen Analytical Registers and the Corpus of 1,850 Curated Annotations
 6. [Chapter VI: Conclusion: The Unbroken Circle and the Future of Distributed Commentary](#chapter-vi-conclusion-the-unbroken-circle-and-the-future-of-distributed-commentary)
    - 6.1 The Endless Sentence: From *"riverrun"* to *"a long the"*
    - 6.2 The Living Archive: Open-Source Scholarship as Communal *Ricorso*
@@ -80,7 +84,7 @@ The sleeper at the heart of the text is simultaneously Humphrey Chimpden Earwick
 ### 1.3 The Zero-Copyright Legal Dilemma & The Coordinate-Based Glossematic Model (`PPP.LL`)
 A major dilemma confronts digital humanities scholars wishing to build open, collaborative tools for *Finnegans Wake*: **copyright law**. 
 - Under European Union law and in many Berne Convention territories, Joyce’s work entered the public domain 70 years after his death (January 1, 2012).
-- However, under **United States copyright law** (governed by the 1998 Copyright Term Extension Act), works published with copyright notices between 1929 and 1963 receive 95 years of protection from publication date. Because *Finnegans Wake* was published in May 1939, it remains under full statutory copyright in the United States until **January 1, 2035**.
+- However, under **United States copyright law** (governed by the 1998 Sonny Bono Copyright Term Extension Act), works published with copyright notices between 1929 and 1963 receive 95 years of protection from publication date. Because *Finnegans Wake* was published in May 1939, it remains under full statutory copyright in the United States until **January 1, 2035**.
 
 Any attempt to host, reproduce, or distribute the raw text of the *Wake* in a public GitHub repository or open-source web application within U.S. jurisdiction constitutes direct copyright infringement.
 
@@ -90,37 +94,7 @@ To reconcile open-source collaboration with absolute copyright compliance, the *
 2. **Coordinate Separation (`PPP.LL`):** Scholarly glosses, lexical breakdowns, motif tags, and bibliographic citations are stored purely as metadata mapped to the canonical 628-page pagination established by the 1939 Viking/Faber editions (`PPP.LL`, where `PPP` is the page from `001` to `628`, and `LL` is the line number from `01` to `40`).
 3. **Strict Target Phrase Safeguards:** Annotations link only to minimal "target lemmas" or short anchor phrases ($\le 150$ characters, single line only), satisfying the legal standards of fair use and transformative critical commentary without reproducing literary passages.
 
-```
-       +-------------------------------------------------------------+
-       |                  WinnegansFake Repository                    |
-       |  (Public GitHub Monorepo under CC BY-SA 4.0 & GPLv3)        |
-       +-------------------------------------------------------------+
-                                      |
-                   +------------------+------------------+
-                   |                                     |
-                   v                                     v
-       [schemas/page-annotation]               [annotations/book_B/chapter_C/]
-         - JSON Schema 2020-12                   - 628 Canonical Pages
-         - Page bounds (1-628)                   - Pure Metadata & Glosses
-         - Line bounds (1-40)                    - Web Bibliographies
-         - Target Phrase <= 150 chars            - No Copyrighted Passages
-                   |                                     |
-                   +------------------+------------------+
-                                      |
-                                      v
-       +-------------------------------------------------------------+
-       |                  Local Execution Boundary                   |
-       |               (Strictly Local & Gitignored)                 |
-       +-------------------------------------------------------------+
-                                      |
-                   +------------------+------------------+
-                   |                                     |
-                   v                                     v
-       [data/finneganswake00joycuoft.epub]      [data_sigs/SHA256SUMS.txt]
-         - User-supplied legal archive            - Cryptographic Provenance
-         - Streamed directly into memory          - Verifies 1,047 data files
-         - Never committed to git                 - Prevents corrupt artifacts
-```
+![Figure 1: Zero-Copyright Data Isolation Architecture](figures/data-isolation-pipeline.svg)
 
 ### 1.4 Provenance, Cryptographic Verification, and Local Streaming Architecture
 To ensure scientific reproducibility and data provenance across distributed machines without distributing the book, *WinnegansFake* employs cryptographic checksums:
@@ -133,17 +107,11 @@ To ensure scientific reproducibility and data provenance across distributed mach
 ## Chapter II: Macro-Cosmology: Vico, Bruno, and the Engine of History
 
 ### 2.1 Giambattista Vico’s *Scienza Nuova* and the Ideal Eternal History
-The structural spine of *Finnegans Wake* is derived from the Neapolitan jurist and philosopher **Giambattista Vico** (1668–1744). In *Scienza Nuova* (The New Science, 1725), Vico rejected the Cartesian conception of abstract mathematical certainty, proposing instead the *verum-factum* principle: humanity can only truly know that which humanity has itself created—namely, human history, language, and culture.
+The structural spine of *Finnegans Wake* is derived from the Neapolitan jurist and philosopher **Giambattista Vico** (1668–1744). In *Scienza Nuova* (The New Science, 1725/1744), Vico rejected the Cartesian conception of abstract mathematical certainty, proposing instead the *verum-factum* principle: humanity can only truly know that which humanity has itself created—namely, human history, language, and culture.
 
 Vico posited that all human civilizations trace an "ideal eternal history" (*storia ideale eterna*), an endless spiral unfolding through three recurring epochs followed by a sudden collapse and restart:
 
-```mermaid
-graph TD
-    A["1. The Age of Gods (Divine/Theocratic)<br>Language: Hieroglyphic, Mute, Poetic<br>Institution: Religion, Auspices, Patriarchs<br>Voice: The Thunder (Fear of God)"] --> B["2. The Age of Heroes (Aristocratic)<br>Language: Metaphorical, Symbolic, Feudal<br>Institution: Marriage, Faction, Chivalry<br>Dominance: Castes and Noble Might"]
-    B --> C["3. The Age of Men (Human/Democratic)<br>Language: Epistolary, Vulgar, Conceptual<br>Institution: Burial, Courts, Commerce, Law<br>Degeneration: Individual Skepticism & Chaos"]
-    C --> D["4. The Ricorso (The Return)<br>Language: Cataclysmic, Polyphonic Dissolution<br>Action: Thunderclap & Cleansing Flood<br>Restart: Circular Return to the Age of Gods"]
-    D --> A
-```
+![Figure 2: The Viconian Cosmological Cycle — Giambattista Vico's Ideal Eternal History in Finnegans Wake](figures/viconian-cycle.svg)
 
 In *Finnegans Wake*, this cycle does not merely govern world empires; it dictates the structure of every paragraph, every sentence, and every breath of the sleeping dreamer.
 
@@ -178,15 +146,7 @@ Joyce mirrored Vico’s tetradic structure directly in the formal architecture o
 ### 3.1 The Buffalo Notebooks and Joyce’s Hieroglyphic Notation
 When Joyce filled the 48 notebooks now preserved in the Poetry Collection at the University of Buffalo (transcribed in the Brepols genetic editions by Deane, Ferrer, and Lernout), he developed a shorthand system of hieroglyphic symbols known as **sigla**. Rather than denoting static characters, each siglum designates an archetypal nexus of energy that mutates across centuries, languages, and identities.
 
-```
-       [ HCE ]               [ ALP ]               [ SHEM ]              [ SHAUN ]
-         _                      _                    _                      _
-        / \                    / \                  / \                    / \
-       | E |                  | ^ |                | [ |                  | ] |
-        \_/                    \_/                  \_/                    \_/
-     The Mountain           The River            The Tree              The Stone
-     Patriarch              Mother / Wife        Outcast Rebel         Proud Priest
-```
+![Figure 3: The Buffalo Notebooks Sigla Constellation — Joyce's Hieroglyphic Notation for the Mythic Dramatis Personae](figures/joyce-sigla-constellation.svg)
 
 ### 3.2 ∐ (HCE) — Humphrey Chimpden Earwicker: Mountain, Patriarch, and Cosmic Sinner
 Denoted by Joyce's siglum of a recumbent 'E' (∐ or rotated E), HCE is the prime mover of the novel:
@@ -226,8 +186,8 @@ Represented by the siglum S:
 
 ## Chapter IV: Philological Polyphony, Linguistic Alchemy, and Intertextuality
 
-### 4.1 The Quantum Portmanteau: Polysemy Across Sixty Languages
-In daytime prose, a word functions as a single token pointing to a determinate concept. In *Finnegans Wake*, words operate under a condition of **quantum semantic superposition**. By employing the Lewis Carroll portmanteau technique taken to cosmic limits, Joyce fuses roots, prefixes, and suffixes from upwards of sixty to seventy world languages:
+### 4.1 The Quantum Portmanteau: Polysemy Across Eighty Languages ("Wakese")
+In daytime prose, a word functions as a single token pointing to a determinate concept. In *Finnegans Wake*, words operate under a condition of **quantum semantic superposition**. By employing the Lewis Carroll portmanteau technique taken to cosmic limits, Joyce fuses roots, prefixes, and suffixes from upwards of eighty world languages and dialects (documented in C. George Săndulescu's *Lexicon of Small Languages* and Clive Hart & Fritz Senn's *A Wake Newslitter*):
 
 Consider the opening phrase on page 3:
 
@@ -246,6 +206,8 @@ Consider the opening phrase on page 3:
   2. The hydrological cycle of water evaporating from the ocean and raining into the Liffey.
   3. The blood circulating through the human cardiovascular system in sleep.
 
+As Derek Attridge notes in *Peculiar Language* (1988), the language of the *Wake* systematically erodes the boundary between literal and figurative speech, transforming language into an overdetermined musical organism.
+
 ### 4.2 The Ten Hundred-Letter Thunderclaps: The Acoustic Vocable of the Divine
 Interspersed throughout the 628 pages are **ten monumental 100-letter polysyllabic thunderclaps** (the first possessing 101 letters, totaling precisely 1,001 letters—mirroring the *Thousand and One Nights*):
 
@@ -262,35 +224,59 @@ Interspersed throughout the 628 pages are **ten monumental 100-letter polysyllab
 | **9** | 332.05 | 100 | Legalistic condemnation, priestly anathemas, and excommunication decrees. | The Collapse of Human Law & Bureaucratic Chaos |
 | **10** | 424.20 | 100 | The hundred-letter word of final dissolution (*"restituted"*), signaling morning. | The Ricorso, Death of the Night, and Cosmic Rebirth |
 
-### 4.3 Dublin Topography as an Archetypal Palimpsest
+### 4.3 The Sacred Geometry of Nightlessons: The Euclidean Diagram at Page 293
+On page 293 of *Finnegans Wake*, in the heart of the "Nightlessons" chapter (II.2), appears the **sole literal graphic printed in the original 1939 first edition**: a geometric construction based on Euclid’s *Elements*, Proposition 1 (Book I).
+
+![Figure 4: The Euclidean Vesica Piscis and the Delta — The Sole Diagram in the 1939 First Edition (FW 293)](figures/euclidean-dolph-diagram.svg)
+
+In this episode, Dolph (Shem) instructs his brother Kev (Shaun) in drawing an equilateral triangle across two intersecting circles. The intersecting lens—the sacred *vesica piscis*—forms an anatomical and metaphysical revelation:
+1. **The Biological Yoni:** Dolph reveals to Kev the hidden geometry of their mother Anna Livia’s genitals (*"the mudder's anatomy"*), causing Kev to recoil in moral outrage and punch Dolph in the eye.
+2. **The Triadic Delta:** The vertices A, L, P form the inverted delta (Δ), the prime hieroglyph of ALP and feminine fecundity.
+3. **The Brunonian Conjunctive:** As Laurent Milesi and Fritz Senn have demonstrated, the overlapping circles visualize Giordano Bruno's *coincidentia oppositorum*—the cosmic axis where polar opposites (upper spiritual triangle and lower material reflection) meet at center point C.
+
+### 4.4 Musicology, Street Ballads, and the Satirical *Rann*
+Music serves as the acoustic skeleton of the *Wake*. In their foundational study *Song in the Works of James Joyce* (1959), Matthew J.C. Hodgart and Mabel P. Worthington catalogued over **1,000 specific musical allusions** across the text:
+- **"The Ballad of Persse O'Reilly" (FW 44–47):** A centerpiece of Book I, this street ballad represents the ancient Celtic *rann*—a satirical verse whose magical venom was traditionally believed capable of raising boils on a king's face. Composed by Hosty, the ballad rallies the Dublin rabble to mock HCE's humiliation.
+- **Nursery Rhymes as Mythic Anchors:** Childhood ditties (*Humpty Dumpty*, *London Bridge Is Falling Down*, *Who Killed Cock Robin?*) recur cyclically to dramatize cosmic collapse in elementary rhythms.
+- **Operatic Cadences:** Wagner’s *Tristan und Isolde*, Thomas Moore’s *Irish Melodies*, and Italian bel canto melodies provide emotional counterpoint to the linguistic satire.
+
+### 4.5 Dublin Topography as an Archetypal Palimpsest
 Joyce famously stated that if Dublin were to be destroyed in a catastrophe, it could be rebuilt brick by brick out of *Ulysses*. In *Finnegans Wake*, Dublin undergoes an even more radical transformation: it becomes the universal topography of all human history.
 - **The River Liffey** is the Nile, the Euphrates, the Tiber, the Ganges, the Seine, the Amazon, and the Mississippi.
 - **Phoenix Park** is the Garden of Eden, the Elysian Fields, Waterloo, the battlefield of Clontarf, and Mount Calvary.
 - **Howth Head** is Mount Olympus, Mount Sinai, the Rock of Gibraltar, and the Great Pyramid of Giza.
 - **Castleknock and Chapelizod** are ancient tribal outposts and royal Arthurian manors.
 
-### 4.4 The Intertextual Tapestry
+### 4.6 The Intertextual Tapestry
 
-#### 4.4.1 The *Book of Kells* and the Sacred Geometry of the *Tunc* Page
+#### 4.6.1 The *Book of Kells* and the Sacred Geometry of the *Tunc* Page
 In Chapter I.5 (pp. 104–125), Joyce explicitly models the *Wake* upon the 8th-century illuminated Gospel manuscript housed at Trinity College Dublin. The Hen scratching her letter from the dung-heap is compared to the Irish monks illuminating the famous *Tunc* page (*Matthew 27:38*). Just as the Book of Kells weaves human faces, animals, angels, and demons into intricate Celtic knotwork, Joyce weaves world history into a labyrinth of self-reflexive marginalia.
 
-#### 4.4.2 The Egyptian *Book of the Dead* and the Resurrection of Osiris
-As John Bishop uncovered, the funeral liturgy of ancient Egypt (*The Papyrus of Ani*) saturates the *Wake*:
+#### 4.6.2 The Egyptian *Book of the Dead* and the Resurrection of Osiris
+As John Bishop uncovered, the funeral liturgy of ancient Egypt (*The Papyrus of Ani*, translated by E.A. Wallis Budge in 1895) saturates the *Wake*:
 - The recumbent giant HCE is **Osiris**, the dismembered king whose pieces are scattered across the earth.
 - ALP is **Isis**, tirelessly navigating the river marsh to collect his limbs and reconstitute his body.
 - The trial of HCE mirrors the "Weighing of the Heart" in the Hall of Ma'at against the feather of truth.
 
-#### 4.4.3 Arthurian Legend and Wagnerian Chromaticism: *Tristan und Isolde*
-The illicit romance of Sir Tristram of Lyonesse and the Irish princess Isolde (transposed through Richard Wagner’s chromatic opera) echoes through the novel. Tristram is born in Armorica (Brittany), sails across the short sea to Dublin, and steals Isolde from King Mark of Cornwall—mirroring the sexual displacement of the aging father HCE by the young vigorous lover.
+#### 4.6.3 Arthurian Legend and Wagnerian Chromaticism: *Tristan und Isolde*
+The illicit romance of Sir Tristram of Lyonesse and the Irish princess Isolde (transposed through Richard Wagner’s chromatic opera and Joseph Bédier’s 1900 prose reconstruction) echoes through the novel. Tristram is born in Armorica (Brittany), sails across the short sea to Dublin, and steals Isolde from King Mark of Cornwall—mirroring the sexual displacement of the aging father HCE by the young vigorous lover.
 
-#### 4.4.4 Jonathan Swift’s Satire and the Dual Muses: Stella and Vanessa
-Jonathan Swift (1667–1745), Dean of St. Patrick’s Cathedral, haunts the Dublin landscape. His tragic romantic entanglement with two young women—Esther Johnson ("Stella") and Esther Vanhomrigh ("Vanessa")—mirrors HCE's obsession with the two girls in the park and Issy's split-mirror personalities.
+#### 4.6.4 Jonathan Swift’s Satire and the Dual Muses: Stella and Vanessa
+Jonathan Swift (1667–1745), Dean of St. Patrick’s Cathedral, haunts the Dublin landscape. His tragic romantic entanglement with two young women—Esther Johnson ("Stella") and Esther Vanhomrigh ("Vanessa")—mirrors HCE's obsession with the two girls in the park and Issy's split-mirror personalities. Swift's infantile "little language" from the *Journal to Stella* directly foreshadows Joyce's dream vocabulary.
 
-#### 4.4.5 Henrik Ibsen and the Dizzying Fall of the Master Builder
-Joyce idolized Henrik Ibsen from his youth (even learning Dano-Norwegian to write to him). In *Finnegans Wake*, the builder Halvard Solness (*Bygmester Solness*, 1892) becomes "Bygmester Finnegan," whose dizzying fall from the church steeple echoes Tim Finnegan’s fall from the scaffold.
+#### 4.6.5 Henrik Ibsen and the Dizzying Fall of the Master Builder
+Joyce idolized Henrik Ibsen from his youth (learning Dano-Norwegian in Dublin to read his plays in the original and writing an admiring essay in 1900). In *Finnegans Wake*, the builder Halvard Solness (*Bygmester Solness*, 1892) becomes "Bygmester Finnegan," whose dizzying fall from the church steeple echoes Tim Finnegan’s fall from the scaffold.
 
-#### 4.4.6 Street Ballads, Minstrelsy, and the Myth of Tim Finnegan
+#### 4.6.6 Street Ballads, Minstrelsy, and the Myth of Tim Finnegan
 The title of the novel derives from the classic 19th-century Irish-American comic street ballad *"Finnegan's Wake"*. Tim Finnegan, an Irish hod-carrier with a fondness for the bottle, falls from a ladder and smashes his skull. At his raucous wake, a gallon of whiskey is spilled over his corpse; upon feeling the splash of the "water of life" (*uisce beatha*), Finnegan leaps up: *"Thanam o'n dhoul! do ye think I'm dead?"* For Joyce, the comic resurrection of the drunk bricklayer is the universal myth of human history: falling only to rise again.
+
+#### 4.6.7 The Particle Physics Epiphany: Murray Gell-Mann and the "Quark"
+In one of the most remarkable intersections between modernist literature and 20th-century theoretical physics, Nobel laureate **Murray Gell-Mann** was browsing *Finnegans Wake* in 1963 while formulating his model of subatomic particles. Coming upon the mocking seabird chant in Book II, Chapter 4:
+> *"Three quarks for Muster Mark!*  
+> *Sure he hasn't got much of a bark*  
+> *And sure any he has it's all beside the mark."* (FW 383.01–03)
+
+Because Gell-Mann’s physical model posited that hadrons (such as protons and neutrons) are composed of three fundamental constituent entities, the phrase "Three quarks" provided the exact scientific nomenclature that today defines fundamental quantum chromodynamics.
 
 ---
 
@@ -305,19 +291,24 @@ The critical interpretation of *Finnegans Wake* has always evolved alongside ref
 5. **Roland McHugh (*Annotations to Finnegans Wake*, 1980; 4th ed. 2016):** The indispensable page-by-page, line-by-line apparatus matching the exact layout of the standard edition.
 6. **John Bishop (*Joyce's Book of the Dark*, 1986):** The somatic and physiological breakthrough establishing the text as an architecture of sleep.
 
-### 5.2 The Digital Frontier: FWEET, the James Joyce Digital Archive (JJDA), and Genetic Editions
+### 5.2 The Textual Editing Wars: The 1939 Errata and the Rose/O'Hanlon "Restored" Controversy
+Because Joyce was nearly blind during the composition and proofreading of the 1939 first edition, the physical printed text was marred by thousands of printer slips, misread handwriting, and lost corrections:
+- **1945 Corrigenda:** Joyce and his circle compiled an early list of corrections, incorporated into the 1958 Viking Press revised edition that established the modern pagination baseline.
+- **The 2010 Rose & O'Hanlon "Restored Finnegans Wake":** Danis Rose and John O'Hanlon (Houyhnhnm Press 2010; Penguin Classics 2012) spent three decades collating manuscripts and notebooks, introducing over 9,000 textual alterations. This ignited intense debate across Joycean academia; critics such as Tim Conley observed that regularizing erratic syntax or non-standard spellings risks amputating deliberate Joycean puns and semantic polyphony.
+
+### 5.3 The Digital Frontier: FWEET, the James Joyce Digital Archive (JJDA), and Genetic Editions
 In the 21st century, *Wake* scholarship migrated to digital databases:
-- **FWEET (Finnegans Wake Extensible Elucidation Treasury):** Raphael Slepon’s massive digital concordance assembling over 90,000 glosses from dozens of print sources into a single searchable index.
+- **FWEET (Finnegans Wake Extensible Elucidation Treasury):** Raphael Slepon’s massive digital concordance assembling over 100,000 glosses from dozens of print sources into a single searchable index.
 - **The James Joyce Digital Archive (JJDA):** Hans Walter Gabler and Ronan Crowley's digital platform documenting the genetic evolution of drafts.
 - **Brepols Buffalo Notebooks Edition:** The ongoing multi-volume transcription of Joyce's working notebooks, tracing how individual notebook jottings were drafted, crossed out with coloured crayons, and embedded into the galleys.
 
-### 5.3 The Architecture of *WinnegansFake*: Pure TypeScript EPUB Parsing and Next.js Streaming
+### 5.4 The Architecture of *WinnegansFake*: Pure TypeScript EPUB Parsing and Next.js Streaming
 The **WinnegansFake** monorepo realizes this scholarly tradition in a modern computational stack:
 - **`packages/epub-reader`:** A zero-dependency, pure TypeScript library written without binary bindings. It parses ZIP central directories, reads the Open Packaging Format (OPF) manifest, builds the spine, and segments OCR text into standard ~36 lines per page.
 - **`web/`:** A Next.js 16 (Turbopack) web application utilizing Tailwind CSS and React 19. It streams pages directly from local archive buffers via `/api/epub`, serves line-indexed metadata through `/api/annotations`, and provides an inline collaborative editor for community contributions.
 - **`validate.js`:** A rigorous Node.js validator enforcing JSON Schema Draft 2020-12 compliance, canonical folder hierarchies, and strict copyright length restrictions ($\le 150$ characters).
 
-### 5.4 The Eighteen Analytical Registers and the Corpus of 1,850 Curated Annotations
+### 5.5 The Eighteen Analytical Registers and the Corpus of 1,850 Curated Annotations
 Through the automated pipeline developed in this project, **1,850 scholarly annotations** have been compiled and verified across all 628 pages of the *Wake*, systematically structured across **18 distinct analytical registers**:
 
 1. **HCE / Protagonist Archetype**
@@ -360,6 +351,8 @@ The closing fragment completes the opening sentence:
 
 The death of the mother is the birth of the river; the descent of the water is the evaporation into cloud; the end of the book is the immediate reopening of the cover. It is the perfect literary embodiment of Vico's *ricorso*.
 
+![Figure 5: The Ouroboric Recirculation — The Syntactic and Hydrological Cycle from FW 628 to FW 003](figures/ouroboros-circulation.svg)
+
 ### 6.2 The Living Archive: Open-Source Scholarship as Communal *Ricorso*
 Joyce was once asked by Max Eastman why he wrote *Work in Progress* in such an impossibly demanding language. Joyce replied:
 
@@ -380,23 +373,32 @@ By building an open-source, zero-copyright glossematic workbench, **WinnegansFak
 
 ### 2. Foundational Joyce Scholarship
 - **Atherton, James S.** *The Books at the Wake: A Study of Literary Allusions in James Joyce's Finnegans Wake*. London: Faber and Faber, 1959. [Internet Archive](https://archive.org/details/booksatwake0000athe)
+- **Attridge, Derek.** *Peculiar Language: Literature as Difference from the Renaissance to James Joyce*. Cambridge: Cambridge University Press, 1988.
 - **Beckett, Samuel, et al.** *Our Exagmination Round His Factification for Incaminasion of Work in Progress*. Paris: Shakespeare and Company, 1929. [Internet Archive](https://archive.org/details/ourexagminationr0000unse)
 - **Bishop, John.** *Joyce's Book of the Dark: Finnegans Wake*. Madison: University of Wisconsin Press, 1986. [Internet Archive](https://archive.org/details/joycesbookofdark0000bish)
 - **Campbell, Joseph, and Henry Morton Robinson.** *A Skeleton Key to Finnegans Wake*. New York: Harcourt, Brace, 1944. [Internet Archive](https://archive.org/details/skeletonkeytofin00camp)
+- **Christiani, Dounia Bunis.** *Scandinavian Elements of Finnegans Wake*. Evanston: Northwestern University Press, 1965.
 - **Connor, Steven.** *James Joyce: Select Bibliographies and Criticism*. London: Longman, 1996. [Internet Archive](https://archive.org/details/jamesjoyce0000conn)
 - **Ellmann, Richard.** *James Joyce*. New and Revised Edition. Oxford: Oxford University Press, 1982. [Internet Archive](https://archive.org/details/jamesjoyce0000ellm)
 - **Glasheen, Adaline.** *A Third Census of Finnegans Wake: An Index of the Characters and Their Roles*. Berkeley: University of California Press, 1977. [Internet Archive](https://archive.org/details/thirdcensusoffin0000glas)
 - **Hart, Clive.** *Structure and Motif in Finnegans Wake*. Evanston: Northwestern University Press, 1962. [Internet Archive](https://archive.org/details/structuremotifin0000hart)
+- **Hart, Clive, and Fritz Senn (eds.).** *A Wake Newslitter*. Newcastle: University of Newcastle, 1962–1980.
+- **Hart, Clive, and Fritz Senn (eds.).** *A Wake Digest*. Sydney: Sydney University Press, 1968.
 - **Hayman, David.** *The "Wake" in Transit*. Ithaca: Cornell University Press, 1990. [Internet Archive](https://archive.org/details/wakeintransit0000haym)
+- **Hodgart, Matthew J.C., and Mabel P. Worthington.** *Song in the Works of James Joyce*. Philadelphia: Temple University Press, 1959.
 - **Kenner, Hugh.** *Dublin's Joyce*. London: Chatto & Windus, 1955. [Internet Archive](https://archive.org/details/dublinsjoyce0000kenn)
 - **Kenner, Hugh.** *The Stoic Comedians: Flaubert, Joyce, and Beckett*. Boston: Beacon Press, 1962. [Internet Archive](https://archive.org/details/stoiccomedians0000kenn)
 - **MacCabe, Colin.** *James Joyce and the Revolution of the Word*. London: Macmillan, 1978. [Internet Archive](https://archive.org/details/jamesjoycerevolu0000macc)
 - **McHugh, Roland.** *The Sigla of Finnegans Wake*. Austin: University of Texas Press, 1976. [Internet Archive](https://archive.org/details/siglaoffinnegans0000mchu)
 - **McHugh, Roland.** *Annotations to Finnegans Wake*. 4th ed. Baltimore: Johns Hopkins University Press, 2016. [Johns Hopkins University Press](https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake) / [Internet Archive](https://archive.org/details/annotationstofin0000mchu_h5g8)
+- **McLuhan, Eric.** *The Role of Thunder in Finnegans Wake*. Toronto: University of Toronto Press, 1997.
 - **Norris, David, and Carl Flint.** *Joyce for Beginners*. Cambridge: Icon Books, 1994. [Internet Archive](https://archive.org/details/joyceforbeginner0000norr)
 - **Norris, Margot.** *The Decentered Universe of Finnegans Wake: A Structuralist Analysis*. Baltimore: Johns Hopkins University Press, 1976. [Internet Archive](https://archive.org/details/decentereduniver0000norr)
 - **O'Hehir, Brendan.** *A Gaelic Lexicon for Finnegans Wake*. Berkeley: University of California Press, 1967. [Internet Archive](https://archive.org/details/gaeliclexiconfor0000oheh)
+- **Rose, Danis, and John O'Hanlon (eds.).** *The Restored Finnegans Wake*. Dublin: Houyhnhnm Press, 2010; London: Penguin Classics, 2012.
+- **Săndulescu, C. George.** *A Lexicon of "Small" Languages in Finnegans Wake*. Bucharest: Contemporary Literature Press, 2012.
 - **Tindall, William York.** *A Reader's Guide to Finnegans Wake*. New York: Farrar, Straus and Giroux, 1969. [Internet Archive](https://archive.org/details/readersguidetofi00tind)
+- **Verene, Donald Phillip (ed.).** *Vico and Joyce*. Albany: State University of New York Press, 1987.
 
 ### 3. Philosophical, Mythological, & Historical Sources
 - **Aristophanes.** *The Frogs*. Translated by Benjamin Bickley Rogers. [Project Gutenberg](https://www.gutenberg.org/ebooks/7998)
@@ -411,6 +413,7 @@ By building an open-source, zero-copyright glossematic workbench, **WinnegansFak
 - **Frazer, Sir James George.** *The Golden Bough: A Study in Magic and Religion*. London: Macmillan, 1890. [Project Gutenberg](https://www.gutenberg.org/ebooks/3623)
 - **Frazer, Sir James George.** *Folk-Lore in the Old Testament*. London: Macmillan, 1918. [Internet Archive](https://archive.org/details/folkloreinoldtes01frazuoft)
 - **Freud, Sigmund.** *The Interpretation of Dreams*. Translated by A.A. Brill. [Project Gutenberg](https://www.gutenberg.org/ebooks/4349)
+- **Gell-Mann, Murray.** *The Quark and the Jaguar: Adventures in the Simple and the Complex*. New York: W.H. Freeman & Co., 1994.
 - **Gibbon, Edward.** *The History of the Decline and Fall of the Roman Empire*. London: Strahan & Cadell, 1776–1789. [Project Gutenberg](https://www.gutenberg.org/ebooks/25717)
 - **Gregory, Lady Augusta.** *Gods and Fighting Men: The Story of the Tuatha de Danaan and of the Fianna of Ireland*. London: John Murray, 1904. [Project Gutenberg](https://www.gutenberg.org/ebooks/14465)
 - **Grose, Francis.** *1811 Dictionary of the Vulgar Tongue*. London: C. Chapple, 1811. [Project Gutenberg](https://www.gutenberg.org/ebooks/5402)

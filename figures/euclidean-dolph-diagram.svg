@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgEuclid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12"/>
+      <stop offset="50%" stop-color="#0c1322"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+
+    <radialGradient id="vesicaGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#8b5cf6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="euclidShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <clipPath id="circleLeftClip">
+      <circle cx="370" cy="310" r="150"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .title { font-family: 'Cinzel', serif, system-ui; font-weight: 700; fill: #f8fafc; }
+    .subtitle { font-family: system-ui, -apple-system, sans-serif; fill: #94a3b8; font-size: 13px; }
+    .point-label { font-family: 'Cinzel', serif, monospace; font-weight: 700; font-size: 18px; fill: #fbbf24; }
+    .geom-note { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #cbd5e1; }
+    .card-title { font-family: system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 14px; }
+  </style>
+
+  <!-- Background -->
+  <rect width="900" height="650" fill="url(#bgEuclid)" rx="16" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <g transform="translate(450, 45)" text-anchor="middle">
+    <text class="title" font-size="22" letter-spacing="1.5">THE EUCLIDEAN VESICA PISCIS &amp; THE DELTA (FW 293)</text>
+    <text class="subtitle" y="24">The Sole Geometric Diagram in the 1939 First Edition • Dolph's Nightlesson to Kev (II.2)</text>
+  </g>
+
+  <!-- Left/Center: The Diagram Construction -->
+  <g transform="translate(0, 0)">
+    <!-- Vesica Piscis Intersect Glow -->
+    <path d="M 450,180 A 150,150 0 0,1 450,440 A 150,150 0 0,1 450,180 Z" fill="url(#vesicaGlow)"/>
+
+    <!-- Circle 1 (Center at (370, 310)) -->
+    <circle cx="370" cy="310" r="150" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6,4" opacity="0.6"/>
+    <!-- Circle 2 (Center at (530, 310)) -->
+    <circle cx="530" cy="310" r="150" fill="none" stroke="#a855f7" stroke-width="2" stroke-dasharray="6,4" opacity="0.6"/>
+
+    <!-- Intersection contour (Vesica Piscis) -->
+    <path d="M 450,180 A 150,150 0 0,1 450,440 A 150,150 0 0,1 450,180 Z" fill="none" stroke="#ec4899" stroke-width="2.5"/>
+
+    <!-- Equilateral Delta Triangle (A, L, P / vertices) -->
+    <!-- Top Apex: A (450, 180) -->
+    <!-- Bottom Left: L (370, 310) -->
+    <!-- Bottom Right: P (530, 310) -->
+    <polygon points="450,180 370,310 530,310" fill="#ec4899" fill-opacity="0.15" stroke="#f43f5e" stroke-width="2.5"/>
+
+    <!-- Inverted Triangle (Reflection / Coincidentia Oppositorum) -->
+    <polygon points="450,440 370,310 530,310" fill="#3b82f6" fill-opacity="0.1" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+    <!-- Horizontal Axis (Base of Delta) -->
+    <line x1="320" y1="310" x2="580" y2="310" stroke="#64748b" stroke-width="1.5"/>
+
+    <!-- Vertical Axis -->
+    <line x1="450" y1="140" x2="450" y2="480" stroke="#64748b" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+    <!-- Center Point Markers -->
+    <circle cx="450" cy="180" r="5" fill="#fbbf24"/>
+    <circle cx="370" cy="310" r="5" fill="#38bdf8"/>
+    <circle cx="530" cy="310" r="5" fill="#a855f7"/>
+    <circle cx="450" cy="440" r="5" fill="#34d399"/>
+    <circle cx="450" cy="310" r="4" fill="#f8fafc"/>
+
+    <!-- Labels on points (matching Joyce's diagram) -->
+    <text class="point-label" x="450" y="165" text-anchor="middle">A</text>
+    <text class="point-label" x="350" y="315" text-anchor="end" fill="#38bdf8">L</text>
+    <text class="point-label" x="550" y="315" text-anchor="start" fill="#a855f7">P</text>
+    <text class="point-label" x="450" y="465" text-anchor="middle" fill="#34d399">α</text>
+    <text class="point-label" x="462" y="305" font-size="14" fill="#94a3b8">C</text>
+  </g>
+
+  <!-- Explanatory Side Panels -->
+  <!-- Left Side: Dolph & Euclid -->
+  <g transform="translate(35, 120)" filter="url(#euclidShadow)">
+    <rect width="210" height="360" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <g transform="translate(16, 26)">
+      <text class="card-title" fill="#38bdf8">DOLPH (SHEM)</text>
+      <text class="geom-note" y="24" fill="#94a3b8">• The Inward Teacher / Artist</text>
+      <text class="geom-note" y="44" fill="#94a3b8">• Euclid Elements Book I, Prop 1</text>
+      <text class="geom-note" y="64" fill="#94a3b8">• Constructing equilateral triangle</text>
+      <line x1="0" y1="80" x2="178" y2="80" stroke="#1e293b"/>
+      <text class="card-title" y="105" fill="#fbbf24">HERMETIC READING</text>
+      <text class="geom-note" y="125">• Triangle = Delta = ALP (Δ)</text>
+      <text class="geom-note" y="145">• Vesica Piscis = Sacred Yoni</text>
+      <text class="geom-note" y="165">• "The mudder's anatomy"</text>
+      <text class="geom-note" y="185">• Source of all creation</text>
+      <text class="geom-note" y="205">• Geometry as ontology</text>
+      <line x1="0" y1="225" x2="178" y2="225" stroke="#1e293b"/>
+      <text class="card-title" y="250" fill="#ec4899">TEXTUAL ORIGIN</text>
+      <text class="geom-note" y="270">Book II, Ch. 2, Page 293</text>
+      <text class="geom-note" y="290">Trivium &amp; Quadrivium</text>
+      <text class="geom-note" y="310">Only visual cut in 1939 ed.</text>
+    </g>
+  </g>
+
+  <!-- Right Side: Kev & Brunonian Coincidentia -->
+  <g transform="translate(655, 120)" filter="url(#euclidShadow)">
+    <rect width="210" height="360" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <g transform="translate(16, 26)">
+      <text class="card-title" fill="#a855f7">KEV (SHAUN)</text>
+      <text class="geom-note" y="24" fill="#94a3b8">• The Literal Pupil / Conformist</text>
+      <text class="geom-note" y="44" fill="#94a3b8">• Shocked at the anatomical truth</text>
+      <text class="geom-note" y="64" fill="#94a3b8">• Punches Dolph in the eye</text>
+      <line x1="0" y1="80" x2="178" y2="80" stroke="#1e293b"/>
+      <text class="card-title" y="105" fill="#34d399">BRUNONIAN AXIS</text>
+      <text class="geom-note" y="125">• Upper Triangle (A-L-P): Spirit</text>
+      <text class="geom-note" y="145">• Lower Triangle (α-L-P): Matter</text>
+      <text class="geom-note" y="165">• Coincidence of Opposites</text>
+      <text class="geom-note" y="185">• Hexagram / Seal of Solomon</text>
+      <text class="geom-note" y="205">• Center point C = Cosmic Axis</text>
+      <line x1="0" y1="225" x2="178" y2="225" stroke="#1e293b"/>
+      <text class="card-title" y="250" fill="#38bdf8">MATHEMATICAL LOGIC</text>
+      <text class="geom-note" y="270">Compass = Space / Shaun</text>
+      <text class="geom-note" y="290">Ruler = Time / Shem</text>
+      <text class="geom-note" y="310">Intersection = Eternal Return</text>
+    </g>
+  </g>
+
+  <!-- Bottom Synthesis Banner -->
+  <g transform="translate(120, 520)" filter="url(#euclidShadow)">
+    <rect width="660" height="95" rx="12" fill="#0b1120" stroke="#3b82f6" stroke-width="1.2"/>
+    <g transform="translate(330, 26)" text-anchor="middle">
+      <text class="geom-note" fill="#38bdf8" font-weight="700">THE CONJUNCTIVE GEOMETRY OF JOYCE'S UNIVERSE:</text>
+      <text class="geom-note" y="22" fill="#f8fafc" font-size="13">
+        "Vieus empeor! amCalculation! First mull a circle round your hebb. Then cast an equilateral across her."
+      </text>
+      <text class="geom-note" y="42" fill="#94a3b8" font-size="11">
+        Euclid's Proposition 1 transformed into maternal genesis, biological origin, and the reconciliation of Shem &amp; Shaun.
+      </text>
+    </g>
+  </g>
+</svg>

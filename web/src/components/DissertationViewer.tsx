@@ -272,6 +272,30 @@ export function DissertationViewer({ content }: DissertationViewerProps) {
         {...props}
       />
     ),
+    img: ({ node, src, alt, ...props }: any) => {
+      let resolvedSrc = src || '';
+      if (resolvedSrc.startsWith('figures/')) {
+        resolvedSrc = `${getBasePath()}/${resolvedSrc}`;
+      } else if (resolvedSrc.startsWith('/figures/')) {
+        resolvedSrc = `${getBasePath()}${resolvedSrc}`;
+      }
+      return (
+        <figure className="my-8 rounded-2xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-2xl">
+          <img
+            src={resolvedSrc}
+            alt={alt || 'Figure illustration'}
+            className="w-full h-auto max-h-[620px] object-contain mx-auto block"
+            loading="lazy"
+            {...props}
+          />
+          {alt && (
+            <figcaption className="px-4 py-2.5 text-center text-xs font-mono text-slate-400 bg-slate-900/60 border-t border-slate-800/80">
+              {alt}
+            </figcaption>
+          )}
+        </figure>
+      );
+    },
   }), []);
 
   return (
