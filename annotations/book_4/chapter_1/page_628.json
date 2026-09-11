@@ -3,5 +3,212 @@
   "book": 4,
   "chapter": 1,
   "page_number": 628,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "628.01-a8ac",
+      "line_number": 1,
+      "target_phrase": "sad and weary I go back to you, my cold father",
+      "annotation_text": "Anna Livia Plurabelle (ALP) speaking in her dying monologue as she flows out into the cold, bitter Irish Sea / Atlantic Ocean, addressing her father the Ocean.",
+      "categories": [
+        "alp",
+        "monologue",
+        "river-liffey",
+        "ocean",
+        "death"
+      ],
+      "cross_references": [
+        "003.01",
+        "627.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "628.03-eb31",
+      "line_number": 3,
+      "target_phrase": "moyles and moyles of it, moananoaning, makes me seasilt saltsick",
+      "annotation_text": "Miles and miles + the Sea of Moyle (where the Children of Lir were transformed into swans for 300 years in Irish legend). The brackish mix of fresh river water with ocean brine.",
+      "categories": [
+        "sea-of-moyle",
+        "children-of-lir",
+        "celtic-mythology",
+        "irish-legend"
+      ],
+      "cross_references": [
+        "628.04"
+      ],
+      "sources": [
+        "O'Grady, Standish Hayes. Silva Gadelica. https://archive.org/details/silvagadelicaiix01ograuoft",
+        "Joyce, P.W. Old Celtic Romances (The Fate of the Children of Lir). https://www.gutenberg.org/ebooks/34190"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "628.05-4fb5",
+      "line_number": 5,
+      "target_phrase": "Avelaval. My leaves have drifted from me",
+      "annotation_text": "Blends \"Ave\" (Hail / farewell in Latin), \"vale\" (goodbye), and \"laval\" (washing, French laver). ALP's autumnal leaves shedding into the river stream as life ebbs away.",
+      "categories": [
+        "latin",
+        "farewell",
+        "leaves",
+        "nature",
+        "alp"
+      ],
+      "cross_references": [
+        "628.06"
+      ],
+      "sources": [
+        "Virgil. Aeneid (Book VI: The Falling Leaves). https://www.thelatinlibrary.com/vergil/aen6.shtml"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "628.07-3334",
+      "line_number": 7,
+      "target_phrase": "Carry me along, taddy, like you done through the toy fair!",
+      "annotation_text": "Childhood memory of her father carrying her through the Dublin Donnybrook / Peter's toy fair, evoking the filial intimacy between the dying soul and the paternal source.",
+      "categories": [
+        "dublin",
+        "childhood",
+        "toy-fair",
+        "paternity"
+      ],
+      "cross_references": [
+        "628.08"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "628.09-1fb3",
+      "line_number": 9,
+      "target_phrase": "under whitespread wings like he'd come from Arkangels",
+      "annotation_text": "Sea gull wings and the Archangel Michael coming to receive the departing spirit at death.",
+      "categories": [
+        "angelology",
+        "archangels",
+        "seagull",
+        "death"
+      ],
+      "cross_references": [
+        "628.11"
+      ],
+      "sources": [
+        "Dante Alighieri. Purgatorio (Canto II: The Angelic Boatman). https://dante.mcl.ac.uk/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "628.11-fe0e",
+      "line_number": 11,
+      "target_phrase": "Whish! A gull. Gulls. Far calls. Coming, far!",
+      "annotation_text": "Auditory manifestation of the gulls screaming over Dublin Bay, calling the river out to the open sea. Echoes the Four Master Annalists (Mamalujo) as four gulls.",
+      "categories": [
+        "gulls",
+        "mamalujo",
+        "dublin-bay",
+        "bird-call"
+      ],
+      "cross_references": [
+        "383.01"
+      ],
+      "sources": [
+        "Kenner, Hugh. Joyce's Voices. https://archive.org/details/joycesvoices0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "628.12-d347",
+      "line_number": 12,
+      "target_phrase": "Finn, again! Take. Bussoftlhee, mememormee! Till thousendsthee",
+      "annotation_text": "Invocation of Finn MacCool rising again; German \"Buss' oft\" (kiss often) and English \"be soft of thee\"; \"remember me\" (Dido's lament in Purcell's Dido and Aeneas); thousand years cycle.",
+      "categories": [
+        "finn-maccool",
+        "purcell",
+        "dido",
+        "german",
+        "remembrance"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Purcell, Henry. Dido and Aeneas (When I am laid in earth). https://imslp.org/wiki/Dido_and_Aeneas,_Z.626_(Purcell,_Henry)",
+        "MacKillop, James. Dictionary of Celtic Mythology: Fionn mac Cumhaill. https://www.oxfordreference.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "628.13-15d4",
+      "line_number": 13,
+      "target_phrase": "The keys to. Given! A way a lone a last a loved a long the",
+      "annotation_text": "The climactic broken sentence of the novel ending on the definite article \"the\", which loops directly into the opening word on page 3: \"riverrun, past Eve and Adam's...\". Perfect circularity of Vico's ricorso and ALP's eternal return.",
+      "categories": [
+        "ricorso",
+        "circularity",
+        "alp",
+        "eternal-return",
+        "vico"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova. https://plato.stanford.edu/entries/vico/",
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "628.14-dcbf",
+      "line_number": 14,
+      "target_phrase": "Paris, 1922-1939",
+      "annotation_text": "Joyce's authorial dateline recording the seventeen years of composition from the year Ulysses was published (1922) to the completion and publication of Finnegans Wake (1939) in Paris.",
+      "categories": [
+        "joyce-biography",
+        "paris",
+        "composition-history"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "National Library of Ireland: James Joyce Collection. https://www.nli.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }
