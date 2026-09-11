@@ -62,6 +62,30 @@ describe('@winnegans/theme Package', () => {
     expect(getDurationLabel('30-days')).toContain('30 Days');
   });
 
+  it('should include official Solarized Dark and Light themes per Ethan Schoonover specification', () => {
+    const solDark = getThemeById('solarized-dark');
+    expect(solDark).toBeDefined();
+    expect(solDark.category).toBe('solarized');
+    expect(solDark.isDark).toBe(true);
+    expect(solDark.colors.bg.toLowerCase()).toBe('#002b36'); // base03
+    expect(solDark.colors.cardBg.toLowerCase()).toBe('#073642'); // base02
+    expect(solDark.colors.textMuted.toLowerCase()).toBe('#586e75'); // base01
+    expect(solDark.colors.text.toLowerCase()).toBe('#839496'); // base0
+    expect(solDark.colors.readerBg.toLowerCase()).toBe('#002b36');
+    expect(solDark.colors.readerText.toLowerCase()).toBe('#93a1a1'); // base1
+
+    const solLight = getThemeById('solarized-light');
+    expect(solLight).toBeDefined();
+    expect(solLight.category).toBe('solarized');
+    expect(solLight.isDark).toBe(false);
+    expect(solLight.colors.bg.toLowerCase()).toBe('#fdf6e3'); // base3
+    expect(solLight.colors.cardBg.toLowerCase()).toBe('#eee8d5'); // base2
+    expect(solLight.colors.textMuted.toLowerCase()).toBe('#93a1a1'); // base1
+    expect(solLight.colors.text.toLowerCase()).toBe('#657b83'); // base00
+    expect(solLight.colors.readerBg.toLowerCase()).toBe('#fdf6e3');
+    expect(solLight.colors.readerText.toLowerCase()).toBe('#586e75'); // base01
+  });
+
   it('should allow building a custom theme with overrides', () => {
     const custom = createCustomTheme('obsidian-oled', 'My Custom Ruby OLED', {
       accent: '#ff0055',

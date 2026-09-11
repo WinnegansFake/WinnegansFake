@@ -51,6 +51,7 @@ export function ThemeSwitcher() {
     { id: 'all', label: 'All Themes', icon: Palette },
     { id: 'light', label: 'Daylight', icon: Sun },
     { id: 'oled', label: 'Obsidian OLED', icon: Smartphone },
+    { id: 'solarized', label: 'Solarized', icon: Sun },
     { id: 'dark-red', label: 'Dark Red Night', icon: Moon },
     { id: 'dark-ambient', label: 'Dark Ambient', icon: Eye },
     { id: 'fun', label: 'Fun & Creative', icon: Sparkles },

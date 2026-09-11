@@ -217,7 +217,55 @@ export const BUILTIN_THEMES: ReadingTheme[] = [
     },
   },
 
-  // 10. Solarized Dublin Amber (Scholarly Vintage)
+  // 10. Official Solarized Dark (Ethan Schoonover)
+  {
+    id: 'solarized-dark',
+    name: 'Solarized Dark',
+    description: 'Ethan Schoonover’s canonical Solarized Dark: precise LAB color space palette with base03 (#002b36) and base0 (#839496).',
+    category: 'solarized',
+    isDark: true,
+    colors: {
+      bg: '#002b36',
+      text: '#839496',
+      textMuted: '#586e75',
+      cardBg: '#073642',
+      border: '#073642',
+      accent: '#2aa198', // cyan
+      accentHover: '#268bd2', // blue
+      ring: '#b58900', // yellow
+      readerBg: '#002b36',
+      readerText: '#93a1a1', // base1 for crisp high readability
+      readerCoord: '#586e75', // base01
+      selectionBg: '#073642', // base02
+      selectionText: '#93a1a1',
+    },
+  },
+
+  // 11. Official Solarized Light (Ethan Schoonover)
+  {
+    id: 'solarized-light',
+    name: 'Solarized Light',
+    description: 'Ethan Schoonover’s canonical Solarized Light: warm base3 (#fdf6e3) background with base00 (#657b83) text.',
+    category: 'solarized',
+    isDark: false,
+    colors: {
+      bg: '#fdf6e3',
+      text: '#657b83',
+      textMuted: '#93a1a1',
+      cardBg: '#eee8d5',
+      border: '#eee8d5',
+      accent: '#268bd2', // blue
+      accentHover: '#2aa198', // cyan
+      ring: '#b58900', // yellow
+      readerBg: '#fdf6e3',
+      readerText: '#586e75', // base01 for crisp high readability
+      readerCoord: '#93a1a1', // base1
+      selectionBg: '#eee8d5', // base2
+      selectionText: '#073642',
+    },
+  },
+
+  // 12. Solarized Dublin Amber (Scholarly Vintage)
   {
     id: 'solarized-amber',
     name: 'Dublin Amber',

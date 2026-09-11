@@ -2,7 +2,7 @@
  * @winnegans/theme - Types and Interfaces
  */
 
-export type ThemeCategory = 'light' | 'oled' | 'dark-red' | 'dark-ambient' | 'fun' | 'creative';
+export type ThemeCategory = 'light' | 'oled' | 'dark-red' | 'dark-ambient' | 'solarized' | 'fun' | 'creative';
 
 export interface ThemeColors {
   /** Page primary background */
