@@ -8,18 +8,24 @@
     "start": "next start",
     "lint": "eslint",
     "validate": "node ../validate.js",
-    "index:epub": "python3 ../build_page_index.py"
+    "index:epub": "python3 ../build_page_index.py",
+    "prebuild": "node ../scripts/sync_public_annotations.js",
+    "predev": "node ../scripts/sync_public_annotations.js"
   },
   "dependencies": {
     "@winnegans/epub-reader": "link:../packages/epub-reader",
     "jsonschema": "^1.5.0",
+    "jszip": "^3.10.2",
     "lucide-react": "^1.44.0",
     "next": "16.3.4",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/jszip": "^3.4.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

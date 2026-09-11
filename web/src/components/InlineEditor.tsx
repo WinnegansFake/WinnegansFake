@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { AnnotationItem } from '@/lib/annotations';
+import { AnnotationItem } from '@/types/annotations';
 import { Save, Trash2, X, AlertCircle, CheckCircle2 } from 'lucide-react';
 
 interface InlineEditorProps {

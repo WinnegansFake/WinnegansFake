@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { AnnotationItem, PageAnnotationsData } from '@/lib/annotations';
+import React, { useState, useEffect, useRef } from 'react';
+import { AnnotationItem, PageAnnotationsData, PageLine } from '@/types/annotations';
 import { InlineEditor } from './InlineEditor';
 import {
   ChevronLeft,
@@ -20,34 +20,52 @@ import {
   Archive,
   Compass,
   CornerDownRight,
+  UploadCloud,
+  FileUp,
+  Download,
+  Copy,
+  Check,
+  Search,
+  Filter,
+  Layers,
+  Sparkles,
+  AlertCircle
 } from 'lucide-react';
-
-interface PageLine {
-  line: number;
-  text: string;
-}
+import {
+  getBasePath,
+  getBookAndChapterInfo,
+  ANALYTICAL_REGISTERS,
+  ARCHIVE_EPUB_URL,
+  GITHUB_REPO_URL
+} from '@/lib/constants';
+import { browserEpub, ParsedEpubPage } from '@/lib/epubReader';
 
 export function WakeReader() {
-  const [currentPage, setCurrentPage] = useState<number>(1);
-  const [pageInput, setPageInput] = useState<string>('1');
+  const [currentPage, setCurrentPage] = useState<number>(3);
+  const [pageInput, setPageInput] = useState<string>('3');
   const [lines, setLines] = useState<PageLine[]>([]);
-  const [bookInfo, setBookInfo] = useState<{ book: number; chapter: number }>({ book: 1, chapter: 1 });
   const [annotationsData, setAnnotationsData] = useState<PageAnnotationsData | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
-  const [sourceAvailable, setSourceAvailable] = useState<boolean>(true);
-  const [sourceMessage, setSourceMessage] = useState<string | null>(null);
-  const [sourceHtml, setSourceHtml] = useState<string | null>(null);
-  const [sourceFile, setSourceFile] = useState<string | null>(null);
+  const [epubLoaded, setEpubLoaded] = useState<boolean>(false);
+  const [epubFileName, setEpubFileName] = useState<string>('');
+  const [rawHtml, setRawHtml] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'line-indexed' | 'raw-epub'>('line-indexed');
+
+  // Filters & search
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [selectedRegister, setSelectedRegister] = useState<string>('all');
 
   // Active editor states
   const [editingId, setEditingId] = useState<string | null>(null);
   const [isCreatingForLine, setIsCreatingForLine] = useState<number | null>(null);
   const [isCreatingInPanel, setIsCreatingInPanel] = useState<boolean>(false);
   const [selectedAnnotationId, setSelectedAnnotationId] = useState<string | null>(null);
-  const [feedback, setFeedback] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
+  const [feedback, setFeedback] = useState<{ type: 'success' | 'error' | 'info'; message: string } | null>(null);
+  const [copiedSnippet, setCopiedSnippet] = useState(false);
 
-  // Fetch page text, raw EPUB HTML, and annotations directly from .epub
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // Load annotations from static JSON file
   const loadPageData = async (page: number) => {
     setLoading(true);
     setFeedback(null);
@@ -55,46 +73,48 @@ export function WakeReader() {
     setIsCreatingForLine(null);
     setIsCreatingInPanel(false);
 
+    const padPage = String(page).padStart(3, '0');
+    const basePath = getBasePath();
+    const annUrl = `${basePath}/annotations/page_${padPage}.json`;
+
     try {
-      const [epubRes, annRes] = await Promise.all([
-        fetch(`/api/epub?page=${page}`),
-        fetch(`/api/annotations?page=${page}`),
-      ]);
-
-      let epubJson: any = null;
-      let annJson: any = null;
-
-      try {
-        epubJson = await epubRes.json();
-      } catch (err: any) {
-        console.error('Error parsing epub JSON:', err);
-      }
-
-      try {
-        annJson = await annRes.json();
-      } catch (err: any) {
-        console.error('Error parsing annotations JSON:', err);
-      }
-
-      if (epubRes.ok && epubJson) {
-        setLines(epubJson.lines || []);
-        setBookInfo({ book: epubJson.book, chapter: epubJson.chapter });
-        setSourceHtml(epubJson.html || null);
-        setSourceFile(epubJson.source_file || null);
-        setSourceAvailable(true);
-        setSourceMessage(null);
+      const res = await fetch(annUrl);
+      if (res.ok) {
+        const json = await res.json();
+        setAnnotationsData(json);
       } else {
-        setSourceAvailable(false);
-        setSourceMessage(epubJson?.message || epubJson?.error || `HTTP ${epubRes.status} reading page ${page}`);
+        // Create empty structure if file not found
+        const { book, chapter } = getBookAndChapterInfo(page);
+        setAnnotationsData({
+          schema_version: '1.0.0',
+          book,
+          chapter,
+          page_number: page,
+          annotations: [],
+        });
       }
-
-      setAnnotationsData(annJson);
     } catch (err: any) {
-      console.error('Failed to load page data:', err);
-      setFeedback({ type: 'error', message: err?.message || 'Failed to load page data directly from .epub.' });
-    } finally {
-      setLoading(false);
+      console.error('Failed to load annotations:', err);
+      const { book, chapter } = getBookAndChapterInfo(page);
+      setAnnotationsData({
+        schema_version: '1.0.0',
+        book,
+        chapter,
+        page_number: page,
+        annotations: [],
+      });
     }
+
+    // If EPUB is loaded in browser memory, load text
+    if (browserEpub.isLoaded()) {
+      const pageData = await browserEpub.getPage(page);
+      if (pageData) {
+        setLines(pageData.lines);
+        setRawHtml(pageData.rawHtml);
+      }
+    }
+
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -118,7 +138,41 @@ export function WakeReader() {
     }
   };
 
-  // Save or update annotation
+  // Handle EPUB file upload
+  const handleEpubFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
+    const file = files[0];
+
+    try {
+      setLoading(true);
+      setFeedback({ type: 'info', message: `Unpacking and indexing ${file.name} in browser memory...` });
+      const pageCount = await browserEpub.parseFile(file, file.name);
+      setEpubLoaded(true);
+      setEpubFileName(file.name);
+
+      const pageData = await browserEpub.getPage(currentPage);
+      if (pageData) {
+        setLines(pageData.lines);
+        setRawHtml(pageData.rawHtml);
+      }
+
+      setFeedback({
+        type: 'success',
+        message: `Successfully loaded ${file.name} (${pageCount} pages parsed). Book text is now rendered side-by-side with annotations!`,
+      });
+    } catch (err: any) {
+      console.error('Error parsing EPUB:', err);
+      setFeedback({
+        type: 'error',
+        message: `Failed to parse EPUB archive: ${err.message}`,
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Save annotation (in-memory update with export capability)
   const handleSaveAnnotation = async (updated: AnnotationItem) => {
     if (!annotationsData) return;
 
@@ -130,602 +184,545 @@ export function WakeReader() {
     } else {
       newAnnotations.push(updated);
     }
+    newAnnotations.sort((a, b) => a.line_number - b.line_number);
 
     const payload: PageAnnotationsData = {
       ...annotationsData,
       annotations: newAnnotations,
     };
-
-    const res = await fetch('/api/annotations', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
-
-    const resJson = await res.json();
-    if (!res.ok) {
-      throw new Error(resJson.details ? resJson.details.join(', ') : resJson.error);
-    }
 
     setAnnotationsData(payload);
     setEditingId(null);
     setIsCreatingForLine(null);
     setIsCreatingInPanel(false);
     setSelectedAnnotationId(updated.id);
+
     setFeedback({
       type: 'success',
-      message: `Annotation saved to annotations/book_${payload.book}/chapter_${payload.chapter}/page_${String(currentPage).padStart(3, '0')}.json`,
+      message: `Annotation ${updated.id} drafted in browser! Click "Export JSON" to download the updated page file, or copy the PR snippet.`,
     });
-    setTimeout(() => setFeedback(null), 5000);
   };
 
-  // Delete annotation
   const handleDeleteAnnotation = async (id: string) => {
     if (!annotationsData) return;
-    if (!confirm('Are you sure you want to delete this annotation from the JSON file?')) return;
+    if (!confirm('Remove this annotation from the current view?')) return;
 
     const newAnnotations = annotationsData.annotations.filter((a) => a.id !== id);
-    const payload: PageAnnotationsData = {
+    setAnnotationsData({
       ...annotationsData,
       annotations: newAnnotations,
-    };
-
-    const res = await fetch('/api/annotations', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
     });
-
-    const resJson = await res.json();
-    if (!res.ok) {
-      setFeedback({ type: 'error', message: resJson.error || 'Failed to delete' });
-      return;
-    }
-
-    setAnnotationsData(payload);
-    setEditingId(null);
-    if (selectedAnnotationId === id) setSelectedAnnotationId(null);
-    setFeedback({ type: 'success', message: 'Annotation deleted successfully.' });
-    setTimeout(() => setFeedback(null), 4000);
+    setFeedback({ type: 'info', message: 'Annotation removed from current view.' });
   };
 
-  // Group annotations by line number
-  const annotationsByLine = (annotationsData?.annotations || []).reduce<Record<number, AnnotationItem[]>>(
-    (acc, ann) => {
-      acc[ann.line_number] = acc[ann.line_number] || [];
-      acc[ann.line_number].push(ann);
-      return acc;
-    },
-    {}
-  );
+  const exportCurrentPageJson = () => {
+    if (!annotationsData) return;
+    const jsonStr = JSON.stringify(annotationsData, null, 2) + '\n';
+    const blob = new Blob([jsonStr], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `page_${String(currentPage).padStart(3, '0')}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  const copyAnnotationSnippet = (ann: AnnotationItem) => {
+    navigator.clipboard.writeText(JSON.stringify(ann, null, 2));
+    setCopiedSnippet(true);
+    setTimeout(() => setCopiedSnippet(false), 2000);
+  };
+
+  // Filtered annotations
+  const filteredAnnotations = (annotationsData?.annotations || []).filter((ann) => {
+    const matchesSearch =
+      !searchQuery.trim() ||
+      ann.target_phrase.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      ann.annotation_text.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      ann.id.toLowerCase().includes(searchQuery.toLowerCase());
+
+    const matchesRegister =
+      selectedRegister === 'all' ||
+      ann.categories.includes(selectedRegister);
+
+    return matchesSearch && matchesRegister;
+  });
+
+  const bookInfo = getBookAndChapterInfo(currentPage);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
-      {/* Top Header */}
-      <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-20 px-6 py-3.5 flex flex-wrap items-center justify-between gap-4">
-        <div className="flex items-center space-x-3">
-          <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center font-serif font-bold text-white shadow-md">
-            FW
+    <div className="flex flex-col flex-1 bg-slate-950 text-slate-100 min-h-screen">
+      {/* 1. Header Toolbar */}
+      <header className="sticky top-16 z-30 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-4 py-3 shadow-md">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+          {/* Left: Book & Chapter Breadcrumb */}
+          <div className="flex items-center space-x-3 w-full md:w-auto justify-between md:justify-start">
+            <div className="flex items-center space-x-2">
+              <span className="font-serif font-bold text-base text-emerald-400">
+                Book {bookInfo.bookRoman}, Chapter {bookInfo.chapter}
+              </span>
+              <span className="hidden sm:inline text-slate-500">&bull;</span>
+              <span className="hidden sm:inline text-xs text-slate-400 italic truncate max-w-[220px]">
+                {bookInfo.chapterTitle}
+              </span>
+            </div>
+            <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
+              Joyce Page {currentPage} / 628
+            </span>
           </div>
-          <div>
-            <h1 className="font-serif font-bold text-lg text-slate-100 leading-none">
-              WinnegansFake
-            </h1>
-            <p className="text-[11px] text-slate-400 font-mono mt-0.5">
-              Direct .EPUB Stream & Scholarly Annotation Workbench
-            </p>
-          </div>
-        </div>
 
-        {/* Navigation Controls: Jump, Prev, Next, Chapter selects */}
-        <div className="flex items-center space-x-3">
-          {/* Quick jump input and buttons */}
-          <div className="flex items-center bg-slate-800 border border-slate-700 rounded-lg p-0.5 text-xs font-mono shadow-sm">
+          {/* Center: Page Navigation Controls */}
+          <div className="flex items-center space-x-2">
             <button
               onClick={() => goToPage(currentPage - 1)}
               disabled={currentPage <= 1}
-              className="p-1.5 hover:bg-slate-700 rounded text-slate-300 disabled:opacity-30 disabled:hover:bg-transparent transition-colors"
-              title="Previous Page"
+              className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white disabled:opacity-40 transition-colors"
+              title="Previous Page (p)"
             >
               <ChevronLeft className="w-4 h-4" />
             </button>
-            <form onSubmit={handlePageSubmit} className="flex items-center px-2">
-              <span className="text-slate-400 text-xs mr-1 select-none">p.</span>
+
+            <form onSubmit={handlePageSubmit} className="flex items-center space-x-1.5">
+              <span className="text-xs text-slate-400 font-mono">Page</span>
               <input
                 type="number"
                 min={1}
                 max={628}
                 value={pageInput}
                 onChange={(e) => setPageInput(e.target.value)}
-                onBlur={handlePageSubmit}
-                className="w-14 bg-slate-900 border border-slate-700 rounded px-1.5 py-0.5 text-center text-white text-xs font-mono focus:outline-none focus:border-indigo-500"
-                title="Enter any page number between 1 and 628 and press Enter"
+                className="w-16 bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-center text-xs font-mono text-white focus:outline-none focus:border-emerald-500"
               />
-              <span className="text-slate-500 text-xs ml-1 select-none">/ 628</span>
               <button
                 type="submit"
-                className="ml-1.5 px-2 py-0.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-[10px] font-mono transition-colors"
-                title="Go to page"
+                className="px-2 py-1 text-xs rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-medium transition-colors"
               >
                 Go
               </button>
             </form>
+
             <button
               onClick={() => goToPage(currentPage + 1)}
               disabled={currentPage >= 628}
-              className="p-1.5 hover:bg-slate-700 rounded text-slate-300 disabled:opacity-30 disabled:hover:bg-transparent transition-colors"
-              title="Next Page"
+              className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white disabled:opacity-40 transition-colors"
+              title="Next Page (n)"
             >
               <ChevronRight className="w-4 h-4" />
             </button>
           </div>
 
-          {/* Quick Book Jump Selector */}
-          <div className="hidden sm:flex items-center space-x-1 text-xs font-mono">
-            <span className="text-slate-500 text-[11px] mr-1">Jump:</span>
-            {[
-              { label: 'Front (p.1)', page: 1 },
-              { label: 'Bk I (p.3)', page: 3 },
-              { label: 'Bk II (p.219)', page: 219 },
-              { label: 'Bk III (p.403)', page: 403 },
-              { label: 'Bk IV (p.593)', page: 593 },
-              { label: 'Fin (p.628)', page: 628 },
-            ].map((bk) => (
-              <button
-                key={bk.label}
-                onClick={() => goToPage(bk.page)}
-                className={`px-2 py-1 rounded text-[11px] transition-colors ${
-                  currentPage === bk.page
-                    ? 'bg-indigo-600 text-white font-semibold'
-                    : 'bg-slate-800/80 hover:bg-slate-700 text-slate-300'
-                }`}
-              >
-                {bk.label}
-              </button>
-            ))}
-          </div>
-
-          <div className="hidden md:flex items-center space-x-2 text-xs font-mono text-slate-400 border-l border-slate-800 pl-3">
-            <span className="bg-slate-800/80 px-2 py-1 rounded">
-              Book {bookInfo.book}
-            </span>
-            <span className="bg-slate-800/80 px-2 py-1 rounded">
-              Chapter {bookInfo.chapter}
-            </span>
-          </div>
-        </div>
-
-        {/* Safeguard & View Toggle */}
-        <div className="flex items-center space-x-3">
-          <div className="flex items-center bg-slate-900 border border-slate-800 rounded-lg p-0.5 text-[11px] font-mono">
+          {/* Right: EPUB Loader & View Controls */}
+          <div className="flex items-center space-x-2">
+            <input
+              type="file"
+              ref={fileInputRef}
+              onChange={handleEpubFileUpload}
+              accept=".epub"
+              className="hidden"
+            />
             <button
-              onClick={() => setViewMode('line-indexed')}
-              className={`px-2.5 py-1 rounded-md transition-colors ${
-                viewMode === 'line-indexed'
-                  ? 'bg-indigo-600 text-white font-medium shadow-sm'
-                  : 'text-slate-400 hover:text-slate-200'
+              onClick={() => fileInputRef.current?.click()}
+              className={`inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                epubLoaded
+                  ? 'bg-emerald-950 text-emerald-300 border border-emerald-500/40 shadow-sm'
+                  : 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/30'
               }`}
             >
-              Line-Indexed
+              <FileUp className="w-3.5 h-3.5" />
+              <span>{epubLoaded ? 'EPUB Loaded' : 'Load Local EPUB'}</span>
             </button>
+
             <button
-              onClick={() => setViewMode('raw-epub')}
-              className={`px-2.5 py-1 rounded-md transition-colors ${
-                viewMode === 'raw-epub'
-                  ? 'bg-indigo-600 text-white font-medium shadow-sm'
-                  : 'text-slate-400 hover:text-slate-200'
-              }`}
+              onClick={exportCurrentPageJson}
+              className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 transition-colors"
+              title="Download page JSON"
             >
-              Raw EPUB View
+              <Download className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Export</span>
+            </button>
+
+            <button
+              onClick={() => setIsCreatingInPanel(!isCreatingInPanel)}
+              className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-emerald-400 hover:text-emerald-300 border border-slate-700 transition-colors"
+            >
+              <PlusCircle className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Add Note</span>
             </button>
           </div>
-
-          <span className="inline-flex items-center gap-1.5 bg-emerald-950/60 text-emerald-400 border border-emerald-500/30 text-[11px] font-mono px-2.5 py-1 rounded-full">
-            <ShieldCheck className="w-3.5 h-3.5" />
-            <span className="hidden xl:inline">Source: Local .epub Streamed</span>
-            <span className="xl:hidden">Local Safe</span>
-          </span>
         </div>
       </header>
 
-      {/* Feedback Banner */}
+      {/* 2. Feedback Alert Banner */}
       {feedback && (
-        <div
-          className={`px-6 py-2.5 text-xs flex items-center justify-between border-b transition-all ${
-            feedback.type === 'success'
-              ? 'bg-emerald-950/80 border-emerald-500/40 text-emerald-200'
-              : 'bg-red-950/80 border-red-500/40 text-red-200'
-          }`}
-        >
-          <div className="flex items-center gap-2">
-            {feedback.type === 'success' ? (
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-            ) : (
-              <Info className="w-4 h-4 text-red-400" />
-            )}
+        <div className={`px-4 py-2 text-xs flex items-center justify-between border-b ${
+          feedback.type === 'success'
+            ? 'bg-emerald-950/80 border-emerald-500/40 text-emerald-200'
+            : feedback.type === 'error'
+            ? 'bg-red-950/80 border-red-500/40 text-red-200'
+            : 'bg-indigo-950/80 border-indigo-500/40 text-indigo-200'
+        }`}>
+          <div className="max-w-7xl mx-auto flex items-center space-x-2 w-full">
+            <Info className="w-4 h-4 flex-shrink-0" />
             <span>{feedback.message}</span>
           </div>
-          <button onClick={() => setFeedback(null)} className="text-slate-400 hover:text-white">
-            ✕
+          <button onClick={() => setFeedback(null)} className="text-slate-400 hover:text-white text-xs">
+            &times;
           </button>
         </div>
       )}
 
-      {/* Main Reader & Annotation Workspace */}
-      <div className="flex-1 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 p-6">
-        {/* Left Column: Local Page Reader with Inline Hotspots */}
-        <div className="lg:col-span-7 flex flex-col space-y-4">
-          <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 shadow-xl flex-1 flex flex-col">
-            <div className="flex items-center justify-between pb-4 border-b border-slate-800/80 mb-4">
-              <div className="flex items-center space-x-2">
-                <BookOpen className="w-4 h-4 text-indigo-400" />
-                <h2 className="font-serif text-sm font-semibold text-slate-200 tracking-wide uppercase">
-                  Page {String(currentPage).padStart(3, '0')} of 628
-                  {currentPage <= 2 && (
-                    <span className="ml-2 text-xs normal-case font-sans text-amber-400 bg-amber-950/40 border border-amber-500/30 px-2 py-0.5 rounded-full">
-                      Front Matter
-                    </span>
-                  )}
-                </h2>
-                {sourceFile && (
-                  <span className="text-[10px] font-mono text-slate-500 bg-slate-800/60 px-2 py-0.5 rounded">
-                    {sourceFile}
-                  </span>
-                )}
-              </div>
-              <div className="flex items-center space-x-3">
-                <span className="text-xs text-slate-500 font-mono">
-                  {lines.length} lines parsed
-                </span>
-                <button
-                  onClick={() => {
-                    setIsCreatingForLine(1);
-                    setEditingId(null);
-                  }}
-                  className="inline-flex items-center text-xs text-indigo-400 hover:text-indigo-300 bg-indigo-950/60 border border-indigo-500/30 px-2.5 py-1 rounded-lg transition-colors font-mono"
-                  title="Create annotation on line 1"
-                >
-                  <PlusCircle className="w-3.5 h-3.5 mr-1" />
-                  Annotate Line 1
-                </button>
-              </div>
+      {/* 3. Main Split View: Left = Book Lines, Right = Annotations */}
+      <div className="max-w-7xl mx-auto w-full px-4 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start flex-1">
+        {/* LEFT COLUMN: Book Text (or Local EPUB Prompt) */}
+        <section className="lg:col-span-7 bg-slate-900/70 border border-slate-800 rounded-2xl p-5 sm:p-7 shadow-xl space-y-4">
+          <div className="flex items-center justify-between pb-3 border-b border-slate-800 text-xs font-mono text-slate-400">
+            <div className="flex items-center space-x-2">
+              <BookOpen className="w-4 h-4 text-emerald-400" />
+              <span className="font-semibold text-slate-200">
+                JOYCE CANONICAL TEXT (PAGE {String(currentPage).padStart(3, '0')})
+              </span>
             </div>
-
-            {sourceMessage && (
-              <div className="p-3 mb-4 rounded-lg bg-amber-950/40 border border-amber-500/30 text-amber-200 text-xs flex items-center gap-2">
-                <Info className="w-4 h-4 flex-shrink-0 text-amber-400" />
-                <span>{sourceMessage}</span>
-              </div>
-            )}
-
-            {loading ? (
-              <div className="flex-1 flex items-center justify-center py-24 text-slate-500">
-                <RefreshCw className="w-6 h-6 animate-spin text-indigo-500 mr-2" />
-                <span>Reading page directly from local .epub archive...</span>
-              </div>
-            ) : viewMode === 'raw-epub' && sourceHtml ? (
-              /* Raw EPUB render mode */
-              <div className="flex-1 flex flex-col">
-                <div className="mb-2 text-xs font-mono text-slate-400 flex items-center justify-between">
-                  <span>Rendering raw HTML streamed from .epub:</span>
-                  <span className="text-indigo-400">{sourceFile}</span>
-                </div>
-                <div className="p-5 bg-slate-950 border border-slate-800 rounded-xl overflow-y-auto max-h-[70vh] font-serif text-slate-200 leading-relaxed">
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: sourceHtml.replace(/<head[\s\S]*?<\/head>/i, ''),
-                    }}
-                  />
-                </div>
-              </div>
-            ) : (
-              /* Line-indexed reading & inline annotation mode */
-              <div className="font-serif leading-relaxed text-slate-200 space-y-1.5 overflow-y-auto max-h-[72vh] pr-2 scrollbar-thin">
-                {lines.length === 0 ? (
-                  <div className="text-center py-16 text-slate-500 text-xs">
-                    <p>No line text available for page {String(currentPage).padStart(3, '0')}.</p>
-                  </div>
-                ) : (
-                  lines.map(({ line, text }) => {
-                    const lineAnns = annotationsByLine[line] || [];
-                    const isAnnotated = lineAnns.length > 0;
-                    const isCreatingHere = isCreatingForLine === line;
-
-                    return (
-                      <div key={line} className="group relative">
-                        <div
-                          className={`flex items-start rounded-lg px-2 py-1 transition-colors ${
-                            isAnnotated
-                              ? 'bg-indigo-950/30 hover:bg-indigo-950/50'
-                              : 'hover:bg-slate-800/40'
-                          }`}
-                        >
-                          {/* Line number gutter */}
-                          <div className="w-10 flex-shrink-0 font-mono text-[11px] text-slate-600 group-hover:text-indigo-400 pt-0.5 select-none">
-                            {String(line).padStart(2, '0')}
-                          </div>
-
-                          {/* Line Text with inline annotation triggers */}
-                          <div className="flex-1 text-[15px] text-slate-200 selection:bg-indigo-600 selection:text-white">
-                            <span>{text}</span>
-
-                            {/* Inline annotation chips */}
-                            {lineAnns.map((ann) => (
-                              <button
-                                key={ann.id}
-                                onClick={() => {
-                                  setSelectedAnnotationId(ann.id);
-                                  setEditingId(null);
-                                  setIsCreatingInPanel(false);
-                                }}
-                                className={`ml-2 inline-flex items-center px-2 py-0.5 rounded text-[11px] font-mono border transition-all ${
-                                  selectedAnnotationId === ann.id
-                                    ? 'bg-indigo-600 text-white border-indigo-400 shadow-md scale-105'
-                                    : 'bg-indigo-950/80 text-indigo-300 border-indigo-500/40 hover:bg-indigo-900'
-                                }`}
-                                title={ann.target_phrase}
-                              >
-                                <Bookmark className="w-3 h-3 mr-1" />
-                                {ann.target_phrase.length > 18
-                                  ? `${ann.target_phrase.slice(0, 18)}…`
-                                  : ann.target_phrase}
-                              </button>
-                            ))}
-                          </div>
-
-                          {/* Quick action button to annotate line */}
-                          <div className="opacity-0 group-hover:opacity-100 transition-opacity pl-2">
-                            <button
-                              onClick={() => {
-                                setIsCreatingForLine(line);
-                                setEditingId(null);
-                                setIsCreatingInPanel(false);
-                              }}
-                              className="text-slate-500 hover:text-indigo-400 p-1 rounded hover:bg-slate-800 transition-colors"
-                              title={`Add new annotation to line ${line}`}
-                            >
-                              <PlusCircle className="w-3.5 h-3.5" />
-                            </button>
-                          </div>
-                        </div>
-
-                        {/* Inline Form when adding annotation directly at this line */}
-                        {isCreatingHere && (
-                          <InlineEditor
-                            pageNumber={currentPage}
-                            annotation={{
-                              id: '',
-                              line_number: line,
-                              target_phrase: '',
-                              annotation_text: '',
-                              categories: ['etymology'],
-                              cross_references: [],
-                              sources: [],
-                              contributors: ['community-scholar'],
-                            }}
-                            isNew={true}
-                            onSave={handleSaveAnnotation}
-                            onCancel={() => setIsCreatingForLine(null)}
-                          />
-                        )}
-                      </div>
-                    );
-                  })
-                )}
-              </div>
+            {epubLoaded && (
+              <span className="text-[10px] bg-emerald-950 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/30">
+                Loaded: {epubFileName}
+              </span>
             )}
           </div>
-        </div>
 
-        {/* Right Column: Annotation Details & JSON Editor Panel */}
-        <div className="lg:col-span-5 flex flex-col space-y-4">
-          <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 shadow-xl flex-1 flex flex-col">
-            <div className="flex items-center justify-between pb-4 border-b border-slate-800/80 mb-4">
-              <div className="flex items-center space-x-2">
-                <FileCode2 className="w-4 h-4 text-indigo-400" />
-                <h2 className="font-serif text-sm font-semibold text-slate-200 uppercase tracking-wide">
-                  Page {String(currentPage).padStart(3, '0')} Notes ({annotationsData?.annotations.length || 0})
-                </h2>
+          {/* If EPUB is NOT loaded, show friendly notice and instructions */}
+          {!epubLoaded ? (
+            <div className="space-y-6">
+              <div className="p-5 rounded-xl bg-slate-950/80 border border-slate-800 text-xs space-y-3">
+                <div className="flex items-center space-x-2 text-amber-400 font-semibold text-sm">
+                  <ShieldCheck className="w-4 h-4" />
+                  <span>U.S. Copyright Protection Notice (Title 17 U.S.C. § 107)</span>
+                </div>
+                <p className="text-slate-300 leading-relaxed">
+                  <em>Finnegans Wake</em> is protected under U.S. copyright law through <strong>December 31, 2035</strong>. To ensure complete legal compliance, this static website does not host or distribute the copyrighted book text.
+                </p>
+                <p className="text-slate-300 leading-relaxed">
+                  All <strong>scholarly annotations and glosses</strong> are 100% open-source and displayed in the right panel. To read the authentic book text alongside these annotations, you have two zero-friction options:
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                  <div className="p-3 bg-slate-900 rounded-lg border border-slate-800 space-y-2">
+                    <div className="font-semibold text-white text-xs flex items-center space-x-1.5">
+                      <FileUp className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Option 1: Load Local EPUB</span>
+                    </div>
+                    <p className="text-[11px] text-slate-400">
+                      Download the public scan from Archive.org, then click below to unzip and read in your browser:
+                    </p>
+                    <button
+                      onClick={() => fileInputRef.current?.click()}
+                      className="w-full py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-medium transition-all"
+                    >
+                      Select finneganswake00joycuoft.epub
+                    </button>
+                  </div>
+
+                  <div className="p-3 bg-slate-900 rounded-lg border border-slate-800 space-y-2">
+                    <div className="font-semibold text-white text-xs flex items-center space-x-1.5">
+                      <ExternalLink className="w-3.5 h-3.5 text-indigo-400" />
+                      <span>Option 2: Download Scan</span>
+                    </div>
+                    <p className="text-[11px] text-slate-400">
+                      Grab the 1.5MB EPUB archive from Internet Archive directly to your laptop:
+                    </p>
+                    <a
+                      href={ARCHIVE_EPUB_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-center w-full py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 transition-all"
+                    >
+                      Download EPUB from Archive.org
+                    </a>
+                  </div>
+                </div>
               </div>
-              <button
-                onClick={() => {
-                  setIsCreatingInPanel(true);
-                  setEditingId(null);
-                  setIsCreatingForLine(null);
-                }}
-                className="inline-flex items-center text-xs text-white bg-indigo-600 hover:bg-indigo-500 px-3 py-1.5 rounded-lg transition-colors font-medium shadow-sm"
-              >
-                <PlusCircle className="w-3.5 h-3.5 mr-1.5" />
-                New Note
-              </button>
+
+              {/* Annotated Lines Preview */}
+              <div className="space-y-3">
+                <h4 className="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">
+                  Lines on Page {String(currentPage).padStart(3, '0')} with Annotations:
+                </h4>
+                {annotationsData && annotationsData.annotations.length > 0 ? (
+                  <div className="space-y-2 font-mono text-xs">
+                    {annotationsData.annotations.map((ann) => (
+                      <div
+                        key={ann.id}
+                        onClick={() => setSelectedAnnotationId(ann.id)}
+                        className={`p-3 rounded-xl border transition-all cursor-pointer ${
+                          selectedAnnotationId === ann.id
+                            ? 'bg-emerald-950/40 border-emerald-500/50 shadow-md'
+                            : 'bg-slate-950/60 border-slate-800 hover:border-slate-700'
+                        }`}
+                      >
+                        <div className="flex items-center justify-between text-slate-400 mb-1">
+                          <span className="text-emerald-400 font-bold">
+                            Line {String(ann.line_number).padStart(2, '0')} ({String(currentPage).padStart(3, '0')}.{String(ann.line_number).padStart(2, '0')})
+                          </span>
+                          <span className="text-[10px] text-slate-500">{ann.id}</span>
+                        </div>
+                        <div className="text-amber-200 font-serif text-sm">
+                          &ldquo;{ann.target_phrase}&rdquo;
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-xs text-slate-500 italic py-4 text-center">
+                    No annotations recorded for page {currentPage} yet. Be the first to add one!
+                  </p>
+                )}
+              </div>
+            </div>
+          ) : (
+            /* EPUB IS LOADED: Render the line segmented text */
+            <div className="space-y-1.5 font-serif text-slate-200 text-sm leading-relaxed select-text">
+              {lines.map((l) => {
+                const lineAnns = (annotationsData?.annotations || []).filter((a) => a.line_number === l.line);
+                const hasAnns = lineAnns.length > 0;
+                const isSelected = lineAnns.some((a) => a.id === selectedAnnotationId);
+
+                return (
+                  <div
+                    key={l.line}
+                    className={`group flex items-start py-1 px-2 rounded-lg transition-colors ${
+                      isSelected
+                        ? 'bg-emerald-950/50 border border-emerald-500/40'
+                        : hasAnns
+                        ? 'hover:bg-slate-800/60'
+                        : 'hover:bg-slate-900'
+                    }`}
+                  >
+                    <span className="font-mono text-[11px] text-slate-500 w-8 flex-shrink-0 select-none pt-0.5">
+                      {String(l.line).padStart(2, '0')}
+                    </span>
+                    <p className="flex-1 font-serif text-slate-200">
+                      {l.text}
+                    </p>
+                    <div className="flex items-center space-x-1 opacity-0 group-hover:opacity-100 transition-opacity ml-2">
+                      <button
+                        onClick={() => setIsCreatingForLine(l.line)}
+                        className="p-1 rounded text-slate-400 hover:text-emerald-400 hover:bg-slate-800"
+                        title="Add annotation for this line"
+                      >
+                        <PlusCircle className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                    {hasAnns && (
+                      <span className="ml-2 flex-shrink-0 select-none">
+                        <span className="inline-flex items-center justify-center px-1.5 py-0.5 text-[10px] font-mono rounded bg-emerald-950 text-emerald-300 border border-emerald-500/40">
+                          {lineAnns.length} note{lineAnns.length > 1 ? 's' : ''}
+                        </span>
+                      </span>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </section>
+
+        {/* RIGHT COLUMN: Scholarly Annotations Corpus */}
+        <section className="lg:col-span-5 bg-slate-900/70 border border-slate-800 rounded-2xl p-5 shadow-xl space-y-4">
+          <div className="flex items-center justify-between pb-3 border-b border-slate-800 text-xs font-mono text-slate-400">
+            <div className="flex items-center space-x-2">
+              <Bookmark className="w-4 h-4 text-indigo-400" />
+              <span className="font-semibold text-slate-200">
+                SCHOLARLY ANNOTATIONS ({filteredAnnotations.length})
+              </span>
+            </div>
+          </div>
+
+          {/* Search & Register Filter */}
+          <div className="space-y-2">
+            <div className="relative">
+              <Search className="w-3.5 h-3.5 absolute left-3 top-2.5 text-slate-500" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search lemmas, glosses, coordinates..."
+                className="w-full bg-slate-950 border border-slate-800 rounded-lg pl-8 pr-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500 font-sans"
+              />
             </div>
 
-            {/* List of Annotations for Page & New Note Form */}
-            <div className="space-y-4 overflow-y-auto max-h-[72vh] pr-1 scrollbar-thin">
-              {/* If user clicked 'New Note' button in top panel */}
-              {isCreatingInPanel && (
-                <InlineEditor
-                  pageNumber={currentPage}
-                  annotation={{
-                    id: '',
-                    line_number: 1,
-                    target_phrase: '',
-                    annotation_text: '',
-                    categories: currentPage <= 2 ? ['front-matter'] : ['etymology'],
-                    cross_references: [],
-                    sources: [],
-                    contributors: ['community-scholar'],
-                  }}
-                  isNew={true}
-                  onSave={handleSaveAnnotation}
-                  onCancel={() => setIsCreatingInPanel(false)}
-                />
-              )}
+            <div className="flex items-center space-x-2 text-xs">
+              <Filter className="w-3.5 h-3.5 text-slate-500 flex-shrink-0" />
+              <select
+                value={selectedRegister}
+                onChange={(e) => setSelectedRegister(e.target.value)}
+                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1 text-xs text-slate-300 focus:outline-none focus:border-emerald-500 font-sans"
+              >
+                <option value="all">All Analytical Registers</option>
+                {ANALYTICAL_REGISTERS.map((reg) => (
+                  <option key={reg.id} value={reg.id}>
+                    {reg.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
 
-              {annotationsData?.annotations.length === 0 && !isCreatingInPanel ? (
-                <div className="text-center py-16 text-slate-500 text-xs">
-                  <Bookmark className="w-8 h-8 mx-auto mb-2 text-slate-700" />
-                  <p className="font-medium text-slate-400">No annotations on page {String(currentPage).padStart(3, '0')} yet.</p>
-                  <p className="mt-1 text-slate-600">
-                    Click "New Note" above or click the + icon next to any line in the text to begin the first annotation for this page.
-                  </p>
-                  <button
-                    onClick={() => setIsCreatingInPanel(true)}
-                    className="mt-4 inline-flex items-center text-xs text-white bg-indigo-600 hover:bg-indigo-500 px-3.5 py-1.5 rounded-lg font-medium transition-colors"
-                  >
-                    <PlusCircle className="w-3.5 h-3.5 mr-1.5" />
-                    Begin First Annotation
-                  </button>
-                </div>
-              ) : (
-                annotationsData?.annotations.map((ann) => {
-                  const isEditingThis = editingId === ann.id;
-                  const isSelected = selectedAnnotationId === ann.id;
+          {/* New Annotation Form Modal / Accordion */}
+          {(isCreatingInPanel || isCreatingForLine !== null) && (
+            <InlineEditor
+              pageNumber={currentPage}
+              annotation={{
+                id: `${String(currentPage).padStart(3, '0')}.${String(isCreatingForLine || 1).padStart(2, '0')}-${Math.random().toString(16).substring(2, 6)}`,
+                line_number: isCreatingForLine || 1,
+                target_phrase: '',
+                annotation_text: '',
+                categories: ['etymological-polyglot'],
+                contributors: ['joycean-scholar'],
+              }}
+              isNew={true}
+              onSave={handleSaveAnnotation}
+              onCancel={() => {
+                setIsCreatingInPanel(false);
+                setIsCreatingForLine(null);
+              }}
+            />
+          )}
 
-                  if (isEditingThis) {
-                    return (
-                      <InlineEditor
-                        key={ann.id}
-                        pageNumber={currentPage}
-                        annotation={ann}
-                        isNew={false}
-                        onSave={handleSaveAnnotation}
-                        onDelete={handleDeleteAnnotation}
-                        onCancel={() => setEditingId(null)}
-                      />
-                    );
-                  }
+          {/* Annotations List */}
+          <div className="space-y-4 max-h-[calc(100vh-18rem)] overflow-y-auto pr-1">
+            {filteredAnnotations.length === 0 ? (
+              <div className="p-8 text-center text-slate-500 text-xs italic space-y-2 border border-dashed border-slate-800 rounded-xl">
+                <p>No annotations match your active query on page {currentPage}.</p>
+                <button
+                  onClick={() => setIsCreatingInPanel(true)}
+                  className="text-emerald-400 hover:underline text-xs"
+                >
+                  + Add an annotation for this page
+                </button>
+              </div>
+            ) : (
+              filteredAnnotations.map((ann) => {
+                const isSelected = selectedAnnotationId === ann.id;
+                const isEditing = editingId === ann.id;
 
+                if (isEditing) {
                   return (
-                    <div
+                    <InlineEditor
                       key={ann.id}
-                      onClick={() => setSelectedAnnotationId(ann.id)}
-                      className={`p-4 rounded-xl border transition-all cursor-pointer ${
-                        isSelected
-                          ? 'bg-slate-900 border-indigo-500 shadow-lg'
-                          : 'bg-slate-900/40 border-slate-800 hover:border-slate-700'
-                      }`}
-                    >
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center space-x-2">
-                          <span className="font-mono text-xs font-bold text-indigo-400 bg-indigo-950/70 border border-indigo-500/30 px-2 py-0.5 rounded">
-                            {ann.id}
-                          </span>
-                          <span className="font-mono text-xs text-slate-400">
-                            Line {ann.line_number}
-                          </span>
-                        </div>
+                      pageNumber={currentPage}
+                      annotation={ann}
+                      onSave={handleSaveAnnotation}
+                      onDelete={handleDeleteAnnotation}
+                      onCancel={() => setEditingId(null)}
+                    />
+                  );
+                }
+
+                return (
+                  <div
+                    key={ann.id}
+                    id={ann.id}
+                    onClick={() => setSelectedAnnotationId(ann.id)}
+                    className={`p-4 rounded-xl border transition-all text-xs font-sans space-y-2.5 ${
+                      isSelected
+                        ? 'bg-slate-900 border-indigo-500/50 shadow-lg'
+                        : 'bg-slate-950/70 border-slate-800/90 hover:border-slate-700'
+                    }`}
+                  >
+                    {/* Header: Coordinate + ID */}
+                    <div className="flex items-center justify-between pb-1.5 border-b border-slate-800/80">
+                      <div className="flex items-center space-x-2">
+                        <span className="font-mono text-emerald-400 font-bold bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-500/30 text-[11px]">
+                          Line {String(ann.line_number).padStart(2, '0')}
+                        </span>
+                        <span className="font-mono text-slate-500 text-[10px]">
+                          {ann.id}
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-1">
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            copyAnnotationSnippet(ann);
+                          }}
+                          className="p-1 rounded text-slate-500 hover:text-slate-300"
+                          title="Copy JSON snippet"
+                        >
+                          <Copy className="w-3.5 h-3.5" />
+                        </button>
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             setEditingId(ann.id);
-                            setIsCreatingInPanel(false);
                           }}
-                          className="text-xs text-indigo-400 hover:text-indigo-300 font-medium px-2 py-1 rounded hover:bg-slate-800 transition-colors"
+                          className="text-[11px] text-slate-400 hover:text-white px-2 py-0.5 rounded bg-slate-800"
                         >
                           Edit
                         </button>
                       </div>
+                    </div>
 
-                      <div className="font-mono text-sm font-semibold text-amber-300/90 mb-2">
-                        "{ann.target_phrase}"
-                      </div>
+                    {/* Target Phrase */}
+                    <div className="font-serif text-sm font-semibold text-amber-200">
+                      &ldquo;{ann.target_phrase}&rdquo;
+                    </div>
 
-                      <p className="text-slate-300 text-xs leading-relaxed font-sans mb-3">
-                        {ann.annotation_text}
-                      </p>
+                    {/* Gloss Body */}
+                    <p className="text-slate-300 leading-relaxed text-xs">
+                      {ann.annotation_text}
+                    </p>
 
-                      {/* Tags and categories */}
-                      {ann.categories.length > 0 && (
-                        <div className="flex flex-wrap gap-1.5 mb-2">
-                          {ann.categories.map((c) => (
-                            <span
-                              key={c}
-                              className="inline-flex items-center text-[10px] font-mono text-slate-400 bg-slate-800 px-2 py-0.5 rounded"
-                            >
-                              <Tag className="w-2.5 h-2.5 mr-1 text-slate-500" />
-                              {c}
-                            </span>
-                          ))}
-                        </div>
-                      )}
+                    {/* Badges / Categories */}
+                    <div className="flex flex-wrap gap-1 pt-1">
+                      {ann.categories.map((cat) => (
+                        <span
+                          key={cat}
+                          className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 text-slate-300 border border-slate-800"
+                        >
+                          {cat}
+                        </span>
+                      ))}
+                    </div>
 
-                      {/* Cross references */}
-                      {ann.cross_references && ann.cross_references.length > 0 && (
-                        <div className="text-[11px] font-mono text-slate-500 mb-2">
-                          <span>Refs: </span>
-                          {ann.cross_references.map((ref) => (
+                    {/* Cross references */}
+                    {ann.cross_references && ann.cross_references.length > 0 && (
+                      <div className="text-[11px] text-slate-400 flex items-center space-x-1 font-mono pt-1">
+                        <CornerDownRight className="w-3 h-3 text-indigo-400 flex-shrink-0" />
+                        <span>Refs: </span>
+                        {ann.cross_references.map((ref) => {
+                          const refPage = parseInt(ref.split('.')[0], 10);
+                          return (
                             <button
                               key={ref}
                               onClick={(e) => {
                                 e.stopPropagation();
-                                const p = parseInt(ref.split('.')[0], 10);
-                                if (!isNaN(p)) goToPage(p);
+                                if (!isNaN(refPage)) goToPage(refPage);
                               }}
-                              className="text-indigo-400 hover:underline mr-2"
+                              className="text-indigo-400 hover:underline hover:text-indigo-300"
                             >
                               {ref}
                             </button>
-                          ))}
-                        </div>
-                      )}
-
-                      {/* Academic Sources & Bibliography */}
-                      {ann.sources && ann.sources.length > 0 && (
-                        <div className="text-[11px] text-slate-400 bg-slate-950/60 border border-slate-800 rounded-lg p-2.5 mb-2.5 space-y-1">
-                          <div className="font-semibold text-[10px] text-indigo-400 uppercase tracking-wider flex items-center gap-1">
-                            <BookOpen className="w-3 h-3" />
-                            <span>Sources & Bibliography</span>
-                          </div>
-                          <ul className="space-y-1 pl-1 text-[11px] leading-relaxed">
-                            {ann.sources.map((src, idx) => {
-                              // If source contains a URL, render with clickable anchor
-                              const urlMatch = src.match(/(https?:\/\/[^\s]+)/);
-                              if (urlMatch) {
-                                const url = urlMatch[0];
-                                const parts = src.split(url);
-                                return (
-                                  <li key={idx} className="text-slate-300">
-                                    {parts[0]}
-                                    <a
-                                      href={url}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      onClick={(e) => e.stopPropagation()}
-                                      className="inline-flex items-center text-indigo-400 hover:text-indigo-300 hover:underline break-all font-mono text-[10px] mx-1"
-                                    >
-                                      {url}
-                                      <ExternalLink className="w-2.5 h-2.5 ml-0.5 inline" />
-                                    </a>
-                                    {parts[1]}
-                                  </li>
-                                );
-                              }
-                              return (
-                                <li key={idx} className="text-slate-300">
-                                  {src}
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
-                      )}
-
-                      {/* Contributors footer */}
-                      <div className="pt-2 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-500">
-                        <span className="flex items-center">
-                          <Users className="w-3 h-3 mr-1" />
-                          {ann.contributors.join(', ')}
-                        </span>
-                        <span className="text-[10px] text-slate-600">CC BY-SA 4.0</span>
+                          );
+                        })}
                       </div>
+                    )}
+
+                    {/* Academic Sources */}
+                    {ann.sources && ann.sources.length > 0 && (
+                      <div className="text-[10px] text-slate-500 italic pt-1 border-t border-slate-900">
+                        Source: {ann.sources.join('; ')}
+                      </div>
+                    )}
+
+                    {/* Contributors */}
+                    <div className="text-[10px] text-slate-600 font-mono">
+                      By: {ann.contributors.join(', ')}
                     </div>
-                  );
-                })
-              )}
-            </div>
+                  </div>
+                );
+              })
+            )}
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );

@@ -6,6 +6,15 @@ Inspired by this [tiktok video](https://www.tiktok.com/@lily76412/video/76619245
 
 ---
 
+### 🌐 Live Static Website: [tekromancy.github.io/WinnegansFake](https://tekromancy.github.io/WinnegansFake)
+
+Visit the complete interactive static site deployed on GitHub Pages:
+- **[Interactive Scholarly Reader](https://tekromancy.github.io/WinnegansFake/reader/)**: Browse all 630 pages with 19 analytical registers, or load your local EPUB directly in your browser.
+- **[Doctoral Dissertation](https://tekromancy.github.io/WinnegansFake/dissertation/)**: Read the complete scholarly monograph on the cosmology, philology, and legal architecture.
+- **[Local Setup & EPUB Guide](https://tekromancy.github.io/WinnegansFake/guide/)**: Complete guide to downloading the EPUB from Archive.org and running the application locally.
+
+---
+
 ## 🎓 Central Thesis & Critical Monograph: `dissertation.md`
 
 The intellectual foundation and central focus of this entire repository is articulated in our comprehensive academic treatise:
