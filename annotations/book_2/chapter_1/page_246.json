@@ -8,19 +8,18 @@
       "id": "246.01-682a",
       "line_number": 1,
       "target_phrase": "kerkegaard. over comes",
-      "annotation_text": "Structural opening of Book 2, Chapter 1, page 246. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "annotation_text": "Page 246 opens Book 2, Chapter 1 (\"The Mime of Mick, Nick and the Maggies\") during the Age of Heroes phase. This passage continues the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell, featuring Shem (Glugg), Shaun (Chuff), Issy, the Maggies. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
       "categories": [
         "structural",
         "narrative-strata",
         "book-2"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
         "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -31,19 +30,18 @@
       "id": "246.16-930b",
       "line_number": 16,
       "target_phrase": "Thaddeus, Hardress Myles.",
-      "annotation_text": "Mid-page polysemic discourse on page 246: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "annotation_text": "Mid-page polysemic node on page 246 (\"The Mime of Mick, Nick and the Maggies\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
         "linguistics"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
+        "FWEET: Multilingual concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -54,7 +52,7 @@
       "id": "246.21-b66a",
       "line_number": 21,
       "target_phrase": "Vico",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"Vico\".",
+      "annotation_text": "Viconian marker \"Vico\" on page 246 (\"The Mime of Mick, Nick and the Maggies\"): Giambattista Vico's cyclical philosophy — divine, heroic, and human ages followed by thundering ricorso — structures this passage within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. The current Age of Heroes phase shapes the language, institutional imagery, and historical echoes of the dream.",
       "categories": [
         "vico",
         "ricorso",
@@ -62,12 +60,16 @@
         "giambattista-vico"
       ],
       "cross_references": [
-        "003.01"
+        "003.02",
+        "032.05",
+        "151.10",
+        "260.05"
       ],
       "sources": [
-        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
-        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
+        "Vico, Giambattista. Scienza Nuova. https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel. Dante... Bruno. Vico.. Joyce. https://archive.org/details/ourexagminationr0000unse",
+        "Ricorso.net: Viconian Structure in FW. https://www.ricorso.net",
+        "FinnegansWeb: Vico's Cycles. https://www.finnegansweb.com"
       ],
       "contributors": [
         "joycean-scholar",

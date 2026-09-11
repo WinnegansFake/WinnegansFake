@@ -8,7 +8,7 @@
       "id": "324.12-0d4a",
       "line_number": 12,
       "target_phrase": "set",
-      "annotation_text": "Ancient Egyptian eschatology (set): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
+      "annotation_text": "Egyptian eschatology \"set\" on page 324 (\"The Tavern\"): within HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Heroes passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
       "categories": [
         "egyptian-mythology",
         "book-of-the-dead",
@@ -16,11 +16,16 @@
         "resurrection"
       ],
       "cross_references": [
-        "003.01"
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
       ],
       "sources": [
-        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
-        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,33 +33,10 @@
       ]
     },
     {
-      "id": "324.13-76f0",
-      "line_number": 13,
-      "target_phrase": "set",
-      "annotation_text": "Ancient Egyptian eschatology (set): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
-      "categories": [
-        "egyptian-mythology",
-        "book-of-the-dead",
-        "osiris",
-        "resurrection"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
-        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "324.16-ec22",
+      "id": "324.16-baa3",
       "line_number": 16,
       "target_phrase": "Clontarf",
-      "annotation_text": "Dublin geographical anchor (Clontarf): grounding the cosmic nocturnal dream in the tangible stone, water, bridges, and hills of Dublin and the River Liffey.",
+      "annotation_text": "Dublin landmark \"Clontarf\" on page 324 (\"The Tavern\"): grounding the cosmic dream in physical Dublin during HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging. Joyce transforms this real location into a universal archetypal site — simultaneously Eden, Waterloo, Calvary, and the Elysian Fields — within the Age of Heroes phase.",
       "categories": [
         "dublin-topography",
         "geography",
@@ -62,11 +44,15 @@
         "urban-history"
       ],
       "cross_references": [
-        "003.01"
+        "003.18",
+        "040.05",
+        "080.20",
+        "196.01"
       ],
       "sources": [
         "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
-        "Dublin Historical Record (JSTOR). https://www.jstor.org/journal/dublhiste",
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "Dublin James Joyce Centre. https://jamesjoyce.ie",
         "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [

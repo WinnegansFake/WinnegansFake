@@ -5,23 +5,21 @@
   "page_number": 464,
   "annotations": [
     {
-      "id": "464.03-89eb",
-      "line_number": 3,
-      "target_phrase": "Mark",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
+      "id": "464.01-8db1",
+      "line_number": 1,
+      "target_phrase": "knows have highest",
+      "annotation_text": "Page 464 opens Book 3, Chapter 2 (\"Jaun's Sermon\") during the Age of Men phase. This passage continues Jaun (Shaun) preaching to the twenty-nine girls, the Ondt and the Gracehoper fable, departure and farewell, featuring Jaun/Shaun, Issy, the Rainbow Girls. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
       "categories": [
-        "mamalujo",
-        "four-annalists",
-        "provinces-of-ireland",
-        "evangelists"
+        "structural",
+        "narrative-strata",
+        "book-3"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
-        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com",
-        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,23 +27,21 @@
       ]
     },
     {
-      "id": "464.14-4d9f",
-      "line_number": 14,
-      "target_phrase": "Brother",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Brother\".",
+      "id": "464.16-b7ae",
+      "line_number": 16,
+      "target_phrase": "clicking bull's bones!",
+      "annotation_text": "Mid-page polysemic node on page 464 (\"Jaun's Sermon\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
-        "twins",
-        "shem-and-shaun",
-        "brother-battle",
-        "dialectic"
+        "etymology",
+        "polysemy",
+        "linguistics"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+        "FWEET: Multilingual concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -56,7 +52,7 @@
       "id": "464.19-59fc",
       "line_number": 19,
       "target_phrase": "wall",
-      "annotation_text": "The theme of the cosmic and comic Fall (wall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
+      "annotation_text": "Fall/resurrection motif \"wall\" on page 464 (\"Jaun's Sermon\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden — all converge within Jaun (Shaun) preaching to the twenty-nine girls, the Ondt and the Gracehoper fable, departure and farewell. The comic-cosmic Fall during the Age of Men phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
       "categories": [
         "the-fall",
         "humpty-dumpty",
@@ -64,12 +60,16 @@
         "resurrection"
       ],
       "cross_references": [
-        "003.01"
+        "003.15",
+        "004.14",
+        "023.05",
+        "044.20"
       ],
       "sources": [
         "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1",
+        "FinnegansWeb: The Fall motif. https://www.finnegansweb.com"
       ],
       "contributors": [
         "joycean-scholar",

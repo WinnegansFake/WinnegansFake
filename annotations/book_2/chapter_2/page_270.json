@@ -8,19 +8,18 @@
       "id": "270.01-a959",
       "line_number": 1,
       "target_phrase": "that small polly",
-      "annotation_text": "Structural opening of Book 2, Chapter 2, page 270. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "annotation_text": "Page 270 opens Book 2, Chapter 2 (\"The Night Lessons\") during the Age of Heroes phase. This passage continues the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes, featuring Shem (Dolph), Shaun (Kev), Issy (footnotes). The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
       "categories": [
         "structural",
         "narrative-strata",
         "book-2"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
         "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -31,7 +30,7 @@
       "id": "270.11-cf93",
       "line_number": 11,
       "target_phrase": "set",
-      "annotation_text": "Ancient Egyptian eschatology (set): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
+      "annotation_text": "Egyptian eschatology \"set\" on page 270 (\"The Night Lessons\"): within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Heroes passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
       "categories": [
         "egyptian-mythology",
         "book-of-the-dead",
@@ -39,11 +38,16 @@
         "resurrection"
       ],
       "cross_references": [
-        "003.01"
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
       ],
       "sources": [
-        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
-        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -54,19 +58,18 @@
       "id": "270.13-3116",
       "line_number": 13,
       "target_phrase": "minute. spitter that",
-      "annotation_text": "Mid-page polysemic discourse on page 270: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "annotation_text": "Mid-page polysemic node on page 270 (\"The Night Lessons\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
         "linguistics"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
+        "FWEET: Multilingual concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

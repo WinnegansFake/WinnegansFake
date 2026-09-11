@@ -8,7 +8,7 @@
       "id": "530.01-ae77",
       "line_number": 1,
       "target_phrase": "night",
-      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "annotation_text": "Oneiric dimension \"night\" on page 530 (\"The Inquest of Yawn\"): the nocturnal consciousness surfaces within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. During this Age of Men phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
       "categories": [
         "oneiric",
         "night-mind",
@@ -16,11 +16,16 @@
         "sleep"
       ],
       "cross_references": [
-        "003.01"
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
       ],
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -31,7 +36,7 @@
       "id": "530.09-4841",
       "line_number": 9,
       "target_phrase": "Patrick",
-      "annotation_text": "Mythological and folkloric archetype (Patrick): invoking the ancient Fianna cycle, heroic legends of Ireland, and the patron saints of early Celtic Christianity.",
+      "annotation_text": "Celtic/mythological figure \"Patrick\" on page 530 (\"The Inquest of Yawn\"): invoking the ancient Fianna cycle and early Irish Christianity within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. During the Age of Men phase, this mythic presence grounds the universal dream in Ireland's heroic past, linking Finn MacCool's giant body to the Dublin landscape.",
       "categories": [
         "irish-mythology",
         "celtic-lore",
@@ -39,12 +44,16 @@
         "saints"
       ],
       "cross_references": [
-        "003.01"
+        "003.04",
+        "030.14",
+        "080.05",
+        "139.14"
       ],
       "sources": [
         "MacKillop, James. Dictionary of Celtic Mythology. https://www.oxfordreference.com",
         "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465",
-        "Standish O'Grady. Silva Gadelica. https://archive.org/details/silvagadelicaiix01ograuoft"
+        "O'Grady, Standish. Silva Gadelica. https://archive.org/details/silvagadelicaiix01ograuoft",
+        "O'Hehir, Brendan. A Gaelic Lexicon for Finnegans Wake. https://archive.org/details/gaeliclexiconfor0000oheh"
       ],
       "contributors": [
         "joycean-scholar",
@@ -55,7 +64,7 @@
       "id": "530.11-d20f",
       "line_number": 11,
       "target_phrase": "porter",
-      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"porter\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "annotation_text": "HCE manifestation \"porter\" on page 530 within \"The Inquest of Yawn\": here the universal father-figure Humphrey Chimpden Earwicker appears in the context of the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. During this Age of Men phase, HCE embodies the patriarch whose guilt, grandeur, and fall drive the cyclical dream forward.",
       "categories": [
         "hce",
         "leitmotif",
@@ -63,12 +72,15 @@
         "archetype"
       ],
       "cross_references": [
-        "003.01"
+        "003.16",
+        "030.01",
+        "033.24",
+        "075.12"
       ],
       "sources": [
         "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
         "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
-        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "FWEET: HCE concordance entries. https://www.fweet.org",
         "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
       ],
       "contributors": [
@@ -77,23 +89,55 @@
       ]
     },
     {
-      "id": "530.19-60e4",
-      "line_number": 19,
-      "target_phrase": "four",
-      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "id": "530.11-b9e1",
+      "line_number": 11,
+      "target_phrase": "set",
+      "annotation_text": "Egyptian eschatology \"set\" on page 530 (\"The Inquest of Yawn\"): within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Men passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
       "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
       ],
       "cross_references": [
-        "003.01"
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
       ],
       "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "530.11-551e",
+      "line_number": 11,
+      "target_phrase": "porter",
+      "annotation_text": "Tavern/jury motif \"porter\" on page 530 (\"The Inquest of Yawn\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. During this Age of Men phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
+      "categories": [
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
+      ],
+      "cross_references": [
+        "309.01",
+        "311.05",
+        "333.20",
+        "370.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
+        "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

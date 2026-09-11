@@ -5,23 +5,21 @@
   "page_number": 573,
   "annotations": [
     {
-      "id": "573.05-d6c0",
-      "line_number": 5,
-      "target_phrase": "twelve",
-      "annotation_text": "Joyce's recurring mystical or structural number (twelve): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "id": "573.01-48c4",
+      "line_number": 1,
+      "target_phrase": "Marinuzza, Indra lodina,",
+      "annotation_text": "Page 573 opens Book 3, Chapter 4 (\"The Bedroom Scene\") during the Age of Men (closing) phase. This passage continues HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream, featuring HCE, ALP, Shem, Shaun, Issy. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
       "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
+        "structural",
+        "narrative-strata",
+        "book-3"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
         "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,47 +27,21 @@
       ]
     },
     {
-      "id": "573.07-c659",
-      "line_number": 7,
-      "target_phrase": "four",
-      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "id": "573.16-873a",
+      "line_number": 16,
+      "target_phrase": "Anita, dispenses from",
+      "annotation_text": "Mid-page polysemic node on page 573 (\"The Bedroom Scene\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men (closing) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
+        "etymology",
+        "polysemy",
+        "linguistics"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "573.11-2f59",
-      "line_number": 11,
-      "target_phrase": "twelve",
-      "annotation_text": "Joyce's recurring mystical or structural number (twelve): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
-      "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

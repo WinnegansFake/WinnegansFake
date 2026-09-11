@@ -8,19 +8,18 @@
       "id": "204.01-b5ed",
       "line_number": 1,
       "target_phrase": "freckled forehead. While",
-      "annotation_text": "Structural opening of Book 1, Chapter 8, page 204. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "annotation_text": "Page 204 opens Book 1, Chapter 8 (\"Anna Livia Plurabelle\") during the Age of Gods (closing) phase. This passage continues the two washerwomen gossiping on opposite banks of the darkening Liffey, 500+ river names woven into the text, metamorphosis into elm and stone, featuring ALP, the two washerwomen. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
       "categories": [
         "structural",
         "narrative-strata",
         "book-1"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
         "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -31,7 +30,7 @@
       "id": "204.04-2df5",
       "line_number": 4,
       "target_phrase": "Livvy",
-      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"Livvy\".",
+      "annotation_text": "ALP invocation \"Livvy\" on page 204 (\"Anna Livia Plurabelle\"): Anna Livia Plurabelle, the mother-river personifying the Liffey, surfaces here amid the two washerwomen gossiping on opposite banks of the darkening Liffey, 500+ river names woven into the text, metamorphosis into elm and stone. In this Age of Gods (closing) passage, her feminine current of forgiveness and renewal flows through the dream landscape, carrying Dublin's history from source to sea.",
       "categories": [
         "alp",
         "river-liffey",
@@ -39,13 +38,16 @@
         "waters"
       ],
       "cross_references": [
-        "003.01"
+        "003.01",
+        "196.01",
+        "198.15",
+        "207.20"
       ],
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: ALP / River Liffey concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -56,19 +58,18 @@
       "id": "204.17-1066",
       "line_number": 17,
       "target_phrase": "limbs aloft whole",
-      "annotation_text": "Mid-page polysemic discourse on page 204: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "annotation_text": "Mid-page polysemic node on page 204 (\"Anna Livia Plurabelle\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods (closing) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
         "linguistics"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
+        "FWEET: Multilingual concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

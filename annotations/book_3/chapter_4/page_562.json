@@ -8,7 +8,7 @@
       "id": "562.19-b6bb",
       "line_number": 19,
       "target_phrase": "Kevin",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Kevin\".",
+      "annotation_text": "Fraternal archetype \"Kevin\" on page 562 (\"The Bedroom Scene\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Men (closing) phase.",
       "categories": [
         "twins",
         "shem-and-shaun",
@@ -16,12 +16,16 @@
         "dialectic"
       ],
       "cross_references": [
-        "003.01"
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -32,7 +36,7 @@
       "id": "562.20-5620",
       "line_number": 20,
       "target_phrase": "sleep",
-      "annotation_text": "The nocturnal oneiric dimension (sleep): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "annotation_text": "Oneiric dimension \"sleep\" on page 562 (\"The Bedroom Scene\"): the nocturnal consciousness surfaces within HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream. During this Age of Men (closing) phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
       "categories": [
         "oneiric",
         "night-mind",
@@ -40,11 +44,16 @@
         "sleep"
       ],
       "cross_references": [
-        "003.01"
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
       ],
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

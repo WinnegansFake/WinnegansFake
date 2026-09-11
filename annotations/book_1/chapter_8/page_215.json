@@ -5,24 +5,21 @@
   "page_number": 215,
   "annotations": [
     {
-      "id": "215.10-b414",
-      "line_number": 10,
-      "target_phrase": "Anna Livia",
-      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"Anna Livia\".",
+      "id": "215.01-eead",
+      "line_number": 1,
+      "target_phrase": "is it?",
+      "annotation_text": "The repetitive questioning at the river's darkening edge marks the fading consciousness of the washerwomen as they lose their distinct human identities.",
       "categories": [
-        "alp",
-        "river-liffey",
-        "feminine-principle",
-        "waters"
+        "alp-motif",
+        "twilight",
+        "metamorphosis"
       ],
       "cross_references": [
-        "003.01"
+        "196.01"
       ],
       "sources": [
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -30,23 +27,20 @@
       ]
     },
     {
-      "id": "215.13-a65e",
-      "line_number": 13,
-      "target_phrase": "seven",
-      "annotation_text": "Joyce's recurring mystical or structural number (seven): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "id": "215.06-fed2",
+      "line_number": 6,
+      "target_phrase": "I feel as old as yonder elm.",
+      "annotation_text": "The first explicit stage of metamorphosis where the speaker physically merges with the riparian landscape, turning from washerwoman to tree.",
       "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
+        "metamorphosis",
+        "landscape-body"
       ],
       "cross_references": [
-        "003.01"
+        "216.02"
       ],
       "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -54,23 +48,20 @@
       ]
     },
     {
-      "id": "215.14-dff5",
-      "line_number": 14,
-      "target_phrase": "seven",
-      "annotation_text": "Joyce's recurring mystical or structural number (seven): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "id": "215.11-63da",
+      "line_number": 11,
+      "target_phrase": "A tale of a tub.",
+      "annotation_text": "Swiftian reference linking the washing tub to Jonathan Swift's satire, emphasizing the cyclical purification of history through gossip and laundry.",
       "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
+        "literary-allusion",
+        "washing"
       ],
       "cross_references": [
-        "003.01"
+        "196.15"
       ],
       "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -78,23 +69,20 @@
       ]
     },
     {
-      "id": "215.15-37d2",
+      "id": "215.15-3acf",
       "line_number": 15,
-      "target_phrase": "John",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
+      "target_phrase": "My ho head halls.",
+      "annotation_text": "Phonetic degeneration of speech into rushing water sounds, reflecting the Liffey's turbulent flow in the dark.",
       "categories": [
-        "mamalujo",
-        "four-annalists",
-        "provinces-of-ireland",
-        "evangelists"
+        "phonetic-shift",
+        "river-voice"
       ],
       "cross_references": [
-        "003.01"
+        "214.22"
       ],
       "sources": [
-        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com",
-        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -102,24 +90,20 @@
       ]
     },
     {
-      "id": "215.20-7501",
-      "line_number": 20,
-      "target_phrase": "Plurabelle",
-      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"Plurabelle\".",
+      "id": "215.22-39c2",
+      "line_number": 22,
+      "target_phrase": "I feel as heavy as yonder stone.",
+      "annotation_text": "The counterpart to the elm metamorphosis; the second washerwoman ossifies into the immovable banks of the Liffey.",
       "categories": [
-        "alp",
-        "river-liffey",
-        "feminine-principle",
-        "waters"
+        "metamorphosis",
+        "landscape-body"
       ],
       "cross_references": [
-        "003.01"
+        "216.03"
       ],
       "sources": [
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -127,23 +111,20 @@
       ]
     },
     {
-      "id": "215.29-c4eb",
-      "line_number": 29,
-      "target_phrase": "Shaun",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Shaun\".",
+      "id": "215.27-999b",
+      "line_number": 27,
+      "target_phrase": "Save me from those therrble prongs!",
+      "annotation_text": "Fear of the encroaching darkness and possibly the devil's pitchfork, localized as river debris or menacing branches.",
       "categories": [
-        "twins",
-        "shem-and-shaun",
-        "brother-battle",
-        "dialectic"
+        "twilight",
+        "fear-motif"
       ],
       "cross_references": [
-        "003.01"
+        "214.30"
       ],
       "sources": [
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -151,23 +132,41 @@
       ]
     },
     {
-      "id": "215.30-e037",
-      "line_number": 30,
-      "target_phrase": "Shem",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Shem\".",
+      "id": "215.31-d428",
+      "line_number": 31,
+      "target_phrase": "hitherandthithering waters of",
+      "annotation_text": "The quintessential portmanteau of riverine movement, capturing both the physical sloshing and the erratic path of historical recurrence.",
       "categories": [
-        "twins",
-        "shem-and-shaun",
-        "brother-battle",
-        "dialectic"
+        "portmanteau",
+        "river-movement"
+      ],
+      "cross_references": [
+        "196.11"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "215.35-c036",
+      "line_number": 35,
+      "target_phrase": "Night!",
+      "annotation_text": "The final word of Book I, completing the transition from the bustling daytime gossip to the unconscious, mythic state of the river's sleep.",
+      "categories": [
+        "chapter-ending",
+        "sleep-motif"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",

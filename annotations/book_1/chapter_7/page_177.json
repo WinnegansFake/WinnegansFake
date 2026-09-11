@@ -8,7 +8,7 @@
       "id": "177.19-c245",
       "line_number": 19,
       "target_phrase": "Shem",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Shem\".",
+      "annotation_text": "Fraternal archetype \"Shem\" on page 177 (\"Shem the Penman\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Gods phase.",
       "categories": [
         "twins",
         "shem-and-shaun",
@@ -16,12 +16,16 @@
         "dialectic"
       ],
       "cross_references": [
-        "003.01"
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,23 +33,27 @@
       ]
     },
     {
-      "id": "177.21-2317",
-      "line_number": 21,
-      "target_phrase": "four",
-      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "id": "177.19-e039",
+      "line_number": 19,
+      "target_phrase": "bar",
+      "annotation_text": "Tavern/jury motif \"bar\" on page 177 (\"Shem the Penman\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. During this Age of Gods phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
       "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
       ],
       "cross_references": [
-        "003.01"
+        "309.01",
+        "311.05",
+        "333.20",
+        "370.01"
       ],
       "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
+        "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

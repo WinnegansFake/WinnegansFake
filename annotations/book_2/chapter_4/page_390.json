@@ -8,7 +8,7 @@
       "id": "390.05-f50b",
       "line_number": 5,
       "target_phrase": "ladder",
-      "annotation_text": "The theme of the cosmic and comic Fall (ladder): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
+      "annotation_text": "Fall/resurrection motif \"ladder\" on page 390 (\"Tristan and Isolde\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden — all converge within the voyage of Tristan and Isolde observed by the Four Old Men as seagulls, Wagnerian chromatic motifs, King Mark's displacement. The comic-cosmic Fall during the Age of Heroes (closing) phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
       "categories": [
         "the-fall",
         "humpty-dumpty",
@@ -16,12 +16,16 @@
         "resurrection"
       ],
       "cross_references": [
-        "003.01"
+        "003.15",
+        "004.14",
+        "023.05",
+        "044.20"
       ],
       "sources": [
         "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1",
+        "FinnegansWeb: The Fall motif. https://www.finnegansweb.com"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,34 +33,10 @@
       ]
     },
     {
-      "id": "390.12-498c",
-      "line_number": 12,
-      "target_phrase": "four",
-      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
-      "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "390.14-8b73",
+      "id": "390.14-50db",
       "line_number": 14,
       "target_phrase": "waves",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
+      "annotation_text": "Mamalujo signal \"waves\" on page 390 (\"Tristan and Isolde\"): the Four Old Men — Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught — serve here as senile chroniclers and bedpost witnesses during the voyage of Tristan and Isolde observed by the Four Old Men as seagulls, Wagnerian chromatic motifs, King Mark's displacement. In this Age of Heroes (closing) passage, they observe and record the dream's events as squawking gulls circling overhead.",
       "categories": [
         "mamalujo",
         "four-annalists",
@@ -64,36 +44,16 @@
         "evangelists"
       ],
       "cross_references": [
-        "003.01"
+        "095.27",
+        "383.01",
+        "387.24",
+        "398.30"
       ],
       "sources": [
         "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com",
-        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "390.17-c8bb",
-      "line_number": 17,
-      "target_phrase": "four",
-      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
-      "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc",
+        "FWEET: Mamalujo / Four Old Men concordance. https://www.fweet.org",
+        "Ricorso.net: James Joyce Critical Archive. https://www.ricorso.net"
       ],
       "contributors": [
         "joycean-scholar",

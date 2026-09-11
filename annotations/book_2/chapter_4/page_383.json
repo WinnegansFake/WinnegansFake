@@ -5,23 +5,21 @@
   "page_number": 383,
   "annotations": [
     {
-      "id": "383.01-4958",
+      "id": "383.01-dac9",
       "line_number": 1,
-      "target_phrase": "Mark",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
+      "target_phrase": "Three quarks for Muster Mark!",
+      "annotation_text": "The iconic squawk of the seagulls (the Four Old Men) mocking King Mark, famously inspiring the naming of the subatomic particle by Murray Gell-Mann.",
       "categories": [
         "mamalujo",
-        "four-annalists",
-        "provinces-of-ireland",
-        "evangelists"
+        "bird-motif",
+        "science-influence"
       ],
       "cross_references": [
-        "003.01"
+        "384.05"
       ],
       "sources": [
-        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com",
-        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,47 +27,20 @@
       ]
     },
     {
-      "id": "383.02-bd24",
-      "line_number": 2,
-      "target_phrase": "mark",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
-      "categories": [
-        "mamalujo",
-        "four-annalists",
-        "provinces-of-ireland",
-        "evangelists"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com",
-        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "383.05-afaf",
+      "id": "383.05-d0c2",
       "line_number": 5,
-      "target_phrase": "Mark",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
+      "target_phrase": "King Mark",
+      "annotation_text": "The cuckolded older figure, representing HCE in his displaced, impotent state as he watches the younger generation usurp his place.",
       "categories": [
-        "mamalujo",
-        "four-annalists",
-        "provinces-of-ireland",
-        "evangelists"
+        "cuckold-motif",
+        "aging"
       ],
       "cross_references": [
-        "003.01"
+        "384.10"
       ],
       "sources": [
-        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com",
-        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -77,23 +48,125 @@
       ]
     },
     {
-      "id": "383.09-6852",
-      "line_number": 9,
-      "target_phrase": "mark",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
+      "id": "383.11-a5aa",
+      "line_number": 11,
+      "target_phrase": "Tristan",
+      "annotation_text": "The young, virile lover, a manifestation of Shaun/Shem, who takes Isolde away from the fading paternal authority.",
       "categories": [
-        "mamalujo",
-        "four-annalists",
-        "provinces-of-ireland",
-        "evangelists"
+        "character-identity",
+        "youth"
       ],
       "cross_references": [
-        "003.01"
+        "384.15"
       ],
       "sources": [
-        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com",
-        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "383.16-5089",
+      "line_number": 16,
+      "target_phrase": "Isolde",
+      "annotation_text": "The young, desirable woman, an avatar of Issy, embodying the renewing force of love that leaves the old world behind.",
+      "categories": [
+        "character-identity",
+        "issy-motif"
+      ],
+      "cross_references": [
+        "384.20"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "383.21-7582",
+      "line_number": 21,
+      "target_phrase": "sail away",
+      "annotation_text": "The spatial and emotional distancing of the lovers from King Mark, representing the inevitable progression of generational cycles.",
+      "categories": [
+        "journey",
+        "generational-conflict"
+      ],
+      "cross_references": [
+        "384.25"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "383.25-c62f",
+      "line_number": 25,
+      "target_phrase": "seagulls",
+      "annotation_text": "The reincarnated Four Old Men (Mamalujo) who act as a voyeuristic chorus, offering a cynical, squawking commentary on the romance.",
+      "categories": [
+        "mamalujo",
+        "voyeurism"
+      ],
+      "cross_references": [
+        "384.30"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "383.29-cd67",
+      "line_number": 29,
+      "target_phrase": "chromatic",
+      "annotation_text": "A structural nod to Richard Wagner's Tristan und Isolde, whose unresolved chromaticism Joyce weaves into the restless prose rhythm.",
+      "categories": [
+        "music",
+        "wagner-allusion"
+      ],
+      "cross_references": [
+        "384.35"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "383.35-24d9",
+      "line_number": 35,
+      "target_phrase": "Wagner",
+      "annotation_text": "Explicit connection to the operatic tradition, demonstrating how Joyce layered myth, music, and local Dublin lore into a single narrative thread.",
+      "categories": [
+        "music",
+        "wagner-allusion"
+      ],
+      "cross_references": [
+        "384.40"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",

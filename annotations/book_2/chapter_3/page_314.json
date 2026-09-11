@@ -8,7 +8,7 @@
       "id": "314.05-b395",
       "line_number": 5,
       "target_phrase": "Bothallchoractorschumminaroundgansumuminarumdrumstrumtruminahumptadumpwaultopoof",
-      "annotation_text": "One of the ten 100-letter polysyllabic thunderclaps of Finnegans Wake, synthesizing words for thunder across ten world languages to signal the divine voice awakening primitive human institutions.",
+      "annotation_text": "Polysyllabic thunderclap on page 314 (\"The Tavern\"): one of ten 100-letter words synthesizing thunder across world languages, signaling a Viconian cataclysm within HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging. This divine acoustic blast — fusing Hindi, Greek, Latin, French, Italian, Irish, and Norse roots — marks a civilizational transition in the Age of Heroes phase.",
       "categories": [
         "thunderclap",
         "vico",
@@ -16,12 +16,16 @@
         "onomatopoeia"
       ],
       "cross_references": [
-        "003.01"
+        "003.15",
+        "023.05",
+        "044.20",
+        "090.31"
       ],
       "sources": [
-        "Vico, Giambattista. Scienza Nuova (On the Thunder and Law). https://plato.stanford.edu/entries/vico/",
+        "Vico, Giambattista. Scienza Nuova (On the Thunder). https://plato.stanford.edu/entries/vico/",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: 100-letter Thunder Words. https://www.fweet.org"
+        "FinnegansWeb: Thunderwords Guide. https://www.finnegansweb.com",
+        "FWEET: 100-letter Thunder Words. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -32,7 +36,7 @@
       "id": "314.11-5f89",
       "line_number": 11,
       "target_phrase": "ladder",
-      "annotation_text": "The theme of the cosmic and comic Fall (ladder): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
+      "annotation_text": "Fall/resurrection motif \"ladder\" on page 314 (\"The Tavern\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden — all converge within HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging. The comic-cosmic Fall during the Age of Heroes phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
       "categories": [
         "the-fall",
         "humpty-dumpty",
@@ -40,12 +44,16 @@
         "resurrection"
       ],
       "cross_references": [
-        "003.01"
+        "003.15",
+        "004.14",
+        "023.05",
+        "044.20"
       ],
       "sources": [
         "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1",
+        "FinnegansWeb: The Fall motif. https://www.finnegansweb.com"
       ],
       "contributors": [
         "joycean-scholar",

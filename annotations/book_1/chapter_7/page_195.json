@@ -8,19 +8,18 @@
       "id": "195.01-ebe7",
       "line_number": 1,
       "target_phrase": "slipping Sallynoggin, happy",
-      "annotation_text": "Structural opening of Book 1, Chapter 7, page 195. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "annotation_text": "Page 195 opens Book 1, Chapter 7 (\"Shem the Penman\") during the Age of Gods phase. This passage continues Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions, featuring Shem, Shaun (as Justius), ALP (Mercius). The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
       "categories": [
         "structural",
         "narrative-strata",
         "book-1"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
         "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -31,7 +30,7 @@
       "id": "195.04-cfde",
       "line_number": 4,
       "target_phrase": "Anna Livia",
-      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"Anna Livia\".",
+      "annotation_text": "ALP invocation \"Anna Livia\" on page 195 (\"Shem the Penman\"): Anna Livia Plurabelle, the mother-river personifying the Liffey, surfaces here amid Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. In this Age of Gods passage, her feminine current of forgiveness and renewal flows through the dream landscape, carrying Dublin's history from source to sea.",
       "categories": [
         "alp",
         "river-liffey",
@@ -39,13 +38,16 @@
         "waters"
       ],
       "cross_references": [
-        "003.01"
+        "003.01",
+        "196.01",
+        "198.15",
+        "207.20"
       ],
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: ALP / River Liffey concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

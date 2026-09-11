@@ -8,7 +8,7 @@
       "id": "497.11-c392",
       "line_number": 11,
       "target_phrase": "Vico",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"Vico\".",
+      "annotation_text": "Viconian marker \"Vico\" on page 497 (\"The Inquest of Yawn\"): Giambattista Vico's cyclical philosophy — divine, heroic, and human ages followed by thundering ricorso — structures this passage within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. The current Age of Men phase shapes the language, institutional imagery, and historical echoes of the dream.",
       "categories": [
         "vico",
         "ricorso",
@@ -16,12 +16,16 @@
         "giambattista-vico"
       ],
       "cross_references": [
-        "003.01"
+        "003.02",
+        "032.05",
+        "151.10",
+        "260.05"
       ],
       "sources": [
-        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
-        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
+        "Vico, Giambattista. Scienza Nuova. https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel. Dante... Bruno. Vico.. Joyce. https://archive.org/details/ourexagminationr0000unse",
+        "Ricorso.net: Viconian Structure in FW. https://www.ricorso.net",
+        "FinnegansWeb: Vico's Cycles. https://www.finnegansweb.com"
       ],
       "contributors": [
         "joycean-scholar",
@@ -32,7 +36,7 @@
       "id": "497.17-5168",
       "line_number": 17,
       "target_phrase": "Clontarf",
-      "annotation_text": "Dublin geographical anchor (Clontarf): grounding the cosmic nocturnal dream in the tangible stone, water, bridges, and hills of Dublin and the River Liffey.",
+      "annotation_text": "Dublin landmark \"Clontarf\" on page 497 (\"The Inquest of Yawn\"): grounding the cosmic dream in physical Dublin during the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. Joyce transforms this real location into a universal archetypal site — simultaneously Eden, Waterloo, Calvary, and the Elysian Fields — within the Age of Men phase.",
       "categories": [
         "dublin-topography",
         "geography",
@@ -40,11 +44,15 @@
         "urban-history"
       ],
       "cross_references": [
-        "003.01"
+        "003.18",
+        "040.05",
+        "080.20",
+        "196.01"
       ],
       "sources": [
         "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
-        "Dublin Historical Record (JSTOR). https://www.jstor.org/journal/dublhiste",
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "Dublin James Joyce Centre. https://jamesjoyce.ie",
         "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [
@@ -53,34 +61,10 @@
       ]
     },
     {
-      "id": "497.18-53f9",
-      "line_number": 18,
-      "target_phrase": "twelve",
-      "annotation_text": "Joyce's recurring mystical or structural number (twelve): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
-      "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "497.21-ffb9",
+      "id": "497.21-0074",
       "line_number": 21,
       "target_phrase": "wall",
-      "annotation_text": "The theme of the cosmic and comic Fall (wall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
+      "annotation_text": "Fall/resurrection motif \"wall\" on page 497 (\"The Inquest of Yawn\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden — all converge within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. The comic-cosmic Fall during the Age of Men phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
       "categories": [
         "the-fall",
         "humpty-dumpty",
@@ -88,12 +72,16 @@
         "resurrection"
       ],
       "cross_references": [
-        "003.01"
+        "003.15",
+        "004.14",
+        "023.05",
+        "044.20"
       ],
       "sources": [
         "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1",
+        "FinnegansWeb: The Fall motif. https://www.finnegansweb.com"
       ],
       "contributors": [
         "joycean-scholar",

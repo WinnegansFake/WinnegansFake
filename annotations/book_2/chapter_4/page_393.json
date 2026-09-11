@@ -8,7 +8,7 @@
       "id": "393.02-1ced",
       "line_number": 2,
       "target_phrase": "Amen",
-      "annotation_text": "Liturgical or ecclesiastical allusion (Amen): weaving Catholic ritual, Latin prayers, and sacramental language into the domestic nighttime dream.",
+      "annotation_text": "Liturgical echo \"Amen\" on page 393 (\"Tristan and Isolde\"): Catholic ritual, Latin prayer, and sacramental language weave through the voyage of Tristan and Isolde observed by the Four Old Men as seagulls, Wagnerian chromatic motifs, King Mark's displacement. Joyce fuses ecclesiastical solemnity with domestic banality during the Age of Heroes (closing) phase, treating the tavern counter as communion rail and the sleeping body as sacred vessel.",
       "categories": [
         "liturgy",
         "biblical",
@@ -16,11 +16,15 @@
         "theology"
       ],
       "cross_references": [
-        "003.01"
+        "033.01",
+        "104.20",
+        "185.14",
+        "258.25"
       ],
       "sources": [
         "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
         "The Catholic Encyclopedia. https://www.newadvent.org/cathen/",
+        "Contemporary Literature Press: Classical Lexicon for FW. https://editura.mttlc.ro",
         "Frazer, Sir James George. Folk-Lore in the Old Testament. https://archive.org/details/folkloreinoldtes01frazuoft"
       ],
       "contributors": [
@@ -29,34 +33,10 @@
       ]
     },
     {
-      "id": "393.13-d249",
-      "line_number": 13,
-      "target_phrase": "four",
-      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
-      "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "393.15-1160",
+      "id": "393.15-d327",
       "line_number": 15,
       "target_phrase": "night",
-      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "annotation_text": "Oneiric dimension \"night\" on page 393 (\"Tristan and Isolde\"): the nocturnal consciousness surfaces within the voyage of Tristan and Isolde observed by the Four Old Men as seagulls, Wagnerian chromatic motifs, King Mark's displacement. During this Age of Heroes (closing) phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
       "categories": [
         "oneiric",
         "night-mind",
@@ -64,105 +44,16 @@
         "sleep"
       ],
       "cross_references": [
-        "003.01"
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
       ],
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "393.17-8fb6",
-      "line_number": 17,
-      "target_phrase": "four",
-      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
-      "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "393.25-9e9b",
-      "line_number": 25,
-      "target_phrase": "night",
-      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
-      "categories": [
-        "oneiric",
-        "night-mind",
-        "psychoanalysis",
-        "sleep"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "393.26-135e",
-      "line_number": 26,
-      "target_phrase": "four",
-      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
-      "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "393.29-cedc",
-      "line_number": 29,
-      "target_phrase": "sleep",
-      "annotation_text": "The nocturnal oneiric dimension (sleep): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
-      "categories": [
-        "oneiric",
-        "night-mind",
-        "psychoanalysis",
-        "sleep"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

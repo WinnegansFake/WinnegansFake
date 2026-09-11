@@ -8,7 +8,7 @@
       "id": "451.11-4286",
       "line_number": 11,
       "target_phrase": "Ulster",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
+      "annotation_text": "Mamalujo signal \"Ulster\" on page 451 (\"Jaun's Sermon\"): the Four Old Men — Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught — serve here as senile chroniclers and bedpost witnesses during Jaun (Shaun) preaching to the twenty-nine girls, the Ondt and the Gracehoper fable, departure and farewell. In this Age of Men passage, they observe and record the dream's events as squawking gulls circling overhead.",
       "categories": [
         "mamalujo",
         "four-annalists",
@@ -16,12 +16,16 @@
         "evangelists"
       ],
       "cross_references": [
-        "003.01"
+        "095.27",
+        "383.01",
+        "387.24",
+        "398.30"
       ],
       "sources": [
         "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com",
-        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc",
+        "FWEET: Mamalujo / Four Old Men concordance. https://www.fweet.org",
+        "Ricorso.net: James Joyce Critical Archive. https://www.ricorso.net"
       ],
       "contributors": [
         "joycean-scholar",
@@ -32,7 +36,7 @@
       "id": "451.13-c038",
       "line_number": 13,
       "target_phrase": "lifFey",
-      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"lifFey\".",
+      "annotation_text": "ALP invocation \"lifFey\" on page 451 (\"Jaun's Sermon\"): Anna Livia Plurabelle, the mother-river personifying the Liffey, surfaces here amid Jaun (Shaun) preaching to the twenty-nine girls, the Ondt and the Gracehoper fable, departure and farewell. In this Age of Men passage, her feminine current of forgiveness and renewal flows through the dream landscape, carrying Dublin's history from source to sea.",
       "categories": [
         "alp",
         "river-liffey",
@@ -40,37 +44,16 @@
         "waters"
       ],
       "cross_references": [
-        "003.01"
+        "003.01",
+        "196.01",
+        "198.15",
+        "207.20"
       ],
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "451.15-1978",
-      "line_number": 15,
-      "target_phrase": "divine",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"divine\".",
-      "categories": [
-        "vico",
-        "ricorso",
-        "philosophy-of-history",
-        "giambattista-vico"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
-        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: ALP / River Liffey concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

@@ -8,7 +8,7 @@
       "id": "157.03-dc11",
       "line_number": 3,
       "target_phrase": "Nuvoletta",
-      "annotation_text": "Ancient Egyptian eschatology (Nuvoletta): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
+      "annotation_text": "Egyptian eschatology \"Nuvoletta\" on page 157 (\"The Quiz Chapter\"): within twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Gods passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
       "categories": [
         "egyptian-mythology",
         "book-of-the-dead",
@@ -16,11 +16,16 @@
         "resurrection"
       ],
       "cross_references": [
-        "003.01"
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
       ],
       "sources": [
-        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
-        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,57 +33,10 @@
       ]
     },
     {
-      "id": "157.12-bf00",
-      "line_number": 12,
-      "target_phrase": "Nuvoletta",
-      "annotation_text": "Ancient Egyptian eschatology (Nuvoletta): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
-      "categories": [
-        "egyptian-mythology",
-        "book-of-the-dead",
-        "osiris",
-        "resurrection"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
-        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "157.23-1d2e",
-      "line_number": 23,
-      "target_phrase": "four",
-      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
-      "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "157.27-3f86",
+      "id": "157.27-df52",
       "line_number": 27,
       "target_phrase": "daughter",
-      "annotation_text": "Issy (Isolde), the seductive daughter and split-personality siren conversing with her mirror reflection, represented in the motif \"daughter\".",
+      "annotation_text": "Issy/daughter figure \"daughter\" on page 157 (\"The Quiz Chapter\"): the narcissistic mirror-daughter, modeled on Isolde and Swift's dual muses Stella and Vanessa, appears here within twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones. Her prismatic splitting into twenty-eight Rainbow Girls reflects the cycle's Age of Gods phase through youthful seduction and self-reflection.",
       "categories": [
         "issy",
         "mirror-twin",
@@ -86,12 +44,16 @@
         "psychology"
       ],
       "cross_references": [
-        "003.01"
+        "143.28",
+        "226.01",
+        "248.01",
+        "279.01"
       ],
       "sources": [
         "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Genetic Joyce Studies: Finnegans Wake Notebooks. https://www.geneticjoycestudies.org"
+        "Genetic Joyce Studies: Issy notebooks. https://www.geneticjoycestudies.org",
+        "FWEET: Issy / Isolde concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

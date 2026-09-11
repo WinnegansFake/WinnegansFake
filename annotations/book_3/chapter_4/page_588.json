@@ -5,23 +5,21 @@
   "page_number": 588,
   "annotations": [
     {
-      "id": "588.18-b1db",
-      "line_number": 18,
-      "target_phrase": "fall",
-      "annotation_text": "The theme of the cosmic and comic Fall (fall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
+      "id": "588.01-bd41",
+      "line_number": 1,
+      "target_phrase": "sweet boosy love,",
+      "annotation_text": "Page 588 opens Book 3, Chapter 4 (\"The Bedroom Scene\") during the Age of Men (closing) phase. This passage continues HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream, featuring HCE, ALP, Shem, Shaun, Issy. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
       "categories": [
-        "the-fall",
-        "humpty-dumpty",
-        "tim-finnegan",
-        "resurrection"
+        "structural",
+        "narrative-strata",
+        "book-3"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
-        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,10 +27,32 @@
       ]
     },
     {
-      "id": "588.19-8f75",
+      "id": "588.15-3b17",
+      "line_number": 15,
+      "target_phrase": "tanapanny troopertwos, were",
+      "annotation_text": "Mid-page polysemic node on page 588 (\"The Bedroom Scene\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men (closing) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "588.19-8879",
       "line_number": 19,
       "target_phrase": "Izzy",
-      "annotation_text": "Issy (Isolde), the seductive daughter and split-personality siren conversing with her mirror reflection, represented in the motif \"Izzy\".",
+      "annotation_text": "Issy/daughter figure \"Izzy\" on page 588 (\"The Bedroom Scene\"): the narcissistic mirror-daughter, modeled on Isolde and Swift's dual muses Stella and Vanessa, appears here within HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream. Her prismatic splitting into twenty-eight Rainbow Girls reflects the cycle's Age of Men (closing) phase through youthful seduction and self-reflection.",
       "categories": [
         "issy",
         "mirror-twin",
@@ -40,36 +60,16 @@
         "psychology"
       ],
       "cross_references": [
-        "003.01"
+        "143.28",
+        "226.01",
+        "248.01",
+        "279.01"
       ],
       "sources": [
         "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Genetic Joyce Studies: Finnegans Wake Notebooks. https://www.geneticjoycestudies.org"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "588.29-3e38",
-      "line_number": 29,
-      "target_phrase": "Four",
-      "annotation_text": "Joyce's recurring mystical or structural number (Four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
-      "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "Genetic Joyce Studies: Issy notebooks. https://www.geneticjoycestudies.org",
+        "FWEET: Issy / Isolde concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

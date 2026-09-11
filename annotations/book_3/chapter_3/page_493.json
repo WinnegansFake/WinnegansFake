@@ -8,7 +8,7 @@
       "id": "493.17-dba6",
       "line_number": 17,
       "target_phrase": "set",
-      "annotation_text": "Ancient Egyptian eschatology (set): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
+      "annotation_text": "Egyptian eschatology \"set\" on page 493 (\"The Inquest of Yawn\"): within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Men passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
       "categories": [
         "egyptian-mythology",
         "book-of-the-dead",
@@ -16,11 +16,16 @@
         "resurrection"
       ],
       "cross_references": [
-        "003.01"
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
       ],
       "sources": [
-        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
-        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,33 +33,10 @@
       ]
     },
     {
-      "id": "493.25-dbcd",
-      "line_number": 25,
-      "target_phrase": "Ani",
-      "annotation_text": "Ancient Egyptian eschatology (Ani): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
-      "categories": [
-        "egyptian-mythology",
-        "book-of-the-dead",
-        "osiris",
-        "resurrection"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
-        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "493.27-e3ea",
+      "id": "493.27-2df0",
       "line_number": 27,
       "target_phrase": "darkness",
-      "annotation_text": "The nocturnal oneiric dimension (darkness): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "annotation_text": "Oneiric dimension \"darkness\" on page 493 (\"The Inquest of Yawn\"): the nocturnal consciousness surfaces within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. During this Age of Men phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
       "categories": [
         "oneiric",
         "night-mind",
@@ -62,11 +44,16 @@
         "sleep"
       ],
       "cross_references": [
-        "003.01"
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
       ],
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

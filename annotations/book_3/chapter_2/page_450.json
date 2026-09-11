@@ -8,19 +8,18 @@
       "id": "450.01-e760",
       "line_number": 1,
       "target_phrase": "mother would golden",
-      "annotation_text": "Structural opening of Book 3, Chapter 2, page 450. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "annotation_text": "Page 450 opens Book 3, Chapter 2 (\"Jaun's Sermon\") during the Age of Men phase. This passage continues Jaun (Shaun) preaching to the twenty-nine girls, the Ondt and the Gracehoper fable, departure and farewell, featuring Jaun/Shaun, Issy, the Rainbow Girls. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
       "categories": [
         "structural",
         "narrative-strata",
         "book-3"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
         "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -31,7 +30,7 @@
       "id": "450.05-d23a",
       "line_number": 5,
       "target_phrase": "swift",
-      "annotation_text": "Satirical and biographical presence of Jonathan Swift (swift): Dean of St. Patrick's Cathedral, his dual lovers Stella and Vanessa (mirroring Issy), and his ferocious political satires.",
+      "annotation_text": "Swiftian presence \"swift\" on page 450 (\"Jaun's Sermon\"): the Dean of St. Patrick's Cathedral haunts this passage within Jaun (Shaun) preaching to the twenty-nine girls, the Ondt and the Gracehoper fable, departure and farewell. His dual lovers Stella and Vanessa mirror Issy's split personalities, while his savage satire infuses the Age of Men dream with political and scatological ferocity.",
       "categories": [
         "jonathan-swift",
         "dublin-history",
@@ -39,12 +38,16 @@
         "satire"
       ],
       "cross_references": [
-        "003.01"
+        "140.08",
+        "160.06",
+        "229.01",
+        "292.28"
       ],
       "sources": [
         "Swift, Jonathan. Gulliver's Travels. https://www.gutenberg.org/ebooks/829",
-        "Swift, Jonathan. A Tale of a Tub. https://www.gutenberg.org/ebooks/4737",
-        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre"
+        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre",
+        "FWEET: Swift concordance. https://www.fweet.org",
+        "Ricorso.net: Jonathan Swift. https://www.ricorso.net"
       ],
       "contributors": [
         "joycean-scholar",
@@ -55,19 +58,18 @@
       "id": "450.17-c278",
       "line_number": 17,
       "target_phrase": "airs numberous fairyaciodes.",
-      "annotation_text": "Mid-page polysemic discourse on page 450: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "annotation_text": "Mid-page polysemic node on page 450 (\"Jaun's Sermon\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
         "linguistics"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
+        "FWEET: Multilingual concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

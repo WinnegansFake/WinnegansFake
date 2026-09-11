@@ -5,10 +5,32 @@
   "page_number": 27,
   "annotations": [
     {
-      "id": "027.04-845e",
+      "id": "027.01-669d",
+      "line_number": 1,
+      "target_phrase": "after Bowe Glassarse",
+      "annotation_text": "Page 27 opens Book 1, Chapter 1 (\"The Fall of Finnegan\") during the Age of Gods (Theocratic) phase. This passage continues the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape, featuring HCE, Finn MacCool, Mutt and Jute. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "027.04-855c",
       "line_number": 4,
       "target_phrase": "Kevin",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Kevin\".",
+      "annotation_text": "Fraternal archetype \"Kevin\" on page 27 (\"The Fall of Finnegan\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Gods (Theocratic) phase.",
       "categories": [
         "twins",
         "shem-and-shaun",
@@ -16,12 +38,16 @@
         "dialectic"
       ],
       "cross_references": [
-        "003.01"
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,47 +55,21 @@
       ]
     },
     {
-      "id": "027.06-dc78",
-      "line_number": 6,
-      "target_phrase": "postman",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"postman\".",
+      "id": "027.16-87a5",
+      "line_number": 16,
+      "target_phrase": "poster those pouters",
+      "annotation_text": "Mid-page polysemic node on page 27 (\"The Fall of Finnegan\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods (Theocratic) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
-        "twins",
-        "shem-and-shaun",
-        "brother-battle",
-        "dialectic"
+        "etymology",
+        "polysemy",
+        "linguistics"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "027.08-5b3f",
-      "line_number": 8,
-      "target_phrase": "Jerry",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Jerry\".",
-      "categories": [
-        "twins",
-        "shem-and-shaun",
-        "brother-battle",
-        "dialectic"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+        "FWEET: Multilingual concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

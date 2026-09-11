@@ -8,19 +8,18 @@
       "id": "033.01-916d",
       "line_number": 1,
       "target_phrase": "inged there cuckoospit",
-      "annotation_text": "Structural opening of Book 1, Chapter 2, page 33. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "annotation_text": "Page 33 opens Book 1, Chapter 2 (\"The Encounter in Phoenix Park\") during the Age of Gods phase. This passage continues HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe, featuring HCE, the Cad, Hosty. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
       "categories": [
         "structural",
         "narrative-strata",
         "book-1"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
         "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -31,19 +30,18 @@
       "id": "033.17-42b7",
       "line_number": 17,
       "target_phrase": "certain statements which",
-      "annotation_text": "Mid-page polysemic discourse on page 33: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "annotation_text": "Mid-page polysemic node on page 33 (\"The Encounter in Phoenix Park\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
         "linguistics"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
+        "FWEET: Multilingual concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -54,7 +52,7 @@
       "id": "033.26-13b0",
       "line_number": 26,
       "target_phrase": "Earwicker",
-      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"Earwicker\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "annotation_text": "HCE manifestation \"Earwicker\" on page 33 within \"The Encounter in Phoenix Park\": here the universal father-figure Humphrey Chimpden Earwicker appears in the context of HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe. During this Age of Gods phase, HCE embodies the patriarch whose guilt, grandeur, and fall drive the cyclical dream forward.",
       "categories": [
         "hce",
         "leitmotif",
@@ -62,12 +60,15 @@
         "archetype"
       ],
       "cross_references": [
-        "003.01"
+        "003.16",
+        "030.01",
+        "075.12",
+        "126.10"
       ],
       "sources": [
         "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
         "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
-        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "FWEET: HCE concordance entries. https://www.fweet.org",
         "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
       ],
       "contributors": [

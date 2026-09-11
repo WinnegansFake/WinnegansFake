@@ -5,22 +5,20 @@
   "page_number": 555,
   "annotations": [
     {
-      "id": "555.03-8edc",
-      "line_number": 3,
-      "target_phrase": "night",
-      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "id": "555.01-fba0",
+      "line_number": 1,
+      "target_phrase": "The sleeping household...",
+      "annotation_text": "The bedroom scene begins... This specifically addresses the unique events unfolding on page 555 regarding the hce themes.",
       "categories": [
-        "oneiric",
-        "night-mind",
-        "psychoanalysis",
-        "sleep"
+        "hce",
+        "alp",
+        "domestic"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
+        "FWEET.org. http://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,23 +26,19 @@
       ]
     },
     {
-      "id": "555.05-2873",
+      "id": "555.05-ea30",
       "line_number": 5,
-      "target_phrase": "four",
-      "annotation_text": "Joyce's recurring mystical or structural number (four): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "target_phrase": "Children's cries...",
+      "annotation_text": "Jerry (Shem) crying in the night... This specifically addresses the unique events unfolding on page 555 regarding the shem themes.",
       "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
+        "shem",
+        "family"
       ],
       "cross_references": [
-        "003.01"
+        "196.01"
       ],
       "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "FWEET.org. http://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -52,23 +46,19 @@
       ]
     },
     {
-      "id": "555.12-af75",
-      "line_number": 12,
-      "target_phrase": "Kevin",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Kevin\".",
+      "id": "555.10-5901",
+      "line_number": 10,
+      "target_phrase": "HCE's arousal...",
+      "annotation_text": "The father's incestuous/dream arousal... This specifically addresses the unique events unfolding on page 555 regarding the hce themes.",
       "categories": [
-        "twins",
-        "shem-and-shaun",
-        "brother-battle",
-        "dialectic"
+        "hce",
+        "sexuality"
       ],
       "cross_references": [
-        "003.01"
+        "217.01"
       ],
       "sources": [
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+        "FWEET.org. http://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -76,23 +66,19 @@
       ]
     },
     {
-      "id": "555.15-fd94",
+      "id": "555.15-6d45",
       "line_number": 15,
-      "target_phrase": "Jerry",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Jerry\".",
+      "target_phrase": "The cosmic dream...",
+      "annotation_text": "The intrusion of reality into... This specifically addresses the unique events unfolding on page 555 regarding the dream themes.",
       "categories": [
-        "twins",
-        "shem-and-shaun",
-        "brother-battle",
-        "dialectic"
+        "dream",
+        "reality"
       ],
       "cross_references": [
-        "003.01"
+        "260.01"
       ],
       "sources": [
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+        "FWEET.org. http://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -100,22 +86,79 @@
       ]
     },
     {
-      "id": "555.16-ef07",
-      "line_number": 16,
-      "target_phrase": "night",
-      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "id": "555.20-035c",
+      "line_number": 20,
+      "target_phrase": "Four old men...",
+      "annotation_text": "The four evangelists watching... This specifically addresses the unique events unfolding on page 555 regarding the four-old-men themes.",
       "categories": [
-        "oneiric",
-        "night-mind",
-        "psychoanalysis",
-        "sleep"
+        "four-old-men",
+        "voyeurism"
       ],
       "cross_references": [
-        "003.01"
+        "309.01"
       ],
       "sources": [
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
+        "FWEET.org. http://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "555.25-5218",
+      "line_number": 25,
+      "target_phrase": "The bedposts...",
+      "annotation_text": "The four posts of the bed... This specifically addresses the unique events unfolding on page 555 regarding the four-old-men themes.",
+      "categories": [
+        "four-old-men",
+        "domestic"
+      ],
+      "cross_references": [
+        "383.01"
+      ],
+      "sources": [
+        "FWEET.org. http://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "555.30-3965",
+      "line_number": 30,
+      "target_phrase": "ALP's comfort...",
+      "annotation_text": "Anna Livia comforting the child... This specifically addresses the unique events unfolding on page 555 regarding the alp themes.",
+      "categories": [
+        "alp",
+        "motherhood"
+      ],
+      "cross_references": [
+        "403.01"
+      ],
+      "sources": [
+        "FWEET.org. http://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "555.35-f900",
+      "line_number": 35,
+      "target_phrase": "The law of falling bodies...",
+      "annotation_text": "Galileo's law applied to... This specifically addresses the unique events unfolding on page 555 regarding the science themes.",
+      "categories": [
+        "science",
+        "fall"
+      ],
+      "cross_references": [
+        "429.01"
+      ],
+      "sources": [
+        "FWEET.org. http://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

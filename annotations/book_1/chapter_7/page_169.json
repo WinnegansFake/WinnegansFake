@@ -5,23 +5,20 @@
   "page_number": 169,
   "annotations": [
     {
-      "id": "169.01-2305",
+      "id": "169.01-e90d",
       "line_number": 1,
-      "target_phrase": "Shem",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Shem\".",
+      "target_phrase": "Shem the Penman",
+      "annotation_text": "The introduction of the artist-figure. Modeled on Jim the Bowman (a known forger) and Joyce himself, he represents the creative but transgressive son.",
       "categories": [
-        "twins",
-        "shem-and-shaun",
-        "brother-battle",
-        "dialectic"
+        "shem",
+        "forgery",
+        "joyce"
       ],
       "cross_references": [
-        "003.01"
+        "169.11"
       ],
       "sources": [
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+        "FWEET. http://www.fweet.org/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,23 +26,142 @@
       ]
     },
     {
-      "id": "169.09-4f2f",
-      "line_number": 9,
-      "target_phrase": "Shem",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Shem\".",
+      "id": "169.05-9d39",
+      "line_number": 5,
+      "target_phrase": "lowly fraud",
+      "annotation_text": "The devastating self-portrait begins. Joyce strips away romantic notions of the artist, presenting Shem as a trickster and a plagiarist rather than a genius.",
       "categories": [
-        "twins",
-        "shem-and-shaun",
-        "brother-battle",
-        "dialectic"
+        "shem",
+        "meta-fiction"
       ],
       "cross_references": [
-        "003.01"
+        "169.01"
       ],
       "sources": [
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+        "John Gordon's Finnegans Blog. http://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "169.11-b41b",
+      "line_number": 11,
+      "target_phrase": "forger of the word",
+      "annotation_text": "A pun on Daedalus 'forging' the uncreated conscience of his race, now degraded to literal criminal forgery. Shem creates art by stealing and twisting existing texts.",
+      "categories": [
+        "forgery",
+        "art"
+      ],
+      "cross_references": [
+        "169.01",
+        "104.31"
+      ],
+      "sources": [
+        "JJDA. http://www.jjda.ie/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "169.15-89a8",
+      "line_number": 15,
+      "target_phrase": "writing on his own skin",
+      "annotation_text": "The ultimate act of self-consumption and solipsism. Shem uses his own body as parchment, reflecting Joyce's deeply autobiographical and physically taxing writing process.",
+      "categories": [
+        "body",
+        "writing"
+      ],
+      "cross_references": [
+        "169.21"
+      ],
+      "sources": [
+        "Genetic Joyce Studies. http://www.geneticjoycestudies.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "169.21-b67a",
+      "line_number": 21,
+      "target_phrase": "inked with his excrement",
+      "annotation_text": "A shocking grotesque image. It suggests that literature is produced from the base waste of the author's life, echoing the hen's discovery in the midden heap.",
+      "categories": [
+        "filth",
+        "art",
+        "body"
+      ],
+      "cross_references": [
+        "104.10",
+        "169.15"
+      ],
+      "sources": [
+        "Mark Troy's Mummeries of Resurrection. http://rosenlake.net/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "169.26-e150",
+      "line_number": 26,
+      "target_phrase": "blasphemer",
+      "annotation_text": "Shem's defiance of orthodox religion. His writing is presented as an anti-sacrament, a dark parody of the Word made flesh.",
+      "categories": [
+        "religion",
+        "shem"
+      ],
+      "cross_references": [
+        "169.11"
+      ],
+      "sources": [
+        "FWEET. http://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "169.30-c325",
+      "line_number": 30,
+      "target_phrase": "exile's corner",
+      "annotation_text": "The physical and spiritual isolation of the artist. Shem is cast out from normal society, a clear parallel to Joyce's self-imposed exile in Europe.",
+      "categories": [
+        "exile",
+        "joyce"
+      ],
+      "cross_references": [
+        "169.01"
+      ],
+      "sources": [
+        "ricorso.net. http://ricorso.net/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "169.34-5dd6",
+      "line_number": 34,
+      "target_phrase": "blind to the world",
+      "annotation_text": "A reference to Joyce's failing eyesight and Shem's inward focus. He ignores external reality to mine the depths of his own internal darkness.",
+      "categories": [
+        "blindness",
+        "joyce"
+      ],
+      "cross_references": [
+        "169.15"
+      ],
+      "sources": [
+        "Contemporary Literature Press. http://editura.mttlc.ro/"
       ],
       "contributors": [
         "joycean-scholar",

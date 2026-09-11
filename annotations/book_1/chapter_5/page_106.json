@@ -8,7 +8,7 @@
       "id": "106.13-947b",
       "line_number": 13,
       "target_phrase": "Sleep",
-      "annotation_text": "The nocturnal oneiric dimension (Sleep): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "annotation_text": "Oneiric dimension \"Sleep\" on page 106 (\"The Letter from the Midden\"): the nocturnal consciousness surfaces within Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. During this Age of Gods phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
       "categories": [
         "oneiric",
         "night-mind",
@@ -16,11 +16,16 @@
         "sleep"
       ],
       "cross_references": [
-        "003.01"
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
       ],
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,58 +33,10 @@
       ]
     },
     {
-      "id": "106.17-ff7e",
-      "line_number": 17,
-      "target_phrase": "Fall",
-      "annotation_text": "The theme of the cosmic and comic Fall (Fall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
-      "categories": [
-        "the-fall",
-        "humpty-dumpty",
-        "tim-finnegan",
-        "resurrection"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "106.18-cea8",
-      "line_number": 18,
-      "target_phrase": "Fall",
-      "annotation_text": "The theme of the cosmic and comic Fall (Fall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
-      "categories": [
-        "the-fall",
-        "humpty-dumpty",
-        "tim-finnegan",
-        "resurrection"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "106.23-ebdd",
+      "id": "106.23-c8de",
       "line_number": 23,
       "target_phrase": "Set",
-      "annotation_text": "Ancient Egyptian eschatology (Set): HCE as the dismembered and resurrected god Osiris, ALP as Isis gathering his scattered limbs, and the dream journey through the underworld (Tuat).",
+      "annotation_text": "Egyptian eschatology \"Set\" on page 106 (\"The Letter from the Midden\"): within Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Gods passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
       "categories": [
         "egyptian-mythology",
         "book-of-the-dead",
@@ -87,11 +44,16 @@
         "resurrection"
       ],
       "cross_references": [
-        "003.01"
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
       ],
       "sources": [
-        "Budge, E.A. Wallis. The Book of the Dead (The Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
-        "Bishop, John. Joyce's Book of the Dark (The Egyptian Wake). https://archive.org/details/joycesbookofdark0000bish"
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -99,58 +61,10 @@
       ]
     },
     {
-      "id": "106.24-33f6",
-      "line_number": 24,
-      "target_phrase": "Divine",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"Divine\".",
-      "categories": [
-        "vico",
-        "ricorso",
-        "philosophy-of-history",
-        "giambattista-vico"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
-        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "106.26-4223",
-      "line_number": 26,
-      "target_phrase": "Seven",
-      "annotation_text": "Joyce's recurring mystical or structural number (Seven): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
-      "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "106.27-dcfc",
+      "id": "106.27-5546",
       "line_number": 27,
       "target_phrase": "Porter",
-      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"Porter\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "annotation_text": "HCE manifestation \"Porter\" on page 106 within \"The Letter from the Midden\": here the universal father-figure Humphrey Chimpden Earwicker appears in the context of Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. During this Age of Gods phase, HCE embodies the patriarch whose guilt, grandeur, and fall drive the cyclical dream forward.",
       "categories": [
         "hce",
         "leitmotif",
@@ -158,13 +72,44 @@
         "archetype"
       ],
       "cross_references": [
-        "003.01"
+        "003.16",
+        "030.01",
+        "033.24",
+        "075.12"
       ],
       "sources": [
         "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
         "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
-        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "FWEET: HCE concordance entries. https://www.fweet.org",
         "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "106.27-32bc",
+      "line_number": 27,
+      "target_phrase": "Porter",
+      "annotation_text": "Tavern/jury motif \"Porter\" on page 106 (\"The Letter from the Midden\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. During this Age of Gods phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
+      "categories": [
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
+      ],
+      "cross_references": [
+        "309.01",
+        "311.05",
+        "333.20",
+        "370.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
+        "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

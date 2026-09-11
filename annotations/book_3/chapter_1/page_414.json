@@ -8,7 +8,7 @@
       "id": "414.03-d9d3",
       "line_number": 3,
       "target_phrase": "night",
-      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "annotation_text": "Oneiric dimension \"night\" on page 414 (\"Shaun the Post (First Watch)\"): the nocturnal consciousness surfaces within Shaun floating down the Liffey in a barrel, delivering his sermon, the well-fed postman who delivers messages he cannot understand. During this Age of Men phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
       "categories": [
         "oneiric",
         "night-mind",
@@ -16,11 +16,16 @@
         "sleep"
       ],
       "cross_references": [
-        "003.01"
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
       ],
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -31,7 +36,7 @@
       "id": "414.12-a01c",
       "line_number": 12,
       "target_phrase": "Shaun",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Shaun\".",
+      "annotation_text": "Fraternal archetype \"Shaun\" on page 414 (\"Shaun the Post (First Watch)\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within Shaun floating down the Liffey in a barrel, delivering his sermon, the well-fed postman who delivers messages he cannot understand. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Men phase.",
       "categories": [
         "twins",
         "shem-and-shaun",
@@ -39,12 +44,16 @@
         "dialectic"
       ],
       "cross_references": [
-        "003.01"
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -52,34 +61,10 @@
       ]
     },
     {
-      "id": "414.13-a5f8",
-      "line_number": 13,
-      "target_phrase": "Shaun",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Shaun\".",
-      "categories": [
-        "twins",
-        "shem-and-shaun",
-        "brother-battle",
-        "dialectic"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "414.15-148a",
+      "id": "414.15-c9c2",
       "line_number": 15,
       "target_phrase": "husstenhasstencaffincoffintussemtossemdamandamnacosaghcusaghhobixhatouxpeswchbec",
-      "annotation_text": "One of the ten 100-letter polysyllabic thunderclaps of Finnegans Wake, synthesizing words for thunder across ten world languages to signal the divine voice awakening primitive human institutions.",
+      "annotation_text": "Polysyllabic thunderclap on page 414 (\"Shaun the Post (First Watch)\"): one of ten 100-letter words synthesizing thunder across world languages, signaling a Viconian cataclysm within Shaun floating down the Liffey in a barrel, delivering his sermon, the well-fed postman who delivers messages he cannot understand. This divine acoustic blast — fusing Hindi, Greek, Latin, French, Italian, Irish, and Norse roots — marks a civilizational transition in the Age of Men phase.",
       "categories": [
         "thunderclap",
         "vico",
@@ -87,12 +72,16 @@
         "onomatopoeia"
       ],
       "cross_references": [
-        "003.01"
+        "003.15",
+        "023.05",
+        "044.20",
+        "090.31"
       ],
       "sources": [
-        "Vico, Giambattista. Scienza Nuova (On the Thunder and Law). https://plato.stanford.edu/entries/vico/",
+        "Vico, Giambattista. Scienza Nuova (On the Thunder). https://plato.stanford.edu/entries/vico/",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: 100-letter Thunder Words. https://www.fweet.org"
+        "FinnegansWeb: Thunderwords Guide. https://www.finnegansweb.com",
+        "FWEET: 100-letter Thunder Words. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

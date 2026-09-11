@@ -5,10 +5,32 @@
   "page_number": 570,
   "annotations": [
     {
-      "id": "570.11-686c",
+      "id": "570.01-af7f",
+      "line_number": 1,
+      "target_phrase": "Mine name's Apnorval",
+      "annotation_text": "Page 570 opens Book 3, Chapter 4 (\"The Bedroom Scene\") during the Age of Men (closing) phase. This passage continues HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream, featuring HCE, ALP, Shem, Shaun, Issy. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-3"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "570.11-18c2",
       "line_number": 11,
       "target_phrase": "Amen",
-      "annotation_text": "Liturgical or ecclesiastical allusion (Amen): weaving Catholic ritual, Latin prayers, and sacramental language into the domestic nighttime dream.",
+      "annotation_text": "Liturgical echo \"Amen\" on page 570 (\"The Bedroom Scene\"): Catholic ritual, Latin prayer, and sacramental language weave through HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream. Joyce fuses ecclesiastical solemnity with domestic banality during the Age of Men (closing) phase, treating the tavern counter as communion rail and the sleeping body as sacred vessel.",
       "categories": [
         "liturgy",
         "biblical",
@@ -16,11 +38,15 @@
         "theology"
       ],
       "cross_references": [
-        "003.01"
+        "033.01",
+        "104.20",
+        "185.14",
+        "258.25"
       ],
       "sources": [
         "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
         "The Catholic Encyclopedia. https://www.newadvent.org/cathen/",
+        "Contemporary Literature Press: Classical Lexicon for FW. https://editura.mttlc.ro",
         "Frazer, Sir James George. Folk-Lore in the Old Testament. https://archive.org/details/folkloreinoldtes01frazuoft"
       ],
       "contributors": [
@@ -29,23 +55,21 @@
       ]
     },
     {
-      "id": "570.27-c9f1",
-      "line_number": 27,
-      "target_phrase": "Sanctus",
-      "annotation_text": "Liturgical or ecclesiastical allusion (Sanctus): weaving Catholic ritual, Latin prayers, and sacramental language into the domestic nighttime dream.",
+      "id": "570.16-b598",
+      "line_number": 16,
+      "target_phrase": "kidlings under aproham.",
+      "annotation_text": "Mid-page polysemic node on page 570 (\"The Bedroom Scene\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men (closing) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
-        "liturgy",
-        "biblical",
-        "latin",
-        "theology"
+        "etymology",
+        "polysemy",
+        "linguistics"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
-        "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
-        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/",
-        "Frazer, Sir James George. Folk-Lore in the Old Testament. https://archive.org/details/folkloreinoldtes01frazuoft"
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

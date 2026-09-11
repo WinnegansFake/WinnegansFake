@@ -8,7 +8,7 @@
       "id": "310.02-d27e",
       "line_number": 2,
       "target_phrase": "1132",
-      "annotation_text": "Joyce's recurring mystical or structural number (1132): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "annotation_text": "Cabalistic number 1132 on page 310 (\"The Tavern\"): Joyce encodes mystical and historical intervals throughout the Wake. Within HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging, this number resonates with Dublin dates, Viconian divisions, and the mathematical architecture underlying the dream's Age of Heroes phase.",
       "categories": [
         "numerology",
         "cabala",
@@ -16,12 +16,15 @@
         "symbolism"
       ],
       "cross_references": [
-        "003.01"
+        "003.12",
+        "117.34",
+        "186.19",
+        "260.01"
       ],
       "sources": [
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
         "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "FWEET: Numerological concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -32,7 +35,7 @@
       "id": "310.19-6c05",
       "line_number": 19,
       "target_phrase": "night",
-      "annotation_text": "The nocturnal oneiric dimension (night): Joyce's exploration of the sleeping body, sensory deprivation, auditory distortions, and the somatic language of the collective unconscious.",
+      "annotation_text": "Oneiric dimension \"night\" on page 310 (\"The Tavern\"): the nocturnal consciousness surfaces within HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging. During this Age of Heroes phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
       "categories": [
         "oneiric",
         "night-mind",
@@ -40,11 +43,16 @@
         "sleep"
       ],
       "cross_references": [
-        "003.01"
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
       ],
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349"
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

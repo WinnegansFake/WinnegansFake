@@ -5,22 +5,27 @@
   "page_number": 72,
   "annotations": [
     {
-      "id": "072.01-b458",
-      "line_number": 1,
-      "target_phrase": "Scuttle Cover Salary",
-      "annotation_text": "Structural opening of Book 1, Chapter 3, page 72. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "id": "072.02-981a",
+      "line_number": 2,
+      "target_phrase": "Porter",
+      "annotation_text": "HCE manifestation \"Porter\" on page 72 within \"The Trial of HCE\": here the universal father-figure Humphrey Chimpden Earwicker appears in the context of the public trial and persecution of HCE, the ballad of Hosty, and the testimony of witnesses. During this Age of Gods phase, HCE embodies the patriarch whose guilt, grandeur, and fall drive the cyclical dream forward.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-1"
+        "hce",
+        "leitmotif",
+        "protagonist",
+        "archetype"
       ],
       "cross_references": [
-        "003.01"
+        "003.16",
+        "030.01",
+        "033.24",
+        "075.12"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "FWEET: HCE concordance entries. https://www.fweet.org",
+        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -31,44 +36,24 @@
       "id": "072.02-5ed4",
       "line_number": 2,
       "target_phrase": "Porter",
-      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"Porter\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "annotation_text": "Tavern/jury motif \"Porter\" on page 72 (\"The Trial of HCE\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within the public trial and persecution of HCE, the ballad of Hosty, and the testimony of witnesses. During this Age of Gods phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
       "categories": [
-        "hce",
-        "leitmotif",
-        "protagonist",
-        "archetype"
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
       ],
       "cross_references": [
-        "003.01"
+        "309.01",
+        "311.05",
+        "333.20",
+        "370.01"
       ],
       "sources": [
         "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
-        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
-        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
-        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "072.16-eee2",
-      "line_number": 16,
-      "target_phrase": "though easy kissanywhere",
-      "annotation_text": "Mid-page polysemic discourse on page 72: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
-      "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
+        "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

@@ -5,22 +5,20 @@
   "page_number": 309,
   "annotations": [
     {
-      "id": "309.01-a538",
+      "id": "309.01-95af",
       "line_number": 1,
-      "target_phrase": "maybe concer^j Guinnesses",
-      "annotation_text": "Structural opening of Book 2, Chapter 3, page 309. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "target_phrase": "Arthur",
+      "annotation_text": "Reference to Guinness (Arthur Guinness) and King Arthur, establishing HCE as both a local publican and a mythic sovereign.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-2"
+        "mythic-identity",
+        "brewing"
       ],
       "cross_references": [
-        "003.01"
+        "310.05"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,22 +26,146 @@
       ]
     },
     {
-      "id": "309.11-10b4",
-      "line_number": 11,
-      "target_phrase": "that breeder sweatoslaves,",
-      "annotation_text": "Mid-page polysemic discourse on page 309: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "309.04-829c",
+      "line_number": 4,
+      "target_phrase": "behind the bar",
+      "annotation_text": "HCE's physical placement in his Chapelizod pub, acting as the motionless center around which the chaotic tavern tales orbit.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "setting",
+        "hce-motif"
       ],
       "cross_references": [
-        "003.01"
+        "310.10"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.11-6a2a",
+      "line_number": 11,
+      "target_phrase": "Norwegian Captain",
+      "annotation_text": "Introduction of the wandering sailor figure who brings tales of the sea into the enclosed, landlocked space of the tavern.",
+      "categories": [
+        "character-identity",
+        "sea-motif"
+      ],
+      "cross_references": [
+        "311.05"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.15-2a48",
+      "line_number": 15,
+      "target_phrase": "broadcasting",
+      "annotation_text": "The integration of modern radio technology as a medium for transmitting the collective unconscious and rumors about HCE.",
+      "categories": [
+        "technology",
+        "rumor-motif"
+      ],
+      "cross_references": [
+        "310.15"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.21-6d6a",
+      "line_number": 21,
+      "target_phrase": "twelve",
+      "annotation_text": "The twelve customers who serve as both patrons of the pub and the judgmental jury condemning HCE's alleged crimes.",
+      "categories": [
+        "numerology",
+        "jury-motif"
+      ],
+      "cross_references": [
+        "311.12"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.25-508c",
+      "line_number": 25,
+      "target_phrase": "drinking",
+      "annotation_text": "The communal act that fuels the dissemination of gossip and the distortion of narrative truth within the sprawling chapter.",
+      "categories": [
+        "pub-culture",
+        "rumor-motif"
+      ],
+      "cross_references": [
+        "310.25"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.29-ac89",
+      "line_number": 29,
+      "target_phrase": "judging",
+      "annotation_text": "The pervasive atmosphere of guilt and trial that shadows HCE even in his own establishment, echoing his earlier inquests.",
+      "categories": [
+        "trial-motif",
+        "guilt"
+      ],
+      "cross_references": [
+        "048.01"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.34-cb88",
+      "line_number": 34,
+      "target_phrase": "Chapelizod",
+      "annotation_text": "The specific geographic location of the tavern, anchoring the mythic events in a real Dublin suburb associated with Tristan and Isolde.",
+      "categories": [
+        "geography",
+        "tristan-isolde"
+      ],
+      "cross_references": [
+        "383.05"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",

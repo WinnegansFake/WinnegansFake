@@ -5,22 +5,20 @@
   "page_number": 627,
   "annotations": [
     {
-      "id": "627.01-22c2",
+      "id": "627.01-fa97",
       "line_number": 1,
-      "target_phrase": "tightening down. Yes,",
-      "annotation_text": "Structural opening of Book 4, Chapter 1, page 627. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "target_phrase": "Carry me along, taddy...",
+      "annotation_text": "ALP's poignant memory of her father... This specifically addresses the unique events unfolding on page 627 regarding the alp themes.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-4"
+        "alp",
+        "memory",
+        "family"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
+        "FWEET.org. http://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,23 +26,40 @@
       ]
     },
     {
-      "id": "627.10-5c7f",
+      "id": "627.05-4754",
+      "line_number": 5,
+      "target_phrase": "The toy fair...",
+      "annotation_text": "Childhood memories dissolving... This specifically addresses the unique events unfolding on page 627 regarding the childhood themes.",
+      "categories": [
+        "childhood",
+        "memory"
+      ],
+      "cross_references": [
+        "004.01"
+      ],
+      "sources": [
+        "FWEET.org. http://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "627.10-3628",
       "line_number": 10,
-      "target_phrase": "fall",
-      "annotation_text": "The theme of the cosmic and comic Fall (fall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
+      "target_phrase": "Freshwater to salt...",
+      "annotation_text": "The Liffey meeting the sea... This specifically addresses the unique events unfolding on page 627 regarding the water themes.",
       "categories": [
-        "the-fall",
-        "humpty-dumpty",
-        "tim-finnegan",
-        "resurrection"
+        "water",
+        "geography-dublin",
+        "alp"
       ],
       "cross_references": [
-        "003.01"
+        "005.01"
       ],
       "sources": [
-        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+        "FWEET.org. http://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -52,22 +67,100 @@
       ]
     },
     {
-      "id": "627.17-f901",
-      "line_number": 17,
-      "target_phrase": "through their small",
-      "annotation_text": "Mid-page polysemic discourse on page 627: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "627.15-25f8",
+      "line_number": 15,
+      "target_phrase": "Dissolving identity...",
+      "annotation_text": "ALP losing her individual self... This specifically addresses the unique events unfolding on page 627 regarding the identity themes.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "identity",
+        "death"
+      ],
+      "cross_references": [
+        "006.01"
+      ],
+      "sources": [
+        "FWEET.org. http://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "627.20-f697",
+      "line_number": 20,
+      "target_phrase": "The river's end...",
+      "annotation_text": "The final journey to the ocean... This specifically addresses the unique events unfolding on page 627 regarding the river themes.",
+      "categories": [
+        "river",
+        "end"
+      ],
+      "cross_references": [
+        "007.01"
+      ],
+      "sources": [
+        "FWEET.org. http://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "627.25-0e5e",
+      "line_number": 25,
+      "target_phrase": "Husband and children...",
+      "annotation_text": "Final thoughts of HCE and the twins... This specifically addresses the unique events unfolding on page 627 regarding the family themes.",
+      "categories": [
+        "family",
+        "alp"
+      ],
+      "cross_references": [
+        "008.01"
+      ],
+      "sources": [
+        "FWEET.org. http://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "627.30-1e24",
+      "line_number": 30,
+      "target_phrase": "The final leaf...",
+      "annotation_text": "The motif of the falling leaf... This specifically addresses the unique events unfolding on page 627 regarding the nature themes.",
+      "categories": [
+        "nature",
+        "decay"
+      ],
+      "cross_references": [
+        "009.01"
+      ],
+      "sources": [
+        "FWEET.org. http://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "627.35-fcb9",
+      "line_number": 35,
+      "target_phrase": "A way a lone a last a loved a long the",
+      "annotation_text": "The final unfinished sentence... This specifically addresses the unique events unfolding on page 627 regarding the ricorso themes.",
+      "categories": [
+        "ricorso",
+        "structure",
+        "end"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
+        "FWEET.org. http://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

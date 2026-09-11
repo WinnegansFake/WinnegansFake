@@ -8,7 +8,7 @@
       "id": "017.07-f0f8",
       "line_number": 7,
       "target_phrase": "sutton",
-      "annotation_text": "Dublin geographical anchor (sutton): grounding the cosmic nocturnal dream in the tangible stone, water, bridges, and hills of Dublin and the River Liffey.",
+      "annotation_text": "Dublin landmark \"sutton\" on page 17 (\"The Fall of Finnegan\"): grounding the cosmic dream in physical Dublin during the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape. Joyce transforms this real location into a universal archetypal site — simultaneously Eden, Waterloo, Calvary, and the Elysian Fields — within the Age of Gods (Theocratic) phase.",
       "categories": [
         "dublin-topography",
         "geography",
@@ -16,11 +16,15 @@
         "urban-history"
       ],
       "cross_references": [
-        "003.01"
+        "003.18",
+        "040.05",
+        "080.20",
+        "196.01"
       ],
       "sources": [
         "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
-        "Dublin Historical Record (JSTOR). https://www.jstor.org/journal/dublhiste",
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "Dublin James Joyce Centre. https://jamesjoyce.ie",
         "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [
@@ -32,7 +36,7 @@
       "id": "017.23-7eb8",
       "line_number": 23,
       "target_phrase": "alp",
-      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"alp\".",
+      "annotation_text": "ALP invocation \"alp\" on page 17 (\"The Fall of Finnegan\"): Anna Livia Plurabelle, the mother-river personifying the Liffey, surfaces here amid the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape. In this Age of Gods (Theocratic) passage, her feminine current of forgiveness and renewal flows through the dream landscape, carrying Dublin's history from source to sea.",
       "categories": [
         "alp",
         "river-liffey",
@@ -40,13 +44,16 @@
         "waters"
       ],
       "cross_references": [
-        "003.01"
+        "003.01",
+        "196.01",
+        "198.15",
+        "207.20"
       ],
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: ALP / River Liffey concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

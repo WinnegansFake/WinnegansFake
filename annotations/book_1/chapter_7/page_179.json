@@ -8,7 +8,7 @@
       "id": "179.05-6b1d",
       "line_number": 5,
       "target_phrase": "Shem",
-      "annotation_text": "The eternal fraternal dialectic between opposing sons Shem the Penman (the introvert, rebel, artist) and Shaun the Post (the materialist, orator, politician), embodied in \"Shem\".",
+      "annotation_text": "Fraternal archetype \"Shem\" on page 179 (\"Shem the Penman\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Gods phase.",
       "categories": [
         "twins",
         "shem-and-shaun",
@@ -16,12 +16,16 @@
         "dialectic"
       ],
       "cross_references": [
-        "003.01"
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
       ],
       "sources": [
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn",
-        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,34 +33,10 @@
       ]
     },
     {
-      "id": "179.11-637f",
-      "line_number": 11,
-      "target_phrase": "human",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"human\".",
-      "categories": [
-        "vico",
-        "ricorso",
-        "philosophy-of-history",
-        "giambattista-vico"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
-        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "179.26-9e4b",
+      "id": "179.26-3765",
       "line_number": 26,
       "target_phrase": "vellum",
-      "annotation_text": "The Book of Kells manuscript tradition (vellum): Joyce equates the text of Finnegans Wake and the Hen's letter to the labyrinthine Celtic interlacing and enigmatic Latin glosses of the 8th-century Gospel book.",
+      "annotation_text": "Book of Kells motif \"vellum\" on page 179 (\"Shem the Penman\"): Joyce equates the Wake's labyrinthine text with the 8th-century illuminated Gospel at Trinity College Dublin within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. During this Age of Gods phase, the monastic scribe and the barnyard Hen both decode divine messages from material surfaces.",
       "categories": [
         "book-of-kells",
         "manuscript-culture",
@@ -64,12 +44,16 @@
         "epigraphy"
       ],
       "cross_references": [
-        "003.01"
+        "104.01",
+        "107.08",
+        "119.10",
+        "122.22"
       ],
       "sources": [
         "Trinity College Dublin: The Book of Kells Online. https://digitalcollections.tcd.ie/concern/works/hm50tr726",
         "Sullivan, Sir Edward. The Book of Kells. https://www.gutenberg.org/ebooks/16436",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Book of Kells concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

@@ -8,7 +8,7 @@
       "id": "119.15-226b",
       "line_number": 15,
       "target_phrase": "Earwicker",
-      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"Earwicker\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "annotation_text": "HCE manifestation \"Earwicker\" on page 119 within \"The Letter from the Midden\": here the universal father-figure Humphrey Chimpden Earwicker appears in the context of Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. During this Age of Gods phase, HCE embodies the patriarch whose guilt, grandeur, and fall drive the cyclical dream forward.",
       "categories": [
         "hce",
         "leitmotif",
@@ -16,12 +16,15 @@
         "archetype"
       ],
       "cross_references": [
-        "003.01"
+        "003.16",
+        "030.01",
+        "033.24",
+        "075.12"
       ],
       "sources": [
         "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
         "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
-        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "FWEET: HCE concordance entries. https://www.fweet.org",
         "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
       ],
       "contributors": [
@@ -33,7 +36,7 @@
       "id": "119.18-dc5b",
       "line_number": 18,
       "target_phrase": "alp",
-      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"alp\".",
+      "annotation_text": "ALP invocation \"alp\" on page 119 (\"The Letter from the Midden\"): Anna Livia Plurabelle, the mother-river personifying the Liffey, surfaces here amid Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. In this Age of Gods passage, her feminine current of forgiveness and renewal flows through the dream landscape, carrying Dublin's history from source to sea.",
       "categories": [
         "alp",
         "river-liffey",
@@ -41,13 +44,16 @@
         "waters"
       ],
       "cross_references": [
-        "003.01"
+        "003.01",
+        "196.01",
+        "198.15",
+        "207.20"
       ],
       "sources": [
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: ALP / River Liffey concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -58,7 +64,7 @@
       "id": "119.20-3e86",
       "line_number": 20,
       "target_phrase": "hen",
-      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (hen), representing the genesis of writing, literature, and the archaeological decipherment of history.",
+      "annotation_text": "The Letter motif \"hen\" on page 119 (\"The Letter from the Midden\"): ALP's mysterious document — scratched from the midden by Biddy Doran the Hen — represents the genesis of all writing within Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. During this Age of Gods phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
       "categories": [
         "the-letter",
         "textual-criticism",
@@ -66,12 +72,16 @@
         "archaeology"
       ],
       "cross_references": [
-        "003.01"
+        "104.01",
+        "107.26",
+        "111.01",
+        "113.20"
       ],
       "sources": [
         "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
         "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net"
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net",
+        "Finwake.com: Chapter I.5 annotations. http://www.finwake.com"
       ],
       "contributors": [
         "joycean-scholar",
@@ -82,7 +92,7 @@
       "id": "119.23-34b0",
       "line_number": 23,
       "target_phrase": "1132",
-      "annotation_text": "Joyce's recurring mystical or structural number (1132): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "annotation_text": "Cabalistic number 1132 on page 119 (\"The Letter from the Midden\"): Joyce encodes mystical and historical intervals throughout the Wake. Within Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis, this number resonates with Dublin dates, Viconian divisions, and the mathematical architecture underlying the dream's Age of Gods phase.",
       "categories": [
         "numerology",
         "cabala",
@@ -90,12 +100,15 @@
         "symbolism"
       ],
       "cross_references": [
-        "003.01"
+        "003.12",
+        "117.34",
+        "186.19",
+        "260.01"
       ],
       "sources": [
         "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
         "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "FWEET: Numerological concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

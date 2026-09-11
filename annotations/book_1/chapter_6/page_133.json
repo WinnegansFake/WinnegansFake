@@ -8,19 +8,18 @@
       "id": "133.01-92a6",
       "line_number": 1,
       "target_phrase": "silent honey, stark",
-      "annotation_text": "Structural opening of Book 1, Chapter 6, page 133. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "annotation_text": "Page 133 opens Book 1, Chapter 6 (\"The Quiz Chapter\") during the Age of Gods phase. This passage continues twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones, featuring Shem, Shaun, Professor Jones, the Mookse, the Gripes. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
       "categories": [
         "structural",
         "narrative-strata",
         "book-1"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
         "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
         "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -31,19 +30,18 @@
       "id": "133.17-107f",
       "line_number": 17,
       "target_phrase": "closed love Janus;",
-      "annotation_text": "Mid-page polysemic discourse on page 133: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "annotation_text": "Mid-page polysemic node on page 133 (\"The Quiz Chapter\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
       "categories": [
         "etymology",
         "polysemy",
         "linguistics"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
+        "FWEET: Multilingual concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -54,7 +52,7 @@
       "id": "133.23-8c63",
       "line_number": 23,
       "target_phrase": "daughter",
-      "annotation_text": "Issy (Isolde), the seductive daughter and split-personality siren conversing with her mirror reflection, represented in the motif \"daughter\".",
+      "annotation_text": "Issy/daughter figure \"daughter\" on page 133 (\"The Quiz Chapter\"): the narcissistic mirror-daughter, modeled on Isolde and Swift's dual muses Stella and Vanessa, appears here within twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones. Her prismatic splitting into twenty-eight Rainbow Girls reflects the cycle's Age of Gods phase through youthful seduction and self-reflection.",
       "categories": [
         "issy",
         "mirror-twin",
@@ -62,12 +60,16 @@
         "psychology"
       ],
       "cross_references": [
-        "003.01"
+        "143.28",
+        "226.01",
+        "248.01",
+        "279.01"
       ],
       "sources": [
         "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Genetic Joyce Studies: Finnegans Wake Notebooks. https://www.geneticjoycestudies.org"
+        "Genetic Joyce Studies: Issy notebooks. https://www.geneticjoycestudies.org",
+        "FWEET: Issy / Isolde concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

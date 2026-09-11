@@ -5,23 +5,20 @@
   "page_number": 403,
   "annotations": [
     {
-      "id": "403.02-4ee3",
-      "line_number": 2,
-      "target_phrase": "twelve",
-      "annotation_text": "Joyce's recurring mystical or structural number (twelve): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "id": "403.01-e596",
+      "line_number": 1,
+      "target_phrase": "Shaun the Post",
+      "annotation_text": "Introduction of the aggressive, bureaucratic twin in his full public persona, contrasting with the introverted Shem.",
       "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
+        "character-identity",
+        "shaun-motif"
       ],
       "cross_references": [
-        "003.01"
+        "404.05"
       ],
       "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,23 +26,20 @@
       ]
     },
     {
-      "id": "403.03-64c5",
-      "line_number": 3,
-      "target_phrase": "Mark",
-      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of human history as judges, senile bed-sitters, and circling seagulls.",
+      "id": "403.05-9577",
+      "line_number": 5,
+      "target_phrase": "floating down the Liffey",
+      "annotation_text": "Shaun's literal and symbolic journey through the fluid female element (ALP), presenting himself as a messianic arrival.",
       "categories": [
-        "mamalujo",
-        "four-annalists",
-        "provinces-of-ireland",
-        "evangelists"
+        "journey",
+        "river-motif"
       ],
       "cross_references": [
-        "003.01"
+        "404.10"
       ],
       "sources": [
-        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
-        "The Four Gospels (King James Bible). https://www.biblegateway.com",
-        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -53,23 +47,125 @@
       ]
     },
     {
-      "id": "403.18-9011",
-      "line_number": 18,
-      "target_phrase": "human",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"human\".",
+      "id": "403.12-2056",
+      "line_number": 12,
+      "target_phrase": "barrel",
+      "annotation_text": "The vessel of Shaun's arrival, evoking both a Guinness barrel and the infant Moses' basket, satirizing his claims to salvation.",
       "categories": [
-        "vico",
-        "ricorso",
-        "philosophy-of-history",
-        "giambattista-vico"
+        "vessel",
+        "moses-allusion"
       ],
       "cross_references": [
-        "003.01"
+        "404.15"
       ],
       "sources": [
-        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
-        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "403.17-6386",
+      "line_number": 17,
+      "target_phrase": "sermon",
+      "annotation_text": "Shaun's dogmatic and hypocritical address to the people, parodying rigid religious instruction and moralizing rhetoric.",
+      "categories": [
+        "religion",
+        "parody"
+      ],
+      "cross_references": [
+        "404.20"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "403.21-b087",
+      "line_number": 21,
+      "target_phrase": "well-fed",
+      "annotation_text": "Emphasizes Shaun's materialism and gluttony, physically contrasting with the starving artist archetype of his brother Shem.",
+      "categories": [
+        "appetite-motif",
+        "materialism"
+      ],
+      "cross_references": [
+        "404.25"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "403.26-140b",
+      "line_number": 26,
+      "target_phrase": "anti-Shem",
+      "annotation_text": "Shaun's self-definition entirely in opposition to his brother, highlighting the adversarial duality at the core of the Wake's fraternal conflict.",
+      "categories": [
+        "brother-conflict",
+        "duality"
+      ],
+      "cross_references": [
+        "404.30"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "403.31-d02a",
+      "line_number": 31,
+      "target_phrase": "papal encyclicals",
+      "annotation_text": "The authoritative, Latinate tone Shaun adopts to assert dominance, mocking institutional church edicts and infallibility.",
+      "categories": [
+        "religion",
+        "papacy"
+      ],
+      "cross_references": [
+        "404.35"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "403.35-5928",
+      "line_number": 35,
+      "target_phrase": "radio broadcasts",
+      "annotation_text": "Shaun's voice projected as a modern mass-media broadcast, showing his affinity for public relations over genuine artistic creation.",
+      "categories": [
+        "technology",
+        "mass-media"
+      ],
+      "cross_references": [
+        "404.40"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",

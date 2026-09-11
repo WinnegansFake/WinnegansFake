@@ -5,23 +5,21 @@
   "page_number": 596,
   "annotations": [
     {
-      "id": "596.02-859a",
-      "line_number": 2,
-      "target_phrase": "fall",
-      "annotation_text": "The theme of the cosmic and comic Fall (fall): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattered from the wall, and Adam falling in Eden, awaiting whiskey-fuelled resurrection.",
+      "id": "596.01-f02c",
+      "line_number": 1,
+      "target_phrase": "hand; which thetheatron",
+      "annotation_text": "Page 596 opens Book 4, Chapter 1 (\"The Ricorso — Dawn\") during the Ricorso (The Return) phase. This passage continues dawn breaking over Dublin Bay, St. Kevin bathing at Glendalough, St. Patrick vs. the Archdruid Balkelly, ALP's dissolving final monologue into the sea, featuring St. Kevin, St. Patrick, Balkelly, ALP. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
       "categories": [
-        "the-fall",
-        "humpty-dumpty",
-        "tim-finnegan",
-        "resurrection"
+        "structural",
+        "narrative-strata",
+        "book-4"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
-        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1"
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,10 +27,32 @@
       ]
     },
     {
-      "id": "596.28-13a7",
+      "id": "596.16-ce36",
+      "line_number": 16,
+      "target_phrase": "sort heaps, pamphilius,",
+      "annotation_text": "Mid-page polysemic node on page 596 (\"The Ricorso — Dawn\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Ricorso (The Return) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "596.28-7f3d",
       "line_number": 28,
       "target_phrase": "swift",
-      "annotation_text": "Satirical and biographical presence of Jonathan Swift (swift): Dean of St. Patrick's Cathedral, his dual lovers Stella and Vanessa (mirroring Issy), and his ferocious political satires.",
+      "annotation_text": "Swiftian presence \"swift\" on page 596 (\"The Ricorso — Dawn\"): the Dean of St. Patrick's Cathedral haunts this passage within dawn breaking over Dublin Bay, St. Kevin bathing at Glendalough, St. Patrick vs. the Archdruid Balkelly, ALP's dissolving final monologue into the sea. His dual lovers Stella and Vanessa mirror Issy's split personalities, while his savage satire infuses the Ricorso (The Return) dream with political and scatological ferocity.",
       "categories": [
         "jonathan-swift",
         "dublin-history",
@@ -40,12 +60,16 @@
         "satire"
       ],
       "cross_references": [
-        "003.01"
+        "140.08",
+        "160.06",
+        "229.01",
+        "292.28"
       ],
       "sources": [
         "Swift, Jonathan. Gulliver's Travels. https://www.gutenberg.org/ebooks/829",
-        "Swift, Jonathan. A Tale of a Tub. https://www.gutenberg.org/ebooks/4737",
-        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre"
+        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre",
+        "FWEET: Swift concordance. https://www.fweet.org",
+        "Ricorso.net: Jonathan Swift. https://www.ricorso.net"
       ],
       "contributors": [
         "joycean-scholar",

@@ -5,23 +5,21 @@
   "page_number": 71,
   "annotations": [
     {
-      "id": "071.27-cec7",
-      "line_number": 27,
-      "target_phrase": "Twelve",
-      "annotation_text": "Joyce's recurring mystical or structural number (Twelve): encoding cabalistic intervals, Viconian divisions, and historical Dublin dates.",
+      "id": "071.01-69ff",
+      "line_number": 1,
+      "target_phrase": "although whitening under",
+      "annotation_text": "Page 71 opens Book 1, Chapter 3 (\"The Trial of HCE\") during the Age of Gods phase. This passage continues the public trial and persecution of HCE, the ballad of Hosty, and the testimony of witnesses, featuring HCE, the Twelve Jurors, Hosty. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
       "categories": [
-        "numerology",
-        "cabala",
-        "leitmotif",
-        "symbolism"
+        "structural",
+        "narrative-strata",
+        "book-1"
       ],
-      "cross_references": [
-        "003.01"
-      ],
+      "cross_references": [],
       "sources": [
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
         "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Connor, Steven. James Joyce (Select Bibliography). https://archive.org/details/jamesjoyce0000conn"
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
       ],
       "contributors": [
         "joycean-scholar",
@@ -29,10 +27,32 @@
       ]
     },
     {
-      "id": "071.28-3e85",
+      "id": "071.16-345d",
+      "line_number": 16,
+      "target_phrase": "Thinks He's Gobblasst",
+      "annotation_text": "Mid-page polysemic node on page 71 (\"The Trial of HCE\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "071.28-6d75",
       "line_number": 28,
       "target_phrase": "Thunder",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"Thunder\".",
+      "annotation_text": "Viconian marker \"Thunder\" on page 71 (\"The Trial of HCE\"): Giambattista Vico's cyclical philosophy — divine, heroic, and human ages followed by thundering ricorso — structures this passage within the public trial and persecution of HCE, the ballad of Hosty, and the testimony of witnesses. The current Age of Gods phase shapes the language, institutional imagery, and historical echoes of the dream.",
       "categories": [
         "vico",
         "ricorso",
@@ -40,12 +60,16 @@
         "giambattista-vico"
       ],
       "cross_references": [
-        "003.01"
+        "003.02",
+        "032.05",
+        "151.10",
+        "260.05"
       ],
       "sources": [
-        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
-        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
+        "Vico, Giambattista. Scienza Nuova. https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel. Dante... Bruno. Vico.. Joyce. https://archive.org/details/ourexagminationr0000unse",
+        "Ricorso.net: Viconian Structure in FW. https://www.ricorso.net",
+        "FinnegansWeb: Vico's Cycles. https://www.finnegansweb.com"
       ],
       "contributors": [
         "joycean-scholar",

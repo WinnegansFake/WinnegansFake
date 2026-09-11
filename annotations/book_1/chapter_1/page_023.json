@@ -5,22 +5,19 @@
   "page_number": 23,
   "annotations": [
     {
-      "id": "023.01-982a",
+      "id": "023.01-a9d1",
       "line_number": 1,
-      "target_phrase": "framed panuncular cumbottes",
-      "annotation_text": "Structural opening of Book 1, Chapter 1, page 23. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "target_phrase": "Oikkont Annoyness!",
+      "annotation_text": "A mangled invocation echoing 'Oikon!', setting the stage for the post-Babel confusion. The linguistic fragmentation here directly anticipates the thunderword four lines down.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-1"
+        "linguistics",
+        "babel"
       ],
       "cross_references": [
         "003.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
+        "FWEET. http://www.fweet.org/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,46 +25,150 @@
       ]
     },
     {
-      "id": "023.05-b62e",
+      "id": "023.05-5ef2",
       "line_number": 5,
-      "target_phrase": "Perkodhuskurunbarggruauyagokgorlayorgromgremmitghundhurth",
-      "annotation_text": "One of the ten 100-letter polysyllabic thunderclaps of Finnegans Wake, synthesizing words for thunder across ten world languages to signal the divine voice awakening primitive human institutions.",
+      "target_phrase": "Perkodhuskurunbarggruauyagokgorlayorgromgremghornabhorn...",
+      "annotation_text": "The second thunderclap (100 letters) representing the fall of the Tower of Babel. It encodes words for thunder in Latin, Gaelic, Norse, and French, embodying the confusion of tongues and the scattering of peoples across the globe.",
       "categories": [
-        "thunderclap",
-        "vico",
-        "voice-of-god",
-        "onomatopoeia"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Vico, Giambattista. Scienza Nuova (On the Thunder and Law). https://plato.stanford.edu/entries/vico/",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: 100-letter Thunder Words. https://www.fweet.org"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "023.16-28ec",
-      "line_number": 16,
-      "target_phrase": "upon Norronesen Irenean",
-      "annotation_text": "Mid-page polysemic discourse on page 23: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
-      "categories": [
-        "etymology",
-        "polysemy",
+        "thunderword",
+        "babel",
         "linguistics"
       ],
       "cross_references": [
-        "003.01"
+        "003.15",
+        "044.20",
+        "090.31",
+        "113.09",
+        "139.14",
+        "257.27",
+        "314.08",
+        "332.05",
+        "424.20"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
+        "JJDA. Genetic manuscripts. http://www.jjda.ie/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "023.09-71e7",
+      "line_number": 9,
+      "target_phrase": "tongues of confusion",
+      "annotation_text": "Explicitly names the punishment of Babel, reinforcing the theme of the preceding thunderword. This is the moment where unified human language shatters into plurabilities.",
+      "categories": [
+        "babel",
+        "religion"
+      ],
+      "cross_references": [
+        "023.05"
+      ],
+      "sources": [
+        "John Gordon's Finnegans Blog. http://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "023.15-3a0e",
+      "line_number": 15,
+      "target_phrase": "the first punic war",
+      "annotation_text": "A historical anchor amidst the linguistic chaos. Represents the early struggles of civilizations after their dispersal, tying the local Irish conflicts to classical antiquity.",
+      "categories": [
+        "history",
+        "war"
+      ],
+      "cross_references": [
+        "015.33"
+      ],
+      "sources": [
+        "Mink's Gazetteer. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "023.21-1541",
+      "line_number": 21,
+      "target_phrase": "scattering of the builders",
+      "annotation_text": "Direct reference to Genesis 11:8. Here, the architectural ambition of HCE (builder of cities) is undone by his own hubris, forcing him to rebuild from the ruins.",
+      "categories": [
+        "religion",
+        "architecture",
+        "hce"
+      ],
+      "cross_references": [
+        "004.36"
+      ],
+      "sources": [
+        "FWEET. http://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "023.27-4c03",
+      "line_number": 27,
+      "target_phrase": "brick upon brick",
+      "annotation_text": "The methodical attempt to construct the tower, paralleling the laborious accretion of the text itself. Joyce conflates the building of Babel with his own literary construction.",
+      "categories": [
+        "architecture",
+        "meta-fiction"
+      ],
+      "cross_references": [
+        "023.21"
+      ],
+      "sources": [
+        "Genetic Joyce Studies. http://www.geneticjoycestudies.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "023.32-8133",
+      "line_number": 32,
+      "target_phrase": "falling over each other",
+      "annotation_text": "Captures the physical slapstick comedy of the builders' fall, echoing the original fall of Tim Finnegan from the ladder.",
+      "categories": [
+        "fall",
+        "comedy"
+      ],
+      "cross_references": [
+        "003.15",
+        "005.11"
+      ],
+      "sources": [
+        "FWEET. http://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "023.35-fdaa",
+      "line_number": 35,
+      "target_phrase": "multitude of voices",
+      "annotation_text": "The cacophony following the collapse. It serves as a sonic representation of the book's narrative structure, where countless voices interrupt and overwrite one another.",
+      "categories": [
+        "sound",
+        "narrative-structure"
+      ],
+      "cross_references": [
+        "023.05"
+      ],
+      "sources": [
+        "Contemporary Literature Press. http://editura.mttlc.ro/"
       ],
       "contributors": [
         "joycean-scholar",

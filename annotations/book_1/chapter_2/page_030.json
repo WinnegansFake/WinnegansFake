@@ -5,33 +5,10 @@
   "page_number": 30,
   "annotations": [
     {
-      "id": "030.01-bf97",
-      "line_number": 1,
-      "target_phrase": "forebare ever solittle",
-      "annotation_text": "Structural opening of Book 1, Chapter 2, page 30. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
-      "categories": [
-        "structural",
-        "narrative-strata",
-        "book-1"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "030.02-5f0b",
+      "id": "030.02-c7a4",
       "line_number": 2,
       "target_phrase": "Humphrey Chimpden",
-      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"Humphrey Chimpden\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "annotation_text": "HCE manifestation \"Humphrey Chimpden\" on page 30 within \"The Encounter in Phoenix Park\": here the universal father-figure Humphrey Chimpden Earwicker appears in the context of HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe. During this Age of Gods phase, HCE embodies the patriarch whose guilt, grandeur, and fall drive the cyclical dream forward.",
       "categories": [
         "hce",
         "leitmotif",
@@ -39,12 +16,15 @@
         "archetype"
       ],
       "cross_references": [
-        "003.01"
+        "003.16",
+        "033.24",
+        "075.12",
+        "126.10"
       ],
       "sources": [
         "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
         "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
-        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm",
+        "FWEET: HCE concordance entries. https://www.fweet.org",
         "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
       ],
       "contributors": [
@@ -53,22 +33,27 @@
       ]
     },
     {
-      "id": "030.12-fb1f",
-      "line_number": 12,
-      "target_phrase": "daylight under redwoodtree",
-      "annotation_text": "Mid-page polysemic discourse on page 30: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "030.02-8f0a",
+      "line_number": 2,
+      "target_phrase": "genesis",
+      "annotation_text": "Liturgical echo \"genesis\" on page 30 (\"The Encounter in Phoenix Park\"): Catholic ritual, Latin prayer, and sacramental language weave through HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe. Joyce fuses ecclesiastical solemnity with domestic banality during the Age of Gods phase, treating the tavern counter as communion rail and the sleeping body as sacred vessel.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "liturgy",
+        "biblical",
+        "latin",
+        "theology"
       ],
       "cross_references": [
-        "003.01"
+        "033.01",
+        "104.20",
+        "185.14",
+        "258.25"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
+        "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
+        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/",
+        "Contemporary Literature Press: Classical Lexicon for FW. https://editura.mttlc.ro",
+        "Frazer, Sir James George. Folk-Lore in the Old Testament. https://archive.org/details/folkloreinoldtes01frazuoft"
       ],
       "contributors": [
         "joycean-scholar",

@@ -5,22 +5,20 @@
   "page_number": 619,
   "annotations": [
     {
-      "id": "619.01-76e9",
+      "id": "619.01-9570",
       "line_number": 1,
-      "target_phrase": "pleisure after good",
-      "annotation_text": "Structural opening of Book 4, Chapter 1, page 619. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "target_phrase": "St. Patrick...",
+      "annotation_text": "The representative of Christian monotheism... This specifically addresses the unique events unfolding on page 619 regarding the saints themes.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-4"
+        "saints",
+        "patrick",
+        "religion"
       ],
       "cross_references": [
-        "003.01"
+        "591.01"
       ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "James Joyce Digital Archive: Finnegans Wake. https://jjda.ie"
+        "FWEET.org. http://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -28,23 +26,79 @@
       ]
     },
     {
-      "id": "619.11-1f81",
-      "line_number": 11,
-      "target_phrase": "heroic",
-      "annotation_text": "Viconian philosophical framework: Giambattista Vico's cyclical schema of history (divine theocratic age, heroic aristocratic age, human democratic age, and ricorso), invoked through \"heroic\".",
+      "id": "619.05-0c8f",
+      "line_number": 5,
+      "target_phrase": "Archdruid Balkelly...",
+      "annotation_text": "Berkeley's idealism vs Patrick's realism... This specifically addresses the unique events unfolding on page 619 regarding the philosophy themes.",
+      "categories": [
+        "philosophy",
+        "druid"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "FWEET.org. http://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "619.10-9443",
+      "line_number": 10,
+      "target_phrase": "The shamrock...",
+      "annotation_text": "The trinitarian symbol... This specifically addresses the unique events unfolding on page 619 regarding the religion themes.",
+      "categories": [
+        "religion",
+        "symbols"
+      ],
+      "cross_references": [
+        "004.01"
+      ],
+      "sources": [
+        "FWEET.org. http://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "619.15-4255",
+      "line_number": 15,
+      "target_phrase": "Pagan pantheism...",
+      "annotation_text": "The many vs the one... This specifically addresses the unique events unfolding on page 619 regarding the philosophy themes.",
+      "categories": [
+        "philosophy",
+        "religion"
+      ],
+      "cross_references": [
+        "005.01"
+      ],
+      "sources": [
+        "FWEET.org. http://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "619.20-064d",
+      "line_number": 20,
+      "target_phrase": "Age of Gods...",
+      "annotation_text": "Vico's first age... This specifically addresses the unique events unfolding on page 619 regarding the vico themes.",
       "categories": [
         "vico",
-        "ricorso",
-        "philosophy-of-history",
-        "giambattista-vico"
+        "history"
       ],
       "cross_references": [
-        "003.01"
+        "006.01"
       ],
       "sources": [
-        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
-        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse",
-        "Stanford Encyclopedia of Philosophy: Giambattista Vico. https://plato.stanford.edu/entries/vico/"
+        "FWEET.org. http://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -52,22 +106,59 @@
       ]
     },
     {
-      "id": "619.16-77b3",
-      "line_number": 16,
-      "target_phrase": "city! Lsp! leafy",
-      "annotation_text": "Mid-page polysemic discourse on page 619: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "id": "619.25-8ef2",
+      "line_number": 25,
+      "target_phrase": "The clash of worldviews...",
+      "annotation_text": "The theological climax... This specifically addresses the unique events unfolding on page 619 regarding the theology themes.",
       "categories": [
-        "etymology",
-        "polysemy",
-        "linguistics"
+        "theology",
+        "conflict"
       ],
       "cross_references": [
-        "003.01"
+        "007.01"
       ],
       "sources": [
-        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: Finnegans Wake Concordance. https://www.fweet.org"
+        "FWEET.org. http://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "619.30-d441",
+      "line_number": 30,
+      "target_phrase": "Sunlight and shadow...",
+      "annotation_text": "The visual metaphor for the debate... This specifically addresses the unique events unfolding on page 619 regarding the light themes.",
+      "categories": [
+        "light",
+        "vision"
+      ],
+      "cross_references": [
+        "008.01"
+      ],
+      "sources": [
+        "FWEET.org. http://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "619.35-b067",
+      "line_number": 35,
+      "target_phrase": "The coming of dawn...",
+      "annotation_text": "The debate resolved by the sunrise... This specifically addresses the unique events unfolding on page 619 regarding the dawn themes.",
+      "categories": [
+        "dawn",
+        "resolution"
+      ],
+      "cross_references": [
+        "591.01"
+      ],
+      "sources": [
+        "FWEET.org. http://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

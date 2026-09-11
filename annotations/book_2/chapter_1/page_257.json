@@ -8,7 +8,7 @@
       "id": "257.01-3d22",
       "line_number": 1,
       "target_phrase": "Izzy",
-      "annotation_text": "Issy (Isolde), the seductive daughter and split-personality siren conversing with her mirror reflection, represented in the motif \"Izzy\".",
+      "annotation_text": "Issy/daughter figure \"Izzy\" on page 257 (\"The Mime of Mick, Nick and the Maggies\"): the narcissistic mirror-daughter, modeled on Isolde and Swift's dual muses Stella and Vanessa, appears here within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. Her prismatic splitting into twenty-eight Rainbow Girls reflects the cycle's Age of Heroes phase through youthful seduction and self-reflection.",
       "categories": [
         "issy",
         "mirror-twin",
@@ -16,12 +16,16 @@
         "psychology"
       ],
       "cross_references": [
-        "003.01"
+        "143.28",
+        "226.01",
+        "248.01",
+        "279.01"
       ],
       "sources": [
         "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
         "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
-        "Genetic Joyce Studies: Finnegans Wake Notebooks. https://www.geneticjoycestudies.org"
+        "Genetic Joyce Studies: Issy notebooks. https://www.geneticjoycestudies.org",
+        "FWEET: Issy / Isolde concordance. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",
@@ -32,7 +36,7 @@
       "id": "257.02-24d9",
       "line_number": 2,
       "target_phrase": "stella",
-      "annotation_text": "Satirical and biographical presence of Jonathan Swift (stella): Dean of St. Patrick's Cathedral, his dual lovers Stella and Vanessa (mirroring Issy), and his ferocious political satires.",
+      "annotation_text": "Swiftian presence \"stella\" on page 257 (\"The Mime of Mick, Nick and the Maggies\"): the Dean of St. Patrick's Cathedral haunts this passage within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. His dual lovers Stella and Vanessa mirror Issy's split personalities, while his savage satire infuses the Age of Heroes dream with political and scatological ferocity.",
       "categories": [
         "jonathan-swift",
         "dublin-history",
@@ -40,12 +44,16 @@
         "satire"
       ],
       "cross_references": [
-        "003.01"
+        "140.08",
+        "160.06",
+        "229.01",
+        "292.28"
       ],
       "sources": [
         "Swift, Jonathan. Gulliver's Travels. https://www.gutenberg.org/ebooks/829",
-        "Swift, Jonathan. A Tale of a Tub. https://www.gutenberg.org/ebooks/4737",
-        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre"
+        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre",
+        "FWEET: Swift concordance. https://www.fweet.org",
+        "Ricorso.net: Jonathan Swift. https://www.ricorso.net"
       ],
       "contributors": [
         "joycean-scholar",
@@ -56,7 +64,7 @@
       "id": "257.24-a399",
       "line_number": 24,
       "target_phrase": "Lukkedoerendunandurraskewdylooshoofermoyportertoo",
-      "annotation_text": "One of the ten 100-letter polysyllabic thunderclaps of Finnegans Wake, synthesizing words for thunder across ten world languages to signal the divine voice awakening primitive human institutions.",
+      "annotation_text": "Polysyllabic thunderclap on page 257 (\"The Mime of Mick, Nick and the Maggies\"): one of ten 100-letter words synthesizing thunder across world languages, signaling a Viconian cataclysm within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. This divine acoustic blast — fusing Hindi, Greek, Latin, French, Italian, Irish, and Norse roots — marks a civilizational transition in the Age of Heroes phase.",
       "categories": [
         "thunderclap",
         "vico",
@@ -64,12 +72,16 @@
         "onomatopoeia"
       ],
       "cross_references": [
-        "003.01"
+        "003.15",
+        "023.05",
+        "044.20",
+        "090.31"
       ],
       "sources": [
-        "Vico, Giambattista. Scienza Nuova (On the Thunder and Law). https://plato.stanford.edu/entries/vico/",
+        "Vico, Giambattista. Scienza Nuova (On the Thunder). https://plato.stanford.edu/entries/vico/",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "Fweet.org: 100-letter Thunder Words. https://www.fweet.org"
+        "FinnegansWeb: Thunderwords Guide. https://www.finnegansweb.com",
+        "FWEET: 100-letter Thunder Words. https://www.fweet.org"
       ],
       "contributors": [
         "joycean-scholar",

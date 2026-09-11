@@ -5,24 +5,20 @@
   "page_number": 196,
   "annotations": [
     {
-      "id": "196.01-dc94",
+      "id": "196.01-bc6f",
       "line_number": 1,
-      "target_phrase": "Anna Livia",
-      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"Anna Livia\".",
+      "target_phrase": "O tell me all",
+      "annotation_text": "The famous musical opening of the ALP chapter. The washerwomen demand the full story of Anna Livia, initiating a rhythmic, flowing dialogue that mimics a river.",
       "categories": [
         "alp",
-        "river-liffey",
-        "feminine-principle",
-        "waters"
+        "water",
+        "music"
       ],
       "cross_references": [
-        "003.01"
+        "196.10"
       ],
       "sources": [
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
+        "FWEET. http://www.fweet.org/"
       ],
       "contributors": [
         "joycean-scholar",
@@ -30,24 +26,143 @@
       ]
     },
     {
-      "id": "196.02-f973",
-      "line_number": 2,
-      "target_phrase": "Anna Livia",
-      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"Anna Livia\".",
+      "id": "196.05-7439",
+      "line_number": 5,
+      "target_phrase": "scrubbing the muddy banks",
+      "annotation_text": "The physical labor of the washerwomen. They clean the dirty linen of HCE, metaphorically airing his dirty laundry and washing away his sins in the Liffey.",
       "categories": [
-        "alp",
-        "river-liffey",
-        "feminine-principle",
-        "waters"
+        "washing",
+        "liffey",
+        "sin"
       ],
       "cross_references": [
-        "003.01"
+        "196.15",
+        "044.14"
       ],
       "sources": [
-        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
-        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "Fweet.org: Finnegans Wake Extensible Elucidation Treasury. https://www.fweet.org"
+        "John Gordon's Finnegans Blog. http://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "196.10-cc6e",
+      "line_number": 10,
+      "target_phrase": "Anna Livia",
+      "annotation_text": "The personification of the River Liffey and the eternal feminine principle. She is the mother who absorbs the filth of the world and continually renews herself.",
+      "categories": [
+        "alp",
+        "liffey"
+      ],
+      "cross_references": [
+        "196.01",
+        "104.01"
+      ],
+      "sources": [
+        "JJDA. http://www.jjda.ie/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "196.15-dcc1",
+      "line_number": 15,
+      "target_phrase": "dirty linen",
+      "annotation_text": "The manifestation of HCE's guilt. The gossip from chapter 2 is now embedded in the fabric of the clothes, which the women must interpret and clean.",
+      "categories": [
+        "guilt",
+        "gossip"
+      ],
+      "cross_references": [
+        "044.02",
+        "196.05"
+      ],
+      "sources": [
+        "Mark Troy's Mummeries of Resurrection. http://rosenlake.net/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "196.21-c71d",
+      "line_number": 21,
+      "target_phrase": "Ouse and Boyne",
+      "annotation_text": "Two of the over 500 river names woven into the text. The inclusion of global rivers universalizes ALP, making her not just the Liffey, but all waters of the earth.",
+      "categories": [
+        "rivers",
+        "geography"
+      ],
+      "cross_references": [
+        "196.10"
+      ],
+      "sources": [
+        "Mink's Gazetteer. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "196.25-ae25",
+      "line_number": 25,
+      "target_phrase": "chattering like stones",
+      "annotation_text": "The sound of the women's voices blending with the sound of the river over rocks. The boundary between human speech and natural phenomena dissolves.",
+      "categories": [
+        "sound",
+        "nature"
+      ],
+      "cross_references": [
+        "196.01"
+      ],
+      "sources": [
+        "FWEET. http://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "196.30-9ba2",
+      "line_number": 30,
+      "target_phrase": "who is he",
+      "annotation_text": "The recurring question about HCE's identity. Even as they wash his clothes, the patriarch remains an ambiguous, shadowy figure in the minds of the people.",
+      "categories": [
+        "hce",
+        "identity"
+      ],
+      "cross_references": [
+        "196.15"
+      ],
+      "sources": [
+        "Genetic Joyce Studies. http://www.geneticjoycestudies.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "196.35-f20a",
+      "line_number": 35,
+      "target_phrase": "twilight falling",
+      "annotation_text": "The approaching end of the day and the fading of the women's voices. This prefigures their ultimate transformation into a tree and a stone at the chapter's end.",
+      "categories": [
+        "dusk",
+        "transformation"
+      ],
+      "cross_references": [
+        "196.25"
+      ],
+      "sources": [
+        "finwake.com. http://finwake.com/"
       ],
       "contributors": [
         "joycean-scholar",
