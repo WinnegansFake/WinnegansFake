@@ -27,11 +27,20 @@ export function CookieConsentModal() {
   } = useTheme();
 
   const [selectedDuration, setSelectedDuration] = useState<CookieDuration>('30-days');
+  const [customDays, setCustomDays] = useState<number>(90);
   const [showDataDetails, setShowDataDetails] = useState<boolean>(false);
 
   if (!pendingCookieChange) return null;
 
-  const durations: CookieDuration[] = ['session', '1-day', '7-days', '30-days', '1-year'];
+  const durations: CookieDuration[] = [
+    'session',
+    '1-day',
+    '7-days',
+    '30-days',
+    '1-year',
+    'forever',
+    'custom',
+  ];
 
   // Prepare exact payload preview so user has 100% transparency
   const previewPayload = {
@@ -40,6 +49,7 @@ export function CookieConsentModal() {
     themeName: currentTheme.name,
     overrides: proposedOverrides && Object.keys(proposedOverrides).length > 0 ? proposedOverrides : 'none',
     duration: selectedDuration,
+    customDays: selectedDuration === 'custom' ? customDays : undefined,
     savedAt: new Date().toISOString(),
     securityFlags: {
       Path: '/',
@@ -82,7 +92,7 @@ export function CookieConsentModal() {
         </div>
 
         <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-          Would you like to preserve this reading theme across sessions? Under our <strong>Zero-Tracking Policy</strong>, cookies are strictly restricted to local display preferences.
+          Would you like to preserve this reading theme across sessions? Under our <strong>Zero-Tracking Policy</strong>, cookies are strictly restricted to local display preferences and can be stored for as long as you want.
         </p>
 
         {/* Duration Selection */}
@@ -103,11 +113,29 @@ export function CookieConsentModal() {
                     : 'bg-slate-950/60 border-slate-800 text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
                 }`}
               >
-                <span>{getDurationLabel(dur).split('(')[0]}</span>
+                <span>{dur === 'custom' ? 'Custom Days...' : getDurationLabel(dur).split('(')[0]}</span>
                 {selectedDuration === dur && <Check className="w-3.5 h-3.5 text-emerald-400 ml-2 shrink-0" />}
               </button>
             ))}
           </div>
+
+          {/* Custom Duration Input */}
+          {selectedDuration === 'custom' && (
+            <div className="flex items-center space-x-3 p-3 rounded-xl bg-slate-950/80 border border-emerald-500/40 animate-in fade-in duration-150">
+              <label className="text-xs font-mono text-emerald-400 flex items-center space-x-1.5">
+                <span>Store for:</span>
+              </label>
+              <input
+                type="number"
+                min={1}
+                max={36500}
+                value={customDays}
+                onChange={(e) => setCustomDays(Math.max(1, parseInt(e.target.value) || 1))}
+                className="w-24 px-2 py-1 text-xs font-mono rounded bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-emerald-400"
+              />
+              <span className="text-xs text-slate-300">Days ({Math.round(customDays / 365 * 10) / 10} years)</span>
+            </div>
+          )}
         </div>
 
         {/* Data Transparency Accordion */}
@@ -147,7 +175,7 @@ export function CookieConsentModal() {
           </button>
           <button
             type="button"
-            onClick={() => savePreferencesAsCookie(selectedDuration)}
+            onClick={() => savePreferencesAsCookie(selectedDuration, selectedDuration === 'custom' ? customDays : undefined)}
             className="w-full sm:w-auto flex items-center justify-center space-x-2 px-5 py-2 rounded-xl text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white shadow-lg shadow-emerald-900/40 transition-all"
           >
             <ShieldCheck className="w-4 h-4" />

@@ -48,11 +48,31 @@ export interface CustomThemeOverrides extends Partial<ThemeColors> {
   lineHeight?: number; // multiplier e.g. 1.75
 }
 
-export type CookieDuration = 'session' | '1-day' | '7-days' | '30-days' | '1-year';
+export type CookieDuration = 'session' | '1-day' | '7-days' | '30-days' | '1-year' | 'forever' | 'custom';
 
 export interface ThemeCookiePayload {
   themeId: string;
   overrides?: CustomThemeOverrides;
   savedAt: string; // ISO timestamp
   duration: CookieDuration;
+  customDays?: number;
+}
+
+export interface BookmarkItem {
+  id: string;
+  page: number; // Joyce page 1 to 628
+  line?: number; // Line coordinate 1 to 36
+  annotationId?: string;
+  title: string;
+  excerpt?: string;
+  note?: string;
+  createdAt: string; // ISO timestamp
+}
+
+export interface BookmarkCookiePayload {
+  version: '1.0.0';
+  bookmarks: BookmarkItem[];
+  savedAt: string; // ISO timestamp
+  duration: CookieDuration;
+  customDays?: number;
 }

@@ -11,6 +11,10 @@ import {
   createCustomTheme,
   applyThemeVariables,
   THEME_COOKIE_NAME,
+  BOOKMARK_COOKIE_NAME,
+  writeBookmarkCookie,
+  readBookmarkCookie,
+  deleteBookmarkCookie,
 } from '../packages/theme/src/index.js';
 
 describe('@winnegans/theme Package', () => {
@@ -52,14 +56,65 @@ describe('@winnegans/theme Package', () => {
     expect(cyberpunk.category).toBe('fun');
   });
 
-  it('should calculate cookie durations accurately', () => {
+  it('should calculate cookie durations accurately including forever and custom duration', () => {
     expect(getDurationSeconds('session')).toBeNull();
     expect(getDurationSeconds('1-day')).toBe(86400);
     expect(getDurationSeconds('7-days')).toBe(604800);
     expect(getDurationSeconds('30-days')).toBe(2592000);
     expect(getDurationSeconds('1-year')).toBe(31536000);
+    expect(getDurationSeconds('forever')).toBe(315360000);
+    expect(getDurationSeconds('custom', 90)).toBe(90 * 86400);
+    expect(getDurationSeconds('custom', 3650)).toBe(3650 * 86400);
 
     expect(getDurationLabel('30-days')).toContain('30 Days');
+    expect(getDurationLabel('forever')).toContain('Forever');
+    expect(getDurationLabel('custom', 180)).toContain('180 Days');
+  });
+
+  it('should read, write, and delete bookmark cookies with user-defined duration', () => {
+    let mockCookie = '';
+    (globalThis as any).document = {
+      get cookie() {
+        return mockCookie;
+      },
+      set cookie(val: string) {
+        const nameVal = val.split(';')[0];
+        if (val.includes('max-age=0')) {
+          mockCookie = '';
+        } else {
+          mockCookie = nameVal;
+        }
+      },
+    };
+
+    const payload = {
+      version: '1.0.0' as const,
+      bookmarks: [
+        {
+          id: 'bm-003.01',
+          page: 3,
+          line: 1,
+          title: 'Page 003, Line 01',
+          excerpt: "riverrun, past Eve and Adam's...",
+          createdAt: new Date().toISOString(),
+        },
+      ],
+      savedAt: new Date().toISOString(),
+      duration: 'forever' as const,
+    };
+
+    writeBookmarkCookie(payload);
+    expect(mockCookie).toContain(BOOKMARK_COOKIE_NAME);
+
+    const retrieved = readBookmarkCookie();
+    expect(retrieved).toBeDefined();
+    expect(retrieved?.bookmarks.length).toBe(1);
+    expect(retrieved?.bookmarks[0].page).toBe(3);
+    expect(retrieved?.bookmarks[0].title).toBe('Page 003, Line 01');
+
+    deleteBookmarkCookie();
+    const afterDelete = readBookmarkCookie();
+    expect(afterDelete).toBeNull();
   });
 
   it('should include official Solarized Dark and Light themes per Ethan Schoonover specification', () => {

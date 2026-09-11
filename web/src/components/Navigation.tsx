@@ -11,10 +11,13 @@ import {
   Menu,
   X,
   Shield,
-  Layers
+  Layers,
+  Bookmark,
 } from 'lucide-react';
 import { GITHUB_REPO_URL } from '@/lib/constants';
 import { ThemeSwitcher } from './ThemeSwitcher';
+import { useBookmarks } from './BookmarkContext';
+import { BookmarksModal } from './BookmarksModal';
 
 function GithubIcon({ className = "w-4 h-4" }: { className?: string }) {
   return (
@@ -27,6 +30,7 @@ function GithubIcon({ className = "w-4 h-4" }: { className?: string }) {
 export function Navigation() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { bookmarks, setShowBookmarksModal } = useBookmarks();
 
   const navLinks = [
     { href: '/', label: 'Overview', icon: Compass },
@@ -90,7 +94,22 @@ export function Navigation() {
           </nav>
 
           {/* Right Action buttons */}
-          <div className="hidden md:flex items-center space-x-3">
+          <div className="hidden md:flex items-center space-x-2.5">
+            <button
+              type="button"
+              onClick={() => setShowBookmarksModal(true)}
+              className="relative inline-flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-800 hover:border-slate-700 transition-colors cursor-pointer"
+              title={`Reading Bookmarks (${bookmarks.length} saved)`}
+              aria-label="Open Reading Bookmarks"
+            >
+              <Bookmark className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Bookmarks</span>
+              {bookmarks.length > 0 && (
+                <span className="px-1.5 py-0.2 rounded-full text-[10px] font-mono font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">
+                  {bookmarks.length}
+                </span>
+              )}
+            </button>
             <ThemeSwitcher />
             <div className="flex items-center space-x-1 text-[11px] font-mono text-slate-400 bg-slate-900/80 px-2.5 py-1 rounded-md border border-slate-800">
               <Shield className="w-3.5 h-3.5 text-emerald-400" />
@@ -109,6 +128,20 @@ export function Navigation() {
 
           {/* Mobile menu button */}
           <div className="flex md:hidden items-center space-x-2">
+            <button
+              type="button"
+              onClick={() => setShowBookmarksModal(true)}
+              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white relative"
+              title="Reading Bookmarks"
+              aria-label="Reading Bookmarks"
+            >
+              <Bookmark className="w-4 h-4 text-emerald-400" />
+              {bookmarks.length > 0 && (
+                <span className="absolute -top-1 -right-1 px-1 min-w-4 h-4 rounded-full text-[9px] font-mono font-bold bg-emerald-500 text-black flex items-center justify-center">
+                  {bookmarks.length}
+                </span>
+              )}
+            </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white"
@@ -142,6 +175,24 @@ export function Navigation() {
               </Link>
             );
           })}
+          <button
+            type="button"
+            onClick={() => {
+              setMobileMenuOpen(false);
+              setShowBookmarksModal(true);
+            }}
+            className="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900 transition-all cursor-pointer"
+          >
+            <div className="flex items-center space-x-2">
+              <Bookmark className="w-4 h-4 text-emerald-400" />
+              <span>Reading Bookmarks</span>
+            </div>
+            {bookmarks.length > 0 && (
+              <span className="px-2 py-0.5 rounded-full text-xs font-mono font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">
+                {bookmarks.length}
+              </span>
+            )}
+          </button>
           <div className="pt-3 border-t border-slate-800 flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <ThemeSwitcher />
@@ -158,6 +209,9 @@ export function Navigation() {
           </div>
         </div>
       )}
+
+      {/* Global Bookmarks Modal when not on reader page */}
+      {pathname !== '/reader' && <BookmarksModal />}
     </header>
   );
 }

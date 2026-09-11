@@ -42,7 +42,8 @@ import {
   SlidersHorizontal,
   RotateCcw,
   FolderTree,
-  GraduationCap
+  GraduationCap,
+  BookmarkCheck
 } from 'lucide-react';
 import {
   getBasePath,
@@ -64,6 +65,8 @@ import {
 import { browserEpub, ParsedEpubPage } from '@/lib/epubReader';
 import { AnnotationHoverPopup, HoverPopupData } from './AnnotationHoverPopup';
 import { segmentAnnotatedLine } from '@/lib/lineAnnotator';
+import { useBookmarks } from './BookmarkContext';
+import { BookmarksModal } from './BookmarksModal';
 
 export function WakeReader() {
   const [currentPage, setCurrentPage] = useState<number>(3);
@@ -83,6 +86,15 @@ export function WakeReader() {
   const [fullscreenShowFilters, setFullscreenShowFilters] = useState<boolean>(false);
   const [hoverPopup, setHoverPopup] = useState<HoverPopupData | null>(null);
   const popupTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Bookmarks hook (cookie-backed)
+  const {
+    bookmarks,
+    toggleBookmark,
+    isPageBookmarked,
+    isLineBookmarked,
+    setShowBookmarksModal,
+  } = useBookmarks();
 
   // Filters, layers & sorting
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -156,14 +168,42 @@ export function WakeReader() {
   };
 
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const p = parseInt(params.get('page') || '', 10);
+      if (!isNaN(p) && p >= 1 && p <= 628) {
+        setCurrentPage(p);
+        setPageInput(String(p));
+      }
+      const l = parseInt(params.get('line') || '', 10);
+      if (!isNaN(l)) {
+        setTimeout(() => {
+          const el = document.getElementById(`line-${l}`);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 350);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
     loadPageData(currentPage);
     setPageInput(String(currentPage));
   }, [currentPage]);
 
-  const goToPage = (p: number) => {
+  const goToPage = (p: number, line?: number) => {
     const valid = Math.max(1, Math.min(628, p));
     setCurrentPage(valid);
     setPageInput(String(valid));
+    if (typeof window !== 'undefined' && window.history.replaceState) {
+      const url = new URL(window.location.href);
+      url.searchParams.set('page', String(valid));
+      if (line) {
+        url.searchParams.set('line', String(line));
+      } else {
+        url.searchParams.delete('line');
+      }
+      window.history.replaceState({}, '', url.toString());
+    }
   };
 
   const handlePageSubmit = (e: React.FormEvent) => {
@@ -766,16 +806,55 @@ export function WakeReader() {
 
             <button
               onClick={() => setIsCreatingInPanel(!isCreatingInPanel)}
-              className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-emerald-400 hover:text-emerald-300 border border-slate-700 transition-colors"
+              className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-emerald-400 hover:text-emerald-300 border border-slate-700 transition-colors cursor-pointer"
             >
               <PlusCircle className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">Add Note</span>
             </button>
 
+            {/* Quick Toggle Bookmark for Current Page */}
+            <button
+              onClick={() => toggleBookmark(currentPage)}
+              className={`inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-medium border transition-colors cursor-pointer ${
+                isPageBookmarked(currentPage)
+                  ? 'bg-amber-950/80 text-amber-300 border-amber-500/60 shadow-sm'
+                  : 'bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border-slate-700'
+              }`}
+              title={
+                isPageBookmarked(currentPage)
+                  ? 'Page is bookmarked in cookie (click to remove)'
+                  : 'Bookmark current page in cookie'
+              }
+            >
+              <Bookmark
+                className={`w-3.5 h-3.5 ${
+                  isPageBookmarked(currentPage) ? 'fill-amber-400 text-amber-400' : ''
+                }`}
+              />
+              <span className="hidden sm:inline">
+                {isPageBookmarked(currentPage) ? 'Bookmarked' : 'Bookmark'}
+              </span>
+            </button>
+
+            {/* Open Bookmarks List / Cookie Retention Manager */}
+            <button
+              onClick={() => setShowBookmarksModal(true)}
+              className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 transition-colors cursor-pointer"
+              title="Saved bookmarks stored in cookie"
+            >
+              <BookmarkCheck className="w-3.5 h-3.5 text-emerald-400" />
+              <span className="hidden sm:inline">Bookmarks</span>
+              {bookmarks.length > 0 && (
+                <span className="px-1.5 py-0.2 rounded-full text-[10px] font-mono bg-emerald-950 text-emerald-300 border border-emerald-500/40">
+                  {bookmarks.length}
+                </span>
+              )}
+            </button>
+
             <button
               type="button"
               onClick={toggleFullscreen}
-              className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm transition-all"
+              className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm transition-all cursor-pointer"
               title="Enter Fullscreen Zen Reading Mode (Press F)"
             >
               <Maximize2 className="w-3.5 h-3.5" />
@@ -964,6 +1043,7 @@ export function WakeReader() {
                 return (
                   <div
                     key={l.line}
+                    id={`line-${l.line}`}
                     className={`group flex items-start py-1 px-2 rounded-lg transition-colors ${
                       isSelected
                         ? 'bg-emerald-950/50 border border-emerald-500/40'
@@ -976,10 +1056,26 @@ export function WakeReader() {
                       {String(l.line).padStart(2, '0')}
                     </span>
                     {renderAnnotatedLineText(l, lineAnns)}
-                    <div className="flex items-center space-x-1 opacity-0 group-hover:opacity-100 transition-opacity ml-2">
+                    {isLineBookmarked(currentPage, l.line) && (
+                      <span className="p-0.5 text-amber-400 mr-1 shrink-0 select-none" title="Line is bookmarked in cookie">
+                        <Bookmark className="w-3.5 h-3.5 fill-amber-400" />
+                      </span>
+                    )}
+                    <div className="flex items-center space-x-1 opacity-0 group-hover:opacity-100 transition-opacity ml-1">
+                      <button
+                        onClick={() => toggleBookmark(currentPage, l.line, `Line ${l.line}`, l.text)}
+                        className={`p-1 rounded transition-colors cursor-pointer ${
+                          isLineBookmarked(currentPage, l.line)
+                            ? 'text-amber-400 fill-amber-400 bg-amber-950/40'
+                            : 'text-slate-400 hover:text-amber-400 hover:bg-slate-800'
+                        }`}
+                        title={isLineBookmarked(currentPage, l.line) ? 'Remove line bookmark' : 'Bookmark this line in cookie'}
+                      >
+                        <Bookmark className={`w-3.5 h-3.5 ${isLineBookmarked(currentPage, l.line) ? 'fill-amber-400' : ''}`} />
+                      </button>
                       <button
                         onClick={() => setIsCreatingForLine(l.line)}
-                        className="p-1 rounded text-slate-400 hover:text-emerald-400 hover:bg-slate-800"
+                        className="p-1 rounded text-slate-400 hover:text-emerald-400 hover:bg-slate-800 cursor-pointer"
                         title="Add annotation for this line"
                       >
                         <PlusCircle className="w-3.5 h-3.5" />
@@ -1363,12 +1459,12 @@ export function WakeReader() {
               </div>
             </div>
 
-            {/* Center: Quick Page Navigation */}
+            {/* Center: Quick Page Navigation & Bookmarks */}
             <div className="flex items-center space-x-2">
               <button
                 onClick={() => goToPage(currentPage - 1)}
                 disabled={currentPage <= 1}
-                className="p-1.5 rounded-lg border border-inherit/40 hover:bg-inherit/40 disabled:opacity-30 transition-all"
+                className="p-1.5 rounded-lg border border-inherit/40 hover:bg-inherit/40 disabled:opacity-30 transition-all cursor-pointer"
                 title="Previous Page (← or p)"
               >
                 <ChevronLeft className="w-4 h-4" />
@@ -1379,10 +1475,48 @@ export function WakeReader() {
               <button
                 onClick={() => goToPage(currentPage + 1)}
                 disabled={currentPage >= 628}
-                className="p-1.5 rounded-lg border border-inherit/40 hover:bg-inherit/40 disabled:opacity-30 transition-all"
+                className="p-1.5 rounded-lg border border-inherit/40 hover:bg-inherit/40 disabled:opacity-30 transition-all cursor-pointer"
                 title="Next Page (→ or n)"
               >
                 <ChevronRight className="w-4 h-4" />
+              </button>
+
+              {/* Bookmark Toggle in Fullscreen Header */}
+              <button
+                onClick={() => toggleBookmark(currentPage)}
+                className={`inline-flex items-center space-x-1 px-2.5 py-1 rounded-lg text-xs border transition-colors cursor-pointer ${
+                  isPageBookmarked(currentPage)
+                    ? 'bg-amber-950/80 text-amber-300 border-amber-500/60 shadow-sm'
+                    : 'border-inherit/30 hover:bg-inherit/40 opacity-70 hover:opacity-100'
+                }`}
+                title={
+                  isPageBookmarked(currentPage)
+                    ? 'Page is bookmarked in cookie (click to remove)'
+                    : 'Bookmark current page in cookie'
+                }
+              >
+                <Bookmark
+                  className={`w-3.5 h-3.5 ${
+                    isPageBookmarked(currentPage) ? 'fill-amber-400 text-amber-400' : ''
+                  }`}
+                />
+                <span className="hidden lg:inline text-[11px] font-mono">
+                  {isPageBookmarked(currentPage) ? 'Bookmarked' : 'Bookmark'}
+                </span>
+              </button>
+
+              {/* Bookmarks List Button */}
+              <button
+                onClick={() => setShowBookmarksModal(true)}
+                className="inline-flex items-center space-x-1 px-2 py-1 rounded-lg text-xs border border-inherit/30 bg-inherit/40 opacity-70 hover:opacity-100 hover:bg-inherit/60 transition-colors cursor-pointer"
+                title="Saved bookmarks stored in cookie"
+              >
+                <BookmarkCheck className="w-3.5 h-3.5 text-emerald-400" />
+                {bookmarks.length > 0 && (
+                  <span className="text-[10px] font-mono px-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/40">
+                    {bookmarks.length}
+                  </span>
+                )}
               </button>
             </div>
 
@@ -1603,6 +1737,7 @@ export function WakeReader() {
                       return (
                         <div
                           key={l.line}
+                          id={`line-${l.line}`}
                           className={`group flex items-start py-1 px-3 rounded-xl transition-colors ${
                             isSelected
                               ? 'bg-emerald-950/40 border border-emerald-500/40'
@@ -1618,6 +1753,24 @@ export function WakeReader() {
                             {String(l.line).padStart(2, '0')}
                           </span>
                           {renderAnnotatedLineText(l, lineAnns)}
+                          {isLineBookmarked(currentPage, l.line) && (
+                            <span className="p-0.5 text-amber-400 mr-2 shrink-0 select-none pt-1" title="Line is bookmarked in cookie">
+                              <Bookmark className="w-3.5 h-3.5 fill-amber-400" />
+                            </span>
+                          )}
+                          <div className="opacity-0 group-hover:opacity-100 transition-opacity ml-1 pt-1">
+                            <button
+                              onClick={() => toggleBookmark(currentPage, l.line, `Line ${l.line}`, l.text)}
+                              className={`p-1 rounded transition-colors cursor-pointer ${
+                                isLineBookmarked(currentPage, l.line)
+                                  ? 'text-amber-400 fill-amber-400 bg-amber-950/50'
+                                  : 'opacity-50 hover:opacity-100 hover:text-amber-400'
+                              }`}
+                              title={isLineBookmarked(currentPage, l.line) ? 'Remove line bookmark' : 'Bookmark this line in cookie'}
+                            >
+                              <Bookmark className={`w-3.5 h-3.5 ${isLineBookmarked(currentPage, l.line) ? 'fill-amber-400' : ''}`} />
+                            </button>
+                          </div>
                           {hasAnns && (
                             <button
                               type="button"
@@ -2195,8 +2348,41 @@ export function WakeReader() {
               </button>
               <span className="opacity-30">&bull;</span>
               <button
+                onClick={() => toggleBookmark(currentPage)}
+                className={`flex items-center space-x-1 cursor-pointer transition-colors ${
+                  isPageBookmarked(currentPage)
+                    ? 'text-amber-400'
+                    : 'opacity-70 hover:opacity-100 hover:text-amber-400'
+                }`}
+                title={
+                  isPageBookmarked(currentPage)
+                    ? 'Page is bookmarked in cookie (click to remove)'
+                    : 'Bookmark page in cookie'
+                }
+              >
+                <Bookmark
+                  className={`w-3.5 h-3.5 ${
+                    isPageBookmarked(currentPage) ? 'fill-amber-400 text-amber-400' : ''
+                  }`}
+                />
+                <span className="hidden sm:inline font-mono text-[11px]">
+                  {isPageBookmarked(currentPage) ? 'Bookmarked' : 'Bookmark'}
+                </span>
+              </button>
+              <button
+                onClick={() => setShowBookmarksModal(true)}
+                className="flex items-center space-x-1 opacity-70 hover:opacity-100 hover:text-emerald-400 transition-colors cursor-pointer"
+                title="Saved bookmarks stored in cookie"
+              >
+                <BookmarkCheck className="w-3.5 h-3.5 text-emerald-400" />
+                {bookmarks.length > 0 && (
+                  <span className="font-mono text-[10px]">({bookmarks.length})</span>
+                )}
+              </button>
+              <span className="opacity-30">&bull;</span>
+              <button
                 onClick={toggleFullscreen}
-                className="flex items-center space-x-1 text-emerald-400 hover:underline font-mono"
+                className="flex items-center space-x-1 text-emerald-400 hover:underline font-mono cursor-pointer"
                 title="Exit Fullscreen (Esc or F)"
               >
                 <span>Exit Fullscreen [Esc]</span>
@@ -2216,6 +2402,20 @@ export function WakeReader() {
           onMouseLeave={handlePopupMouseLeave}
         />
       )}
+
+      {/* 6. Bookmarks Drawer / Cookie Storage Modal */}
+      <BookmarksModal
+        currentPage={currentPage}
+        onNavigateToPage={(page, line) => {
+          goToPage(page);
+          if (line) {
+            setTimeout(() => {
+              const el = document.getElementById(`line-${line}`);
+              if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 180);
+          }
+        }}
+      />
     </div>
   );
 }

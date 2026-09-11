@@ -36,7 +36,7 @@ interface ThemeContextValue {
   pendingCookieChange: boolean;
   proposedThemeId: string | null;
   proposedOverrides: CustomThemeOverrides | null;
-  savePreferencesAsCookie: (duration: CookieDuration) => void;
+  savePreferencesAsCookie: (duration: CookieDuration, customDays?: number) => void;
   dismissCookiePrompt: (rememberChoice?: boolean) => void;
   clearCookieAndReset: () => void;
   hasStoredCookie: boolean;
@@ -132,7 +132,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
    * User confirms they want to save as a cookie with their chosen duration.
    */
   const savePreferencesAsCookie = useCallback(
-    (duration: CookieDuration) => {
+    (duration: CookieDuration, customDays?: number) => {
       const targetId = proposedThemeId || themeId;
       const targetOverrides = proposedOverrides || overrides;
 
@@ -141,6 +141,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
         overrides: Object.keys(targetOverrides).length > 0 ? targetOverrides : undefined,
         savedAt: new Date().toISOString(),
         duration,
+        customDays: duration === 'custom' ? customDays : undefined,
       };
 
       writeThemeCookie(payload);
