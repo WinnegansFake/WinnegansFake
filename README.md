@@ -23,14 +23,78 @@ This 6,300+ word monograph synthesizes the collected knowledge of the *Winnegans
 
 ---
 
-## ⚖️ Copyright Notice & Why Book Text is Omitted
+## 🌐 The Mission: Bringing the World's Annotations Together
 
-James Joyce's *Finnegans Wake* (published in 1939) remains protected under **United States copyright law through the end of 2035** (95 years from publication date). 
+James Joyce famously remarked that he wrote *Finnegans Wake* *"to keep the critics busy for three hundred years."* Composed across seventeen years in Paris (1922–1939) in an experimental idiom interweaving more than sixty languages, world mythologies, theological debates, and Dublin street ballads, the *Wake* is widely regarded as the most challenging—and rewarding—monument in world literature. 
 
-To ensure full legal compliance and preserve this project as an enduring public resource:
-- **Zero copyrighted text from the book is hosted in this repository.**
-- Pull Requests containing lines, stanzas, paragraphs, or substantial portions of the original text will be rejected immediately.
-- Annotations map exclusively to standard academic page and line coordinates, referencing only short target lemmas/tokens strictly necessary for scholarly identification.
+No single reader, scholar, or commentary has ever decoded it alone. Over the last century, brilliant readers, local reading circles, literary detectives, and academic pioneers have produced extraordinary elucidations—yet this vast reservoir of knowledge has historically remained fractured:
+- Scattered across out-of-print reference tomes (Atherton, Campbell & Robinson, Glasheen, Mink, O Hehir)
+- Locked inside paywalled scholarly journals or university archives
+- Dispersed across private reading group notes, blogs, wikis, and internet forums
+
+**The central mission of WinnegansFake is to bring all the annotations out there that exist into one unified, collaborative, line-indexed commons.** By connecting the text line-by-line (`PPP.LL`) to the collected wisdom of the global Joycean community, we seek to democratize this masterpiece so that all may read, understand, and enjoy this great work with the accumulated insights, polyglot translations, and genetic histories of everyone else.
+
+---
+
+## 📖 How to Download the Book & Read with Live Annotations
+
+Because copyrighted text cannot be hosted directly in this repository, the web application is architected to dynamically parse and render a local EPUB archive stored on your machine. This allows you to read the full original text side-by-side with synchronized annotations without infringing copyright.
+
+### Quickstart Guide
+
+1. **Clone the Repository and Install Dependencies:**
+   ```bash
+   git clone https://github.com/WinnegansFake/WinnegansFake.git
+   cd WinnegansFake
+   pnpm install
+   ```
+
+2. **Download the Source EPUB into `data/`:**
+   Run our built-in fetching target, which downloads the verified 1939 edition scan from the Internet Archive directly into the local, gitignored `data/` directory:
+   ```bash
+   pnpm fetch:data
+   # Alternatively: make -C data
+   ```
+   *Manual Download Option:* If you prefer to download manually via `wget` or browser, fetch the file and save it to `data/finneganswake00joycuoft.epub`:
+   ```bash
+   mkdir -p data
+   wget -O data/finneganswake00joycuoft.epub https://archive.org/download/finneganswake00joycuoft/finneganswake00joycuoft.epub
+   ```
+
+3. **Start the Interactive Web Application:**
+   ```bash
+   pnpm dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser:
+   - The reader streams the local EPUB text page by page (standard pages 1 through 628).
+   - Click or hover any highlighted word or phrase to reveal line-by-line annotations, multilingual etymologies, and clickable bibliographical links.
+   - Filter by analytical registers (HCE, ALP, Viconian cycles, Egyptian Book of the Dead, thunderclaps, Dublin topography, and more).
+
+---
+
+## ⚖️ Zero-Copyright Architecture & Why the EPUB Must Remain Gitignored
+
+> [!IMPORTANT]
+> **CRITICAL LEGAL & ARCHITECTURAL RULE:** Never upload, commit, or push the EPUB, extracted HTML chapters, or raw book text to any part of this repository.
+
+### Why James Joyce's *Finnegans Wake* is Protected
+- *Finnegans Wake* was published in May 1939.
+- Under **United States copyright law** (specifically the 1998 Sonny Bono Copyright Term Extension Act), works published with notice between 1929 and 1977 remain protected for **95 years from the publication date**.
+- Consequently, James Joyce's text remains under U.S. copyright protection **through December 31, 2035**, entering the public domain on **January 1, 2036**.
+
+### Why the Local Source Files MUST Stay Gitignored
+To protect the project, its contributors, and the public repository from copyright infringement and DMCA takedowns:
+1. **Strict `.gitignore` Exclusion:** The repository's [`.gitignore`](.gitignore) explicitly excludes all book source data:
+   ```gitignore
+   data/finneganswake*
+   data/EPUB/
+   data/META-INF/
+   data/*.epub
+   data/*.html
+   ```
+2. **Never Force-Add Book Files:** Never use `git add -f` or bypass gitignore rules to commit files inside `data/` or any local `.epub` / `.html` files. Pull Requests containing copyrighted source files will be rejected immediately.
+3. **Target Phrases Are Limited to Minimal Tokens:** The JSON annotations in `annotations/` reference only short anchor phrases ($\le 150$ characters) strictly necessary for lexical identification, accompanied by original commentary, etymologies, and citations.
+4. **Architectural Decoupling:** The commentary and annotations are 100% free and open-source under Creative Commons (CC BY-SA 4.0), while the source book remains in the private, local custody of the individual reader. This separation ensures that the collected wisdom of the community remains resilient, permanent, and accessible to the entire world without legal jeopardy.
 
 ---
 
