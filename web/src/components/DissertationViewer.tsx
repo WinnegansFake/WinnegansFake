@@ -20,12 +20,16 @@ import {
   ZoomIn,
   ZoomOut,
   X,
-  ArrowUp
+  ArrowUp,
+  ArrowLeft,
+  Book,
 } from 'lucide-react';
-import { getBasePath, GITHUB_REPO_URL } from '@/lib/constants';
+import Link from 'next/link';
+import { getBasePath, GITHUB_REPO_URL, type DissertationDefinition } from '@/lib/constants';
 
 interface DissertationViewerProps {
   content: string;
+  dissertation?: DissertationDefinition;
 }
 
 interface TocItem {
@@ -34,7 +38,7 @@ interface TocItem {
   level: number;
 }
 
-export function DissertationViewer({ content }: DissertationViewerProps) {
+export function DissertationViewer({ content, dissertation }: DissertationViewerProps) {
   const [copiedCitation, setCopiedCitation] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [tocOpen, setTocOpen] = useState(false);
@@ -145,24 +149,37 @@ export function DissertationViewer({ content }: DissertationViewerProps) {
   }, [toc, searchTerm]);
 
   const handleCopyCitation = () => {
-    const bibtex = `@misc{winnegansfake2026,
+    let bibtex = '';
+    if (dissertation) {
+      const citeKey = `${dissertation.author.split(' ').pop()?.toLowerCase() || 'dissertation'}${dissertation.year}`;
+      bibtex = `@phdthesis{${citeKey},
+  author = {${dissertation.author}},
+  title = {${dissertation.title}},
+  school = {${dissertation.institution}},
+  year = {${dissertation.year}},
+  url = {https://tekromancy.github.io/WinnegansFake/dissertations/${dissertation.slug}/}${dissertation.doi ? `,\n  doi = {${dissertation.doi}}` : ''}
+}`;
+    } else {
+      bibtex = `@misc{winnegansfake2026,
   author = {WinnegansFake Initiative},
   title = {The Architecture of the Night Mind: A Polyphonic Dissertation on the Cosmology, Philology, Genetic Manuscripts, and Computational Hermeneutics of James Joyce's Finnegans Wake},
   year = {2026},
   publisher = {WinnegansFake Open-Source Scholarly Apparatus},
   url = {https://tekromancy.github.io/WinnegansFake/dissertation/}
 }`;
+    }
     navigator.clipboard.writeText(bibtex);
     setCopiedCitation(true);
     setTimeout(() => setCopiedCitation(false), 2500);
   };
 
   const handleDownload = () => {
+    const filename = dissertation ? `${dissertation.slug}.md` : 'dissertation.md';
     const blob = new Blob([content], { type: 'text/markdown;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'dissertation.md';
+    a.download = filename;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -302,30 +319,68 @@ export function DissertationViewer({ content }: DissertationViewerProps) {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
       {/* Header Banner */}
       <div className="wf-card-surface border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl mb-8 transition-colors">
+        {dissertation && (
+          <div className="mb-4">
+            <Link
+              href="/dissertations"
+              className="inline-flex items-center space-x-1.5 text-xs font-mono text-slate-400 hover:text-emerald-400 transition-colors"
+            >
+              <ArrowLeft className="w-3.5 h-3.5" />
+              <span>Back to Dissertations Library</span>
+            </Link>
+          </div>
+        )}
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div className="space-y-3 max-w-3xl">
             <div className="flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-indigo-950/80 border border-indigo-500/40 text-indigo-300 text-xs font-mono">
                 <GraduationCap className="w-3.5 h-3.5" />
-                <span>Doctoral-Grade Scholarly Monograph</span>
+                <span>{dissertation?.degree || 'Doctoral-Grade Scholarly Monograph'}</span>
               </span>
+              {dissertation?.field && (
+                <span className="inline-flex items-center space-x-1 px-2.5 py-0.5 rounded bg-purple-950/80 border border-purple-500/30 text-purple-300 text-xs font-mono">
+                  <span>{dissertation.field}</span>
+                </span>
+              )}
+              {dissertation?.targetWorks && dissertation.targetWorks.map((workId) => (
+                <span
+                  key={workId}
+                  className="inline-flex items-center space-x-1 px-2.5 py-0.5 rounded bg-emerald-950/80 border border-emerald-500/30 text-emerald-400 text-xs font-mono uppercase"
+                >
+                  <Book className="w-3 h-3" />
+                  <span>{workId.replace(/-/g, ' ')}</span>
+                </span>
+              ))}
               <span className="inline-flex items-center space-x-1 px-2.5 py-0.5 rounded bg-emerald-950/80 border border-emerald-500/30 text-emerald-400 text-xs font-mono">
                 <Shield className="w-3 h-3" />
                 <span>CC BY-SA 4.0</span>
               </span>
             </div>
             <h1 className="text-2xl sm:text-4xl font-serif font-black text-white leading-tight">
-              The Architecture of the Night Mind
+              {dissertation?.title || 'The Architecture of the Night Mind'}
             </h1>
             <p className="text-sm text-slate-300 font-sans leading-relaxed">
-              A Polyphonic Dissertation on the Cosmology, Philology, Genetic Manuscripts, and Computational Hermeneutics of James Joyce’s <em>Finnegans Wake</em>.
+              {dissertation?.subtitle || (
+                <>A Polyphonic Dissertation on the Cosmology, Philology, Genetic Manuscripts, and Computational Hermeneutics of James Joyce’s <em>Finnegans Wake</em>.</>
+              )}
             </p>
+            {dissertation && (
+              <p className="text-xs font-mono text-emerald-400 font-semibold">
+                {dissertation.author} &bull; {dissertation.institution} {dissertation.defenseDate ? `(Defended: ${dissertation.defenseDate})` : `(${dissertation.year})`}
+              </p>
+            )}
             <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-slate-400 pt-1">
               <span>Length: ~{wordCount.toLocaleString()} words</span>
               <span>&bull;</span>
-              <span>Est. Reading Time: ~45 min</span>
+              <span>Est. Reading Time: ~{Math.ceil(wordCount / 220)} min</span>
               <span>&bull;</span>
-              <span>Updated: September 2026</span>
+              <span>Year: {dissertation?.year || 2026}</span>
+              {dissertation?.doi && (
+                <>
+                  <span>&bull;</span>
+                  <span className="text-slate-400">DOI: {dissertation.doi}</span>
+                </>
+              )}
             </div>
           </div>
 
@@ -354,7 +409,7 @@ export function DissertationViewer({ content }: DissertationViewerProps) {
               <span>{copiedCitation ? 'Copied BibTeX!' : 'Cite Monograph'}</span>
             </button>
             <a
-              href={`${GITHUB_REPO_URL}/blob/main/dissertation.md`}
+              href={`${GITHUB_REPO_URL}/blob/main/${dissertation ? `dissertations/${dissertation.filePath}` : 'dissertation.md'}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl text-xs font-medium bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-all"

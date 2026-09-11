@@ -20,14 +20,19 @@ import {
 } from 'lucide-react';
 import { useBookmarks } from './BookmarkContext';
 import { CookieDuration, getDurationLabel, BOOKMARK_COOKIE_NAME } from '@winnegans/theme';
-import { getBookAndChapterInfo } from '@/lib/constants';
+import { getWork, getWorkDivision, getAllWorks } from '@/lib/constants';
 
 interface BookmarksModalProps {
-  onNavigateToPage?: (page: number, line?: number) => void;
+  onNavigateToPage?: (page: number, line?: number, workId?: string) => void;
   currentPage?: number;
+  currentWorkId?: string;
 }
 
-export function BookmarksModal({ onNavigateToPage, currentPage }: BookmarksModalProps) {
+export function BookmarksModal({
+  onNavigateToPage,
+  currentPage,
+  currentWorkId = 'finnegans-wake',
+}: BookmarksModalProps) {
   const router = useRouter();
   const {
     bookmarks,
@@ -48,6 +53,8 @@ export function BookmarksModal({ onNavigateToPage, currentPage }: BookmarksModal
   const [inputCustomDays, setInputCustomDays] = useState<number>(customDays || 365);
   const [showCookieDetails, setShowCookieDetails] = useState<boolean>(false);
   const [copiedNotification, setCopiedNotification] = useState<string | null>(null);
+  const [workFilter, setWorkFilter] = useState<string>('all');
+
 
   if (!showBookmarksModal) return null;
 
@@ -77,16 +84,28 @@ export function BookmarksModal({ onNavigateToPage, currentPage }: BookmarksModal
     downloadAnchor.remove();
   };
 
-  const handleNavigate = (page: number, line?: number) => {
+  const activeCurrentWork = getWork(currentWorkId);
+  const currentDivInfo = currentPage ? getWorkDivision(activeCurrentWork, currentPage) : null;
+
+  const handleNavigate = (page: number, line?: number, workId?: string) => {
     if (onNavigateToPage) {
-      onNavigateToPage(page, line);
+      onNavigateToPage(page, line, workId);
     } else {
-      router.push(`/reader?page=${page}${line ? `&line=${line}` : ''}`);
+      const targetWorkId = workId || currentWorkId;
+      const workQuery = targetWorkId && targetWorkId !== 'finnegans-wake' ? `&work=${targetWorkId}` : '';
+      router.push(`/reader?page=${page}${line ? `&line=${line}` : ''}${workQuery}`);
     }
     setShowBookmarksModal(false);
   };
 
-  const isCurrentPageSaved = currentPage ? isPageBookmarked(currentPage) : false;
+  const isCurrentPageSaved = currentPage ? isPageBookmarked(currentPage, currentWorkId) : false;
+
+  const filteredBookmarks = bookmarks.filter((b) => {
+    if (workFilter === 'all') return true;
+    return (b.workId || 'finnegans-wake') === workFilter;
+  });
+
+  const allWorks = getAllWorks();
 
   const previewPayload = {
     cookieName: BOOKMARK_COOKIE_NAME,
@@ -139,16 +158,23 @@ export function BookmarksModal({ onNavigateToPage, currentPage }: BookmarksModal
         {currentPage && (
           <div className="px-5 py-3 border-b border-inherit/20 bg-inherit/20 flex items-center justify-between flex-wrap gap-2 text-xs">
             <div className="flex items-center space-x-2">
+              <span className="text-[10px] px-1.5 py-0.5 rounded font-mono font-bold bg-indigo-950/70 text-indigo-300 border border-indigo-500/40">
+                {activeCurrentWork.shortTitle}
+              </span>
               <span className="font-mono opacity-80">
-                Current: Joyce Page {String(currentPage).padStart(3, '0')}
+                Page {String(currentPage).padStart(3, '0')}
               </span>
-              <span className="opacity-40">&bull;</span>
-              <span className="opacity-70 text-[11px]">
-                Book {getBookAndChapterInfo(currentPage).book}, Chapter {getBookAndChapterInfo(currentPage).chapter}
-              </span>
+              {currentDivInfo && (
+                <>
+                  <span className="opacity-40">&bull;</span>
+                  <span className="opacity-70 text-[11px]">
+                    {currentDivInfo.subtitle || currentDivInfo.title}
+                  </span>
+                </>
+              )}
             </div>
             <button
-              onClick={() => toggleBookmark(currentPage)}
+              onClick={() => toggleBookmark(currentPage, undefined, undefined, undefined, currentWorkId)}
               className={`inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border transition-colors cursor-pointer ${
                 isCurrentPageSaved
                   ? 'bg-amber-950/70 text-amber-300 border-amber-500/60'
@@ -169,6 +195,7 @@ export function BookmarksModal({ onNavigateToPage, currentPage }: BookmarksModal
             </button>
           </div>
         )}
+
 
         {/* Modal Scrollable Body */}
         <div className="flex-1 overflow-y-auto p-5 space-y-5">
@@ -202,7 +229,41 @@ export function BookmarksModal({ onNavigateToPage, currentPage }: BookmarksModal
               )}
             </div>
 
-            {bookmarks.length === 0 ? (
+            {/* Work Filter Bar */}
+            {allWorks.length > 1 && (
+              <div className="flex items-center space-x-1.5 overflow-x-auto pb-1 text-xs">
+                <button
+                  onClick={() => setWorkFilter('all')}
+                  className={`px-2.5 py-1 rounded-lg font-mono text-[11px] transition-colors cursor-pointer ${
+                    workFilter === 'all'
+                      ? 'bg-emerald-950 text-emerald-300 border border-emerald-500/50'
+                      : 'opacity-60 hover:opacity-100 hover:bg-inherit/40 border border-transparent'
+                  }`}
+                >
+                  All Works ({bookmarks.length})
+                </button>
+                {allWorks.map((w) => {
+                  const count = bookmarks.filter((b) => (b.workId || 'finnegans-wake') === w.id).length;
+                  if (count === 0 && workFilter !== w.id) return null;
+                  return (
+                    <button
+                      key={w.id}
+                      onClick={() => setWorkFilter(w.id)}
+                      className={`px-2.5 py-1 rounded-lg font-mono text-[11px] transition-colors cursor-pointer flex items-center space-x-1 ${
+                        workFilter === w.id
+                          ? 'bg-emerald-950 text-emerald-300 border border-emerald-500/50'
+                          : 'opacity-60 hover:opacity-100 hover:bg-inherit/40 border border-transparent'
+                      }`}
+                    >
+                      <span>{w.shortTitle}</span>
+                      <span className="opacity-60">({count})</span>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+
+            {filteredBookmarks.length === 0 ? (
               <div className="p-8 text-center border border-dashed border-inherit/30 rounded-2xl opacity-60 space-y-2">
                 <Bookmark className="w-8 h-8 mx-auto text-emerald-400 opacity-60" />
                 <p className="text-xs font-serif italic">
@@ -211,27 +272,31 @@ export function BookmarksModal({ onNavigateToPage, currentPage }: BookmarksModal
               </div>
             ) : (
               <div className="space-y-2">
-                {bookmarks.map((bm) => {
-                  const info = getBookAndChapterInfo(bm.page);
+                {filteredBookmarks.map((bm) => {
+                  const bmWork = getWork(bm.workId || currentWorkId || 'finnegans-wake');
+                  const info = getWorkDivision(bmWork, bm.page);
                   return (
                     <div
                       key={bm.id}
                       className="p-3 rounded-xl border border-inherit/30 hover:border-inherit/60 transition-all flex items-start justify-between gap-3 bg-inherit/30"
                     >
                       <div
-                        onClick={() => handleNavigate(bm.page, bm.line)}
+                        onClick={() => handleNavigate(bm.page, bm.line, bm.workId)}
                         className="flex-1 cursor-pointer space-y-1"
                       >
                         <div className="flex items-center space-x-2 text-xs font-mono">
+                          <span className="text-[10px] px-1.5 py-0.5 rounded font-mono font-bold bg-indigo-950/70 text-indigo-300 border border-indigo-500/40">
+                            {bmWork.shortTitle}
+                          </span>
                           <span className="text-emerald-400 font-bold">
                             Page {String(bm.page).padStart(3, '0')}
                             {bm.line ? `.${String(bm.line).padStart(2, '0')}` : ''}
                           </span>
                           <span className="opacity-50">&bull;</span>
                           <span className="opacity-70 text-[11px]">
-                            Book {info.book}, Chapter {info.chapter}
+                            {info.subtitle || info.title}
                           </span>
-                          {bm.page === currentPage && (
+                          {bm.page === currentPage && (!bm.workId || bm.workId === currentWorkId) && (
                             <span className="text-[10px] px-1.5 py-0.2 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/40">
                               Current
                             </span>
@@ -252,12 +317,13 @@ export function BookmarksModal({ onNavigateToPage, currentPage }: BookmarksModal
 
                       <div className="flex items-center space-x-1 shrink-0 pt-1">
                         <button
-                          onClick={() => handleNavigate(bm.page, bm.line)}
+                          onClick={() => handleNavigate(bm.page, bm.line, bm.workId)}
                           className="p-1.5 rounded-lg opacity-70 hover:opacity-100 hover:text-emerald-400 hover:bg-inherit/60 transition-all cursor-pointer"
                           title="Jump to this page"
                         >
                           <ExternalLink className="w-3.5 h-3.5" />
                         </button>
+
                         <button
                           onClick={() => removeBookmark(bm.id)}
                           className="p-1.5 rounded-lg opacity-50 hover:opacity-100 hover:text-red-400 hover:bg-inherit/60 transition-all cursor-pointer"

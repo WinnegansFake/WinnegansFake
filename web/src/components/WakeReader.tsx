@@ -54,7 +54,11 @@ import {
   getBookAndChapterInfo,
   ANALYTICAL_REGISTERS,
   ARCHIVE_EPUB_URL,
-  GITHUB_REPO_URL
+  ULYSSES_EPUB_URL,
+  GITHUB_REPO_URL,
+  getWork,
+  getAllWorks,
+  type WorkDefinition,
 } from '@/lib/constants';
 import {
   LayerGroupMode,
@@ -83,9 +87,19 @@ import {
 import { EpubSourceModal } from './EpubSourceModal';
 import { GithubPrModal } from './GithubPrModal';
 
-export function WakeReader() {
-  const [currentPage, setCurrentPage] = useState<number>(3);
-  const [pageInput, setPageInput] = useState<string>('3');
+export interface UniversalReaderProps {
+  initialWorkId?: string;
+  initialPage?: number;
+}
+
+export function UniversalReader({
+  initialWorkId = 'finnegans-wake',
+  initialPage,
+}: UniversalReaderProps = {}) {
+  const [currentWorkId, setCurrentWorkId] = useState<string>(initialWorkId);
+  const defaultPage = initialPage || (initialWorkId === 'ulysses' ? 1 : 3);
+  const [currentPage, setCurrentPage] = useState<number>(defaultPage);
+  const [pageInput, setPageInput] = useState<string>(String(defaultPage));
   const [lines, setLines] = useState<PageLine[]>([]);
   const [annotationsData, setAnnotationsData] = useState<PageAnnotationsData | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -141,27 +155,35 @@ export function WakeReader() {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Load annotations from static JSON file
-  const loadPageData = async (page: number) => {
+  const loadPageData = async (page: number, workIdToUse?: string) => {
     setLoading(true);
     setFeedback(null);
     setEditingId(null);
     setIsCreatingForLine(null);
     setIsCreatingInPanel(false);
 
+    const activeWorkId = workIdToUse || currentWorkId;
     const padPage = String(page).padStart(3, '0');
     const basePath = getBasePath();
-    const annUrl = `${basePath}/annotations/page_${padPage}.json`;
+    const primaryUrl = activeWorkId === 'finnegans-wake'
+      ? `${basePath}/annotations/page_${padPage}.json`
+      : `${basePath}/annotations/${activeWorkId}/page_${padPage}.json`;
 
     try {
-      const res = await fetch(annUrl);
+      let res = await fetch(primaryUrl);
+      if (!res.ok && activeWorkId !== 'finnegans-wake') {
+        res = await fetch(`${basePath}/annotations/page_${padPage}.json`);
+      }
+
       if (res.ok) {
         const json = await res.json();
         setAnnotationsData(json);
       } else {
         // Create empty structure if file not found
-        const { book, chapter } = getBookAndChapterInfo(page);
+        const { book, chapter } = getBookAndChapterInfo(page, activeWorkId);
         setAnnotationsData({
           schema_version: '1.0.0',
+          work: activeWorkId,
           book,
           chapter,
           page_number: page,
@@ -170,9 +192,10 @@ export function WakeReader() {
       }
     } catch (err: any) {
       console.error('Failed to load annotations:', err);
-      const { book, chapter } = getBookAndChapterInfo(page);
+      const { book, chapter } = getBookAndChapterInfo(page, activeWorkId);
       setAnnotationsData({
         schema_version: '1.0.0',
+        work: activeWorkId,
         book,
         chapter,
         page_number: page,
@@ -195,11 +218,20 @@ export function WakeReader() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search);
-      const p = parseInt(params.get('page') || '', 10);
-      if (!isNaN(p) && p >= 1 && p <= 628) {
-        setCurrentPage(p);
-        setPageInput(String(p));
+      const workParam = params.get('work') || 'finnegans-wake';
+      setCurrentWorkId(workParam);
+
+      const targetWork = getWork(workParam);
+      const maxP = targetWork.totalPages || 628;
+
+      let p = parseInt(params.get('page') || '', 10);
+      if (isNaN(p) || p < 1 || p > maxP) {
+        p = workParam === 'ulysses' ? 1 : 3;
       }
+      setCurrentPage(p);
+      setPageInput(String(p));
+      loadPageData(p, workParam);
+
       const l = parseInt(params.get('line') || '', 10);
       if (!isNaN(l)) {
         setTimeout(() => {
@@ -228,17 +260,43 @@ export function WakeReader() {
   }, []);
 
   useEffect(() => {
-    loadPageData(currentPage);
+    loadPageData(currentPage, currentWorkId);
     setPageInput(String(currentPage));
-  }, [currentPage]);
+  }, [currentPage, currentWorkId]);
+
+  const switchWork = (newWorkId: string) => {
+    setCurrentWorkId(newWorkId);
+    const targetWork = getWork(newWorkId);
+    const startP = newWorkId === 'ulysses' ? 1 : 3;
+    setCurrentPage(startP);
+    setPageInput(String(startP));
+    if (typeof window !== 'undefined' && window.history.pushState) {
+      const url = new URL(window.location.href);
+      if (newWorkId !== 'finnegans-wake') {
+        url.searchParams.set('work', newWorkId);
+      } else {
+        url.searchParams.delete('work');
+      }
+      url.searchParams.set('page', String(startP));
+      url.searchParams.delete('line');
+      window.history.pushState({}, '', url.toString());
+    }
+    loadPageData(startP, newWorkId);
+  };
 
   const goToPage = (p: number, line?: number) => {
-    const valid = Math.max(1, Math.min(628, p));
+    const maxP = getWork(currentWorkId).totalPages || 628;
+    const valid = Math.max(1, Math.min(maxP, p));
     setCurrentPage(valid);
     setPageInput(String(valid));
     if (typeof window !== 'undefined' && window.history.replaceState) {
       const url = new URL(window.location.href);
       url.searchParams.set('page', String(valid));
+      if (currentWorkId !== 'finnegans-wake') {
+        url.searchParams.set('work', currentWorkId);
+      } else {
+        url.searchParams.delete('work');
+      }
       if (line) {
         url.searchParams.set('line', String(line));
       } else {
@@ -871,26 +929,46 @@ export function WakeReader() {
     );
   };
 
-  const bookInfo = getBookAndChapterInfo(currentPage);
+  const bookInfo = getBookAndChapterInfo(currentPage, currentWorkId);
+  const activeWork = getWork(currentWorkId);
+  const maxPages = activeWork.totalPages || 628;
+  const activeRegisters = activeWork.registers && activeWork.registers.length > 0 ? activeWork.registers : ANALYTICAL_REGISTERS;
 
   return (
     <div className="flex flex-col flex-1 min-h-screen transition-colors" style={{ backgroundColor: 'var(--wf-bg)' }}>
       {/* 1. Header Toolbar */}
       <header className="sticky top-16 z-30 wf-card-surface backdrop-blur-md border-b border-slate-800 px-4 py-3 shadow-md transition-colors">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
-          {/* Left: Book & Chapter Breadcrumb */}
+          {/* Left: Work Selector & Breadcrumb */}
           <div className="flex items-center space-x-3 w-full md:w-auto justify-between md:justify-start">
             <div className="flex items-center space-x-2">
-              <span className="font-serif font-bold text-base text-emerald-400">
-                Book {bookInfo.bookRoman}, Chapter {bookInfo.chapter}
-              </span>
-              <span className="hidden sm:inline text-slate-500">&bull;</span>
-              <span className="hidden sm:inline text-xs text-slate-400 italic truncate max-w-[220px]">
-                {bookInfo.chapterTitle}
-              </span>
+              <select
+                aria-label="Select Literary Work"
+                value={currentWorkId}
+                onChange={(e) => switchWork(e.target.value)}
+                className="bg-slate-900 border border-slate-700 hover:border-slate-600 text-xs font-semibold text-white rounded-lg px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-emerald-500 cursor-pointer shadow-sm"
+              >
+                {getAllWorks().map((w) => (
+                  <option key={w.id} value={w.id}>
+                    {w.shortTitle}: {w.title} ({w.year})
+                  </option>
+                ))}
+              </select>
+
+              <div className="flex items-center space-x-2">
+                <span className="font-serif font-bold text-sm sm:text-base text-emerald-400">
+                  {currentWorkId === 'ulysses'
+                    ? bookInfo.chapterTitle
+                    : `Book ${bookInfo.bookRoman}, Chapter ${bookInfo.chapter}`}
+                </span>
+                <span className="hidden sm:inline text-slate-500">&bull;</span>
+                <span className="hidden sm:inline text-xs text-slate-400 italic truncate max-w-[200px]">
+                  {currentWorkId === 'ulysses' ? (bookInfo.subtitle || '') : bookInfo.chapterTitle}
+                </span>
+              </div>
             </div>
             <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
-              Joyce Page {currentPage} / 628
+              Page {currentPage} / {maxPages}
             </span>
           </div>
 
@@ -910,7 +988,7 @@ export function WakeReader() {
               <input
                 type="number"
                 min={1}
-                max={628}
+                max={maxPages}
                 value={pageInput}
                 onChange={(e) => setPageInput(e.target.value)}
                 className="w-16 bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-center text-xs font-mono text-white focus:outline-none focus:border-emerald-500"
@@ -925,7 +1003,7 @@ export function WakeReader() {
 
             <button
               onClick={() => goToPage(currentPage + 1)}
-              disabled={currentPage >= 628}
+              disabled={currentPage >= maxPages}
               className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white disabled:opacity-40 transition-colors"
               title="Next Page (n)"
             >
@@ -1054,6 +1132,55 @@ export function WakeReader() {
             </button>
           </div>
         </div>
+
+        {/* Work-Specific Schema Banner (e.g. Ulysses Gilbert/Linati Schema) */}
+        {bookInfo.schemaDetails && (
+          <div className="max-w-7xl mx-auto mt-2.5 pt-2 border-t border-slate-800/80 flex items-center flex-wrap gap-2 text-[11px] text-slate-400">
+            <span className="text-indigo-400 font-semibold flex items-center space-x-1">
+              <span>Gilbert/Linati Schema:</span>
+            </span>
+            {bookInfo.schemaDetails.time && (
+              <span className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">
+                <strong className="text-slate-400 font-normal">Hour:</strong> {bookInfo.schemaDetails.time}
+              </span>
+            )}
+            {bookInfo.schemaDetails.scene && (
+              <span className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">
+                <strong className="text-slate-400 font-normal">Scene:</strong> {bookInfo.schemaDetails.scene}
+              </span>
+            )}
+            {bookInfo.schemaDetails.homericCorrespondent && (
+              <span className="px-2 py-0.5 rounded bg-indigo-950/60 border border-indigo-500/40 text-indigo-300">
+                <strong className="text-indigo-400 font-normal">Homer:</strong> {bookInfo.schemaDetails.homericCorrespondent}
+              </span>
+            )}
+            {bookInfo.schemaDetails.organ && bookInfo.schemaDetails.organ !== 'None' && (
+              <span className="px-2 py-0.5 rounded bg-rose-950/60 border border-rose-500/40 text-rose-300">
+                <strong className="text-rose-400 font-normal">Organ:</strong> {bookInfo.schemaDetails.organ}
+              </span>
+            )}
+            {bookInfo.schemaDetails.art && bookInfo.schemaDetails.art !== 'None' && (
+              <span className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">
+                <strong className="text-slate-400 font-normal">Art:</strong> {bookInfo.schemaDetails.art}
+              </span>
+            )}
+            {bookInfo.schemaDetails.color && bookInfo.schemaDetails.color !== 'None' && (
+              <span className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">
+                <strong className="text-slate-400 font-normal">Color:</strong> {bookInfo.schemaDetails.color}
+              </span>
+            )}
+            {bookInfo.schemaDetails.symbol && (
+              <span className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">
+                <strong className="text-slate-400 font-normal">Symbol:</strong> {bookInfo.schemaDetails.symbol}
+              </span>
+            )}
+            {bookInfo.schemaDetails.technique && (
+              <span className="px-2 py-0.5 rounded bg-amber-950/50 border border-amber-500/30 text-amber-300">
+                <strong className="text-amber-400 font-normal">Technique:</strong> {bookInfo.schemaDetails.technique}
+              </span>
+            )}
+          </div>
+        )}
       </header>
 
       {/* 2. Feedback Alert Banner */}
@@ -1185,15 +1312,17 @@ export function WakeReader() {
                       <span>3: Download Scan</span>
                     </div>
                     <p className="text-[11px] text-slate-400">
-                      Grab the 1.5MB EPUB archive directly from Internet Archive:
+                      {currentWorkId === 'ulysses'
+                        ? 'Grab the 2.0MB 1922 first edition scan directly from Internet Archive:'
+                        : 'Grab the 41.8MB 1939 first edition scan directly from Internet Archive:'}
                     </p>
                     <a
-                      href={ARCHIVE_EPUB_URL}
+                      href={activeWork?.defaultEpubUrl || (currentWorkId === 'ulysses' ? ULYSSES_EPUB_URL : ARCHIVE_EPUB_URL)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block text-center w-full py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 transition-all cursor-pointer"
                     >
-                      Archive.org Scan
+                      Archive.org Scan ({activeWork?.epubFilename || (currentWorkId === 'ulysses' ? 'ulysses00joyc_1.epub' : 'finneganswake00joycuoft.epub')})
                     </a>
                   </div>
                 </div>
@@ -1400,7 +1529,7 @@ export function WakeReader() {
                 type="button"
                 onClick={() => openSearch(searchQuery || undefined)}
                 className="inline-flex items-center space-x-1 px-1.5 py-0.5 rounded text-[10px] font-mono bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-emerald-400 border border-slate-800 hover:border-emerald-500/40 cursor-pointer"
-                title="Search across all 628 pages and entire text (Ctrl+F)"
+                title={`Search across all ${maxPages} pages and entire text (Ctrl+F)`}
               >
                 <span>Global</span>
                 <span className="text-[9px] text-slate-500">⌘F</span>
@@ -1480,7 +1609,7 @@ export function WakeReader() {
                   title="Filter by Register"
                 >
                   <option value="all">All Registers</option>
-                  {ANALYTICAL_REGISTERS.map((reg) => (
+                  {activeRegisters.map((reg) => (
                     <option key={reg.id} value={reg.id}>
                       {reg.name}
                     </option>
@@ -1728,11 +1857,11 @@ export function WakeReader() {
                 <ChevronLeft className="w-4 h-4" />
               </button>
               <span className="font-mono text-xs px-2.5 py-1 rounded bg-inherit/40 border border-inherit/30">
-                Page {currentPage} / 628
+                Page {currentPage} / {maxPages}
               </span>
               <button
                 onClick={() => goToPage(currentPage + 1)}
-                disabled={currentPage >= 628}
+                disabled={currentPage >= maxPages}
                 className="p-1.5 rounded-lg border border-inherit/40 hover:bg-inherit/40 disabled:opacity-30 transition-all cursor-pointer"
                 title="Next Page (→ or n)"
               >
@@ -1828,7 +1957,7 @@ export function WakeReader() {
               <button
                 onClick={() => openSearch()}
                 className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border border-inherit/40 hover:bg-inherit/40 transition-colors cursor-pointer"
-                title="Universal search across all 628 pages and text (Ctrl+F or /)"
+                title={`Universal search across all ${maxPages} pages and text (Ctrl+F or /)`}
               >
                 <Search className="w-3.5 h-3.5 text-emerald-400" />
                 <span className="hidden sm:inline">Search</span>
@@ -2546,7 +2675,7 @@ export function WakeReader() {
                     className="w-full bg-inherit border border-inherit/40 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:border-emerald-500 font-sans"
                   >
                     <option value="all">All Analytical Registers</option>
-                    {ANALYTICAL_REGISTERS.map((reg) => (
+                    {activeRegisters.map((reg) => (
                       <option key={reg.id} value={reg.id}>
                         {reg.name}
                       </option>
@@ -2647,12 +2776,12 @@ export function WakeReader() {
               </button>
               <span className="opacity-30">&bull;</span>
               <span className="font-mono font-medium">
-                Page {currentPage} of 628
+                Page {currentPage} of {maxPages}
               </span>
               <span className="opacity-30">&bull;</span>
               <button
                 onClick={() => goToPage(currentPage + 1)}
-                disabled={currentPage >= 628}
+                disabled={currentPage >= maxPages}
                 className="flex items-center space-x-1 opacity-70 hover:opacity-100 disabled:opacity-30 transition-opacity"
                 title="Next page (→ or n)"
               >
@@ -2719,7 +2848,11 @@ export function WakeReader() {
       {/* 6. Bookmarks Drawer / Cookie Storage Modal */}
       <BookmarksModal
         currentPage={currentPage}
-        onNavigateToPage={(page, line) => {
+        currentWorkId={currentWorkId}
+        onNavigateToPage={(page, line, workId) => {
+          if (workId && workId !== currentWorkId) {
+            switchWork(workId);
+          }
           goToPage(page);
           if (line) {
             setTimeout(() => {
@@ -2741,6 +2874,8 @@ export function WakeReader() {
         onLoadFromUrl={loadEpubFromUrl}
         onSelectLocalFile={loadEpubFromFile}
         onClearCookie={handleClearEpubCookie}
+        workId={currentWorkId}
+        work={activeWork}
       />
 
       {/* 8. Direct Annotation GitHub Pull Request Modal */}
@@ -2750,6 +2885,7 @@ export function WakeReader() {
           onClose={() => setPrModalAnnotation(null)}
           pageNumber={currentPage}
           annotation={prModalAnnotation}
+          work={activeWork}
           onPrCreated={(prUrl, prNum) => {
             setFeedback({
               type: 'success',
@@ -2761,3 +2897,6 @@ export function WakeReader() {
     </div>
   );
 }
+
+export const WakeReader = UniversalReader;
+

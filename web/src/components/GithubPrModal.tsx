@@ -25,6 +25,7 @@ import {
   UserCheck,
 } from 'lucide-react';
 import { AnnotationItem } from '@/types/annotations';
+import { getWork, type WorkDefinition } from '@/lib/constants';
 import {
   UPSTREAM_OWNER,
   UPSTREAM_REPO,
@@ -46,6 +47,10 @@ interface GithubPrModalProps {
   onClose: () => void;
   pageNumber: number;
   annotation: AnnotationItem;
+  work?: WorkDefinition;
+  upstreamOwner?: string;
+  upstreamRepo?: string;
+  upstreamBranch?: string;
   onPrCreated?: (prUrl: string, prNumber: number) => void;
 }
 
@@ -54,10 +59,16 @@ export function GithubPrModal({
   onClose,
   pageNumber,
   annotation,
+  work,
+  upstreamOwner,
+  upstreamRepo,
+  upstreamBranch,
   onPrCreated,
 }: GithubPrModalProps) {
+  const activeWork = work || getWork('finnegans-wake');
   // Wizard steps: 1: Auth & Token, 2: Review & Submit, 3: Success
   const [activeStep, setActiveStep] = useState<'auth' | 'review' | 'submitting' | 'success'>('auth');
+
   const [authMode, setAuthMode] = useState<'token' | 'manual'>('token');
 
   // Token management
@@ -69,7 +80,7 @@ export function GithubPrModal({
   const [authError, setAuthError] = useState<string | null>(null);
 
   // PR Form fields
-  const meta = generateDefaultPrMetadata(pageNumber, annotation);
+  const meta = generateDefaultPrMetadata(pageNumber, annotation, activeWork);
   const [branchName, setBranchName] = useState<string>(meta.branchName);
   const [prTitle, setPrTitle] = useState<string>(meta.prTitle);
   const [commitMessage, setCommitMessage] = useState<string>(meta.commitMessage);
@@ -89,7 +100,8 @@ export function GithubPrModal({
     if (isOpen) {
       const savedToken = getSavedGithubToken();
       const savedUser = getSavedGithubUser();
-      const freshMeta = generateDefaultPrMetadata(pageNumber, annotation);
+      const freshMeta = generateDefaultPrMetadata(pageNumber, annotation, activeWork);
+
 
       setBranchName(freshMeta.branchName);
       setPrTitle(freshMeta.prTitle);
@@ -176,6 +188,10 @@ export function GithubPrModal({
         token,
         pageNumber,
         annotation,
+        work: activeWork,
+        upstreamOwner,
+        upstreamRepo,
+        upstreamBranch,
         branchName,
         prTitle,
         prBody,
@@ -184,6 +200,7 @@ export function GithubPrModal({
           setSubmissionStatus(status);
         },
       });
+
 
       setCreatedPrData({
         url: result.prUrl,
@@ -239,9 +256,10 @@ export function GithubPrModal({
               <h2 id="github-pr-modal-title" className="text-base font-serif font-bold text-white flex items-center space-x-2">
                 <span>Submit Scholarly Pull Request</span>
                 <span className="font-mono text-xs font-normal px-2 py-0.5 rounded bg-emerald-950/80 text-emerald-400 border border-emerald-500/30">
-                  FW {String(pageNumber).padStart(3, '0')}.{String(annotation.line_number).padStart(2, '0')}
+                  {activeWork.shortTitle} {String(pageNumber).padStart(3, '0')}.{String(annotation.line_number).padStart(2, '0')}
                 </span>
               </h2>
+
               <p className="text-xs text-slate-400 truncate max-w-md">
                 Lemma: <span className="font-mono text-emerald-300 font-medium">&ldquo;{annotation.target_phrase}&rdquo;</span>
               </p>

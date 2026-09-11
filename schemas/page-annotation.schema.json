@@ -7,8 +7,6 @@
   "additionalProperties": false,
   "required": [
     "schema_version",
-    "book",
-    "chapter",
     "page_number",
     "annotations"
   ],
@@ -18,23 +16,32 @@
       "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
       "description": "Semantic version of the annotation schema."
     },
+    "work": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Unique identifier of the literary work (e.g. 'finnegans-wake', 'ulysses')."
+    },
     "book": {
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 4,
-      "description": "Book number in Finnegans Wake (1 through 4)."
+      "type": ["integer", "string"],
+      "description": "Book number or major division identifier."
     },
     "chapter": {
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 8,
+      "type": ["integer", "string"],
       "description": "Chapter number within the respective book."
+    },
+    "part": {
+      "type": ["integer", "string"],
+      "description": "Part number or major division in works structured into parts."
+    },
+    "episode": {
+      "type": ["integer", "string"],
+      "description": "Episode number in works structured into episodes."
     },
     "page_number": {
       "type": "integer",
       "minimum": 1,
-      "maximum": 628,
-      "description": "Pagination page number (1 through 628, where pp. 1-2 encompass half-title and frontispiece)."
+      "maximum": 2000,
+      "description": "Pagination page number."
     },
     "annotations": {
       "type": "array",
@@ -53,14 +60,14 @@
         "properties": {
           "id": {
             "type": "string",
-            "pattern": "^[0-9]{3}\\.[0-9]{2}-[a-f0-9]{4,12}$",
+            "pattern": "^[0-9]{3,4}\\.[0-9]{2}-[a-zA-Z0-9_-]{2,16}$",
             "description": "Unique annotation identifier incorporating page.line and short hash/token, e.g. 001.01-a1b2."
           },
           "line_number": {
             "type": "integer",
             "minimum": 1,
-            "maximum": 40,
-            "description": "Line number on the page (typically 1 through 36, max 40 for margins/footnotes)."
+            "maximum": 60,
+            "description": "Line number on the page (typically 1 through 40, max 60)."
           },
           "target_phrase": {
             "type": "string",

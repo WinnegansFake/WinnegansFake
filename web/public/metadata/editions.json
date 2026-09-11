@@ -1,0 +1,93 @@
+{
+  "$schema": "./schemas/editions.schema.json",
+  "version": "1.0.0",
+  "description": "Cryptographically verified master catalog of canonical source EPUB editions hosted on Internet Archive.",
+  "editions": [
+    {
+      "id": "ulysses",
+      "title": "Ulysses",
+      "shortTitle": "Ulysses",
+      "author": "James Joyce",
+      "year": 1922,
+      "publicationDate": "1922-02-02",
+      "edition": "First Edition (Paris: Shakespeare and Company, 12 Rue de l'Od\u00e9on)",
+      "printer": "Maurice Darantiere (Dijon)",
+      "archive": {
+        "provider": "Internet Archive",
+        "itemId": "ulysses00joyc_1",
+        "detailsUrl": "https://archive.org/details/ulysses00joyc_1",
+        "downloadUrl": "https://archive.org/download/ulysses00joyc_1/ulysses00joyc_1.epub",
+        "filename": "ulysses00joyc_1.epub"
+      },
+      "hashes": {
+        "size_bytes": 2040050,
+        "sha256": "06872aca1d98b412c284c3c8b22afdb09757ec9c702523e3ee75941de5d2010e",
+        "sha1": "e3b3738a01ef74212901b8aebaaca3f4c7c33def",
+        "md5": "921d52e61cdf443771aa452ed196a02a"
+      },
+      "format": "application/epub+zip",
+      "pagination": {
+        "totalPages": 732,
+        "startPage": 1,
+        "endPage": 732,
+        "firstPageFile": "EPUB/page_25.html",
+        "lastPageFile": "EPUB/page_754.html",
+        "citationFormat": "U {page}.{line}"
+      },
+      "divisions": {
+        "type": "part",
+        "subdivisionType": "episode",
+        "totalDivisions": 18
+      },
+      "copyright": {
+        "status": "Public Domain",
+        "usStatus": "Public Domain (Published 1922, expired 1998)",
+        "euStatus": "Public Domain",
+        "notice": "Published February 2, 1922. In the Public Domain worldwide."
+      }
+    },
+    {
+      "id": "finnegans-wake",
+      "title": "Finnegans Wake",
+      "shortTitle": "FW",
+      "author": "James Joyce",
+      "year": 1939,
+      "publicationDate": "1939-05-04",
+      "edition": "First Edition (London: Faber & Faber / New York: Viking Press)",
+      "archive": {
+        "provider": "Internet Archive",
+        "itemId": "finneganswake00joycuoft",
+        "detailsUrl": "https://archive.org/details/finneganswake00joycuoft",
+        "downloadUrl": "https://archive.org/download/finneganswake00joycuoft/finneganswake00joycuoft.epub",
+        "fallbackUrl": "https://archive.org/download/finnegans-wake-joyce-james/FinnegansWakeJoyceJames.epub",
+        "filename": "finneganswake00joycuoft.epub"
+      },
+      "hashes": {
+        "size_bytes": 41793329,
+        "sha256": "93f80a2bd54e7c804b7cd0e88553315e3ebdba449a8a08dc83cd3a8c0e00e773",
+        "sha1": "84c3c0f7ee5c5670906b251c54bdd61ffc6dd639",
+        "md5": "882eade4ca44389a4882b73c0c6ff5d4"
+      },
+      "format": "application/epub+zip",
+      "pagination": {
+        "totalPages": 628,
+        "startPage": 1,
+        "endPage": 628,
+        "firstTextPage": 3,
+        "firstPageFile": "EPUB/page_17.html",
+        "citationFormat": "FW {page}.{line}"
+      },
+      "divisions": {
+        "type": "book",
+        "subdivisionType": "chapter",
+        "totalDivisions": 17
+      },
+      "copyright": {
+        "status": "In Copyright (US)",
+        "usStatus": "Protected under Sonny Bono CTEA (95 years from 1939) through December 31, 2035",
+        "euStatus": "Public Domain (70 years p.m.a., entered PD Jan 1, 2012)",
+        "notice": "Source text protected under U.S. copyright law through 2035. Annotations distributed under CC BY-SA 4.0."
+      }
+    }
+  ]
+}

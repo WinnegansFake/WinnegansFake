@@ -23,7 +23,7 @@ const ANNOTATIONS_DIR = path.join(REPO_ROOT, 'annotations');
 const MAX_TARGET_PHRASE_LEN = 150;
 
 // Regex patterns for directory and file conventions
-const PAGE_FILE_PATTERN = /^page_(\d{3})\.json$/;
+const PAGE_FILE_PATTERN = /^page_(\d{3,4})\.json$/;
 const DIR_BOOK_PATTERN = /^book_([1-4])$/;
 const DIR_CHAPTER_PATTERN = /^chapter_([1-8])$/;
 
@@ -54,31 +54,71 @@ function validateFile(filePath, validator, schema) {
   const relPath = path.relative(REPO_ROOT, filePath).split(path.sep).join('/');
   const parts = relPath.split('/');
 
-  // 1. Filename & Directory convention check
-  if (parts.length !== 4 || parts[0] !== 'annotations') {
+  if (parts.length < 3 || parts[0] !== 'annotations') {
     errors.push(
-      `File path '${relPath}' is invalid. Expected format: 'annotations/book_<B>/chapter_<C>/page_<PPP>.json'`
+      `File path '${relPath}' is invalid. Must be inside 'annotations/' with valid book/work hierarchy.`
     );
     return errors;
   }
 
-  const bookMatch = DIR_BOOK_PATTERN.exec(parts[1]);
-  const chapMatch = DIR_CHAPTER_PATTERN.exec(parts[2]);
-  const pageMatch = PAGE_FILE_PATTERN.exec(parts[3]);
+  let expectedWork = null;
+  let expectedBook = null;
+  let expectedChap = null;
+  let expectedPart = null;
+  let expectedEpisode = null;
+  let expectedPage = null;
 
-  if (!bookMatch) {
-    errors.push(`Invalid book folder '${parts[1]}'. Expected 'book_1' through 'book_4'.`);
-  }
-  if (!chapMatch) {
-    errors.push(`Invalid chapter folder '${parts[2]}'. Expected 'chapter_1' through 'chapter_8'.`);
-  }
-  if (!pageMatch) {
-    errors.push(`Invalid page filename '${parts[3]}'. Expected 3-digit zero-padded name like 'page_003.json'.`);
-  }
+  const isLegacyFW = DIR_BOOK_PATTERN.test(parts[1]);
 
-  const expectedBook = bookMatch ? parseInt(bookMatch[1], 10) : null;
-  const expectedChap = chapMatch ? parseInt(chapMatch[1], 10) : null;
-  const expectedPage = pageMatch ? parseInt(pageMatch[1], 10) : null;
+  if (isLegacyFW) {
+    // Legacy Finnegans Wake format: annotations/book_<B>/chapter_<C>/page_<PPP>.json
+    if (parts.length !== 4) {
+      errors.push(
+        `File path '${relPath}' is invalid. Expected format: 'annotations/book_<B>/chapter_<C>/page_<PPP>.json'`
+      );
+      return errors;
+    }
+
+    const bookMatch = DIR_BOOK_PATTERN.exec(parts[1]);
+    const chapMatch = DIR_CHAPTER_PATTERN.exec(parts[2]);
+    const pageMatch = PAGE_FILE_PATTERN.exec(parts[3]);
+
+    if (!bookMatch) {
+      errors.push(`Invalid book folder '${parts[1]}'. Expected 'book_1' through 'book_4'.`);
+    }
+    if (!chapMatch) {
+      errors.push(`Invalid chapter folder '${parts[2]}'. Expected 'chapter_1' through 'chapter_8'.`);
+    }
+    if (!pageMatch) {
+      errors.push(`Invalid page filename '${parts[3]}'. Expected 3-digit zero-padded name like 'page_003.json'.`);
+    }
+
+    expectedBook = bookMatch ? parseInt(bookMatch[1], 10) : null;
+    expectedChap = chapMatch ? parseInt(chapMatch[1], 10) : null;
+    expectedPage = pageMatch ? parseInt(pageMatch[1], 10) : null;
+  } else {
+    // Multi-work library format: annotations/<workId>/...
+    expectedWork = parts[1];
+    const fileName = parts[parts.length - 1];
+    const pageMatch = PAGE_FILE_PATTERN.exec(fileName);
+    if (!pageMatch) {
+      errors.push(`Invalid page filename '${fileName}'. Expected zero-padded name like 'page_001.json'.`);
+    } else {
+      expectedPage = parseInt(pageMatch[1], 10);
+    }
+
+    for (let i = 2; i < parts.length - 1; i++) {
+      const seg = parts[i];
+      const partM = /^part_(\d+)$/.exec(seg);
+      const epM = /^episode_(\d+)$/.exec(seg);
+      const bookM = /^book_(\d+)$/.exec(seg);
+      const chapM = /^chapter_(\d+)$/.exec(seg);
+      if (partM) expectedPart = parseInt(partM[1], 10);
+      else if (epM) expectedEpisode = parseInt(epM[1], 10);
+      else if (bookM) expectedBook = parseInt(bookM[1], 10);
+      else if (chapM) expectedChap = parseInt(chapM[1], 10);
+    }
+  }
 
   // 2. JSON Parse and Schema Validation
   let data;
@@ -95,17 +135,35 @@ function validateFile(filePath, validator, schema) {
       const loc = err.property ? err.property : 'root';
       errors.push(`Schema violation in '${relPath}' at [${loc}]: ${err.message}`);
     }
-    // If schema validation failed, return early
     return errors;
   }
 
   // 3. Path vs Content Coherence
-  if (expectedBook !== null && data.book !== expectedBook) {
-    errors.push(`Mismatch in '${relPath}': book folder is ${expectedBook} but JSON 'book' is ${data.book}.`);
+  if (isLegacyFW) {
+    if (expectedBook !== null && data.book !== expectedBook) {
+      errors.push(`Mismatch in '${relPath}': book folder is ${expectedBook} but JSON 'book' is ${data.book}.`);
+    }
+    if (expectedChap !== null && data.chapter !== expectedChap) {
+      errors.push(`Mismatch in '${relPath}': chapter folder is ${expectedChap} but JSON 'chapter' is ${data.chapter}.`);
+    }
+  } else {
+    if (expectedWork && data.work && data.work !== expectedWork) {
+      errors.push(`Mismatch in '${relPath}': directory work is '${expectedWork}' but JSON 'work' is '${data.work}'.`);
+    }
+    if (expectedPart !== null && data.part !== undefined && data.part !== expectedPart) {
+      errors.push(`Mismatch in '${relPath}': part folder is ${expectedPart} but JSON 'part' is ${data.part}.`);
+    }
+    if (expectedEpisode !== null && data.episode !== undefined && data.episode !== expectedEpisode) {
+      errors.push(`Mismatch in '${relPath}': episode folder is ${expectedEpisode} but JSON 'episode' is ${data.episode}.`);
+    }
+    if (expectedBook !== null && data.book !== undefined && data.book !== expectedBook) {
+      errors.push(`Mismatch in '${relPath}': book folder is ${expectedBook} but JSON 'book' is ${data.book}.`);
+    }
+    if (expectedChap !== null && data.chapter !== undefined && data.chapter !== expectedChap) {
+      errors.push(`Mismatch in '${relPath}': chapter folder is ${expectedChap} but JSON 'chapter' is ${data.chapter}.`);
+    }
   }
-  if (expectedChap !== null && data.chapter !== expectedChap) {
-    errors.push(`Mismatch in '${relPath}': chapter folder is ${expectedChap} but JSON 'chapter' is ${data.chapter}.`);
-  }
+
   if (expectedPage !== null && data.page_number !== expectedPage) {
     errors.push(
       `Mismatch in '${relPath}': file name implies page ${expectedPage} but JSON 'page_number' is ${data.page_number}.`

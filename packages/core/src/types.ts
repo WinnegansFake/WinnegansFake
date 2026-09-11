@@ -54,8 +54,11 @@ export interface Annotation {
 
 export interface PageAnnotations {
   schema_version: string;
+  work?: string;
   book?: number | string;
   chapter?: number | string;
+  part?: number | string;
+  episode?: number | string;
   page_number: number;
   annotations: Annotation[];
 }
@@ -81,3 +84,19 @@ export interface AnalyticalRegister {
   badgeClass?: string;
   icon?: string;
 }
+
+/** Alias for Annotation commonly used in UI layers */
+export type AnnotationItem = Annotation;
+
+/** Alias for PageAnnotations commonly used in UI layers */
+export type PageAnnotationsData = PageAnnotations;
+
+export interface PageLine {
+  line: number;
+  text: string;
+}
+
+export type LineSegment =
+  | { type: 'text'; text: string }
+  | { type: 'annotated'; text: string; annotations: Annotation[]; phrase: string };
+

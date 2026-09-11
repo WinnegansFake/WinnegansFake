@@ -33,6 +33,11 @@ export function getPageAnnotationJsonSchema(options: SchemaCustomizationOptions 
         pattern: "^\\d+\\.\\d+\\.\\d+$",
         description: "Semantic version of the annotation schema."
       },
+      work: {
+        type: "string",
+        pattern: "^[a-z0-9-]+$",
+        description: "Unique identifier of the literary work (e.g. 'finnegans-wake', 'ulysses')."
+      },
       book: {
         type: ["integer", "string"],
         description: "Book, volume, or major division identifier."
@@ -40,6 +45,14 @@ export function getPageAnnotationJsonSchema(options: SchemaCustomizationOptions 
       chapter: {
         type: ["integer", "string"],
         description: "Chapter, canto, or section identifier."
+      },
+      part: {
+        type: ["integer", "string"],
+        description: "Part or major group identifier."
+      },
+      episode: {
+        type: ["integer", "string"],
+        description: "Episode or subdivision identifier."
       },
       page_number: {
         type: "integer",

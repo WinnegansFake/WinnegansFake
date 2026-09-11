@@ -33,13 +33,18 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/library" className="hover:text-emerald-300 transition-colors">
+                  Works Library Catalog
+                </Link>
+              </li>
+              <li>
                 <Link href="/reader" className="hover:text-emerald-300 transition-colors">
                   Interactive Scholarly Reader
                 </Link>
               </li>
               <li>
-                <Link href="/dissertation" className="hover:text-emerald-300 transition-colors">
-                  Full Dissertation Monograph
+                <Link href="/dissertations" className="hover:text-emerald-300 transition-colors">
+                  Dissertations Library
                 </Link>
               </li>
               <li>

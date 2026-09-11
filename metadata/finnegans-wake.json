@@ -1,0 +1,54 @@
+{
+  "id": "finnegans-wake",
+  "title": "Finnegans Wake",
+  "author": "James Joyce",
+  "year": 1939,
+  "edition": "First Edition (London: Faber and Faber / New York: Viking Press, 1939)",
+  "archive": {
+    "provider": "Internet Archive",
+    "itemId": "finneganswake00joycuoft",
+    "detailsUrl": "https://archive.org/details/finneganswake00joycuoft",
+    "downloadUrl": "https://archive.org/download/finneganswake00joycuoft/finneganswake00joycuoft.epub",
+    "fallbackUrl": "https://archive.org/download/finnegans-wake-joyce-james/FinnegansWakeJoyceJames.epub",
+    "filename": "finneganswake00joycuoft.epub"
+  },
+  "checksums": {
+    "size_bytes": 41793329,
+    "sha256": "93f80a2bd54e7c804b7cd0e88553315e3ebdba449a8a08dc83cd3a8c0e00e773",
+    "sha1": "84c3c0f7ee5c5670906b251c54bdd61ffc6dd639",
+    "md5": "882eade4ca44389a4882b73c0c6ff5d4"
+  },
+  "pagination": {
+    "totalPages": 628,
+    "startPage": 1,
+    "endPage": 628,
+    "firstTextPage": 3,
+    "firstTextPageFile": "EPUB/page_17.html"
+  },
+  "books": [
+    {
+      "book": 1,
+      "chapters": 8,
+      "pageRange": "3\u2013216",
+      "viconianAge": "Theocratic / Divine Age (Parents, Thunder, The Fall)"
+    },
+    {
+      "book": 2,
+      "chapters": 4,
+      "pageRange": "219\u2013399",
+      "viconianAge": "Aristocratic / Heroic Age (Children, Games, Nightlessons, Pub)"
+    },
+    {
+      "book": 3,
+      "chapters": 4,
+      "pageRange": "403\u2013590",
+      "viconianAge": "Democratic / Human Age (The People, Shaun, Inquest, Bedchamber)"
+    },
+    {
+      "book": 4,
+      "chapters": 1,
+      "pageRange": "593\u2013628",
+      "viconianAge": "Ricorso (Dawn, Resurrection, Anna Livia's Soliloquy)"
+    }
+  ]
+}

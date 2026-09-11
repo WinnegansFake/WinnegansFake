@@ -205,13 +205,14 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
     };
   }, [query, searchIndex, epubLoaded]);
 
-  const handleNavigate = (page: number, line?: number) => {
+  const handleNavigate = (page: number, line?: number, work?: string) => {
     if (onNavigateToPage) {
       onNavigateToPage(page, line);
     } else if (navigateHandler) {
       navigateHandler(page, line);
     } else {
-      router.push(`/reader?page=${page}${line ? `&line=${line}` : ''}`);
+      const workQuery = work && work !== 'finnegans-wake' ? `&work=${work}` : '';
+      router.push(`/reader?page=${page}${line ? `&line=${line}` : ''}${workQuery}`);
     }
     closeSearch();
   };
@@ -227,7 +228,7 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
     } else if (e.key === 'Enter' && combinedResults[selectedIndex]) {
       e.preventDefault();
       const r = combinedResults[selectedIndex];
-      handleNavigate(r.page, r.line);
+      handleNavigate(r.page, r.line, (r as any).work);
     }
   };
 
@@ -454,12 +455,13 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
 
               {combinedResults.map((res, idx) => {
                 const isSelected = idx === selectedIndex;
-                const info = getBookAndChapterInfo(res.page);
+                const workId = (res as any).work || 'finnegans-wake';
+                const info = getBookAndChapterInfo(res.page, workId);
 
                 return (
                   <div
                     key={res.id}
-                    onClick={() => handleNavigate(res.page, res.line)}
+                    onClick={() => handleNavigate(res.page, res.line, workId)}
                     onMouseEnter={() => setSelectedIndex(idx)}
                     className={`p-3 rounded-xl border transition-all cursor-pointer flex flex-col gap-1.5 ${
                       isSelected

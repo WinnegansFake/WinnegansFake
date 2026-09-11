@@ -14,6 +14,7 @@ import {
   Layers,
   Bookmark,
   Search,
+  Library,
 } from 'lucide-react';
 import { GITHUB_REPO_URL } from '@/lib/constants';
 import { ThemeSwitcher } from './ThemeSwitcher';
@@ -37,14 +38,16 @@ export function Navigation() {
 
   const navLinks = [
     { href: '/', label: 'Overview', icon: Compass },
-    { href: '/reader', label: 'Interactive Reader', icon: BookOpen },
-    { href: '/dissertation', label: 'Dissertation', icon: GraduationCap },
-    { href: '/guide', label: 'Local Setup & EPUB', icon: Terminal },
-    { href: '/contribute', label: 'Contribute Annotations', icon: Layers },
+    { href: '/library', label: 'Works', icon: Library },
+    { href: '/reader', label: 'Reader', icon: BookOpen },
+    { href: '/dissertations', label: 'Dissertations', icon: GraduationCap },
+    { href: '/guide', label: 'Local Setup', icon: Terminal },
+    { href: '/contribute', label: 'Contribute', icon: Layers },
   ];
 
   const isActive = (href: string) => {
     if (href === '/') return pathname === '/' || pathname === '';
+    if (href === '/dissertations') return pathname?.startsWith('/dissertation');
     return pathname?.startsWith(href);
   };
 

@@ -9,5 +9,13 @@ export {
   SequentialSpineMapper,
   CalibratedNumberMapper,
   JoyceanPageMapper,
+  UlyssesEpisodeMapper,
+  RegexPaginationMapper,
+  CustomOffsetMapper,
+  registerMapper,
+  getMapperForWork,
+  type RegexPaginationMapperOptions,
+  type CustomOffsetMapperOptions,
 } from './mappers.js';
 export * from './types.js';
+

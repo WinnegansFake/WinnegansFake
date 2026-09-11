@@ -60,14 +60,16 @@ export interface ThemeCookiePayload {
 
 export interface BookmarkItem {
   id: string;
-  page: number; // Joyce page 1 to 628
-  line?: number; // Line coordinate 1 to 36
+  workId?: string; // Identifier of the literary work (e.g. 'finnegans-wake', 'ulysses')
+  page: number; // Canonical page coordinate
+  line?: number; // Line coordinate
   annotationId?: string;
   title: string;
   excerpt?: string;
   note?: string;
   createdAt: string; // ISO timestamp
 }
+
 
 export interface BookmarkCookiePayload {
   version: '1.0.0';

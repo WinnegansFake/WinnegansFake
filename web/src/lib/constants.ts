@@ -192,12 +192,67 @@ export function getBasePath(): string {
   return '';
 }
 
-export function getBookAndChapterInfo(page: number): {
+export {
+  getWork,
+  getAllWorks,
+  getWorkDivision,
+  FINNEGANS_WAKE,
+  ULYSSES,
+  FINNEGANS_WAKE_REGISTERS,
+  ULYSSES_REGISTERS,
+  type WorkDefinition,
+  type DivisionInfo,
+  getAllDissertations,
+  getDissertation,
+  getDissertationsForWork,
+  DISSERTATION_NIGHT_MIND,
+  DISSERTATION_ULYSSES_ANATOMY,
+  DISSERTATION_SIGLA_CYBERNETICS,
+  type DissertationDefinition,
+  type DissertationChapter,
+} from '@winnegans/core';
+
+export function getBookAndChapterInfo(page: number, workId: string = 'finnegans-wake'): {
   book: number;
   chapter: number;
   bookRoman: string;
   chapterTitle: string;
+  subtitle?: string;
+  schemaDetails?: Record<string, string | undefined>;
 } {
+  if (workId === 'ulysses') {
+    const episodes = [
+      { part: 1, episode: 1, title: 'Telemachus', subtitle: 'Part I: The Telemachiad', startPage: 1, endPage: 28, schemaDetails: { time: '8:00 AM', scene: 'The Tower (Sandycove)', art: 'Theology', color: 'White, gold', symbol: 'Heir', technique: 'Narrative (young)' } },
+      { part: 1, episode: 2, title: 'Nestor', subtitle: 'Part I: The Telemachiad', startPage: 29, endPage: 50, schemaDetails: { time: '10:00 AM', scene: 'The School (Dalkey)', art: 'History', color: 'Brown', symbol: 'Horse', technique: 'Catechism (personal)' } },
+      { part: 1, episode: 3, title: 'Proteus', subtitle: 'Part I: The Telemachiad', startPage: 51, endPage: 70, schemaDetails: { time: '11:00 AM', scene: 'The Strand (Sandymount)', art: 'Philology', color: 'Green', symbol: 'Tide', technique: 'Monologue (male)' } },
+      { part: 2, episode: 4, title: 'Calypso', subtitle: 'Part II: The Odyssey', startPage: 71, endPage: 94, schemaDetails: { time: '8:00 AM', scene: 'The House (7 Eccles St)', organ: 'Kidney', art: 'Economics', color: 'Orange', symbol: 'Nymph', technique: 'Narrative (mature)' } },
+      { part: 2, episode: 5, title: 'Lotus Eaters', subtitle: 'Part II: The Odyssey', startPage: 95, endPage: 116, schemaDetails: { time: '10:00 AM', scene: 'The Bath (Westland Row)', organ: 'Genitals', art: 'Botany', color: 'Brown', symbol: 'Eucharist', technique: 'Narcissism' } },
+      { part: 2, episode: 6, title: 'Hades', subtitle: 'Part II: The Odyssey', startPage: 117, endPage: 152, schemaDetails: { time: '11:00 AM', scene: 'The Graveyard (Glasnevin)', organ: 'Heart', art: 'Religion', color: 'White, black', symbol: 'Caretaker', technique: 'Incubism' } },
+      { part: 2, episode: 7, title: 'Aeolus', subtitle: 'Part II: The Odyssey', startPage: 153, endPage: 198, schemaDetails: { time: '12:00 PM', scene: 'The Newspaper', organ: 'Lungs', art: 'Rhetoric', color: 'Red', symbol: 'Editor', technique: 'Enthymemic' } },
+      { part: 2, episode: 8, title: 'Lestrygonians', subtitle: 'Part II: The Odyssey', startPage: 199, endPage: 242, schemaDetails: { time: '1:00 PM', scene: 'The Lunch (Davy Byrne\'s)', organ: 'Esophagus', art: 'Architecture', symbol: 'Constables', technique: 'Peristalsis' } },
+      { part: 2, episode: 9, title: 'Scylla and Charybdis', subtitle: 'Part II: The Odyssey', startPage: 243, endPage: 282, schemaDetails: { time: '2:00 PM', scene: 'The National Library', organ: 'Brain', art: 'Literature', symbol: 'Stratford, London', technique: 'Dialectic' } },
+      { part: 2, episode: 10, title: 'Wandering Rocks', subtitle: 'Part II: The Odyssey', startPage: 283, endPage: 328, schemaDetails: { time: '3:00 PM', scene: 'The Streets of Dublin', organ: 'Blood', art: 'Mechanics', color: 'Rainbow', symbol: 'Citizens', technique: 'Labyrinth' } },
+      { part: 2, episode: 11, title: 'Sirens', subtitle: 'Part II: The Odyssey', startPage: 329, endPage: 372, schemaDetails: { time: '4:00 PM', scene: 'The Concert Room (Ormond)', organ: 'Ear', art: 'Music', symbol: 'Barmaids', technique: 'Fuga per canonem' } },
+      { part: 2, episode: 12, title: 'Cyclops', subtitle: 'Part II: The Odyssey', startPage: 373, endPage: 444, schemaDetails: { time: '5:00 PM', scene: 'The Tavern (Barney Kiernan\'s)', organ: 'Muscle', art: 'Politics', symbol: 'Fenian', technique: 'Gigantism' } },
+      { part: 2, episode: 13, title: 'Nausicaa', subtitle: 'Part II: The Odyssey', startPage: 445, endPage: 486, schemaDetails: { time: '8:00 PM', scene: 'The Rocks (Sandymount)', organ: 'Eye, Nose', art: 'Painting', color: 'Blue, grey', symbol: 'Virgin', technique: 'Tumescence' } },
+      { part: 2, episode: 14, title: 'Oxen of the Sun', subtitle: 'Part II: The Odyssey', startPage: 487, endPage: 538, schemaDetails: { time: '10:00 PM', scene: 'The Hospital (Holles St)', organ: 'Womb', art: 'Medicine', color: 'White', symbol: 'Mothers', technique: 'Embryonic development' } },
+      { part: 2, episode: 15, title: 'Circe', subtitle: 'Part II: The Odyssey', startPage: 539, endPage: 658, schemaDetails: { time: '12:00 AM', scene: 'The Brothel (Nighttown)', organ: 'Locomotor', art: 'Magic', symbol: 'Whore', technique: 'Hallucination' } },
+      { part: 3, episode: 16, title: 'Eumaeus', subtitle: 'Part III: The Nostos', startPage: 659, endPage: 702, schemaDetails: { time: '1:00 AM', scene: 'The Shelter (Cabman\'s)', organ: 'Nerves', art: 'Navigation', symbol: 'Sailors', technique: 'Narrative (old)' } },
+      { part: 3, episode: 17, title: 'Ithaca', subtitle: 'Part III: The Nostos', startPage: 703, endPage: 720, schemaDetails: { time: '2:00 AM', scene: 'The House (7 Eccles St)', organ: 'Skeleton', art: 'Science', color: 'Comets', symbol: 'Mothers', technique: 'Catechism' } },
+      { part: 3, episode: 18, title: 'Penelope', subtitle: 'Part III: The Nostos', startPage: 721, endPage: 732, schemaDetails: { time: 'No time', scene: 'The Bed (7 Eccles St)', organ: 'Flesh', art: 'None', symbol: 'Earth', technique: 'Monologue (female)' } },
+    ];
+    const match = episodes.find((ep) => page >= ep.startPage && page <= ep.endPage) || episodes[0];
+    const romans = ['I', 'II', 'III'];
+    return {
+      book: match.part,
+      chapter: match.episode,
+      bookRoman: romans[match.part - 1] || 'I',
+      chapterTitle: `Episode ${match.episode}: ${match.title}`,
+      subtitle: match.subtitle,
+      schemaDetails: match.schemaDetails,
+    };
+  }
+
   let book = 1;
   let chapter = 1;
   let title = "The Fall and Rise of Finnegan";
@@ -248,4 +303,6 @@ export function getBookAndChapterInfo(page: number): {
 }
 
 export const ARCHIVE_EPUB_URL = "https://archive.org/download/finneganswake00joycuoft/finneganswake00joycuoft.epub";
+export const FW_FALLBACK_EPUB_URL = "https://archive.org/download/finnegans-wake-joyce-james/FinnegansWakeJoyceJames.epub";
+export const ULYSSES_EPUB_URL = "https://archive.org/download/ulysses00joyc_1/ulysses00joyc_1.epub";
 export const GITHUB_REPO_URL = "https://github.com/tekromancy/WinnegansFake";

@@ -1,0 +1,23 @@
+{
+  "name": "create-winnegans-app",
+  "version": "0.1.0",
+  "description": "Scaffold a crowdsourced, zero-copyright digital humanities annotation platform for any literary library",
+  "bin": {
+    "create-winnegans-app": "./bin/index.js"
+  },
+  "type": "module",
+  "main": "./bin/index.js",
+  "keywords": [
+    "create-app",
+    "scaffold",
+    "digital-humanities",
+    "literature",
+    "annotations",
+    "concordance",
+    "epub"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "devDependencies": {
+    "@types/node": "^20"
+  }
+}

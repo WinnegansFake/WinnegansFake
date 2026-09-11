@@ -13,7 +13,9 @@
     "predev": "node ../scripts/sync_public_annotations.js"
   },
   "dependencies": {
+    "@winnegans/core": "link:../packages/core",
     "@winnegans/epub-reader": "link:../packages/epub-reader",
+    "@winnegans/react": "link:../packages/react",
     "@winnegans/theme": "link:../packages/theme",
     "jsonschema": "^1.5.0",
     "jszip": "^3.10.2",
