@@ -3,5 +3,51 @@
   "book": 1,
   "chapter": 8,
   "page_number": 200,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "200.13-bdff",
+      "line_number": 13,
+      "target_phrase": "yawn",
+      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"yawn\".",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "200.31-0436",
+      "line_number": 31,
+      "target_phrase": "Anna Livia",
+      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"Anna Livia\".",
+      "categories": [
+        "alp",
+        "river-liffey",
+        "feminine-principle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

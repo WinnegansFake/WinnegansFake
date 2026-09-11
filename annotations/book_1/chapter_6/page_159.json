@@ -3,5 +3,73 @@
   "book": 1,
   "chapter": 6,
   "page_number": 159,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "159.01-b418",
+      "line_number": 1,
+      "target_phrase": "shieling, Rore Coeli.",
+      "annotation_text": "Structural opening of Book 1, Chapter 6, page 159. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "159.16-5f31",
+      "line_number": 16,
+      "target_phrase": "wehl silly flowing",
+      "annotation_text": "Mid-page polysemic discourse on page 159: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "159.27-53ee",
+      "line_number": 27,
+      "target_phrase": "Tristan",
+      "annotation_text": "Mythological and folkloric archetype (Tristan): invoking the ancient Fianna cycle, heroic legend, and the patron saints of early Celtic Christianity.",
+      "categories": [
+        "irish-mythology",
+        "celtic-lore",
+        "folklore",
+        "saints"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "MacKillop, James. Dictionary of Celtic Mythology. https://www.oxfordreference.com",
+        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

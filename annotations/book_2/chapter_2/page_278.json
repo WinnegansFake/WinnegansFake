@@ -3,5 +3,73 @@
   "book": 2,
   "chapter": 2,
   "page_number": 278,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "278.01-5de6",
+      "line_number": 1,
+      "target_phrase": "Pitchcap triangle^ noose",
+      "annotation_text": "Structural opening of Book 2, Chapter 2, page 278. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-2"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "278.15-b8a8",
+      "line_number": 15,
+      "target_phrase": "hen",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (hen), representing the genesis of writing, literature, and decipherment.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "278.15-9d55",
+      "line_number": 15,
+      "target_phrase": "wont rise ladder.",
+      "annotation_text": "Mid-page polysemic discourse on page 278: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

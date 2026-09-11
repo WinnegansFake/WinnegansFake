@@ -3,5 +3,119 @@
   "book": 1,
   "chapter": 8,
   "page_number": 215,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "215.10-b414",
+      "line_number": 10,
+      "target_phrase": "Anna Livia",
+      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"Anna Livia\".",
+      "categories": [
+        "alp",
+        "river-liffey",
+        "feminine-principle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "215.15-59c9",
+      "line_number": 15,
+      "target_phrase": "John",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "gospels"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "215.20-9e8f",
+      "line_number": 20,
+      "target_phrase": "Plurabelle",
+      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"Plurabelle\".",
+      "categories": [
+        "alp",
+        "river-liffey",
+        "feminine-principle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "215.29-ed46",
+      "line_number": 29,
+      "target_phrase": "Shaun",
+      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Shaun\".",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "215.30-8462",
+      "line_number": 30,
+      "target_phrase": "Shem",
+      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Shem\".",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

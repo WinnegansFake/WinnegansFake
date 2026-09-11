@@ -3,5 +3,50 @@
   "book": 3,
   "chapter": 3,
   "page_number": 527,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "527.09-a0e1",
+      "line_number": 9,
+      "target_phrase": "divine",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"divine\".",
+      "categories": [
+        "vico",
+        "ricorso",
+        "philosophy-of-history"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "527.16-ba2b",
+      "line_number": 16,
+      "target_phrase": "divine",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"divine\".",
+      "categories": [
+        "vico",
+        "ricorso",
+        "philosophy-of-history"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

@@ -3,5 +3,50 @@
   "book": 3,
   "chapter": 4,
   "page_number": 555,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "555.12-2c59",
+      "line_number": 12,
+      "target_phrase": "Kevin",
+      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Kevin\".",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "555.15-3db9",
+      "line_number": 15,
+      "target_phrase": "Jerry",
+      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Jerry\".",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

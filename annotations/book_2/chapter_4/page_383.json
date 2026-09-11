@@ -3,5 +3,98 @@
   "book": 2,
   "chapter": 4,
   "page_number": 383,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "383.01-4958",
+      "line_number": 1,
+      "target_phrase": "Mark",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "gospels"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "383.02-bd24",
+      "line_number": 2,
+      "target_phrase": "mark",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "gospels"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "383.05-afaf",
+      "line_number": 5,
+      "target_phrase": "Mark",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "gospels"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "383.09-6852",
+      "line_number": 9,
+      "target_phrase": "mark",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "gospels"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

@@ -3,5 +3,74 @@
   "book": 2,
   "chapter": 2,
   "page_number": 307,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "307.08-8760",
+      "line_number": 8,
+      "target_phrase": "Clontarf",
+      "annotation_text": "Dublin geographical anchor (Clontarf): grounding the cosmic oneiric myth in the tangible stone, water, and hills of County Dublin and the River Liffey.",
+      "categories": [
+        "dublin-topography",
+        "geography",
+        "landmarks"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
+        "Dublin Historical Record. https://www.jstor.org/journal/dublhiste"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "307.14-9bd7",
+      "line_number": 14,
+      "target_phrase": "Letter",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (Letter), representing the genesis of writing, literature, and decipherment.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "307.18-f08e",
+      "line_number": 18,
+      "target_phrase": "Patrick",
+      "annotation_text": "Mythological and folkloric archetype (Patrick): invoking the ancient Fianna cycle, heroic legend, and the patron saints of early Celtic Christianity.",
+      "categories": [
+        "irish-mythology",
+        "celtic-lore",
+        "folklore",
+        "saints"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "MacKillop, James. Dictionary of Celtic Mythology. https://www.oxfordreference.com",
+        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

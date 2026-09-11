@@ -3,5 +3,73 @@
   "book": 1,
   "chapter": 4,
   "page_number": 83,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "083.01-f189",
+      "line_number": 1,
+      "target_phrase": "when it's hatter's",
+      "annotation_text": "Structural opening of Book 1, Chapter 4, page 83. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "083.17-4dfd",
+      "line_number": 17,
+      "target_phrase": "then into Good",
+      "annotation_text": "Mid-page polysemic discourse on page 83: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "083.27-7ea6",
+      "line_number": 27,
+      "target_phrase": "hen",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (hen), representing the genesis of writing, literature, and decipherment.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

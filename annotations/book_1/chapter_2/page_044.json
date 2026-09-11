@@ -3,5 +3,52 @@
   "book": 1,
   "chapter": 2,
   "page_number": 44,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "044.17-a1c8",
+      "line_number": 17,
+      "target_phrase": "klikkaklakkaklaskaklopatzklatschabattacreppycrottygraddaghsemmihsammihnouithappl",
+      "annotation_text": "One of the ten 100-letter polysyllabic thunderclaps of Finnegans Wake, synthesizing words for thunder across world languages to signal the awe-inspiring divine voice and human institution of society.",
+      "categories": [
+        "thunderclap",
+        "vico",
+        "voice-of-god",
+        "onomatopoeia"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (On the Thunder and Law). https://plato.stanford.edu/entries/vico/",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "044.19-69e3",
+      "line_number": 19,
+      "target_phrase": "Dump",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (Dump), representing the genesis of writing, literature, and decipherment.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

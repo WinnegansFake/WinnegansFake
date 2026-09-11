@@ -3,5 +3,73 @@
   "book": 1,
   "chapter": 5,
   "page_number": 104,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "104.01-5c02",
+      "line_number": 1,
+      "target_phrase": "Annah the Allmaziful",
+      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"Annah the Allmaziful\".",
+      "categories": [
+        "alp",
+        "river-liffey",
+        "feminine-principle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "104.01-5d34",
+      "line_number": 1,
+      "target_phrase": "name Annah Allmaziful,",
+      "annotation_text": "Structural opening of Book 1, Chapter 5, page 104. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "104.11-6fee",
+      "line_number": 11,
+      "target_phrase": "Brayned, Arcs Ceiling",
+      "annotation_text": "Mid-page polysemic discourse on page 104: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

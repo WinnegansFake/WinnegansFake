@@ -3,5 +3,72 @@
   "book": 1,
   "chapter": 5,
   "page_number": 106,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "106.01-82ce",
+      "line_number": 1,
+      "target_phrase": "serve with Thee,",
+      "annotation_text": "Structural opening of Book 1, Chapter 5, page 106. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "106.16-137a",
+      "line_number": 16,
+      "target_phrase": "Exchange Lent Dutiful",
+      "annotation_text": "Mid-page polysemic discourse on page 106: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "106.24-d6b9",
+      "line_number": 24,
+      "target_phrase": "Divine",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"Divine\".",
+      "categories": [
+        "vico",
+        "ricorso",
+        "philosophy-of-history"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

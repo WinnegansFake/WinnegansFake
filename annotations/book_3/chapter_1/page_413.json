@@ -3,5 +3,72 @@
   "book": 3,
   "chapter": 1,
   "page_number": 413,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "413.20-7033",
+      "line_number": 20,
+      "target_phrase": "Pepette",
+      "annotation_text": "Issy (Isolde), the daughter and split-personality siren looking into her looking-glass, represented in the motif \"Pepette\".",
+      "categories": [
+        "issy",
+        "mirror-twin",
+        "tristan-and-isolde"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "413.25-74e0",
+      "line_number": 25,
+      "target_phrase": "Shaun",
+      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Shaun\".",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "413.26-0d3e",
+      "line_number": 26,
+      "target_phrase": "Shaun",
+      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Shaun\".",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

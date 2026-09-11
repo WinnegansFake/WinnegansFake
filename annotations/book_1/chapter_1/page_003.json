@@ -74,7 +74,7 @@
       "id": "003.02-94ed",
       "line_number": 2,
       "target_phrase": "commodius vicus of recirculation",
-      "annotation_text": "Multilingual pun fusing the Roman Emperor Commodus, English 'commodious' (spacious/convenient), Latin 'vicus' (lane, street, village), and Giambattista Vico (1668\u20131744), the Italian philosopher whose cycle of history (divine, heroic, human, ricorso) provides the scaffolding for Finnegans Wake.",
+      "annotation_text": "Multilingual pun fusing the Roman Emperor Commodus, English 'commodious' (spacious/convenient), Latin 'vicus' (lane, street, village), and Giambattista Vico (1668–1744), the Italian philosopher whose cycle of history (divine, heroic, human, ricorso) provides the scaffolding for Finnegans Wake.",
       "categories": [
         "vico",
         "philosophy",
@@ -134,7 +134,7 @@
         "398.29"
       ],
       "sources": [
-        "B\u00e9dier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
         "Wagner, Richard. Tristan und Isolde Libretto. https://en.wikipedia.org/wiki/Tristan_und_Isolde"
       ],
       "contributors": [
@@ -211,7 +211,7 @@
       "id": "003.05-3ed2",
       "line_number": 5,
       "target_phrase": "penisolate war",
-      "annotation_text": "Triple pun: the Peninsular War (1807\u20131814) fought by the Duke of Wellington, the \"peninsular\" isolation of Howth and Ireland, and Tristram's sexual / phallic conquest (\"penis-isolate\").",
+      "annotation_text": "Triple pun: the Peninsular War (1807–1814) fought by the Duke of Wellington, the \"peninsular\" isolation of Howth and Ireland, and Tristram's sexual / phallic conquest (\"penis-isolate\").",
       "categories": [
         "wellington",
         "war",
@@ -468,7 +468,7 @@
       "id": "003.12-45da",
       "line_number": 12,
       "target_phrase": "ringsome on the aquaface",
-      "annotation_text": "The circular rainbow reflecting upon the primordial waters of the deep (Genesis 1:2: \"and the Spirit of God moved upon the face of the waters\"). German \"Wasserfl\u00e4che\" (water surface) and Latin \"aqua\".",
+      "annotation_text": "The circular rainbow reflecting upon the primordial waters of the deep (Genesis 1:2: \"and the Spirit of God moved upon the face of the waters\"). German \"Wasserfläche\" (water surface) and Latin \"aqua\".",
       "categories": [
         "genesis",
         "creation",

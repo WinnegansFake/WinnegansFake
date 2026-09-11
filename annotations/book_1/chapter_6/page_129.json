@@ -3,5 +3,52 @@
   "book": 1,
   "chapter": 6,
   "page_number": 129,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "129.07-bebf",
+      "line_number": 7,
+      "target_phrase": "letter",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (letter), representing the genesis of writing, literature, and decipherment.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "129.16-abb5",
+      "line_number": 16,
+      "target_phrase": "dump",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (dump), representing the genesis of writing, literature, and decipherment.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

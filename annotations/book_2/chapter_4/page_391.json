@@ -3,5 +3,51 @@
   "book": 2,
   "chapter": 4,
   "page_number": 391,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "391.02-c946",
+      "line_number": 2,
+      "target_phrase": "1132",
+      "annotation_text": "Joyce's recurring mystical and historical number (1132): 1132 (the date of St. Malachy, Dublin's fall, and mathematical doubling 566 x 2) signifying resurrection and human history.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "391.12-30ee",
+      "line_number": 12,
+      "target_phrase": "Mark",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "gospels"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

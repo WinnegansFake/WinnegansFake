@@ -3,5 +3,73 @@
   "book": 1,
   "chapter": 4,
   "page_number": 102,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "102.01-b956",
+      "line_number": 1,
+      "target_phrase": "younger than thighne,",
+      "annotation_text": "Structural opening of Book 1, Chapter 4, page 102. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "102.14-6198",
+      "line_number": 14,
+      "target_phrase": "pookas pelotting piecebag,",
+      "annotation_text": "Mid-page polysemic discourse on page 102: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "102.20-593a",
+      "line_number": 20,
+      "target_phrase": "A.L.P",
+      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"A.L.P\".",
+      "categories": [
+        "alp",
+        "river-liffey",
+        "feminine-principle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

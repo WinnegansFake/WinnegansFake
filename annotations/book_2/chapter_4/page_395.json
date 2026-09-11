@@ -3,5 +3,52 @@
   "book": 2,
   "chapter": 4,
   "page_number": 395,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "395.03-3bbe",
+      "line_number": 3,
+      "target_phrase": "John",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "gospels"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "395.21-8bbd",
+      "line_number": 21,
+      "target_phrase": "Amen",
+      "annotation_text": "Liturgical or ecclesiastical allusion (Amen): weaving Catholic ritual, Latin prayers, and sacramental language into the domestic nighttime dream.",
+      "categories": [
+        "liturgy",
+        "biblical",
+        "latin",
+        "theology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
+        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

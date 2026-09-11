@@ -3,5 +3,52 @@
   "book": 3,
   "chapter": 4,
   "page_number": 570,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "570.11-686c",
+      "line_number": 11,
+      "target_phrase": "Amen",
+      "annotation_text": "Liturgical or ecclesiastical allusion (Amen): weaving Catholic ritual, Latin prayers, and sacramental language into the domestic nighttime dream.",
+      "categories": [
+        "liturgy",
+        "biblical",
+        "latin",
+        "theology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
+        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "570.27-c9f1",
+      "line_number": 27,
+      "target_phrase": "Sanctus",
+      "annotation_text": "Liturgical or ecclesiastical allusion (Sanctus): weaving Catholic ritual, Latin prayers, and sacramental language into the domestic nighttime dream.",
+      "categories": [
+        "liturgy",
+        "biblical",
+        "latin",
+        "theology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
+        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

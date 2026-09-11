@@ -3,5 +3,118 @@
   "book": 1,
   "chapter": 3,
   "page_number": 73,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "073.03-c72f",
+      "line_number": 3,
+      "target_phrase": "Earwicker",
+      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"Earwicker\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "073.04-01ff",
+      "line_number": 4,
+      "target_phrase": "Earwicker",
+      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"Earwicker\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "073.12-aae4",
+      "line_number": 12,
+      "target_phrase": "heroic",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"heroic\".",
+      "categories": [
+        "vico",
+        "ricorso",
+        "philosophy-of-history"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "073.25-cec9",
+      "line_number": 25,
+      "target_phrase": "Howth",
+      "annotation_text": "Dublin geographical anchor (Howth): grounding the cosmic oneiric myth in the tangible stone, water, and hills of County Dublin and the River Liffey.",
+      "categories": [
+        "dublin-topography",
+        "geography",
+        "landmarks"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
+        "Dublin Historical Record. https://www.jstor.org/journal/dublhiste"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "073.26-fc01",
+      "line_number": 26,
+      "target_phrase": "human",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"human\".",
+      "categories": [
+        "vico",
+        "ricorso",
+        "philosophy-of-history"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

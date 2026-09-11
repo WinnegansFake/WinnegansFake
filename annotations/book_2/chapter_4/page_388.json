@@ -3,5 +3,95 @@
   "book": 2,
   "chapter": 4,
   "page_number": 388,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "388.11-02f5",
+      "line_number": 11,
+      "target_phrase": "Patrick",
+      "annotation_text": "Mythological and folkloric archetype (Patrick): invoking the ancient Fianna cycle, heroic legend, and the patron saints of early Celtic Christianity.",
+      "categories": [
+        "irish-mythology",
+        "celtic-lore",
+        "folklore",
+        "saints"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "MacKillop, James. Dictionary of Celtic Mythology. https://www.oxfordreference.com",
+        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "388.12-6d29",
+      "line_number": 12,
+      "target_phrase": "Kevin",
+      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Kevin\".",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "388.17-6791",
+      "line_number": 17,
+      "target_phrase": "1132",
+      "annotation_text": "Joyce's recurring mystical and historical number (1132): 1132 (the date of St. Malachy, Dublin's fall, and mathematical doubling 566 x 2) signifying resurrection and human history.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "388.22-0d62",
+      "line_number": 22,
+      "target_phrase": "1132",
+      "annotation_text": "Joyce's recurring mystical and historical number (1132): 1132 (the date of St. Malachy, Dublin's fall, and mathematical doubling 566 x 2) signifying resurrection and human history.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

@@ -3,5 +3,73 @@
   "book": 3,
   "chapter": 2,
   "page_number": 444,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "444.01-6a2f",
+      "line_number": 1,
+      "target_phrase": "angry boils with",
+      "annotation_text": "Structural opening of Book 3, Chapter 2, page 444. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-3"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "444.17-369d",
+      "line_number": 17,
+      "target_phrase": "knocking with name",
+      "annotation_text": "Mid-page polysemic discourse on page 444: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "444.31-c981",
+      "line_number": 31,
+      "target_phrase": "Mark",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "gospels"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

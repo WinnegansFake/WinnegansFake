@@ -3,5 +3,50 @@
   "book": 3,
   "chapter": 3,
   "page_number": 497,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "497.11-c392",
+      "line_number": 11,
+      "target_phrase": "Vico",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"Vico\".",
+      "categories": [
+        "vico",
+        "ricorso",
+        "philosophy-of-history"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "497.17-5168",
+      "line_number": 17,
+      "target_phrase": "Clontarf",
+      "annotation_text": "Dublin geographical anchor (Clontarf): grounding the cosmic oneiric myth in the tangible stone, water, and hills of County Dublin and the River Liffey.",
+      "categories": [
+        "dublin-topography",
+        "geography",
+        "landmarks"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
+        "Dublin Historical Record. https://www.jstor.org/journal/dublhiste"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

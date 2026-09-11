@@ -3,5 +3,72 @@
   "book": 1,
   "chapter": 4,
   "page_number": 79,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "079.01-ef2f",
+      "line_number": 1,
+      "target_phrase": "took plain being",
+      "annotation_text": "Structural opening of Book 1, Chapter 4, page 79. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "079.16-fb17",
+      "line_number": 16,
+      "target_phrase": "vulcans guffawably eruptious",
+      "annotation_text": "Mid-page polysemic discourse on page 79: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "079.17-401d",
+      "line_number": 17,
+      "target_phrase": "human",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"human\".",
+      "categories": [
+        "vico",
+        "ricorso",
+        "philosophy-of-history"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

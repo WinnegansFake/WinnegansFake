@@ -3,5 +3,51 @@
   "book": 2,
   "chapter": 1,
   "page_number": 257,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "257.01-3d22",
+      "line_number": 1,
+      "target_phrase": "Izzy",
+      "annotation_text": "Issy (Isolde), the daughter and split-personality siren looking into her looking-glass, represented in the motif \"Izzy\".",
+      "categories": [
+        "issy",
+        "mirror-twin",
+        "tristan-and-isolde"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "257.24-8290",
+      "line_number": 24,
+      "target_phrase": "ryzooysphalnabortansporthaokansakroidverjkapakkapuk",
+      "annotation_text": "One of the ten 100-letter polysyllabic thunderclaps of Finnegans Wake, synthesizing words for thunder across world languages to signal the awe-inspiring divine voice and human institution of society.",
+      "categories": [
+        "thunderclap",
+        "vico",
+        "voice-of-god",
+        "onomatopoeia"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (On the Thunder and Law). https://plato.stanford.edu/entries/vico/",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

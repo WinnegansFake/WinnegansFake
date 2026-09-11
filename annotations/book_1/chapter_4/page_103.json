@@ -3,5 +3,28 @@
   "book": 1,
   "chapter": 4,
   "page_number": 103,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "103.01-5ace",
+      "line_number": 1,
+      "target_phrase": "Island Bridge tide.",
+      "annotation_text": "Structural opening of Book 1, Chapter 4, page 103. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

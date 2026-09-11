@@ -3,5 +3,73 @@
   "book": 3,
   "chapter": 2,
   "page_number": 443,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "443.01-0303",
+      "line_number": 1,
+      "target_phrase": "behaitch like solitar.",
+      "annotation_text": "Structural opening of Book 3, Chapter 2, page 443. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-3"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "443.11-2d93",
+      "line_number": 11,
+      "target_phrase": "Filius",
+      "annotation_text": "Liturgical or ecclesiastical allusion (Filius): weaving Catholic ritual, Latin prayers, and sacramental language into the domestic nighttime dream.",
+      "categories": [
+        "liturgy",
+        "biblical",
+        "latin",
+        "theology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
+        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "443.17-b738",
+      "line_number": 17,
+      "target_phrase": "Hume, algebrist, before",
+      "annotation_text": "Mid-page polysemic discourse on page 443: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

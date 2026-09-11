@@ -3,5 +3,96 @@
   "book": 3,
   "chapter": 1,
   "page_number": 411,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "411.10-b429",
+      "line_number": 10,
+      "target_phrase": "Amen",
+      "annotation_text": "Liturgical or ecclesiastical allusion (Amen): weaving Catholic ritual, Latin prayers, and sacramental language into the domestic nighttime dream.",
+      "categories": [
+        "liturgy",
+        "biblical",
+        "latin",
+        "theology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
+        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "411.18-5567",
+      "line_number": 18,
+      "target_phrase": "Patrick",
+      "annotation_text": "Mythological and folkloric archetype (Patrick): invoking the ancient Fianna cycle, heroic legend, and the patron saints of early Celtic Christianity.",
+      "categories": [
+        "irish-mythology",
+        "celtic-lore",
+        "folklore",
+        "saints"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "MacKillop, James. Dictionary of Celtic Mythology. https://www.oxfordreference.com",
+        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "411.20-2cc1",
+      "line_number": 20,
+      "target_phrase": "Shaun",
+      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Shaun\".",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "411.22-03c7",
+      "line_number": 22,
+      "target_phrase": "Shaun",
+      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Shaun\".",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

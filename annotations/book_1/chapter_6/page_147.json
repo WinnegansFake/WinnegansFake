@@ -3,5 +3,72 @@
   "book": 1,
   "chapter": 6,
   "page_number": 147,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "147.01-5600",
+      "line_number": 1,
+      "target_phrase": "apron stage. him,",
+      "annotation_text": "Structural opening of Book 1, Chapter 6, page 147. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "147.16-bcdb",
+      "line_number": 16,
+      "target_phrase": "married belles began",
+      "annotation_text": "Mid-page polysemic discourse on page 147: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "147.25-bcf8",
+      "line_number": 25,
+      "target_phrase": "pepette",
+      "annotation_text": "Issy (Isolde), the daughter and split-personality siren looking into her looking-glass, represented in the motif \"pepette\".",
+      "categories": [
+        "issy",
+        "mirror-twin",
+        "tristan-and-isolde"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

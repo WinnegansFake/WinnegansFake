@@ -3,5 +3,73 @@
   "book": 2,
   "chapter": 3,
   "page_number": 314,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "314.01-1c56",
+      "line_number": 1,
+      "target_phrase": "deiffel when finicking",
+      "annotation_text": "Structural opening of Book 2, Chapter 3, page 314. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-2"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "314.05-f573",
+      "line_number": 5,
+      "target_phrase": "Bothallchoractorschumminaroundgansumuminarumdrumstrumtruminahumptadumpwaultopoof",
+      "annotation_text": "One of the ten 100-letter polysyllabic thunderclaps of Finnegans Wake, synthesizing words for thunder across world languages to signal the awe-inspiring divine voice and human institution of society.",
+      "categories": [
+        "thunderclap",
+        "vico",
+        "voice-of-god",
+        "onomatopoeia"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (On the Thunder and Law). https://plato.stanford.edu/entries/vico/",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "314.14-108d",
+      "line_number": 14,
+      "target_phrase": "world. Paradoxmutose caring,",
+      "annotation_text": "Mid-page polysemic discourse on page 314: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

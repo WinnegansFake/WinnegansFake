@@ -3,5 +3,51 @@
   "book": 3,
   "chapter": 2,
   "page_number": 459,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "459.05-7363",
+      "line_number": 5,
+      "target_phrase": "Issy",
+      "annotation_text": "Issy (Isolde), the daughter and split-personality siren looking into her looking-glass, represented in the motif \"Issy\".",
+      "categories": [
+        "issy",
+        "mirror-twin",
+        "tristan-and-isolde"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "459.27-c208",
+      "line_number": 27,
+      "target_phrase": "letter",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (letter), representing the genesis of writing, literature, and decipherment.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

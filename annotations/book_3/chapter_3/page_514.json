@@ -3,5 +3,72 @@
   "book": 3,
   "chapter": 3,
   "page_number": 514,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "514.01-24f6",
+      "line_number": 1,
+      "target_phrase": "They were simple",
+      "annotation_text": "Structural opening of Book 3, Chapter 3, page 514. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-3"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "514.13-30e1",
+      "line_number": 13,
+      "target_phrase": "wake etcaetera etcaeterorum",
+      "annotation_text": "Mid-page polysemic discourse on page 514: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "514.14-0e79",
+      "line_number": 14,
+      "target_phrase": "Howth",
+      "annotation_text": "Dublin geographical anchor (Howth): grounding the cosmic oneiric myth in the tangible stone, water, and hills of County Dublin and the River Liffey.",
+      "categories": [
+        "dublin-topography",
+        "geography",
+        "landmarks"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
+        "Dublin Historical Record. https://www.jstor.org/journal/dublhiste"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

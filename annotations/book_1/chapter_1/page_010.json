@@ -3,5 +3,236 @@
   "book": 1,
   "chapter": 1,
   "page_number": 10,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "010.01-889d",
+      "line_number": 1,
+      "target_phrase": "Willingdone",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered in the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.02-4c38",
+      "line_number": 2,
+      "target_phrase": "Willingdone",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered in the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.04-8674",
+      "line_number": 4,
+      "target_phrase": "Willingdone",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered in the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.06-286f",
+      "line_number": 6,
+      "target_phrase": "Willingdone",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered in the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.08-9985",
+      "line_number": 8,
+      "target_phrase": "Willingdone",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered in the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.10-c683",
+      "line_number": 10,
+      "target_phrase": "Willingdone",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered in the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.11-16de",
+      "line_number": 11,
+      "target_phrase": "Willingdone",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered in the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.14-e3e4",
+      "line_number": 14,
+      "target_phrase": "Willingdone",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered in the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.15-dc93",
+      "line_number": 15,
+      "target_phrase": "Willingdone",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered in the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Willingdone), dramatizing imperial warfare as domestic quarrel.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.19-f0ef",
+      "line_number": 19,
+      "target_phrase": "museyroom",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered in the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (museyroom), dramatizing imperial warfare as domestic quarrel.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

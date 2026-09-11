@@ -3,5 +3,72 @@
   "book": 2,
   "chapter": 3,
   "page_number": 310,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "310.01-64ab",
+      "line_number": 1,
+      "target_phrase": "ohmes. This harmonic",
+      "annotation_text": "Structural opening of Book 2, Chapter 3, page 310. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-2"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "310.02-696c",
+      "line_number": 2,
+      "target_phrase": "1132",
+      "annotation_text": "Joyce's recurring mystical and historical number (1132): 1132 (the date of St. Malachy, Dublin's fall, and mathematical doubling 566 x 2) signifying resurrection and human history.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "310.16-7991",
+      "line_number": 16,
+      "target_phrase": "fruent down reuctionary",
+      "annotation_text": "Mid-page polysemic discourse on page 310: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

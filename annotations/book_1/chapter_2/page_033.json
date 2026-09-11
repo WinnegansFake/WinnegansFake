@@ -3,5 +3,73 @@
   "book": 1,
   "chapter": 2,
   "page_number": 33,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "033.01-916d",
+      "line_number": 1,
+      "target_phrase": "inged there cuckoospit",
+      "annotation_text": "Structural opening of Book 1, Chapter 2, page 33. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "033.17-42b7",
+      "line_number": 17,
+      "target_phrase": "certain statements which",
+      "annotation_text": "Mid-page polysemic discourse on page 33: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "033.26-13b0",
+      "line_number": 26,
+      "target_phrase": "Earwicker",
+      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"Earwicker\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

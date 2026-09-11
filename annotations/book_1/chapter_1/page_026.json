@@ -3,5 +3,73 @@
   "book": 1,
   "chapter": 1,
   "page_number": 26,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "026.01-43fb",
+      "line_number": 1,
+      "target_phrase": "pure perfection Leatherbags",
+      "annotation_text": "Structural opening of Book 1, Chapter 1, page 26. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "026.07-e6e0",
+      "line_number": 7,
+      "target_phrase": "Liffey",
+      "annotation_text": "Anna Livia Plurabelle (ALP), the archetypal feminine principle, mother, and personification of the River Liffey flowing through Dublin to the sea, manifested as \"Liffey\".",
+      "categories": [
+        "alp",
+        "river-liffey",
+        "feminine-principle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "026.16-e373",
+      "line_number": 16,
+      "target_phrase": "saith: know thee,",
+      "annotation_text": "Mid-page polysemic discourse on page 26: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

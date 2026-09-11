@@ -3,5 +3,50 @@
   "book": 3,
   "chapter": 3,
   "page_number": 533,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "533.25-0327",
+      "line_number": 25,
+      "target_phrase": "Sutton",
+      "annotation_text": "Dublin geographical anchor (Sutton): grounding the cosmic oneiric myth in the tangible stone, water, and hills of County Dublin and the River Liffey.",
+      "categories": [
+        "dublin-topography",
+        "geography",
+        "landmarks"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
+        "Dublin Historical Record. https://www.jstor.org/journal/dublhiste"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "533.29-f349",
+      "line_number": 29,
+      "target_phrase": "Shaun",
+      "annotation_text": "The eternal fraternal dialectic between the opposing sons Shem the Penman (the artist/introvert/outcast) and Shaun the Post (the priest/governor/materialist), embodied in \"Shaun\".",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

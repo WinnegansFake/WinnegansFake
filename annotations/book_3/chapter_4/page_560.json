@@ -3,5 +3,50 @@
   "book": 3,
   "chapter": 4,
   "page_number": 560,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "560.12-58e0",
+      "line_number": 12,
+      "target_phrase": "maggies",
+      "annotation_text": "Issy (Isolde), the daughter and split-personality siren looking into her looking-glass, represented in the motif \"maggies\".",
+      "categories": [
+        "issy",
+        "mirror-twin",
+        "tristan-and-isolde"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "560.29-dbbf",
+      "line_number": 29,
+      "target_phrase": "divine",
+      "annotation_text": "Viconian philosophical framework: Giambattista Vico's three spiral ages (the divine/theocratic, heroic/aristocratic, and human/democratic) followed by the ricorso (dissolution and restart), reflected here in \"divine\".",
+      "categories": [
+        "vico",
+        "ricorso",
+        "philosophy-of-history"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (The New Science, 1725). https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel, et al. Our Exagmination Round His Factification... https://archive.org/details/ourexagminationr0000unse"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

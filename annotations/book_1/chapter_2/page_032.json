@@ -3,5 +3,52 @@
   "book": 1,
   "chapter": 2,
   "page_number": 32,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "032.12-0278",
+      "line_number": 12,
+      "target_phrase": "H.C.E",
+      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"H.C.E\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "032.16-5dba",
+      "line_number": 16,
+      "target_phrase": "Here Comes Everybody",
+      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"Here Comes Everybody\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

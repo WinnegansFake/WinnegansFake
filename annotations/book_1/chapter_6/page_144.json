@@ -3,5 +3,73 @@
   "book": 1,
   "chapter": 6,
   "page_number": 144,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "144.01-e8ad",
+      "line_number": 1,
+      "target_phrase": "make them look",
+      "annotation_text": "Structural opening of Book 1, Chapter 6, page 144. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "144.10-a565",
+      "line_number": 10,
+      "target_phrase": "belle alliance",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered in the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (belle alliance), dramatizing imperial warfare as domestic quarrel.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "144.16-8145",
+      "line_number": 16,
+      "target_phrase": "hold steady! pull.",
+      "annotation_text": "Mid-page polysemic discourse on page 144: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

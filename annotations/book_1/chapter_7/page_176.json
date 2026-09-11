@@ -3,5 +3,52 @@
   "book": 1,
   "chapter": 7,
   "page_number": 176,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "176.05-a299",
+      "line_number": 5,
+      "target_phrase": "Letter",
+      "annotation_text": "The primal text / Mama Livia's Letter retrieved from the Boston dump by Biddy Doran the Hen (Letter), representing the genesis of writing, literature, and decipherment.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "176.09-502b",
+      "line_number": 9,
+      "target_phrase": "Waterloo",
+      "annotation_text": "The Wellington/Waterloo battlefield motif centered in the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" (Waterloo), dramatizing imperial warfare as domestic quarrel.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Wellington, Arthur Wellesley, 1st Duke of. Dispatches. https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

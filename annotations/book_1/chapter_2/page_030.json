@@ -3,5 +3,73 @@
   "book": 1,
   "chapter": 2,
   "page_number": 30,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "030.01-bf97",
+      "line_number": 1,
+      "target_phrase": "forebare ever solittle",
+      "annotation_text": "Structural opening of Book 1, Chapter 2, page 30. Continues the multi-layered dream narrative depicting the nocturnal transmigration of human history and Dublin topography.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "030.02-5f0b",
+      "line_number": 2,
+      "target_phrase": "Humphrey Chimpden",
+      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"Humphrey Chimpden\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "030.12-fb1f",
+      "line_number": 12,
+      "target_phrase": "daylight under redwoodtree",
+      "annotation_text": "Mid-page polysemic discourse on page 30: Joyce weaves multilingual puns, etymological roots, and rhythmic cadences capturing the shifting consciousness of the collective unconscious.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

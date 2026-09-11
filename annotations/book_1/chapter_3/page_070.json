@@ -3,5 +3,52 @@
   "book": 1,
   "chapter": 3,
   "page_number": 70,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "070.01-a1fa",
+      "line_number": 1,
+      "target_phrase": "mark",
+      "annotation_text": "The Four Old Men (Mamalujo: Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught; the Four Annalists of Ireland), chronicling the cycles of history as judges, senile gossipers, and seagulls.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "gospels"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "The Four Gospels (King James Bible). https://www.biblegateway.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "070.30-aaff",
+      "line_number": 30,
+      "target_phrase": "Earwicker",
+      "annotation_text": "Universal archetype of the father and everyman protagonist Humphrey Chimpden Earwicker (HCE), manifested here as \"Earwicker\". Represents the recumbent Dublin landscape with head at Howth and body stretching west to Phoenix Park.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }
