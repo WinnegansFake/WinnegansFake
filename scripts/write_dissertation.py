@@ -1,7 +1,7 @@
 import sys
 from pathlib import Path
 
-content = """# The Architecture of the Night Mind: A Polyphonic Dissertation on the Cosmology, Philology, Genetic Manuscripts, and Computational Hermeneutics of James Joyce’s *Finnegans Wake*
+content = r"""# The Architecture of the Night Mind: A Polyphonic Dissertation on the Cosmology, Philology, Genetic Manuscripts, and Computational Hermeneutics of James Joyce’s *Finnegans Wake*
 
 **Author:** Antigravity (AI Collaborative Scholar & System Architect)  
 **Project:** WinnegansFake Open-Source Scholarly Initiative  
@@ -34,12 +34,12 @@ Through an analysis spanning the macro-cosmological structure of the four books,
    - 2.4 The Structural Quadrants of the *Wake*: An Anatomy of the Four Books
 3. [Chapter III: Micro-Cosmology: The Sigla and the Dramatis Personae](#chapter-iii-micro-cosmology-the-sigla-and-the-dramatis-personae)
    - 3.1 The Buffalo Notebooks and Joyce’s Hieroglyphic Notation
-   - 3.2 $\\rotatebox[origin=c]{180}{\\text{E}}$ — Humphrey Chimpden Earwicker (HCE): Mountain, Patriarch, and Cosmic Sinner
-   - 3.3 $\\Delta$ — Anna Livia Plurabelle (ALP): The River, the Mother, and the Midden-Letter
-   - 3.4 $[$ and $]$ — Shem the Penman and Shaun the Post: The Divided Sons
-   - 3.5 $\\vdash$ and the Twenty-Eight Rainbow Girls — Issy and the Prismatic Mirror-Self
-   - 3.6 $\\top$ — Mamalujo: The Four Evangelists, Provinces, Judges, and Squawking Gulls
-   - 3.7 The Twelve Customers: Public Opinion, the Zodiac, and the Mourners
+   - 3.2 ∐ (HCE) — Humphrey Chimpden Earwicker: Mountain, Patriarch, and Cosmic Sinner
+   - 3.3 Δ (ALP) — Anna Livia Plurabelle: The River, the Mother, and the Midden-Letter
+   - 3.4 [ and ] — Shem the Penman and Shaun the Post: The Divided Sons
+   - 3.5 ⊣ (Issy) and the Twenty-Eight Rainbow Girls: The Prismatic Mirror-Self
+   - 3.6 ⊥ (Mamalujo) — The Four Evangelists, Provinces, Judges, and Squawking Gulls
+   - 3.7 S (The Twelve Customers) — Public Opinion, the Zodiac, and the Mourners
 4. [Chapter IV: Philological Polyphony, Linguistic Alchemy, and Intertextuality](#chapter-iv-philological-polyphony-linguistic-alchemy-and-intertextuality)
    - 4.1 The Quantum Portmanteau: Polysemy Across Sixty Languages
    - 4.2 The Ten Hundred-Letter Thunderclaps: The Acoustic Vocable of the Divine
@@ -191,37 +191,37 @@ When Joyce filled the 48 notebooks now preserved in the Poetry Collection at the
      Patriarch              Mother / Wife        Outcast Rebel         Proud Priest
 ```
 
-### 3.2 $\rotatebox[origin=c]{180}{\text{E}}$ — Humphrey Chimpden Earwicker (HCE): Mountain, Patriarch, and Cosmic Sinner
-Denoted by the symbol of a recumbent 'E' ($\rotatebox[origin=c]{180}{\text{E}}$ or $\text{m}$), HCE is the prime mover of the novel:
+### 3.2 ∐ (HCE) — Humphrey Chimpden Earwicker: Mountain, Patriarch, and Cosmic Sinner
+Denoted by Joyce's siglum of a recumbent 'E' (∐ or rotated E), HCE is the prime mover of the novel:
 - **Acronyms:** His initials echo through hundreds of phrases: *"Here Comes Everybody"*, *"Haveth Childers Everywhere"*, *"Howth Castle and Environs"*, *"Haroun Childeric Eggeberth"*.
 - **Physical Landscape:** He is physically embedded in the geography of County Dublin. His head is the rocky promontory of Howth Head in the east; his body stretches beneath Dublin Bay; his upturned feet (*"tumptytumtoes"*) poke up at Castleknock and Knockmaroon in the west.
 - **The Mysterious Guilt:** Like Adam in Eden, Noah exposed in his tent, and Charles Stewart Parnell fallen from political grace, HCE is haunted by a nocturnal indiscretion committed in the Phoenix Park involving two servant girls and three British soldiers. His guilt manifests as an uncontrollable vocal stutter.
 
-### 3.3 $\Delta$ — Anna Livia Plurabelle (ALP): The River, the Mother, and the Midden-Letter
-Denoted by the Greek delta ($\Delta$), the symbol of the fertile triangle:
+### 3.3 Δ (ALP) — Anna Livia Plurabelle: The River, the Mother, and the Midden-Letter
+Denoted by the Greek delta (Δ), the symbol of the fertile triangle:
 - **The River Liffey:** Flowing from the Wicklow mountains through Dublin quays out to the Irish Sea, ALP is the life-giving feminine stream of grace, renewal, and forgiveness.
 - **The Midden Letter:** To defend her fallen husband against the slander of Dublin gossips, she dictates a long letter of vindication, written by her son Shem and scratched up from a Boston dump heap by Biddy Doran the Hen.
 - **The Metamorphosis:** In the celebrated Chapter I.8 (pp. 196–216), two washerwomen scrub dirty linen on opposite banks of the Liffey as darkness falls. As their gossip fades, one is transformed into an elm tree on the riverbank, and the other turns into a cold stone.
 
-### 3.4 $[$ and $]$ — Shem the Penman and Shaun the Post: The Divided Sons
+### 3.4 [ and ] — Shem the Penman and Shaun the Post: The Divided Sons
 The sons represent the tragic bifurcation of human will:
-- **Shem the Penman ($[$):** Modeled on Joyce himself. He is the outcast, the alchemist, the dirty blasphemer, the inward artist. Unable to afford paper and ink, he produces his own text from his bodily secretions and writes upon his own skin. He is associated with the Elm Tree, the colour black, and the nocturnal dream.
-- **Shaun the Post ($]$):** The favorite of church and state. He is the gluttonous orator, the well-fed postal carrier, the politician who delivers messages he cannot comprehend. He is associated with the Stone, the colour white, and the daytime world of external authority.
+- **Shem the Penman ([):** Modeled on Joyce himself. He is the outcast, the alchemist, the dirty blasphemer, the inward artist. Unable to afford paper and ink, he produces his own text from his bodily secretions and writes upon his own skin. He is associated with the Elm Tree, the colour black, and the nocturnal dream.
+- **Shaun the Post (]):** The favorite of church and state. He is the gluttonous orator, the well-fed postal carrier, the politician who delivers messages he cannot comprehend. He is associated with the Stone, the colour white, and the daytime world of external authority.
 
-### 3.5 $\vdash$ and the Twenty-Eight Rainbow Girls — Issy and the Prismatic Mirror-Self
-Denoted by a reversed or reclining 'L' ($\vdash$), Issy is the daughter:
+### 3.5 ⊣ (Issy) and the Twenty-Eight Rainbow Girls: The Prismatic Mirror-Self
+Denoted by a reversed or reclining 'L' (⊣), Issy is the daughter:
 - She is the embodiment of youthful seduction and narcissism.
 - In her bedroom, she speaks continuously to her own reflection in the looking-glass, splitting into two warring personalities (mimicking Jonathan Swift's dual lovers, Stella and Vanessa).
 - She is surrounded by a chorus of 28 schoolmates—the "Rainbow Girls" or "Maggies"—corresponding to the days of a leap-year February, blossoming through the spectrum of the rainbow.
 
-### 3.6 $\top$ — Mamalujo: The Four Evangelists, Provinces, Judges, and Squawking Gulls
-Denoted by an inverted 'T' ($\top$) or cross:
+### 3.6 ⊥ (Mamalujo) — The Four Evangelists, Provinces, Judges, and Squawking Gulls
+Denoted by an inverted 'T' (⊥) or cross:
 - **The Synthetic Annalists:** Matthew Gregory, Mark Lyons, Luke Tarpey, and Johnny MacDougall.
 - They represent the four authors of the Gospels, the four provinces of Ireland (Ulster, Munster, Leinster, Connaught), the Four Annalists who wrote the *Annals of the Four Masters*, and the four bedposts of HCE's marriage bed.
 - In their senile decrepitude, they act as voyeuristic judges and chroniclers, squawking as four gulls circling overhead as Tristram sails away with Isolde.
 
-### 3.7 The Twelve Customers: Public Opinion, the Zodiac, and the Mourners
-Represented by the symbol $\text{S}$:
+### 3.7 S (The Twelve Customers) — Public Opinion, the Zodiac, and the Mourners
+Represented by the siglum S:
 - The twelve jurors at HCE’s trial, the twelve customers drinking in his tavern, the twelve apostles, and the twelve signs of the Zodiac.
 - They form the Greek chorus of middle-class Dublin gossip, constantly evaluating, judging, drinking, and demanding another round of porter.
 
@@ -233,7 +233,8 @@ Represented by the symbol $\text{S}$:
 In daytime prose, a word functions as a single token pointing to a determinate concept. In *Finnegans Wake*, words operate under a condition of **quantum semantic superposition**. By employing the Lewis Carroll portmanteau technique taken to cosmic limits, Joyce fuses roots, prefixes, and suffixes from upwards of sixty to seventy world languages:
 
 Consider the opening phrase on page 3:
-$$\text{"commodius vicus of recirculation"}$$
+
+> *"commodius vicus of recirculation"*
 - **Commodius:** 
   1. English *commodious* (spacious, convenient, comfortable).
   2. Roman Emperor *Commodus* (son of Marcus Aurelius, heralding the decline of the Roman Empire).
@@ -357,7 +358,8 @@ And resumes without punctuation on page 3:
 > *"riverrun, past Eve and Adam's, from swerve of shore to bend of bay..."* (FW 003.01)
 
 The closing fragment completes the opening sentence:
-$$\text{"A way a lone a last a loved a long the riverrun, past Eve and Adam's..."}$$
+
+> *"A way a lone a last a loved a long the riverrun, past Eve and Adam's..."*
 
 The death of the mother is the birth of the river; the descent of the water is the evaporation into cloud; the end of the book is the immediate reopening of the cover. It is the perfect literary embodiment of Vico's *ricorso*.
 

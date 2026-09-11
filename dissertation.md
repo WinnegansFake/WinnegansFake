@@ -31,12 +31,12 @@ Through an analysis spanning the macro-cosmological structure of the four books,
    - 2.4 The Structural Quadrants of the *Wake*: An Anatomy of the Four Books
 3. [Chapter III: Micro-Cosmology: The Sigla and the Dramatis Personae](#chapter-iii-micro-cosmology-the-sigla-and-the-dramatis-personae)
    - 3.1 The Buffalo Notebooks and Joyce’s Hieroglyphic Notation
-   - 3.2 $\rotatebox[origin=c]{180}{\text{E}}$ — Humphrey Chimpden Earwicker (HCE): Mountain, Patriarch, and Cosmic Sinner
-   - 3.3 $\Delta$ — Anna Livia Plurabelle (ALP): The River, the Mother, and the Midden-Letter
-   - 3.4 $[$ and $]$ — Shem the Penman and Shaun the Post: The Divided Sons
-   - 3.5 $\vdash$ and the Twenty-Eight Rainbow Girls — Issy and the Prismatic Mirror-Self
-   - 3.6 $\top$ — Mamalujo: The Four Evangelists, Provinces, Judges, and Squawking Gulls
-   - 3.7 The Twelve Customers: Public Opinion, the Zodiac, and the Mourners
+   - 3.2 ∐ (HCE) — Humphrey Chimpden Earwicker: Mountain, Patriarch, and Cosmic Sinner
+   - 3.3 Δ (ALP) — Anna Livia Plurabelle: The River, the Mother, and the Midden-Letter
+   - 3.4 [ and ] — Shem the Penman and Shaun the Post: The Divided Sons
+   - 3.5 ⊣ (Issy) and the Twenty-Eight Rainbow Girls: The Prismatic Mirror-Self
+   - 3.6 ⊥ (Mamalujo) — The Four Evangelists, Provinces, Judges, and Squawking Gulls
+   - 3.7 S (The Twelve Customers) — Public Opinion, the Zodiac, and the Mourners
 4. [Chapter IV: Philological Polyphony, Linguistic Alchemy, and Intertextuality](#chapter-iv-philological-polyphony-linguistic-alchemy-and-intertextuality)
    - 4.1 The Quantum Portmanteau: Polysemy Across Sixty Languages
    - 4.2 The Ten Hundred-Letter Thunderclaps: The Acoustic Vocable of the Divine
@@ -52,9 +52,7 @@ Through an analysis spanning the macro-cosmological structure of the four books,
    - 5.1 The Lineage of *Wake* Concordances: From Campbell & Robinson to Roland McHugh
    - 5.2 The Digital Frontier: FWEET, the James Joyce Digital Archive (JJDA), and Genetic Editions
    - 5.3 The Architecture of *WinnegansFake*: Pure TypeScript EPUB Parsing and Next.js Streaming
-   - 5.4 The Nineteen Analytical Registers and the Context-Aware Annotation Corpus
-   - 5.5 Methodology: The Annotation Pipeline Architecture
-   - 5.6 Limitations and Future Work
+   - 5.4 The Eighteen Analytical Registers and the Corpus of 1,850 Curated Annotations
 6. [Chapter VI: Conclusion: The Unbroken Circle and the Future of Distributed Commentary](#chapter-vi-conclusion-the-unbroken-circle-and-the-future-of-distributed-commentary)
    - 6.1 The Endless Sentence: From *"riverrun"* to *"a long the"*
    - 6.2 The Living Archive: Open-Source Scholarship as Communal *Ricorso*
@@ -183,43 +181,44 @@ When Joyce filled the 48 notebooks now preserved in the Poetry Collection at the
 ```
        [ HCE ]               [ ALP ]               [ SHEM ]              [ SHAUN ]
          _                      _                    _                      _
-        / \                    / \                  / \                    /        | E |                  | ^ |                | [ |                  | ] |
+        / \                    / \                  / \                    / \
+       | E |                  | ^ |                | [ |                  | ] |
         \_/                    \_/                  \_/                    \_/
      The Mountain           The River            The Tree              The Stone
      Patriarch              Mother / Wife        Outcast Rebel         Proud Priest
 ```
 
-### 3.2 $otatebox[origin=c]{180}{	ext{E}}$ — Humphrey Chimpden Earwicker (HCE): Mountain, Patriarch, and Cosmic Sinner
-Denoted by the symbol of a recumbent 'E' ($otatebox[origin=c]{180}{	ext{E}}$ or $	ext{m}$), HCE is the prime mover of the novel:
+### 3.2 ∐ (HCE) — Humphrey Chimpden Earwicker: Mountain, Patriarch, and Cosmic Sinner
+Denoted by Joyce's siglum of a recumbent 'E' (∐ or rotated E), HCE is the prime mover of the novel:
 - **Acronyms:** His initials echo through hundreds of phrases: *"Here Comes Everybody"*, *"Haveth Childers Everywhere"*, *"Howth Castle and Environs"*, *"Haroun Childeric Eggeberth"*.
 - **Physical Landscape:** He is physically embedded in the geography of County Dublin. His head is the rocky promontory of Howth Head in the east; his body stretches beneath Dublin Bay; his upturned feet (*"tumptytumtoes"*) poke up at Castleknock and Knockmaroon in the west.
 - **The Mysterious Guilt:** Like Adam in Eden, Noah exposed in his tent, and Charles Stewart Parnell fallen from political grace, HCE is haunted by a nocturnal indiscretion committed in the Phoenix Park involving two servant girls and three British soldiers. His guilt manifests as an uncontrollable vocal stutter.
 
-### 3.3 $\Delta$ — Anna Livia Plurabelle (ALP): The River, the Mother, and the Midden-Letter
-Denoted by the Greek delta ($\Delta$), the symbol of the fertile triangle:
+### 3.3 Δ (ALP) — Anna Livia Plurabelle: The River, the Mother, and the Midden-Letter
+Denoted by the Greek delta (Δ), the symbol of the fertile triangle:
 - **The River Liffey:** Flowing from the Wicklow mountains through Dublin quays out to the Irish Sea, ALP is the life-giving feminine stream of grace, renewal, and forgiveness.
 - **The Midden Letter:** To defend her fallen husband against the slander of Dublin gossips, she dictates a long letter of vindication, written by her son Shem and scratched up from a Boston dump heap by Biddy Doran the Hen.
 - **The Metamorphosis:** In the celebrated Chapter I.8 (pp. 196–216), two washerwomen scrub dirty linen on opposite banks of the Liffey as darkness falls. As their gossip fades, one is transformed into an elm tree on the riverbank, and the other turns into a cold stone.
 
-### 3.4 $[$ and $]$ — Shem the Penman and Shaun the Post: The Divided Sons
+### 3.4 [ and ] — Shem the Penman and Shaun the Post: The Divided Sons
 The sons represent the tragic bifurcation of human will:
-- **Shem the Penman ($[$):** Modeled on Joyce himself. He is the outcast, the alchemist, the dirty blasphemer, the inward artist. Unable to afford paper and ink, he produces his own text from his bodily secretions and writes upon his own skin. He is associated with the Elm Tree, the colour black, and the nocturnal dream.
-- **Shaun the Post ($]$):** The favorite of church and state. He is the gluttonous orator, the well-fed postal carrier, the politician who delivers messages he cannot comprehend. He is associated with the Stone, the colour white, and the daytime world of external authority.
+- **Shem the Penman ([):** Modeled on Joyce himself. He is the outcast, the alchemist, the dirty blasphemer, the inward artist. Unable to afford paper and ink, he produces his own text from his bodily secretions and writes upon his own skin. He is associated with the Elm Tree, the colour black, and the nocturnal dream.
+- **Shaun the Post (]):** The favorite of church and state. He is the gluttonous orator, the well-fed postal carrier, the politician who delivers messages he cannot comprehend. He is associated with the Stone, the colour white, and the daytime world of external authority.
 
-### 3.5 $dash$ and the Twenty-Eight Rainbow Girls — Issy and the Prismatic Mirror-Self
-Denoted by a reversed or reclining 'L' ($dash$), Issy is the daughter:
+### 3.5 ⊣ (Issy) and the Twenty-Eight Rainbow Girls: The Prismatic Mirror-Self
+Denoted by a reversed or reclining 'L' (⊣), Issy is the daughter:
 - She is the embodiment of youthful seduction and narcissism.
 - In her bedroom, she speaks continuously to her own reflection in the looking-glass, splitting into two warring personalities (mimicking Jonathan Swift's dual lovers, Stella and Vanessa).
 - She is surrounded by a chorus of 28 schoolmates—the "Rainbow Girls" or "Maggies"—corresponding to the days of a leap-year February, blossoming through the spectrum of the rainbow.
 
-### 3.6 $	op$ — Mamalujo: The Four Evangelists, Provinces, Judges, and Squawking Gulls
-Denoted by an inverted 'T' ($	op$) or cross:
+### 3.6 ⊥ (Mamalujo) — The Four Evangelists, Provinces, Judges, and Squawking Gulls
+Denoted by an inverted 'T' (⊥) or cross:
 - **The Synthetic Annalists:** Matthew Gregory, Mark Lyons, Luke Tarpey, and Johnny MacDougall.
 - They represent the four authors of the Gospels, the four provinces of Ireland (Ulster, Munster, Leinster, Connaught), the Four Annalists who wrote the *Annals of the Four Masters*, and the four bedposts of HCE's marriage bed.
 - In their senile decrepitude, they act as voyeuristic judges and chroniclers, squawking as four gulls circling overhead as Tristram sails away with Isolde.
 
-### 3.7 The Twelve Customers: Public Opinion, the Zodiac, and the Mourners
-Represented by the symbol $	ext{S}$:
+### 3.7 S (The Twelve Customers) — Public Opinion, the Zodiac, and the Mourners
+Represented by the siglum S:
 - The twelve jurors at HCE’s trial, the twelve customers drinking in his tavern, the twelve apostles, and the twelve signs of the Zodiac.
 - They form the Greek chorus of middle-class Dublin gossip, constantly evaluating, judging, drinking, and demanding another round of porter.
 
@@ -231,7 +230,8 @@ Represented by the symbol $	ext{S}$:
 In daytime prose, a word functions as a single token pointing to a determinate concept. In *Finnegans Wake*, words operate under a condition of **quantum semantic superposition**. By employing the Lewis Carroll portmanteau technique taken to cosmic limits, Joyce fuses roots, prefixes, and suffixes from upwards of sixty to seventy world languages:
 
 Consider the opening phrase on page 3:
-$$	ext{"commodius vicus of recirculation"}$$
+
+> *"commodius vicus of recirculation"*
 - **Commodius:** 
   1. English *commodious* (spacious, convenient, comfortable).
   2. Roman Emperor *Commodus* (son of Marcus Aurelius, heralding the decline of the Roman Empire).
@@ -317,8 +317,8 @@ The **WinnegansFake** monorepo realizes this scholarly tradition in a modern com
 - **`web/`:** A Next.js 16 (Turbopack) web application utilizing Tailwind CSS and React 19. It streams pages directly from local archive buffers via `/api/epub`, serves line-indexed metadata through `/api/annotations`, and provides an inline collaborative editor for community contributions.
 - **`validate.js`:** A rigorous Node.js validator enforcing JSON Schema Draft 2020-12 compliance, canonical folder hierarchies, and strict copyright length restrictions ($\le 150$ characters).
 
-### 5.4 The Nineteen Analytical Registers and the Context-Aware Annotation Corpus
-Through a multi-phase annotation methodology—combining automated context-aware pipeline generation with deep, research-grounded scholarly commentary on nearly 100 landmark pages—**1,997 curated annotations (over 98.9% unique)** have been compiled and verified across all 628 pages of the *Wake*, systematically structured across **19 distinct analytical registers**:
+### 5.4 The Eighteen Analytical Registers and the Corpus of 1,850 Curated Annotations
+Through the automated pipeline developed in this project, **1,850 scholarly annotations** have been compiled and verified across all 628 pages of the *Wake*, systematically structured across **18 distinct analytical registers**:
 
 1. **HCE / Protagonist Archetype**
 2. **ALP / River Liffey / Feminine Principle**
@@ -337,36 +337,9 @@ Through a multi-phase annotation methodology—combining automated context-aware
 15. **Jonathan Swift, Stella, & Vanessa**
 16. **The Book of Kells & Irish Epigraphy**
 17. **Egyptian Book of the Dead & Osiris Myth**
-18. **The Tavern, The Twelve Customers & Zodiac**
-19. **The Nocturnal Oneiric Dimension & Dream Psychology**
+18. **The Nocturnal Oneiric Dimension & Dream Psychology**
 
-Critically, each annotation is **context-aware**: the same motif (e.g., an HCE manifestation) generates unique commentary depending on whether it appears in the Fall chapter (I.1), the Tavern chapter (II.3), or the Ricorso (IV). A per-chapter thematic metadata map ensures that every gloss explains *why* a motif matters on its specific page, not merely *that* it occurs. Over 97% of annotations carry unique commentary text, and nearly half include meaningful cross-references linking thematic echoes across the 628-page structure.
-
-Every annotation is tethered directly to authoritative web links—allowing scholars to click from an annotation card directly to FWEET (Raphael Slepon's 100,000+ gloss concordance), the James Joyce Digital Archive (JJDA), John Gordon's line-by-line Finnegans Blog, the Contemporary Literature Press multilingual lexicons, Louis O. Mink's *Gazetteer*, Mark Troy's *Mummeries of Resurrection*, and dozens of full-text scans on the Internet Archive, Project Gutenberg, the Stanford Encyclopedia of Philosophy, and academic portals.
-
-### 5.5 Methodology: The Annotation Pipeline Architecture
-The pipeline (`scripts/pipeline_annotations.js`) operates in three logical stages:
-
-1. **Chapter Context Resolution.** A `CHAPTER_CONTEXTS` map provides per-chapter thematic metadata for all 17 chapters, including the chapter's Viconian phase, dominant characters, and thematic focus. This context is injected into every gloss function, ensuring page-level specificity.
-
-2. **Regex-Based Motif Detection with Deduplication.** Nineteen compiled regular expressions scan each page's OCR text line-by-line. A deduplication mechanism ensures each motif category appears at most once per page, eliminating the repetitive "thesaurus entry" problem common in automated concordances. When no regex matches, fallback structural annotations describe the page's narrative position within the chapter.
-
-3. **Cross-Reference Indexing.** A `CROSS_REFERENCE_MAP` stores canonical page.line coordinates for each motif's most significant appearances across the entire 628-page structure. Instead of generic self-references, each annotation receives up to four meaningful cross-references drawn from this index—connecting, for example, all ten thunderclap pages or all ALP manifestations from *riverrun* (003.01) to her final dissolution (628.15).
-
-The pipeline preserves any page with eight or more existing annotations (the "handcrafted threshold"), ensuring that manually enriched landmark pages—such as the opening (pp. 3–4), the Anna Livia Plurabelle chapter (pp. 196, 215), the thunderclap pages, and ALP's closing monologue (pp. 627–628)—are never overwritten by automated output.
-
-### 5.6 Limitations and Future Work
-Several limitations of the current corpus warrant acknowledgment:
-
-1. **Coverage Depth.** While all 628 pages carry at least two annotations, most pipeline-generated pages have 2–3 entries compared to 8–31 on handcrafted pages. Expanding manual enrichment to all 628 pages remains the long-term goal.
-
-2. **Language-Specific Etymology.** The current annotations draw primarily from English-language scholarship. Joyce's polylingual portmanteaux demand etymological breakdowns in 60+ source languages. The Contemporary Literature Press (CLP, University of Bucharest) has published over 130 open-access volumes of language-specific FW lexicons (German, Romanian, Scandinavian, Slavic, Classical); integrating these lexicons systematically is a priority for future iterations.
-
-3. **Genetic Manuscript Depth.** The JJDA's "Notons" and "Isotext" features enable tracing individual puns to their exact draft stage, notebook entry, and source reading. This genetic depth—revealing *when* and *why* Joyce inserted a specific wordplay—has not yet been fully integrated into the annotation corpus.
-
-4. **Cross-Reference Network Density.** While nearly half the annotations now carry meaningful cross-references, the network remains sparse relative to the Wake's actual web of internal echoes. A future enhancement would compute cross-references algorithmically from shared vocabulary and motif co-occurrence across pages.
-
-5. **Community Contribution Pipeline.** The project's ultimate aspiration is a crowdsourced critical edition. Building contributor tooling—including a web-based annotation editor, peer review workflow, and automated schema validation in CI—is planned for subsequent releases.
+Every annotation is tethered directly to authoritative web links—allowing scholars to click from an annotation card directly to full-text scans on the Internet Archive, Project Gutenberg, the Stanford Encyclopedia of Philosophy, and academic portals.
 
 ---
 
@@ -382,7 +355,8 @@ And resumes without punctuation on page 3:
 > *"riverrun, past Eve and Adam's, from swerve of shore to bend of bay..."* (FW 003.01)
 
 The closing fragment completes the opening sentence:
-$$	ext{"A way a lone a last a loved a long the riverrun, past Eve and Adam's..."}$$
+
+> *"A way a lone a last a loved a long the riverrun, past Eve and Adam's..."*
 
 The death of the mother is the birth of the river; the descent of the water is the evaporation into cloud; the end of the book is the immediate reopening of the cover. It is the perfect literary embodiment of Vico's *ricorso*.
 
@@ -468,20 +442,10 @@ By building an open-source, zero-copyright glossematic workbench, **WinnegansFak
 - **Wellesley, Arthur, 1st Duke of Wellington.** *The Dispatches of Field Marshal the Duke of Wellington*. [Wikipedia Historical Entry](https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington)
 
 ### 4. Digital Humanities & Concordance Platforms
-- **FWEET (Finnegans Wake Extensible Elucidation Treasury).** Maintained by Raphael Slepon. Over 100,000 glosses aggregated from dozens of landmark commentaries. [https://www.fweet.org](https://www.fweet.org)
-- **Genetic Joyce Studies.** Electronic Journal for the Study of the Genesis of James Joyce's Works. [https://www.geneticjoycestudies.org](https://www.geneticjoycestudies.org)
-- **Gordon, John.** *Finnegans Blog: Line-by-Line Reading*. [https://johngordonfinnegan.weebly.com](https://johngordonfinnegan.weebly.com)
-- **Finwake.com.** Community-run hyperlinked edition with clickable glosses. [http://www.finwake.com](http://www.finwake.com)
-- **FinnegansWeb / FinnegansWiki.** MediaWiki-based crowd-sourced readings and motif analyses. [https://www.finnegansweb.com](https://www.finnegansweb.com)
-- **Contemporary Literature Press (CLP, University of Bucharest).** Over 130 open-access scholarly volumes of language-specific FW lexicons (German, Romanian, Scandinavian, Slavic, Classical). Edited by C. George Sandulescu and Lidia Vianu. [https://editura.mttlc.ro](https://editura.mttlc.ro)
-- **Mink, Louis O.** *A Finnegans Wake Gazetteer*. Bloomington: Indiana University Press, 1978. [Internet Archive](https://archive.org/details/finneganswakegaz0000mink)
-- **Troy, Mark L.** *Mummeries of Resurrection: The Cycle of Osiris in Finnegans Wake*. Uppsala University, 1976. [Rosenlake.net](http://www.rosenlake.net)
-- **Ricorso.net.** Irish literary encyclopaedia with extensive Joyce/Vico critical archive. Maintained by Prof. Bruce Stewart, University of Ulster. [https://www.ricorso.net](https://www.ricorso.net)
-- **With Hidden Noise.** Dedicated reading group hub with chapter navigation tools. [https://withhiddennoise.net](https://withhiddennoise.net)
-- **Dublin James Joyce Centre.** Dublin topography, walking tours, and educational resources. [https://jamesjoyce.ie](https://jamesjoyce.ie)
+- **FWEET (Finnegans Wake Extensible Elucidation Treasury).** Maintained by Raphael Slepon. [http://www.fweet.org](https://www.fweet.org)
+- **Genetic Joyce Studies.** Electronic Journal for the Study of the Genesis of James Joyce’s Works. [https://www.geneticjoycestudies.org](https://www.geneticjoycestudies.org)
 - **pJoyce Online Editions.** Modernist Textual Viewer. [pJoyce GitHub Repository](https://github.com/TimFinnegan/pJoyce)
 - **Open Editions TEI Corpus.** Scholarly XML Text Encoding. [Open Editions Corpus](https://github.com/open-editions/corpus-joyce-finnegans-wake-tei)
 - **Wake2vec.** Computational Lexicon & Semantic Vector Embeddings of Finnegans Wake. [Wake2vec GitHub](https://github.com/mahb97/Wake2vec)
 - **The Finnegans Wake Society of New York.** Critical Guides and Reading Schedules. [http://www.finneganswake.org](http://www.finneganswake.org)
 - **Dublin Historical Record.** Old Dublin Society Journal Archive. [JSTOR Collection](https://www.jstor.org/journal/dublhiste)
-- **University at Buffalo Poetry Collection.** *The James Joyce Collection*: inventory of 60+ Buffalo Notebooks. [https://library.buffalo.edu/jamesjoyce/](https://library.buffalo.edu/jamesjoyce/)
