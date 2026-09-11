@@ -406,3 +406,71 @@ article.prose blockquote {
   color: #9a2f2f !important;
 }
 
+
+/* =========================================================================
+   Universal Themed Scrollbar Styles
+   Styles the scrollbar on the Table of Contents, reading viewport, modals,
+   panels, and any element with overflow scrolling.
+   ========================================================================= */
+
+/* Set scrollbar CSS custom properties dynamically inheriting from active theme */
+:root {
+  --scrollbar-thumb: var(--wf-border);
+  --scrollbar-thumb-hover: var(--wf-accent);
+  --scrollbar-track: var(--wf-card-bg);
+}
+
+/* Standard CSS scrollbar properties for modern browsers (Chrome 121+, Firefox 64+, Safari 18.2+) */
+* {
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
+}
+
+/* WebKit/Blink legacy fallback and fine-grained styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 9999px;
+  border: 2px solid var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--scrollbar-track);
+}
+
+/* Specialized theme override for Obsidian Crimson to ensure zero white */
+[data-theme="obsidian-crimson"] {
+  --scrollbar-thumb: #280a0a !important;
+  --scrollbar-thumb-hover: #5c1818 !important;
+  --scrollbar-track: #050101 !important;
+  scrollbar-color: #280a0a #050101 !important;
+}
+
+[data-theme="obsidian-crimson"] ::-webkit-scrollbar-track {
+  background: #050101 !important;
+}
+
+[data-theme="obsidian-crimson"] ::-webkit-scrollbar-thumb {
+  background: #280a0a !important;
+  border-color: #050101 !important;
+}
+
+[data-theme="obsidian-crimson"] ::-webkit-scrollbar-thumb:hover {
+  background: #5c1818 !important;
+}
+
+[data-theme="obsidian-crimson"] ::-webkit-scrollbar-corner {
+  background: #050101 !important;
+}

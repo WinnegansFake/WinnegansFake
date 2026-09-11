@@ -1,11 +1,13 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { AnnotationItem, PageAnnotationsData, PageLine } from '@/types/annotations';
 import { InlineEditor } from './InlineEditor';
 import {
   ChevronLeft,
   ChevronRight,
+  ChevronDown,
+  ChevronUp,
   PlusCircle,
   BookOpen,
   FileCode2,
@@ -35,7 +37,12 @@ import {
   ZoomIn,
   ZoomOut,
   Type,
-  X
+  X,
+  ArrowUpDown,
+  SlidersHorizontal,
+  RotateCcw,
+  FolderTree,
+  GraduationCap
 } from 'lucide-react';
 import {
   getBasePath,
@@ -44,6 +51,16 @@ import {
   ARCHIVE_EPUB_URL,
   GITHUB_REPO_URL
 } from '@/lib/constants';
+import {
+  LayerGroupMode,
+  AnnotationSortMode,
+  AnnotationLayerGroup,
+  extractPrimaryAuthor,
+  getPrimaryRegisterId,
+  getUniqueAuthors,
+  getUniqueTags,
+  groupAndSortAnnotations,
+} from '@/lib/annotationLayers';
 import { browserEpub, ParsedEpubPage } from '@/lib/epubReader';
 import { AnnotationHoverPopup, HoverPopupData } from './AnnotationHoverPopup';
 import { segmentAnnotatedLine } from '@/lib/lineAnnotator';
@@ -66,9 +83,14 @@ export function WakeReader() {
   const [hoverPopup, setHoverPopup] = useState<HoverPopupData | null>(null);
   const popupTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Filters & search
+  // Filters, layers & sorting
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedRegister, setSelectedRegister] = useState<string>('all');
+  const [selectedAuthor, setSelectedAuthor] = useState<string>('all');
+  const [selectedTag, setSelectedTag] = useState<string>('all');
+  const [layerGroupBy, setLayerGroupBy] = useState<LayerGroupMode>('none');
+  const [sortBy, setSortBy] = useState<AnnotationSortMode>('line-asc');
+  const [collapsedLayers, setCollapsedLayers] = useState<Record<string, boolean>>({});
 
   // Active editor states
   const [editingId, setEditingId] = useState<string | null>(null);
@@ -250,20 +272,74 @@ export function WakeReader() {
     setTimeout(() => setCopiedSnippet(false), 2000);
   };
 
-  // Filtered annotations
-  const filteredAnnotations = (annotationsData?.annotations || []).filter((ann) => {
-    const matchesSearch =
-      !searchQuery.trim() ||
-      ann.target_phrase.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      ann.annotation_text.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      ann.id.toLowerCase().includes(searchQuery.toLowerCase());
+  // Annotations layering, filtering & metadata extraction
+  const allPageAnnotations = useMemo(() => annotationsData?.annotations || [], [annotationsData]);
 
-    const matchesRegister =
-      selectedRegister === 'all' ||
-      ann.categories.includes(selectedRegister);
+  const availableAuthors = useMemo(() => getUniqueAuthors(allPageAnnotations), [allPageAnnotations]);
+  const availableTags = useMemo(() => getUniqueTags(allPageAnnotations), [allPageAnnotations]);
 
-    return matchesSearch && matchesRegister;
-  });
+  const annotationLayers = useMemo(() => {
+    return groupAndSortAnnotations(allPageAnnotations, {
+      groupBy: layerGroupBy,
+      sortBy,
+      searchQuery,
+      selectedAuthor,
+      selectedTag,
+      selectedRegister,
+    });
+  }, [allPageAnnotations, layerGroupBy, sortBy, searchQuery, selectedAuthor, selectedTag, selectedRegister]);
+
+  const filteredAnnotations = useMemo(() => {
+    if (layerGroupBy === 'none') {
+      return annotationLayers[0]?.items || [];
+    }
+    const seen = new Set<string>();
+    const list: AnnotationItem[] = [];
+    for (const group of annotationLayers) {
+      for (const item of group.items) {
+        if (!seen.has(item.id)) {
+          seen.add(item.id);
+          list.push(item);
+        }
+      }
+    }
+    return list;
+  }, [annotationLayers, layerGroupBy]);
+
+  const totalFilteredCount = filteredAnnotations.length;
+
+  const toggleLayerCollapse = (layerId: string) => {
+    setCollapsedLayers((prev) => ({
+      ...prev,
+      [layerId]: !prev[layerId],
+    }));
+  };
+
+  const expandAllLayers = () => {
+    setCollapsedLayers({});
+  };
+
+  const collapseAllLayers = () => {
+    const next: Record<string, boolean> = {};
+    for (const group of annotationLayers) {
+      next[group.id] = true;
+    }
+    setCollapsedLayers(next);
+  };
+
+  const hasActiveFilters = Boolean(
+    searchQuery.trim() ||
+    selectedRegister !== 'all' ||
+    selectedAuthor !== 'all' ||
+    selectedTag !== 'all'
+  );
+
+  const clearAllFilters = () => {
+    setSearchQuery('');
+    setSelectedRegister('all');
+    setSelectedAuthor('all');
+    setSelectedTag('all');
+  };
 
   // Hover popup handlers
   const handlePhraseMouseEnter = (
@@ -314,6 +390,17 @@ export function WakeReader() {
 
   const handleSelectAnnotationFromPopup = (id: string) => {
     setSelectedAnnotationId(id);
+    // Expand layer if currently collapsed
+    setCollapsedLayers((prev) => {
+      const updated = { ...prev };
+      for (const group of annotationLayers) {
+        if (group.items.some((item) => item.id === id) && updated[group.id]) {
+          delete updated[group.id];
+        }
+      }
+      return updated;
+    });
+
     if (isFullscreen) {
       setFullscreenShowNotes(true);
     }
@@ -322,7 +409,7 @@ export function WakeReader() {
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
-    }, 60);
+    }, 80);
   };
 
   const toggleFullscreen = () => {
@@ -427,6 +514,160 @@ export function WakeReader() {
           );
         })}
       </p>
+    );
+  };
+
+  // Render an individual annotation card with interactive actions
+  const renderAnnotationCard = (ann: AnnotationItem) => {
+    const isSelected = selectedAnnotationId === ann.id;
+    const isEditing = editingId === ann.id;
+
+    if (isEditing) {
+      return (
+        <InlineEditor
+          key={ann.id}
+          pageNumber={currentPage}
+          annotation={ann}
+          onSave={handleSaveAnnotation}
+          onDelete={handleDeleteAnnotation}
+          onCancel={() => setEditingId(null)}
+        />
+      );
+    }
+
+    const primaryAuthor = extractPrimaryAuthor(ann.sources);
+
+    return (
+      <div
+        key={ann.id}
+        id={ann.id}
+        onClick={() => setSelectedAnnotationId(ann.id)}
+        className={`p-4 rounded-xl border transition-all text-xs font-sans space-y-2.5 ${
+          isSelected
+            ? 'bg-slate-900 border-indigo-500/50 shadow-lg ring-1 ring-indigo-500/30'
+            : 'bg-slate-950/70 border-slate-800/90 hover:border-slate-700'
+        }`}
+      >
+        {/* Header: Coordinate + ID + Scholar Badge + Actions */}
+        <div className="flex items-center justify-between pb-1.5 border-b border-slate-800/80">
+          <div className="flex items-center space-x-2 flex-wrap gap-y-1">
+            <span className="font-mono text-emerald-400 font-bold bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-500/30 text-[11px]">
+              Line {String(ann.line_number).padStart(2, '0')}
+            </span>
+            <span className="font-mono text-slate-500 text-[10px]">
+              {ann.id}
+            </span>
+            {primaryAuthor && (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSelectedAuthor(selectedAuthor === primaryAuthor ? 'all' : primaryAuthor);
+                }}
+                className={`text-[10px] font-medium px-2 py-0.5 rounded transition-colors cursor-pointer ${
+                  selectedAuthor === primaryAuthor
+                    ? 'bg-emerald-950 text-emerald-300 border border-emerald-500/50'
+                    : 'bg-slate-900/80 text-slate-400 hover:text-emerald-300 border border-slate-800'
+                }`}
+                title={`Filter layer by scholar: ${primaryAuthor}`}
+              >
+                {primaryAuthor}
+              </button>
+            )}
+          </div>
+          <div className="flex items-center space-x-1">
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                copyAnnotationSnippet(ann);
+              }}
+              className="p-1 rounded text-slate-500 hover:text-slate-300 transition-colors"
+              title="Copy JSON snippet"
+            >
+              <Copy className="w-3.5 h-3.5" />
+            </button>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setEditingId(ann.id);
+              }}
+              className="text-[11px] text-slate-400 hover:text-slate-200 px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition-colors"
+            >
+              Edit
+            </button>
+          </div>
+        </div>
+
+        {/* Target Phrase */}
+        <div className="font-serif text-sm font-semibold text-amber-200">
+          &ldquo;{ann.target_phrase}&rdquo;
+        </div>
+
+        {/* Gloss Body */}
+        <p className="text-slate-300 leading-relaxed text-xs">
+          {ann.annotation_text}
+        </p>
+
+        {/* Badges / Categories - Click to filter by tag */}
+        <div className="flex flex-wrap gap-1 pt-1">
+          {ann.categories.map((cat) => {
+            const isTagActive = selectedTag === cat;
+            return (
+              <button
+                key={cat}
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSelectedTag(isTagActive ? 'all' : cat);
+                }}
+                className={`text-[10px] font-mono px-2 py-0.5 rounded border transition-colors cursor-pointer ${
+                  isTagActive
+                    ? 'bg-amber-950/80 text-amber-300 border-amber-500/60 font-semibold'
+                    : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700 hover:text-amber-200'
+                }`}
+                title={`Filter by tag #${cat}`}
+              >
+                #{cat}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Cross references */}
+        {ann.cross_references && ann.cross_references.length > 0 && (
+          <div className="text-[11px] text-slate-400 flex items-center space-x-1 font-mono pt-1">
+            <CornerDownRight className="w-3 h-3 text-indigo-400 flex-shrink-0" />
+            <span>Refs: </span>
+            {ann.cross_references.map((ref) => {
+              const refPage = parseInt(ref.split('.')[0], 10);
+              return (
+                <button
+                  key={ref}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (!isNaN(refPage)) goToPage(refPage);
+                  }}
+                  className="text-indigo-400 hover:underline hover:text-indigo-300"
+                >
+                  {ref}
+                </button>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Academic Sources */}
+        {ann.sources && ann.sources.length > 0 && (
+          <div className="text-[10px] text-slate-500 italic pt-1 border-t border-slate-900">
+            Source: {ann.sources.join('; ')}
+          </div>
+        )}
+
+        {/* Contributors */}
+        <div className="text-[10px] text-slate-600 font-mono">
+          By: {ann.contributors.join(', ')}
+        </div>
+      </div>
     );
   };
 
@@ -739,43 +980,225 @@ export function WakeReader() {
 
         {/* RIGHT COLUMN: Scholarly Annotations Corpus */}
         <section className="lg:col-span-5 wf-card-surface border border-slate-800 rounded-2xl p-5 shadow-xl space-y-4 transition-colors">
-          <div className="flex items-center justify-between pb-3 border-b border-slate-800 text-xs font-mono text-slate-400">
+          {/* Header Bar */}
+          <div className="flex items-center justify-between pb-3 border-b border-slate-800 text-xs font-mono">
             <div className="flex items-center space-x-2">
               <Bookmark className="w-4 h-4 text-indigo-400" />
               <span className="font-semibold text-slate-200">
-                SCHOLARLY ANNOTATIONS ({filteredAnnotations.length})
+                SCHOLARLY ANNOTATIONS ({totalFilteredCount})
               </span>
             </div>
+            <button
+              onClick={() => setIsCreatingInPanel(true)}
+              className="inline-flex items-center space-x-1 px-2.5 py-1 rounded-lg text-xs bg-emerald-950/80 text-emerald-300 border border-emerald-500/40 hover:bg-emerald-900/60 transition-colors"
+              title="Add a new annotation to page"
+            >
+              <PlusCircle className="w-3.5 h-3.5" />
+              <span>Add Gloss</span>
+            </button>
           </div>
 
-          {/* Search & Register Filter */}
-          <div className="space-y-2">
-            <div className="relative">
-              <Search className="w-3.5 h-3.5 absolute left-3 top-2.5 text-slate-500" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search lemmas, glosses, coordinates..."
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg pl-8 pr-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500 font-sans"
-              />
+          {/* Search Bar */}
+          <div className="relative">
+            <Search className="w-3.5 h-3.5 absolute left-3 top-2.5 text-slate-500" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search lemmas, glosses, scholars, tags..."
+              className="w-full bg-slate-950 border border-slate-800 rounded-lg pl-8 pr-8 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500 font-sans"
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery('')}
+                className="absolute right-2.5 top-2.5 text-slate-500 hover:text-slate-300"
+                title="Clear search"
+              >
+                <X className="w-3.5 h-3.5" />
+              </button>
+            )}
+          </div>
+
+          {/* Layering & Sorting Toolbar */}
+          <div className="p-2.5 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-2 text-xs">
+            {/* Primary Controls: Layer Grouping & Sorting */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {/* Group by Layer */}
+              <div className="space-y-1">
+                <label className="flex items-center space-x-1.5 text-[11px] font-mono text-slate-400">
+                  <Layers className="w-3 h-3 text-indigo-400" />
+                  <span>Layer By:</span>
+                </label>
+                <select
+                  value={layerGroupBy}
+                  onChange={(e) => setLayerGroupBy(e.target.value as LayerGroupMode)}
+                  className="w-full bg-slate-900 border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-emerald-500 font-sans"
+                >
+                  <option value="none">Flat (Continuous Order)</option>
+                  <option value="register">Analytical Registers (19 Scaffolds)</option>
+                  <option value="author">Cited Scholars & Sources</option>
+                  <option value="tag">Arbitrary Tags & Categories</option>
+                  <option value="line">Line Number Coordinates</option>
+                  <option value="contributor">Editorial Contributors</option>
+                </select>
+              </div>
+
+              {/* Sort by */}
+              <div className="space-y-1">
+                <label className="flex items-center space-x-1.5 text-[11px] font-mono text-slate-400">
+                  <ArrowUpDown className="w-3 h-3 text-emerald-400" />
+                  <span>Sort By:</span>
+                </label>
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value as AnnotationSortMode)}
+                  className="w-full bg-slate-900 border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-emerald-500 font-sans"
+                >
+                  <option value="line-asc">Line Number (1 → 36)</option>
+                  <option value="line-desc">Line Number (36 → 1)</option>
+                  <option value="author-asc">Scholar Name (A → Z)</option>
+                  <option value="phrase-asc">Target Lemma (A → Z)</option>
+                  <option value="tag-count">Tag Density (Richest First)</option>
+                </select>
+              </div>
             </div>
 
-            <div className="flex items-center space-x-2 text-xs">
-              <Filter className="w-3.5 h-3.5 text-slate-500 flex-shrink-0" />
-              <select
-                value={selectedRegister}
-                onChange={(e) => setSelectedRegister(e.target.value)}
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1 text-xs text-slate-300 focus:outline-none focus:border-emerald-500 font-sans"
-              >
-                <option value="all">All Analytical Registers</option>
-                {ANALYTICAL_REGISTERS.map((reg) => (
-                  <option key={reg.id} value={reg.id}>
-                    {reg.name}
-                  </option>
-                ))}
-              </select>
+            {/* Secondary Filter Selectors */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1 border-t border-slate-800/60">
+              {/* Scholar Filter */}
+              <div>
+                <select
+                  value={selectedAuthor}
+                  onChange={(e) => setSelectedAuthor(e.target.value)}
+                  className="w-full bg-slate-900 border border-slate-800 rounded-lg px-2 py-1 text-[11px] text-slate-300 focus:outline-none focus:border-emerald-500 font-sans truncate"
+                  title="Filter by Scholar"
+                >
+                  <option value="all">All Scholars ({availableAuthors.length})</option>
+                  {availableAuthors.map((author) => (
+                    <option key={author} value={author}>
+                      {author}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Register Filter */}
+              <div>
+                <select
+                  value={selectedRegister}
+                  onChange={(e) => setSelectedRegister(e.target.value)}
+                  className="w-full bg-slate-900 border border-slate-800 rounded-lg px-2 py-1 text-[11px] text-slate-300 focus:outline-none focus:border-emerald-500 font-sans truncate"
+                  title="Filter by Register"
+                >
+                  <option value="all">All Registers</option>
+                  {ANALYTICAL_REGISTERS.map((reg) => (
+                    <option key={reg.id} value={reg.id}>
+                      {reg.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Arbitrary Tag Filter */}
+              <div>
+                <select
+                  value={selectedTag}
+                  onChange={(e) => setSelectedTag(e.target.value)}
+                  className="w-full bg-slate-900 border border-slate-800 rounded-lg px-2 py-1 text-[11px] text-slate-300 focus:outline-none focus:border-emerald-500 font-sans truncate"
+                  title="Filter by Arbitrary Tag"
+                >
+                  <option value="all">All Tags ({availableTags.length})</option>
+                  {availableTags.map((t) => (
+                    <option key={t.tag} value={t.tag}>
+                      #{t.tag} ({t.count})
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
+
+            {/* Active Filter Chips & Clear Action */}
+            {hasActiveFilters && (
+              <div className="flex flex-wrap items-center gap-1.5 pt-1.5 border-t border-slate-800/60">
+                <span className="text-[10px] font-mono text-slate-500">Active:</span>
+                {selectedAuthor !== 'all' && (
+                  <span className="inline-flex items-center space-x-1 text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950/80 text-emerald-300 border border-emerald-500/40">
+                    <span>Scholar: {selectedAuthor}</span>
+                    <button
+                      onClick={() => setSelectedAuthor('all')}
+                      className="hover:text-emerald-100"
+                    >
+                      <X className="w-2.5 h-2.5" />
+                    </button>
+                  </span>
+                )}
+                {selectedRegister !== 'all' && (
+                  <span className="inline-flex items-center space-x-1 text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-950/80 text-indigo-300 border border-indigo-500/40">
+                    <span>Register: {selectedRegister}</span>
+                    <button
+                      onClick={() => setSelectedRegister('all')}
+                      className="hover:text-indigo-100"
+                    >
+                      <X className="w-2.5 h-2.5" />
+                    </button>
+                  </span>
+                )}
+                {selectedTag !== 'all' && (
+                  <span className="inline-flex items-center space-x-1 text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950/80 text-amber-300 border border-amber-500/40">
+                    <span>Tag: #{selectedTag}</span>
+                    <button
+                      onClick={() => setSelectedTag('all')}
+                      className="hover:text-amber-100"
+                    >
+                      <X className="w-2.5 h-2.5" />
+                    </button>
+                  </span>
+                )}
+                {searchQuery.trim() && (
+                  <span className="inline-flex items-center space-x-1 text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 text-slate-300 border border-slate-700">
+                    <span>&ldquo;{searchQuery}&rdquo;</span>
+                    <button
+                      onClick={() => setSearchQuery('')}
+                      className="hover:text-slate-100"
+                    >
+                      <X className="w-2.5 h-2.5" />
+                    </button>
+                  </span>
+                )}
+                <button
+                  onClick={clearAllFilters}
+                  className="inline-flex items-center space-x-1 text-[10px] font-mono text-slate-400 hover:text-emerald-400 ml-auto cursor-pointer"
+                  title="Clear all filters"
+                >
+                  <RotateCcw className="w-2.5 h-2.5" />
+                  <span>Reset filters</span>
+                </button>
+              </div>
+            )}
+
+            {/* Layer View Summary & Accordion Expand/Collapse Controls */}
+            {layerGroupBy !== 'none' && (
+              <div className="flex items-center justify-between pt-1 border-t border-slate-800/40 text-[11px] font-mono text-slate-400">
+                <span>
+                  {annotationLayers.length} Layer{annotationLayers.length === 1 ? '' : 's'} Active
+                </span>
+                <div className="flex items-center space-x-2">
+                  <button
+                    onClick={expandAllLayers}
+                    className="hover:text-emerald-400 transition-colors cursor-pointer"
+                  >
+                    Expand all
+                  </button>
+                  <span>&bull;</span>
+                  <button
+                    onClick={collapseAllLayers}
+                    className="hover:text-emerald-400 transition-colors cursor-pointer"
+                  >
+                    Collapse all
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* New Annotation Form Modal / Accordion */}
@@ -799,136 +1222,80 @@ export function WakeReader() {
             />
           )}
 
-          {/* Annotations List */}
+          {/* Annotations List (Layered or Continuous) */}
           <div className="space-y-4 max-h-[calc(100vh-18rem)] overflow-y-auto pr-1">
-            {filteredAnnotations.length === 0 ? (
+            {totalFilteredCount === 0 ? (
               <div className="p-8 text-center text-slate-500 text-xs italic space-y-2 border border-dashed border-slate-800 rounded-xl">
-                <p>No annotations match your active query on page {currentPage}.</p>
-                <button
-                  onClick={() => setIsCreatingInPanel(true)}
-                  className="text-emerald-400 hover:underline text-xs"
-                >
-                  + Add an annotation for this page
-                </button>
+                <p>No annotations match your active query/layer on page {currentPage}.</p>
+                {hasActiveFilters ? (
+                  <button
+                    onClick={clearAllFilters}
+                    className="text-emerald-400 hover:underline text-xs"
+                  >
+                    Reset all active filters
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => setIsCreatingInPanel(true)}
+                    className="text-emerald-400 hover:underline text-xs"
+                  >
+                    + Add an annotation for this page
+                  </button>
+                )}
               </div>
+            ) : layerGroupBy === 'none' ? (
+              /* Flat Continuous List */
+              filteredAnnotations.map((ann) => renderAnnotationCard(ann))
             ) : (
-              filteredAnnotations.map((ann) => {
-                const isSelected = selectedAnnotationId === ann.id;
-                const isEditing = editingId === ann.id;
-
-                if (isEditing) {
-                  return (
-                    <InlineEditor
-                      key={ann.id}
-                      pageNumber={currentPage}
-                      annotation={ann}
-                      onSave={handleSaveAnnotation}
-                      onDelete={handleDeleteAnnotation}
-                      onCancel={() => setEditingId(null)}
-                    />
-                  );
-                }
-
+              /* Grouped Visual Layers */
+              annotationLayers.map((group) => {
+                const isCollapsed = Boolean(collapsedLayers[group.id]);
                 return (
                   <div
-                    key={ann.id}
-                    id={ann.id}
-                    onClick={() => setSelectedAnnotationId(ann.id)}
-                    className={`p-4 rounded-xl border transition-all text-xs font-sans space-y-2.5 ${
-                      isSelected
-                        ? 'bg-slate-900 border-indigo-500/50 shadow-lg'
-                        : 'bg-slate-950/70 border-slate-800/90 hover:border-slate-700'
-                    }`}
+                    key={group.id}
+                    className="border border-slate-800/80 rounded-xl bg-slate-950/40 overflow-hidden"
                   >
-                    {/* Header: Coordinate + ID */}
-                    <div className="flex items-center justify-between pb-1.5 border-b border-slate-800/80">
-                      <div className="flex items-center space-x-2">
-                        <span className="font-mono text-emerald-400 font-bold bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-500/30 text-[11px]">
-                          Line {String(ann.line_number).padStart(2, '0')}
-                        </span>
-                        <span className="font-mono text-slate-500 text-[10px]">
-                          {ann.id}
-                        </span>
+                    {/* Layer Accordion Header */}
+                    <button
+                      type="button"
+                      onClick={() => toggleLayerCollapse(group.id)}
+                      className="w-full flex items-center justify-between p-3 text-left select-none bg-slate-900/60 hover:bg-slate-900/90 transition-colors group focus:outline-none cursor-pointer"
+                    >
+                      <div className="flex items-center space-x-2.5 min-w-0">
+                        {layerGroupBy === 'author' && <GraduationCap className="w-4 h-4 text-emerald-400 flex-shrink-0" />}
+                        {layerGroupBy === 'register' && <Sparkles className="w-4 h-4 text-indigo-400 flex-shrink-0" />}
+                        {layerGroupBy === 'tag' && <Tag className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />}
+                        {layerGroupBy === 'line' && <BookOpen className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />}
+                        {layerGroupBy === 'contributor' && <Users className="w-3.5 h-3.5 text-cyan-400 flex-shrink-0" />}
+                        <div className="min-w-0">
+                          <div className="flex items-center space-x-2">
+                            <span className="font-semibold text-slate-200 text-xs truncate group-hover:text-emerald-300 transition-colors">
+                              {group.name}
+                            </span>
+                            <span className="px-2 py-0.5 rounded-full text-[10px] font-mono bg-slate-800 text-slate-300 border border-slate-700/60 flex-shrink-0">
+                              {group.count}
+                            </span>
+                          </div>
+                          {group.subtitle && (
+                            <p className="text-[10px] text-slate-500 truncate">{group.subtitle}</p>
+                          )}
+                        </div>
                       </div>
-                      <div className="flex items-center space-x-1">
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            copyAnnotationSnippet(ann);
-                          }}
-                          className="p-1 rounded text-slate-500 hover:text-slate-300"
-                          title="Copy JSON snippet"
-                        >
-                          <Copy className="w-3.5 h-3.5" />
-                        </button>
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setEditingId(ann.id);
-                          }}
-                          className="text-[11px] text-slate-400 hover:text-white px-2 py-0.5 rounded bg-slate-800"
-                        >
-                          Edit
-                        </button>
+                      <div className="flex items-center space-x-1 flex-shrink-0 text-slate-500">
+                        {isCollapsed ? (
+                          <ChevronDown className="w-4 h-4" />
+                        ) : (
+                          <ChevronUp className="w-4 h-4" />
+                        )}
                       </div>
-                    </div>
+                    </button>
 
-                    {/* Target Phrase */}
-                    <div className="font-serif text-sm font-semibold text-amber-200">
-                      &ldquo;{ann.target_phrase}&rdquo;
-                    </div>
-
-                    {/* Gloss Body */}
-                    <p className="text-slate-300 leading-relaxed text-xs">
-                      {ann.annotation_text}
-                    </p>
-
-                    {/* Badges / Categories */}
-                    <div className="flex flex-wrap gap-1 pt-1">
-                      {ann.categories.map((cat) => (
-                        <span
-                          key={cat}
-                          className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 text-slate-300 border border-slate-800"
-                        >
-                          {cat}
-                        </span>
-                      ))}
-                    </div>
-
-                    {/* Cross references */}
-                    {ann.cross_references && ann.cross_references.length > 0 && (
-                      <div className="text-[11px] text-slate-400 flex items-center space-x-1 font-mono pt-1">
-                        <CornerDownRight className="w-3 h-3 text-indigo-400 flex-shrink-0" />
-                        <span>Refs: </span>
-                        {ann.cross_references.map((ref) => {
-                          const refPage = parseInt(ref.split('.')[0], 10);
-                          return (
-                            <button
-                              key={ref}
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                if (!isNaN(refPage)) goToPage(refPage);
-                              }}
-                              className="text-indigo-400 hover:underline hover:text-indigo-300"
-                            >
-                              {ref}
-                            </button>
-                          );
-                        })}
+                    {/* Layer Items */}
+                    {!isCollapsed && (
+                      <div className="p-3 space-y-3 border-t border-slate-800/60">
+                        {group.items.map((ann) => renderAnnotationCard(ann))}
                       </div>
                     )}
-
-                    {/* Academic Sources */}
-                    {ann.sources && ann.sources.length > 0 && (
-                      <div className="text-[10px] text-slate-500 italic pt-1 border-t border-slate-900">
-                        Source: {ann.sources.join('; ')}
-                      </div>
-                    )}
-
-                    {/* Contributors */}
-                    <div className="text-[10px] text-slate-600 font-mono">
-                      By: {ann.contributors.join(', ')}
-                    </div>
                   </div>
                 );
               })
@@ -1182,48 +1549,242 @@ export function WakeReader() {
 
             {/* Optional Fullscreen Slide-in Notes Drawer */}
             {fullscreenShowNotes && (
-              <aside className="w-96 flex-shrink-0 p-5 rounded-2xl wf-card-surface border shadow-2xl space-y-4 max-h-[calc(100vh-8rem)] overflow-y-auto sticky top-20 animate-in slide-in-from-right-10 duration-200">
-                <div className="flex items-center justify-between pb-3 border-b border-inherit/40">
+              <aside className="w-96 flex-shrink-0 p-5 rounded-2xl wf-card-surface border shadow-2xl space-y-3 max-h-[calc(100vh-8rem)] overflow-y-auto sticky top-20 animate-in slide-in-from-right-10 duration-200 select-text">
+                {/* Header */}
+                <div className="flex items-center justify-between pb-2 border-b border-inherit/40">
                   <div className="flex items-center space-x-2">
                     <Bookmark className="w-4 h-4 text-emerald-400" />
                     <span className="font-mono font-semibold text-xs">
-                      Page Annotations ({filteredAnnotations.length})
+                      Page Annotations ({totalFilteredCount})
                     </span>
                   </div>
                   <button
                     onClick={() => setFullscreenShowNotes(false)}
-                    className="p-1 rounded opacity-60 hover:opacity-100"
+                    className="p-1 rounded opacity-60 hover:opacity-100 transition-opacity cursor-pointer"
                     title="Close notes drawer"
                   >
                     <X className="w-4 h-4" />
                   </button>
                 </div>
 
-                <div className="space-y-3 text-xs">
-                  {filteredAnnotations.map((ann) => (
-                    <div
-                      key={ann.id}
-                      onClick={() => setSelectedAnnotationId(ann.id)}
-                      className={`p-3 rounded-xl border transition-all cursor-pointer space-y-1.5 ${
-                        selectedAnnotationId === ann.id
-                          ? 'bg-emerald-950/50 border-emerald-500/60'
-                          : 'border-inherit/30 hover:border-inherit/60'
-                      }`}
-                    >
-                      <div className="flex items-center justify-between text-[11px] font-mono opacity-80">
-                        <span className="text-emerald-400 font-bold">
-                          Line {String(ann.line_number).padStart(2, '0')}
-                        </span>
-                        <span>{ann.id}</span>
-                      </div>
-                      <p className="font-serif italic font-semibold">
-                        &ldquo;{ann.target_phrase}&rdquo;
-                      </p>
-                      <p className="leading-relaxed opacity-90 text-[11px]">
-                        {ann.annotation_text}
-                      </p>
+                {/* Zen Drawer Layer & Sort Toolbar */}
+                <div className="p-2 rounded-xl bg-inherit/40 border border-inherit/30 space-y-2 text-xs">
+                  <div className="grid grid-cols-2 gap-1.5">
+                    {/* Layer By */}
+                    <div>
+                      <label className="flex items-center space-x-1 text-[10px] font-mono opacity-70 mb-0.5">
+                        <Layers className="w-2.5 h-2.5" />
+                        <span>Layer By:</span>
+                      </label>
+                      <select
+                        value={layerGroupBy}
+                        onChange={(e) => setLayerGroupBy(e.target.value as LayerGroupMode)}
+                        className="w-full bg-inherit border border-inherit/40 rounded px-1.5 py-1 text-[11px] focus:outline-none font-sans"
+                      >
+                        <option value="none">Flat (Continuous)</option>
+                        <option value="register">Registers</option>
+                        <option value="author">Scholars & Sources</option>
+                        <option value="tag">Arbitrary Tags</option>
+                        <option value="line">Line Numbers</option>
+                        <option value="contributor">Contributors</option>
+                      </select>
                     </div>
-                  ))}
+
+                    {/* Sort By */}
+                    <div>
+                      <label className="flex items-center space-x-1 text-[10px] font-mono opacity-70 mb-0.5">
+                        <ArrowUpDown className="w-2.5 h-2.5" />
+                        <span>Sort By:</span>
+                      </label>
+                      <select
+                        value={sortBy}
+                        onChange={(e) => setSortBy(e.target.value as AnnotationSortMode)}
+                        className="w-full bg-inherit border border-inherit/40 rounded px-1.5 py-1 text-[11px] focus:outline-none font-sans"
+                      >
+                        <option value="line-asc">Line (1 → 36)</option>
+                        <option value="line-desc">Line (36 → 1)</option>
+                        <option value="author-asc">Scholar (A → Z)</option>
+                        <option value="phrase-asc">Lemma (A → Z)</option>
+                        <option value="tag-count">Tag Density</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  {/* Active Filter Indicators in Fullscreen Drawer */}
+                  {hasActiveFilters && (
+                    <div className="flex items-center justify-between pt-1 border-t border-inherit/20 text-[10px] font-mono">
+                      <span className="opacity-75">
+                        Filtered ({totalFilteredCount})
+                      </span>
+                      <button
+                        onClick={clearAllFilters}
+                        className="text-emerald-400 hover:underline cursor-pointer"
+                      >
+                        Reset filters
+                      </button>
+                    </div>
+                  )}
+                </div>
+
+                {/* Fullscreen Notes List (Flat or Layered) */}
+                <div className="space-y-3 text-xs">
+                  {totalFilteredCount === 0 ? (
+                    <div className="p-6 text-center opacity-60 text-xs italic space-y-2 border border-dashed border-inherit/40 rounded-xl">
+                      <p>No annotations match active layer/query.</p>
+                      {hasActiveFilters && (
+                        <button
+                          onClick={clearAllFilters}
+                          className="text-emerald-400 hover:underline text-xs cursor-pointer"
+                        >
+                          Clear filters
+                        </button>
+                      )}
+                    </div>
+                  ) : layerGroupBy === 'none' ? (
+                    filteredAnnotations.map((ann) => {
+                      const isSelected = selectedAnnotationId === ann.id;
+                      const author = extractPrimaryAuthor(ann.sources);
+                      return (
+                        <div
+                          key={ann.id}
+                          id={`fullscreen-note-${ann.id}`}
+                          onClick={() => setSelectedAnnotationId(ann.id)}
+                          className={`p-3 rounded-xl border transition-all cursor-pointer space-y-1.5 ${
+                            isSelected
+                              ? 'bg-emerald-950/50 border-emerald-500/60'
+                              : 'border-inherit/30 hover:border-inherit/60'
+                          }`}
+                        >
+                          <div className="flex items-center justify-between text-[11px] font-mono opacity-80 flex-wrap gap-1">
+                            <span className="text-emerald-400 font-bold">
+                              Line {String(ann.line_number).padStart(2, '0')}
+                            </span>
+                            <span className="opacity-60">{ann.id}</span>
+                            {author && (
+                              <span className="text-[10px] px-1.5 py-0.2 rounded bg-inherit/60 border border-inherit/30">
+                                {author}
+                              </span>
+                            )}
+                          </div>
+                          <p className="font-serif italic font-semibold">
+                            &ldquo;{ann.target_phrase}&rdquo;
+                          </p>
+                          <p className="leading-relaxed opacity-90 text-[11px]">
+                            {ann.annotation_text}
+                          </p>
+                          {/* Categories */}
+                          <div className="flex flex-wrap gap-1 pt-0.5">
+                            {ann.categories.map((cat) => (
+                              <button
+                                key={cat}
+                                type="button"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  setSelectedTag(selectedTag === cat ? 'all' : cat);
+                                }}
+                                className={`text-[9px] font-mono px-1.5 py-0.2 rounded border transition-colors ${
+                                  selectedTag === cat
+                                    ? 'bg-amber-950/80 text-amber-300 border-amber-500/60 font-semibold'
+                                    : 'bg-inherit/60 opacity-80 hover:opacity-100 border-inherit/30'
+                                }`}
+                              >
+                                #{cat}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    })
+                  ) : (
+                    annotationLayers.map((group) => {
+                      const isCollapsed = Boolean(collapsedLayers[group.id]);
+                      return (
+                        <div
+                          key={group.id}
+                          className="border border-inherit/30 rounded-xl overflow-hidden bg-inherit/20"
+                        >
+                          {/* Accordion Layer Header */}
+                          <button
+                            type="button"
+                            onClick={() => toggleLayerCollapse(group.id)}
+                            className="w-full flex items-center justify-between p-2.5 text-left select-none hover:bg-inherit/40 transition-colors group focus:outline-none cursor-pointer"
+                          >
+                            <div className="flex items-center space-x-2 min-w-0">
+                              <span className="font-semibold text-xs truncate">
+                                {group.name}
+                              </span>
+                              <span className="px-1.5 py-0.2 rounded-full text-[9px] font-mono bg-inherit/80 border border-inherit/40 flex-shrink-0">
+                                {group.count}
+                              </span>
+                            </div>
+                            <div className="flex items-center opacity-60">
+                              {isCollapsed ? (
+                                <ChevronDown className="w-3.5 h-3.5" />
+                              ) : (
+                                <ChevronUp className="w-3.5 h-3.5" />
+                              )}
+                            </div>
+                          </button>
+
+                          {/* Items */}
+                          {!isCollapsed && (
+                            <div className="p-2 space-y-2 border-t border-inherit/20">
+                              {group.items.map((ann) => {
+                                const isSelected = selectedAnnotationId === ann.id;
+                                const author = extractPrimaryAuthor(ann.sources);
+                                return (
+                                  <div
+                                    key={ann.id}
+                                    id={`fullscreen-note-${ann.id}`}
+                                    onClick={() => setSelectedAnnotationId(ann.id)}
+                                    className={`p-2.5 rounded-lg border transition-all cursor-pointer space-y-1.5 ${
+                                      isSelected
+                                        ? 'bg-emerald-950/50 border-emerald-500/60'
+                                        : 'border-inherit/20 hover:border-inherit/40'
+                                    }`}
+                                  >
+                                    <div className="flex items-center justify-between text-[10px] font-mono opacity-80 flex-wrap gap-1">
+                                      <span className="text-emerald-400 font-bold">
+                                        Line {String(ann.line_number).padStart(2, '0')}
+                                      </span>
+                                      {author && (
+                                        <span className="opacity-70">{author}</span>
+                                      )}
+                                    </div>
+                                    <p className="font-serif italic font-semibold text-xs">
+                                      &ldquo;{ann.target_phrase}&rdquo;
+                                    </p>
+                                    <p className="leading-relaxed opacity-90 text-[11px]">
+                                      {ann.annotation_text}
+                                    </p>
+                                    <div className="flex flex-wrap gap-1 pt-0.5">
+                                      {ann.categories.map((cat) => (
+                                        <button
+                                          key={cat}
+                                          type="button"
+                                          onClick={(e) => {
+                                            e.stopPropagation();
+                                            setSelectedTag(selectedTag === cat ? 'all' : cat);
+                                          }}
+                                          className={`text-[9px] font-mono px-1.5 py-0.2 rounded border transition-colors ${
+                                            selectedTag === cat
+                                              ? 'bg-amber-950/80 text-amber-300 border-amber-500/60 font-semibold'
+                                              : 'bg-inherit/60 opacity-80 hover:opacity-100 border-inherit/30'
+                                          }`}
+                                        >
+                                          #{cat}
+                                        </button>
+                                      ))}
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })
+                  )}
                 </div>
               </aside>
             )}
