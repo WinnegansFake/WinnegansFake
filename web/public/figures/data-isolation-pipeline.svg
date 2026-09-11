@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="isoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#060910"/>
+    </linearGradient>
+    <linearGradient id="publicBox" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#022c22" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="localBox" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7f1d1d" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#450a0a" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="boxShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    .header-title { font-family: ui-serif, Georgia, serif; font-size: 22px; font-weight: 700; fill: #ffffff; }
+    .header-sub { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; fill: #94a3b8; }
+    .zone-title { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; }
+    .card-head { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 13px; font-weight: 700; }
+    .card-text { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11px; fill: #cbd5e1; }
+    .badge { font-family: ui-monospace, monospace; font-size: 10px; font-weight: 600; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1000" height="680" fill="url(#isoBg)" rx="16"/>
+  <rect width="998" height="678" x="1" y="1" fill="none" stroke="#1e293b" stroke-width="1" rx="16"/>
+
+  <!-- Title Header -->
+  <g transform="translate(500, 42)" text-anchor="middle">
+    <text class="header-title">ZERO-COPYRIGHT DATA ISOLATION ARCHITECTURE</text>
+    <text class="header-sub" y="22">Air-Gapped Decoupling of Open Metadata Coordinates (PPP.LL) from Local Copyrighted EPUB Streaming</text>
+  </g>
+
+  <!-- ==================== UPPER ZONE: PUBLIC REPOSITORY ==================== -->
+  <g transform="translate(40, 85)">
+    <!-- Zone Boundary Frame -->
+    <rect width="920" height="230" rx="12" fill="url(#publicBox)" stroke="#059669" stroke-width="1.5" stroke-dasharray="8 4"/>
+    
+    <!-- Zone Label -->
+    <g transform="translate(20, -10)">
+      <rect width="360" height="22" rx="6" fill="#065f46" stroke="#10b981" stroke-width="1"/>
+      <text class="zone-title" x="180" y="15" text-anchor="middle" fill="#d1fae5">
+        PUBLIC GITHUB MONOREPO • CC BY-SA 4.0 &amp; GPL-3.0
+      </text>
+    </g>
+
+    <!-- Card 1: Schemas -->
+    <g transform="translate(30, 30)" filter="url(#boxShadow)">
+      <rect width="260" height="170" rx="10" fill="#062018" stroke="#10b981" stroke-width="1"/>
+      <rect width="258" height="3" x="1" y="1" fill="#34d399" rx="1.5"/>
+      <g transform="translate(15, 25)">
+        <text class="card-head" fill="#6ee7b7">schemas/page-annotation</text>
+        <text class="badge" y="20" fill="#10b981">JSON SCHEMA DRAFT 2020-12</text>
+        <path d="M 0,28 L 230,28" stroke="#064e3b" stroke-width="1"/>
+        <text class="card-text" y="46">• Page bounds: canonical 1–628</text>
+        <text class="card-text" y="66">• Line bounds: canonical 01–40</text>
+        <text class="card-text" y="86">• Target Lemma: ≤ 150 chars max</text>
+        <text class="card-text" y="106">• Register enum &amp; web citations</text>
+        <text class="card-text" y="126" fill="#a7f3d0" font-weight="600">✓ Enforced by node validate.js</text>
+      </g>
+    </g>
+
+    <!-- Card 2: Annotations -->
+    <g transform="translate(330, 30)" filter="url(#boxShadow)">
+      <rect width="260" height="170" rx="10" fill="#062018" stroke="#10b981" stroke-width="1"/>
+      <rect width="258" height="3" x="1" y="1" fill="#34d399" rx="1.5"/>
+      <g transform="translate(15, 25)">
+        <text class="card-head" fill="#6ee7b7">annotations/book_B/ch_C</text>
+        <text class="badge" y="20" fill="#10b981">628 CANONICAL PAGE FILES</text>
+        <path d="M 0,28 L 230,28" stroke="#064e3b" stroke-width="1"/>
+        <text class="card-text" y="46">• 1,850+ scholarly line glosses</text>
+        <text class="card-text" y="66">• 18 analytical registers</text>
+        <text class="card-text" y="86">• Multilingual etymologies (60+)</text>
+        <text class="card-text" y="106">• Internet Archive deep links</text>
+        <text class="card-text" y="126" fill="#a7f3d0" font-weight="600">✓ Zero copyrighted paragraphs</text>
+      </g>
+    </g>
+
+    <!-- Card 3: Web App Client -->
+    <g transform="translate(630, 30)" filter="url(#boxShadow)">
+      <rect width="260" height="170" rx="10" fill="#062018" stroke="#10b981" stroke-width="1"/>
+      <rect width="258" height="3" x="1" y="1" fill="#34d399" rx="1.5"/>
+      <g transform="translate(15, 25)">
+        <text class="card-head" fill="#6ee7b7">web/ &amp; packages/reader</text>
+        <text class="badge" y="20" fill="#10b981">NEXT.JS 16 &amp; REACT 19</text>
+        <path d="M 0,28 L 230,28" stroke="#064e3b" stroke-width="1"/>
+        <text class="card-text" y="46">• Static export on GitHub Pages</text>
+        <text class="card-text" y="66">• 19 reading themes (Solarized, etc.)</text>
+        <text class="card-text" y="86">• Zen Fullscreen Mode (F / Esc)</text>
+        <text class="card-text" y="106">• Client-side index coordinate join</text>
+        <text class="card-text" y="126" fill="#a7f3d0" font-weight="600">✓ Pure browser-side hydration</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== MIDDLE AIR GAP / LEGAL BOUNDARY ==================== -->
+  <g transform="translate(50, 340)">
+    <!-- Barrier Bar -->
+    <rect width="900" height="42" rx="8" fill="#1e1b2e" stroke="#dc2626" stroke-width="2"/>
+    <g transform="translate(450, 26)" text-anchor="middle">
+      <text font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="700" fill="#fca5a5" letter-spacing="0.1em">
+        ⛔ STRICT LEGAL EXECUTION BOUNDARY • GITIGNORED AIR GAP (17 U.S.C. § 107) ⛔
+      </text>
+    </g>
+  </g>
+
+  <!-- Flow Arrows Crossing Boundary via Coordinate Pointer Only -->
+  <g stroke="#38bdf8" stroke-width="2" fill="none" stroke-dasharray="4 4">
+    <path d="M 270,315 L 270,395" marker-end="url(#arrowBlue)"/>
+    <path d="M 730,395 L 730,315" marker-end="url(#arrowBlue)"/>
+  </g>
+  <text x="215" y="365" font-family="ui-monospace, monospace" font-size="10" fill="#38bdf8" text-anchor="end">Query: PPP.LL</text>
+  <text x="785" y="365" font-family="ui-monospace, monospace" font-size="10" fill="#38bdf8" text-anchor="start">Ephemeral Stream</text>
+
+  <!-- ==================== LOWER ZONE: LOCAL CLIENT RUNTIME ==================== -->
+  <g transform="translate(40, 400)">
+    <!-- Zone Boundary Frame -->
+    <rect width="920" height="235" rx="12" fill="url(#localBox)" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="8 4"/>
+
+    <!-- Zone Label -->
+    <g transform="translate(20, -10)">
+      <rect width="420" height="22" rx="6" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
+      <text class="zone-title" x="210" y="15" text-anchor="middle" fill="#fee2e2">
+        STRICTLY LOCAL HOST ENVIRONMENT (NEVER COMMITTED TO GIT)
+      </text>
+    </g>
+
+    <!-- Card 1: Local EPUB -->
+    <g transform="translate(30, 30)" filter="url(#boxShadow)">
+      <rect width="260" height="175" rx="10" fill="#1f0707" stroke="#ef4444" stroke-width="1"/>
+      <rect width="258" height="3" x="1" y="1" fill="#f87171" rx="1.5"/>
+      <g transform="translate(15, 25)">
+        <text class="card-head" fill="#fca5a5">data/*.epub (Local Archive)</text>
+        <text class="badge" y="20" fill="#ef4444">USER-SUPPLIED LEGAL COPY</text>
+        <path d="M 0,28 L 230,28" stroke="#7f1d1d" stroke-width="1"/>
+        <text class="card-text" y="46">• Downloaded via pnpm fetch:data</text>
+        <text class="card-text" y="66">• Internet Archive 1939 Viking scan</text>
+        <text class="card-text" y="86">• Excluded by .gitignore rule</text>
+        <text class="card-text" y="106">• Never committed, pushed or shared</text>
+        <text class="card-text" y="126" fill="#fca5a5" font-weight="600">✓ US Copyright safe until 2036</text>
+      </g>
+    </g>
+
+    <!-- Card 2: Memory Streaming Reader -->
+    <g transform="translate(330, 30)" filter="url(#boxShadow)">
+      <rect width="260" height="175" rx="10" fill="#1f0707" stroke="#ef4444" stroke-width="1"/>
+      <rect width="258" height="3" x="1" y="1" fill="#f87171" rx="1.5"/>
+      <g transform="translate(15, 25)">
+        <text class="card-head" fill="#fca5a5">Memory Stream Inflation</text>
+        <text class="badge" y="20" fill="#ef4444">ZERO DISK PERSISTENCE</text>
+        <path d="M 0,28 L 230,28" stroke="#7f1d1d" stroke-width="1"/>
+        <text class="card-text" y="46">• Pure TypeScript ZIP central dir</text>
+        <text class="card-text" y="66">• Dynamic inflateRaw in Node/Browser</text>
+        <text class="card-text" y="86">• Spine &amp; TOC pagination parser</text>
+        <text class="card-text" y="106">• Streamed directly to DOM nodes</text>
+        <text class="card-text" y="126" fill="#fca5a5" font-weight="600">✓ Ephemeral buffer discarded</text>
+      </g>
+    </g>
+
+    <!-- Card 3: Cryptographic Provenance -->
+    <g transform="translate(630, 30)" filter="url(#boxShadow)">
+      <rect width="260" height="175" rx="10" fill="#1f0707" stroke="#ef4444" stroke-width="1"/>
+      <rect width="258" height="3" x="1" y="1" fill="#f87171" rx="1.5"/>
+      <g transform="translate(15, 25)">
+        <text class="card-head" fill="#fca5a5">data_sigs/SHA256SUMS</text>
+        <text class="badge" y="20" fill="#ef4444">CRYPTOGRAPHIC PROVENANCE</text>
+        <path d="M 0,28 L 230,28" stroke="#7f1d1d" stroke-width="1"/>
+        <text class="card-text" y="46">• Verifies 1,047 data file hashes</text>
+        <text class="card-text" y="66">• Authoritative public manifest</text>
+        <text class="card-text" y="86">• python3 verify_data.py check</text>
+        <text class="card-text" y="106">• Prevents corrupted archives</text>
+        <text class="card-text" y="126" fill="#fca5a5" font-weight="600">✓ 100% scientific reproducibility</text>
+      </g>
+    </g>
+  </g>
+</svg>

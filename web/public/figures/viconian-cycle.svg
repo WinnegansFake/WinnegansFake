@@ -1,0 +1,293 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16"/>
+      <stop offset="50%" stop-color="#0e1526"/>
+      <stop offset="100%" stop-color="#070a12"/>
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="cardGods" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241403" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#140b02" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="cardHeroes" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#260909" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#150505" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="cardMen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071830" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#040e1e" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="cardRicorso" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042217" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#02140d" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Center Hub Gradient -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="glowGold" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#f59e0b" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ef4444" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glowBlue" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#3b82f6" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#10b981" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Markers for Cyclical Arrows -->
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f59e0b" />
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#ef4444" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#3b82f6" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#10b981" />
+    </marker>
+  </defs>
+
+  <style>
+    .title { font-family: ui-serif, Georgia, Cambria, serif; font-weight: 700; fill: #ffffff; }
+    .subtitle { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; fill: #94a3b8; }
+    .card-title { font-family: ui-serif, Georgia, Cambria, serif; font-size: 18px; font-weight: 700; }
+    .card-tag { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; }
+    .label { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .value { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12px; fill: #cbd5e1; }
+    .value-bold { font-weight: 600; }
+    .hub-title { font-family: ui-serif, Georgia, Cambria, serif; font-size: 16px; font-weight: 700; fill: #e2e8f0; }
+    .hub-sub { font-family: ui-monospace, monospace; font-size: 10px; fill: #10b981; letter-spacing: 0.1em; }
+  </style>
+
+  <!-- Background Surface -->
+  <rect width="1000" height="750" fill="url(#bgGrad)" rx="16"/>
+  <rect width="998" height="748" x="1" y="1" fill="none" stroke="#1e293b" stroke-width="1" rx="16"/>
+
+  <!-- Subtle Coordinate Grid Background -->
+  <g opacity="0.07" stroke="#94a3b8" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="750"/>
+    <line x1="250" y1="0" x2="250" y2="750"/>
+    <line x1="500" y1="0" x2="500" y2="750"/>
+    <line x1="750" y1="0" x2="750" y2="750"/>
+    <line x1="900" y1="0" x2="900" y2="750"/>
+    <line x1="0" y1="100" x2="1000" y2="100"/>
+    <line x1="0" y1="250" x2="1000" y2="250"/>
+    <line x1="0" y1="375" x2="1000" y2="375"/>
+    <line x1="0" y1="500" x2="1000" y2="500"/>
+    <line x1="0" y1="650" x2="1000" y2="650"/>
+  </g>
+
+  <!-- Header Section -->
+  <g transform="translate(500, 42)" text-anchor="middle">
+    <text class="title" font-size="22" letter-spacing="-0.02em">THE VICONIAN COSMOLOGICAL CYCLE</text>
+    <text class="subtitle" y="22">Giambattista Vico's Ideal Eternal History (Storia Ideale Eterna) Across the 4 Books of Finnegans Wake</text>
+  </g>
+
+  <!-- Central Hub (The Ouroboros of Recirculation) -->
+  <g transform="translate(500, 400)">
+    <!-- Radial Glow Behind Hub -->
+    <circle cx="0" cy="0" r="140" fill="url(#centerGlow)"/>
+
+    <!-- Orbital Cycle Rings -->
+    <circle cx="0" cy="0" r="95" fill="none" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+    <circle cx="0" cy="0" r="75" fill="#0b1120" stroke="#1e293b" stroke-width="2" filter="url(#shadow)"/>
+
+    <!-- Hub Icon / Text -->
+    <text class="hub-sub" text-anchor="middle" y="-28">VICO &amp; BRUNO</text>
+    <text class="hub-title" text-anchor="middle" y="-6">RECIRCULATION</text>
+    <text class="value" text-anchor="middle" y="14" font-size="10" fill="#94a3b8">Coincidentia Oppositorum</text>
+    <text class="hub-sub" text-anchor="middle" y="32" fill="#38bdf8">1 → 2 → 3 → 4 → 1</text>
+  </g>
+
+  <!-- Large Cyclical Connecting Arcs -->
+  <g fill="none" stroke-width="3" stroke-linecap="round">
+    <!-- 1 -> 2 (Top horizontal arrow: Gods to Heroes) -->
+    <path d="M 445,170 Q 500,125 550,170" stroke="#f59e0b" marker-end="url(#arrowGold)" filter="url(#glowGold)"/>
+    <text x="500" y="130" text-anchor="middle" class="card-tag" fill="#f59e0b">FEUDAL EMERGENCE</text>
+
+    <!-- 2 -> 3 (Right vertical arrow: Heroes to Men) -->
+    <path d="M 770,335 Q 815,395 770,460" stroke="#ef4444" marker-end="url(#arrowRed)" filter="url(#glowRed)"/>
+    <text x="825" y="405" text-anchor="middle" class="card-tag" fill="#ef4444" transform="rotate(90, 825, 405)">DEMOCRATIZATION</text>
+
+    <!-- 3 -> 4 (Bottom horizontal arrow: Men to Ricorso) -->
+    <path d="M 555,625 Q 500,670 445,625" stroke="#3b82f6" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
+    <text x="500" y="670" text-anchor="middle" class="card-tag" fill="#38bdf8">CATACLYSMIC FALL</text>
+
+    <!-- 4 -> 1 (Left vertical arrow: Ricorso returning to Gods) -->
+    <path d="M 230,460 Q 185,395 230,335" stroke="#10b981" marker-end="url(#arrowGreen)" filter="url(#glowGreen)"/>
+    <text x="175" y="405" text-anchor="middle" class="card-tag" fill="#34d399" transform="rotate(-90, 175, 405)">THE RICORSO RETURN</text>
+  </g>
+
+  <!-- ==================== QUADRANT 1: AGE OF GODS ==================== -->
+  <g transform="translate(45, 90)" filter="url(#shadow)">
+    <!-- Card Frame -->
+    <rect width="400" height="235" rx="14" fill="url(#cardGods)" stroke="#d97706" stroke-width="1.5"/>
+    <rect width="398" height="4" x="1" y="1" fill="#f59e0b" rx="2"/>
+
+    <!-- Header & Badge -->
+    <g transform="translate(20, 32)">
+      <rect x="0" y="-14" width="105" height="18" rx="4" fill="#78350f"/>
+      <text class="card-tag" x="52" y="-1" text-anchor="middle" fill="#fde68a">BOOK I • pp. 3–216</text>
+
+      <text class="card-title" x="0" y="24" fill="#fbbf24">1. The Age of Gods</text>
+      <text class="subtitle" x="0" y="42" fill="#d97706">Divine &amp; Theocratic Genesis • The Patriarch HCE</text>
+    </g>
+
+    <!-- Details Grid -->
+    <g transform="translate(20, 95)">
+      <!-- Row 1: Language -->
+      <text class="label" fill="#b45309" y="0">Language</text>
+      <text class="value" y="16">Hieroglyphic, Mute, Sacred Poetic Myth</text>
+
+      <!-- Row 2: Institutions -->
+      <text class="label" fill="#b45309" y="42">Institutions</text>
+      <text class="value" y="58">Religion, Auspices, Patriarchal Rule, Marriage from Fear</text>
+
+      <!-- Row 3: Cosmic Voice -->
+      <text class="label" fill="#b45309" y="84">Cosmic Voice</text>
+      <text class="value" y="100">
+        <tspan class="value-bold" fill="#fef3c7">The Thunderclap:</tspan> Awaken holy dread; retreat to caves
+      </text>
+
+      <!-- Row 4: Wake Symbol -->
+      <rect x="0" y="112" width="360" height="20" rx="4" fill="#291804" stroke="#78350f" stroke-width="0.75"/>
+      <text class="value" x="10" y="126" font-size="11" fill="#fef08a">
+        <tspan font-weight="700">Wake Totem:</tspan> The Mountain, The Hod, Giant Finn MacCool
+      </text>
+    </g>
+  </g>
+
+  <!-- ==================== QUADRANT 2: AGE OF HEROES ==================== -->
+  <g transform="translate(555, 90)" filter="url(#shadow)">
+    <!-- Card Frame -->
+    <rect width="400" height="235" rx="14" fill="url(#cardHeroes)" stroke="#dc2626" stroke-width="1.5"/>
+    <rect width="398" height="4" x="1" y="1" fill="#ef4444" rx="2"/>
+
+    <!-- Header & Badge -->
+    <g transform="translate(20, 32)">
+      <rect x="0" y="-14" width="115" height="18" rx="4" fill="#7f1d1d"/>
+      <text class="card-tag" x="57" y="-1" text-anchor="middle" fill="#fecaca">BOOK II • pp. 217–399</text>
+
+      <text class="card-title" x="0" y="24" fill="#f87171">2. The Age of Heroes</text>
+      <text class="subtitle" x="0" y="42" fill="#ef4444">Aristocratic &amp; Feudal Warfare • The Sons Clash</text>
+    </g>
+
+    <!-- Details Grid -->
+    <g transform="translate(20, 95)">
+      <!-- Row 1: Language -->
+      <text class="label" fill="#b91c1c" y="0">Language</text>
+      <text class="value" y="16">Metaphorical, Symbolic, Heraldic, Chivalric</text>
+
+      <!-- Row 2: Institutions -->
+      <text class="label" fill="#b91c1c" y="42">Institutions</text>
+      <text class="value" y="58">Feudal Castes, Faction, Noble Chivalry, Clientship</text>
+
+      <!-- Row 3: Dominance -->
+      <text class="label" fill="#b91c1c" y="84">Dominance</text>
+      <text class="value" y="100">
+        <tspan class="value-bold" fill="#fee2e2">Castes &amp; Noble Might:</tspan> Shields, arms, martial prowess
+      </text>
+
+      <!-- Row 4: Wake Symbol -->
+      <rect x="0" y="112" width="360" height="20" rx="4" fill="#2a0a0a" stroke="#7f1d1d" stroke-width="0.75"/>
+      <text class="value" x="10" y="126" font-size="11" fill="#fca5a5">
+        <tspan font-weight="700">Wake Totem:</tspan> Nightlessons, Shem vs. Shaun, The Tavern
+      </text>
+    </g>
+  </g>
+
+  <!-- ==================== QUADRANT 3: AGE OF MEN ==================== -->
+  <g transform="translate(555, 475)" filter="url(#shadow)">
+    <!-- Card Frame -->
+    <rect width="400" height="235" rx="14" fill="url(#cardMen)" stroke="#2563eb" stroke-width="1.5"/>
+    <rect width="398" height="4" x="1" y="1" fill="#3b82f6" rx="2"/>
+
+    <!-- Header & Badge -->
+    <g transform="translate(20, 32)">
+      <rect x="0" y="-14" width="120" height="18" rx="4" fill="#1e3a8a"/>
+      <text class="card-tag" x="60" y="-1" text-anchor="middle" fill="#bfdbfe">BOOK III • pp. 403–590</text>
+
+      <text class="card-title" x="0" y="24" fill="#60a5fa">3. The Age of Men</text>
+      <text class="subtitle" x="0" y="42" fill="#3b82f6">Human, Democratic &amp; Civil Law • The Skeptical Disintegration</text>
+    </g>
+
+    <!-- Details Grid -->
+    <g transform="translate(20, 95)">
+      <!-- Row 1: Language -->
+      <text class="label" fill="#1d4ed8" y="0">Language</text>
+      <text class="value" y="16">Epistolary, Vulgar Common Speech, Conceptual Law</text>
+
+      <!-- Row 2: Institutions -->
+      <text class="label" fill="#1d4ed8" y="42">Institutions</text>
+      <text class="value" y="58">Burial, Courts of Justice, Commerce, Civil Equality</text>
+
+      <!-- Row 3: Degeneration -->
+      <text class="label" fill="#1d4ed8" y="84">Degeneration</text>
+      <text class="value" y="100">
+        <tspan class="value-bold" fill="#dbeafe">Barbarie della riflessione:</tspan> Individual skepticism &amp; decay
+      </text>
+
+      <!-- Row 4: Wake Symbol -->
+      <rect x="0" y="112" width="360" height="20" rx="4" fill="#071b38" stroke="#1e3a8a" stroke-width="0.75"/>
+      <text class="value" x="10" y="126" font-size="11" fill="#93c5fd">
+        <tspan font-weight="700">Wake Totem:</tspan> Shaun rolling in barrel, Yawn's trial, The Bed
+      </text>
+    </g>
+  </g>
+
+  <!-- ==================== QUADRANT 4: THE RICORSO ==================== -->
+  <g transform="translate(45, 475)" filter="url(#shadow)">
+    <!-- Card Frame -->
+    <rect width="400" height="235" rx="14" fill="url(#cardRicorso)" stroke="#059669" stroke-width="1.5"/>
+    <rect width="398" height="4" x="1" y="1" fill="#10b981" rx="2"/>
+
+    <!-- Header & Badge -->
+    <g transform="translate(20, 32)">
+      <rect x="0" y="-14" width="118" height="18" rx="4" fill="#064e3b"/>
+      <text class="card-tag" x="59" y="-1" text-anchor="middle" fill="#a7f3d0">BOOK IV • pp. 591–628</text>
+
+      <text class="card-title" x="0" y="24" fill="#34d399">4. The Ricorso</text>
+      <text class="subtitle" x="0" y="42" fill="#10b981">The Cataclysmic Return &amp; Dawn • River Dissolves into Sea</text>
+    </g>
+
+    <!-- Details Grid -->
+    <g transform="translate(20, 95)">
+      <!-- Row 1: Language -->
+      <text class="label" fill="#047857" y="0">Language</text>
+      <text class="value" y="16">Cataclysmic, Polyphonic Dissolution, Lyrical Dawn</text>
+
+      <!-- Row 2: Action -->
+      <text class="label" fill="#047857" y="42">Cosmic Action</text>
+      <text class="value" y="58">10th Thunderclap ("restituted"), Cleansing Ocean Tide</text>
+
+      <!-- Row 3: Restart -->
+      <text class="label" fill="#047857" y="84">Restart</text>
+      <text class="value" y="100">
+        <tspan class="value-bold" fill="#d1fae5">Circular Recirculation:</tspan> "...a long the" → "riverrun..."
+      </text>
+
+      <!-- Row 4: Wake Symbol -->
+      <rect x="0" y="112" width="360" height="20" rx="4" fill="#04261a" stroke="#064e3b" stroke-width="0.75"/>
+      <text class="value" x="10" y="126" font-size="11" fill="#6ee7b7">
+        <tspan font-weight="700">Wake Totem:</tspan> St. Kevin, St. Patrick vs. Balkelly, ALP's Monologue
+      </text>
+    </g>
+  </g>
+</svg>

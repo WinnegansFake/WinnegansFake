@@ -42,6 +42,21 @@ function syncAnnotations() {
     fs.copyFileSync(dissSrc, dissDest);
     console.log(`✅ Copied dissertation.md to web/public/dissertation.md`);
   }
+
+  const figuresSrc = path.join(REPO_ROOT, 'figures');
+  const figuresDest = path.join(REPO_ROOT, 'web', 'public', 'figures');
+  if (fs.existsSync(figuresSrc)) {
+    if (!fs.existsSync(figuresDest)) {
+      fs.mkdirSync(figuresDest, { recursive: true });
+    }
+    const figs = fs.readdirSync(figuresSrc);
+    for (const f of figs) {
+      if (f.endsWith('.svg') || f.endsWith('.png')) {
+        fs.copyFileSync(path.join(figuresSrc, f), path.join(figuresDest, f));
+      }
+    }
+    console.log(`✅ Synchronized ${figs.length} figures to web/public/figures/`);
+  }
 }
 
 syncAnnotations();

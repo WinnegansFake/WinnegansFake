@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ouroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12"/>
+      <stop offset="50%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="30%" stop-color="#3b82f6"/>
+      <stop offset="70%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <filter id="ouroShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: ui-serif, Georgia, serif; font-size: 22px; font-weight: 700; fill: #ffffff; }
+    .sub { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; fill: #94a3b8; }
+    .quote { font-family: ui-serif, Georgia, serif; font-style: italic; font-size: 15px; }
+    .page-tag { font-family: ui-monospace, monospace; font-size: 11px; font-weight: 700; }
+    .stage-title { font-family: ui-serif, Georgia, serif; font-size: 15px; font-weight: 700; fill: #ffffff; }
+    .stage-desc { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11px; fill: #cbd5e1; }
+  </style>
+
+  <rect width="1000" height="600" fill="url(#ouroBg)" rx="16"/>
+  <rect width="998" height="598" x="1" y="1" fill="none" stroke="#1e293b" stroke-width="1" rx="16"/>
+
+  <!-- Header -->
+  <g transform="translate(500, 42)" text-anchor="middle">
+    <text class="title">THE OUROBORIC RECIRCULATION</text>
+    <text class="sub" y="22">The Endless Circular Sentence Linking the Book's Final Page (FW 628) Directly to its Opening Word (FW 003)</text>
+  </g>
+
+  <!-- Large Infinity / Loop Path -->
+  <g transform="translate(500, 310)">
+    <!-- Outer Glow Circle -->
+    <ellipse cx="0" cy="0" rx="360" ry="160" fill="none" stroke="url(#ringGrad)" stroke-width="6" stroke-dasharray="12 6" opacity="0.8"/>
+    <ellipse cx="0" cy="0" rx="340" ry="140" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+
+    <!-- Central Core -->
+    <circle cx="0" cy="0" r="60" fill="#0c1322" stroke="#334155" stroke-width="2" filter="url(#ouroShadow)"/>
+    <text font-family="ui-serif, Georgia, serif" font-size="28" fill="#38bdf8" text-anchor="middle" y="9">∞</text>
+    <text font-family="ui-monospace, monospace" font-size="9" fill="#94a3b8" text-anchor="middle" y="26">ENDLESS RETURN</text>
+  </g>
+
+  <!-- Node 1 (Left): Closing of Book IV (Page 628.15-16) -->
+  <g transform="translate(60, 180)" filter="url(#ouroShadow)">
+    <rect width="360" height="240" rx="14" fill="#041a1a" stroke="#14b8a6" stroke-width="1.5"/>
+    <rect width="358" height="4" x="1" y="1" fill="#2dd4bf" rx="2"/>
+    <g transform="translate(20, 30)">
+      <rect x="0" y="-12" width="130" height="18" rx="4" fill="#134e4a"/>
+      <text class="page-tag" x="65" y="1" text-anchor="middle" fill="#99f6e4">BOOK IV • PAGE 628</text>
+      
+      <text class="stage-title" y="32" fill="#2dd4bf">The Dying Whisper of ALP</text>
+      <text class="quote" y="65" fill="#f0fdfa">
+        "A way a lone a last a loved a long the"
+      </text>
+      <path d="M 0,85 L 320,85" stroke="#115e59" stroke-width="1"/>
+      <g transform="translate(0, 105)">
+        <text class="stage-desc" y="0">• Anna Livia Plurabelle's river waters reach Dublin Bay</text>
+        <text class="stage-desc" y="18">• Dissolves into the cold, bitter brine of the Atlantic ocean</text>
+        <text class="stage-desc" y="36">• The sentence ends without a period or closing stop</text>
+        <text class="stage-desc" y="54" fill="#5eead4" font-weight="600">The mother dies into the sea; the waters rise into mist</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Node 2 (Right): Opening of Book I (Page 003.01) -->
+  <g transform="translate(580, 180)" filter="url(#ouroShadow)">
+    <rect width="360" height="240" rx="14" fill="#08182b" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect width="358" height="4" x="1" y="1" fill="#60a5fa" rx="2"/>
+    <g transform="translate(20, 30)">
+      <rect x="0" y="-12" width="130" height="18" rx="4" fill="#1e3a8a"/>
+      <text class="page-tag" x="65" y="1" text-anchor="middle" fill="#bfdbfe">BOOK I • PAGE 003</text>
+      
+      <text class="stage-title" y="32" fill="#60a5fa">The Resumption of the Riverrun</text>
+      <text class="quote" y="65" fill="#eff6ff">
+        "riverrun, past Eve and Adam's, from swerve of shore..."
+      </text>
+      <path d="M 0,85 L 320,85" stroke="#1e40af" stroke-width="1"/>
+      <g transform="translate(0, 105)">
+        <text class="stage-desc" y="0">• Resumes without a capital letter, completing page 628</text>
+        <text class="stage-desc" y="18">• "brings us by a commodius vicus of recirculation"</text>
+        <text class="stage-desc" y="36">• Returns us back to Howth Castle and Environs (HCE)</text>
+        <text class="stage-desc" y="54" fill="#93c5fd" font-weight="600">Rain falls in Wicklow mountains; the cycle re-begins</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Top Synthesis Bar -->
+  <g transform="translate(160, 480)" filter="url(#ouroShadow)">
+    <rect width="680" height="75" rx="12" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+    <g transform="translate(340, 28)" text-anchor="middle">
+      <text class="stage-desc" fill="#38bdf8" font-size="11" font-weight="700">THE SYNTACTIC &amp; HYDROLOGICAL SYNTHESIS:</text>
+      <text class="quote" y="24" fill="#f8fafc" font-size="14">
+        "A way a lone a last a loved a long the riverrun, past Eve and Adam's..."
+      </text>
+    </g>
+  </g>
+</svg>

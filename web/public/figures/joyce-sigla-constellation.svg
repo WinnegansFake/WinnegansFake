@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="siglaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070913"/>
+      <stop offset="50%" stop-color="#0f1424"/>
+      <stop offset="100%" stop-color="#05070f"/>
+    </linearGradient>
+
+    <linearGradient id="hceCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0c0a09" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="alpCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042f2e" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#021a19" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="shemCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0f0d26" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="shaunCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="issyCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a044e" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#28022a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="mamaCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532d" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0a2a16" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <filter id="sigShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: ui-serif, Georgia, serif; font-size: 22px; font-weight: 700; fill: #ffffff; }
+    .sub { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; fill: #94a3b8; }
+    .sigla-symbol { font-family: "Courier New", Courier, monospace, serif; font-size: 44px; font-weight: 700; }
+    .card-title { font-family: ui-serif, Georgia, serif; font-size: 16px; font-weight: 700; }
+    .archetype { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; }
+    .desc { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11px; fill: #cbd5e1; }
+    .relation-label { font-family: ui-monospace, monospace; font-size: 10px; font-weight: 700; fill: #e2e8f0; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1000" height="700" fill="url(#siglaBg)" rx="16"/>
+  <rect width="998" height="698" x="1" y="1" fill="none" stroke="#1e293b" stroke-width="1" rx="16"/>
+
+  <!-- Header -->
+  <g transform="translate(500, 42)" text-anchor="middle">
+    <text class="title">THE BUFFALO NOTEBOOKS SIGLA CONSTELLATION</text>
+    <text class="sub" y="22">James Joyce’s Hieroglyphic Notation for the Mythic Dramatis Personae of Finnegans Wake</text>
+  </g>
+
+  <!-- Relational Connector Lines Behind Cards -->
+  <g stroke-width="2" fill="none" opacity="0.6">
+    <!-- HCE <-> ALP (Marriage/Union) -->
+    <path d="M 330,170 L 670,170" stroke="#f59e0b" stroke-dasharray="6 4"/>
+    <!-- Parents -> Children -->
+    <path d="M 280,245 L 200,340" stroke="#94a3b8" stroke-dasharray="4 4"/>
+    <path d="M 500,170 L 500,340" stroke="#94a3b8" stroke-dasharray="4 4"/>
+    <path d="M 720,245 L 800,340" stroke="#94a3b8" stroke-dasharray="4 4"/>
+    <!-- Shem <-> Shaun (Dialectical Opposition) -->
+    <path d="M 300,420 L 700,420" stroke="#a855f7" stroke-dasharray="6 4"/>
+  </g>
+
+  <!-- Central Relationship Badges -->
+  <g transform="translate(500, 170)" text-anchor="middle">
+    <rect x="-70" y="-12" width="140" height="24" rx="12" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+    <text class="relation-label" y="4">MARRIAGE / L&amp;H</text>
+  </g>
+  <g transform="translate(500, 420)" text-anchor="middle">
+    <rect x="-95" y="-12" width="190" height="24" rx="12" fill="#0f172a" stroke="#a855f7" stroke-width="1"/>
+    <text class="relation-label" y="4" fill="#c084fc">COINCIDENTIA OPPOSITORUM</text>
+  </g>
+
+  <!-- ==================== TOP ROW: THE PARENTS ==================== -->
+  
+  <!-- 1. HCE (The Mountain) -->
+  <g transform="translate(80, 85)" filter="url(#sigShadow)">
+    <rect width="260" height="170" rx="14" fill="url(#hceCard)" stroke="#d97706" stroke-width="1.5"/>
+    <g transform="translate(20, 35)">
+      <!-- Siglum Symbol -->
+      <text class="sigla-symbol" x="0" y="25" fill="#f59e0b">∐</text>
+      <g transform="translate(60, 0)">
+        <text class="card-title" fill="#fbbf24">HCE</text>
+        <text class="archetype" y="16" fill="#f59e0b">THE MOUNTAIN / PATRIARCH</text>
+        <text class="desc" y="32">Humphrey Chimpden Earwicker</text>
+      </g>
+      <path d="M 0,45 L 220,45" stroke="#78350f" stroke-width="1"/>
+      <g transform="translate(0, 62)">
+        <text class="desc" y="0">• "Here Comes Everybody" / Howth Head</text>
+        <text class="desc" y="18">• Entombed Giant Finn MacCool in hills</text>
+        <text class="desc" y="36">• Guilt in Phoenix Park; stutter of fear</text>
+        <text class="desc" y="54" fill="#fde68a" font-weight="600">Totem: Boulder, Oak, Chapelizod Tavern</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 2. ALP (The River) -->
+  <g transform="translate(660, 85)" filter="url(#sigShadow)">
+    <rect width="260" height="170" rx="14" fill="url(#alpCard)" stroke="#14b8a6" stroke-width="1.5"/>
+    <g transform="translate(20, 35)">
+      <!-- Siglum Symbol -->
+      <text class="sigla-symbol" x="0" y="25" fill="#2dd4bf">Δ</text>
+      <g transform="translate(60, 0)">
+        <text class="card-title" fill="#5eead4">ALP</text>
+        <text class="archetype" y="16" fill="#14b8a6">THE RIVER / MOTHER &amp; WIFE</text>
+        <text class="desc" y="32">Anna Livia Plurabelle</text>
+      </g>
+      <path d="M 0,45 L 220,45" stroke="#134e4a" stroke-width="1"/>
+      <g transform="translate(0, 62)">
+        <text class="desc" y="0">• The River Liffey; stream of renewal</text>
+        <text class="desc" y="18">• Dictates the Midden Letter of defense</text>
+        <text class="desc" y="36">• Dissolves into bitter sea at daybreak</text>
+        <text class="desc" y="54" fill="#99f6e4" font-weight="600">Totem: Fresh water, Hen, Washerwomen</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== MIDDLE ROW: THE CHILDREN ==================== -->
+
+  <!-- 3. SHEM THE PENMAN -->
+  <g transform="translate(60, 335)" filter="url(#sigShadow)">
+    <rect width="260" height="170" rx="14" fill="url(#shemCard)" stroke="#818cf8" stroke-width="1.5"/>
+    <g transform="translate(20, 35)">
+      <text class="sigla-symbol" x="0" y="25" fill="#a5b4fc">[</text>
+      <g transform="translate(60, 0)">
+        <text class="card-title" fill="#c7d2fe">Shem the Penman</text>
+        <text class="archetype" y="16" fill="#818cf8">THE TREE / INWARD ARTIST</text>
+        <text class="desc" y="32">Joyce's Alter Ego (Jerry)</text>
+      </g>
+      <path d="M 0,45 L 220,45" stroke="#312e81" stroke-width="1"/>
+      <g transform="translate(0, 62)">
+        <text class="desc" y="0">• Outcast rebel, blasphemer, alchemist</text>
+        <text class="desc" y="18">• Writes on own skin with bodily ink</text>
+        <text class="desc" y="36">• Associated with elm tree, dark, time</text>
+        <text class="desc" y="54" fill="#c7d2fe" font-weight="600">Totem: Elm tree, Crow, Sorrow, Night</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 4. ISSY (The Looking-Glass) -->
+  <g transform="translate(370, 335)" filter="url(#sigShadow)">
+    <rect width="260" height="170" rx="14" fill="url(#issyCard)" stroke="#d946ef" stroke-width="1.5"/>
+    <g transform="translate(20, 35)">
+      <text class="sigla-symbol" x="0" y="25" fill="#f0abfc">⊣</text>
+      <g transform="translate(60, 0)">
+        <text class="card-title" fill="#f5d0fe">Issy</text>
+        <text class="archetype" y="16" fill="#d946ef">THE MIRROR / DAUGHTER</text>
+        <text class="desc" y="32">Isolde / Stella &amp; Vanessa</text>
+      </g>
+      <path d="M 0,45 L 220,45" stroke="#701a75" stroke-width="1"/>
+      <g transform="translate(0, 62)">
+        <text class="desc" y="0">• Prismatic looking-glass mirror-self</text>
+        <text class="desc" y="18">• Dual split personality in boudoir</text>
+        <text class="desc" y="36">• Surrounded by 28 Rainbow Girls</text>
+        <text class="desc" y="54" fill="#f5d0fe" font-weight="600">Totem: Cloud, Vapour, Rainbow, Maggies</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 5. SHAUN THE POST -->
+  <g transform="translate(680, 335)" filter="url(#sigShadow)">
+    <rect width="260" height="170" rx="14" fill="url(#shaunCard)" stroke="#6366f1" stroke-width="1.5"/>
+    <g transform="translate(20, 35)">
+      <text class="sigla-symbol" x="0" y="25" fill="#a5b4fc">]</text>
+      <g transform="translate(60, 0)">
+        <text class="card-title" fill="#c7d2fe">Shaun the Post</text>
+        <text class="archetype" y="16" fill="#6366f1">THE STONE / EXTERNAL VOICE</text>
+        <text class="desc" y="32">The Conformist (Kevin)</text>
+      </g>
+      <path d="M 0,45 L 220,45" stroke="#312e81" stroke-width="1"/>
+      <g transform="translate(0, 62)">
+        <text class="desc" y="0">• Favorite of Church &amp; State; orator</text>
+        <text class="desc" y="18">• Delivers letter he cannot comprehend</text>
+        <text class="desc" y="36">• Rolls down Liffey in a floating barrel</text>
+        <text class="desc" y="54" fill="#c7d2fe" font-weight="600">Totem: Stone, Postman's Bag, White, Day</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== BOTTOM ROW: CHORUS & JUDGES ==================== -->
+
+  <!-- 6. MAMALUJO (The Four) -->
+  <g transform="translate(140, 525)" filter="url(#sigShadow)">
+    <rect width="330" height="145" rx="12" fill="url(#mamaCard)" stroke="#16a34a" stroke-width="1.5"/>
+    <g transform="translate(20, 25)">
+      <text class="sigla-symbol" x="0" y="25" fill="#4ade80">⊥</text>
+      <g transform="translate(60, 0)">
+        <text class="card-title" fill="#86efac">⊥ Mamalujo (The Four)</text>
+        <text class="archetype" y="16" fill="#16a34a">EVANGELISTS, PROVINCES &amp; GULLS</text>
+        <text class="desc" y="32">Matt Gregory, Mark Lyons, Luke Tarpey, Johnny MacDougall</text>
+      </g>
+      <path d="M 0,42 L 290,42" stroke="#14532d" stroke-width="1"/>
+      <g transform="translate(0, 56)">
+        <text class="desc" y="0">• Four Gospels, 4 Irish Provinces (Ulster, Munster, Leinster, Connaught)</text>
+        <text class="desc" y="18">• 4 Bedposts of HCE's bed; four squawking gulls over Dublin Bay</text>
+        <text class="desc" y="36" fill="#bbf7d0" font-weight="600">Role: Senile voyeurs, chroniclers, historians of the Fall</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 7. THE TWELVE CUSTOMERS (S) -->
+  <g transform="translate(530, 525)" filter="url(#sigShadow)">
+    <rect width="330" height="145" rx="12" fill="#111827" stroke="#64748b" stroke-width="1.5"/>
+    <g transform="translate(20, 25)">
+      <text class="sigla-symbol" x="0" y="25" fill="#94a3b8">S</text>
+      <g transform="translate(60, 0)">
+        <text class="card-title" fill="#e2e8f0">S The Twelve</text>
+        <text class="archetype" y="16" fill="#94a3b8">JURORS, ZODIAC &amp; PUBLIC OPINION</text>
+        <text class="desc" y="32">The Customers of HCE's Chapelizod Pub</text>
+      </g>
+      <path d="M 0,42 L 290,42" stroke="#334155" stroke-width="1"/>
+      <g transform="translate(0, 56)">
+        <text class="desc" y="0">• 12 Jurors at HCE's trial, 12 Zodiac signs, 12 Apostles</text>
+        <text class="desc" y="18">• Constant Greek chorus of Dublin gossip, gossipers, and drinkers</text>
+        <text class="desc" y="36" fill="#e2e8f0" font-weight="600">Role: Condemning, discussing, and ordering another round of porter</text>
+      </g>
+    </g>
+  </g>
+</svg>

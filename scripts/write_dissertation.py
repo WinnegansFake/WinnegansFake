@@ -93,37 +93,7 @@ To reconcile open-source collaboration with absolute copyright compliance, the *
 2. **Coordinate Separation (`PPP.LL`):** Scholarly glosses, lexical breakdowns, motif tags, and bibliographic citations are stored purely as metadata mapped to the canonical 628-page pagination established by the 1939 Viking/Faber editions (`PPP.LL`, where `PPP` is the page from `001` to `628`, and `LL` is the line number from `01` to `40`).
 3. **Strict Target Phrase Safeguards:** Annotations link only to minimal "target lemmas" or short anchor phrases ($\le 150$ characters, single line only), satisfying the legal standards of fair use and transformative critical commentary without reproducing literary passages.
 
-```
-       +-------------------------------------------------------------+
-       |                  WinnegansFake Repository                    |
-       |  (Public GitHub Monorepo under CC BY-SA 4.0 & GPLv3)        |
-       +-------------------------------------------------------------+
-                                      |
-                   +------------------+------------------+
-                   |                                     |
-                   v                                     v
-       [schemas/page-annotation]               [annotations/book_B/chapter_C/]
-         - JSON Schema 2020-12                   - 628 Canonical Pages
-         - Page bounds (1-628)                   - Pure Metadata & Glosses
-         - Line bounds (1-40)                    - Web Bibliographies
-         - Target Phrase <= 150 chars            - No Copyrighted Passages
-                   |                                     |
-                   +------------------+------------------+
-                                      |
-                                      v
-       +-------------------------------------------------------------+
-       |                  Local Execution Boundary                   |
-       |               (Strictly Local & Gitignored)                 |
-       +-------------------------------------------------------------+
-                                      |
-                   +------------------+------------------+
-                   |                                     |
-                   v                                     v
-       [data/finneganswake00joycuoft.epub]      [data_sigs/SHA256SUMS.txt]
-         - User-supplied legal archive            - Cryptographic Provenance
-         - Streamed directly into memory          - Verifies 1,047 data files
-         - Never committed to git                 - Prevents corrupt artifacts
-```
+![Figure 1: Zero-Copyright Data Isolation Architecture](figures/data-isolation-pipeline.svg)
 
 ### 1.4 Provenance, Cryptographic Verification, and Local Streaming Architecture
 To ensure scientific reproducibility and data provenance across distributed machines without distributing the book, *WinnegansFake* employs cryptographic checksums:
@@ -140,13 +110,7 @@ The structural spine of *Finnegans Wake* is derived from the Neapolitan jurist a
 
 Vico posited that all human civilizations trace an "ideal eternal history" (*storia ideale eterna*), an endless spiral unfolding through three recurring epochs followed by a sudden collapse and restart:
 
-```mermaid
-graph TD
-    A["1. The Age of Gods (Divine/Theocratic)<br>Language: Hieroglyphic, Mute, Poetic<br>Institution: Religion, Auspices, Patriarchs<br>Voice: The Thunder (Fear of God)"] --> B["2. The Age of Heroes (Aristocratic)<br>Language: Metaphorical, Symbolic, Feudal<br>Institution: Marriage, Faction, Chivalry<br>Dominance: Castes and Noble Might"]
-    B --> C["3. The Age of Men (Human/Democratic)<br>Language: Epistolary, Vulgar, Conceptual<br>Institution: Burial, Courts, Commerce, Law<br>Degeneration: Individual Skepticism & Chaos"]
-    C --> D["4. The Ricorso (The Return)<br>Language: Cataclysmic, Polyphonic Dissolution<br>Action: Thunderclap & Cleansing Flood<br>Restart: Circular Return to the Age of Gods"]
-    D --> A
-```
+![Figure 2: The Viconian Cosmological Cycle — Giambattista Vico's Ideal Eternal History in Finnegans Wake](figures/viconian-cycle.svg)
 
 In *Finnegans Wake*, this cycle does not merely govern world empires; it dictates the structure of every paragraph, every sentence, and every breath of the sleeping dreamer.
 
@@ -181,15 +145,7 @@ Joyce mirrored Vico’s tetradic structure directly in the formal architecture o
 ### 3.1 The Buffalo Notebooks and Joyce’s Hieroglyphic Notation
 When Joyce filled the 48 notebooks now preserved in the Poetry Collection at the University of Buffalo (transcribed in the Brepols genetic editions by Deane, Ferrer, and Lernout), he developed a shorthand system of hieroglyphic symbols known as **sigla**. Rather than denoting static characters, each siglum designates an archetypal nexus of energy that mutates across centuries, languages, and identities.
 
-```
-       [ HCE ]               [ ALP ]               [ SHEM ]              [ SHAUN ]
-         _                      _                    _                      _
-        / \                    / \                  / \                    / \
-       | E |                  | ^ |                | [ |                  | ] |
-        \_/                    \_/                  \_/                    \_/
-     The Mountain           The River            The Tree              The Stone
-     Patriarch              Mother / Wife        Outcast Rebel         Proud Priest
-```
+![Figure 3: The Buffalo Notebooks Sigla Constellation — Joyce's Hieroglyphic Notation for the Mythic Dramatis Personae](figures/joyce-sigla-constellation.svg)
 
 ### 3.2 ∐ (HCE) — Humphrey Chimpden Earwicker: Mountain, Patriarch, and Cosmic Sinner
 Denoted by Joyce's siglum of a recumbent 'E' (∐ or rotated E), HCE is the prime mover of the novel:
@@ -362,6 +318,8 @@ The closing fragment completes the opening sentence:
 > *"A way a lone a last a loved a long the riverrun, past Eve and Adam's..."*
 
 The death of the mother is the birth of the river; the descent of the water is the evaporation into cloud; the end of the book is the immediate reopening of the cover. It is the perfect literary embodiment of Vico's *ricorso*.
+
+![Figure 4: The Ouroboric Recirculation — The Syntactic and Hydrological Cycle from FW 628 to FW 003](figures/ouroboros-circulation.svg)
 
 ### 6.2 The Living Archive: Open-Source Scholarship as Communal *Ricorso*
 Joyce was once asked by Max Eastman why he wrote *Work in Progress* in such an impossibly demanding language. Joyce replied:
