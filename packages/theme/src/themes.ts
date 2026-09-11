@@ -431,6 +431,30 @@ export const BUILTIN_THEMES: ReadingTheme[] = [
       selectionText: '#cdd6f4',
     },
   },
+
+  // 19. Obsidian Crimson (#000000 background, #9A2F2F foreground)
+  {
+    id: 'obsidian-crimson',
+    name: 'Obsidian Crimson',
+    description: 'Pure pitch-black OLED background (#000000) with deep blood-red foreground (#9A2F2F) for darkroom night reading.',
+    category: 'dark-red',
+    isDark: true,
+    colors: {
+      bg: '#000000',
+      text: '#9a2f2f',
+      textMuted: '#6f2222',
+      cardBg: '#0a0202',
+      border: '#2a0c0c',
+      accent: '#9a2f2f',
+      accentHover: '#ba3939',
+      ring: '#9a2f2f',
+      readerBg: '#000000',
+      readerText: '#9a2f2f',
+      readerCoord: '#5a1d1d',
+      selectionBg: '#3d1212',
+      selectionText: '#ff8a8a',
+    },
+  },
 ];
 
 export const DEFAULT_THEME_ID = 'slate-midnight';

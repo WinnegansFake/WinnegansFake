@@ -140,6 +140,16 @@ describe('@winnegans/theme Package', () => {
     expect(mocha.colors.accent.toLowerCase()).toBe('#cba6f7');
   });
 
+  it('should include Obsidian Crimson theme with #000000 bg and #9A2F2F fg', () => {
+    const crimsonOled = getThemeById('obsidian-crimson');
+    expect(crimsonOled).toBeDefined();
+    expect(crimsonOled.isDark).toBe(true);
+    expect(crimsonOled.colors.bg.toLowerCase()).toBe('#000000');
+    expect(crimsonOled.colors.text.toLowerCase()).toBe('#9a2f2f');
+    expect(crimsonOled.colors.readerBg.toLowerCase()).toBe('#000000');
+    expect(crimsonOled.colors.readerText.toLowerCase()).toBe('#9a2f2f');
+  });
+
   it('should allow building a custom theme with overrides', () => {
     const custom = createCustomTheme('obsidian-oled', 'My Custom Ruby OLED', {
       accent: '#ff0055',
