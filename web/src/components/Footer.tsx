@@ -5,7 +5,7 @@ import { ARCHIVE_EPUB_URL, GITHUB_REPO_URL } from '@/lib/constants';
 
 export function Footer() {
   return (
-    <footer className="bg-slate-950 border-t border-slate-800/80 text-slate-400 text-xs py-12">
+    <footer className="wf-nav-surface border-t border-slate-800/80 text-slate-400 text-xs py-12 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Col 1: About */}

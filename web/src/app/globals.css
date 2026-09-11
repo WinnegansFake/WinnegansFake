@@ -10,8 +10,8 @@
   --wf-accent: #10b981;
   --wf-accent-hover: #34d399;
   --wf-ring: #059669;
-  --wf-reader-bg: #0b1120;
-  --wf-reader-text: #f8fafc;
+  --wf-reader-bg: #020617;
+  --wf-reader-text: #f1f5f9;
   --wf-reader-coord: #64748b;
   --wf-selection-bg: #065f46;
   --wf-selection-text: #ecfdf5;
@@ -27,13 +27,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
-body {
-  background-color: var(--wf-bg);
-  color: var(--wf-text);
+html, body {
+  background-color: var(--wf-bg) !important;
+  color: var(--wf-text) !important;
   font-family: var(--wf-font-family, var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif);
   font-size: var(--wf-font-size, 16px);
   line-height: var(--wf-line-height, 1.6);
-  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 ::selection {
@@ -41,29 +41,77 @@ body {
   color: var(--wf-selection-text);
 }
 
-/* Reader Typography Engine classes */
-.wf-reader-viewport {
+/* =========================================================================
+   Primary Reading Text Enclosures:
+   The main text being read ALWAYS adheres directly to the chosen theme bg & text,
+   ensuring Obsidian OLED is pure #000000 / #FFFFFF, Daylight White is pure #FFFFFF / #000000, etc.
+   ========================================================================= */
+.wf-reading-surface,
+.wf-reader-viewport,
+article.prose {
   background-color: var(--wf-reader-bg) !important;
   color: var(--wf-reader-text) !important;
 }
 
+/* Ensure headings, paragraphs, blockquotes, and prose elements in the reading surface stick directly to theme text */
+.wf-reading-surface h1,
+.wf-reading-surface h2,
+.wf-reading-surface h3,
+.wf-reading-surface h4,
+.wf-reading-surface h5,
+.wf-reading-surface h6,
+.wf-reading-surface p,
+.wf-reading-surface li,
+.wf-reading-surface strong,
+article.prose h1,
+article.prose h2,
+article.prose h3,
+article.prose h4,
+article.prose h5,
+article.prose h6,
+article.prose p,
+article.prose li,
+article.prose strong {
+  color: var(--wf-reader-text) !important;
+}
+
 .wf-reader-line {
-  color: var(--wf-reader-text);
+  color: var(--wf-reader-text) !important;
 }
 
 .wf-reader-coord {
-  color: var(--wf-reader-coord);
+  color: var(--wf-reader-coord) !important;
 }
 
+/* Code blocks and preformatted text inside the reading surface */
+.wf-reading-surface pre,
+article.prose pre {
+  background-color: var(--wf-card-bg) !important;
+  border-color: var(--wf-border) !important;
+  color: var(--wf-reader-text) !important;
+}
+
+.wf-reading-surface blockquote,
+article.prose blockquote {
+  background-color: var(--wf-card-bg) !important;
+  color: var(--wf-reader-text) !important;
+}
+
+/* Off-accent containers (sidebars, toolbars, headers, cards, footer) */
 .wf-card-surface {
-  background-color: var(--wf-card-bg);
-  border-color: var(--wf-border);
+  background-color: var(--wf-card-bg) !important;
+  border-color: var(--wf-border) !important;
+}
+
+.wf-nav-surface {
+  background-color: var(--wf-card-bg) !important;
+  border-color: var(--wf-border) !important;
 }
 
 .wf-accent-btn {
-  background-color: var(--wf-accent);
-  color: #ffffff;
+  background-color: var(--wf-accent) !important;
+  color: #ffffff !important;
 }
 .wf-accent-btn:hover {
-  background-color: var(--wf-accent-hover);
+  background-color: var(--wf-accent-hover) !important;
 }

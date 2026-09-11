@@ -102,7 +102,7 @@ export function DissertationViewer({ content }: DissertationViewerProps) {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
       {/* Header Banner */}
-      <div className="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl mb-8">
+      <div className="wf-card-surface border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl mb-8 transition-colors">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div className="space-y-3 max-w-3xl">
             <div className="flex flex-wrap items-center gap-2">
@@ -162,7 +162,7 @@ export function DissertationViewer({ content }: DissertationViewerProps) {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Sidebar Table of Contents */}
         <aside className="lg:col-span-4 sticky top-24 z-20">
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl space-y-4 max-h-[calc(100vh-7rem)] overflow-y-auto">
+          <div className="wf-card-surface border border-slate-800 rounded-2xl p-5 shadow-xl space-y-4 max-h-[calc(100vh-7rem)] overflow-y-auto transition-colors">
             <div className="flex items-center justify-between border-b border-slate-800 pb-3">
               <div className="flex items-center space-x-2">
                 <List className="w-4 h-4 text-emerald-400" />
@@ -219,8 +219,8 @@ export function DissertationViewer({ content }: DissertationViewerProps) {
         </aside>
 
         {/* Dissertation Markdown Article */}
-        <main className="lg:col-span-8 bg-slate-900/50 border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl">
-          <article className="prose prose-invert prose-emerald max-w-none space-y-6 text-slate-300 font-sans text-sm sm:text-base leading-relaxed">
+        <main className="lg:col-span-8 wf-reading-surface border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl transition-colors">
+          <article className="prose prose-invert prose-emerald max-w-none space-y-6 text-slate-300 font-sans text-sm sm:text-base leading-relaxed wf-reading-surface">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               components={{

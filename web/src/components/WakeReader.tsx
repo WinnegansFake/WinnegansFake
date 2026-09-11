@@ -253,9 +253,9 @@ export function WakeReader() {
   const bookInfo = getBookAndChapterInfo(currentPage);
 
   return (
-    <div className="flex flex-col flex-1 bg-slate-950 text-slate-100 min-h-screen">
+    <div className="flex flex-col flex-1 min-h-screen transition-colors" style={{ backgroundColor: 'var(--wf-bg)' }}>
       {/* 1. Header Toolbar */}
-      <header className="sticky top-16 z-30 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-4 py-3 shadow-md">
+      <header className="sticky top-16 z-30 wf-card-surface backdrop-blur-md border-b border-slate-800 px-4 py-3 shadow-md transition-colors">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
           {/* Left: Book & Chapter Breadcrumb */}
           <div className="flex items-center space-x-3 w-full md:w-auto justify-between md:justify-start">
@@ -526,7 +526,7 @@ export function WakeReader() {
         </section>
 
         {/* RIGHT COLUMN: Scholarly Annotations Corpus */}
-        <section className="lg:col-span-5 bg-slate-900/70 border border-slate-800 rounded-2xl p-5 shadow-xl space-y-4">
+        <section className="lg:col-span-5 wf-card-surface border border-slate-800 rounded-2xl p-5 shadow-xl space-y-4 transition-colors">
           <div className="flex items-center justify-between pb-3 border-b border-slate-800 text-xs font-mono text-slate-400">
             <div className="flex items-center space-x-2">
               <Bookmark className="w-4 h-4 text-indigo-400" />
