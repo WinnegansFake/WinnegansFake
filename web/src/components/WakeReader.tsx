@@ -80,6 +80,7 @@ export function WakeReader() {
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [fullscreenFontSize, setFullscreenFontSize] = useState<number>(18);
   const [fullscreenShowNotes, setFullscreenShowNotes] = useState<boolean>(false);
+  const [fullscreenShowFilters, setFullscreenShowFilters] = useState<boolean>(false);
   const [hoverPopup, setHoverPopup] = useState<HoverPopupData | null>(null);
   const popupTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -877,9 +878,25 @@ export function WakeReader() {
                 <h4 className="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">
                   Lines on Page {String(currentPage).padStart(3, '0')} with Annotations:
                 </h4>
-                {annotationsData && annotationsData.annotations.length > 0 ? (
+                {hasActiveFilters && (
+                  <div className="flex items-center justify-between px-3 py-1.5 rounded-lg bg-emerald-950/40 border border-emerald-500/30 text-xs font-mono mb-2">
+                    <div className="flex items-center space-x-2 text-emerald-400 truncate">
+                      <Filter className="w-3 h-3 flex-shrink-0" />
+                      <span className="truncate">
+                        Layer Filter: {totalFilteredCount} of {allPageAnnotations.length} glosses visible
+                      </span>
+                    </div>
+                    <button
+                      onClick={clearAllFilters}
+                      className="text-[11px] text-emerald-300 hover:underline flex-shrink-0 ml-2 cursor-pointer"
+                    >
+                      Reset
+                    </button>
+                  </div>
+                )}
+                {filteredAnnotations.length > 0 ? (
                   <div className="space-y-2 font-mono text-xs">
-                    {annotationsData.annotations.map((ann) => (
+                    {filteredAnnotations.map((ann) => (
                       <div
                         key={ann.id}
                         tabIndex={0}
@@ -913,7 +930,9 @@ export function WakeReader() {
                   </div>
                 ) : (
                   <p className="text-xs text-slate-500 italic py-4 text-center">
-                    No annotations recorded for page {currentPage} yet. Be the first to add one!
+                    {hasActiveFilters
+                      ? `No annotations match your active filters on page ${currentPage}.`
+                      : `No annotations recorded for page ${currentPage} yet. Be the first to add one!`}
                   </p>
                 )}
               </div>
@@ -921,8 +940,24 @@ export function WakeReader() {
           ) : (
             /* EPUB IS LOADED: Render the line segmented text with interactive hover popups */
             <div className="space-y-1.5 font-serif text-sm leading-relaxed select-text">
+              {hasActiveFilters && (
+                <div className="flex items-center justify-between px-3 py-1.5 rounded-lg bg-emerald-950/40 border border-emerald-500/30 text-xs font-mono mb-2">
+                  <div className="flex items-center space-x-2 text-emerald-400 truncate">
+                    <Filter className="w-3 h-3 flex-shrink-0" />
+                    <span className="truncate">
+                      Active Layer Filter: {totalFilteredCount} of {allPageAnnotations.length} glosses active
+                    </span>
+                  </div>
+                  <button
+                    onClick={clearAllFilters}
+                    className="text-[11px] text-emerald-300 hover:underline flex-shrink-0 ml-2 cursor-pointer"
+                  >
+                    Reset Filter
+                  </button>
+                </div>
+              )}
               {lines.map((l) => {
-                const lineAnns = (annotationsData?.annotations || []).filter((a) => a.line_number === l.line);
+                const lineAnns = filteredAnnotations.filter((a) => a.line_number === l.line);
                 const hasAnns = lineAnns.length > 0;
                 const isSelected = lineAnns.some((a) => a.id === selectedAnnotationId);
 
@@ -1376,8 +1411,11 @@ export function WakeReader() {
 
               {/* Toggle Notes Drawer Button in Fullscreen */}
               <button
-                onClick={() => setFullscreenShowNotes(!fullscreenShowNotes)}
-                className={`inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border transition-colors ${
+                onClick={() => {
+                  setFullscreenShowNotes(!fullscreenShowNotes);
+                  if (!fullscreenShowNotes) setFullscreenShowFilters(false);
+                }}
+                className={`inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border transition-colors cursor-pointer ${
                   fullscreenShowNotes
                     ? 'bg-emerald-950 text-emerald-300 border-emerald-500/50'
                     : 'border-inherit/40 hover:bg-inherit/40'
@@ -1390,10 +1428,32 @@ export function WakeReader() {
                 </span>
               </button>
 
+              {/* Toggle Filters Drawer Button in Fullscreen */}
+              <button
+                onClick={() => {
+                  setFullscreenShowFilters(!fullscreenShowFilters);
+                  if (!fullscreenShowFilters) setFullscreenShowNotes(false);
+                }}
+                className={`inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border transition-colors cursor-pointer ${
+                  fullscreenShowFilters
+                    ? 'bg-emerald-950 text-emerald-300 border-emerald-500/50'
+                    : hasActiveFilters
+                    ? 'bg-amber-950/60 text-amber-300 border-amber-500/50'
+                    : 'border-inherit/40 hover:bg-inherit/40'
+                }`}
+                title="Toggle global layer filters in fullscreen"
+              >
+                <Filter className="w-3.5 h-3.5" />
+                <span>Filters</span>
+                {hasActiveFilters && (
+                  <span className="w-2 h-2 rounded-full bg-amber-400 ml-0.5 animate-pulse" />
+                )}
+              </button>
+
               {/* Exit Fullscreen Button */}
               <button
                 onClick={toggleFullscreen}
-                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm transition-all"
+                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm transition-all cursor-pointer"
                 title="Exit Fullscreen (Esc or F)"
               >
                 <Minimize2 className="w-3.5 h-3.5" />
@@ -1407,7 +1467,7 @@ export function WakeReader() {
             {/* Reading Column */}
             <main
               className={`flex-1 transition-all mx-auto ${
-                fullscreenShowNotes ? 'max-w-3xl' : 'max-w-4xl'
+                fullscreenShowNotes || fullscreenShowFilters ? 'max-w-3xl' : 'max-w-4xl'
               }`}
             >
               <div className="p-6 sm:p-12 rounded-2xl wf-card-surface border shadow-2xl space-y-6 transition-colors">
@@ -1444,42 +1504,66 @@ export function WakeReader() {
 
                     {/* Annotated Phrases on this page preview */}
                     <div className="space-y-3 pt-4">
+                      {hasActiveFilters && (
+                        <div className="flex items-center justify-between px-3 py-1.5 rounded-lg bg-emerald-950/40 border border-emerald-500/30 text-xs font-mono mb-2">
+                          <div className="flex items-center space-x-2 text-emerald-400 truncate">
+                            <Filter className="w-3 h-3 flex-shrink-0" />
+                            <span className="truncate">
+                              Layer Filter: {totalFilteredCount} of {allPageAnnotations.length} glosses visible
+                            </span>
+                          </div>
+                          <button
+                            onClick={clearAllFilters}
+                            className="text-[11px] text-emerald-300 hover:underline flex-shrink-0 ml-2 cursor-pointer"
+                          >
+                            Reset
+                          </button>
+                        </div>
+                      )}
                       <h3 className="text-xs font-mono uppercase tracking-wider font-semibold opacity-75">
                         Annotated Phrases on Page {String(currentPage).padStart(3, '0')} (Hover for Popups):
                       </h3>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                        {annotationsData?.annotations.map((ann) => (
-                          <div
-                            key={ann.id}
-                            tabIndex={0}
-                            onClick={() => handleSelectAnnotationFromPopup(ann.id)}
-                            onMouseEnter={(e) =>
-                              handlePhraseMouseEnter(
-                                ann.target_phrase,
-                                ann.line_number,
-                                [ann],
-                                e.currentTarget
-                              )
-                            }
-                            onMouseLeave={handlePhraseMouseLeave}
-                            className={`p-3 rounded-xl border transition-all cursor-pointer ${
-                              selectedAnnotationId === ann.id
-                                ? 'bg-emerald-950/60 border-emerald-500/50 shadow-md'
-                                : 'border-inherit/30 hover:border-inherit/60'
-                            }`}
-                          >
-                            <div className="flex items-center justify-between text-[11px] opacity-70 mb-1 font-mono">
-                              <span className="text-emerald-400 font-bold">
-                                Line {String(ann.line_number).padStart(2, '0')}
-                              </span>
-                              <span>{ann.id}</span>
+                      {filteredAnnotations.length > 0 ? (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                          {filteredAnnotations.map((ann) => (
+                            <div
+                              key={ann.id}
+                              tabIndex={0}
+                              onClick={() => handleSelectAnnotationFromPopup(ann.id)}
+                              onMouseEnter={(e) =>
+                                handlePhraseMouseEnter(
+                                  ann.target_phrase,
+                                  ann.line_number,
+                                  [ann],
+                                  e.currentTarget
+                                )
+                              }
+                              onMouseLeave={handlePhraseMouseLeave}
+                              className={`p-3 rounded-xl border transition-all cursor-pointer ${
+                                selectedAnnotationId === ann.id
+                                  ? 'bg-emerald-950/60 border-emerald-500/50 shadow-md'
+                                  : 'border-inherit/30 hover:border-inherit/60'
+                              }`}
+                            >
+                              <div className="flex items-center justify-between text-[11px] opacity-70 mb-1 font-mono">
+                                <span className="text-emerald-400 font-bold">
+                                  Line {String(ann.line_number).padStart(2, '0')}
+                                </span>
+                                <span>{ann.id}</span>
+                              </div>
+                              <div className="font-serif text-sm">
+                                &ldquo;{ann.target_phrase}&rdquo;
+                              </div>
                             </div>
-                            <div className="font-serif text-sm">
-                              &ldquo;{ann.target_phrase}&rdquo;
-                            </div>
-                          </div>
-                        ))}
-                      </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="text-xs opacity-60 italic py-4 text-center">
+                          {hasActiveFilters
+                            ? `No annotations match your active filters on page ${currentPage}.`
+                            : `No annotations recorded for page ${currentPage} yet.`}
+                        </p>
+                      )}
                     </div>
                   </div>
                 ) : (
@@ -1491,8 +1575,24 @@ export function WakeReader() {
                       lineHeight: '1.8',
                     }}
                   >
+                    {hasActiveFilters && (
+                      <div className="flex items-center justify-between px-3 py-1.5 rounded-lg bg-emerald-950/40 border border-emerald-500/30 text-xs font-mono mb-3">
+                        <div className="flex items-center space-x-2 text-emerald-400 truncate">
+                          <Filter className="w-3 h-3 flex-shrink-0" />
+                          <span className="truncate">
+                            Active Layer Filter: {totalFilteredCount} of {allPageAnnotations.length} glosses active
+                          </span>
+                        </div>
+                        <button
+                          onClick={clearAllFilters}
+                          className="text-[11px] text-emerald-300 hover:underline flex-shrink-0 ml-2 cursor-pointer"
+                        >
+                          Reset Filter
+                        </button>
+                      </div>
+                    )}
                     {lines.map((l) => {
-                      const lineAnns = (annotationsData?.annotations || []).filter(
+                      const lineAnns = filteredAnnotations.filter(
                         (a) => a.line_number === l.line
                       );
                       const hasAnns = lineAnns.length > 0;
@@ -1558,13 +1658,25 @@ export function WakeReader() {
                       Page Annotations ({totalFilteredCount})
                     </span>
                   </div>
-                  <button
-                    onClick={() => setFullscreenShowNotes(false)}
-                    className="p-1 rounded opacity-60 hover:opacity-100 transition-opacity cursor-pointer"
-                    title="Close notes drawer"
-                  >
-                    <X className="w-4 h-4" />
-                  </button>
+                  <div className="flex items-center space-x-1">
+                    <button
+                      onClick={() => {
+                        setFullscreenShowNotes(false);
+                        setFullscreenShowFilters(true);
+                      }}
+                      className="p-1 rounded opacity-60 hover:opacity-100 transition-opacity cursor-pointer"
+                      title="Open global layer filters"
+                    >
+                      <Filter className="w-3.5 h-3.5 text-emerald-400" />
+                    </button>
+                    <button
+                      onClick={() => setFullscreenShowNotes(false)}
+                      className="p-1 rounded opacity-60 hover:opacity-100 transition-opacity cursor-pointer"
+                      title="Close notes drawer"
+                    >
+                      <X className="w-4 h-4" />
+                    </button>
+                  </div>
                 </div>
 
                 {/* Zen Drawer Layer & Sort Toolbar */}
@@ -1784,6 +1896,271 @@ export function WakeReader() {
                         </div>
                       );
                     })
+                  )}
+                </div>
+              </aside>
+            )}
+
+            {/* Fullscreen Slide-in Global Layer Filters Drawer */}
+            {fullscreenShowFilters && (
+              <aside className="w-96 flex-shrink-0 p-5 rounded-2xl wf-card-surface border shadow-2xl space-y-4 max-h-[calc(100vh-8rem)] overflow-y-auto sticky top-20 animate-in slide-in-from-right-10 duration-200 select-text">
+                {/* Header */}
+                <div className="flex items-center justify-between pb-2 border-b border-inherit/40">
+                  <div className="flex items-center space-x-2">
+                    <SlidersHorizontal className="w-4 h-4 text-emerald-400" />
+                    <span className="font-mono font-semibold text-xs tracking-wider uppercase">
+                      Global Layer Filters
+                    </span>
+                  </div>
+                  <button
+                    onClick={() => setFullscreenShowFilters(false)}
+                    className="p-1 rounded opacity-60 hover:opacity-100 transition-opacity cursor-pointer"
+                    title="Close filters"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                </div>
+
+                {/* Status Indicator */}
+                <div className="p-2.5 rounded-xl bg-inherit/40 border border-inherit/30 space-y-1 text-xs font-mono">
+                  <div className="flex items-center justify-between">
+                    <span className="text-emerald-400 font-semibold">
+                      {totalFilteredCount} of {allPageAnnotations.length} glosses visible
+                    </span>
+                    {hasActiveFilters && (
+                      <button
+                        onClick={clearAllFilters}
+                        className="text-[11px] text-amber-400 hover:underline flex items-center space-x-1 cursor-pointer"
+                      >
+                        <RotateCcw className="w-3 h-3" />
+                        <span>Reset</span>
+                      </button>
+                    )}
+                  </div>
+                  <p className="text-[10px] opacity-70 font-sans">
+                    Filters immediately limit annotations across text underlines, popups, and the notes drawer.
+                  </p>
+                </div>
+
+                {/* Search Filter */}
+                <div className="space-y-1.5">
+                  <label className="flex items-center space-x-1.5 text-xs font-mono opacity-80">
+                    <Search className="w-3.5 h-3.5 text-emerald-400" />
+                    <span>Search Lemma or Note:</span>
+                  </label>
+                  <div className="relative">
+                    <input
+                      type="text"
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      placeholder="e.g. riverrun, Vico, Babel, thunder..."
+                      className="w-full bg-inherit border border-inherit/40 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:border-emerald-500 pr-7 font-sans"
+                    />
+                    {searchQuery && (
+                      <button
+                        onClick={() => setSearchQuery('')}
+                        className="absolute right-2 top-2 opacity-60 hover:opacity-100 text-xs"
+                      >
+                        &times;
+                      </button>
+                    )}
+                  </div>
+                </div>
+
+                {/* Layer Grouping & Sorting Controls */}
+                <div className="grid grid-cols-2 gap-2 pt-1 border-t border-inherit/20">
+                  <div>
+                    <label className="flex items-center space-x-1 text-[10px] font-mono opacity-80 mb-1">
+                      <Layers className="w-3 h-3 text-emerald-400" />
+                      <span>Group By:</span>
+                    </label>
+                    <select
+                      value={layerGroupBy}
+                      onChange={(e) => setLayerGroupBy(e.target.value as LayerGroupMode)}
+                      className="w-full bg-inherit border border-inherit/40 rounded-lg px-2 py-1.5 text-xs focus:outline-none focus:border-emerald-500 font-sans"
+                    >
+                      <option value="none">Continuous (Flat)</option>
+                      <option value="register">Registers (19)</option>
+                      <option value="author">Scholars & Sources</option>
+                      <option value="tag">Arbitrary Tags</option>
+                      <option value="line">Line Numbers</option>
+                      <option value="contributor">Contributors</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="flex items-center space-x-1 text-[10px] font-mono opacity-80 mb-1">
+                      <ArrowUpDown className="w-3 h-3 text-emerald-400" />
+                      <span>Sort Order:</span>
+                    </label>
+                    <select
+                      value={sortBy}
+                      onChange={(e) => setSortBy(e.target.value as AnnotationSortMode)}
+                      className="w-full bg-inherit border border-inherit/40 rounded-lg px-2 py-1.5 text-xs focus:outline-none focus:border-emerald-500 font-sans"
+                    >
+                      <option value="line-asc">Line (1 → 36)</option>
+                      <option value="line-desc">Line (36 → 1)</option>
+                      <option value="author-asc">Scholar (A → Z)</option>
+                      <option value="phrase-asc">Lemma (A → Z)</option>
+                      <option value="tag-count">Tag Density</option>
+                    </select>
+                  </div>
+                </div>
+
+                {/* Scholar & Source Layer Filter */}
+                <div className="space-y-1.5 pt-1 border-t border-inherit/20">
+                  <div className="flex items-center justify-between">
+                    <label className="flex items-center space-x-1.5 text-xs font-mono opacity-80">
+                      <GraduationCap className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Scholar / Source Layer:</span>
+                    </label>
+                    {selectedAuthor !== 'all' && (
+                      <button
+                        onClick={() => setSelectedAuthor('all')}
+                        className="text-[10px] text-amber-400 hover:underline font-mono"
+                      >
+                        Clear
+                      </button>
+                    )}
+                  </div>
+                  <select
+                    value={selectedAuthor}
+                    onChange={(e) => setSelectedAuthor(e.target.value)}
+                    className="w-full bg-inherit border border-inherit/40 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:border-emerald-500 font-sans"
+                  >
+                    <option value="all">All Scholars & Sources ({availableAuthors.length})</option>
+                    {availableAuthors.map((auth) => (
+                      <option key={auth} value={auth}>
+                        {auth}
+                      </option>
+                    ))}
+                  </select>
+
+                  {/* Quick Scholar Pills */}
+                  {availableAuthors.length > 0 && (
+                    <div className="flex flex-wrap gap-1 pt-1">
+                      {availableAuthors.slice(0, 8).map((auth) => (
+                        <button
+                          key={auth}
+                          onClick={() =>
+                            setSelectedAuthor(selectedAuthor === auth ? 'all' : auth)
+                          }
+                          className={`text-[10px] font-mono px-2 py-0.5 rounded border transition-colors cursor-pointer ${
+                            selectedAuthor === auth
+                              ? 'bg-emerald-950 text-emerald-300 border-emerald-500/60 font-semibold'
+                              : 'bg-inherit/40 border-inherit/30 opacity-70 hover:opacity-100'
+                          }`}
+                        >
+                          {auth}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Analytical Register Layer Filter */}
+                <div className="space-y-1.5 pt-1 border-t border-inherit/20">
+                  <div className="flex items-center justify-between">
+                    <label className="flex items-center space-x-1.5 text-xs font-mono opacity-80">
+                      <Layers className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Analytical Register:</span>
+                    </label>
+                    {selectedRegister !== 'all' && (
+                      <button
+                        onClick={() => setSelectedRegister('all')}
+                        className="text-[10px] text-amber-400 hover:underline font-mono"
+                      >
+                        Clear
+                      </button>
+                    )}
+                  </div>
+                  <select
+                    value={selectedRegister}
+                    onChange={(e) => setSelectedRegister(e.target.value)}
+                    className="w-full bg-inherit border border-inherit/40 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:border-emerald-500 font-sans"
+                  >
+                    <option value="all">All Analytical Registers</option>
+                    {ANALYTICAL_REGISTERS.map((reg) => (
+                      <option key={reg.id} value={reg.id}>
+                        {reg.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Arbitrary Tags Filter */}
+                <div className="space-y-1.5 pt-1 border-t border-inherit/20">
+                  <div className="flex items-center justify-between">
+                    <label className="flex items-center space-x-1.5 text-xs font-mono opacity-80">
+                      <Tag className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Arbitrary Tag Layer:</span>
+                    </label>
+                    {selectedTag !== 'all' && (
+                      <button
+                        onClick={() => setSelectedTag('all')}
+                        className="text-[10px] text-amber-400 hover:underline font-mono"
+                      >
+                        Clear
+                      </button>
+                    )}
+                  </div>
+                  <select
+                    value={selectedTag}
+                    onChange={(e) => setSelectedTag(e.target.value)}
+                    className="w-full bg-inherit border border-inherit/40 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:border-emerald-500 font-sans"
+                  >
+                    <option value="all">All Tags ({availableTags.length} tags on page)</option>
+                    {availableTags.map((t) => (
+                      <option key={t.tag} value={t.tag}>
+                        #{t.tag} ({t.count})
+                      </option>
+                    ))}
+                  </select>
+
+                  {/* Quick Tag Pills */}
+                  {availableTags.length > 0 && (
+                    <div className="flex flex-wrap gap-1 pt-1 max-h-24 overflow-y-auto">
+                      {availableTags.slice(0, 16).map((t) => (
+                        <button
+                          key={t.tag}
+                          onClick={() =>
+                            setSelectedTag(selectedTag === t.tag ? 'all' : t.tag)
+                          }
+                          className={`text-[9px] font-mono px-1.5 py-0.5 rounded border transition-colors cursor-pointer ${
+                            selectedTag === t.tag
+                              ? 'bg-amber-950/80 text-amber-300 border-amber-500/60 font-semibold'
+                              : 'bg-inherit/40 border-inherit/30 opacity-70 hover:opacity-100'
+                          }`}
+                        >
+                          #{t.tag} ({t.count})
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Action Buttons: Switch to Notes or Reset */}
+                <div className="pt-2 border-t border-inherit/30 flex items-center space-x-2">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setFullscreenShowFilters(false);
+                      setFullscreenShowNotes(true);
+                    }}
+                    className="flex-1 px-3 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow transition-all flex items-center justify-center space-x-1.5 cursor-pointer"
+                  >
+                    <Bookmark className="w-3.5 h-3.5" />
+                    <span>View Notes ({totalFilteredCount})</span>
+                  </button>
+                  {hasActiveFilters && (
+                    <button
+                      type="button"
+                      onClick={clearAllFilters}
+                      className="px-3 py-2 rounded-xl border border-inherit/40 hover:bg-inherit/40 text-xs font-mono transition-colors cursor-pointer"
+                      title="Reset all filters"
+                    >
+                      Reset
+                    </button>
                   )}
                 </div>
               </aside>
