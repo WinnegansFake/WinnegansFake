@@ -47,6 +47,7 @@ import {
   Link2,
   FolderOpen,
   Settings,
+  GitPullRequest,
 } from 'lucide-react';
 import {
   getBasePath,
@@ -80,6 +81,7 @@ import {
   getDurationLabel,
 } from '@winnegans/theme';
 import { EpubSourceModal } from './EpubSourceModal';
+import { GithubPrModal } from './GithubPrModal';
 
 export function WakeReader() {
   const [currentPage, setCurrentPage] = useState<number>(3);
@@ -134,6 +136,7 @@ export function WakeReader() {
   const [selectedAnnotationId, setSelectedAnnotationId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<{ type: 'success' | 'error' | 'info'; message: string } | null>(null);
   const [copiedSnippet, setCopiedSnippet] = useState(false);
+  const [prModalAnnotation, setPrModalAnnotation] = useState<AnnotationItem | null>(null);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -777,9 +780,20 @@ export function WakeReader() {
                 e.stopPropagation();
                 setEditingId(ann.id);
               }}
-              className="text-[11px] text-slate-400 hover:text-slate-200 px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition-colors"
+              className="text-[11px] text-slate-400 hover:text-slate-200 px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition-colors cursor-pointer"
             >
               Edit
+            </button>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setPrModalAnnotation(ann);
+              }}
+              className="inline-flex items-center space-x-1 text-[11px] text-indigo-300 hover:text-white px-2 py-0.5 rounded bg-indigo-950/60 hover:bg-indigo-900/60 border border-indigo-500/30 transition-colors cursor-pointer"
+              title="Submit Pull Request for this annotation on GitHub"
+            >
+              <GitPullRequest className="w-3 h-3 text-indigo-400" />
+              <span>PR</span>
             </button>
           </div>
         </div>
@@ -2728,6 +2742,22 @@ export function WakeReader() {
         onSelectLocalFile={loadEpubFromFile}
         onClearCookie={handleClearEpubCookie}
       />
+
+      {/* 8. Direct Annotation GitHub Pull Request Modal */}
+      {prModalAnnotation && (
+        <GithubPrModal
+          isOpen={Boolean(prModalAnnotation)}
+          onClose={() => setPrModalAnnotation(null)}
+          pageNumber={currentPage}
+          annotation={prModalAnnotation}
+          onPrCreated={(prUrl, prNum) => {
+            setFeedback({
+              type: 'success',
+              message: `Pull Request #${prNum} opened on GitHub! View at: ${prUrl}`,
+            });
+          }}
+        />
+      )}
     </div>
   );
 }

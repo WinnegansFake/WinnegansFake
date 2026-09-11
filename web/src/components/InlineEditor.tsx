@@ -2,7 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import { AnnotationItem } from '@/types/annotations';
-import { Save, Trash2, X, AlertCircle, CheckCircle2 } from 'lucide-react';
+import { Save, Trash2, X, AlertCircle, CheckCircle2, GitPullRequest } from 'lucide-react';
+import { GithubPrModal } from './GithubPrModal';
+import { getSavedGithubUser } from '@/lib/githubService';
 
 interface InlineEditorProps {
   pageNumber: number;
@@ -31,26 +33,37 @@ export function InlineEditor({
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const handleSave = async (e: React.FormEvent) => {
-    e.preventDefault();
+  // GitHub PR modal states
+  const [prModalOpen, setPrModalOpen] = useState(false);
+  const [pendingPrItem, setPendingPrItem] = useState<AnnotationItem | null>(null);
+
+  // Auto-populate contributor if GitHub user is authenticated
+  useEffect(() => {
+    const user = getSavedGithubUser();
+    if (user && isNew && !contributorsStr.trim()) {
+      setContributorsStr(user.login);
+    }
+  }, [isNew, contributorsStr]);
+
+  const validateAndConstructItem = (): AnnotationItem | null => {
     setError(null);
 
     // Client-side quick validations
     if (!targetPhrase.trim()) {
       setError('Target phrase is required.');
-      return;
+      return null;
     }
     if (targetPhrase.length > 150) {
       setError('Target phrase must be under 150 characters (Copyright safeguard).');
-      return;
+      return null;
     }
     if (targetPhrase.includes('\n')) {
       setError('Target phrase cannot contain newlines.');
-      return;
+      return null;
     }
     if (annotationText.trim().length < 10) {
       setError('Annotation text must be at least 10 characters.');
-      return;
+      return null;
     }
 
     const categories = categoriesStr
@@ -75,7 +88,7 @@ export function InlineEditor({
 
     if (contributors.length === 0) {
       setError('At least one contributor username is required.');
-      return;
+      return null;
     }
 
     // Generate or preserve ID
@@ -84,7 +97,7 @@ export function InlineEditor({
       ? `${String(pageNumber).padStart(3, '0')}.${String(lineNumber).padStart(2, '0')}-${randomHex}`
       : annotation.id;
 
-    const updatedItem: AnnotationItem = {
+    return {
       id,
       line_number: lineNumber,
       target_phrase: targetPhrase.trim(),
@@ -94,6 +107,12 @@ export function InlineEditor({
       sources,
       contributors,
     };
+  };
+
+  const handleSave = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const updatedItem = validateAndConstructItem();
+    if (!updatedItem) return;
 
     setSaving(true);
     try {
@@ -103,6 +122,15 @@ export function InlineEditor({
     } finally {
       setSaving(false);
     }
+  };
+
+  const handleOpenPrModal = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const updatedItem = validateAndConstructItem();
+    if (!updatedItem) return;
+
+    setPendingPrItem(updatedItem);
+    setPrModalOpen(true);
   };
 
   return (
@@ -250,21 +278,45 @@ export function InlineEditor({
             <button
               type="button"
               onClick={onCancel}
-              className="px-3 py-1.5 text-xs text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors"
+              className="px-3 py-1.5 text-xs text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors cursor-pointer"
             >
               Cancel
             </button>
             <button
               type="submit"
               disabled={saving}
-              className="inline-flex items-center px-4 py-1.5 text-xs font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg transition-colors shadow-sm disabled:opacity-50"
+              className="inline-flex items-center px-3 py-1.5 text-xs font-medium text-slate-200 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors border border-slate-700 disabled:opacity-50 cursor-pointer"
+              title="Save draft note locally in browser memory"
             >
-              <Save className="w-3.5 h-3.5 mr-1.5" />
-              {saving ? 'Validating & Saving...' : 'Save JSON Note'}
+              <Save className="w-3.5 h-3.5 mr-1.5 text-slate-400" />
+              <span>{saving ? 'Saving...' : 'Save Draft Locally'}</span>
+            </button>
+            <button
+              type="button"
+              onClick={handleOpenPrModal}
+              className="inline-flex items-center px-4 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-emerald-600 to-indigo-600 hover:from-emerald-500 hover:to-indigo-500 rounded-lg transition-all shadow-md shadow-emerald-500/20 cursor-pointer"
+              title="Walk through creating a GitHub Pull Request for this annotation"
+            >
+              <GitPullRequest className="w-3.5 h-3.5 mr-1.5" />
+              <span>Submit PR to GitHub</span>
             </button>
           </div>
         </div>
       </form>
+
+      {/* GitHub Pull Request Submission Modal */}
+      {prModalOpen && pendingPrItem && (
+        <GithubPrModal
+          isOpen={prModalOpen}
+          onClose={() => setPrModalOpen(false)}
+          pageNumber={pageNumber}
+          annotation={pendingPrItem}
+          onPrCreated={async () => {
+            // Also commit to current browser view
+            await onSave(pendingPrItem);
+          }}
+        />
+      )}
     </div>
   );
 }
