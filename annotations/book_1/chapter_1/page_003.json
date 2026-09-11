@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "book": 1,
+  "chapter": 1,
+  "page_number": 3,
+  "annotations": [
+    {
+      "id": "003.01-8f2c",
+      "line_number": 1,
+      "target_phrase": "riverrun",
+      "annotation_text": "Compound opening word indicating circularity and eternal return (Giambattista Vico's ricorso). Resumes the incomplete sentence closing the novel on page 628 ('A way a lone a last a loved a long the'). Also invokes the River Liffey flowing through Dublin, personified as Anna Livia Plurabelle (ALP).",
+      "categories": [
+        "ricorso",
+        "vico",
+        "topography",
+        "river-liffey",
+        "alp"
+      ],
+      "cross_references": [
+        "628.16"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake (4th ed.).",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.01-b31a",
+      "line_number": 1,
+      "target_phrase": "Eve and Adam's",
+      "annotation_text": "Inversion of Adam and Eve, evoking original sin and human genesis while locating the reader precisely in Dublin: the popular name for the Church of the Immaculate Conception on Merchant's Quay near the Liffey.",
+      "categories": [
+        "biblical",
+        "dublin-landmarks",
+        "eden",
+        "inversion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    },
+    {
+      "id": "003.04-c54d",
+      "line_number": 4,
+      "target_phrase": "commodius vicus of recirculation",
+      "annotation_text": "Multilingual pun fusing the Roman Emperor Commodus, English 'commodious' (spacious/convenient), Latin 'vicus' (lane, street, village), and Giambattista Vico (1668–1744), the Italian philosopher whose cycle of history (divine, heroic, human, ricorso) provides the scaffolding for Finnegans Wake.",
+      "categories": [
+        "vico",
+        "philosophy",
+        "etymology",
+        "latin"
+      ],
+      "cross_references": [
+        "003.01",
+        "215.12"
+      ],
+      "sources": [
+        "Ellmann, Richard. James Joyce (New and Revised ed.).",
+        "Vico, Giambattista. Scienza Nuova (1725)."
+      ],
+      "contributors": [
+        "vico-reader"
+      ]
+    }
+  ]
+}

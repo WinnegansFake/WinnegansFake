@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/WinnegansFake/WinnegansFake/main/schemas/page-annotation.schema.json",
+  "title": "PageAnnotation",
+  "description": "Schema defining collaborative annotations for a single page of Finnegans Wake using standard academic pagination.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "book",
+    "chapter",
+    "page_number",
+    "annotations"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semantic version of the annotation schema."
+    },
+    "book": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4,
+      "description": "Book number in Finnegans Wake (1 through 4)."
+    },
+    "chapter": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 8,
+      "description": "Chapter number within the respective book."
+    },
+    "page_number": {
+      "type": "integer",
+      "minimum": 3,
+      "maximum": 628,
+      "description": "Standard pagination page number (3 through 628)."
+    },
+    "annotations": {
+      "type": "array",
+      "description": "List of line-level or phrase-level annotations on this page.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "line_number",
+          "target_phrase",
+          "annotation_text",
+          "categories",
+          "contributors"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[0-9]{3}\\.[0-9]{2}-[a-f0-9]{4,12}$",
+            "description": "Unique annotation identifier incorporating page.line and short hash/token, e.g. 003.01-a1b2."
+          },
+          "line_number": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 40,
+            "description": "Line number on the page (typically 1 through 36, max 40 for margins/footnotes)."
+          },
+          "target_phrase": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 150,
+            "description": "Short target lemma, motif, or phrase anchor (strictly minimal for identification; no reproduction of copyrighted passages)."
+          },
+          "annotation_text": {
+            "type": "string",
+            "minLength": 10,
+            "description": "Critical analysis, motif breakdown, linguistic etymology, or literary gloss."
+          },
+          "categories": {
+            "type": "array",
+            "description": "Thematic or analytical tags (e.g., etymology, motif, music, folklore, Dublin topography).",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]+$"
+            },
+            "uniqueItems": true
+          },
+          "cross_references": {
+            "type": "array",
+            "description": "Other page and line occurrences in standard notation (e.g., ['004.18', '383.01']).",
+            "items": {
+              "type": "string",
+              "pattern": "^[0-9]{3}\\.[0-9]{2}$"
+            },
+            "uniqueItems": true
+          },
+          "sources": {
+            "type": "array",
+            "description": "Scholarly source citations or references supporting the note.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "contributors": {
+            "type": "array",
+            "description": "GitHub usernames or contributor identifiers responsible for this note.",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$"
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  }
+}

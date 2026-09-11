@@ -1,0 +1,41 @@
+name: Validate Annotations PR
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'annotations/**'
+      - 'schemas/**'
+      - 'validate.py'
+  push:
+    branches:
+      - main
+    paths:
+      - 'annotations/**'
+      - 'schemas/**'
+      - 'validate.py'
+
+jobs:
+  validate:
+    name: Lint & Validate JSON Schema and Safeguards
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jsonschema
+
+      - name: Run Validation Script
+        run: |
+          python validate.py --schema schemas/page-annotation.schema.json --path annotations
