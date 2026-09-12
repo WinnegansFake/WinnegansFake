@@ -128,6 +128,11 @@ export function getPageAnnotationJsonSchema(options: SchemaCustomizationOptions 
               },
               minItems: 1,
               description: "Contributor usernames or attribution IDs."
+            },
+            work: {
+              type: "string",
+              pattern: "^[a-z0-9-]+$",
+              description: "Optional work identifier for the annotation (e.g. 'finnegans-wake', 'ulysses')."
             }
           }
         }

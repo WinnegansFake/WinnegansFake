@@ -84,6 +84,7 @@ export interface EpubCookiePayload {
   location: string; // URL, file path, or file name
   sourceType?: 'url' | 'local-path' | 'file-name';
   fileName?: string;
+  workId?: string; // Identifier of the literary work (e.g. 'finnegans-wake', 'ulysses')
   savedAt: string; // ISO timestamp
   duration: CookieDuration;
   customDays?: number;

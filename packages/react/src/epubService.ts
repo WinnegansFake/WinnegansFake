@@ -33,8 +33,27 @@ export class BrowserEpubService {
   private sourceLocation: string = '';
   private currentWorkId: string = 'finnegans-wake';
 
-  public isLoaded(): boolean {
-    return this.loaded;
+  public isLoaded(forWorkId?: string): boolean {
+    if (!this.loaded) return false;
+    if (forWorkId && this.currentWorkId && this.currentWorkId !== forWorkId) {
+      return false;
+    }
+    return true;
+  }
+
+  public getLoadedWorkId(): string {
+    return this.currentWorkId;
+  }
+
+  public clear(): void {
+    this.zip = null;
+    this.loaded = false;
+    this.fileName = '';
+    this.sourceLocation = '';
+    this.currentWorkId = '';
+    this.manifest.clear();
+    this.spine = [];
+    this.pageMap.clear();
   }
 
   public getLoadedFileName(): string {
@@ -245,7 +264,7 @@ export class BrowserEpubService {
       .replace(/&amp;/g, '&')
       .replace(/&quot;/g, '"');
 
-    if (pageNum === 3 && text.startsWith('7 riverrun')) {
+    if (this.currentWorkId === 'finnegans-wake' && pageNum === 3 && text.startsWith('7 riverrun')) {
       text = text.substring(2);
     }
 

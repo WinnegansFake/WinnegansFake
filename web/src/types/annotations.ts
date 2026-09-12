@@ -7,6 +7,7 @@ export interface AnnotationItem {
   cross_references?: string[];
   sources?: string[];
   contributors: string[];
+  work?: string;
 }
 
 export interface PageAnnotationsData {

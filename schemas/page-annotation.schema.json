@@ -105,7 +105,7 @@
               "type": "string"
             }
           },
-          "contributors": {
+            "contributors": {
             "type": "array",
             "description": "GitHub usernames or contributor identifiers responsible for this note.",
             "minItems": 1,
@@ -114,6 +114,11 @@
               "pattern": "^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$"
             },
             "uniqueItems": true
+          },
+          "work": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Optional work identifier for the annotation (e.g. 'finnegans-wake', 'ulysses')."
           }
         }
       }

@@ -190,9 +190,10 @@ export function BookmarkProvider({ children }: { children: ReactNode }) {
   const toggleBookmark = useCallback(
     (page: number, line?: number, title?: string, excerpt?: string, workId?: string) => {
       setBookmarks((prev) => {
+        const targetWork = workId || 'finnegans-wake';
         const existingIdx = prev.findIndex(
           (b) =>
-            (!workId || !b.workId || b.workId === workId) &&
+            (b.workId || 'finnegans-wake') === targetWork &&
             b.page === page &&
             (line ? b.line === line : !b.line)
         );
@@ -206,12 +207,12 @@ export function BookmarkProvider({ children }: { children: ReactNode }) {
           // Add
           const padPage = String(page).padStart(3, '0');
           const linePart = line ? `.${String(line).padStart(2, '0')}` : '';
-          const workPart = workId ? `-${workId}` : '';
+          const workPart = `-${targetWork}`;
           const id = `bm${workPart}-${padPage}${linePart}-${Date.now().toString(36)}`;
 
           const newBookmark: BookmarkItem = {
             id,
-            workId,
+            workId: targetWork,
             page,
             line,
             title: title || (line ? `Page ${padPage}, Line ${line}` : `Page ${padPage}`),
@@ -230,8 +231,9 @@ export function BookmarkProvider({ children }: { children: ReactNode }) {
 
   const isPageBookmarked = useCallback(
     (page: number, workId?: string) => {
+      const targetWork = workId || 'finnegans-wake';
       return bookmarks.some(
-        (b) => (!workId || !b.workId || b.workId === workId) && b.page === page && !b.line
+        (b) => (b.workId || 'finnegans-wake') === targetWork && b.page === page && !b.line
       );
     },
     [bookmarks]
@@ -239,8 +241,9 @@ export function BookmarkProvider({ children }: { children: ReactNode }) {
 
   const isLineBookmarked = useCallback(
     (page: number, line: number, workId?: string) => {
+      const targetWork = workId || 'finnegans-wake';
       return bookmarks.some(
-        (b) => (!workId || !b.workId || b.workId === workId) && b.page === page && b.line === line
+        (b) => (b.workId || 'finnegans-wake') === targetWork && b.page === page && b.line === line
       );
     },
     [bookmarks]

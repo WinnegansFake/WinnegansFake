@@ -22,9 +22,29 @@ class BrowserEpubService {
   private loaded: boolean = false;
   private fileName: string = '';
   private sourceLocation: string = '';
+  private loadedWorkId: string = 'finnegans-wake';
 
-  public isLoaded(): boolean {
-    return this.loaded;
+  public isLoaded(forWorkId?: string): boolean {
+    if (!this.loaded) return false;
+    if (forWorkId && this.loadedWorkId && this.loadedWorkId !== forWorkId) {
+      return false;
+    }
+    return true;
+  }
+
+  public getLoadedWorkId(): string {
+    return this.loadedWorkId;
+  }
+
+  public clear(): void {
+    this.zip = null;
+    this.loaded = false;
+    this.fileName = '';
+    this.sourceLocation = '';
+    this.loadedWorkId = '';
+    this.manifest.clear();
+    this.spine = [];
+    this.pageMap.clear();
   }
 
   public getLoadedFileName(): string {
@@ -35,26 +55,30 @@ class BrowserEpubService {
     return this.sourceLocation || this.fileName;
   }
 
-  public async parseFromUrl(url: string, name?: string): Promise<number> {
+  public async parseFromUrl(url: string, name?: string, workId: string = 'finnegans-wake'): Promise<number> {
     const res = await fetch(url);
     if (!res.ok) {
       throw new Error(`Failed to fetch EPUB from ${url} (HTTP ${res.status}: ${res.statusText})`);
     }
     const buffer = await res.arrayBuffer();
-    const derivedName = name || url.split('/').pop()?.split('?')[0] || 'finneganswake00joycuoft.epub';
+    const derivedName = name || url.split('/').pop()?.split('?')[0] || (workId === 'ulysses' ? 'ulysses00joyc_1.epub' : 'finneganswake00joycuoft.epub');
     this.sourceLocation = url;
-    return this.parseFile(buffer, derivedName, url);
+    return this.parseFile(buffer, derivedName, url, workId);
   }
 
   public async parseFile(
     file: File | ArrayBuffer,
-    name: string = 'finneganswake00joycuoft.epub',
-    location?: string
+    name?: string,
+    location?: string,
+    workId: string = 'finnegans-wake'
   ): Promise<number> {
+    const defaultName = workId === 'ulysses' ? 'ulysses00joyc_1.epub' : 'finneganswake00joycuoft.epub';
+    const finalName = name || defaultName;
     const zip = await JSZip.loadAsync(file);
     this.zip = zip;
-    this.fileName = name;
-    this.sourceLocation = location || (typeof File !== 'undefined' && file instanceof File ? file.name : name);
+    this.fileName = finalName;
+    this.sourceLocation = location || (typeof File !== 'undefined' && file instanceof File ? file.name : finalName);
+    this.loadedWorkId = workId;
     this.manifest.clear();
     this.spine = [];
     this.pageMap.clear();
@@ -199,7 +223,7 @@ class BrowserEpubService {
       .replace(/&amp;/g, '&')
       .replace(/&quot;/g, '"');
 
-    if (pageNum === 3 && text.startsWith('7 riverrun')) {
+    if (this.loadedWorkId === 'finnegans-wake' && pageNum === 3 && text.startsWith('7 riverrun')) {
       text = text.substring(2);
     }
 

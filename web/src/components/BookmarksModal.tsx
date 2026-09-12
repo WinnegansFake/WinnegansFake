@@ -51,10 +51,15 @@ export function BookmarksModal({
 
   const [selectedDuration, setSelectedDuration] = useState<CookieDuration>(cookieDuration);
   const [inputCustomDays, setInputCustomDays] = useState<number>(customDays || 365);
-  const [showCookieDetails, setShowCookieDetails] = useState<boolean>(false);
+  const [workFilter, setWorkFilter] = useState<string>(currentWorkId || 'all');
   const [copiedNotification, setCopiedNotification] = useState<string | null>(null);
-  const [workFilter, setWorkFilter] = useState<string>('all');
+  const [showCookieDetails, setShowCookieDetails] = useState<boolean>(false);
 
+  React.useEffect(() => {
+    if (currentWorkId) {
+      setWorkFilter(currentWorkId);
+    }
+  }, [currentWorkId, showBookmarksModal]);
 
   if (!showBookmarksModal) return null;
 

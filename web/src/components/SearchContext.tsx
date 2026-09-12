@@ -14,6 +14,7 @@ export type SearchScope =
 
 export interface SearchAnnotationItem {
   id: string;
+  work?: string;
   page: number;
   line: number;
   lemma: string;
@@ -29,15 +30,17 @@ interface SearchContextType {
   isSearchOpen: boolean;
   searchScope: SearchScope;
   setSearchScope: (scope: SearchScope) => void;
-  openSearch: (initialQuery?: string, initialScope?: SearchScope) => void;
+  activeWorkId: string;
+  setActiveWorkId: (workId: string) => void;
+  openSearch: (initialQuery?: string, initialScope?: SearchScope, workId?: string) => void;
   closeSearch: () => void;
   toggleSearch: () => void;
   searchIndex: SearchAnnotationItem[];
   isLoadingIndex: boolean;
   loadSearchIndex: () => Promise<void>;
   initialSearchQuery: string;
-  navigateHandler: ((page: number, line?: number) => void) | null;
-  registerNavigateHandler: (handler: ((page: number, line?: number) => void) | null) => void;
+  navigateHandler: ((page: number, line?: number, workId?: string) => void) | null;
+  registerNavigateHandler: (handler: ((page: number, line?: number, workId?: string) => void) | null) => void;
   epubModalHandler: (() => void) | null;
   registerEpubModalHandler: (handler: (() => void) | null) => void;
 }
@@ -47,14 +50,15 @@ const SearchContext = createContext<SearchContextType | undefined>(undefined);
 export function SearchProvider({ children }: { children: React.ReactNode }) {
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
   const [searchScope, setSearchScope] = useState<SearchScope>('all');
+  const [activeWorkId, setActiveWorkId] = useState<string>('finnegans-wake');
   const [initialSearchQuery, setInitialSearchQuery] = useState<string>('');
   const [searchIndex, setSearchIndex] = useState<SearchAnnotationItem[]>([]);
   const [isLoadingIndex, setIsLoadingIndex] = useState<boolean>(false);
   const [indexLoaded, setIndexLoaded] = useState<boolean>(false);
-  const [navigateHandler, setNavigateHandler] = useState<((page: number, line?: number) => void) | null>(null);
+  const [navigateHandler, setNavigateHandler] = useState<((page: number, line?: number, workId?: string) => void) | null>(null);
   const [epubModalHandler, setEpubModalHandler] = useState<(() => void) | null>(null);
 
-  const registerNavigateHandler = useCallback((handler: ((page: number, line?: number) => void) | null) => {
+  const registerNavigateHandler = useCallback((handler: ((page: number, line?: number, workId?: string) => void) | null) => {
     setNavigateHandler(() => handler);
   }, []);
 
@@ -80,12 +84,15 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
     }
   }, [indexLoaded, isLoadingIndex]);
 
-  const openSearch = useCallback((initialQuery?: string, initialScope?: SearchScope) => {
+  const openSearch = useCallback((initialQuery?: string, initialScope?: SearchScope, workId?: string) => {
     if (initialQuery !== undefined) {
       setInitialSearchQuery(initialQuery);
     }
     if (initialScope !== undefined) {
       setSearchScope(initialScope);
+    }
+    if (workId) {
+      setActiveWorkId(workId);
     }
     setIsSearchOpen(true);
     // Ensure index is loaded
@@ -148,6 +155,8 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
         isSearchOpen,
         searchScope,
         setSearchScope,
+        activeWorkId,
+        setActiveWorkId,
         openSearch,
         closeSearch,
         toggleSearch,

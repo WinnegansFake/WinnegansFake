@@ -99,9 +99,30 @@ export function UniversalReader({
   basePath = '',
   onNavigate,
 }: UniversalReaderProps = {}) {
-  const [currentWorkId, setCurrentWorkId] = useState<string>(initialWorkId);
+  const [currentWorkId, setCurrentWorkId] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('work') || initialWorkId;
+    }
+    return initialWorkId;
+  });
+
   const defaultPage = initialPage || (initialWorkId === 'ulysses' ? 1 : 3);
-  const [currentPage, setCurrentPage] = useState<number>(defaultPage);
+  const [currentPage, setCurrentPage] = useState<number>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const workParam = params.get('work') || initialWorkId;
+      const targetWork = getWork(workParam);
+      const maxP = targetWork.totalPages || 628;
+      const p = parseInt(params.get('page') || '', 10);
+      if (!isNaN(p) && p >= 1 && p <= maxP) {
+        return p;
+      }
+      return initialPage || (workParam === 'ulysses' ? 1 : 3);
+    }
+    return defaultPage;
+  });
+
   const [pageInput, setPageInput] = useState<string>(String(defaultPage));
   const [lines, setLines] = useState<PageLine[]>([]);
   const [annotationsData, setAnnotationsData] = useState<PageAnnotationsData | null>(null);
@@ -133,6 +154,7 @@ export function UniversalReader({
 
   const {
     openSearch,
+    setActiveWorkId,
     registerNavigateHandler,
     registerEpubModalHandler,
   } = useSearch();
@@ -156,33 +178,75 @@ export function UniversalReader({
   const [prModalAnnotation, setPrModalAnnotation] = useState<AnnotationItem | null>(null);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const loadRequestIdRef = useRef<number>(0);
 
-  // Load annotations from static JSON file
+  // Synchronize search context with current active work
+  useEffect(() => {
+    if (setActiveWorkId) {
+      setActiveWorkId(currentWorkId);
+    }
+  }, [currentWorkId, setActiveWorkId]);
+
+  // Load annotations from static JSON file with STRICT work boundary enforcement
   const loadPageData = async (page: number, workIdToUse?: string) => {
+    const activeWorkId = workIdToUse || currentWorkId;
+    const reqId = ++loadRequestIdRef.current;
+
     setLoading(true);
     setFeedback(null);
     setEditingId(null);
     setIsCreatingForLine(null);
     setIsCreatingInPanel(false);
 
-    const activeWorkId = workIdToUse || currentWorkId;
     const padPage = String(page).padStart(3, '0');
     const appBasePath = basePath;
-    const primaryUrl = activeWorkId === 'finnegans-wake'
-      ? `${appBasePath}/annotations/page_${padPage}.json`
-      : `${appBasePath}/annotations/${activeWorkId}/page_${padPage}.json`;
+
+    // STRICT WORK SEPARATION:
+    // Ulysses and any third-party literary works load EXCLUSIVELY from /annotations/<workId>/page_<PPP>.json.
+    // Finnegans Wake loads from /annotations/finnegans-wake/page_<PPP>.json or /annotations/page_<PPP>.json.
+    // Under NO circumstances may a non-FW work ever fall back to /annotations/page_<PPP>.json.
+    const candidateUrls: string[] = [];
+    if (activeWorkId === 'finnegans-wake') {
+      candidateUrls.push(`${appBasePath}/annotations/finnegans-wake/page_${padPage}.json`);
+      candidateUrls.push(`${appBasePath}/annotations/page_${padPage}.json`);
+    } else {
+      candidateUrls.push(`${appBasePath}/annotations/${activeWorkId}/page_${padPage}.json`);
+    }
 
     try {
-      let res = await fetch(primaryUrl);
-      if (!res.ok && activeWorkId !== 'finnegans-wake') {
-        res = await fetch(`${appBasePath}/annotations/page_${padPage}.json`);
+      let json: any = null;
+      for (const url of candidateUrls) {
+        try {
+          const res = await fetch(url);
+          if (res.ok) {
+            const parsed = await res.json();
+            const fileWork = parsed.work || 'finnegans-wake';
+            if (fileWork === activeWorkId) {
+              json = parsed;
+              break;
+            } else {
+              console.warn(`Work mismatch for ${url}: expected "${activeWorkId}", got "${fileWork}". Discarding.`);
+            }
+          }
+        } catch {
+          // Continue to next candidate if any
+        }
       }
 
-      if (res.ok) {
-        const json = await res.json();
-        setAnnotationsData(json);
+      if (reqId !== loadRequestIdRef.current) return;
+
+      if (json) {
+        // Extra safeguard: filter out any individual annotations tagged for a different work
+        const validAnnotations = (json.annotations || []).filter(
+          (ann: any) => !ann.work || ann.work === activeWorkId
+        );
+        setAnnotationsData({
+          ...json,
+          work: activeWorkId,
+          annotations: validAnnotations,
+        });
       } else {
-        // Create empty structure if file not found
+        // Create empty structure if file not found for this work
         const { book, chapter } = getBookAndChapterInfo(page, activeWorkId);
         setAnnotationsData({
           schema_version: '1.0.0',
@@ -194,7 +258,8 @@ export function UniversalReader({
         });
       }
     } catch (err: any) {
-      console.error('Failed to load annotations:', err);
+      if (reqId !== loadRequestIdRef.current) return;
+      console.error(`Failed to load annotations for ${activeWorkId} page ${page}:`, err);
       const { book, chapter } = getBookAndChapterInfo(page, activeWorkId);
       setAnnotationsData({
         schema_version: '1.0.0',
@@ -206,16 +271,23 @@ export function UniversalReader({
       });
     }
 
-    // If EPUB is loaded in browser memory, load text
-    if (browserEpub.isLoaded()) {
+    // If EPUB is loaded in browser memory for this work, load text
+    if (browserEpub.isLoaded(activeWorkId)) {
       const pageData = await browserEpub.getPage(page);
-      if (pageData) {
+      if (reqId === loadRequestIdRef.current && pageData) {
         setLines(pageData.lines);
         setRawHtml(pageData.rawHtml);
       }
+    } else {
+      if (reqId === loadRequestIdRef.current) {
+        setLines([]);
+        setRawHtml(null);
+      }
     }
 
-    setLoading(false);
+    if (reqId === loadRequestIdRef.current) {
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
@@ -243,21 +315,23 @@ export function UniversalReader({
         }, 350);
       }
 
-      // Check for saved EPUB location in cookie
-      const saved = readEpubCookie();
+      // Check for saved EPUB location in cookie strictly for THIS work
+      const saved = readEpubCookie(workParam);
       if (saved && saved.location) {
         setSavedEpubCookie(saved);
         setEpubLocation(saved.location);
-        // If it is a fetchable URL or relative path, attempt to load automatically
         if (
           saved.location.startsWith('http://') ||
           saved.location.startsWith('https://') ||
           saved.location.startsWith('/')
         ) {
-          loadEpubFromUrl(saved.location, saved.duration, saved.customDays, false).catch((err) => {
+          loadEpubFromUrl(saved.location, saved.duration, saved.customDays, false, workParam).catch((err) => {
             console.warn('Auto-loading saved EPUB URL failed:', err);
           });
         }
+      } else {
+        setSavedEpubCookie(null);
+        setEpubLocation('');
       }
     }
   }, []);
@@ -268,11 +342,42 @@ export function UniversalReader({
   }, [currentPage, currentWorkId]);
 
   const switchWork = (newWorkId: string) => {
+    if (newWorkId === currentWorkId) return;
     setCurrentWorkId(newWorkId);
     const targetWork = getWork(newWorkId);
     const startP = newWorkId === 'ulysses' ? 1 : 3;
     setCurrentPage(startP);
     setPageInput(String(startP));
+    setAnnotationsData(null); // Clear previous annotations immediately
+
+    // Check if the loaded EPUB is for this work. If not, reset EPUB state
+    if (browserEpub.isLoaded() && browserEpub.getLoadedWorkId() !== newWorkId) {
+      browserEpub.clear();
+      setEpubLoaded(false);
+      setEpubFileName('');
+      setEpubLocation('');
+      setLines([]);
+      setRawHtml(null);
+
+      // Attempt to auto-load cookie for new work if one was saved
+      const savedForNew = readEpubCookie(newWorkId);
+      if (savedForNew && savedForNew.location) {
+        setSavedEpubCookie(savedForNew);
+        setEpubLocation(savedForNew.location);
+        if (
+          savedForNew.location.startsWith('http://') ||
+          savedForNew.location.startsWith('https://') ||
+          savedForNew.location.startsWith('/')
+        ) {
+          loadEpubFromUrl(savedForNew.location, savedForNew.duration, savedForNew.customDays, false, newWorkId).catch((err) => {
+            console.warn('Auto-loading saved EPUB for new work failed:', err);
+          });
+        }
+      } else {
+        setSavedEpubCookie(null);
+      }
+    }
+
     if (typeof window !== 'undefined' && window.history.pushState) {
       const url = new URL(window.location.href);
       if (newWorkId !== 'finnegans-wake') {
@@ -287,16 +392,20 @@ export function UniversalReader({
     loadPageData(startP, newWorkId);
   };
 
-  const goToPage = (p: number, line?: number) => {
-    const maxP = getWork(currentWorkId).totalPages || 628;
+  const goToPage = (p: number, line?: number, targetWorkId?: string) => {
+    const effectiveWorkId = targetWorkId || currentWorkId;
+    if (targetWorkId && targetWorkId !== currentWorkId) {
+      switchWork(targetWorkId);
+    }
+    const maxP = getWork(effectiveWorkId).totalPages || 628;
     const valid = Math.max(1, Math.min(maxP, p));
     setCurrentPage(valid);
     setPageInput(String(valid));
     if (typeof window !== 'undefined' && window.history.replaceState) {
       const url = new URL(window.location.href);
       url.searchParams.set('page', String(valid));
-      if (currentWorkId !== 'finnegans-wake') {
-        url.searchParams.set('work', currentWorkId);
+      if (effectiveWorkId !== 'finnegans-wake') {
+        url.searchParams.set('work', effectiveWorkId);
       } else {
         url.searchParams.delete('work');
       }
@@ -318,8 +427,8 @@ export function UniversalReader({
   };
 
   useEffect(() => {
-    registerNavigateHandler((p: number, l?: number) => {
-      goToPage(p, l);
+    registerNavigateHandler((p: number, l?: number, workId?: string) => {
+      goToPage(p, l, workId);
     });
     registerEpubModalHandler(() => {
       setEpubModalOpen(true);
@@ -328,13 +437,21 @@ export function UniversalReader({
       registerNavigateHandler(null);
       registerEpubModalHandler(null);
     };
-  }, [registerNavigateHandler, registerEpubModalHandler]);
+  }, [currentWorkId, registerNavigateHandler, registerEpubModalHandler]);
+
+  const handlePageChange = (p: number) => {
+    const maxP = getWork(currentWorkId).totalPages || 628;
+    if (p >= 1 && p <= maxP) {
+      goToPage(p);
+    }
+  };
 
   const handlePageSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const p = parseInt(pageInput.trim(), 10);
-    if (!isNaN(p)) {
-      goToPage(p);
+    const maxP = getWork(currentWorkId).totalPages || 628;
+    const parsed = parseInt(pageInput, 10);
+    if (!isNaN(parsed) && parsed >= 1 && parsed <= maxP) {
+      goToPage(parsed);
     } else {
       setPageInput(String(currentPage));
     }
@@ -345,14 +462,16 @@ export function UniversalReader({
     url: string,
     duration: CookieDuration = 'forever',
     customDays?: number,
-    showFeedback: boolean = true
+    showFeedback: boolean = true,
+    workIdToUse?: string
   ): Promise<boolean> => {
+    const activeWorkId = workIdToUse || currentWorkId;
     try {
       setLoading(true);
       if (showFeedback) {
         setFeedback({ type: 'info', message: `Fetching and indexing EPUB from ${url}...` });
       }
-      const pageCount = await browserEpub.parseFromUrl(url);
+      const pageCount = await browserEpub.parseFromUrl(url, undefined, activeWorkId);
       setEpubLoaded(true);
       const fname = browserEpub.getLoadedFileName();
       setEpubFileName(fname);
@@ -363,6 +482,7 @@ export function UniversalReader({
         location: url,
         sourceType: 'url',
         fileName: fname,
+        workId: activeWorkId,
         savedAt: new Date().toISOString(),
         duration,
         customDays,
@@ -401,12 +521,14 @@ export function UniversalReader({
   const loadEpubFromFile = async (
     file: File,
     duration: CookieDuration = 'forever',
-    customDays?: number
+    customDays?: number,
+    workIdToUse?: string
   ): Promise<boolean> => {
+    const activeWorkId = workIdToUse || currentWorkId;
     try {
       setLoading(true);
       setFeedback({ type: 'info', message: `Unpacking and indexing ${file.name} in browser memory...` });
-      const pageCount = await browserEpub.parseFile(file, file.name);
+      const pageCount = await browserEpub.parseFile(file, file.name, undefined, activeWorkId);
       setEpubLoaded(true);
       setEpubFileName(file.name);
       setEpubLocation(file.name);
@@ -416,6 +538,7 @@ export function UniversalReader({
         location: file.name,
         sourceType: 'file-name',
         fileName: file.name,
+        workId: activeWorkId,
         savedAt: new Date().toISOString(),
         duration,
         customDays,

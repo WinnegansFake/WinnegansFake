@@ -140,6 +140,9 @@ function validateFile(filePath, validator, schema) {
 
   // 3. Path vs Content Coherence
   if (isLegacyFW) {
+    if (data.work && data.work !== 'finnegans-wake') {
+      errors.push(`Mismatch in '${relPath}': legacy Finnegans Wake folder cannot have work '${data.work}'.`);
+    }
     if (expectedBook !== null && data.book !== expectedBook) {
       errors.push(`Mismatch in '${relPath}': book folder is ${expectedBook} but JSON 'book' is ${data.book}.`);
     }
@@ -147,8 +150,12 @@ function validateFile(filePath, validator, schema) {
       errors.push(`Mismatch in '${relPath}': chapter folder is ${expectedChap} but JSON 'chapter' is ${data.chapter}.`);
     }
   } else {
-    if (expectedWork && data.work && data.work !== expectedWork) {
-      errors.push(`Mismatch in '${relPath}': directory work is '${expectedWork}' but JSON 'work' is '${data.work}'.`);
+    if (expectedWork) {
+      if (!data.work) {
+        errors.push(`Missing 'work' in '${relPath}': expected '${expectedWork}'.`);
+      } else if (data.work !== expectedWork) {
+        errors.push(`Mismatch in '${relPath}': directory work is '${expectedWork}' but JSON 'work' is '${data.work}'.`);
+      }
     }
     if (expectedPart !== null && data.part !== undefined && data.part !== expectedPart) {
       errors.push(`Mismatch in '${relPath}': part folder is ${expectedPart} but JSON 'part' is ${data.part}.`);
@@ -216,6 +223,14 @@ function validateFile(filePath, validator, schema) {
       errors.push(
         `target_phrase in '${relPath}' for ID '${annId}' contains newlines. ` +
           'Keep target_phrase to short single-line lemmas or anchor phrases.'
+      );
+    }
+
+    // Strict isolation safeguard: annotation item work must match file work
+    const targetWorkForFile = isLegacyFW ? 'finnegans-wake' : (expectedWork || data.work);
+    if (ann.work && targetWorkForFile && ann.work !== targetWorkForFile) {
+      errors.push(
+        `Annotation id '${annId}' in '${relPath}' specifies work '${ann.work}' which does not match expected file work '${targetWorkForFile}'.`
       );
     }
   }

@@ -47,6 +47,11 @@ export interface Annotation {
   contributors: string[];
 
   /**
+   * Optional work identifier for the annotation (e.g. "finnegans-wake", "ulysses").
+   */
+  work?: string;
+
+  /**
    * Optional custom metadata fields for specialized editions.
    */
   metadata?: Record<string, unknown>;
