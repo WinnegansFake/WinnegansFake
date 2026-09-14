@@ -403,7 +403,7 @@ export default function HomePage() {
                   The Full Dissertation
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Read our 12,000+ word scholarly monograph detailing the cosmology of Vico and Bruno, Joyce&rsquo;s Buffalo notebook sigla, acoustic thunderclaps, and the decoupled software architecture.
+                  Read our 6,000+ word scholarly monograph detailing the cosmology of Vico and Bruno, Joyce&rsquo;s Buffalo notebook sigla, acoustic thunderclaps, and the decoupled software architecture.
                 </p>
               </div>
               <div className="pt-6">
