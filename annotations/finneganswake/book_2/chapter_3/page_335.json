@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 3,
+  "page_number": 335,
+  "annotations": [
+    {
+      "id": "335.01-7276",
+      "line_number": 1,
+      "target_phrase": ".4^' tellyhows story",
+      "annotation_text": "Page 335 opens Book 2, Chapter 3 (\"The Tavern\") during the Age of Heroes phase. This passage continues HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging, featuring HCE, the Twelve Customers, Butt and Taff. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-2"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "335.03-9d1b",
+      "line_number": 3,
+      "target_phrase": "set",
+      "annotation_text": "Egyptian eschatology \"set\" on page 335 (\"The Tavern\"): within HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Heroes passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
+      "categories": [
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
+      ],
+      "cross_references": [
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
+      ],
+      "sources": [
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "335.16-7ed6",
+      "line_number": 16,
+      "target_phrase": "Katu ihis ihis",
+      "annotation_text": "Mid-page polysemic node on page 335 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

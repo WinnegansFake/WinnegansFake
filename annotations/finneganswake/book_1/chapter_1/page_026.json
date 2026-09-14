@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 1,
+  "page_number": 26,
+  "annotations": [
+    {
+      "id": "026.07-c4eb",
+      "line_number": 7,
+      "target_phrase": "Liffey",
+      "annotation_text": "ALP invocation \"Liffey\" on page 26 (\"The Fall of Finnegan\"): Anna Livia Plurabelle, the mother-river personifying the Liffey, surfaces here amid the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape. In this Age of Gods (Theocratic) passage, her feminine current of forgiveness and renewal flows through the dream landscape, carrying Dublin's history from source to sea.",
+      "categories": [
+        "alp",
+        "river-liffey",
+        "feminine-principle",
+        "waters"
+      ],
+      "cross_references": [
+        "003.01",
+        "196.01",
+        "198.15",
+        "207.20"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: ALP / River Liffey concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "026.21-3242",
+      "line_number": 21,
+      "target_phrase": "wall",
+      "annotation_text": "Fall/resurrection motif \"wall\" on page 26 (\"The Fall of Finnegan\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden — all converge within the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape. The comic-cosmic Fall during the Age of Gods (Theocratic) phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.15",
+        "004.14",
+        "023.05",
+        "044.20"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1",
+        "FinnegansWeb: The Fall motif. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

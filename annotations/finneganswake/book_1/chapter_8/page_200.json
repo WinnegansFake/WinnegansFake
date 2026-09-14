@@ -1,0 +1,248 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 8,
+  "page_number": 200,
+  "annotations": [
+    {
+      "line_number": 1,
+      "target_phrase": "went",
+      "annotation_text": "The common word 'went' secretly embeds the Went river, demonstrating Joyce's technique of hiding geographical features in mundane vocabulary.",
+      "categories": [
+        "river-motif",
+        "wordplay",
+        "geography"
+      ],
+      "cross_references": [
+        "196.01",
+        "215.01"
+      ],
+      "sources": [
+        "https://www.fweet.org/cgi-bin/fw_grep.cgi?srch=went",
+        "https://finwake.com/1024chapter8/1024chap8.htm",
+        "https://lithub.com/james-joyce-and-the-river-liffey/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "200.01-d0fb"
+    },
+    {
+      "line_number": 2,
+      "target_phrase": "battle",
+      "annotation_text": "Embeds the Battle river in Canada. Joyce weaves an estimated 1,117 river names globally throughout the chapter, vastly exceeding his claim of 500.",
+      "categories": [
+        "river-motif",
+        "geography"
+      ],
+      "cross_references": [
+        "196.02"
+      ],
+      "sources": [
+        "https://finnegansweb.com/wiki/Rivers",
+        "https://www.fweet.org/cgi-bin/fw_grep.cgi?srch=battle",
+        "https://scribd.com/doc/anna-livia-study"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "200.02-4ba2"
+    },
+    {
+      "line_number": 3,
+      "target_phrase": "Shannon",
+      "annotation_text": "Direct reference to the River Shannon, the longest river in Ireland, serving as a primary artery in the chapter's aquatic circulatory system.",
+      "categories": [
+        "irish-geography",
+        "river-motif"
+      ],
+      "cross_references": [
+        "196.01"
+      ],
+      "sources": [
+        "https://editura.mttlc.ro/joyce-lexicons.html",
+        "https://lithub.com/james-joyce-and-the-river-liffey/",
+        "https://finwake.com/1024chapter8/1024chap8.htm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "200.03-a591"
+    },
+    {
+      "line_number": 4,
+      "target_phrase": "Amazon",
+      "annotation_text": "The massive South American river parallels ALP's monumental scale as a mother figure encompassing all waters and life forces.",
+      "categories": [
+        "geography",
+        "character-alp",
+        "river-motif"
+      ],
+      "cross_references": [
+        "200.01"
+      ],
+      "sources": [
+        "https://www.fweet.org/cgi-bin/fw_grep.cgi?srch=amazon",
+        "https://finnegansweb.com/wiki/Anna_Livia_Plurabelle",
+        "https://scribd.com/doc/anna-livia-study"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "200.04-b8b4"
+    },
+    {
+      "line_number": 5,
+      "target_phrase": "Nile",
+      "annotation_text": "Evokes the life-giving Nile, connecting the Irish setting to ancient Egyptian mythology, which deeply influenced the resurrection themes of the Wake.",
+      "categories": [
+        "mythology",
+        "geography",
+        "river-motif"
+      ],
+      "cross_references": [
+        "003.15",
+        "424.20"
+      ],
+      "sources": [
+        "https://finwake.com/1024chapter8/1024chap8.htm",
+        "https://editura.mttlc.ro/joyce-lexicons.html",
+        "https://lithub.com/james-joyce-and-the-river-liffey/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "200.05-d472"
+    },
+    {
+      "line_number": 6,
+      "target_phrase": "Congo",
+      "annotation_text": "The Congo river adds to the continental spanning of the chapter's aqueous geography, merging African landscapes with the local Liffey.",
+      "categories": [
+        "geography",
+        "river-motif"
+      ],
+      "cross_references": [
+        "200.04"
+      ],
+      "sources": [
+        "https://www.fweet.org/cgi-bin/fw_grep.cgi?srch=congo",
+        "https://finnegansweb.com/wiki/Rivers",
+        "https://scribd.com/doc/anna-livia-study"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "200.06-ea5a"
+    },
+    {
+      "line_number": 7,
+      "target_phrase": "Rhine",
+      "annotation_text": "The Rhine brings in Germanic mythology and Wagnerian motifs (like the Rhinemaidens), aligning the washerwomen with mythical river guardians.",
+      "categories": [
+        "music",
+        "mythology",
+        "river-motif"
+      ],
+      "cross_references": [
+        "215.01"
+      ],
+      "sources": [
+        "https://lithub.com/james-joyce-and-the-river-liffey/",
+        "https://editura.mttlc.ro/joyce-lexicons.html",
+        "https://finwake.com/1024chapter8/1024chap8.htm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "200.07-a00e"
+    },
+    {
+      "line_number": 8,
+      "target_phrase": "Danube",
+      "annotation_text": "The Danube weaves Central European geography into the text, reflecting Joyce's multi-lingual, multi-national 'sounddance' of history.",
+      "categories": [
+        "geography",
+        "river-motif",
+        "music"
+      ],
+      "cross_references": [
+        "196.01"
+      ],
+      "sources": [
+        "https://www.fweet.org/",
+        "https://finnegansweb.com/wiki/Anna_Livia_Plurabelle",
+        "https://scribd.com/doc/anna-livia-study"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "200.08-ef84"
+    },
+    {
+      "id": "200.13-bdff",
+      "line_number": 13,
+      "target_phrase": "yawn",
+      "annotation_text": "Fraternal archetype \"yawn\" on page 200 (\"Anna Livia Plurabelle\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within the two washerwomen gossiping on opposite banks of the darkening Liffey, 500+ river names woven into the text, metamorphosis into elm and stone. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Gods (closing) phase.",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "200.31-0436",
+      "line_number": 31,
+      "target_phrase": "Anna Livia",
+      "annotation_text": "ALP invocation \"Anna Livia\" on page 200 (\"Anna Livia Plurabelle\"): Anna Livia Plurabelle, the mother-river personifying the Liffey, surfaces here amid the two washerwomen gossiping on opposite banks of the darkening Liffey, 500+ river names woven into the text, metamorphosis into elm and stone. In this Age of Gods (closing) passage, her feminine current of forgiveness and renewal flows through the dream landscape, carrying Dublin's history from source to sea.",
+      "categories": [
+        "alp",
+        "river-liffey",
+        "feminine-principle",
+        "waters"
+      ],
+      "cross_references": [
+        "003.01",
+        "196.01",
+        "198.15",
+        "207.20"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: ALP / River Liffey concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

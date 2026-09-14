@@ -129,8 +129,8 @@ describe('@winnegans/validator: AnnotationValidator', () => {
     expect(issues.some((i) => i.message.includes('line order error'))).toBe(true);
   });
 
-  it('should validate actual file on disk (annotations/book_1/chapter_1/page_003.json)', () => {
-    const targetFile = path.resolve(__dirname, '..', 'annotations', 'book_1', 'chapter_1', 'page_003.json');
+  it('should validate actual file on disk (annotations/finneganswake/book_1/chapter_1/page_003.json)', () => {
+    const targetFile = path.resolve(__dirname, '..', 'annotations', 'finneganswake', 'book_1', 'chapter_1', 'page_003.json');
     const issues = validator.validateFile(targetFile);
     expect(issues.length).toBe(0);
   });

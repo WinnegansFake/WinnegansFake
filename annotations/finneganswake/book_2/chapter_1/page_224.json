@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 1,
+  "page_number": 224,
+  "annotations": [
+    {
+      "id": "224.01-0bee",
+      "line_number": 1,
+      "target_phrase": "four gentlemen. Otem.",
+      "annotation_text": "Page 224 opens Book 2, Chapter 1 (\"The Mime of Mick, Nick and the Maggies\") during the Age of Heroes phase. This passage continues the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell, featuring Shem (Glugg), Shaun (Chuff), Issy, the Maggies. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-2"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "224.07-149d",
+      "line_number": 7,
+      "target_phrase": "Glugg",
+      "annotation_text": "Fraternal archetype \"Glugg\" on page 224 (\"The Mime of Mick, Nick and the Maggies\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Heroes phase.",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "224.08-d976",
+      "line_number": 8,
+      "target_phrase": "said about fontmouther.",
+      "annotation_text": "Mid-page polysemic node on page 224 (\"The Mime of Mick, Nick and the Maggies\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

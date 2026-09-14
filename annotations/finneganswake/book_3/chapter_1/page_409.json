@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 3,
+  "chapter": 1,
+  "page_number": 409,
+  "annotations": [
+    {
+      "id": "409.01-5395",
+      "line_number": 1,
+      "target_phrase": "Wouldndom But, Gemini,",
+      "annotation_text": "Page 409 opens Book 3, Chapter 1 (\"Shaun the Post (First Watch)\") during the Age of Men phase. This passage continues Shaun floating down the Liffey in a barrel, delivering his sermon, the well-fed postman who delivers messages he cannot understand, featuring Shaun, Issy, the Rainbow Girls. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-3"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "409.07-ba88",
+      "line_number": 7,
+      "target_phrase": "Shaun",
+      "annotation_text": "Fraternal archetype \"Shaun\" on page 409 (\"Shaun the Post (First Watch)\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within Shaun floating down the Liffey in a barrel, delivering his sermon, the well-fed postman who delivers messages he cannot understand. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Men phase.",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "409.15-076b",
+      "line_number": 15,
+      "target_phrase": "with hard thinkamuddles",
+      "annotation_text": "Mid-page polysemic node on page 409 (\"Shaun the Post (First Watch)\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

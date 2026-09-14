@@ -63,8 +63,8 @@ describe('Reusable Digital Humanities SDK & Components', () => {
 
     it('resolves canonical page file paths for FW, Ulysses, and custom works', () => {
       // Finnegans Wake
-      expect(getPageFilePath(3)).toBe('annotations/book_1/chapter_1/page_003.json');
-      expect(getPageFilePath(220)).toBe('annotations/book_2/chapter_1/page_220.json');
+      expect(getPageFilePath(3)).toBe('annotations/finneganswake/book_1/chapter_1/page_003.json');
+      expect(getPageFilePath(220)).toBe('annotations/finneganswake/book_2/chapter_1/page_220.json');
 
       // Ulysses
       const ulyssesWork = getWork('ulysses');

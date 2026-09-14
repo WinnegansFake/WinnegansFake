@@ -16,7 +16,9 @@ import {
   Compass,
   CheckCircle2,
   FileSearch,
-  BookMarked
+  BookMarked,
+  Users,
+  Play,
 } from 'lucide-react';
 import { ANALYTICAL_REGISTERS, ARCHIVE_EPUB_URL, GITHUB_REPO_URL } from '@/lib/constants';
 
@@ -56,6 +58,13 @@ export default function HomePage() {
                 <span>Launch Interactive Reader</span>
               </Link>
               <Link
+                href="/bookclub"
+                className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl text-sm font-medium bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white shadow-lg shadow-teal-600/25 transition-all hover:scale-105"
+              >
+                <Users className="w-4 h-4" />
+                <span>Start a Book Club</span>
+              </Link>
+              <Link
                 href="/dissertation"
                 className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl text-sm font-medium bg-slate-800 hover:bg-slate-700 text-slate-100 border border-slate-700 transition-all hover:scale-105"
               >
@@ -69,6 +78,48 @@ export default function HomePage() {
                 <Terminal className="w-4 h-4 text-amber-400" />
                 <span>Local Setup & EPUB Guide</span>
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Book Club Feature Banner: Don't Read Joyce Alone */}
+      <section className="py-8 bg-gradient-to-r from-emerald-950/60 via-slate-900/80 to-indigo-950/60 border-b border-emerald-500/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-6 rounded-2xl bg-slate-950/80 border border-emerald-500/20 shadow-xl">
+            <div className="space-y-2 max-w-3xl">
+              <div className="flex items-center space-x-2">
+                <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 uppercase">
+                  Community &bull; Start a Reading Circle
+                </span>
+                <span className="text-xs text-slate-400 font-mono hidden sm:inline">
+                  Inspired by the 28-Year Venice Library Book Club
+                </span>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-serif font-bold text-white">
+                Don&apos;t Read Joyce in Solitary Confinement — Start a Book Club
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                As the original author of this project discovered through <a href="https://www.tiktok.com/@lily76412/video/7661924549893655839?_r=1&_t=ZN-99VlBXRExiY" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline inline-flex items-center space-x-1 font-medium"><span>this viral TikTok video</span><ExternalLink className="w-3 h-3 inline ml-0.5" /></a>, <em>Finnegans Wake</em> is meant to be read aloud, laughed over, and decoded collaboratively. Check out our ready-made guide, meeting blueprints, and reading cadences.
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-3 flex-shrink-0">
+              <Link
+                href="/bookclub"
+                className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-500 hover:bg-emerald-400 text-slate-950 shadow-lg shadow-emerald-500/25 transition-all hover:scale-105"
+              >
+                <Users className="w-4 h-4" />
+                <span>Start a Book Club Guide</span>
+              </Link>
+              <a
+                href="https://www.tiktok.com/@lily76412/video/7661924549893655839?_r=1&_t=ZN-99VlBXRExiY"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-900 hover:bg-slate-800 text-indigo-300 border border-indigo-500/30 transition-all hover:scale-105"
+              >
+                <Play className="w-3.5 h-3.5 fill-current" />
+                <span>Watch TikTok Video</span>
+              </a>
             </div>
           </div>
         </div>
@@ -183,7 +234,7 @@ export default function HomePage() {
                     <span className="text-[10px] bg-emerald-950 px-2 py-0.5 rounded border border-emerald-500/40">100% OPEN SOURCE</span>
                   </div>
                   <p className="text-slate-400 text-[11px] leading-normal">
-                    Stored in <code className="text-slate-200">annotations/book_B/chapter_C/page_PPP.json</code>. Pure metadata, glosses, cross-references, and academic citations. CC BY-SA 4.0.
+                    Stored in <code className="text-slate-200">annotations/&lt;title&gt;/.../page_PPP.json</code>. Pure metadata, glosses, cross-references, and academic citations. CC BY-SA 4.0.
                   </p>
                 </div>
               </div>

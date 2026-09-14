@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 3,
+  "chapter": 3,
+  "page_number": 533,
+  "annotations": [
+    {
+      "id": "533.25-0327",
+      "line_number": 25,
+      "target_phrase": "Sutton",
+      "annotation_text": "Dublin landmark \"Sutton\" on page 533 (\"The Inquest of Yawn\"): grounding the cosmic dream in physical Dublin during the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. Joyce transforms this real location into a universal archetypal site — simultaneously Eden, Waterloo, Calvary, and the Elysian Fields — within the Age of Men phase.",
+      "categories": [
+        "dublin-topography",
+        "geography",
+        "landmarks",
+        "urban-history"
+      ],
+      "cross_references": [
+        "003.18",
+        "040.05",
+        "080.20",
+        "196.01"
+      ],
+      "sources": [
+        "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft",
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "Dublin James Joyce Centre. https://jamesjoyce.ie",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "533.29-f349",
+      "line_number": 29,
+      "target_phrase": "Shaun",
+      "annotation_text": "Fraternal archetype \"Shaun\" on page 533 (\"The Inquest of Yawn\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Men phase.",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

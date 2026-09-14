@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 5,
+  "page_number": 104,
+  "annotations": [
+    {
+      "id": "104.01-ec31",
+      "line_number": 1,
+      "target_phrase": "In the name of Annah",
+      "annotation_text": "An invocation that opens the 'Letter' chapter, establishing ALP as the muse and the origin of the text, setting a sacred yet mundane tone.",
+      "categories": [
+        "alp",
+        "religion"
+      ],
+      "cross_references": [
+        "196.01"
+      ],
+      "sources": [
+        "FWEET. http://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "104.04-8fad",
+      "line_number": 4,
+      "target_phrase": "Biddy Doran",
+      "annotation_text": "The hen who scratches up the mysterious document from the midden heap. She embodies the lowly, persistent historian recovering the past from literal garbage.",
+      "categories": [
+        "hen",
+        "history"
+      ],
+      "cross_references": [
+        "104.10"
+      ],
+      "sources": [
+        "John Gordon's Finnegans Blog. http://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "104.10-1b4d",
+      "line_number": 10,
+      "target_phrase": "the midden dump",
+      "annotation_text": "The site of discovery. Joyce equates the excavation of the letter to an archaeological dig, suggesting that history is found in the discarded refuse of daily life.",
+      "categories": [
+        "archaeology",
+        "letter"
+      ],
+      "cross_references": [
+        "104.04"
+      ],
+      "sources": [
+        "Mark Troy's Mummeries of Resurrection. http://rosenlake.net/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "104.14-e38f",
+      "line_number": 14,
+      "target_phrase": "scratched up a scrap",
+      "annotation_text": "The physical act of finding the text. The hen's scratching mimics the monk's pen scratching on vellum, a central metaphor of this chapter.",
+      "categories": [
+        "hen",
+        "writing"
+      ],
+      "cross_references": [
+        "104.22"
+      ],
+      "sources": [
+        "FWEET. http://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "104.18-54b7",
+      "line_number": 18,
+      "target_phrase": "Tunc page",
+      "annotation_text": "A direct reference to the Book of Kells (Matthew 27:38). Joyce elevates the hen's soiled scrap to the status of Ireland's greatest illuminated manuscript.",
+      "categories": [
+        "book-of-kells",
+        "manuscript"
+      ],
+      "cross_references": [
+        "104.22",
+        "122.22"
+      ],
+      "sources": [
+        "JJDA. http://www.jjda.ie/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "104.22-a604",
+      "line_number": 22,
+      "target_phrase": "illuminated with mud",
+      "annotation_text": "A paradox that defines Shem's aesthetic. The sacred text is decorated not with gold, but with the literal filth of the earth, merging the high and the low.",
+      "categories": [
+        "art",
+        "filth"
+      ],
+      "cross_references": [
+        "169.15"
+      ],
+      "sources": [
+        "Contemporary Literature Press. http://editura.mttlc.ro/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "104.27-6f64",
+      "line_number": 27,
+      "target_phrase": "kissing the cross",
+      "annotation_text": "The illiterate sign-off on the letter. It signifies both religious devotion and the 'X' of an uneducated person, highlighting the letter's humble origins.",
+      "categories": [
+        "letter",
+        "religion"
+      ],
+      "cross_references": [
+        "104.01"
+      ],
+      "sources": [
+        "FWEET. http://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "104.31-c04f",
+      "line_number": 31,
+      "target_phrase": "who wrote this",
+      "annotation_text": "The central epistemological question of the chapter. The authorship is obscured by time and dirt, turning the reader into a detective deciphering the Wake itself.",
+      "categories": [
+        "meta-fiction",
+        "authorship"
+      ],
+      "cross_references": [
+        "169.01"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

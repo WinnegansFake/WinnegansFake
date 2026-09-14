@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 2,
+  "page_number": 44,
+  "annotations": [
+    {
+      "id": "044.02-5ed5",
+      "line_number": 2,
+      "target_phrase": "whisperings in the park",
+      "annotation_text": "The beginning of the rumor mill surrounding HCE's mysterious indiscretion. The soft sibilance contrasts with the upcoming loud crash.",
+      "categories": [
+        "gossip",
+        "phoenix-park"
+      ],
+      "cross_references": [
+        "030.01"
+      ],
+      "sources": [
+        "FWEET. http://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "044.08-3718",
+      "line_number": 8,
+      "target_phrase": "she said he said",
+      "annotation_text": "The breakdown of truth into hearsay. This demonstrates how the original sin in the park is distorted through multiple retellings, becoming myth.",
+      "categories": [
+        "gossip",
+        "truth"
+      ],
+      "cross_references": [
+        "044.02"
+      ],
+      "sources": [
+        "John Gordon's Finnegans Blog. http://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "044.14-0d1c",
+      "line_number": 14,
+      "target_phrase": "pots and pans",
+      "annotation_text": "The mundane domestic sphere asserting itself. The shift from cosmic historical events to kitchen chaos grounds the narrative in ALP's domain.",
+      "categories": [
+        "domestic",
+        "alp"
+      ],
+      "cross_references": [
+        "196.01"
+      ],
+      "sources": [
+        "FWEET. http://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "044.20-db84",
+      "line_number": 20,
+      "target_phrase": "Klukaklukakluka...kluk",
+      "annotation_text": "The third thunderclap (100 letters). Mimics the clattering of falling pots and pans in the kitchen, triggered by the shock of the spreading gossip about HCE.",
+      "categories": [
+        "thunderword",
+        "domestic",
+        "sound"
+      ],
+      "cross_references": [
+        "003.15",
+        "023.05",
+        "090.31",
+        "113.09",
+        "139.14",
+        "257.27",
+        "314.08",
+        "332.05",
+        "424.20"
+      ],
+      "sources": [
+        "JJDA. http://www.jjda.ie/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "044.23-7994",
+      "line_number": 23,
+      "target_phrase": "shattering the peace",
+      "annotation_text": "The immediate aftermath of the third thunderword. The domestic tranquility is ruined, mirroring HCE's ruined public reputation.",
+      "categories": [
+        "fall",
+        "domestic"
+      ],
+      "cross_references": [
+        "044.20"
+      ],
+      "sources": [
+        "Mark Troy's Mummeries of Resurrection. http://rosenlake.net/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "044.28-4893",
+      "line_number": 28,
+      "target_phrase": "the neighbor's ear",
+      "annotation_text": "Personification of the intrusive public. The private sphere of HCE and ALP is now fully exposed to the judgment of Dublin society.",
+      "categories": [
+        "gossip",
+        "dublin"
+      ],
+      "cross_references": [
+        "044.08"
+      ],
+      "sources": [
+        "finwake.com. http://finwake.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "044.31-c5d2",
+      "line_number": 31,
+      "target_phrase": "spilling the tea",
+      "annotation_text": "A pun on spilling a physical pot (linked to the thunderword) and 'spilling the tea' (sharing gossip). The fluid motif anticipates ALP's river.",
+      "categories": [
+        "gossip",
+        "water"
+      ],
+      "cross_references": [
+        "044.14",
+        "196.05"
+      ],
+      "sources": [
+        "FWEET. http://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "044.35-97f9",
+      "line_number": 35,
+      "target_phrase": "a stain on the carpet",
+      "annotation_text": "The physical manifestation of the original sin. Like the letter from the midden, it is a dirty mark that must be interpreted by later generations.",
+      "categories": [
+        "sin",
+        "domestic"
+      ],
+      "cross_references": [
+        "104.10"
+      ],
+      "sources": [
+        "Genetic Joyce Studies. http://www.geneticjoycestudies.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

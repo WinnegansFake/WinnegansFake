@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 3,
+  "chapter": 2,
+  "page_number": 466,
+  "annotations": [
+    {
+      "id": "466.01-1030",
+      "line_number": 1,
+      "target_phrase": "Why, they might",
+      "annotation_text": "Page 466 opens Book 3, Chapter 2 (\"Jaun's Sermon\") during the Age of Men phase. This passage continues Jaun (Shaun) preaching to the twenty-nine girls, the Ondt and the Gracehoper fable, departure and farewell, featuring Jaun/Shaun, Issy, the Rainbow Girls. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-3"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "466.16-3a4f",
+      "line_number": 16,
+      "target_phrase": "hey, Jinglejoys.'* Congregational",
+      "annotation_text": "Mid-page polysemic node on page 466 (\"Jaun's Sermon\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

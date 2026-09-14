@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 2,
+  "page_number": 295,
+  "annotations": [
+    {
+      "id": "295.01-3da7",
+      "line_number": 1,
+      "target_phrase": "Vegetable \\Cell Private",
+      "annotation_text": "Page 295 opens Book 2, Chapter 2 (\"The Night Lessons\") during the Age of Heroes phase. This passage continues the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes, featuring Shem (Dolph), Shaun (Kev), Issy (footnotes). The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-2"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "295.03-e1ae",
+      "line_number": 3,
+      "target_phrase": "night",
+      "annotation_text": "Oneiric dimension \"night\" on page 295 (\"The Night Lessons\"): the nocturnal consciousness surfaces within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. During this Age of Heroes phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "295.10-eba4",
+      "line_number": 10,
+      "target_phrase": "Kev strikes Dolph",
+      "annotation_text": "Fratricidal blow (295.10): enraged by Dolph's blasphemous exposure of their mother's body, Kev strikes Dolph in the face on the schoolroom bench, re-enacting the murder of Abel by Cain.",
+      "categories": [
+        "cain-and-abel",
+        "brother-battle",
+        "violence",
+        "fratricide"
+      ],
+      "cross_references": [
+        "169.01",
+        "294.05",
+        "295.20"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "295.12-244a",
+      "line_number": 12,
+      "target_phrase": "town curry nothung",
+      "annotation_text": "Mid-page polysemic node on page 295 (\"The Night Lessons\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "295.20-5931",
+      "line_number": 20,
+      "target_phrase": "fratricide in the night lessons",
+      "annotation_text": "Theological rupture (295.20): the schoolroom lesson dissolves into ancient fraternal violence, demonstrating that education and scholastic logic cannot suppress primal instincts.",
+      "categories": [
+        "theology",
+        "quadrivium",
+        "education",
+        "instinct"
+      ],
+      "cross_references": [
+        "260.01",
+        "295.10"
+      ],
+      "sources": [
+        "Norris, Margot. The Decentered Universe. https://archive.org/details/decentereduniver0000norr"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "295.30-7fae",
+      "line_number": 30,
+      "target_phrase": "reconciliation over tea",
+      "annotation_text": "Domestic ceasefire (295.30): the boys' violent fight is abruptly halted by mother ALP calling them from the kitchen for evening tea, restoring order.",
+      "categories": [
+        "domesticity",
+        "alp",
+        "reconciliation",
+        "tea"
+      ],
+      "cross_references": [
+        "295.10",
+        "309.01"
+      ],
+      "sources": [
+        "FWEET: Tea motifs. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

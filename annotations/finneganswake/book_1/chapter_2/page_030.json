@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 2,
+  "page_number": 30,
+  "annotations": [
+    {
+      "id": "030.02-c7a4",
+      "line_number": 2,
+      "target_phrase": "Humphrey Chimpden",
+      "annotation_text": "HCE manifestation \"Humphrey Chimpden\" on page 30 within \"The Encounter in Phoenix Park\": here the universal father-figure Humphrey Chimpden Earwicker appears in the context of HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe. During this Age of Gods phase, HCE embodies the patriarch whose guilt, grandeur, and fall drive the cyclical dream forward.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist",
+        "archetype"
+      ],
+      "cross_references": [
+        "003.16",
+        "033.24",
+        "075.12",
+        "126.10"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "FWEET: HCE concordance entries. https://www.fweet.org",
+        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "030.02-8f0a",
+      "line_number": 2,
+      "target_phrase": "genesis",
+      "annotation_text": "Liturgical echo \"genesis\" on page 30 (\"The Encounter in Phoenix Park\"): Catholic ritual, Latin prayer, and sacramental language weave through HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe. Joyce fuses ecclesiastical solemnity with domestic banality during the Age of Gods phase, treating the tavern counter as communion rail and the sleeping body as sacred vessel.",
+      "categories": [
+        "liturgy",
+        "biblical",
+        "latin",
+        "theology"
+      ],
+      "cross_references": [
+        "033.01",
+        "104.20",
+        "185.14",
+        "258.25"
+      ],
+      "sources": [
+        "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
+        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/",
+        "Contemporary Literature Press: Classical Lexicon for FW. https://editura.mttlc.ro",
+        "Frazer, Sir James George. Folk-Lore in the Old Testament. https://archive.org/details/folkloreinoldtes01frazuoft"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "030.03-85ce",
+      "line_number": 3,
+      "target_phrase": "two quitewhite villagettes",
+      "annotation_text": "HCE's ambiguous sin in Phoenix Park frequently manifests as an encounter with two girls (the 'quitewhite villagettes') and three soldiers. The precise nature of the transgression is never fully described, existing only as rumor and gossip.",
+      "categories": [
+        "hce-sin",
+        "phoenix-park",
+        "rumor"
+      ],
+      "cross_references": [
+        "034.12",
+        "196.01"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "FWEET: Phoenix Park concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "030.05-b944",
+      "line_number": 5,
+      "target_phrase": "three sold",
+      "annotation_text": "The three soldiers observing HCE in the park. Often fluid in number and identity, they reverse roles with the two girls depending on the telling of the rumor.",
+      "categories": [
+        "hce-sin",
+        "soldiers",
+        "rumor"
+      ],
+      "cross_references": [
+        "034.14",
+        "196.03"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "030.08-5968",
+      "line_number": 8,
+      "target_phrase": "Cad with a pipe",
+      "annotation_text": "The Cad with a pipe: a stranger who asks HCE for the time. This seemingly innocent encounter becomes the seed of the whole scandalous rumor that plagues HCE throughout the text.",
+      "categories": [
+        "the-cad",
+        "rumor",
+        "encounter"
+      ],
+      "cross_references": [
+        "035.01",
+        "036.05"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "030.12-e1b6",
+      "line_number": 12,
+      "target_phrase": "Hosty",
+      "annotation_text": "Hosty the balladeer: the figure responsible for transforming the Cad's gossip into the spreading 'Ballad of Persse O'Reilly'.",
+      "categories": [
+        "hosty",
+        "ballad",
+        "rumor"
+      ],
+      "cross_references": [
+        "044.20",
+        "048.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "030.15-da8b",
+      "line_number": 15,
+      "target_phrase": "Persse O'Reilly",
+      "annotation_text": "The ballad that ruins HCE's reputation. 'Persse' derives from French perce (pierce), and 'O'Reilly' sounds like oreille (ear), creating the pun 'pierce-ear' or earworm.",
+      "categories": [
+        "ballad",
+        "linguistics",
+        "earworm"
+      ],
+      "cross_references": [
+        "044.20",
+        "044.21"
+      ],
+      "sources": [
+        "FWEET: Persse O'Reilly. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "030.20-b32a",
+      "line_number": 20,
+      "target_phrase": "Phoenix",
+      "annotation_text": "Phoenix Park, the real 1,700+ acre park in Dublin where HCE's sin occurs. Also the site of the infamous 1882 Phoenix Park Murders, layering historical guilt over the mythic fall.",
+      "categories": [
+        "geography",
+        "phoenix-park",
+        "history"
+      ],
+      "cross_references": [
+        "003.15",
+        "034.10"
+      ],
+      "sources": [
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "030.25-cb91",
+      "line_number": 25,
+      "target_phrase": "hearsay in the park",
+      "annotation_text": "The encounter in the park exists entirely as rumor, gossip, and hearsay, constantly reshaped by whoever is telling the story.",
+      "categories": [
+        "rumor",
+        "epistemology"
+      ],
+      "cross_references": [
+        "034.12",
+        "090.31"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

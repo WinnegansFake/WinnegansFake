@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 7,
+  "page_number": 178,
+  "annotations": [
+    {
+      "id": "178.21-5f48",
+      "line_number": 21,
+      "target_phrase": "set",
+      "annotation_text": "Egyptian eschatology \"set\" on page 178 (\"Shem the Penman\"): within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Gods passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
+      "categories": [
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
+      ],
+      "cross_references": [
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
+      ],
+      "sources": [
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "178.24-eb57",
+      "line_number": 24,
+      "target_phrase": "telescope",
+      "annotation_text": "Wellington/Waterloo motif \"telescope\" on page 178 (\"Shem the Penman\"): the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" dramatize imperial warfare as domestic quarrel within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. Joyce collapses the Battle of Waterloo into the sibling rivalries and marital conflicts of the Age of Gods dream.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "008.09",
+        "009.01",
+        "010.01",
+        "011.01"
+      ],
+      "sources": [
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
+        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt",
+        "Mink, Louis O. A Finnegans Wake Gazetteer (Phoenix Park). https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: Wellington/Museyroom concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 7,
+  "page_number": 175,
+  "annotations": [
+    {
+      "id": "175.06-c51e",
+      "line_number": 6,
+      "target_phrase": "Thunder",
+      "annotation_text": "Viconian marker \"Thunder\" on page 175 (\"Shem the Penman\"): Giambattista Vico's cyclical philosophy — divine, heroic, and human ages followed by thundering ricorso — structures this passage within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. The current Age of Gods phase shapes the language, institutional imagery, and historical echoes of the dream.",
+      "categories": [
+        "vico",
+        "ricorso",
+        "philosophy-of-history",
+        "giambattista-vico"
+      ],
+      "cross_references": [
+        "003.02",
+        "032.05",
+        "151.10",
+        "260.05"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova. https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel. Dante... Bruno. Vico.. Joyce. https://archive.org/details/ourexagminationr0000unse",
+        "Ricorso.net: Viconian Structure in FW. https://www.ricorso.net",
+        "FinnegansWeb: Vico's Cycles. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "175.11-7bc0",
+      "line_number": 11,
+      "target_phrase": "Broken",
+      "annotation_text": "Fall/resurrection motif \"Broken\" on page 175 (\"Shem the Penman\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden — all converge within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. The comic-cosmic Fall during the Age of Gods phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.15",
+        "004.14",
+        "023.05",
+        "044.20"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1",
+        "FinnegansWeb: The Fall motif. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

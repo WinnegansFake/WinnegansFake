@@ -15,6 +15,7 @@ import {
   Bookmark,
   Search,
   Library,
+  Users,
 } from 'lucide-react';
 import { GITHUB_REPO_URL } from '@/lib/constants';
 import { ThemeSwitcher } from './ThemeSwitcher';
@@ -40,6 +41,7 @@ export function Navigation() {
     { href: '/', label: 'Overview', icon: Compass },
     { href: '/library', label: 'Works', icon: Library },
     { href: '/reader', label: 'Reader', icon: BookOpen },
+    { href: '/bookclub', label: 'Book Club', icon: Users },
     { href: '/dissertations', label: 'Dissertations', icon: GraduationCap },
     { href: '/guide', label: 'Local Setup', icon: Terminal },
     { href: '/contribute', label: 'Contribute', icon: Layers },
@@ -53,6 +55,38 @@ export function Navigation() {
 
   return (
     <header className="sticky top-0 z-50 wf-nav-surface backdrop-blur-md border-b border-slate-800 text-slate-100 transition-colors">
+      {/* Top Book Club Announcement Bar */}
+      <div className="bg-gradient-to-r from-emerald-950/90 via-slate-900 to-indigo-950/90 border-b border-emerald-500/20 text-xs py-1.5 px-4 text-slate-300">
+        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+          <div className="flex items-center space-x-2 text-[11px] sm:text-xs">
+            <span className="inline-flex items-center space-x-1 px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono font-semibold">
+              <Users className="w-3 h-3" />
+              <span>START A BOOK CLUB</span>
+            </span>
+            <span className="hidden sm:inline text-slate-400">
+              Don&apos;t read Joyce alone! Inspired by the legendary 28-year Venice library reading circle.
+            </span>
+          </div>
+          <div className="flex items-center space-x-3 text-[11px] sm:text-xs ml-auto">
+            <Link
+              href="/bookclub"
+              className="inline-flex items-center space-x-1 text-emerald-400 hover:text-emerald-300 font-medium transition-colors"
+            >
+              <span>Organize Your Group &rarr;</span>
+            </Link>
+            <span className="text-slate-600">&bull;</span>
+            <a
+              href="https://www.tiktok.com/@lily76412/video/7661924549893655839?_r=1&_t=ZN-99VlBXRExiY"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-1 text-indigo-300 hover:text-indigo-200 transition-colors"
+              title="Watch TikTok video by @lily76412"
+            >
+              <span>Watch TikTok Inspiration Video &#9658;</span>
+            </a>
+          </div>
+        </div>
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Brand Logo */}

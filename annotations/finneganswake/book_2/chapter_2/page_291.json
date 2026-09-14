@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 2,
+  "page_number": 291,
+  "annotations": [
+    {
+      "id": "291.01-eabd",
+      "line_number": 1,
+      "target_phrase": "bar",
+      "annotation_text": "Tavern/jury motif \"bar\" on page 291 (\"The Night Lessons\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. During this Age of Heroes phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
+      "categories": [
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
+      ],
+      "cross_references": [
+        "309.01",
+        "311.05",
+        "333.20",
+        "370.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
+        "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "291.01-0ae4",
+      "line_number": 1,
+      "target_phrase": "Only, Unic None,",
+      "annotation_text": "Page 291 opens Book 2, Chapter 2 (\"The Night Lessons\") during the Age of Heroes phase. This passage continues the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes, featuring Shem (Dolph), Shaun (Kev), Issy (footnotes). The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-2"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "291.16-f927",
+      "line_number": 16,
+      "target_phrase": "from foe, with",
+      "annotation_text": "Mid-page polysemic node on page 291 (\"The Night Lessons\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

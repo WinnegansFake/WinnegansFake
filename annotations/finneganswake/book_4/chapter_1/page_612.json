@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 4,
+  "chapter": 1,
+  "page_number": 612,
+  "annotations": [
+    {
+      "id": "612.01-4d83",
+      "line_number": 1,
+      "target_phrase": "other thing, voluntary",
+      "annotation_text": "Page 612 opens Book 4, Chapter 1 (\"The Ricorso — Dawn\") during the Ricorso (The Return) phase. This passage continues dawn breaking over Dublin Bay, St. Kevin bathing at Glendalough, St. Patrick vs. the Archdruid Balkelly, ALP's dissolving final monologue into the sea, featuring St. Kevin, St. Patrick, Balkelly, ALP. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-4"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "612.06-5c3e",
+      "line_number": 6,
+      "target_phrase": "Patrick's white sunlight",
+      "annotation_text": "Clear daylight victory (612.06): Saint Patrick wearing white vestments represents common-sense daylight that absorbs all prismatic colors into clear, undivided white light, banishing nocturnal obscurity.",
+      "categories": [
+        "patrick",
+        "daylight",
+        "christianity",
+        "orthodoxy"
+      ],
+      "cross_references": [
+        "611.04",
+        "611.20",
+        "612.15"
+      ],
+      "sources": [
+        "Patrick, Saint. Confessio. https://www.confessio.ie/etexts/confessio_english#"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "612.15-7ebc",
+      "line_number": 15,
+      "target_phrase": "the green shamrock",
+      "annotation_text": "The Trinitarian emblem (612.15): Patrick stoops to pluck a green three-leaved shamrock, synthesizing the Trinity in a single daylight earthly plant and converting Ireland to the Catholic faith.",
+      "categories": [
+        "shamrock",
+        "trinity",
+        "patrick",
+        "conversion"
+      ],
+      "cross_references": [
+        "003.09",
+        "612.06"
+      ],
+      "sources": [
+        "MacKillop, James. Dictionary of Celtic Mythology. https://www.oxfordreference.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "612.15-8827",
+      "line_number": 15,
+      "target_phrase": "good while, pore",
+      "annotation_text": "Mid-page polysemic node on page 612 (\"The Ricorso — Dawn\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Ricorso (The Return) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "612.25-c48e",
+      "line_number": 25,
+      "target_phrase": "meta-commentary on the Wake",
+      "annotation_text": "Daylight vs. Night-Mind (612.25): as Joyce explained to Frank Budgen, the Druid defends the obscure multi-colored dream of Finnegans Wake, while Patrick represents the practical, waking daylight understanding that dissolves it.",
+      "categories": [
+        "poetics",
+        "metafiction",
+        "budgen",
+        "daylight-vs-night"
+      ],
+      "cross_references": [
+        "611.04",
+        "612.06",
+        "628.16"
+      ],
+      "sources": [
+        "Budgen, Frank. James Joyce and the Making of Ulysses. https://archive.org/details/jamesjoycemaking00budg"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

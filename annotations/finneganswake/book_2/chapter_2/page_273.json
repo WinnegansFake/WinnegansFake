@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 2,
+  "page_number": 273,
+  "annotations": [
+    {
+      "id": "273.09-ec41",
+      "line_number": 9,
+      "target_phrase": "downfall",
+      "annotation_text": "Fall/resurrection motif \"downfall\" on page 273 (\"The Night Lessons\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden — all converge within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. The comic-cosmic Fall during the Age of Heroes phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.15",
+        "004.14",
+        "023.05",
+        "044.20"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1",
+        "FinnegansWeb: The Fall motif. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "273.21-f695",
+      "line_number": 21,
+      "target_phrase": "hen",
+      "annotation_text": "The Letter motif \"hen\" on page 273 (\"The Night Lessons\"): ALP's mysterious document — scratched from the midden by Biddy Doran the Hen — represents the genesis of all writing within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. During this Age of Heroes phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "104.01",
+        "107.26",
+        "111.01",
+        "113.20"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net",
+        "Finwake.com: Chapter I.5 annotations. http://www.finwake.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 7,
+  "page_number": 172,
+  "annotations": [
+    {
+      "id": "172.11-5ed8",
+      "line_number": 11,
+      "target_phrase": "night",
+      "annotation_text": "Oneiric dimension \"night\" on page 172 (\"Shem the Penman\"): the nocturnal consciousness surfaces within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. During this Age of Gods phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "172.15-f626",
+      "line_number": 15,
+      "target_phrase": "Liffey",
+      "annotation_text": "ALP invocation \"Liffey\" on page 172 (\"Shem the Penman\"): Anna Livia Plurabelle, the mother-river personifying the Liffey, surfaces here amid Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. In this Age of Gods passage, her feminine current of forgiveness and renewal flows through the dream landscape, carrying Dublin's history from source to sea.",
+      "categories": [
+        "alp",
+        "river-liffey",
+        "feminine-principle",
+        "waters"
+      ],
+      "cross_references": [
+        "003.01",
+        "196.01",
+        "198.15",
+        "207.20"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: ALP / River Liffey concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

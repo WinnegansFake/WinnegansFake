@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 3,
+  "chapter": 4,
+  "page_number": 556,
+  "annotations": [
+    {
+      "id": "556.01-9063",
+      "line_number": 1,
+      "target_phrase": "night",
+      "annotation_text": "Oneiric dimension \"night\" on page 556 (\"The Bedroom Scene\"): the nocturnal consciousness surfaces within HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream. During this Age of Men (closing) phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "556.01-61da",
+      "line_number": 1,
+      "target_phrase": "night silentsailing night",
+      "annotation_text": "Page 556 opens Book 3, Chapter 4 (\"The Bedroom Scene\") during the Age of Men (closing) phase. This passage continues HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream, featuring HCE, ALP, Shem, Shaun, Issy. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-3"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "556.16-9ffa",
+      "line_number": 16,
+      "target_phrase": "daphnedews, still lay,",
+      "annotation_text": "Mid-page polysemic node on page 556 (\"The Bedroom Scene\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men (closing) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

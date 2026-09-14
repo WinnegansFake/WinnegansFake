@@ -275,7 +275,7 @@ export const FINNEGANS_WAKE: WorkDefinition = {
   epubFilename: 'finneganswake00joycuoft.epub',
   epubSha256: '93f80a2bd54e7c804b7cd0e88553315e3ebdba449a8a08dc83cd3a8c0e00e773',
   epubSizeBytes: 41793329,
-  annotationsPath: 'annotations',
+  annotationsPath: 'annotations/finneganswake',
   coverColor: 'emerald',
   divisions: [
     { id: '1.1', number: 1, title: 'The Fall & The Giant\'s Wake', subtitle: 'Book I, Chapter 1', startPage: 1, endPage: 29 },
@@ -662,7 +662,12 @@ export const ULYSSES: WorkDefinition = {
  */
 const LIBRARY_WORKS: Map<string, WorkDefinition> = new Map([
   [FINNEGANS_WAKE.id, FINNEGANS_WAKE],
+  ['finneganswake', FINNEGANS_WAKE],
+  ['finnegans-wake', FINNEGANS_WAKE],
+  ['fw', FINNEGANS_WAKE],
   [ULYSSES.id, ULYSSES],
+  ['ulysses', ULYSSES],
+  ['u', ULYSSES],
 ]);
 
 /**
@@ -671,7 +676,8 @@ const LIBRARY_WORKS: Map<string, WorkDefinition> = new Map([
  */
 export function getWork(id?: string): WorkDefinition {
   if (!id) return FINNEGANS_WAKE;
-  const match = LIBRARY_WORKS.get(id.toLowerCase().trim());
+  const cleanId = id.toLowerCase().trim();
+  const match = LIBRARY_WORKS.get(cleanId) || LIBRARY_WORKS.get(cleanId.replace(/[-_\s]/g, ''));
   return match || FINNEGANS_WAKE;
 }
 
@@ -679,7 +685,7 @@ export function getWork(id?: string): WorkDefinition {
  * Retrieve all registered works in the library.
  */
 export function getAllWorks(): WorkDefinition[] {
-  return Array.from(LIBRARY_WORKS.values());
+  return [FINNEGANS_WAKE, ULYSSES];
 }
 
 /**
@@ -735,13 +741,14 @@ export function createWork(
 export function getPageFilePath(page: number, work?: WorkDefinition): string {
   const currentWork = work || getWork('finnegans-wake');
   const padPage = String(page).padStart(3, '0');
+  const normId = (currentWork.id || '').replace(/[-_\s]/g, '').toLowerCase();
 
-  if (currentWork.id === 'finnegans-wake') {
+  if (normId === 'finneganswake' || normId === 'fw') {
     const div = getWorkDivision(currentWork, page);
     const parts = String(div.id).split('.');
     const book = parts[0] || '1';
     const chapter = parts[1] || '1';
-    return `annotations/book_${book}/chapter_${chapter}/page_${padPage}.json`;
+    return `annotations/finneganswake/book_${book}/chapter_${chapter}/page_${padPage}.json`;
   }
 
   const div = getWorkDivision(currentWork, page);
@@ -767,8 +774,9 @@ export function getBookAndChapterInfo(
   schemaDetails?: Record<string, string | undefined>;
 } {
   const work = getWork(workId);
+  const normId = (work.id || '').replace(/[-_\s]/g, '').toLowerCase();
 
-  if (work.id === 'ulysses') {
+  if (normId === 'ulysses' || normId === 'u') {
     const div = getWorkDivision(work, page);
     const epNumber = typeof div.number === 'number' ? div.number : parseInt(String(div.number), 10) || 1;
     let partNum = 1;
@@ -786,7 +794,7 @@ export function getBookAndChapterInfo(
     };
   }
 
-  if (work.id === 'finnegans-wake') {
+  if (normId === 'finneganswake' || normId === 'fw') {
     const div = getWorkDivision(work, page);
     const parts = String(div.id).split('.');
     const b = parseInt(parts[0] || '1', 10);

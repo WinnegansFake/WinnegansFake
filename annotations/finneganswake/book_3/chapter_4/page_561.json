@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 3,
+  "chapter": 4,
+  "page_number": 561,
+  "annotations": [
+    {
+      "id": "561.03-e97a",
+      "line_number": 3,
+      "target_phrase": "Porter",
+      "annotation_text": "HCE manifestation \"Porter\" on page 561 within \"The Bedroom Scene\": here the universal father-figure Humphrey Chimpden Earwicker appears in the context of HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream. During this Age of Men (closing) phase, HCE embodies the patriarch whose guilt, grandeur, and fall drive the cyclical dream forward.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist",
+        "archetype"
+      ],
+      "cross_references": [
+        "003.16",
+        "030.01",
+        "033.24",
+        "075.12"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "FWEET: HCE concordance entries. https://www.fweet.org",
+        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "561.03-cd45",
+      "line_number": 3,
+      "target_phrase": "Porter",
+      "annotation_text": "Tavern/jury motif \"Porter\" on page 561 (\"The Bedroom Scene\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream. During this Age of Men (closing) phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
+      "categories": [
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
+      ],
+      "cross_references": [
+        "309.01",
+        "311.05",
+        "333.20",
+        "370.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
+        "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

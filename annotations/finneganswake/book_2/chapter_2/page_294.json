@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 2,
+  "page_number": 294,
+  "annotations": [
+    {
+      "id": "294.02-2226",
+      "line_number": 2,
+      "target_phrase": "wall",
+      "annotation_text": "Fall/resurrection motif \"wall\" on page 294 (\"The Night Lessons\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden — all converge within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. The comic-cosmic Fall during the Age of Heroes phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.15",
+        "004.14",
+        "023.05",
+        "044.20"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1",
+        "FinnegansWeb: The Fall motif. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "294.05-1621",
+      "line_number": 5,
+      "target_phrase": "The Primal Scene on the Slate",
+      "annotation_text": "Mathematical initiation (294.05): Dolph (Shem) uses the geometric diagram on his slate to reveal to Kev (Shaun) the anatomical reality of parental intercourse and mother ALP's vulva, shattering Victorian filial innocence.",
+      "categories": [
+        "primal-scene",
+        "sexuality",
+        "shem-and-shaun",
+        "night-lessons"
+      ],
+      "cross_references": [
+        "293.01",
+        "294.12",
+        "295.10"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "294.11-1c45",
+      "line_number": 11,
+      "target_phrase": "Swift",
+      "annotation_text": "Swiftian presence \"Swift\" on page 294 (\"The Night Lessons\"): the Dean of St. Patrick's Cathedral haunts this passage within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. His dual lovers Stella and Vanessa mirror Issy's split personalities, while his savage satire infuses the Age of Heroes dream with political and scatological ferocity.",
+      "categories": [
+        "jonathan-swift",
+        "dublin-history",
+        "eighteenth-century",
+        "satire"
+      ],
+      "cross_references": [
+        "140.08",
+        "160.06",
+        "229.01",
+        "292.28"
+      ],
+      "sources": [
+        "Swift, Jonathan. Gulliver's Travels. https://www.gutenberg.org/ebooks/829",
+        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre",
+        "FWEET: Swift concordance. https://www.fweet.org",
+        "Ricorso.net: Jonathan Swift. https://www.ricorso.net"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "294.12-4f99",
+      "line_number": 12,
+      "target_phrase": "maternal anatomy",
+      "annotation_text": "Fluvial anatomy (294.12): the two intersecting circles represent ALP's thighs/buttocks, while the central vesica piscis represents her womb and the muddy mouth of the Liffey where life originates.",
+      "categories": [
+        "anatomy",
+        "river-liffey",
+        "alp",
+        "symbolism"
+      ],
+      "cross_references": [
+        "196.01",
+        "293.08",
+        "294.05"
+      ],
+      "sources": [
+        "FWEET: Geometry entries. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "294.14-608f",
+      "line_number": 14,
+      "target_phrase": "Monks",
+      "annotation_text": "Book of Kells motif \"Monks\" on page 294 (\"The Night Lessons\"): Joyce equates the Wake's labyrinthine text with the 8th-century illuminated Gospel at Trinity College Dublin within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. During this Age of Heroes phase, the monastic scribe and the barnyard Hen both decode divine messages from material surfaces.",
+      "categories": [
+        "book-of-kells",
+        "manuscript-culture",
+        "celtic-art",
+        "epigraphy"
+      ],
+      "cross_references": [
+        "104.01",
+        "107.08",
+        "119.10",
+        "122.22"
+      ],
+      "sources": [
+        "Trinity College Dublin: The Book of Kells Online. https://digitalcollections.tcd.ie/concern/works/hm50tr726",
+        "Sullivan, Sir Edward. The Book of Kells. https://www.gutenberg.org/ebooks/16436",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Book of Kells concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "294.17-7fcd",
+      "line_number": 17,
+      "target_phrase": "thunder",
+      "annotation_text": "Viconian marker \"thunder\" on page 294 (\"The Night Lessons\"): Giambattista Vico's cyclical philosophy — divine, heroic, and human ages followed by thundering ricorso — structures this passage within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. The current Age of Heroes phase shapes the language, institutional imagery, and historical echoes of the dream.",
+      "categories": [
+        "vico",
+        "ricorso",
+        "philosophy-of-history",
+        "giambattista-vico"
+      ],
+      "cross_references": [
+        "003.02",
+        "032.05",
+        "151.10",
+        "260.05"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova. https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel. Dante... Bruno. Vico.. Joyce. https://archive.org/details/ourexagminationr0000unse",
+        "Ricorso.net: Viconian Structure in FW. https://www.ricorso.net",
+        "FinnegansWeb: Vico's Cycles. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "294.19-3bf0",
+      "line_number": 19,
+      "target_phrase": "daughter",
+      "annotation_text": "Issy/daughter figure \"daughter\" on page 294 (\"The Night Lessons\"): the narcissistic mirror-daughter, modeled on Isolde and Swift's dual muses Stella and Vanessa, appears here within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. Her prismatic splitting into twenty-eight Rainbow Girls reflects the cycle's Age of Heroes phase through youthful seduction and self-reflection.",
+      "categories": [
+        "issy",
+        "mirror-twin",
+        "tristan-and-isolde",
+        "psychology"
+      ],
+      "cross_references": [
+        "143.28",
+        "226.01",
+        "248.01",
+        "279.01"
+      ],
+      "sources": [
+        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Genetic Joyce Studies: Issy notebooks. https://www.geneticjoycestudies.org",
+        "FWEET: Issy / Isolde concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "294.20-29b6",
+      "line_number": 20,
+      "target_phrase": "strip of filial innocence",
+      "annotation_text": "Loss of innocence (294.20): Shaun/Kev's moral outrage as he realizes that abstract Euclidean geometry masks physical biological sexuality, triggering fraternal fury.",
+      "categories": [
+        "innocence",
+        "conflict",
+        "shaun",
+        "psychology"
+      ],
+      "cross_references": [
+        "294.05",
+        "295.10"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 2,
+  "page_number": 308,
+  "annotations": [
+    {
+      "id": "308.01-5279",
+      "line_number": 1,
+      "target_phrase": "Xenophon, Pantocracy. Bimutualism.",
+      "annotation_text": "Page 308 opens Book 2, Chapter 2 (\"The Night Lessons\") during the Age of Heroes phase. This passage continues the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes, featuring Shem (Dolph), Shaun (Kev), Issy (footnotes). The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-2"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "308.04-685a",
+      "line_number": 4,
+      "target_phrase": "set",
+      "annotation_text": "Egyptian eschatology \"set\" on page 308 (\"The Night Lessons\"): within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Heroes passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
+      "categories": [
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
+      ],
+      "cross_references": [
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
+      ],
+      "sources": [
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "308.08-8e09",
+      "line_number": 8,
+      "target_phrase": "NIGHTLETTER With best",
+      "annotation_text": "Mid-page polysemic node on page 308 (\"The Night Lessons\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

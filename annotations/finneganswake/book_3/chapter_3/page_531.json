@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 3,
+  "chapter": 3,
+  "page_number": 531,
+  "annotations": [
+    {
+      "id": "531.26-8545",
+      "line_number": 26,
+      "target_phrase": "tap",
+      "annotation_text": "Tavern/jury motif \"tap\" on page 531 (\"The Inquest of Yawn\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. During this Age of Men phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
+      "categories": [
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
+      ],
+      "cross_references": [
+        "309.01",
+        "311.05",
+        "333.20",
+        "370.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
+        "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "531.29-564e",
+      "line_number": 29,
+      "target_phrase": "letter",
+      "annotation_text": "The Letter motif \"letter\" on page 531 (\"The Inquest of Yawn\"): ALP's mysterious document — scratched from the midden by Biddy Doran the Hen — represents the genesis of all writing within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. During this Age of Men phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "104.01",
+        "107.26",
+        "111.01",
+        "113.20"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net",
+        "Finwake.com: Chapter I.5 annotations. http://www.finwake.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

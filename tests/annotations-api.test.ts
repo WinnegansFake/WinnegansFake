@@ -5,7 +5,7 @@ import { Validator } from 'jsonschema';
 
 const REPO_ROOT = path.resolve(__dirname, '..');
 const SCHEMA_PATH = path.join(REPO_ROOT, 'schemas', 'page-annotation.schema.json');
-const SAMPLE_PAGE_PATH = path.join(REPO_ROOT, 'annotations', 'book_1', 'chapter_1', 'page_003.json');
+const SAMPLE_PAGE_PATH = path.join(REPO_ROOT, 'annotations', 'finneganswake', 'book_1', 'chapter_1', 'page_003.json');
 
 describe('Annotations Schema & Validation', () => {
   it('should validate page_003.json against schemas/page-annotation.schema.json', () => {

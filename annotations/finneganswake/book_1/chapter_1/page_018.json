@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 1,
+  "page_number": 18,
+  "annotations": [
+    {
+      "id": "018.01-97f0",
+      "line_number": 1,
+      "target_phrase": "Jute. 'Zmorde! Mutt.",
+      "annotation_text": "Page 18 opens Book 1, Chapter 1 (\"The Fall of Finnegan\") during the Age of Gods (Theocratic) phase. This passage continues the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape, featuring HCE, Finn MacCool, Mutt and Jute. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "018.14-50a9",
+      "line_number": 14,
+      "target_phrase": "meandertale, aloss again,",
+      "annotation_text": "Mid-page polysemic node on page 18 (\"The Fall of Finnegan\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods (Theocratic) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "018.26-01e9",
+      "line_number": 26,
+      "target_phrase": "dump",
+      "annotation_text": "The Letter motif \"dump\" on page 18 (\"The Fall of Finnegan\"): ALP's mysterious document — scratched from the midden by Biddy Doran the Hen — represents the genesis of all writing within the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape. During this Age of Gods (Theocratic) phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "104.01",
+        "107.26",
+        "111.01",
+        "113.20"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net",
+        "Finwake.com: Chapter I.5 annotations. http://www.finwake.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

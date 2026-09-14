@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 3,
+  "page_number": 332,
+  "annotations": [
+    {
+      "id": "332.01-899a",
+      "line_number": 1,
+      "target_phrase": "Snip snap snoody.",
+      "annotation_text": "Page 332 opens Book 2, Chapter 3 (\"The Tavern\") during the Age of Heroes phase. This passage continues HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging, featuring HCE, the Twelve Customers, Butt and Taff. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-2"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "332.06-aa54",
+      "line_number": 6,
+      "target_phrase": "aghmonganmacmacmacwhackfalltherdebblenonthedubblandadd",
+      "annotation_text": "Polysyllabic thunderclap on page 332 (\"The Tavern\"): one of ten 100-letter words synthesizing thunder across world languages, signaling a Viconian cataclysm within HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging. This divine acoustic blast — fusing Hindi, Greek, Latin, French, Italian, Irish, and Norse roots — marks a civilizational transition in the Age of Heroes phase.",
+      "categories": [
+        "thunderclap",
+        "vico",
+        "voice-of-god",
+        "onomatopoeia"
+      ],
+      "cross_references": [
+        "003.15",
+        "023.05",
+        "044.20",
+        "090.31"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (On the Thunder). https://plato.stanford.edu/entries/vico/",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FinnegansWeb: Thunderwords Guide. https://www.finnegansweb.com",
+        "FWEET: 100-letter Thunder Words. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "332.17-799b",
+      "line_number": 17,
+      "target_phrase": "gue=\"\" kaemper=\"\" daemper=\"\"",
+      "annotation_text": "Mid-page polysemic node on page 332 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

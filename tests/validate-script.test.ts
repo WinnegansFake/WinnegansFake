@@ -21,7 +21,7 @@ describe('validate.js CLI & module checks', () => {
   });
 
   it('should validate a single file via node validate.js --path', () => {
-    const output = execSync('node validate.js --path annotations/book_1/chapter_1/page_003.json', {
+    const output = execSync('node validate.js --path annotations/finneganswake/book_1/chapter_1/page_003.json', {
       cwd: REPO_ROOT,
       encoding: 'utf-8',
     });
@@ -30,7 +30,7 @@ describe('validate.js CLI & module checks', () => {
   });
 
   it('should return errors for invalid directory conventions or book mismatches', () => {
-    const dummyPath = path.join(REPO_ROOT, 'annotations', 'book_1', 'chapter_1', 'page_999.json');
+    const dummyPath = path.join(REPO_ROOT, 'annotations', 'finneganswake', 'book_1', 'chapter_1', 'page_999.json');
     const errors = validateFile(dummyPath, validator, schema);
     expect(errors.length).toBeGreaterThan(0);
   });

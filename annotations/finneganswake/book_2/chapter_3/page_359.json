@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 3,
+  "page_number": 359,
+  "annotations": [
+    {
+      "id": "359.01-f23c",
+      "line_number": 1,
+      "target_phrase": "hod",
+      "annotation_text": "HCE manifestation \"hod\" on page 359 within \"The Tavern\": here the universal father-figure Humphrey Chimpden Earwicker appears in the context of HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging. During this Age of Heroes phase, HCE embodies the patriarch whose guilt, grandeur, and fall drive the cyclical dream forward.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist",
+        "archetype"
+      ],
+      "cross_references": [
+        "003.16",
+        "030.01",
+        "033.24",
+        "075.12"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "FWEET: HCE concordance entries. https://www.fweet.org",
+        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "359.28-5dcf",
+      "line_number": 28,
+      "target_phrase": "swift",
+      "annotation_text": "Swiftian presence \"swift\" on page 359 (\"The Tavern\"): the Dean of St. Patrick's Cathedral haunts this passage within HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging. His dual lovers Stella and Vanessa mirror Issy's split personalities, while his savage satire infuses the Age of Heroes dream with political and scatological ferocity.",
+      "categories": [
+        "jonathan-swift",
+        "dublin-history",
+        "eighteenth-century",
+        "satire"
+      ],
+      "cross_references": [
+        "140.08",
+        "160.06",
+        "229.01",
+        "292.28"
+      ],
+      "sources": [
+        "Swift, Jonathan. Gulliver's Travels. https://www.gutenberg.org/ebooks/829",
+        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre",
+        "FWEET: Swift concordance. https://www.fweet.org",
+        "Ricorso.net: Jonathan Swift. https://www.ricorso.net"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

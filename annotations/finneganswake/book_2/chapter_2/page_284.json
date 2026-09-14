@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 2,
+  "page_number": 284,
+  "annotations": [
+    {
+      "id": "284.02-f515",
+      "line_number": 2,
+      "target_phrase": "hce",
+      "annotation_text": "HCE manifestation \"hce\" on page 284 within \"The Night Lessons\": here the universal father-figure Humphrey Chimpden Earwicker appears in the context of the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. During this Age of Heroes phase, HCE embodies the patriarch whose guilt, grandeur, and fall drive the cyclical dream forward.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist",
+        "archetype"
+      ],
+      "cross_references": [
+        "003.16",
+        "030.01",
+        "033.24",
+        "075.12"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "FWEET: HCE concordance entries. https://www.fweet.org",
+        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "284.24-67ea",
+      "line_number": 24,
+      "target_phrase": "daughter",
+      "annotation_text": "Issy/daughter figure \"daughter\" on page 284 (\"The Night Lessons\"): the narcissistic mirror-daughter, modeled on Isolde and Swift's dual muses Stella and Vanessa, appears here within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. Her prismatic splitting into twenty-eight Rainbow Girls reflects the cycle's Age of Heroes phase through youthful seduction and self-reflection.",
+      "categories": [
+        "issy",
+        "mirror-twin",
+        "tristan-and-isolde",
+        "psychology"
+      ],
+      "cross_references": [
+        "143.28",
+        "226.01",
+        "248.01",
+        "279.01"
+      ],
+      "sources": [
+        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Genetic Joyce Studies: Issy notebooks. https://www.geneticjoycestudies.org",
+        "FWEET: Issy / Isolde concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

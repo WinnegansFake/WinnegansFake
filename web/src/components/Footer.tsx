@@ -53,6 +53,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/bookclub" className="hover:text-emerald-300 transition-colors flex items-center space-x-1.5">
+                  <span className="text-emerald-400">&bull;</span>
+                  <span className="font-medium text-slate-300">Start a Book Club</span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/contribute" className="hover:text-emerald-300 transition-colors">
                   How to Contribute Annotations (PRs)
                 </Link>

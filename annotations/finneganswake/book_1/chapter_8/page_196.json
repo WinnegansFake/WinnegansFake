@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 8,
+  "page_number": 196,
+  "annotations": [
+    {
+      "id": "196.01-bc6f",
+      "line_number": 1,
+      "target_phrase": "O tell me all",
+      "annotation_text": "The famous musical opening of the ALP chapter. The washerwomen demand the full story of Anna Livia, initiating a rhythmic, flowing dialogue that mimics a river.",
+      "categories": [
+        "alp",
+        "water",
+        "music"
+      ],
+      "cross_references": [
+        "196.10"
+      ],
+      "sources": [
+        "FWEET. http://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "line_number": 1,
+      "target_phrase": "O tell me all about",
+      "annotation_text": "The opening invocation mimics the gossipy chatter of the two washerwomen washing clothes by the Liffey, initiating the 'sounddance' of the chapter.",
+      "categories": [
+        "character-dialogue",
+        "rhythm",
+        "river-motif"
+      ],
+      "cross_references": [
+        "215.01"
+      ],
+      "sources": [
+        "https://www.fweet.org/cgi-bin/fw_grep.cgi?srch=tell+me+all",
+        "https://finnegansweb.com/wiki/Anna_Livia_Plurabelle",
+        "https://lithub.com/james-joyce-and-the-river-liffey/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "196.01-f106"
+    },
+    {
+      "line_number": 2,
+      "target_phrase": "Anna Livia! I want to hear",
+      "annotation_text": "Anna Livia Plurabelle represents the River Liffey and the eternal feminine archetype. This chapter was the first excerpt recorded by Joyce on phonograph in 1929.",
+      "categories": [
+        "character-alp",
+        "media-recording",
+        "history"
+      ],
+      "cross_references": [
+        "003.15",
+        "628.01"
+      ],
+      "sources": [
+        "https://www.fweet.org/cgi-bin/fw_grep.cgi?srch=anna+livia",
+        "https://finwake.com/1024chapter8/1024chap8.htm",
+        "https://scribd.com/doc/anna-livia-study"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "196.02-95f6"
+    },
+    {
+      "line_number": 3,
+      "target_phrase": "Well, you know Anna Livia?",
+      "annotation_text": "The response establishes the dialogic form of the chapter, where history is recounted through the mundane activity of washing clothes, transforming into myth.",
+      "categories": [
+        "mythology",
+        "character-dialogue"
+      ],
+      "cross_references": [
+        "196.01"
+      ],
+      "sources": [
+        "https://editura.mttlc.ro/joyce-lexicons.html",
+        "https://finnegansweb.com/wiki/Washerwomen"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "196.03-c215"
+    },
+    {
+      "line_number": 4,
+      "target_phrase": "Yes, of course",
+      "annotation_text": "The familiar tone masks the vast geographical and historical scope of the chapter, which contains over a thousand hidden river names worldwide.",
+      "categories": [
+        "river-motif",
+        "geography"
+      ],
+      "cross_references": [
+        "200.01"
+      ],
+      "sources": [
+        "https://finwake.com/1024chapter8/1024chap8.htm",
+        "https://lithub.com/james-joyce-and-the-river-liffey/",
+        "https://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "196.04-39dc"
+    },
+    {
+      "id": "196.05-7439",
+      "line_number": 5,
+      "target_phrase": "scrubbing the muddy banks",
+      "annotation_text": "The physical labor of the washerwomen. They clean the dirty linen of HCE, metaphorically airing his dirty laundry and washing away his sins in the Liffey.",
+      "categories": [
+        "washing",
+        "liffey",
+        "sin"
+      ],
+      "cross_references": [
+        "196.15",
+        "044.14"
+      ],
+      "sources": [
+        "John Gordon's Finnegans Blog. http://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "line_number": 5,
+      "target_phrase": "we all know Anna Livia.",
+      "annotation_text": "Universalizes ALP, connecting her to all rivers and all mothers, reflecting the 'plurabelle' (many-beautiful) nature of her character.",
+      "categories": [
+        "character-alp",
+        "universalism"
+      ],
+      "cross_references": [
+        "104.01"
+      ],
+      "sources": [
+        "https://scribd.com/doc/anna-livia-study",
+        "https://finnegansweb.com/wiki/Anna_Livia_Plurabelle"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "196.05-d46e"
+    },
+    {
+      "line_number": 6,
+      "target_phrase": "Tell me all.",
+      "annotation_text": "The repeated demand for knowledge parallels the reader's quest to understand the Wake itself, driven by curiosity about the archetypal parents.",
+      "categories": [
+        "reader-address",
+        "motif-quest"
+      ],
+      "cross_references": [
+        "196.01"
+      ],
+      "sources": [
+        "https://www.fweet.org/cgi-bin/fw_grep.cgi?srch=tell+me+all",
+        "https://editura.mttlc.ro/joyce-lexicons.html",
+        "https://finwake.com/1024chapter8/1024chap8.htm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "196.06-3683"
+    },
+    {
+      "line_number": 7,
+      "target_phrase": "Tell me now.",
+      "annotation_text": "The urgency of the washerwomen's gossip reflects the flowing passage of time and the flowing of the river before it meets the sea.",
+      "categories": [
+        "time-theme",
+        "river-motif"
+      ],
+      "cross_references": [
+        "215.01",
+        "628.15"
+      ],
+      "sources": [
+        "https://lithub.com/james-joyce-and-the-river-liffey/",
+        "https://finnegansweb.com/wiki/Time",
+        "https://scribd.com/doc/anna-livia-study"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "196.07-a82d"
+    },
+    {
+      "line_number": 8,
+      "target_phrase": "You'll die when you hear.",
+      "annotation_text": "A colloquialism predicting astonishment, subtly linking the act of hearing the complete truth of the Wake to the theme of death and resurrection.",
+      "categories": [
+        "colloquialism",
+        "death-and-resurrection"
+      ],
+      "cross_references": [
+        "003.15",
+        "044.20"
+      ],
+      "sources": [
+        "https://www.fweet.org/",
+        "https://finwake.com/1024chapter8/1024chap8.htm",
+        "https://editura.mttlc.ro/joyce-lexicons.html"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "196.08-98c7"
+    },
+    {
+      "id": "196.10-cc6e",
+      "line_number": 10,
+      "target_phrase": "Anna Livia",
+      "annotation_text": "The personification of the River Liffey and the eternal feminine principle. She is the mother who absorbs the filth of the world and continually renews herself.",
+      "categories": [
+        "alp",
+        "liffey"
+      ],
+      "cross_references": [
+        "196.01",
+        "104.01"
+      ],
+      "sources": [
+        "JJDA. http://www.jjda.ie/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "196.15-dcc1",
+      "line_number": 15,
+      "target_phrase": "dirty linen",
+      "annotation_text": "The manifestation of HCE's guilt. The gossip from chapter 2 is now embedded in the fabric of the clothes, which the women must interpret and clean.",
+      "categories": [
+        "guilt",
+        "gossip"
+      ],
+      "cross_references": [
+        "044.02",
+        "196.05"
+      ],
+      "sources": [
+        "Mark Troy's Mummeries of Resurrection. http://rosenlake.net/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "196.21-c71d",
+      "line_number": 21,
+      "target_phrase": "Ouse and Boyne",
+      "annotation_text": "Two of the over 500 river names woven into the text. The inclusion of global rivers universalizes ALP, making her not just the Liffey, but all waters of the earth.",
+      "categories": [
+        "rivers",
+        "geography"
+      ],
+      "cross_references": [
+        "196.10"
+      ],
+      "sources": [
+        "Mink's Gazetteer. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "196.25-ae25",
+      "line_number": 25,
+      "target_phrase": "chattering like stones",
+      "annotation_text": "The sound of the women's voices blending with the sound of the river over rocks. The boundary between human speech and natural phenomena dissolves.",
+      "categories": [
+        "sound",
+        "nature"
+      ],
+      "cross_references": [
+        "196.01"
+      ],
+      "sources": [
+        "FWEET. http://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "196.30-9ba2",
+      "line_number": 30,
+      "target_phrase": "who is he",
+      "annotation_text": "The recurring question about HCE's identity. Even as they wash his clothes, the patriarch remains an ambiguous, shadowy figure in the minds of the people.",
+      "categories": [
+        "hce",
+        "identity"
+      ],
+      "cross_references": [
+        "196.15"
+      ],
+      "sources": [
+        "Genetic Joyce Studies. http://www.geneticjoycestudies.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "196.35-f20a",
+      "line_number": 35,
+      "target_phrase": "twilight falling",
+      "annotation_text": "The approaching end of the day and the fading of the women's voices. This prefigures their ultimate transformation into a tree and a stone at the chapter's end.",
+      "categories": [
+        "dusk",
+        "transformation"
+      ],
+      "cross_references": [
+        "196.25"
+      ],
+      "sources": [
+        "finwake.com. http://finwake.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

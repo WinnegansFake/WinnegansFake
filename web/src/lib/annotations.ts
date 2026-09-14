@@ -21,6 +21,7 @@ export interface AnnotationItem {
 
 export interface PageAnnotationsData {
   schema_version: string;
+  work?: string;
   book: number;
   chapter: number;
   page_number: number;
@@ -54,7 +55,7 @@ export function getBookAndChapter(page: number): { book: number; chapter: number
 export function getAnnotationFilePath(page: number): string {
   const { book, chapter } = getBookAndChapter(page);
   const paddedPage = String(page).padStart(3, '0');
-  return path.join(ANNOTATIONS_DIR, `book_${book}`, `chapter_${chapter}`, `page_${paddedPage}.json`);
+  return path.join(ANNOTATIONS_DIR, 'finneganswake', `book_${book}`, `chapter_${chapter}`, `page_${paddedPage}.json`);
 }
 
 export async function readPageAnnotations(page: number): Promise<PageAnnotationsData> {
@@ -68,6 +69,7 @@ export async function readPageAnnotations(page: number): Promise<PageAnnotations
     // If file does not exist yet, return empty template
     return {
       schema_version: '1.0.0',
+      work: 'finneganswake',
       book,
       chapter,
       page_number: page,

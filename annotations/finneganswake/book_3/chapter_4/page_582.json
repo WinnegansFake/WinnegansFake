@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 3,
+  "chapter": 4,
+  "page_number": 582,
+  "annotations": [
+    {
+      "id": "582.01-4159",
+      "line_number": 1,
+      "target_phrase": "begottom. wherefore, tearing",
+      "annotation_text": "Page 582 opens Book 3, Chapter 4 (\"The Bedroom Scene\") during the Age of Men (closing) phase. This passage continues HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream, featuring HCE, ALP, Shem, Shaun, Issy. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-3"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "582.16-ed3f",
+      "line_number": 16,
+      "target_phrase": "larrikins postface that",
+      "annotation_text": "Mid-page polysemic node on page 582 (\"The Bedroom Scene\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men (closing) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "582.23-3af1",
+      "line_number": 23,
+      "target_phrase": "Patrick",
+      "annotation_text": "Celtic/mythological figure \"Patrick\" on page 582 (\"The Bedroom Scene\"): invoking the ancient Fianna cycle and early Irish Christianity within HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream. During the Age of Men (closing) phase, this mythic presence grounds the universal dream in Ireland's heroic past, linking Finn MacCool's giant body to the Dublin landscape.",
+      "categories": [
+        "irish-mythology",
+        "celtic-lore",
+        "folklore",
+        "saints"
+      ],
+      "cross_references": [
+        "003.04",
+        "030.14",
+        "080.05",
+        "139.14"
+      ],
+      "sources": [
+        "MacKillop, James. Dictionary of Celtic Mythology. https://www.oxfordreference.com",
+        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465",
+        "O'Grady, Standish. Silva Gadelica. https://archive.org/details/silvagadelicaiix01ograuoft",
+        "O'Hehir, Brendan. A Gaelic Lexicon for Finnegans Wake. https://archive.org/details/gaeliclexiconfor0000oheh"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

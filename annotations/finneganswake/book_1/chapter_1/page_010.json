@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 1,
+  "page_number": 10,
+  "annotations": [
+    {
+      "id": "010.02-ef3f",
+      "line_number": 2,
+      "target_phrase": "crossgunn",
+      "annotation_text": "The 'crossgunn' evokes the battle crossfire while simultaneously hinting at crossed legs or sexual entanglement, continuing the overlay of the Waterloo battle onto a sexual encounter.",
+      "categories": [
+        "battle",
+        "sexuality",
+        "waterloo"
+      ],
+      "cross_references": [
+        "009.04"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.06-99f6",
+      "line_number": 6,
+      "target_phrase": "ruse",
+      "annotation_text": "Willingdone's 'ruse' refers to his tactical maneuvers at Waterloo, but also the general deceptiveness of history. It hints at the peeping-tom nature of his telescope use.",
+      "categories": [
+        "voyeurism",
+        "waterloo"
+      ],
+      "cross_references": [
+        "009.06"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.11-cf06",
+      "line_number": 11,
+      "target_phrase": "cambronne",
+      "annotation_text": "A veiled reference to General Cambronne's famous response 'Merde!' at Waterloo. In the Wake, this becomes part of the thunderous collapse of order, bringing the high-flown military rhetoric down to the scatalogical.",
+      "categories": [
+        "waterloo",
+        "scatology",
+        "french"
+      ],
+      "cross_references": [
+        "003.15"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.15-68d8",
+      "line_number": 15,
+      "target_phrase": "megaphog",
+      "annotation_text": "The megaphone used by the combatants (or the museum guide) blasts commands. It echoes the voice of God or the thunderclap that initially felled Finnegan.",
+      "categories": [
+        "thunderclap",
+        "communication"
+      ],
+      "cross_references": [
+        "003.15",
+        "113.09"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.18-8842",
+      "line_number": 18,
+      "target_phrase": "magpies",
+      "annotation_text": "The magpies parallel the two jinnies/girls in the park. Birds frequently act as messengers or omens of the female presence (ALP) observing the male downfall.",
+      "categories": [
+        "birds",
+        "alp",
+        "primal-scene"
+      ],
+      "cross_references": [
+        "009.04",
+        "196.01"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.22-cb28",
+      "line_number": 22,
+      "target_phrase": "seeboy",
+      "annotation_text": "The 'seeboy' (sepoy) introduces the Indian mutiny into the Waterloo schema. The Museyroom collapses all of Britain's imperial conflicts into a single continuous diorama of conquest and rebellion.",
+      "categories": [
+        "imperialism",
+        "rebellion"
+      ],
+      "cross_references": [
+        "009.09"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.25-fe21",
+      "line_number": 25,
+      "target_phrase": "bloodied",
+      "annotation_text": "The bloody aftermath of the battle. The physical violence of history is presented as a slapstick comedy or a childish brawl in the Phoenix Park mud.",
+      "categories": [
+        "waterloo",
+        "violence"
+      ],
+      "cross_references": [
+        "008.10"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.29-1a4c",
+      "line_number": 29,
+      "target_phrase": "pennon",
+      "annotation_text": "The military pennon or flag. It also links to Shem the Penman—the writer who must record this chaotic history, turning the sword into the pen.",
+      "categories": [
+        "shem",
+        "writing",
+        "military"
+      ],
+      "cross_references": [
+        "169.01"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Blog: Page 10. https://johngordonfinnegan.weebly.com/page-10.html",
+        "finnegansweb.com (Museyroom analysis). http://www.finnegansweb.com/wiki/index.php/Page_10",
+        "FWEET: Finnegans Wake Extensible Elucidation Treasury. http://fweet.org/",
+        "Mink's Gazetteer of Finnegans Wake. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

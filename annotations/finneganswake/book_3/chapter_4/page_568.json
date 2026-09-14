@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 3,
+  "chapter": 4,
+  "page_number": 568,
+  "annotations": [
+    {
+      "id": "568.16-df5c",
+      "line_number": 16,
+      "target_phrase": "hod",
+      "annotation_text": "HCE manifestation \"hod\" on page 568 within \"The Bedroom Scene\": here the universal father-figure Humphrey Chimpden Earwicker appears in the context of HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream. During this Age of Men (closing) phase, HCE embodies the patriarch whose guilt, grandeur, and fall drive the cyclical dream forward.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist",
+        "archetype"
+      ],
+      "cross_references": [
+        "003.16",
+        "030.01",
+        "033.24",
+        "075.12"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "FWEET: HCE concordance entries. https://www.fweet.org",
+        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "568.26-3710",
+      "line_number": 26,
+      "target_phrase": "swift",
+      "annotation_text": "Swiftian presence \"swift\" on page 568 (\"The Bedroom Scene\"): the Dean of St. Patrick's Cathedral haunts this passage within HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream. His dual lovers Stella and Vanessa mirror Issy's split personalities, while his savage satire infuses the Age of Men (closing) dream with political and scatological ferocity.",
+      "categories": [
+        "jonathan-swift",
+        "dublin-history",
+        "eighteenth-century",
+        "satire"
+      ],
+      "cross_references": [
+        "140.08",
+        "160.06",
+        "229.01",
+        "292.28"
+      ],
+      "sources": [
+        "Swift, Jonathan. Gulliver's Travels. https://www.gutenberg.org/ebooks/829",
+        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre",
+        "FWEET: Swift concordance. https://www.fweet.org",
+        "Ricorso.net: Jonathan Swift. https://www.ricorso.net"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "568.27-9d20",
+      "line_number": 27,
+      "target_phrase": "vellum",
+      "annotation_text": "Book of Kells motif \"vellum\" on page 568 (\"The Bedroom Scene\"): Joyce equates the Wake's labyrinthine text with the 8th-century illuminated Gospel at Trinity College Dublin within HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream. During this Age of Men (closing) phase, the monastic scribe and the barnyard Hen both decode divine messages from material surfaces.",
+      "categories": [
+        "book-of-kells",
+        "manuscript-culture",
+        "celtic-art",
+        "epigraphy"
+      ],
+      "cross_references": [
+        "104.01",
+        "107.08",
+        "119.10",
+        "122.22"
+      ],
+      "sources": [
+        "Trinity College Dublin: The Book of Kells Online. https://digitalcollections.tcd.ie/concern/works/hm50tr726",
+        "Sullivan, Sir Edward. The Book of Kells. https://www.gutenberg.org/ebooks/16436",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Book of Kells concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "568.30-cb93",
+      "line_number": 30,
+      "target_phrase": "set",
+      "annotation_text": "Egyptian eschatology \"set\" on page 568 (\"The Bedroom Scene\"): within HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Men (closing) passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
+      "categories": [
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
+      ],
+      "cross_references": [
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
+      ],
+      "sources": [
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

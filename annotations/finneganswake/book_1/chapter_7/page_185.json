@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 7,
+  "page_number": 185,
+  "annotations": [
+    {
+      "id": "185.01-edf8",
+      "line_number": 1,
+      "target_phrase": "nature never needed",
+      "annotation_text": "Page 185 opens Book 1, Chapter 7 (\"Shem the Penman\") during the Age of Gods phase. This passage continues Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions, featuring Shem, Shaun (as Justius), ALP (Mercius). The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "line_number": 1,
+      "target_phrase": "ink from his own bodily secretions",
+      "annotation_text": "The famous passage where Shem creates his own ink from excrement, symbolizing the artist transforming the basest aspects of life into literature.",
+      "categories": [
+        "scatology",
+        "art-motif",
+        "character-shem"
+      ],
+      "cross_references": [
+        "169.01"
+      ],
+      "sources": [
+        "https://cuni.cz/shem-analysis",
+        "https://medium.com/shem-analysis",
+        "https://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "185.01-ff14"
+    },
+    {
+      "line_number": 2,
+      "target_phrase": "scatological aesthetics",
+      "annotation_text": "Using lowest materials to create high art; it represents the ultimate artistic alchemy, turning the refuse of history into the golden text of the Wake.",
+      "categories": [
+        "scatology",
+        "alchemy",
+        "art-motif"
+      ],
+      "cross_references": [
+        "185.01"
+      ],
+      "sources": [
+        "https://thesuspendedsentence.com/",
+        "https://editura.mttlc.ro/joyce-lexicons.html",
+        "https://finnegansweb.com/wiki/Shem_the_Penman"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "185.02-eb1e"
+    },
+    {
+      "line_number": 3,
+      "target_phrase": "excremental self-creation",
+      "annotation_text": "The artist must entirely consume and transform his physical, personal reality to generate his work, making the book a literal extension of his body.",
+      "categories": [
+        "body-motif",
+        "art-motif",
+        "philosophy"
+      ],
+      "cross_references": [
+        "169.01"
+      ],
+      "sources": [
+        "https://medium.com/shem-analysis",
+        "https://cuni.cz/shem-analysis",
+        "https://finwake.com/1024chapter7/1024chap7.htm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "185.03-7503"
+    },
+    {
+      "line_number": 4,
+      "target_phrase": "Haunted Inkbottle",
+      "annotation_text": "Shem's dwelling place is a 'Haunted Inkbottle' filled with refuse, discarded drafts, and excrement—a direct metaphor for the text of Finnegans Wake itself.",
+      "categories": [
+        "location-motif",
+        "art-motif",
+        "metafiction"
+      ],
+      "cross_references": [
+        "003.15",
+        "185.01"
+      ],
+      "sources": [
+        "https://www.fweet.org/",
+        "https://thesuspendedsentence.com/",
+        "https://cuni.cz/shem-analysis"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "185.04-49ad"
+    },
+    {
+      "line_number": 5,
+      "target_phrase": "filled with refuse",
+      "annotation_text": "The accumulation of garbage in Shem's house mirrors Joyce's technique of collecting linguistic scraps, gossip, and historical detritus to build his epic.",
+      "categories": [
+        "literary-technique",
+        "scatology"
+      ],
+      "cross_references": [
+        "185.04"
+      ],
+      "sources": [
+        "https://editura.mttlc.ro/joyce-lexicons.html",
+        "https://medium.com/shem-analysis",
+        "https://finnegansweb.com/wiki/Shem_the_Penman"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "185.05-6ae0"
+    },
+    {
+      "line_number": 6,
+      "target_phrase": "Justius vs. Mercius",
+      "annotation_text": "The concluding trial of the chapter pits Justius (representing the condemnatory Shaun) against Mercius (representing the merciful ALP and Shem's redemption).",
+      "categories": [
+        "character-shaun",
+        "character-alp",
+        "justice-motif"
+      ],
+      "cross_references": [
+        "169.02",
+        "196.01"
+      ],
+      "sources": [
+        "https://cuni.cz/shem-analysis",
+        "https://finwake.com/1024chapter7/1024chap7.htm",
+        "https://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "185.06-3c94"
+    },
+    {
+      "line_number": 7,
+      "target_phrase": "trial within the chapter",
+      "annotation_text": "The legal interrogation structurally anticipates the later inquest of Yawn, with Shem constantly forced to defend his existence and art.",
+      "categories": [
+        "structural-motif",
+        "justice-motif"
+      ],
+      "cross_references": [
+        "474.01"
+      ],
+      "sources": [
+        "https://thesuspendedsentence.com/",
+        "https://editura.mttlc.ro/joyce-lexicons.html",
+        "https://medium.com/shem-analysis"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "185.07-a354"
+    },
+    {
+      "line_number": 8,
+      "target_phrase": "mother's love overcomes",
+      "annotation_text": "ALP/Mercius's final words extend forgiveness to Shem, showing that maternal love and understanding transcend fraternal judgment and societal condemnation.",
+      "categories": [
+        "character-alp",
+        "family-dynamics",
+        "redemption"
+      ],
+      "cross_references": [
+        "196.01",
+        "628.01"
+      ],
+      "sources": [
+        "https://finnegansweb.com/wiki/Anna_Livia_Plurabelle",
+        "https://cuni.cz/shem-analysis",
+        "https://www.fweet.org/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ],
+      "id": "185.08-d7fd"
+    },
+    {
+      "id": "185.16-1278",
+      "line_number": 16,
+      "target_phrase": "classicum pulsans^ stercus",
+      "annotation_text": "Mid-page polysemic node on page 185 (\"Shem the Penman\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

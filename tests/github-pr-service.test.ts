@@ -29,12 +29,12 @@ describe('GitHub PR Service & Token Management', () => {
   };
 
   it('correctly maps page numbers to canonical repository JSON file paths', () => {
-    expect(getPageFilePath(3)).toBe('annotations/book_1/chapter_1/page_003.json');
-    expect(getPageFilePath(35)).toBe('annotations/book_1/chapter_2/page_035.json');
-    expect(getPageFilePath(104)).toBe('annotations/book_1/chapter_5/page_104.json');
-    expect(getPageFilePath(220)).toBe('annotations/book_2/chapter_1/page_220.json');
-    expect(getPageFilePath(400)).toBe('annotations/book_3/chapter_1/page_400.json');
-    expect(getPageFilePath(600)).toBe('annotations/book_4/chapter_1/page_600.json');
+    expect(getPageFilePath(3)).toBe('annotations/finneganswake/book_1/chapter_1/page_003.json');
+    expect(getPageFilePath(35)).toBe('annotations/finneganswake/book_1/chapter_2/page_035.json');
+    expect(getPageFilePath(104)).toBe('annotations/finneganswake/book_1/chapter_5/page_104.json');
+    expect(getPageFilePath(220)).toBe('annotations/finneganswake/book_2/chapter_1/page_220.json');
+    expect(getPageFilePath(400)).toBe('annotations/finneganswake/book_3/chapter_1/page_400.json');
+    expect(getPageFilePath(600)).toBe('annotations/finneganswake/book_4/chapter_1/page_600.json');
   });
 
   it('performs lossless UTF-8 Base64 encoding and decoding', () => {

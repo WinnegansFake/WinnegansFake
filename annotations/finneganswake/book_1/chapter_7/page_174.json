@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 7,
+  "page_number": 174,
+  "annotations": [
+    {
+      "id": "174.19-381b",
+      "line_number": 19,
+      "target_phrase": "night",
+      "annotation_text": "Oneiric dimension \"night\" on page 174 (\"Shem the Penman\"): the nocturnal consciousness surfaces within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. During this Age of Gods phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "174.24-0a38",
+      "line_number": 24,
+      "target_phrase": "counter",
+      "annotation_text": "Tavern/jury motif \"counter\" on page 174 (\"Shem the Penman\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. During this Age of Gods phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
+      "categories": [
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
+      ],
+      "cross_references": [
+        "309.01",
+        "311.05",
+        "333.20",
+        "370.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
+        "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

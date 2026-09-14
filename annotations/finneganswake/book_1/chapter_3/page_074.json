@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 3,
+  "page_number": 74,
+  "annotations": [
+    {
+      "id": "074.01-e130",
+      "line_number": 1,
+      "target_phrase": "honoured (some Finn,",
+      "annotation_text": "Page 74 opens Book 1, Chapter 3 (\"The Trial of HCE\") during the Age of Gods phase. This passage continues the public trial and persecution of HCE, the ballad of Hosty, and the testimony of witnesses, featuring HCE, the Twelve Jurors, Hosty. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "074.08-ef33",
+      "line_number": 8,
+      "target_phrase": "night",
+      "annotation_text": "Oneiric dimension \"night\" on page 74 (\"The Trial of HCE\"): the nocturnal consciousness surfaces within the public trial and persecution of HCE, the ballad of Hosty, and the testimony of witnesses. During this Age of Gods phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "074.08-02df",
+      "line_number": 8,
+      "target_phrase": "went there will",
+      "annotation_text": "Mid-page polysemic node on page 74 (\"The Trial of HCE\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

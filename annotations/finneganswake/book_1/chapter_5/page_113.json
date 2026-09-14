@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 5,
+  "page_number": 113,
+  "annotations": [
+    {
+      "id": "113.01-a16a",
+      "line_number": 1,
+      "target_phrase": "realise that dizzledazzle",
+      "annotation_text": "Page 113 opens Book 1, Chapter 5 (\"The Letter from the Midden\") during the Age of Gods phase. This passage continues Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis, featuring The Hen (Biddy Doran), ALP. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "113.08-bccb",
+      "line_number": 8,
+      "target_phrase": "likencehimaroundhersthemaggerbykinkinkankanwithdownmindlookingated",
+      "annotation_text": "Polysyllabic thunderclap on page 113 (\"The Letter from the Midden\"): one of ten 100-letter words synthesizing thunder across world languages, signaling a Viconian cataclysm within Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. This divine acoustic blast — fusing Hindi, Greek, Latin, French, Italian, Irish, and Norse roots — marks a civilizational transition in the Age of Gods phase.",
+      "categories": [
+        "thunderclap",
+        "vico",
+        "voice-of-god",
+        "onomatopoeia"
+      ],
+      "cross_references": [
+        "003.15",
+        "023.05",
+        "044.20",
+        "090.31"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova (On the Thunder). https://plato.stanford.edu/entries/vico/",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FinnegansWeb: Thunderwords Guide. https://www.finnegansweb.com",
+        "FWEET: 100-letter Thunder Words. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "113.16-06a2",
+      "line_number": 16,
+      "target_phrase": "Ysold, Mons held",
+      "annotation_text": "Mid-page polysemic node on page 113 (\"The Letter from the Midden\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

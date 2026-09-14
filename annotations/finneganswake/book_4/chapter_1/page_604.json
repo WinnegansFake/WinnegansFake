@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 4,
+  "chapter": 1,
+  "page_number": 604,
+  "annotations": [
+    {
+      "id": "604.02-9b66",
+      "line_number": 2,
+      "target_phrase": "Jerry",
+      "annotation_text": "Fraternal archetype \"Jerry\" on page 604 (\"The Ricorso — Dawn\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within dawn breaking over Dublin Bay, St. Kevin bathing at Glendalough, St. Patrick vs. the Archdruid Balkelly, ALP's dissolving final monologue into the sea. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Ricorso (The Return) phase.",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "604.15-b769",
+      "line_number": 15,
+      "target_phrase": "night",
+      "annotation_text": "Oneiric dimension \"night\" on page 604 (\"The Ricorso — Dawn\"): the nocturnal consciousness surfaces within dawn breaking over Dublin Bay, St. Kevin bathing at Glendalough, St. Patrick vs. the Archdruid Balkelly, ALP's dissolving final monologue into the sea. During this Ricorso (The Return) phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

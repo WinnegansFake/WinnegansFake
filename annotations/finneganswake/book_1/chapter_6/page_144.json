@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 6,
+  "page_number": 144,
+  "annotations": [
+    {
+      "id": "144.01-e8ad",
+      "line_number": 1,
+      "target_phrase": "make them look",
+      "annotation_text": "Page 144 opens Book 1, Chapter 6 (\"The Quiz Chapter\") during the Age of Gods phase. This passage continues twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones, featuring Shem, Shaun, Professor Jones, the Mookse, the Gripes. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "144.10-a565",
+      "line_number": 10,
+      "target_phrase": "belle alliance",
+      "annotation_text": "Wellington/Waterloo motif \"belle alliance\" on page 144 (\"The Quiz Chapter\"): the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" dramatize imperial warfare as domestic quarrel within twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones. Joyce collapses the Battle of Waterloo into the sibling rivalries and marital conflicts of the Age of Gods dream.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "008.09",
+        "009.01",
+        "010.01",
+        "011.01"
+      ],
+      "sources": [
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
+        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt",
+        "Mink, Louis O. A Finnegans Wake Gazetteer (Phoenix Park). https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: Wellington/Museyroom concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "144.16-8145",
+      "line_number": 16,
+      "target_phrase": "hold steady! pull.",
+      "annotation_text": "Mid-page polysemic node on page 144 (\"The Quiz Chapter\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

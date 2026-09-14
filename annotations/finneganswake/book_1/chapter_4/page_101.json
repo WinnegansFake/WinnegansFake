@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 4,
+  "page_number": 101,
+  "annotations": [
+    {
+      "id": "101.15-c994",
+      "line_number": 15,
+      "target_phrase": "Wall",
+      "annotation_text": "Fall/resurrection motif \"Wall\" on page 101 (\"The Burial of HCE\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden — all converge within the burial of the giant in the landscape, the archaeological mound, the Four Annalists surveying history. The comic-cosmic Fall during the Age of Gods (transition) phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.15",
+        "004.14",
+        "023.05",
+        "044.20"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1",
+        "FinnegansWeb: The Fall motif. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "101.25-4f62",
+      "line_number": 25,
+      "target_phrase": "waves",
+      "annotation_text": "Mamalujo signal \"waves\" on page 101 (\"The Burial of HCE\"): the Four Old Men — Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught — serve here as senile chroniclers and bedpost witnesses during the burial of the giant in the landscape, the archaeological mound, the Four Annalists surveying history. In this Age of Gods (transition) passage, they observe and record the dream's events as squawking gulls circling overhead.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "evangelists"
+      ],
+      "cross_references": [
+        "095.27",
+        "383.01",
+        "387.24",
+        "398.30"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc",
+        "FWEET: Mamalujo / Four Old Men concordance. https://www.fweet.org",
+        "Ricorso.net: James Joyce Critical Archive. https://www.ricorso.net"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

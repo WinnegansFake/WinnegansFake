@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 3,
+  "chapter": 4,
+  "page_number": 579,
+  "annotations": [
+    {
+      "id": "579.11-23d4",
+      "line_number": 11,
+      "target_phrase": "Monks",
+      "annotation_text": "Book of Kells motif \"Monks\" on page 579 (\"The Bedroom Scene\"): Joyce equates the Wake's labyrinthine text with the 8th-century illuminated Gospel at Trinity College Dublin within HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream. During this Age of Men (closing) phase, the monastic scribe and the barnyard Hen both decode divine messages from material surfaces.",
+      "categories": [
+        "book-of-kells",
+        "manuscript-culture",
+        "celtic-art",
+        "epigraphy"
+      ],
+      "cross_references": [
+        "104.01",
+        "107.08",
+        "119.10",
+        "122.22"
+      ],
+      "sources": [
+        "Trinity College Dublin: The Book of Kells Online. https://digitalcollections.tcd.ie/concern/works/hm50tr726",
+        "Sullivan, Sir Edward. The Book of Kells. https://www.gutenberg.org/ebooks/16436",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Book of Kells concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "579.15-5760",
+      "line_number": 15,
+      "target_phrase": "Bottle",
+      "annotation_text": "Tavern/jury motif \"Bottle\" on page 579 (\"The Bedroom Scene\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within HCE and ALP in bed, the children's cries, attempted sexual intercourse, domestic reality intruding on the cosmic dream. During this Age of Men (closing) phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
+      "categories": [
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
+      ],
+      "cross_references": [
+        "309.01",
+        "311.05",
+        "333.20",
+        "370.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
+        "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

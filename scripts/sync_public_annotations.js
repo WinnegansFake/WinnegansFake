@@ -31,14 +31,22 @@ function syncAnnotations() {
       } else if (ent.isFile() && ent.name.endsWith('.json')) {
         const rel = path.relative(SOURCE_DIR, full).split(path.sep).join('/');
         const isLegacyFW = rel.startsWith('book_');
-        const workId = isLegacyFW ? 'finnegans-wake' : rel.split('/')[0];
+        const rawWorkId = isLegacyFW ? 'finneganswake' : rel.split('/')[0];
+        const isFW = isLegacyFW || rawWorkId === 'finneganswake' || rawWorkId === 'finnegans-wake';
+        const workId = isFW ? 'finneganswake' : rawWorkId;
 
         workCounts[workId] = (workCounts[workId] || 0) + 1;
 
-        // 1. If legacy FW, also copy directly to web/public/annotations/page_PPP.json
-        if (isLegacyFW) {
+        // 1. If FW, copy directly to web/public/annotations/page_PPP.json and finnegans-wake/ for backward compat
+        if (isFW) {
           const destLegacy = path.join(TARGET_DIR, ent.name);
           fs.copyFileSync(full, destLegacy);
+
+          const fwHyphenDir = path.join(TARGET_DIR, 'finnegans-wake');
+          if (!fs.existsSync(fwHyphenDir)) {
+            fs.mkdirSync(fwHyphenDir, { recursive: true });
+          }
+          fs.copyFileSync(full, path.join(fwHyphenDir, ent.name));
         }
 
         // 2. Always copy to work-scoped destination: web/public/annotations/<workId>/page_PPP.json

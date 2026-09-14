@@ -344,7 +344,7 @@ pnpm index:epub"
           <div className="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2">
             <h4 className="font-semibold text-white text-xs font-mono">Annotation File Structure:</h4>
             <p className="text-xs text-slate-400">
-              Each page is stored under <code className="text-emerald-300">annotations/book_&lt;B&gt;/chapter_&lt;C&gt;/page_&lt;PPP&gt;.json</code>.
+              Each page is stored under <code className="text-emerald-300">annotations/&lt;title&gt;/book_&lt;B&gt;/chapter_&lt;C&gt;/page_&lt;PPP&gt;.json</code> (e.g. <code className="text-emerald-300">annotations/finneganswake/...</code>).
             </p>
             <CodeSnippet
               language="json"

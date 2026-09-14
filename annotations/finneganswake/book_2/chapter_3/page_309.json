@@ -1,0 +1,369 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 3,
+  "page_number": 309,
+  "annotations": [
+    {
+      "id": "309.01-95af",
+      "line_number": 1,
+      "target_phrase": "Arthur",
+      "annotation_text": "Reference to Guinness (Arthur Guinness) and King Arthur, establishing HCE as both a local publican and a mythic sovereign.",
+      "categories": [
+        "mythic-identity",
+        "brewing"
+      ],
+      "cross_references": [
+        "310.05"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.02-a04d1a7b",
+      "line_number": 2,
+      "target_phrase": "ship's husband",
+      "annotation_text": "The Ship's Husband represents Philip McCann, the godfather who recounted the original Norwegian Captain anecdote to John Joyce.",
+      "categories": [
+        "norwegian-captain",
+        "biography"
+      ],
+      "cross_references": [
+        "330.15",
+        "311.20"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.04-829c",
+      "line_number": 4,
+      "target_phrase": "behind the bar",
+      "annotation_text": "HCE's physical placement in his Chapelizod pub, acting as the motionless center around which the chaotic tavern tales orbit.",
+      "categories": [
+        "setting",
+        "hce-motif"
+      ],
+      "cross_references": [
+        "310.10"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.05-e6a62719",
+      "line_number": 5,
+      "target_phrase": "Pukkelsen",
+      "annotation_text": "The Captain is nicknamed Pukkelsen, highlighting his hunchbacked nature, tying him to the archetype of the misshapen invader.",
+      "categories": [
+        "norwegian-captain",
+        "hce-motif"
+      ],
+      "cross_references": [
+        "330.12",
+        "314.08"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.08-6c9a7507",
+      "line_number": 8,
+      "target_phrase": "Kersse the Tailor",
+      "annotation_text": "Introduces Kersse, whose name is a portmanteau of curse, coarse, and Norse. He embodies the native Irish resistance to the foreign interloper.",
+      "categories": [
+        "etymology",
+        "norwegian-captain"
+      ],
+      "cross_references": [
+        "330.08",
+        "315.10"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.11-6a2a",
+      "line_number": 11,
+      "target_phrase": "Norwegian Captain",
+      "annotation_text": "Introduction of the wandering sailor figure who brings tales of the sea into the enclosed, landlocked space of the tavern.",
+      "categories": [
+        "character-identity",
+        "sea-motif"
+      ],
+      "cross_references": [
+        "311.05"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.13-e634e7b2",
+      "line_number": 13,
+      "target_phrase": "ill-fitting suit",
+      "annotation_text": "The dispute over the suit's fit serves as a metaphor for the Scandinavian foreigner's profound struggle to assimilate into Irish identity.",
+      "categories": [
+        "metaphor",
+        "assimilation"
+      ],
+      "cross_references": [
+        "330.22",
+        "318.05"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.15-2a48",
+      "line_number": 15,
+      "target_phrase": "broadcasting",
+      "annotation_text": "The integration of modern radio technology as a medium for transmitting the collective unconscious and rumors about HCE.",
+      "categories": [
+        "technology",
+        "rumor-motif"
+      ],
+      "cross_references": [
+        "310.15"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.16-28069018",
+      "line_number": 16,
+      "target_phrase": "Viking invader",
+      "annotation_text": "HCE assumes the role of the Viking invader who, like the historical Normans, eventually became more Irish than the Irish themselves.",
+      "categories": [
+        "history",
+        "hce-motif"
+      ],
+      "cross_references": [
+        "330.25",
+        "320.10"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.19-da961241",
+      "line_number": 19,
+      "target_phrase": "Viconian cycle",
+      "annotation_text": "The tavern tales repeat with slight variations, demonstrating Vico's cyclical view of history operating on a microcosmic, localized scale.",
+      "categories": [
+        "vico",
+        "history"
+      ],
+      "cross_references": [
+        "003.15",
+        "330.18"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.21-6d6a",
+      "line_number": 21,
+      "target_phrase": "twelve",
+      "annotation_text": "The twelve customers who serve as both patrons of the pub and the judgmental jury condemning HCE's alleged crimes.",
+      "categories": [
+        "numerology",
+        "jury-motif"
+      ],
+      "cross_references": [
+        "311.12"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.23-dc151cc0",
+      "line_number": 23,
+      "target_phrase": "Scandinavian-inflected",
+      "annotation_text": "The narrative voice begins to adopt heavily Scandinavian-inflected vocabulary, reinforcing the maritime and Norse themes of the episode.",
+      "categories": [
+        "linguistics",
+        "scandinavian"
+      ],
+      "cross_references": [
+        "330.05",
+        "322.15"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.25-508c",
+      "line_number": 25,
+      "target_phrase": "drinking",
+      "annotation_text": "The communal act that fuels the dissemination of gossip and the distortion of narrative truth within the sprawling chapter.",
+      "categories": [
+        "pub-culture",
+        "rumor-motif"
+      ],
+      "cross_references": [
+        "310.25"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.27-4ed6671f",
+      "line_number": 27,
+      "target_phrase": "tailor's daughter",
+      "annotation_text": "Anticipates the eventual resolution where the Captain will marry the tailor's daughter, an avatar of ALP, completing his cultural integration.",
+      "categories": [
+        "alp-motif",
+        "marriage"
+      ],
+      "cross_references": [
+        "330.30",
+        "325.20"
+      ],
+      "sources": [
+        "finnegansweb.com. http://finnegansweb.com",
+        "The Suspended Sentence. http://thesuspendedsentence.com",
+        "Medium Analysis. https://medium.com",
+        "Wikipedia: Finnegans Wake. https://en.wikipedia.org/wiki/Finnegans_Wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.29-ac89",
+      "line_number": 29,
+      "target_phrase": "judging",
+      "annotation_text": "The pervasive atmosphere of guilt and trial that shadows HCE even in his own establishment, echoing his earlier inquests.",
+      "categories": [
+        "trial-motif",
+        "guilt"
+      ],
+      "cross_references": [
+        "048.01"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "309.34-cb88",
+      "line_number": 34,
+      "target_phrase": "Chapelizod",
+      "annotation_text": "The specific geographic location of the tavern, anchoring the mythic events in a real Dublin suburb associated with Tristan and Isolde.",
+      "categories": [
+        "geography",
+        "tristan-isolde"
+      ],
+      "cross_references": [
+        "383.05"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

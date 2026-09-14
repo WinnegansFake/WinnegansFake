@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 4,
+  "page_number": 393,
+  "annotations": [
+    {
+      "id": "393.02-1ced",
+      "line_number": 2,
+      "target_phrase": "Amen",
+      "annotation_text": "Liturgical echo \"Amen\" on page 393 (\"Tristan and Isolde\"): Catholic ritual, Latin prayer, and sacramental language weave through the voyage of Tristan and Isolde observed by the Four Old Men as seagulls, Wagnerian chromatic motifs, King Mark's displacement. Joyce fuses ecclesiastical solemnity with domestic banality during the Age of Heroes (closing) phase, treating the tavern counter as communion rail and the sleeping body as sacred vessel.",
+      "categories": [
+        "liturgy",
+        "biblical",
+        "latin",
+        "theology"
+      ],
+      "cross_references": [
+        "033.01",
+        "104.20",
+        "185.14",
+        "258.25"
+      ],
+      "sources": [
+        "The Latin Vulgate Bible. https://www.biblegateway.com/versions/Biblia-Sacra-Vulgata-VULGATE/",
+        "The Catholic Encyclopedia. https://www.newadvent.org/cathen/",
+        "Contemporary Literature Press: Classical Lexicon for FW. https://editura.mttlc.ro",
+        "Frazer, Sir James George. Folk-Lore in the Old Testament. https://archive.org/details/folkloreinoldtes01frazuoft"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "393.15-d327",
+      "line_number": 15,
+      "target_phrase": "night",
+      "annotation_text": "Oneiric dimension \"night\" on page 393 (\"Tristan and Isolde\"): the nocturnal consciousness surfaces within the voyage of Tristan and Isolde observed by the Four Old Men as seagulls, Wagnerian chromatic motifs, King Mark's displacement. During this Age of Heroes (closing) phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

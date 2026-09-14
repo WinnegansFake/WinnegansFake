@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 1,
+  "page_number": 16,
+  "annotations": [
+    {
+      "id": "016.01-f8ed",
+      "line_number": 1,
+      "target_phrase": "froriose. What quhare",
+      "annotation_text": "Page 16 opens Book 1, Chapter 1 (\"The Fall of Finnegan\") during the Age of Gods (Theocratic) phase. This passage continues the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape, featuring HCE, Finn MacCool, Mutt and Jute. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "016.02-82ac",
+      "line_number": 2,
+      "target_phrase": "battlefield of Clontarf",
+      "annotation_text": "Clontarf historical locus (016.02): the site of Brian Boru's climactic 1014 victory over the Norsemen. In Joyce's historiography, conqueror and native butcher one another only to decompose together and enrich the fertile Dublin soil.",
+      "categories": [
+        "clontarf",
+        "irish-history",
+        "brian-boru",
+        "vikings"
+      ],
+      "cross_references": [
+        "015.29",
+        "080.05",
+        "380.08"
+      ],
+      "sources": [
+        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt",
+        "O'Donovan, John. Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "016.10-e1ab",
+      "line_number": 10,
+      "target_phrase": "beseeking",
+      "annotation_text": "Portmanteau \"beseeking\" (016.10): beseeching (prayer/petition) + besieging (military encirclement). The invading Norseman simultaneously begs for hospitality and threatens violent siege across the cultural divide.",
+      "categories": [
+        "portmanteau",
+        "etymology",
+        "warfare"
+      ],
+      "cross_references": [
+        "015.29",
+        "021.05",
+        "311.05"
+      ],
+      "sources": [
+        "FWEET: Concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "016.12-dc47",
+      "line_number": 12,
+      "target_phrase": "cause! How, Mutt.^",
+      "annotation_text": "Mid-page polysemic node on page 16 (\"The Fall of Finnegan\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods (Theocratic) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "016.18-93a9",
+      "line_number": 18,
+      "target_phrase": "archaeological strata",
+      "annotation_text": "Excavation motif (016.18): the dialogue uncovers subsurface strata of Dublin—Viking spearheads, Celtic torcs, Dutch clay pipes, and crushed skulls—demonstrating that history is a palimpsest of buried matter awaiting decipherment.",
+      "categories": [
+        "archaeology",
+        "palimpsest",
+        "dublin-history"
+      ],
+      "cross_references": [
+        "075.12",
+        "110.22"
+      ],
+      "sources": [
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "016.21-93b6",
+      "line_number": 21,
+      "target_phrase": "bar",
+      "annotation_text": "Tavern/jury motif \"bar\" on page 16 (\"The Fall of Finnegan\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within the mythic fall of Tim Finnegan / HCE, the thunderclap awakening primitive religion, and the recumbent giant embedded in the Dublin landscape. During this Age of Gods (Theocratic) phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
+      "categories": [
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
+      ],
+      "cross_references": [
+        "309.01",
+        "311.05",
+        "333.20",
+        "370.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
+        "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "016.25-cdc4",
+      "line_number": 25,
+      "target_phrase": "gutenmorg",
+      "annotation_text": "Germanic greeting \"gutenmorg\" (016.25): German 'Guten Morgen' / Danish 'god morgen'. The foreign invader attempts civil communication, marking the linguistic influx of Germanic tongues into Gaelic Ireland.",
+      "categories": [
+        "germanic-loanwords",
+        "multilingual",
+        "linguistics"
+      ],
+      "cross_references": [
+        "015.29",
+        "312.30"
+      ],
+      "sources": [
+        "Contemporary Literature Press: German in FW. https://editura.mttlc.ro"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

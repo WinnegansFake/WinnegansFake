@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 6,
+  "page_number": 126,
+  "annotations": [
+    {
+      "id": "126.02-77a7",
+      "line_number": 2,
+      "target_phrase": "Shaun",
+      "annotation_text": "Fraternal archetype \"Shaun\" on page 126 (\"The Quiz Chapter\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Gods phase.",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "126.03-fce1",
+      "line_number": 3,
+      "target_phrase": "twelve questions",
+      "annotation_text": "The chapter is structured as a quiz with twelve questions posed to HCE's doubles, serving as a comprehensive census of the Wake's characters.",
+      "categories": [
+        "quiz",
+        "structural",
+        "characters"
+      ],
+      "cross_references": [
+        "126.10",
+        "168.01"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "126.05-ca5c",
+      "line_number": 5,
+      "target_phrase": "set",
+      "annotation_text": "Egyptian eschatology \"set\" on page 126 (\"The Quiz Chapter\"): within twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Gods passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
+      "categories": [
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
+      ],
+      "cross_references": [
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
+      ],
+      "sources": [
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "126.06-2282",
+      "line_number": 6,
+      "target_phrase": "Shem asks",
+      "annotation_text": "Shem the Penman acts as the interrogator, asking twelve riddles, while his brother Shaun provides the answers.",
+      "categories": [
+        "shem",
+        "quiz",
+        "riddles"
+      ],
+      "cross_references": [
+        "126.02",
+        "169.01"
+      ],
+      "sources": [
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "126.08-abe5",
+      "line_number": 8,
+      "target_phrase": "Shaun gives",
+      "annotation_text": "Shaun provides the twelve answers to Shem's riddles, but often in a reversed, convoluted, or entirely evasive manner.",
+      "categories": [
+        "shaun",
+        "quiz",
+        "riddles"
+      ],
+      "cross_references": [
+        "126.02",
+        "403.01"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "126.11-8acc",
+      "line_number": 11,
+      "target_phrase": "Mookse and the Gripes",
+      "annotation_text": "The Mookse and the Gripes fable: The Mookse represents Shaun and the Pope/Catholicism, while the Gripes represents Shem and Protestantism/heresy.",
+      "categories": [
+        "fable",
+        "religion",
+        "shem-and-shaun"
+      ],
+      "cross_references": [
+        "152.15",
+        "159.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "126.14-08e2",
+      "line_number": 14,
+      "target_phrase": "Professor Jones",
+      "annotation_text": "Professor Jones: A caricature of the officious academic, delivering a pedantic lecture that introduces the fable of the Mookse and the Gripes.",
+      "categories": [
+        "professor-jones",
+        "academia",
+        "satire"
+      ],
+      "cross_references": [
+        "149.11",
+        "167.01"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "126.16-4e27",
+      "line_number": 16,
+      "target_phrase": "doubles",
+      "annotation_text": "The answers to the quiz questions frequently manifest as doubles or alter-egos of HCE, expanding his identity across space and time.",
+      "categories": [
+        "hce",
+        "doubles",
+        "identity"
+      ],
+      "cross_references": [
+        "030.02",
+        "075.01"
+      ],
+      "sources": [
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

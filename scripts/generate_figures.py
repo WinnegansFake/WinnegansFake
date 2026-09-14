@@ -391,7 +391,7 @@ def build_data_isolation_svg() -> str:
       <rect width="260" height="170" rx="10" fill="#062018" stroke="#10b981" stroke-width="1"/>
       <rect width="258" height="3" x="1" y="1" fill="#34d399" rx="1.5"/>
       <g transform="translate(15, 25)">
-        <text class="card-head" fill="#6ee7b7">annotations/book_B/ch_C</text>
+        <text class="card-head" fill="#6ee7b7">annotations/&lt;title&gt;/...</text>
         <text class="badge" y="20" fill="#10b981">628 CANONICAL PAGE FILES</text>
         <path d="M 0,28 L 230,28" stroke="#064e3b" stroke-width="1"/>
         <text class="card-text" y="46">• 1,850+ scholarly line glosses</text>

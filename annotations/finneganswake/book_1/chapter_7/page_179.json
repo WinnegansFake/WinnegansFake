@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 7,
+  "page_number": 179,
+  "annotations": [
+    {
+      "id": "179.05-6b1d",
+      "line_number": 5,
+      "target_phrase": "Shem",
+      "annotation_text": "Fraternal archetype \"Shem\" on page 179 (\"Shem the Penman\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Gods phase.",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "179.26-3765",
+      "line_number": 26,
+      "target_phrase": "vellum",
+      "annotation_text": "Book of Kells motif \"vellum\" on page 179 (\"Shem the Penman\"): Joyce equates the Wake's labyrinthine text with the 8th-century illuminated Gospel at Trinity College Dublin within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. During this Age of Gods phase, the monastic scribe and the barnyard Hen both decode divine messages from material surfaces.",
+      "categories": [
+        "book-of-kells",
+        "manuscript-culture",
+        "celtic-art",
+        "epigraphy"
+      ],
+      "cross_references": [
+        "104.01",
+        "107.08",
+        "119.10",
+        "122.22"
+      ],
+      "sources": [
+        "Trinity College Dublin: The Book of Kells Online. https://digitalcollections.tcd.ie/concern/works/hm50tr726",
+        "Sullivan, Sir Edward. The Book of Kells. https://www.gutenberg.org/ebooks/16436",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Book of Kells concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

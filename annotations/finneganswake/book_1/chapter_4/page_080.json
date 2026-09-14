@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 4,
+  "page_number": 80,
+  "annotations": [
+    {
+      "id": "080.01-ff49",
+      "line_number": 1,
+      "target_phrase": "there being macadamised",
+      "annotation_text": "Page 80 opens Book 1, Chapter 4 (\"The Burial of HCE\") during the Age of Gods (transition) phase. This passage continues the burial of the giant in the landscape, the archaeological mound, the Four Annalists surveying history, featuring HCE, Mamalujo, Kate the Slop. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "080.16-c668",
+      "line_number": 16,
+      "target_phrase": "pass pick child",
+      "annotation_text": "Mid-page polysemic node on page 80 (\"The Burial of HCE\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods (transition) dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "080.30-a986",
+      "line_number": 30,
+      "target_phrase": "Issy",
+      "annotation_text": "Issy/daughter figure \"Issy\" on page 80 (\"The Burial of HCE\"): the narcissistic mirror-daughter, modeled on Isolde and Swift's dual muses Stella and Vanessa, appears here within the burial of the giant in the landscape, the archaeological mound, the Four Annalists surveying history. Her prismatic splitting into twenty-eight Rainbow Girls reflects the cycle's Age of Gods (transition) phase through youthful seduction and self-reflection.",
+      "categories": [
+        "issy",
+        "mirror-twin",
+        "tristan-and-isolde",
+        "psychology"
+      ],
+      "cross_references": [
+        "143.28",
+        "226.01",
+        "248.01",
+        "279.01"
+      ],
+      "sources": [
+        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Genetic Joyce Studies: Issy notebooks. https://www.geneticjoycestudies.org",
+        "FWEET: Issy / Isolde concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

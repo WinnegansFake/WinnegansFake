@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 7,
+  "page_number": 193,
+  "annotations": [
+    {
+      "id": "193.01-92e4",
+      "line_number": 1,
+      "target_phrase": "making) squandered among",
+      "annotation_text": "Page 193 opens Book 1, Chapter 7 (\"Shem the Penman\") during the Age of Gods phase. This passage continues Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions, featuring Shem, Shaun (as Justius), ALP (Mercius). The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "193.16-bbb2",
+      "line_number": 16,
+      "target_phrase": "from Mullah. Mull",
+      "annotation_text": "Mid-page polysemic node on page 193 (\"Shem the Penman\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "193.23-e585",
+      "line_number": 23,
+      "target_phrase": "Shem",
+      "annotation_text": "Fraternal archetype \"Shem\" on page 193 (\"Shem the Penman\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Gods phase.",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "152.15",
+        "169.01",
+        "219.01",
+        "260.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "193.31-32c9",
+      "line_number": 31,
+      "target_phrase": "Justius",
+      "annotation_text": "Shaun as Justius (193.31): Shaun assumes the persona of Roman justice, moral righteousness, and ecclesiastical authority, launching a venomous denunciation of his brother Shem.",
+      "categories": [
+        "justius",
+        "shaun",
+        "brother-battle",
+        "judgment"
+      ],
+      "cross_references": [
+        "169.01",
+        "193.33",
+        "194.05"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "FWEET: Justius entries. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "193.33-ce60",
+      "line_number": 33,
+      "target_phrase": "deathbone",
+      "annotation_text": "The deathbone emblem (193.33): Shaun brandishes a bone / crucifix as an Australian aboriginal pointing-bone of ritual execution ('kurdaitcha'), threatening Shem with spiritual and bodily extinction.",
+      "categories": [
+        "deathbone",
+        "aboriginal",
+        "anthropology",
+        "curse"
+      ],
+      "cross_references": [
+        "169.02",
+        "193.31"
+      ],
+      "sources": [
+        "Frazer, Sir James George. The Golden Bough. https://www.gutenberg.org/ebooks/3623"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "193.35-6d3c",
+      "line_number": 35,
+      "target_phrase": "fraternal trial",
+      "annotation_text": "The fratricidal indictment (193.35): Shaun accuses Shem of betraying Ireland, living in Parisian exile, forging counterfeit literature, and Wall Street financial ruin.",
+      "categories": [
+        "trial",
+        "exile",
+        "forgery",
+        "shem-and-shaun"
+      ],
+      "cross_references": [
+        "169.08",
+        "193.31"
+      ],
+      "sources": [
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

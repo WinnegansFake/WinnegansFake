@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 8,
+  "page_number": 207,
+  "annotations": [
+    {
+      "id": "207.17-153b",
+      "line_number": 17,
+      "target_phrase": "Anna Livia",
+      "annotation_text": "ALP invocation \"Anna Livia\" on page 207 (\"Anna Livia Plurabelle\"): Anna Livia Plurabelle, the mother-river personifying the Liffey, surfaces here amid the two washerwomen gossiping on opposite banks of the darkening Liffey, 500+ river names woven into the text, metamorphosis into elm and stone. In this Age of Gods (closing) passage, her feminine current of forgiveness and renewal flows through the dream landscape, carrying Dublin's history from source to sea.",
+      "categories": [
+        "alp",
+        "river-liffey",
+        "feminine-principle",
+        "waters"
+      ],
+      "cross_references": [
+        "003.01",
+        "196.01",
+        "198.15",
+        "215.24"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: ALP / River Liffey concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "207.27-964b",
+      "line_number": 27,
+      "target_phrase": "night",
+      "annotation_text": "Oneiric dimension \"night\" on page 207 (\"Anna Livia Plurabelle\"): the nocturnal consciousness surfaces within the two washerwomen gossiping on opposite banks of the darkening Liffey, 500+ river names woven into the text, metamorphosis into elm and stone. During this Age of Gods (closing) phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 3,
+  "chapter": 3,
+  "page_number": 476,
+  "annotations": [
+    {
+      "id": "476.08-8390",
+      "line_number": 8,
+      "target_phrase": "set",
+      "annotation_text": "Egyptian eschatology \"set\" on page 476 (\"The Inquest of Yawn\"): within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Men passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
+      "categories": [
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
+      ],
+      "cross_references": [
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
+      ],
+      "sources": [
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "476.16-e65c",
+      "line_number": 16,
+      "target_phrase": "Yawn",
+      "annotation_text": "Fraternal archetype \"Yawn\" on page 476 (\"The Inquest of Yawn\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Men phase.",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "476.26-9003",
+      "line_number": 26,
+      "target_phrase": "mamalujo",
+      "annotation_text": "Mamalujo signal \"mamalujo\" on page 476 (\"The Inquest of Yawn\"): the Four Old Men — Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught — serve here as senile chroniclers and bedpost witnesses during the judicial inquest over the prostrate body of Yawn (Shaun), voices of the dead rising through him, HCE's final confession. In this Age of Men passage, they observe and record the dream's events as squawking gulls circling overhead.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "evangelists"
+      ],
+      "cross_references": [
+        "095.27",
+        "383.01",
+        "387.24",
+        "398.30"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc",
+        "FWEET: Mamalujo / Four Old Men concordance. https://www.fweet.org",
+        "Ricorso.net: James Joyce Critical Archive. https://www.ricorso.net"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

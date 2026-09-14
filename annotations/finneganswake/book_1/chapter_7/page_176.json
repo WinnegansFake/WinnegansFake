@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 7,
+  "page_number": 176,
+  "annotations": [
+    {
+      "id": "176.04-35cd",
+      "line_number": 4,
+      "target_phrase": "Wall",
+      "annotation_text": "Fall/resurrection motif \"Wall\" on page 176 (\"Shem the Penman\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden — all converge within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. The comic-cosmic Fall during the Age of Gods phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.15",
+        "004.14",
+        "023.05",
+        "044.20"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1",
+        "FinnegansWeb: The Fall motif. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "176.05-20a5",
+      "line_number": 5,
+      "target_phrase": "Letter",
+      "annotation_text": "The Letter motif \"Letter\" on page 176 (\"Shem the Penman\"): ALP's mysterious document — scratched from the midden by Biddy Doran the Hen — represents the genesis of all writing within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. During this Age of Gods phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "104.01",
+        "107.26",
+        "111.01",
+        "113.20"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net",
+        "Finwake.com: Chapter I.5 annotations. http://www.finwake.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "176.09-39e7",
+      "line_number": 9,
+      "target_phrase": "Waterloo",
+      "annotation_text": "Wellington/Waterloo motif \"Waterloo\" on page 176 (\"Shem the Penman\"): the Phoenix Park Wellington Monument and the \"Willingdone Museyroom\" dramatize imperial warfare as domestic quarrel within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. Joyce collapses the Battle of Waterloo into the sibling rivalries and marital conflicts of the Age of Gods dream.",
+      "categories": [
+        "wellington",
+        "waterloo",
+        "military-history",
+        "museyroom"
+      ],
+      "cross_references": [
+        "008.09",
+        "009.01",
+        "010.01",
+        "011.01"
+      ],
+      "sources": [
+        "Hugo, Victor. Les Misérables (The Battle of Waterloo). https://www.gutenberg.org/ebooks/135",
+        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt",
+        "Mink, Louis O. A Finnegans Wake Gazetteer (Phoenix Park). https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: Wellington/Museyroom concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

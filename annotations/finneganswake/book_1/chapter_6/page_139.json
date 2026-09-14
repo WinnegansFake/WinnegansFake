@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 6,
+  "page_number": 139,
+  "annotations": [
+    {
+      "id": "139.01-05c0",
+      "line_number": 1,
+      "target_phrase": "set",
+      "annotation_text": "Egyptian eschatology \"set\" on page 139 (\"The Quiz Chapter\"): within twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Gods passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
+      "categories": [
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
+      ],
+      "cross_references": [
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
+      ],
+      "sources": [
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "139.09-f052",
+      "line_number": 9,
+      "target_phrase": "night",
+      "annotation_text": "Oneiric dimension \"night\" on page 139 (\"The Quiz Chapter\"): the nocturnal consciousness surfaces within twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones. During this Age of Gods phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "139.11-df60",
+      "line_number": 11,
+      "target_phrase": "Finn MacCool",
+      "annotation_text": "Celtic/mythological figure \"Finn MacCool\" on page 139 (\"The Quiz Chapter\"): invoking the ancient Fianna cycle and early Irish Christianity within twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones. During the Age of Gods phase, this mythic presence grounds the universal dream in Ireland's heroic past, linking Finn MacCool's giant body to the Dublin landscape.",
+      "categories": [
+        "irish-mythology",
+        "celtic-lore",
+        "folklore",
+        "saints"
+      ],
+      "cross_references": [
+        "003.04",
+        "030.14",
+        "080.05",
+        "196.01"
+      ],
+      "sources": [
+        "MacKillop, James. Dictionary of Celtic Mythology. https://www.oxfordreference.com",
+        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465",
+        "O'Grady, Standish. Silva Gadelica. https://archive.org/details/silvagadelicaiix01ograuoft",
+        "O'Hehir, Brendan. A Gaelic Lexicon for Finnegans Wake. https://archive.org/details/gaeliclexiconfor0000oheh"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "139.11-4d88",
+      "line_number": 11,
+      "target_phrase": "wall",
+      "annotation_text": "Fall/resurrection motif \"wall\" on page 139 (\"The Quiz Chapter\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden — all converge within twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones. The comic-cosmic Fall during the Age of Gods phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.15",
+        "004.14",
+        "023.05",
+        "044.20"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1",
+        "FinnegansWeb: The Fall motif. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "139.16-4968",
+      "line_number": 16,
+      "target_phrase": "waves",
+      "annotation_text": "Mamalujo signal \"waves\" on page 139 (\"The Quiz Chapter\"): the Four Old Men — Matthew, Mark, Luke, John; Ulster, Munster, Leinster, Connaught — serve here as senile chroniclers and bedpost witnesses during twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones. In this Age of Gods passage, they observe and record the dream's events as squawking gulls circling overhead.",
+      "categories": [
+        "mamalujo",
+        "four-annalists",
+        "provinces-of-ireland",
+        "evangelists"
+      ],
+      "cross_references": [
+        "095.27",
+        "383.01",
+        "387.24",
+        "398.30"
+      ],
+      "sources": [
+        "O'Donovan, John. The Annals of the Four Masters. https://celt.ucc.ie/published/T100005A/",
+        "MacCabe, Colin. James Joyce and the Revolution of the Word. https://archive.org/details/jamesjoycerevolu0000macc",
+        "FWEET: Mamalujo / Four Old Men concordance. https://www.fweet.org",
+        "Ricorso.net: James Joyce Critical Archive. https://www.ricorso.net"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

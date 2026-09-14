@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 1,
+  "page_number": 242,
+  "annotations": [
+    {
+      "id": "242.01-047b",
+      "line_number": 1,
+      "target_phrase": "Villumses^ this Heer",
+      "annotation_text": "Page 242 opens Book 2, Chapter 1 (\"The Mime of Mick, Nick and the Maggies\") during the Age of Heroes phase. This passage continues the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell, featuring Shem (Glugg), Shaun (Chuff), Issy, the Maggies. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-2"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "242.16-2c32",
+      "line_number": 16,
+      "target_phrase": "shade. grand tuttut",
+      "annotation_text": "Mid-page polysemic node on page 242 (\"The Mime of Mick, Nick and the Maggies\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "242.19-02ca",
+      "line_number": 19,
+      "target_phrase": "dump",
+      "annotation_text": "The Letter motif \"dump\" on page 242 (\"The Mime of Mick, Nick and the Maggies\"): ALP's mysterious document — scratched from the midden by Biddy Doran the Hen — represents the genesis of all writing within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. During this Age of Heroes phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "104.01",
+        "107.26",
+        "111.01",
+        "113.20"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net",
+        "Finwake.com: Chapter I.5 annotations. http://www.finwake.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

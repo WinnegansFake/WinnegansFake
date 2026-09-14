@@ -1,0 +1,451 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 1,
+  "page_number": 4,
+  "annotations": [
+    {
+      "id": "004.01-ea3c",
+      "line_number": 1,
+      "target_phrase": "wills gen wonts, oystrygods gaggin fishygods",
+      "annotation_text": "The primordial clash between the Ostrogoths and Visigoths (East and West Germanic tribes), transposed into Oyster-gods versus Fish-gods and theological antinomies between free will and predestined necessity.",
+      "categories": [
+        "ostrogoths-visigoths",
+        "history",
+        "theology",
+        "dietary"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Gibbon, Edward. The History of the Decline and Fall of the Roman Empire. https://www.gutenberg.org/ebooks/25717",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://jhupbooks.press.jhu.edu/title/annotations-finnegans-wake"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.01-6ff8",
+      "line_number": 1,
+      "target_phrase": "Brekkek Kekkek Kekkek Kekkek! Koax Koax Koax!",
+      "annotation_text": "Direct transliteration of the croaking chorus of the frogs from Aristophanes's ancient Athenian comedy \"The Frogs\" (lines 209-210), chanted as Dionysus crosses the Acherusian lake to Hades.",
+      "categories": [
+        "aristophanes",
+        "greek-drama",
+        "chorus",
+        "underworld"
+      ],
+      "cross_references": [
+        "004.02"
+      ],
+      "sources": [
+        "Aristophanes. The Frogs (trans. Benjamin Bickley Rogers). https://www.gutenberg.org/ebooks/7998"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.02-7ed6",
+      "line_number": 2,
+      "target_phrase": "Ualu Ualu Ualu! Quaouauh!",
+      "annotation_text": "Sounds of weeping, battle cries, and lamentations: Gaelic \"ual\" (wailing, keening) combined with Gaelic wolf-cries and the croaks of marsh-dwellers.",
+      "categories": [
+        "gaelic",
+        "keening",
+        "onomatopoeia"
+      ],
+      "cross_references": [
+        "004.01"
+      ],
+      "sources": [
+        "O'Hehir, Brendan. A Gaelic Lexicon for Finnegans Wake. https://archive.org/details/gaeliclexiconfor0000oheh"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.03-4f75",
+      "line_number": 3,
+      "target_phrase": "Baddelaries partisans are still out to mathmaster Malachus Micgranes",
+      "annotation_text": "Historical Dublin feuds: the Batchelors and the Vances; also Malachi MacGrath and the Battle of Clontarf (1014). Blends with mathematical mastery and faction-fighting.",
+      "categories": [
+        "dublin-history",
+        "clontarf",
+        "faction-fighting"
+      ],
+      "cross_references": [
+        "004.04"
+      ],
+      "sources": [
+        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.04-ac44",
+      "line_number": 4,
+      "target_phrase": "Verdons catapelting the camibalistics out of the Whoyteboyce of Hoodie Head",
+      "annotation_text": "The Verdons and the Whiteboys (agrarian 18th-century Irish secret society in white smocks), with Howth Head (\"Hoodie Head\") as the battle site; cannibalistic catapulting.",
+      "categories": [
+        "whiteboys",
+        "agrarian-rebellion",
+        "howth",
+        "irish-history"
+      ],
+      "cross_references": [
+        "004.05"
+      ],
+      "sources": [
+        "Lecky, W.E.H. A History of Ireland in the Eighteenth Century. https://archive.org/details/historyofireland01leckuoft"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.05-5987",
+      "line_number": 5,
+      "target_phrase": "Assiegates and boomeringstroms",
+      "annotation_text": "Warfare implements: fuses Zulu assagais (spears), Australian aboriginal boomerangs, and roaring maelstroms of conflict.",
+      "categories": [
+        "weapons",
+        "colonial",
+        "anthropology"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Frazer, Sir James George. The Golden Bough. https://www.gutenberg.org/ebooks/3623"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.06-a825",
+      "line_number": 6,
+      "target_phrase": "Sanglorians, save! Arms apeal with larms, appalling",
+      "annotation_text": "French \"sang glorieux\" (glorious blood) + St. Gloriana / Gloria in Excelsis; bells sounding alarms and calling to arms (bells pealing).",
+      "categories": [
+        "french",
+        "warfare",
+        "liturgy",
+        "wordplay"
+      ],
+      "cross_references": [
+        "004.07"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.07-255b",
+      "line_number": 7,
+      "target_phrase": "cashels aired and ventilated",
+      "annotation_text": "Irish \"caiseal\" (stone fort, stronghold), the Rock of Cashel, and castles aired and plundered.",
+      "categories": [
+        "irish-gaelic",
+        "fortifications",
+        "rock-of-cashel"
+      ],
+      "cross_references": [
+        "004.08"
+      ],
+      "sources": [
+        "Joyce, P.W. The Origin and History of Irish Names of Places. https://archive.org/details/originandhistory01joycuoft"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.08-aa92",
+      "line_number": 8,
+      "target_phrase": "sinduced by what tegotetabsolvers",
+      "annotation_text": "Fuses \"sin-induced\", seduction, and the confessional Latin \"ego te absolvo\" (I absolve thee) of Catholic priesthood.",
+      "categories": [
+        "catholicism",
+        "sacraments",
+        "confession",
+        "sin"
+      ],
+      "cross_references": [
+        "004.09"
+      ],
+      "sources": [
+        "The Council of Trent: On the Sacrament of Penance. https://www.thelatinlibrary.com/trent.html"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.11-5727",
+      "line_number": 11,
+      "target_phrase": "fanespanned most high heaven the skysign of soft advertisement",
+      "annotation_text": "Spanning temples (\"fanes\") with the cosmic rainbow, which Joyce satirically envisions as a modern glowing neon sky-sign / commercial advertisement across the heavens.",
+      "categories": [
+        "rainbow",
+        "advertisement",
+        "modernity",
+        "consumerism"
+      ],
+      "cross_references": [
+        "003.11"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.12-71df",
+      "line_number": 12,
+      "target_phrase": "But was iz? Iseut? Ere were sewers",
+      "annotation_text": "Fuses Isolde / Iseult (Tristan's lover) with \"Is it?\" and Dublin's historical cloacae / drainage sewers, reflecting Dublin's underground waterways.",
+      "categories": [
+        "tristan-and-isolde",
+        "dublin-topography",
+        "cloaca"
+      ],
+      "cross_references": [
+        "003.03"
+      ],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.13-61bd",
+      "line_number": 13,
+      "target_phrase": "oaks of aid now they lie in peat yet elms leap where askes lay",
+      "annotation_text": "Arboreal and resurrection motif: oak, elm, ash. The four sacred trees of ancient Ireland, fallen into the bog of peat but resurrecting out of the ashes (Phoenix).",
+      "categories": [
+        "botany",
+        "trees",
+        "phoenix",
+        "druidic"
+      ],
+      "cross_references": [
+        "004.14"
+      ],
+      "sources": [
+        "Frazer, Sir James George. The Golden Bough (The Worship of Trees). https://www.gutenberg.org/ebooks/3623"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.14-f428",
+      "line_number": 14,
+      "target_phrase": "Phall if you but will, rise you must",
+      "annotation_text": "The central moral and metaphysical axiom of Finnegans Wake: the Fall (Phall/phallus) is inevitable, but Resurrection (Viconian ricorso and rising) is mandatory.",
+      "categories": [
+        "fall",
+        "resurrection",
+        "ricorso",
+        "vico",
+        "phallic"
+      ],
+      "cross_references": [
+        "003.14",
+        "628.13"
+      ],
+      "sources": [
+        "Vico, Giambattista. The New Science. https://plato.stanford.edu/entries/vico/",
+        "Ellmann, Richard. James Joyce. https://archive.org/details/jamesjoyce0000ellm"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.15-0444",
+      "line_number": 15,
+      "target_phrase": "setdown secular phoenish",
+      "annotation_text": "The Phoenix bird rising from its ashes; secular cycle of ages (Latin \"saeculum\"); Phoenix Park in Dublin; Finnish/Finnegan/finish.",
+      "categories": [
+        "phoenix",
+        "phoenix-park",
+        "mythology",
+        "cycles"
+      ],
+      "cross_references": [
+        "004.14",
+        "003.18"
+      ],
+      "sources": [
+        "Ovid. Metamorphoses (Book XV: The Phoenix). https://www.thelatinlibrary.com/ovid/ovid.met15.shtml"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.15-27c9",
+      "line_number": 15,
+      "target_phrase": "Bygmester Finnegan, of the Stuttering Hand, freemen's maurer",
+      "annotation_text": "Henrik Ibsen's master-builder Halvard Solness (\"Bygmester Solness\", 1892) fused with Tim Finnegan and Freemasonry (German \"Maurer\" = mason / builder). HCE's guilt manifest in a stuttering hand.",
+      "categories": [
+        "ibsen",
+        "master-builder",
+        "freemasonry",
+        "stutter",
+        "hce"
+      ],
+      "cross_references": [
+        "004.16",
+        "003.15"
+      ],
+      "sources": [
+        "Ibsen, Henrik. The Master Builder (Bygmester Solness). https://www.gutenberg.org/ebooks/4070",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.17-2a4f",
+      "line_number": 17,
+      "target_phrase": "joshuan judges had given us numbers or Helviticus committed deuteronomy",
+      "annotation_text": "The Old Testament Pentateuch / Hexateuch: Joshua, Judges, Numbers, Leviticus (\"Helviticus\"), Deuteronomy, placing Finnegan's antiquity before scripture.",
+      "categories": [
+        "bible",
+        "old-testament",
+        "patriarchal-history"
+      ],
+      "cross_references": [
+        "004.18"
+      ],
+      "sources": [
+        "The King James Bible: Pentateuch. https://www.biblegateway.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.23-d68f",
+      "line_number": 23,
+      "target_phrase": "man of hod, cement and edifices in Toper's Thorp piled buildung supra buildung",
+      "annotation_text": "Finnegan the bricklayer with his hod, creating human civilization; German \"Bildung\" (culture/education) and \"Gebäude\" (building) over Toper's Thorp (Dublin: Baile Átha Cliath / town of drunkards).",
+      "categories": [
+        "bricklayer",
+        "civilization",
+        "german",
+        "architecture"
+      ],
+      "cross_references": [
+        "004.24"
+      ],
+      "sources": [
+        "Mumford, Lewis. The City in History. https://archive.org/details/cityinhistoryits00mumf"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.24-d43d",
+      "line_number": 24,
+      "target_phrase": "livers by the Soangso",
+      "annotation_text": "The dwellers by the River Liffey and the Chinese Hwang-Ho (Yellow River), universalizing rivers as the cradles of civilization.",
+      "categories": [
+        "rivers",
+        "civilization",
+        "liffey",
+        "geography"
+      ],
+      "cross_references": [
+        "003.01",
+        "215.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.28-fe8f",
+      "line_number": 28,
+      "target_phrase": "Haroun Childeric Eggeberth",
+      "annotation_text": "HCE acronym: Harun al-Rashid (Abbasid Caliph of Arabian Nights), Childeric (Merovingian Frankish King), and Egbert (first Anglo-Saxon King of England).",
+      "categories": [
+        "hce",
+        "arabian-nights",
+        "monarchy",
+        "kings"
+      ],
+      "cross_references": [
+        "004.29"
+      ],
+      "sources": [
+        "The Arabian Nights (trans. Sir Richard Burton). https://www.gutenberg.org/ebooks/3435"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.31-763e",
+      "line_number": 31,
+      "target_phrase": "waalworth of a skyerscape of most eyeful hoyth entowerly",
+      "annotation_text": "The Woolworth Building in New York (world's tallest skyscraper when built) merged with Howth Head and the Tower of Babel, reaching toward heaven.",
+      "categories": [
+        "babel",
+        "skyscraper",
+        "woolworth",
+        "howth",
+        "architecture"
+      ],
+      "cross_references": [
+        "004.32"
+      ],
+      "sources": [
+        "Genesis 11 (The Tower of Babel). https://www.biblegateway.com/passage/?search=Genesis+11&version=KJV"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

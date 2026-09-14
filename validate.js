@@ -139,8 +139,9 @@ function validateFile(filePath, validator, schema) {
   }
 
   // 3. Path vs Content Coherence
+  const norm = (w) => (w || '').replace(/[-_]/g, '').toLowerCase();
   if (isLegacyFW) {
-    if (data.work && data.work !== 'finnegans-wake') {
+    if (data.work && norm(data.work) !== 'finneganswake') {
       errors.push(`Mismatch in '${relPath}': legacy Finnegans Wake folder cannot have work '${data.work}'.`);
     }
     if (expectedBook !== null && data.book !== expectedBook) {
@@ -151,9 +152,11 @@ function validateFile(filePath, validator, schema) {
     }
   } else {
     if (expectedWork) {
-      if (!data.work) {
+      const normExpected = norm(expectedWork);
+      const normData = norm(data.work);
+      if (!data.work && normExpected !== 'finneganswake') {
         errors.push(`Missing 'work' in '${relPath}': expected '${expectedWork}'.`);
-      } else if (data.work !== expectedWork) {
+      } else if (data.work && normData !== normExpected) {
         errors.push(`Mismatch in '${relPath}': directory work is '${expectedWork}' but JSON 'work' is '${data.work}'.`);
       }
     }

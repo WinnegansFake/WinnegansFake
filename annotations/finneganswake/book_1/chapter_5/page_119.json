@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 5,
+  "page_number": 119,
+  "annotations": [
+    {
+      "id": "119.10-9ee6",
+      "line_number": 10,
+      "target_phrase": "In the name of Annah the Allmaziful",
+      "annotation_text": "Islamic-Celtic parody (119.10): parodies the Islamic Bismillah invocation (\"Bismillah ar-Rahman ar-Rahim\" - In the name of God, the Merciful, the Compassionate) fused with Anna Livia Plurabelle as the mother deity.",
+      "categories": [
+        "bismillah",
+        "islamic-allusions",
+        "alp",
+        "sacred-texts"
+      ],
+      "cross_references": [
+        "104.01",
+        "111.02",
+        "196.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Annah the Allmaziful. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "119.15-07ee",
+      "line_number": 15,
+      "target_phrase": "Sir Edward Sullivan",
+      "annotation_text": "Sullivan's Book of Kells parody (119.15): Joyce mirrors Sir Edward Sullivan's 1914 introduction to 'The Book of Kells' (The Studio), adopting Sullivan's ecstatic prose style to describe the barnyard letter's microscopic calligraphy.",
+      "categories": [
+        "book-of-kells",
+        "sullivan",
+        "manuscript-culture",
+        "art-criticism"
+      ],
+      "cross_references": [
+        "119.10",
+        "120.08",
+        "122.20"
+      ],
+      "sources": [
+        "Sullivan, Sir Edward. The Book of Kells. https://www.gutenberg.org/ebooks/16436",
+        "Trinity College Dublin: Book of Kells. https://digitalcollections.tcd.ie/concern/works/hm50tr726"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "119.15-226b",
+      "line_number": 15,
+      "target_phrase": "Earwicker",
+      "annotation_text": "HCE manifestation \"Earwicker\" on page 119 within \"The Letter from the Midden\": here the universal father-figure Humphrey Chimpden Earwicker appears in the context of Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. During this Age of Gods phase, HCE embodies the patriarch whose guilt, grandeur, and fall drive the cyclical dream forward.",
+      "categories": [
+        "hce",
+        "leitmotif",
+        "protagonist",
+        "archetype"
+      ],
+      "cross_references": [
+        "003.16",
+        "030.01",
+        "033.24",
+        "075.12"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "McHugh, Roland. The Sigla of Finnegans Wake. https://archive.org/details/siglaoffinnegans0000mchu",
+        "FWEET: HCE concordance entries. https://www.fweet.org",
+        "James Joyce Digital Archive: Finnegans Wake Notons. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "119.18-dc5b",
+      "line_number": 18,
+      "target_phrase": "alp",
+      "annotation_text": "ALP invocation \"alp\" on page 119 (\"The Letter from the Midden\"): Anna Livia Plurabelle, the mother-river personifying the Liffey, surfaces here amid Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. In this Age of Gods passage, her feminine current of forgiveness and renewal flows through the dream landscape, carrying Dublin's history from source to sea.",
+      "categories": [
+        "alp",
+        "river-liffey",
+        "feminine-principle",
+        "waters"
+      ],
+      "cross_references": [
+        "003.01",
+        "196.01",
+        "198.15",
+        "207.20"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: ALP / River Liffey concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "119.20-3e86",
+      "line_number": 20,
+      "target_phrase": "hen",
+      "annotation_text": "The Letter motif \"hen\" on page 119 (\"The Letter from the Midden\"): ALP's mysterious document — scratched from the midden by Biddy Doran the Hen — represents the genesis of all writing within Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis. During this Age of Gods phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "104.01",
+        "107.26",
+        "111.01",
+        "113.20"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net",
+        "Finwake.com: Chapter I.5 annotations. http://www.finwake.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "119.22-5eb7",
+      "line_number": 22,
+      "target_phrase": "illuminated manuscript",
+      "annotation_text": "Sacred vellum comparison (119.22): the stained barnyard note is treated with the veneration accorded to Ireland's greatest medieval illuminated Gospel book, equating everyday modern ephemera with ancient sacred art.",
+      "categories": [
+        "vellum",
+        "monastic-culture",
+        "celtic-art"
+      ],
+      "cross_references": [
+        "119.15",
+        "122.35"
+      ],
+      "sources": [
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "119.23-34b0",
+      "line_number": 23,
+      "target_phrase": "1132",
+      "annotation_text": "Cabalistic number 1132 on page 119 (\"The Letter from the Midden\"): Joyce encodes mystical and historical intervals throughout the Wake. Within Biddy Doran the Hen scratching up the mysterious letter from the dump, the Book of Kells as model for textual exegesis, this number resonates with Dublin dates, Viconian divisions, and the mathematical architecture underlying the dream's Age of Gods phase.",
+      "categories": [
+        "numerology",
+        "cabala",
+        "leitmotif",
+        "symbolism"
+      ],
+      "cross_references": [
+        "003.12",
+        "117.34",
+        "186.19",
+        "260.01"
+      ],
+      "sources": [
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "FWEET: Numerological concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "119.30-9b4f",
+      "line_number": 30,
+      "target_phrase": "boustrophedon",
+      "annotation_text": "Archaic script \"boustrophedon\" (119.30): Greek 'ox-turning' script, reading alternately from left-to-right and right-to-left. Reflects the bidirectional, cyclical movement of Joyce's own prose.",
+      "categories": [
+        "boustrophedon",
+        "greek",
+        "paleography",
+        "linguistics"
+      ],
+      "cross_references": [
+        "003.01",
+        "119.10",
+        "628.16"
+      ],
+      "sources": [
+        "Contemporary Literature Press: Classical Lexicon. https://editura.mttlc.ro"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

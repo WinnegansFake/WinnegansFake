@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 2,
+  "page_number": 40,
+  "annotations": [
+    {
+      "id": "040.11-d963",
+      "line_number": 11,
+      "target_phrase": "night",
+      "annotation_text": "Oneiric dimension \"night\" on page 40 (\"The Encounter in Phoenix Park\"): the nocturnal consciousness surfaces within HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe. During this Age of Gods phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "040.28-c990",
+      "line_number": 28,
+      "target_phrase": "bottle",
+      "annotation_text": "Tavern/jury motif \"bottle\" on page 40 (\"The Encounter in Phoenix Park\"): the twelve customers drinking in HCE's Chapelizod pub represent public opinion, the Zodiac, and the Apostles within HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe. During this Age of Gods phase, they judge, condemn, and demand another round — the Greek chorus of middle-class Dublin gossip.",
+      "categories": [
+        "twelve-jurors",
+        "pub-life",
+        "chapelizod",
+        "trial"
+      ],
+      "cross_references": [
+        "309.01",
+        "311.05",
+        "333.20",
+        "370.01"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census of Finnegans Wake. https://archive.org/details/thirdcensusoffin0000glas",
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp",
+        "Gordon, John. Finnegans Blog (Tavern chapters). https://johngordonfinnegan.weebly.com",
+        "FWEET: Tavern/Twelve concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "040.30-8947",
+      "line_number": 30,
+      "target_phrase": "Patrick",
+      "annotation_text": "Celtic/mythological figure \"Patrick\" on page 40 (\"The Encounter in Phoenix Park\"): invoking the ancient Fianna cycle and early Irish Christianity within HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe. During the Age of Gods phase, this mythic presence grounds the universal dream in Ireland's heroic past, linking Finn MacCool's giant body to the Dublin landscape.",
+      "categories": [
+        "irish-mythology",
+        "celtic-lore",
+        "folklore",
+        "saints"
+      ],
+      "cross_references": [
+        "003.04",
+        "030.14",
+        "080.05",
+        "139.14"
+      ],
+      "sources": [
+        "MacKillop, James. Dictionary of Celtic Mythology. https://www.oxfordreference.com",
+        "Lady Gregory. Gods and Fighting Men. https://www.gutenberg.org/ebooks/14465",
+        "O'Grady, Standish. Silva Gadelica. https://archive.org/details/silvagadelicaiix01ograuoft",
+        "O'Hehir, Brendan. A Gaelic Lexicon for Finnegans Wake. https://archive.org/details/gaeliclexiconfor0000oheh"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "040.31-d29b",
+      "line_number": 31,
+      "target_phrase": "Kevin",
+      "annotation_text": "Fraternal archetype \"Kevin\" on page 40 (\"The Encounter in Phoenix Park\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within HCE's mysterious sin in Phoenix Park, the spread of gossip through Dublin, and the Cad with the pipe. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Gods phase.",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

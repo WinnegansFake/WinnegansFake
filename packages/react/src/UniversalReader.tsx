@@ -203,10 +203,13 @@ export function UniversalReader({
 
     // STRICT WORK SEPARATION:
     // Ulysses and any third-party literary works load EXCLUSIVELY from /annotations/<workId>/page_<PPP>.json.
-    // Finnegans Wake loads from /annotations/finnegans-wake/page_<PPP>.json or /annotations/page_<PPP>.json.
+    // Finnegans Wake loads from /annotations/finneganswake/page_<PPP>.json, /annotations/finnegans-wake/page_<PPP>.json, or /annotations/page_<PPP>.json.
     // Under NO circumstances may a non-FW work ever fall back to /annotations/page_<PPP>.json.
+    const normWork = (w: string | undefined) => (w || '').replace(/[-_\s]/g, '').toLowerCase();
+    const isFW = normWork(activeWorkId) === 'finneganswake' || normWork(activeWorkId) === 'fw';
     const candidateUrls: string[] = [];
-    if (activeWorkId === 'finnegans-wake') {
+    if (isFW) {
+      candidateUrls.push(`${appBasePath}/annotations/finneganswake/page_${padPage}.json`);
       candidateUrls.push(`${appBasePath}/annotations/finnegans-wake/page_${padPage}.json`);
       candidateUrls.push(`${appBasePath}/annotations/page_${padPage}.json`);
     } else {
@@ -220,8 +223,9 @@ export function UniversalReader({
           const res = await fetch(url);
           if (res.ok) {
             const parsed = await res.json();
-            const fileWork = parsed.work || 'finnegans-wake';
-            if (fileWork === activeWorkId) {
+            const fileWork = parsed.work || (isFW ? 'finneganswake' : '');
+            const isMatch = isFW ? (normWork(fileWork) === 'finneganswake') : (fileWork === activeWorkId);
+            if (isMatch) {
               json = parsed;
               break;
             } else {

@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 3,
+  "chapter": 1,
+  "page_number": 426,
+  "annotations": [
+    {
+      "id": "426.01-42e9",
+      "line_number": 1,
+      "target_phrase": "Shaun",
+      "annotation_text": "Fraternal archetype \"Shaun\" on page 426 (\"Shaun the Post (First Watch)\"): the opposing sons — Shem the Penman (introvert artist, tree, darkness) and Shaun the Post (extrovert politician, stone, light) — manifest here within Shaun floating down the Liffey in a barrel, delivering his sermon, the well-fed postman who delivers messages he cannot understand. Their Brunonian dialectic of coinciding opposites propels the chapter's conflict during this Age of Men phase.",
+      "categories": [
+        "twins",
+        "shem-and-shaun",
+        "brother-battle",
+        "dialectic"
+      ],
+      "cross_references": [
+        "152.15",
+        "169.01",
+        "193.31",
+        "219.01"
+      ],
+      "sources": [
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Norris, Margot. The Decentered Universe of Finnegans Wake. https://archive.org/details/decentereduniver0000norr",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "Kenner, Hugh. Dublin's Joyce. https://archive.org/details/dublinsjoyce0000kenn"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "426.03-7a7b",
+      "line_number": 3,
+      "target_phrase": "set",
+      "annotation_text": "Egyptian eschatology \"set\" on page 426 (\"Shaun the Post (First Watch)\"): within Shaun floating down the Liffey in a barrel, delivering his sermon, the well-fed postman who delivers messages he cannot understand, HCE appears as the dismembered Osiris and ALP as Isis gathering his scattered limbs. Mark Troy's research traces how Joyce embedded the Papyrus of Ani's resurrection liturgy throughout this Age of Men passage — the dream-journey through the underworld (Tuat) toward solar rebirth.",
+      "categories": [
+        "egyptian-mythology",
+        "book-of-the-dead",
+        "osiris",
+        "resurrection"
+      ],
+      "cross_references": [
+        "026.01",
+        "076.01",
+        "104.01",
+        "470.01"
+      ],
+      "sources": [
+        "Budge, E.A. Wallis. The Book of the Dead (Papyrus of Ani). https://www.gutenberg.org/ebooks/1300",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Egyptian mythology concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "426.20-c391",
+      "line_number": 20,
+      "target_phrase": "Shaun losing balance",
+      "annotation_text": "The Postman's stumble (426.20): exhausted by his own sermon and the heavy mailbag of unopened letters, Shaun totters upon the river bank under the interrogation of the Four Old Men.",
+      "categories": [
+        "shaun",
+        "the-fall",
+        "exhaustion",
+        "the-letter"
+      ],
+      "cross_references": [
+        "403.01",
+        "426.28"
+      ],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key. https://archive.org/details/skeletonkeytofin00camp"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "426.28-f820",
+      "line_number": 28,
+      "target_phrase": "tumbling into the barrel",
+      "annotation_text": "The barrel tumble (426.28): Shaun falls backwards head over heels into an empty wooden beer hogshead barrel, rocking violently on the water as he rolls away.",
+      "categories": [
+        "barrel",
+        "slapstick",
+        "the-fall",
+        "river-liffey"
+      ],
+      "cross_references": [
+        "426.20",
+        "426.35",
+        "427.05"
+      ],
+      "sources": [
+        "FWEET: Barrel entries. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "426.35-91b0",
+      "line_number": 35,
+      "target_phrase": "Guinness hogshead",
+      "annotation_text": "Dublin stout vessel (426.35): the barrel is a Guinness hogshead cask from St. James's Gate Brewery, acting simultaneously as beer container, postal ship, and drifting coffin.",
+      "categories": [
+        "guinness",
+        "brewery",
+        "dublin",
+        "cask"
+      ],
+      "cross_references": [
+        "309.01",
+        "426.28"
+      ],
+      "sources": [
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

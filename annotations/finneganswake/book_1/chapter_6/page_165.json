@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 6,
+  "page_number": 165,
+  "annotations": [
+    {
+      "id": "165.01-0347",
+      "line_number": 1,
+      "target_phrase": "(the best thing",
+      "annotation_text": "Page 165 opens Book 1, Chapter 6 (\"The Quiz Chapter\") during the Age of Gods phase. This passage continues twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones, featuring Shem, Shaun, Professor Jones, the Mookse, the Gripes. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "165.02-b58b",
+      "line_number": 2,
+      "target_phrase": "swift",
+      "annotation_text": "Swiftian presence \"swift\" on page 165 (\"The Quiz Chapter\"): the Dean of St. Patrick's Cathedral haunts this passage within twelve questions and answers probing HCE's identity, the Mookse and the Gripes parable, Professor Jones. His dual lovers Stella and Vanessa mirror Issy's split personalities, while his savage satire infuses the Age of Gods dream with political and scatological ferocity.",
+      "categories": [
+        "jonathan-swift",
+        "dublin-history",
+        "eighteenth-century",
+        "satire"
+      ],
+      "cross_references": [
+        "140.08",
+        "160.06",
+        "229.01",
+        "292.28"
+      ],
+      "sources": [
+        "Swift, Jonathan. Gulliver's Travels. https://www.gutenberg.org/ebooks/829",
+        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre",
+        "FWEET: Swift concordance. https://www.fweet.org",
+        "Ricorso.net: Jonathan Swift. https://www.ricorso.net"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "165.16-e8e0",
+      "line_number": 16,
+      "target_phrase": "females leaving experienced",
+      "annotation_text": "Mid-page polysemic node on page 165 (\"The Quiz Chapter\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

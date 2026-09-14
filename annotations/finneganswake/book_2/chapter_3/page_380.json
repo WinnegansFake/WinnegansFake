@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 3,
+  "page_number": 380,
+  "annotations": [
+    {
+      "id": "380.01-ca56",
+      "line_number": 1,
+      "target_phrase": "eers, this that",
+      "annotation_text": "Page 380 opens Book 2, Chapter 3 (\"The Tavern\") during the Age of Heroes phase. This passage continues HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging, featuring HCE, the Twelve Customers, Butt and Taff. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-2"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "380.03-c74d",
+      "line_number": 3,
+      "target_phrase": "Liffey",
+      "annotation_text": "ALP invocation \"Liffey\" on page 380 (\"The Tavern\"): Anna Livia Plurabelle, the mother-river personifying the Liffey, surfaces here amid HCE behind the bar at his Chapelizod pub, the Norwegian Captain tale, the television broadcast, the twelve customers drinking and judging. In this Age of Heroes passage, her feminine current of forgiveness and renewal flows through the dream landscape, carrying Dublin's history from source to sea.",
+      "categories": [
+        "alp",
+        "river-liffey",
+        "feminine-principle",
+        "waters"
+      ],
+      "cross_references": [
+        "003.01",
+        "196.01",
+        "198.15",
+        "207.20"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Hart, Clive. Structure and Motif in Finnegans Wake. https://archive.org/details/structuremotifin0000hart",
+        "Mink, Louis O. A Finnegans Wake Gazetteer. https://archive.org/details/finneganswakegaz0000mink",
+        "FWEET: ALP / River Liffey concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "380.08-6ce6",
+      "line_number": 8,
+      "target_phrase": "Closing Time",
+      "annotation_text": "Tavern curfew (380.08): the barman's ritual cry \"Time, gentlemen, please!\" brings the chaotic drinking in HCE's Chapelizod pub to an end, clearing the room of customers.",
+      "categories": [
+        "closing-time",
+        "pub-life",
+        "chapelizod",
+        "curfew"
+      ],
+      "cross_references": [
+        "139.14",
+        "309.01",
+        "380.25"
+      ],
+      "sources": [
+        "FWEET: Tavern closing entries. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "380.16-5f0b",
+      "line_number": 16,
+      "target_phrase": "still such eminent",
+      "annotation_text": "Mid-page polysemic node on page 380 (\"The Tavern\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Heroes dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "380.18-d842",
+      "line_number": 18,
+      "target_phrase": "departure of the twelve",
+      "annotation_text": "Exodus of the Jurors (380.18): the twelve patrons stumble out into the Dublin night, leaving the weary publican HCE alone to clean up the spilled drinks and historical debris.",
+      "categories": [
+        "twelve-jurors",
+        "departure",
+        "night"
+      ],
+      "cross_references": [
+        "309.01",
+        "380.08"
+      ],
+      "sources": [
+        "Glasheen, Adaline. Third Census. https://archive.org/details/thirdcensusoffin0000glas"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "380.25-be1d",
+      "line_number": 25,
+      "target_phrase": "Roderick O'Conor",
+      "annotation_text": "The Last High King (380.25): HCE is identified with Ruaidhrí Ua Conchobair (d. 1198), the last High King of Ireland before the Anglo-Norman invasion. One of Joyce's earliest written sketches (1923).",
+      "categories": [
+        "roderick-oconor",
+        "high-king",
+        "irish-history",
+        "early-sketches"
+      ],
+      "cross_references": [
+        "016.02",
+        "380.08",
+        "381.05"
+      ],
+      "sources": [
+        "Curtis, Edmund. A History of Ireland. https://archive.org/details/historyofireland0000curt",
+        "JJDA: Roderick O'Conor sketch. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

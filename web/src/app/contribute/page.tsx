@@ -427,13 +427,13 @@ pnpm install"
             <span>Locate and Edit the Target Page Annotation File</span>
           </div>
           <p className="text-xs text-slate-400 pl-8">
-            All annotations are organized cleanly by book, chapter, and page: <br />
+            All annotations are organized cleanly by title, book/part, and chapter/episode: <br />
             <code className="text-emerald-300 bg-slate-950 px-2 py-0.5 rounded font-mono text-[11px]">
-              annotations/book_&lt;B&gt;/chapter_&lt;C&gt;/page_&lt;PPP&gt;.json
+              annotations/&lt;title&gt;/book_&lt;B&gt;/chapter_&lt;C&gt;/page_&lt;PPP&gt;.json
             </code>
           </p>
           <p className="text-xs text-slate-400 pl-8">
-            For example, open <code className="text-slate-300">annotations/book_1/chapter_1/page_003.json</code> in your code editor and add your annotation object to the <code className="text-slate-300">annotations</code> array:
+            For example, open <code className="text-slate-300">annotations/finneganswake/book_1/chapter_1/page_003.json</code> in your code editor and add your annotation object to the <code className="text-slate-300">annotations</code> array:
           </p>
           <div className="pl-8">
             <div className="my-2 p-4 rounded-xl bg-slate-950 border border-slate-800 font-mono text-xs text-slate-300 overflow-x-auto">
@@ -468,7 +468,7 @@ pnpm install"
               title="Run schema and rule validation"
               code="pnpm validate
 # or validate just your modified file:
-node validate.js --path annotations/book_1/chapter_1/page_003.json"
+node validate.js --path annotations/finneganswake/book_1/chapter_1/page_003.json"
             />
             <p className="text-[11px] text-slate-400 italic mt-1">
               You should see: <code className="text-emerald-400 font-semibold">✅ All annotation file(s) passed validation successfully!</code>
@@ -488,7 +488,7 @@ node validate.js --path annotations/book_1/chapter_1/page_003.json"
           <div className="pl-8">
             <CodeBlock
               title="Git stage, commit, and push"
-              code={`git add annotations/book_1/chapter_1/page_003.json
+              code={`git add annotations/finneganswake/book_1/chapter_1/page_003.json
 git commit -m "feat(annotations): add Vico recirculation gloss for 003.01"
 git push -u origin annotate-page-003-commodius-vicus`}
             />

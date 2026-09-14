@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 3,
+  "chapter": 2,
+  "page_number": 449,
+  "annotations": [
+    {
+      "id": "449.03-f8c7",
+      "line_number": 3,
+      "target_phrase": "swift",
+      "annotation_text": "Swiftian presence \"swift\" on page 449 (\"Jaun's Sermon\"): the Dean of St. Patrick's Cathedral haunts this passage within Jaun (Shaun) preaching to the twenty-nine girls, the Ondt and the Gracehoper fable, departure and farewell. His dual lovers Stella and Vanessa mirror Issy's split personalities, while his savage satire infuses the Age of Men dream with political and scatological ferocity.",
+      "categories": [
+        "jonathan-swift",
+        "dublin-history",
+        "eighteenth-century",
+        "satire"
+      ],
+      "cross_references": [
+        "140.08",
+        "160.06",
+        "229.01",
+        "292.28"
+      ],
+      "sources": [
+        "Swift, Jonathan. Gulliver's Travels. https://www.gutenberg.org/ebooks/829",
+        "Ehrenpreis, Irvin. Swift: The Man, His Works, and the Age. https://archive.org/details/swiftmanhisworks01ehre",
+        "FWEET: Swift concordance. https://www.fweet.org",
+        "Ricorso.net: Jonathan Swift. https://www.ricorso.net"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "449.18-da2a",
+      "line_number": 18,
+      "target_phrase": "broken",
+      "annotation_text": "Fall/resurrection motif \"broken\" on page 449 (\"Jaun's Sermon\"): Tim Finnegan tumbling from his ladder, Humpty Dumpty shattering from the wall, Adam falling in Eden — all converge within Jaun (Shaun) preaching to the twenty-nine girls, the Ondt and the Gracehoper fable, departure and farewell. The comic-cosmic Fall during the Age of Men phase demands its counterpart: resurrection through the whiskey-splash of the water of life (uisce beatha).",
+      "categories": [
+        "the-fall",
+        "humpty-dumpty",
+        "tim-finnegan",
+        "resurrection"
+      ],
+      "cross_references": [
+        "003.15",
+        "004.14",
+        "023.05",
+        "044.20"
+      ],
+      "sources": [
+        "The Ballad of Tim Finnegan's Wake. https://en.wikipedia.org/wiki/Finnegan%27s_Wake",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "Opie, Iona and Peter. The Oxford Dictionary of Nursery Rhymes. https://archive.org/details/oxforddictionary0000unse_m4u1",
+        "FinnegansWeb: The Fall motif. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "449.19-80a0",
+      "line_number": 19,
+      "target_phrase": "night",
+      "annotation_text": "Oneiric dimension \"night\" on page 449 (\"Jaun's Sermon\"): the nocturnal consciousness surfaces within Jaun (Shaun) preaching to the twenty-nine girls, the Ondt and the Gracehoper fable, departure and farewell. During this Age of Men phase, Joyce reconstructs the sleeping body's sensory deprivation — dimmed sight, distorted hearing, dream-logic association — transforming somatic experience into polyphonic language.",
+      "categories": [
+        "oneiric",
+        "night-mind",
+        "psychoanalysis",
+        "sleep"
+      ],
+      "cross_references": [
+        "003.01",
+        "075.01",
+        "219.01",
+        "403.01"
+      ],
+      "sources": [
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Freud, Sigmund. The Interpretation of Dreams. https://www.gutenberg.org/ebooks/4349",
+        "Troy, Mark L. Mummeries of Resurrection. http://www.rosenlake.net",
+        "FWEET: Dream/Sleep concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

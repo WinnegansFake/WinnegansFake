@@ -178,7 +178,7 @@ describe('Multi-Work Annotation Validation & Copyright Guardrails', () => {
   });
 
   it('validates Finnegans Wake annotation files with validate.js', () => {
-    const fwSample = path.resolve(__dirname, '../annotations/book_1/chapter_1/page_003.json');
+    const fwSample = path.resolve(__dirname, '../annotations/finneganswake/book_1/chapter_1/page_003.json');
     expect(fs.existsSync(fwSample)).toBe(true);
     const errors = validateFile(fwSample, validator, schema);
     expect(errors).toEqual([]);

@@ -24,7 +24,7 @@ This repository uses **pnpm** (NOT `npm` or `yarn`) as the sole package manager 
 - James Joyce's *Finnegans Wake* remains protected under **U.S. copyright law through 2035**.
 - **No copyrighted book text may ever be committed to git.**
 - Source EPUB files and extracted HTML chapters must remain strictly local under `data/` and must always remain gitignored.
-- Annotations are stored purely as metadata glosses mapped to standard page and line coordinates (`PPP.LL`) in `annotations/book_<B>/chapter_<C>/page_<PPP>.json`.
+- Annotations are stored purely as metadata glosses mapped to standard page and line coordinates (`PPP.LL`) in `annotations/<title>/...` (e.g. `annotations/finneganswake/book_<B>/chapter_<C>/page_<PPP>.json` and `annotations/ulysses/part_<P>/episode_<E>/page_<PPP>.json`).
 
 ---
 

@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 3,
+  "chapter": 1,
+  "page_number": 417,
+  "annotations": [
+    {
+      "id": "417.01-083f",
+      "line_number": 1,
+      "target_phrase": "tant, penetrant, siphonopterous",
+      "annotation_text": "Page 417 opens Book 3, Chapter 1 (\"Shaun the Post (First Watch)\") during the Age of Men phase. This passage continues Shaun floating down the Liffey in a barrel, delivering his sermon, the well-fed postman who delivers messages he cannot understand, featuring Shaun, Issy, the Rainbow Girls. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-3"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "417.04-952d",
+      "line_number": 4,
+      "target_phrase": "vico",
+      "annotation_text": "Viconian marker \"vico\" on page 417 (\"Shaun the Post (First Watch)\"): Giambattista Vico's cyclical philosophy — divine, heroic, and human ages followed by thundering ricorso — structures this passage within Shaun floating down the Liffey in a barrel, delivering his sermon, the well-fed postman who delivers messages he cannot understand. The current Age of Men phase shapes the language, institutional imagery, and historical echoes of the dream.",
+      "categories": [
+        "vico",
+        "ricorso",
+        "philosophy-of-history",
+        "giambattista-vico"
+      ],
+      "cross_references": [
+        "003.02",
+        "032.05",
+        "151.10",
+        "260.05"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova. https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel. Dante... Bruno. Vico.. Joyce. https://archive.org/details/ourexagminationr0000unse",
+        "Ricorso.net: Viconian Structure in FW. https://www.ricorso.net",
+        "FinnegansWeb: Vico's Cycles. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "417.16-9e7a",
+      "line_number": 16,
+      "target_phrase": "Vespatilla blowing cosy",
+      "annotation_text": "Mid-page polysemic node on page 417 (\"Shaun the Post (First Watch)\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Men dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 1,
+  "chapter": 7,
+  "page_number": 184,
+  "annotations": [
+    {
+      "id": "184.01-122b",
+      "line_number": 1,
+      "target_phrase": "moans, special sighs,",
+      "annotation_text": "Page 184 opens Book 1, Chapter 7 (\"Shem the Penman\") during the Age of Gods phase. This passage continues Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions, featuring Shem, Shaun (as Justius), ALP (Mercius). The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "categories": [
+        "structural",
+        "narrative-strata",
+        "book-1"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
+        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
+        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
+        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "184.05-f5b1",
+      "line_number": 5,
+      "target_phrase": "Thunder",
+      "annotation_text": "Viconian marker \"Thunder\" on page 184 (\"Shem the Penman\"): Giambattista Vico's cyclical philosophy — divine, heroic, and human ages followed by thundering ricorso — structures this passage within Joyce's devastating self-portrait as Shem the forger-artist who writes on his own skin with bodily secretions. The current Age of Gods phase shapes the language, institutional imagery, and historical echoes of the dream.",
+      "categories": [
+        "vico",
+        "ricorso",
+        "philosophy-of-history",
+        "giambattista-vico"
+      ],
+      "cross_references": [
+        "003.02",
+        "032.05",
+        "151.10",
+        "260.05"
+      ],
+      "sources": [
+        "Vico, Giambattista. Scienza Nuova. https://plato.stanford.edu/entries/vico/",
+        "Beckett, Samuel. Dante... Bruno. Vico.. Joyce. https://archive.org/details/ourexagminationr0000unse",
+        "Ricorso.net: Viconian Structure in FW. https://www.ricorso.net",
+        "FinnegansWeb: Vico's Cycles. https://www.finnegansweb.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "184.16-fbf0",
+      "line_number": 16,
+      "target_phrase": "frulling fredonnance blanca",
+      "annotation_text": "Mid-page polysemic node on page 184 (\"Shem the Penman\"): Joyce weaves multilingual puns across 60+ languages — etymological roots from the Contemporary Literature Press lexicons (Romanian, Scandinavian, Slavic, Classical) intersect with local Dublin speech rhythms. The Age of Gods dream-logic transforms ordinary syntax into a palimpsest of global literary and mythic references.",
+      "categories": [
+        "etymology",
+        "polysemy",
+        "linguistics"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Contemporary Literature Press: Multilingual Lexicons for FW. https://editura.mttlc.ro",
+        "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
+        "FWEET: Multilingual concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

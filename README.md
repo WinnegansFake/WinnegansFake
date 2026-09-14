@@ -46,6 +46,22 @@ No single reader, scholar, or commentary has ever decoded it alone. Over the las
 
 ---
 
+## 👥 Start a Book Club: Why You Shouldn't Read Joyce Alone
+
+> **"After 28 years, this California book club finally finished its first book..."**  
+> 🎬 **Watch the viral TikTok inspiration video:** [@lily76412 on TikTok](https://www.tiktok.com/@lily76412/video/7661924549893655839?_r=1&_t=ZN-99VlBXRExiY)
+
+As the original author of this repository discovered, *Finnegans Wake* was never intended to be suffered alone in silent isolation. In 1995, filmmaker Gerry Fialka founded a reading group at the Venice Public Library in California. For **28 years**, meeting monthly to read at the tranquil pace of **one or two pages per session**, this circle shared laughter, decoded multilingual puns, and unraveled the dream of history. In October 2023, upon reaching page 628, they immediately voted to turn back to page 3 to begin the eternal Viconian cycle once again.
+
+**WinnegansFake was built to empower reading circles worldwide.**  
+Visit our [**Start a Book Club Guide**](https://winnegansfake.com/bookclub) (`/bookclub`) for:
+- **4 Flexible Reading Cadences:** From the 28-Year Venice Zen Pace to the 1-Year Flow.
+- **The 5 Golden Rules:** Always read aloud, reject gatekeeping, and embrace *coincidentia oppositorum*.
+- **The 90-Minute First Meeting Agenda:** Step-by-step blueprint from the first sip to the 100-letter thunderclap.
+- **Community Tools:** Pre-formatted invitation messages and GitHub Discussions to find reading buddies.
+
+---
+
 ## 📖 How to Download the Book & Read with Live Annotations
 
 Because copyrighted text cannot be hosted directly in this repository, the web application is architected to dynamically parse and render a local EPUB archive stored on your machine. This allows you to read the full original text side-by-side with synchronized annotations without infringing copyright.
@@ -223,11 +239,11 @@ We welcome contributions from scholars, readers, students, and enthusiasts!
    ```
 
 3. **Locate or Create the Target Page JSON:**
-   Navigate to the correct book and chapter directory:
+   Navigate to the correct title, book, and chapter directory:
    ```bash
-   # Example: Book 1, Chapter 1, Page 4
-   mkdir -p annotations/book_1/chapter_1
-   # Edit or create annotations/book_1/chapter_1/page_004.json
+   # Example: Finnegans Wake, Book 1, Chapter 1, Page 4
+   mkdir -p annotations/finneganswake/book_1/chapter_1
+   # Edit or create annotations/finneganswake/book_1/chapter_1/page_004.json
    ```
 
 4. **Verify Locally with the Validation Tool:**
@@ -239,14 +255,14 @@ We welcome contributions from scholars, readers, students, and enthusiasts!
    ```
    To validate only your modified file:
    ```bash
-   pnpm validate:file annotations/book_1/chapter_1/page_004.json
+   pnpm validate:file annotations/finneganswake/book_1/chapter_1/page_004.json
    # Or run directly:
-   node validate.js --path annotations/book_1/chapter_1/page_004.json
+   node validate.js --path annotations/finneganswake/book_1/chapter_1/page_004.json
    ```
 
 5. **Commit and Push:**
    ```bash
-   git add annotations/book_1/chapter_1/page_004.json
+   git add annotations/finneganswake/book_1/chapter_1/page_004.json
    git commit -m "feat(annotations): add notes for page 004 lines 1-12"
    git push origin add-page-004-notes
    ```

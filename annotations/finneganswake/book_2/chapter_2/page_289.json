@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "work": "finneganswake",
+  "book": 2,
+  "chapter": 2,
+  "page_number": 289,
+  "annotations": [
+    {
+      "id": "289.24-9377",
+      "line_number": 24,
+      "target_phrase": "daughter",
+      "annotation_text": "Issy/daughter figure \"daughter\" on page 289 (\"The Night Lessons\"): the narcissistic mirror-daughter, modeled on Isolde and Swift's dual muses Stella and Vanessa, appears here within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. Her prismatic splitting into twenty-eight Rainbow Girls reflects the cycle's Age of Heroes phase through youthful seduction and self-reflection.",
+      "categories": [
+        "issy",
+        "mirror-twin",
+        "tristan-and-isolde",
+        "psychology"
+      ],
+      "cross_references": [
+        "143.28",
+        "226.01",
+        "248.01",
+        "279.01"
+      ],
+      "sources": [
+        "Bédier, Joseph. The Romance of Tristan and Iseult. https://www.gutenberg.org/ebooks/14244",
+        "Tindall, William York. A Reader's Guide to Finnegans Wake. https://archive.org/details/readersguidetofi00tind",
+        "Genetic Joyce Studies: Issy notebooks. https://www.geneticjoycestudies.org",
+        "FWEET: Issy / Isolde concordance. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "289.28-f885",
+      "line_number": 28,
+      "target_phrase": "Dump",
+      "annotation_text": "The Letter motif \"Dump\" on page 289 (\"The Night Lessons\"): ALP's mysterious document — scratched from the midden by Biddy Doran the Hen — represents the genesis of all writing within the children studying the Trivium and Quadrivium, Dolph and Kev drawing geometric diagrams of ALP's body, marginal glosses and footnotes. During this Age of Heroes phase, the letter functions simultaneously as archaeological artifact, love note, legal deposition, and the text of Finnegans Wake itself.",
+      "categories": [
+        "the-letter",
+        "textual-criticism",
+        "biddy-doran",
+        "archaeology"
+      ],
+      "cross_references": [
+        "104.01",
+        "107.26",
+        "111.01",
+        "113.20"
+      ],
+      "sources": [
+        "Kenner, Hugh. The Stoic Comedians. https://archive.org/details/stoiccomedians0000kenn",
+        "Bishop, John. Joyce's Book of the Dark. https://archive.org/details/joycesbookofdark0000bish",
+        "Deane, Vincent, et al. The Finnegans Wake Notebooks at Buffalo. https://www.brepols.net",
+        "Finwake.com: Chapter I.5 annotations. http://www.finwake.com"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}
