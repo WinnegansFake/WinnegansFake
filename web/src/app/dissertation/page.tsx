@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { DissertationViewer } from '@/components/DissertationViewer';
+import { DISSERTATION_NIGHT_MIND } from '@/lib/constants';
 
 export const metadata = {
   title: "Dissertation: The Architecture of the Night Mind — WinnegansFake",
@@ -18,5 +19,5 @@ export default function DissertationPage() {
     content = '# Error loading dissertation\n\nCould not load dissertation.md from public directory.';
   }
 
-  return <DissertationViewer content={content} />;
+  return <DissertationViewer content={content} dissertation={DISSERTATION_NIGHT_MIND} />;
 }

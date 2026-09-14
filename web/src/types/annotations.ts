@@ -7,12 +7,16 @@ export interface AnnotationItem {
   cross_references?: string[];
   sources?: string[];
   contributors: string[];
+  work?: string;
 }
 
 export interface PageAnnotationsData {
   schema_version: string;
-  book: number;
-  chapter: number;
+  work?: string;
+  book?: number | string;
+  chapter?: number | string;
+  part?: number | string;
+  episode?: number | string;
   page_number: number;
   annotations: AnnotationItem[];
 }

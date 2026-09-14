@@ -20,7 +20,14 @@ import {
   EPUB_COOKIE_NAME,
   EpubCookiePayload,
 } from '@winnegans/theme';
-import { ARCHIVE_EPUB_URL } from '@/lib/constants';
+
+import { ARCHIVE_EPUB_URL, ULYSSES_EPUB_URL, getWork, type WorkDefinition } from '@/lib/constants';
+
+export interface EpubPreset {
+  label: string;
+  url: string;
+  description: string;
+}
 
 interface EpubSourceModalProps {
   isOpen: boolean;
@@ -32,6 +39,9 @@ interface EpubSourceModalProps {
   onLoadFromUrl: (url: string, duration: CookieDuration, customDays?: number) => Promise<boolean>;
   onSelectLocalFile: (file: File, duration: CookieDuration, customDays?: number) => Promise<boolean>;
   onClearCookie: () => void;
+  workId?: string;
+  work?: WorkDefinition;
+  customPresets?: EpubPreset[];
 }
 
 export function EpubSourceModal({
@@ -44,6 +54,9 @@ export function EpubSourceModal({
   onLoadFromUrl,
   onSelectLocalFile,
   onClearCookie,
+  workId = 'finnegans-wake',
+  work,
+  customPresets,
 }: EpubSourceModalProps) {
   const [inputUrl, setInputUrl] = useState<string>(
     savedCookiePayload?.location || currentLocation || ''
@@ -72,23 +85,30 @@ export function EpubSourceModal({
     'custom',
   ];
 
-  const presets = [
+  const activeWork = work || getWork(workId);
+
+  const presets: EpubPreset[] = customPresets || [
     {
       label: 'Local Dev Server (Make / Data)',
-      url: '/data/finneganswake00joycuoft.epub',
+      url: `/data/${activeWork.epubFilename || `${activeWork.id}.epub`}`,
       description: 'Reads from local data/ directory if served',
     },
     {
       label: 'Localhost Port 8080',
-      url: 'http://localhost:8080/data/finneganswake00joycuoft.epub',
+      url: `http://localhost:8080/data/${activeWork.epubFilename || `${activeWork.id}.epub`}`,
       description: 'Useful when running a separate local static server',
     },
-    {
-      label: 'Internet Archive Public Scan (1.5 MB)',
-      url: ARCHIVE_EPUB_URL,
-      description: 'Direct public scan download from Archive.org',
-    },
+    ...(activeWork.defaultEpubUrl
+      ? [
+          {
+            label: `Internet Archive Public Scan (${activeWork.epubSizeBytes ? (activeWork.epubSizeBytes / 1048576).toFixed(1) + ' MB' : 'Public Edition'})`,
+            url: activeWork.defaultEpubUrl,
+            description: `Direct scan download from ${activeWork.archiveUrl || 'Internet Archive'}`,
+          },
+        ]
+      : []),
   ];
+
 
   const handleFetchUrl = async (urlToLoad: string) => {
     const target = urlToLoad.trim();

@@ -16,7 +16,7 @@ describe('validate.js CLI & module checks', () => {
       cwd: REPO_ROOT,
       encoding: 'utf-8',
     });
-    expect(output).toContain('Validating 630 annotation file(s)...');
+    expect(output).toMatch(/Validating \d+ annotation file\(s\)\.\.\./);
     expect(output).toContain('passed validation successfully!');
   });
 

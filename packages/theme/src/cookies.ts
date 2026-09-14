@@ -168,8 +168,9 @@ export function deleteBookmarkCookie(): void {
 
 /**
  * Parses client document.cookie string for the EPUB source location payload.
+ * If forWorkId is specified, only returns the cookie if it belongs to that work.
  */
-export function readEpubCookie(): EpubCookiePayload | null {
+export function readEpubCookie(forWorkId?: string): EpubCookiePayload | null {
   if (typeof document === 'undefined') return null;
 
   const cookies = document.cookie ? document.cookie.split('; ') : [];
@@ -178,7 +179,14 @@ export function readEpubCookie(): EpubCookiePayload | null {
     if (name === EPUB_COOKIE_NAME) {
       try {
         const decoded = decodeURIComponent(rest.join('='));
-        return JSON.parse(decoded) as EpubCookiePayload;
+        const payload = JSON.parse(decoded) as EpubCookiePayload;
+        if (forWorkId) {
+          const cookieWork = payload.workId || 'finnegans-wake';
+          if (cookieWork !== forWorkId) {
+            return null;
+          }
+        }
+        return payload;
       } catch (err) {
         console.warn('Failed to parse EPUB location cookie:', err);
         return null;

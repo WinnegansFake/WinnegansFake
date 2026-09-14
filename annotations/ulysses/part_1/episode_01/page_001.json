@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 1,
+  "episode": 1,
+  "page_number": 1,
+  "annotations": [
+    {
+      "id": "001.01-bm01",
+      "line_number": 1,
+      "target_phrase": "Stately, plump Buck Mulligan",
+      "annotation_text": "The iconic opening cadence of Ulysses. Based closely on Oliver St. John Gogarty (1878–1957), Dublin physician, poet, and athlete. 'Stately' parodies priestly dignity and epic gravity; 'Buck' evokes eighteenth-century Regency dandyism, hedonism, and impudent bravura.",
+      "categories": [
+        "homeric-correspondence",
+        "dublin-1904-topography",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Gilbert, Stuart. James Joyce's Ulysses: A Study. Faber & Faber, 1930.",
+        "Ellmann, Richard. James Joyce. Oxford University Press, 1982."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "001.02-cr01",
+      "line_number": 2,
+      "target_phrase": "a mirror and a razor lay crossed",
+      "annotation_text": "Mulligan's shaving instruments prefigure the liturgical trappings of a Catholic priest preparing for Mass. Crossed, they form the crux decussata (St. Andrew's cross) and evoke Oscar Wilde's preface to The Picture of Dorian Gray: 'The nineteenth century dislike of Realism is the rage of Caliban seeing his own face in a glass.'",
+      "categories": [
+        "scholastic-theology",
+        "gilbert-linati-schema",
+        "shakespearean-allusion"
+      ],
+      "cross_references": [
+        "002.14"
+      ],
+      "sources": [
+        "Gifford, Don. Ulysses Annotated. UC Press, 1988, p. 12.",
+        "Thornton, Weldon. Allusions in Ulysses. UNC Press, 1968."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    },
+    {
+      "id": "001.03-ia01",
+      "line_number": 3,
+      "target_phrase": "Introibo ad altare Dei",
+      "annotation_text": "Latin: 'I will go in unto the altar of God.' The traditional opening versicle of the Tridentine Catholic Mass (Psalm 42:4 in the Vulgate). Spoken at the foot of the altar, Mulligan uses it here to inaugurate a mock-blessing over Dublin Bay and Sandycove from the top of the Martello Tower.",
+      "categories": [
+        "scholastic-theology",
+        "gilbert-linati-schema",
+        "homeric-correspondence"
+      ],
+      "cross_references": [],
+      "sources": [
+        "The Roman Missal (Tridentine Rite), Judica me, Deus.",
+        "Blamires, Harry. The New Bloomsday Book. Routledge, 1996."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "001.05-ch01",
+      "line_number": 5,
+      "target_phrase": "Chrysostomos",
+      "annotation_text": "Greek: 'Golden-mouthed' (χρυσόστομος). An epithet originally applied to Dio Chrysostom and later to St. John Chrysostom (c. 347–407 AD), Archbishop of Constantinople, celebrated for his eloquence and denunciation of clerical luxury. Stephen ironically reflects on Mulligan's gold-capped teeth and caustic, irreverent tongue.",
+      "categories": [
+        "homeric-correspondence",
+        "stream-of-consciousness",
+        "scholastic-theology"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don. Ulysses Annotated. UC Press, 1988, p. 13.",
+        "Budgen, Frank. James Joyce and the Making of Ulysses. Grayson & Grayson, 1934."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

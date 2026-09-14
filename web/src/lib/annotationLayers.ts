@@ -78,18 +78,19 @@ export function extractPrimaryAuthor(sources?: string[]): string {
   return 'Scholarly Commentary';
 }
 
-/**
- * Maps an annotation to its primary Analytical Register id.
- */
-export function getPrimaryRegisterId(annotation: AnnotationItem): string {
+export function getPrimaryRegisterId(
+  annotation: AnnotationItem,
+  registers: AnalyticalRegister[] = ANALYTICAL_REGISTERS
+): string {
   const cats = annotation.categories || [];
 
   // Check direct matches first
-  for (const reg of ANALYTICAL_REGISTERS) {
+  for (const reg of registers) {
     if (cats.includes(reg.id)) {
       return reg.id;
     }
   }
+
 
   // Semantic category mapping
   for (const cat of cats) {
@@ -243,6 +244,7 @@ export interface GroupAndSortOptions {
   selectedAuthor?: string;
   selectedTag?: string;
   selectedRegister?: string;
+  registers?: AnalyticalRegister[];
 }
 
 /**
@@ -259,7 +261,9 @@ export function groupAndSortAnnotations(
     selectedAuthor = 'all',
     selectedTag = 'all',
     selectedRegister = 'all',
+    registers = ANALYTICAL_REGISTERS,
   } = options;
+
 
   const normalizedQuery = searchQuery.trim().toLowerCase();
 
@@ -343,7 +347,7 @@ export function groupAndSortAnnotations(
   if (groupBy === 'register') {
     const groupsMap = new Map<string, AnnotationItem[]>();
     for (const ann of filtered) {
-      const regId = getPrimaryRegisterId(ann);
+      const regId = getPrimaryRegisterId(ann, registers);
       if (!groupsMap.has(regId)) {
         groupsMap.set(regId, []);
       }
@@ -351,11 +355,11 @@ export function groupAndSortAnnotations(
     }
 
     // Order groups by canonical register order
-    const registerLookup = new Map<string, AnalyticalRegister>(ANALYTICAL_REGISTERS.map((r) => [r.id, r]));
+    const registerLookup = new Map<string, AnalyticalRegister>(registers.map((r) => [r.id, r]));
     const result: AnnotationLayerGroup[] = [];
 
     // First add canonical registers present
-    for (const reg of ANALYTICAL_REGISTERS) {
+    for (const reg of registers) {
       if (groupsMap.has(reg.id)) {
         const items = sortItems(groupsMap.get(reg.id)!);
         result.push({
@@ -370,6 +374,7 @@ export function groupAndSortAnnotations(
         groupsMap.delete(reg.id);
       }
     }
+
 
     // Any remaining registers
     for (const [otherId, rawItems] of groupsMap.entries()) {

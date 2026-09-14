@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 1,
+  "episode": 1,
+  "page_number": 2,
+  "annotations": [
+    {
+      "id": "002.04-mt01",
+      "line_number": 4,
+      "target_phrase": "the gunrest",
+      "annotation_text": "The circular granite firing platform atop the Sandycove Martello Tower (Tower No. 11, built 1804 by the British Board of Ordnance). It served as an emplacement for a rotating 24-pounder cannon facing out across Dublin Bay. In 1904, Gogarty leased it from the War Office for £8 a year.",
+      "categories": [
+        "dublin-1904-topography",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don. Ulysses Annotated. UC Press, 1988, p. 13.",
+        "Joyce, James. Letters of James Joyce, Vol. II. Viking Press, 1966."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "002.09-sg01",
+      "line_number": 9,
+      "target_phrase": "The snotgreen sea. The scrotumtightening sea.",
+      "annotation_text": "Mulligan's notorious compound epithets. Parodies classical Homeric formulas ('wine-dark sea', epi oinopa ponton) through visceral bodily realism and mock-medical vernacular. Also alludes to the emerald green flag of Irish nationalism and the Greek sea god Proteus.",
+      "categories": [
+        "homeric-correspondence",
+        "parodic-stylistic",
+        "physio-anatomical"
+      ],
+      "cross_references": [
+        "051.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses. Faber, 1930.",
+        "Kenner, Hugh. Ulysses. Johns Hopkins University Press, 1987."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    },
+    {
+      "id": "002.14-cl01",
+      "line_number": 14,
+      "target_phrase": "The rage of Caliban at not seeing his face in a glass",
+      "annotation_text": "Direct quotation from Oscar Wilde's preface to The Picture of Dorian Gray (1891): 'The nineteenth century dislike of Romanticism is the rage of Caliban not seeing his own face in a glass.' Caliban represents the savage, colonized subject in Shakespeare's The Tempest; here Mulligan casts Stephen as the resentful, melancholic poet gazing into the cracked lookingglass of Ireland.",
+      "categories": [
+        "shakespearean-allusion",
+        "irish-nationalism",
+        "parodic-stylistic"
+      ],
+      "cross_references": [
+        "001.02"
+      ],
+      "sources": [
+        "Wilde, Oscar. The Picture of Dorian Gray. Ward, Lock and Company, 1891.",
+        "Thornton, Weldon. Allusions in Ulysses. UNC Press, 1968, p. 14."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "002.21-lg01",
+      "line_number": 21,
+      "target_phrase": "cracked lookingglass of a servant",
+      "annotation_text": "Stephen's stinging definition of Irish art under British and Vatican colonial subjugation. Synthesizes Wilde's aphorism with Swift's Preface to The Battle of the Books ('Satyr is a sort of Glass, wherein Beholders do generally discover every body's Face but their Own'). Establishes the domestic servant status of Ireland.",
+      "categories": [
+        "irish-nationalism",
+        "stream-of-consciousness",
+        "literary-intertextual"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Ellmann, Richard. James Joyce. Oxford UP, 1982, p. 131.",
+        "Gifford, Don. Ulysses Annotated. UC Press, 1988, p. 15."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

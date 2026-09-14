@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 1,
+  "episode": 1,
+  "page_number": 3,
+  "annotations": [
+    {
+      "id": "003.05-lr01",
+      "line_number": 5,
+      "target_phrase": "Liliata rutilantium te confessorum",
+      "annotation_text": "Latin hymn from the Ordo Commendationis Animae (the Catholic Roman Ritual for the Commendation of a Departing Soul): 'May the glittering throng of confessors, white as lilies, encompass thee.' Stephen prayed this at the deathbed of his mother May Dedalus (née Mary Joyce), an agony that haunts him throughout the entire day of June 16, 1904.",
+      "categories": [
+        "scholastic-theology",
+        "stream-of-consciousness",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [
+        "580.12"
+      ],
+      "sources": [
+        "Rituale Romanum: Ordo Commendationis Animae.",
+        "Gifford, Don. Ulysses Annotated. UC Press, 1988, p. 16.",
+        "Gilbert, Stuart. James Joyce's Ulysses. Faber, 1930."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.18-ai01",
+      "line_number": 18,
+      "target_phrase": "Agenbite of inwit",
+      "annotation_text": "Middle English phrase: 'Again-bite of inner wit' (the remorse of conscience), from Dan Michel of Northgate's 1340 Kentish translation of Ayenbite of Inwyt (itself a translation of Friar Lorens' Somme le Roi). Serves as Stephen Dedalus's primary recurrent guilt motif over his refusal to kneel and pray at his dying mother's bedside.",
+      "categories": [
+        "stream-of-consciousness",
+        "scholastic-theology",
+        "parodic-stylistic"
+      ],
+      "cross_references": [
+        "016.32",
+        "189.15",
+        "243.08"
+      ],
+      "sources": [
+        "Michel, Dan of Northgate. Ayenbite of Inwyt (1340), ed. Richard Morris (EETS, 1866).",
+        "Thornton, Weldon. Allusions in Ulysses. UNC Press, 1968.",
+        "Gifford, Don. Ulysses Annotated. UC Press, 1988, p. 17."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    },
+    {
+      "id": "003.25-us01",
+      "line_number": 25,
+      "target_phrase": "the usurper",
+      "annotation_text": "Stephen's silent, bitter epithet for Buck Mulligan at the conclusion of Episode 1. Directly links the episode to Homer's Odyssey, where Antinous and the insolent suitors usurp Telemachus's patrimony and feast in Odysseus's hall. Mulligan has taken Stephen's key and money, leaving Stephen dispossessed.",
+      "categories": [
+        "homeric-correspondence",
+        "stream-of-consciousness",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [
+        "023.28"
+      ],
+      "sources": [
+        "Homer. The Odyssey, Book I (Telemachy).",
+        "Gilbert, Stuart. James Joyce's Ulysses. Faber, 1930.",
+        "Budgen, Frank. James Joyce and the Making of Ulysses. 1934."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

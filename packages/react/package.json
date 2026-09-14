@@ -1,0 +1,54 @@
+{
+  "name": "@winnegans/react",
+  "version": "0.1.0",
+  "description": "Modular React components and hooks for zero-copyright literary annotation platforms and digital humanities readers",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --external react --external react-dom",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch --external react --external react-dom",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "react",
+    "digital-humanities",
+    "annotation",
+    "literature",
+    "reader",
+    "epub",
+    "concordance",
+    "finnegans-wake",
+    "ulysses"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "@winnegans/core": "workspace:*",
+    "@winnegans/epub-reader": "workspace:*",
+    "@winnegans/theme": "workspace:*",
+    "jszip": "^3.10.2",
+    "lucide-react": "^1.44.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "tsup": "^8.5.1",
+    "typescript": "^5"
+  }
+}

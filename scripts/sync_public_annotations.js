@@ -20,6 +20,7 @@ function syncAnnotations() {
 
   let count = 0;
   const searchIndex = [];
+  const workCounts = {};
 
   function walk(dir) {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -28,8 +29,26 @@ function syncAnnotations() {
       if (ent.isDirectory()) {
         walk(full);
       } else if (ent.isFile() && ent.name.endsWith('.json')) {
-        const dest = path.join(TARGET_DIR, ent.name);
-        fs.copyFileSync(full, dest);
+        const rel = path.relative(SOURCE_DIR, full).split(path.sep).join('/');
+        const isLegacyFW = rel.startsWith('book_');
+        const workId = isLegacyFW ? 'finnegans-wake' : rel.split('/')[0];
+
+        workCounts[workId] = (workCounts[workId] || 0) + 1;
+
+        // 1. If legacy FW, also copy directly to web/public/annotations/page_PPP.json
+        if (isLegacyFW) {
+          const destLegacy = path.join(TARGET_DIR, ent.name);
+          fs.copyFileSync(full, destLegacy);
+        }
+
+        // 2. Always copy to work-scoped destination: web/public/annotations/<workId>/page_PPP.json
+        const workTargetDir = path.join(TARGET_DIR, workId);
+        if (!fs.existsSync(workTargetDir)) {
+          fs.mkdirSync(workTargetDir, { recursive: true });
+        }
+        const workDest = path.join(workTargetDir, ent.name);
+        fs.copyFileSync(full, workDest);
+
         count++;
 
         try {
@@ -42,6 +61,9 @@ function syncAnnotations() {
             for (const ann of content.annotations) {
               const scholars = [];
               if (ann.author) scholars.push(ann.author);
+              if (ann.contributors && Array.isArray(ann.contributors)) {
+                scholars.push(...ann.contributors);
+              }
               if (ann.citations && Array.isArray(ann.citations)) {
                 for (const cit of ann.citations) {
                   if (typeof cit === 'string') {
@@ -51,19 +73,31 @@ function syncAnnotations() {
                   }
                 }
               }
+              if (ann.sources && Array.isArray(ann.sources)) {
+                for (const src of ann.sources) {
+                  scholars.push(src.split('.')[0]);
+                }
+              }
+
+              const lemma = ann.target_phrase || ann.target_text || '';
+              const gloss = ann.annotation_text || ann.note || '';
+              const registers = ann.categories || ann.registers || [];
+              const tags = ann.tags || ann.categories || [];
 
               searchIndex.push({
                 id: ann.id,
+                work: workId,
                 page: pageNum,
                 line: ann.line_number,
-                lemma: ann.target_text || '',
-                quote: ann.quote || '',
-                gloss: ann.note || '',
-                registers: ann.registers || [],
-                tags: ann.tags || [],
+                lemma,
+                quote: ann.quote || lemma,
+                gloss,
+                registers,
+                tags,
                 scholars: Array.from(new Set(scholars)),
                 displayAuthor:
                   ann.author ||
+                  (ann.contributors && ann.contributors[0]) ||
                   (ann.citations && ann.citations[0]
                     ? typeof ann.citations[0] === 'string'
                       ? ann.citations[0]
@@ -80,18 +114,92 @@ function syncAnnotations() {
   }
 
   walk(SOURCE_DIR);
-  console.log(`✅ Synchronized ${count} annotation files into web/public/annotations/`);
+  console.log(`✅ Synchronized ${count} annotation files across works:`, workCounts);
 
   // Write compiled search index
   const indexDest = path.join(REPO_ROOT, 'web', 'public', 'search_index.json');
   fs.writeFileSync(indexDest, JSON.stringify(searchIndex), 'utf8');
   console.log(`✅ Built search index with ${searchIndex.length} annotations at web/public/search_index.json`);
 
-  const dissSrc = path.join(REPO_ROOT, 'dissertation.md');
+  // Write works.json catalog
+  let allWorks = [];
+  try {
+    const core = require('../packages/core/dist/index.js');
+    if (core && typeof core.getAllWorks === 'function') {
+      allWorks = core.getAllWorks();
+    }
+  } catch {
+    // fallback if core dist is not yet built
+    allWorks = [
+      { id: 'finnegans-wake', title: 'Finnegans Wake', totalPages: 628 },
+      { id: 'ulysses', title: 'Ulysses', totalPages: 732 },
+    ];
+  }
+
+  const worksCatalogDest = path.join(REPO_ROOT, 'web', 'public', 'works.json');
+  fs.writeFileSync(worksCatalogDest, JSON.stringify(allWorks, null, 2), 'utf8');
+  console.log(`✅ Exported library catalog with ${allWorks.length} works at web/public/works.json`);
+
+  // Write dissertations.json catalog
+  let allDissertations = [];
+  try {
+    const core = require('../packages/core/dist/index.js');
+    if (core && typeof core.getAllDissertations === 'function') {
+      allDissertations = core.getAllDissertations();
+    }
+  } catch {
+    allDissertations = [
+      {
+        id: 'the-architecture-of-the-night-mind',
+        title: 'The Architecture of the Night Mind',
+        subtitle: "A Polyphonic Dissertation on James Joyce's Finnegans Wake",
+        author: 'Dr. Alistair H. C. MacCool & The Open Wake Consortium',
+        year: 2026,
+        targetWorks: ['finnegans-wake'],
+      },
+    ];
+  }
+
+  const dissertationsCatalogDest = path.join(REPO_ROOT, 'web', 'public', 'dissertations.json');
+  fs.writeFileSync(dissertationsCatalogDest, JSON.stringify(allDissertations, null, 2), 'utf8');
+  console.log(`✅ Exported dissertations catalog with ${allDissertations.length} monographs at web/public/dissertations.json`);
+
+  // Synchronize dissertations/ directory into web/public/dissertations/
+  const dissertationsSrcDir = path.join(REPO_ROOT, 'dissertations');
+  const dissertationsTargetDir = path.join(REPO_ROOT, 'web', 'public', 'dissertations');
+  if (fs.existsSync(dissertationsSrcDir)) {
+    if (!fs.existsSync(dissertationsTargetDir)) {
+      fs.mkdirSync(dissertationsTargetDir, { recursive: true });
+    }
+    const dissDirs = fs.readdirSync(dissertationsSrcDir, { withFileTypes: true });
+    let dissCount = 0;
+    for (const d of dissDirs) {
+      if (d.isDirectory()) {
+        const itemSrcDir = path.join(dissertationsSrcDir, d.name);
+        const itemDestDir = path.join(dissertationsTargetDir, d.name);
+        if (!fs.existsSync(itemDestDir)) {
+          fs.mkdirSync(itemDestDir, { recursive: true });
+        }
+        const files = fs.readdirSync(itemSrcDir);
+        for (const file of files) {
+          fs.copyFileSync(path.join(itemSrcDir, file), path.join(itemDestDir, file));
+        }
+        dissCount++;
+      }
+    }
+    console.log(`✅ Synchronized ${dissCount} dissertations into web/public/dissertations/`);
+  }
+
+  // Backward compatibility: copy flagship dissertation to web/public/dissertation.md
+  const flagshipSrc = path.join(dissertationsSrcDir, 'the-architecture-of-the-night-mind', 'dissertation.md');
+  const fallbackSrc = path.join(REPO_ROOT, 'dissertation.md');
   const dissDest = path.join(REPO_ROOT, 'web', 'public', 'dissertation.md');
-  if (fs.existsSync(dissSrc)) {
-    fs.copyFileSync(dissSrc, dissDest);
-    console.log(`✅ Copied dissertation.md to web/public/dissertation.md`);
+  if (fs.existsSync(flagshipSrc)) {
+    fs.copyFileSync(flagshipSrc, dissDest);
+    console.log(`✅ Copied flagship dissertation to web/public/dissertation.md`);
+  } else if (fs.existsSync(fallbackSrc)) {
+    fs.copyFileSync(fallbackSrc, dissDest);
+    console.log(`✅ Copied root dissertation.md to web/public/dissertation.md`);
   }
 
   const figuresSrc = path.join(REPO_ROOT, 'figures');
@@ -107,6 +215,25 @@ function syncAnnotations() {
       }
     }
     console.log(`✅ Synchronized ${figs.length} figures to web/public/figures/`);
+  }
+
+  // Synchronize metadata/ directory into web/public/metadata/
+  const metadataSrcDir = path.join(REPO_ROOT, 'metadata');
+  const metadataTargetDir = path.join(REPO_ROOT, 'web', 'public', 'metadata');
+  if (fs.existsSync(metadataSrcDir)) {
+    if (!fs.existsSync(metadataTargetDir)) {
+      fs.mkdirSync(metadataTargetDir, { recursive: true });
+    }
+    const metaFiles = fs.readdirSync(metadataSrcDir);
+    let metaCount = 0;
+    for (const f of metaFiles) {
+      const srcFile = path.join(metadataSrcDir, f);
+      if (fs.statSync(srcFile).isFile()) {
+        fs.copyFileSync(srcFile, path.join(metadataTargetDir, f));
+        metaCount++;
+      }
+    }
+    console.log(`✅ Synchronized ${metaCount} metadata files to web/public/metadata/`);
   }
 }
 

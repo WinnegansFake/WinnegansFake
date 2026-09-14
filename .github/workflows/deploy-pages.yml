@@ -44,7 +44,7 @@ jobs:
 
       - name: Build static site export
         env:
-          NEXT_PUBLIC_BASE_PATH: /WinnegansFake
+          NEXT_PUBLIC_BASE_PATH: ""
           NODE_ENV: production
         run: pnpm build
 

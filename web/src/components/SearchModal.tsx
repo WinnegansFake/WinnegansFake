@@ -23,17 +23,19 @@ import { browserEpub, TextSearchResult } from '@/lib/epubReader';
 import { getBookAndChapterInfo, ANALYTICAL_REGISTERS } from '@/lib/constants';
 
 interface SearchModalProps {
-  onNavigateToPage?: (page: number, line?: number) => void;
+  onNavigateToPage?: (page: number, line?: number, workId?: string) => void;
   onOpenEpubModal?: () => void;
+  workId?: string;
 }
 
-export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalProps) {
+export function SearchModal({ onNavigateToPage, onOpenEpubModal, workId }: SearchModalProps) {
   const router = useRouter();
   const {
     isSearchOpen,
     closeSearch,
     searchScope,
     setSearchScope,
+    activeWorkId,
     searchIndex,
     isLoadingIndex,
     loadSearchIndex,
@@ -42,10 +44,21 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
     epubModalHandler,
   } = useSearch();
 
+  const currentActiveWork = workId || activeWorkId || 'finnegans-wake';
+  const [workFilter, setWorkFilter] = useState<string>(currentActiveWork);
   const [query, setQuery] = useState<string>('');
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const resultsContainerRef = useRef<HTMLDivElement>(null);
+
+  // Sync active work when modal opens or workId changes
+  useEffect(() => {
+    if (workId) {
+      setWorkFilter(workId);
+    } else if (activeWorkId) {
+      setWorkFilter(activeWorkId);
+    }
+  }, [workId, activeWorkId, isSearchOpen]);
 
   // Sync initial query when opened
   useEffect(() => {
@@ -61,19 +74,25 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
     }
   }, [isSearchOpen, initialSearchQuery, loadSearchIndex]);
 
-  // Reset selected index when query or scope changes
+  // Reset selected index when query or scope or workFilter changes
   useEffect(() => {
     setSelectedIndex(0);
-  }, [query, searchScope]);
+  }, [query, searchScope, workFilter]);
 
-  const epubLoaded = browserEpub.isLoaded();
+  const activeEpubWork = workFilter !== 'all' ? workFilter : currentActiveWork;
+  const epubLoaded = browserEpub.isLoaded(activeEpubWork);
 
-  // Search through Annotations index
+  // Search through Annotations index with STRICT book filtering
   const annotationResults = useMemo(() => {
     if (!query.trim() || searchIndex.length === 0) return [];
     const q = query.trim().toLowerCase();
 
     return searchIndex.filter((item) => {
+      const itemWork = item.work || 'finnegans-wake';
+      if (workFilter !== 'all' && itemWork !== workFilter) {
+        return false;
+      }
+
       const matchLemma = item.lemma.toLowerCase().includes(q);
       const matchGloss = item.gloss.toLowerCase().includes(q);
       const matchScholar = item.scholars.some((s) => s.toLowerCase().includes(q));
@@ -99,7 +118,7 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
           return true;
       }
     });
-  }, [query, searchScope, searchIndex]);
+  }, [query, searchScope, searchIndex, workFilter]);
 
   // Search through authentic EPUB book text
   const textResults: TextSearchResult[] = useMemo(() => {
@@ -114,6 +133,7 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
   interface UnifiedSearchResult {
     type: 'text' | 'lemma' | 'gloss' | 'scholar' | 'tag' | 'register';
     id: string;
+    work?: string;
     page: number;
     line: number;
     title: string;
@@ -132,6 +152,7 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
         combined.push({
           type: 'text',
           id: `text-${t.page}-${t.line}-${t.matchIndex}`,
+          work: activeEpubWork,
           page: t.page,
           line: t.line,
           title: `Joyce Text (Page ${String(t.page).padStart(3, '0')}.${String(t.line).padStart(2, '0')})`,
@@ -164,6 +185,7 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
         combined.push({
           type: matchType,
           id: ann.id,
+          work: ann.work || 'finnegans-wake',
           page: ann.page,
           line: ann.line,
           title: ann.lemma || `Annotation at ${ann.page}.${ann.line}`,
@@ -175,21 +197,26 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
     }
 
     return combined;
-  }, [annotationResults, textResults, searchScope, query]);
+  }, [annotationResults, textResults, searchScope, query, activeEpubWork]);
 
-  // Counts for each tab badge
+  const filteredIndex = useMemo(() => {
+    if (workFilter === 'all') return searchIndex;
+    return searchIndex.filter((item) => (item.work || 'finnegans-wake') === workFilter);
+  }, [searchIndex, workFilter]);
+
+  // Counts for each tab badge computed over the active work scope
   const counts = useMemo(() => {
     if (!query.trim()) return {};
     const q = query.trim().toLowerCase();
     const textCount = epubLoaded ? browserEpub.searchText(query, 100).length : 0;
-    const lemmaCount = searchIndex.filter(a => a.lemma.toLowerCase().includes(q)).length;
-    const glossCount = searchIndex.filter(a => a.gloss.toLowerCase().includes(q)).length;
-    const scholarCount = searchIndex.filter(a => a.scholars.some(s => s.toLowerCase().includes(q))).length;
-    const tagCount = searchIndex.filter(a => a.tags.some(t => t.toLowerCase().includes(q))).length;
-    const regCount = searchIndex.filter(a => a.registers.some(r => r.toLowerCase().includes(q))).length;
+    const lemmaCount = filteredIndex.filter(a => a.lemma.toLowerCase().includes(q)).length;
+    const glossCount = filteredIndex.filter(a => a.gloss.toLowerCase().includes(q)).length;
+    const scholarCount = filteredIndex.filter(a => a.scholars.some(s => s.toLowerCase().includes(q))).length;
+    const tagCount = filteredIndex.filter(a => a.tags.some(t => t.toLowerCase().includes(q))).length;
+    const regCount = filteredIndex.filter(a => a.registers.some(r => r.toLowerCase().includes(q))).length;
 
     return {
-      all: textCount + searchIndex.filter(a =>
+      all: textCount + filteredIndex.filter(a =>
         a.lemma.toLowerCase().includes(q) ||
         a.gloss.toLowerCase().includes(q) ||
         a.scholars.some(s => s.toLowerCase().includes(q)) ||
@@ -203,15 +230,17 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
       tags: tagCount,
       registers: regCount,
     };
-  }, [query, searchIndex, epubLoaded]);
+  }, [query, filteredIndex, epubLoaded]);
 
-  const handleNavigate = (page: number, line?: number) => {
+  const handleNavigate = (page: number, line?: number, work?: string) => {
+    const targetWork = work || (workFilter !== 'all' ? workFilter : currentActiveWork) || 'finnegans-wake';
     if (onNavigateToPage) {
-      onNavigateToPage(page, line);
+      onNavigateToPage(page, line, targetWork);
     } else if (navigateHandler) {
-      navigateHandler(page, line);
+      navigateHandler(page, line, targetWork);
     } else {
-      router.push(`/reader?page=${page}${line ? `&line=${line}` : ''}`);
+      const workQuery = targetWork !== 'finnegans-wake' ? `&work=${targetWork}` : '';
+      router.push(`/reader?page=${page}${line ? `&line=${line}` : ''}${workQuery}`);
     }
     closeSearch();
   };
@@ -227,7 +256,7 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
     } else if (e.key === 'Enter' && combinedResults[selectedIndex]) {
       e.preventDefault();
       const r = combinedResults[selectedIndex];
-      handleNavigate(r.page, r.line);
+      handleNavigate(r.page, r.line, (r as any).work);
     }
   };
 
@@ -314,6 +343,49 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
             <kbd className="px-1.5 py-0.5 rounded border border-inherit/40 bg-black/30">ESC</kbd>
             <span>to close</span>
           </div>
+        </div>
+
+        {/* Book / Corpus Selector Bar */}
+        <div className="px-4 py-2 border-b border-inherit/20 bg-inherit/10 flex items-center justify-between text-xs">
+          <div className="flex items-center space-x-1.5 overflow-x-auto">
+            <span className="text-[11px] font-mono opacity-50 mr-1 shrink-0">Book:</span>
+            <button
+              type="button"
+              onClick={() => setWorkFilter('finnegans-wake')}
+              className={`px-2.5 py-0.5 rounded-md text-xs font-medium transition-all cursor-pointer ${
+                workFilter === 'finnegans-wake'
+                  ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold'
+                  : 'border border-transparent opacity-70 hover:opacity-100 hover:bg-inherit/30'
+              }`}
+            >
+              Finnegans Wake
+            </button>
+            <button
+              type="button"
+              onClick={() => setWorkFilter('ulysses')}
+              className={`px-2.5 py-0.5 rounded-md text-xs font-medium transition-all cursor-pointer ${
+                workFilter === 'ulysses'
+                  ? 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 font-semibold'
+                  : 'border border-transparent opacity-70 hover:opacity-100 hover:bg-inherit/30'
+              }`}
+            >
+              Ulysses
+            </button>
+            <button
+              type="button"
+              onClick={() => setWorkFilter('all')}
+              className={`px-2.5 py-0.5 rounded-md text-xs font-medium transition-all cursor-pointer ${
+                workFilter === 'all'
+                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 font-semibold'
+                  : 'border border-transparent opacity-70 hover:opacity-100 hover:bg-inherit/30'
+              }`}
+            >
+              All Works
+            </button>
+          </div>
+          <span className="text-[11px] font-mono opacity-50 shrink-0 hidden sm:inline">
+            {filteredIndex.length} glosses in index
+          </span>
         </div>
 
         {/* Scope Type Selector Tabs */}
@@ -454,12 +526,13 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
 
               {combinedResults.map((res, idx) => {
                 const isSelected = idx === selectedIndex;
-                const info = getBookAndChapterInfo(res.page);
+                const workId = (res as any).work || 'finnegans-wake';
+                const info = getBookAndChapterInfo(res.page, workId);
 
                 return (
                   <div
                     key={res.id}
-                    onClick={() => handleNavigate(res.page, res.line)}
+                    onClick={() => handleNavigate(res.page, res.line, workId)}
                     onMouseEnter={() => setSelectedIndex(idx)}
                     className={`p-3 rounded-xl border transition-all cursor-pointer flex flex-col gap-1.5 ${
                       isSelected
@@ -470,6 +543,17 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal }: SearchModalPr
                     {/* Result Header */}
                     <div className="flex items-center justify-between gap-2 text-xs font-mono">
                       <div className="flex items-center space-x-2">
+                        {workFilter === 'all' && (
+                          <span
+                            className={`px-1.5 py-0.2 rounded text-[10px] font-bold tracking-wider ${
+                              workId === 'ulysses'
+                                ? 'bg-indigo-950 text-indigo-300 border border-indigo-500/40'
+                                : 'bg-emerald-950 text-emerald-300 border border-emerald-500/40'
+                            }`}
+                          >
+                            {workId === 'ulysses' ? 'ULYSSES' : 'FINNEGANS WAKE'}
+                          </span>
+                        )}
                         <span
                           className={`px-1.5 py-0.2 rounded text-[10px] font-bold tracking-wider ${
                             res.type === 'text'
