@@ -186,9 +186,6 @@ export function getBasePath(): string {
   if (typeof process !== 'undefined' && process.env.NEXT_PUBLIC_BASE_PATH) {
     return process.env.NEXT_PUBLIC_BASE_PATH;
   }
-  if (typeof process !== 'undefined' && process.env.NODE_ENV === 'production') {
-    return '/WinnegansFake';
-  }
   return '';
 }
 

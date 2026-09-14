@@ -157,7 +157,7 @@ export function DissertationViewer({ content, dissertation }: DissertationViewer
   title = {${dissertation.title}},
   school = {${dissertation.institution}},
   year = {${dissertation.year}},
-  url = {https://tekromancy.github.io/WinnegansFake/dissertations/${dissertation.slug}/}${dissertation.doi ? `,\n  doi = {${dissertation.doi}}` : ''}
+  url = {https://winnegansfake.com/dissertations/${dissertation.slug}/}${dissertation.doi ? `,\n  doi = {${dissertation.doi}}` : ''}
 }`;
     } else {
       bibtex = `@misc{winnegansfake2026,
@@ -165,7 +165,7 @@ export function DissertationViewer({ content, dissertation }: DissertationViewer
   title = {The Architecture of the Night Mind: A Polyphonic Dissertation on the Cosmology, Philology, Genetic Manuscripts, and Computational Hermeneutics of James Joyce's Finnegans Wake},
   year = {2026},
   publisher = {WinnegansFake Open-Source Scholarly Apparatus},
-  url = {https://tekromancy.github.io/WinnegansFake/dissertation/}
+  url = {https://winnegansfake.com/dissertation/}
 }`;
     }
     navigator.clipboard.writeText(bibtex);
