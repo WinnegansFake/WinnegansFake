@@ -39,6 +39,7 @@ export interface NavigationProps {
   onNavigate?: (url: string) => void;
   brandTitle?: string;
   brandSubtitle?: string;
+  version?: string;
 }
 
 export function Navigation({
@@ -47,6 +48,7 @@ export function Navigation({
   onNavigate,
   brandTitle = 'WinnegansFake',
   brandSubtitle = 'Zero-Copyright Joycean Gloss',
+  version = 'v2.0',
 }: NavigationProps = {}) {
   const pathname = currentPath || (typeof window !== 'undefined' ? window.location.pathname : '/');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -103,7 +105,7 @@ export function Navigation({
                   {brandTitle}
                 </span>
                 <span className="bg-emerald-950 border border-emerald-500/30 text-emerald-400 text-[10px] font-mono px-1.5 py-0.5 rounded">
-                  v1.0
+                  {version}
                 </span>
               </div>
               <p className="text-[11px] text-slate-400 font-sans tracking-tight">

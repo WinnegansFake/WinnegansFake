@@ -68,7 +68,7 @@ export function Navigation() {
                   WinnegansFake
                 </span>
                 <span className="bg-emerald-950 border border-emerald-500/30 text-emerald-400 text-[10px] font-mono px-1.5 py-0.5 rounded">
-                  v1.0
+                  v2.0
                 </span>
               </div>
               <p className="text-[11px] text-slate-400 font-sans tracking-tight">
