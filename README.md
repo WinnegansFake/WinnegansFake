@@ -255,3 +255,4 @@ We welcome contributions from scholars, readers, students, and enthusiasts!
    - Submit your PR against the `main` branch.
    - The automated GitHub Actions CI workflow will immediately run `node validate.js`.
    - Once all automated checks pass, maintainers will review the submission for scholarly depth and copyright adherence.
+
