@@ -6,21 +6,24 @@
   "page_number": 401,
   "annotations": [
     {
-      "id": "401.01-bc6b",
+      "id": "401.01-fw01",
       "line_number": 1,
-      "target_phrase": "[Page title/divider section",
-      "annotation_text": "Page 401 opens Book 3, Chapter 1 (\"Unknown\") during the Unknown phase. This passage continues the nocturnal dream, featuring HCE, ALP. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "target_phrase": "The Four Watches of Shaun",
+      "annotation_text": "Structural overview of Book III. Joyce planned Book III around the four canonical Roman night watches (vigiliae) dreaming backwards into the future: Shaun before the people (III.1), Jaun's sermon to the rainbow girls (III.2), the inquest and interrogation of Yawn upon the hill of Tara (III.3), and the bedchamber scene of Porter/HCE and ALP (III.4).",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-3"
+        "structural-genetic",
+        "psychoanalytic-oneiric",
+        "theological-liturgical"
       ],
-      "cross_references": [],
+      "cross_references": [
+        "403.01",
+        "429.01",
+        "474.01",
+        "555.01"
+      ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
-        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+        "Hart, Clive. Structure and Motif in Finnegans Wake. Northwestern University Press, 1962.",
+        "Hayman, David. A First-Draft Version of Finnegans Wake. University of Texas Press, 1963."
       ],
       "contributors": [
         "joycean-scholar",

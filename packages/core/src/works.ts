@@ -111,42 +111,123 @@ export const FINNEGANS_WAKE_REGISTERS: AnalyticalRegister[] = [
     name: 'Irish Mythology & Celtic Folklore',
     category: 'Cultural & Mythological',
     description: 'Finn MacCool, Brian Boru, Tuatha Dé Danann, the Book of Kells, and Irish heroic sagas.',
-    color: 'emerald',
-    badgeClass: 'bg-emerald-950/60 text-emerald-300 border-emerald-500/40',
-    icon: 'Compass'
+    color: 'green',
+    badgeClass: 'bg-green-950/60 text-green-300 border-green-500/40',
+    icon: 'Crown'
   },
   {
-    id: 'philosophical-dialectic',
-    name: 'Philosophical Dialectic & Coincidentia',
-    category: 'Philosophical & Cosmological',
-    description: 'Giordano Bruno\'s coincidence of opposites, Nicholas of Cusa, Spinoza, and German idealism.',
-    color: 'blue',
-    badgeClass: 'bg-blue-950/60 text-blue-300 border-blue-500/40',
-    icon: 'Layers'
+    id: 'egyptian-resurrection',
+    name: 'Egyptian Book of the Dead & Solar Mythology',
+    category: 'Mythological & Mystical',
+    description: 'Osiris, Isis, Horus, Ra, Nu, and funerary spells representing the resurrection of the dead patriarch.',
+    color: 'yellow',
+    badgeClass: 'bg-yellow-950/60 text-yellow-300 border-yellow-500/40',
+    icon: 'Sun'
   },
   {
-    id: 'musical-ballad',
-    name: 'Musical Allusions & Ballad Culture',
-    category: 'Aural & Popular Culture',
-    description: 'The comic ballad of Tim Finnegan, Thomas Moore\'s Irish Melodies, opera (Wagner, Gilbert & Sullivan).',
-    color: 'amber',
-    badgeClass: 'bg-amber-950/60 text-amber-300 border-amber-500/40',
+    id: 'bruno-polarity',
+    name: 'Brunonian Polarity (Coincidentia Oppositorum)',
+    category: 'Philosophical & Dialectical',
+    description: 'Giordano Bruno of Nola\'s cosmic principle of the coincidence of contraries (Shem vs Shaun, Mutt vs Jute).',
+    color: 'cyan',
+    badgeClass: 'bg-cyan-950/60 text-cyan-300 border-cyan-500/40',
+    icon: 'Scale'
+  },
+  {
+    id: 'musical-rhythms',
+    name: 'Musical Acoustic Motifs & Street Ballads',
+    category: 'Acoustic & Performative',
+    description: 'Operatic allusions, music-hall tunes, Moore\'s Irish Melodies, Percy French, and "Finnegan\'s Wake".',
+    color: 'teal',
+    badgeClass: 'bg-teal-950/60 text-teal-300 border-teal-500/40',
     icon: 'Music'
   },
   {
-    id: 'somatic-oneiric',
-    name: 'Somatic & Oneiric Sleep Physiology',
-    category: 'Psychological & Bodily',
-    description: 'John Bishop\'s physiological thesis: dormant body functions, dream logic, sensory deprivation in the dark.',
-    color: 'teal',
-    badgeClass: 'bg-teal-950/60 text-teal-300 border-teal-500/40',
+    id: 'thunderclaps',
+    name: 'The 100-Letter Thunderclaps',
+    category: 'Acoustic & Theophanic',
+    description: 'The ten thunder words representing divine fiat, fear of thunder, human technological evolution, and the fall.',
+    color: 'orange',
+    badgeClass: 'bg-orange-950/60 text-orange-300 border-orange-500/40',
+    icon: 'Zap'
+  },
+  {
+    id: 'psychoanalytic-oneiric',
+    name: 'Psychoanalytic & Dreamwork Mechanisms',
+    category: 'Psychological & Structural',
+    description: 'Freudian condensation, displacement, secondary revision, Oedipal rivalry, Jungian archetypes, and night consciousness.',
+    color: 'violet',
+    badgeClass: 'bg-violet-950/60 text-violet-300 border-violet-500/40',
     icon: 'Moon'
   },
   {
-    id: 'structural-genetic',
-    name: 'Genetic & Textual Apparatus',
-    category: 'Editorial & Textual',
-    description: 'Draft lineages, Buffalo notebook citations, printer errors, transition magazine variants, and Gabler/Rose editions.',
+    id: 'arthurian-tristan',
+    name: 'Arthurian Romance & Tristan and Isolde',
+    category: 'Literary & Romantic',
+    description: 'Mark of Cornwall, Tristan, Isolde of Ireland, the love potion, and the boat voyage from Chapelizod.',
+    color: 'pink',
+    badgeClass: 'bg-pink-950/60 text-pink-300 border-pink-500/40',
+    icon: 'Heart'
+  },
+  {
+    id: 'swift-carroll',
+    name: 'Satirical & Parodic Inversions (Swift & Carroll)',
+    category: 'Literary & Parodic',
+    description: 'Jonathan Swift\'s Drapier letters, Stella and Vanessa, Alice in Wonderland portmanteau logic, and Humpty Dumpty.',
+    color: 'red',
+    badgeClass: 'bg-red-950/60 text-red-300 border-red-500/40',
+    icon: 'Smile'
+  },
+  {
+    id: 'scientific-technological',
+    name: 'Scientific & Technological Inventions',
+    category: 'Material & Modernity',
+    description: 'Radio broadcasting (BBC, 2RN), cathode ray television, quantum theory, thermodynamics, and optics.',
+    color: 'blue',
+    badgeClass: 'bg-blue-950/60 text-blue-300 border-blue-500/40',
+    icon: 'Radio'
+  },
+  {
+    id: 'juridical-inquest',
+    name: 'Juridical Trial & Parliamentary Inquest',
+    category: 'Legal & Procedural',
+    description: 'The trial of Festy King, the Twelve Jurors, parliamentary Hansard debates, and cross-examinations.',
+    color: 'stone',
+    badgeClass: 'bg-stone-800 text-stone-300 border-stone-600/40',
+    icon: 'Gavel'
+  },
+  {
+    id: 'book-of-kells',
+    name: 'Book of Kells & Scribal Illumination',
+    category: 'Artistic & Genetic',
+    description: 'Tunc page, illuminated initials, insular majuscule calligraphy, scribal errors, and parchment restoration.',
+    color: 'lime',
+    badgeClass: 'bg-lime-950/60 text-lime-300 border-lime-500/40',
+    icon: 'BookOpen'
+  },
+  {
+    id: 'botanical-zoological',
+    name: 'Botanical, Zoological, & Riverine Catalogs',
+    category: 'Natural & Ecological',
+    description: 'The 1,000+ world rivers in chapter I.8 (Anna Livia Plurabelle), elm tree and stone transformations, insects (Ondt and Gracehoper).',
+    color: 'emerald',
+    badgeClass: 'bg-emerald-900/60 text-emerald-200 border-emerald-400/40',
+    icon: 'Leaf'
+  },
+  {
+    id: 'nursery-rhymes',
+    name: 'Nursery Rhymes & Street Games',
+    category: 'Folk & Play',
+    description: 'Humpty Dumpty, London Bridge, Ring a Ring o\' Roses, and the playful children\'s games of Chapter II.1.',
+    color: 'fuchsia',
+    badgeClass: 'bg-fuchsia-950/60 text-fuchsia-300 border-fuchsia-500/40',
+    icon: 'Gamepad2'
+  },
+  {
+    id: 'genetic-notebooks',
+    name: 'Genetic Manuscripts & Draft Notebooks',
+    category: 'Textual Scholarship',
+    description: 'Traced units from Buffalo Notebooks (VI.B series), transition magazine serialization, and printer proofs.',
     color: 'sky',
     badgeClass: 'bg-sky-950/60 text-sky-300 border-sky-500/40',
     icon: 'FileText'
@@ -830,6 +911,6 @@ export function getBookAndChapterInfo(
 export const ARCHIVE_EPUB_URL = "https://archive.org/download/finneganswake00joycuoft/finneganswake00joycuoft.epub";
 export const FW_FALLBACK_EPUB_URL = "https://archive.org/download/finnegans-wake-joyce-james/FinnegansWakeJoyceJames.epub";
 export const ULYSSES_EPUB_URL = "https://archive.org/download/ulysses00joyc_1/ulysses00joyc_1.epub";
-export const GITHUB_REPO_URL = "https://github.com/tekromancy/WinnegansFake";
+export const GITHUB_REPO_URL = "https://github.com/WinnegansFake/WinnegansFake";
 
 

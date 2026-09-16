@@ -37,7 +37,7 @@ describe('Universal Literary Library Catalog (@winnegans/core)', () => {
     expect(fw.title).toBe('Finnegans Wake');
     expect(fw.totalPages).toBe(628);
     expect(fw.isPublicDomain).toBe(false);
-    expect(fw.registers.length).toBe(10);
+    expect(fw.registers.length).toBe(19);
 
     const ulysses = getWork('ulysses');
     expect(ulysses.title).toBe('Ulysses');

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 15,
+  "page_number": 539,
+  "annotations": [
+    {
+      "id": "539.01-ci01",
+      "line_number": 1,
+      "target_phrase": "THE MABBOT STREET ENTRANCE",
+      "annotation_text": "Opening stage direction of Episode 15 (Circe). 12:00 AM (Midnight). Dublin's red-light district (Nighttown / Monto), centered around Tyrone and Mabbot Streets. Structured entirely as an expressionist theatrical playscript where psychological repressions, hallucinations, and guilt figures materialize physically.",
+      "categories": [
+        "parodic-stylistic",
+        "dublin-1904-topography",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [
+        "003.05",
+        "071.01",
+        "487.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses: A Study. Faber, 1930.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988, p. 450."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "539.15-nt01",
+      "line_number": 15,
+      "target_phrase": "Nighttown",
+      "annotation_text": "Joyce's term for the Monto brothel quarter of Dublin, at the time the largest red-light district in the British Isles. Corresponds to Circe's island of Aeaea where men are transformed into swine.",
+      "categories": [
+        "homeric-correspondence",
+        "dublin-1904-topography"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Finegan, John. The Story of Monto. Mercier Press, 1978.",
+        "Ellmann, Richard. James Joyce. Oxford UP, 1982."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

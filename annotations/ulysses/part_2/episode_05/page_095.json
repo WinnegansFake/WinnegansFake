@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 5,
+  "page_number": 95,
+  "annotations": [
+    {
+      "id": "095.01-le01",
+      "line_number": 1,
+      "target_phrase": "By lorries along sir John Rogerson's quay Mr Bloom walked soberly",
+      "annotation_text": "Opening of Episode 5 (Lotus Eaters). 10:00 AM. Leopold Bloom walks through the south docklands towards Westland Row, enveloped in the heavy atmosphere of narcotic ease, botanical languor, and colonial inertia corresponding to Homer's land of the Lotus-eaters.",
+      "categories": [
+        "dublin-1904-topography",
+        "homeric-correspondence",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [
+        "071.01"
+      ],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988.",
+        "Gilbert, Stuart. James Joyce's Ulysses. Faber, 1930."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "095.12-hf01",
+      "line_number": 12,
+      "target_phrase": "Henry Flower",
+      "annotation_text": "Bloom's undercover epistolary pseudonym for his secret romantic correspondence with Martha Clifford. The flower motif reinforces the botanical and narcotic themes of the episode.",
+      "categories": [
+        "stream-of-consciousness",
+        "parodic-stylistic"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Ellmann, Richard. James Joyce. Oxford UP, 1982.",
+        "Thornton, Weldon. Allusions in Ulysses. UNC Press, 1968."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

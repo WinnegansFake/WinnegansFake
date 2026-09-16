@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 6,
+  "page_number": 117,
+  "annotations": [
+    {
+      "id": "117.01-hd01",
+      "line_number": 1,
+      "target_phrase": "Martin Cunningham, first, pushed homely yellow chipped stone",
+      "annotation_text": "Opening of Episode 6 (Hades). 11:00 AM. Leopold Bloom boards the funeral carriage at Sandymount for Paddy Dignam's burial at Prospect Cemetery in Glasnevin. The journey through Dublin represents Odysseus's nekyia (descent into the Underworld).",
+      "categories": [
+        "homeric-correspondence",
+        "dublin-1904-topography",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [
+        "071.01",
+        "095.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses: A Study. Faber, 1930.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "117.15-mc01",
+      "line_number": 15,
+      "target_phrase": "Martin Cunningham's face was like a block of carved limestone.",
+      "annotation_text": "Martin Cunningham represents Sisyphus in the Homeric scheme. His face resembles the limestone rock of Dublin, burdened by his tragic family life (an alcoholic wife), yet maintaining gentle Christian compassion.",
+      "categories": [
+        "homeric-correspondence",
+        "parodic-stylistic"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Ellmann, Richard. James Joyce. Oxford UP, 1982.",
+        "Budgen, Frank. James Joyce and the Making of Ulysses. 1934."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 7,
+  "page_number": 153,
+  "annotations": [
+    {
+      "id": "153.01-ae01",
+      "line_number": 1,
+      "target_phrase": "IN THE HEART OF THE HIBERNIAN METROPOLIS",
+      "annotation_text": "The celebrated opening headline of Episode 7 (Aeolus). 12:00 PM (Noon). Set in the newspaper offices of The Freeman's Journal and Evening Telegraph. Joyce introduces 63 newspaper headlines that mock imperial rhetoric, journalistic sensationalism, and the gusty winds of Dublin political speech.",
+      "categories": [
+        "parodic-stylistic",
+        "dublin-1904-topography",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [
+        "071.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses. Faber, 1930.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988, p. 128."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "153.10-np01",
+      "line_number": 10,
+      "target_phrase": "Nelson's pillar",
+      "annotation_text": "Nelson's Pillar in O'Connell Street (then Sackville Street), the central tramway hub of Dublin. The monument to the British naval hero Horatio Nelson symbolizes imperial dominance over Dublin, later mocked in Stephen Dedalus's 'Parable of the Plums'.",
+      "categories": [
+        "dublin-1904-topography",
+        "irish-nationalism"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don. Ulysses Annotated. UC Press, 1988.",
+        "Ellmann, Richard. James Joyce. Oxford UP, 1982."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

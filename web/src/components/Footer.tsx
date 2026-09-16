@@ -43,6 +43,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/search" className="hover:text-emerald-300 transition-colors">
+                  Universal Corpus Search
+                </Link>
+              </li>
+              <li>
                 <Link href="/dissertations" className="hover:text-emerald-300 transition-colors">
                   Dissertations Library
                 </Link>

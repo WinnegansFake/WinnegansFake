@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 4,
+  "page_number": 71,
+  "annotations": [
+    {
+      "id": "071.01-mb01",
+      "line_number": 1,
+      "target_phrase": "Mr Leopold Bloom ate with relish the inner organs of beasts and fowls.",
+      "annotation_text": "The iconic opening sentence of Part II (The Odyssey) and Episode 4 (Calypso), introducing Leopold Bloom at 8:00 AM in the kitchen of 7 Eccles Street. Immediately establishes Bloom's earthy, visceral, and sensuous humanity in contrast to Stephen Dedalus's scholastic asceticism.",
+      "categories": [
+        "homeric-correspondence",
+        "physio-anatomical",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [
+        "001.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses: A Study. Faber & Faber, 1930.",
+        "Ellmann, Richard. James Joyce. Oxford University Press, 1982.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "071.06-gk01",
+      "line_number": 6,
+      "target_phrase": "grilled mutton kidneys which gave to his palate a fine tang of faintly scented urine",
+      "annotation_text": "Key anatomical correspondence for Calypso: the Kidney (organ). Joyce foregrounds somatic biology and gastrointestinal reality, evoking Homer's epic feasts through the modest breakfast of a Dublin advertising canvasser.",
+      "categories": [
+        "physio-anatomical",
+        "parodic-stylistic"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don. Ulysses Annotated. UC Press, 1988, p. 70.",
+        "Kenner, Hugh. Ulysses. Johns Hopkins University Press, 1987."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

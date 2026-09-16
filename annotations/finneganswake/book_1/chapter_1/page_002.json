@@ -4,5 +4,27 @@
   "book": 1,
   "chapter": 1,
   "page_number": 2,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "002.01-fe01",
+      "line_number": 1,
+      "target_phrase": "First Edition",
+      "annotation_text": "Bibliographic notice: Published simultaneously on May 4, 1939, by Faber and Faber Ltd (London) and The Viking Press (New York). A deluxe signed limited edition of 428 copies (numbered and signed by Joyce) was printed on English handmade paper by R. MacLehose & Co. Ltd. at The University Press, Glasgow.",
+      "categories": [
+        "structural-genetic"
+      ],
+      "cross_references": [
+        "001.01",
+        "003.01"
+      ],
+      "sources": [
+        "Slocum, John J., and Herbert Cahoon. A Bibliography of James Joyce. Yale University Press, 1953.",
+        "Connolly, Thomas E. The Personal Library of James Joyce. University of Buffalo, 1957."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

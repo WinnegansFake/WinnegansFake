@@ -140,6 +140,38 @@ export function UniversalReader({
   const [hoverPopup, setHoverPopup] = useState<HoverPopupData | null>(null);
   const popupTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Reading Progress Tracker (localStorage)
+  const [readPages, setReadPages] = useState<number[]>([]);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const stored = localStorage.getItem(`wf_read_pages_${currentWorkId}`);
+        if (stored) setReadPages(JSON.parse(stored));
+        else setReadPages([]);
+      } catch {
+        setReadPages([]);
+      }
+    }
+  }, [currentWorkId]);
+
+  const toggleCurrentPageRead = () => {
+    setReadPages((prev) => {
+      const exists = prev.includes(currentPage);
+      const updated = exists
+        ? prev.filter((p) => p !== currentPage)
+        : [...prev, currentPage].sort((a, b) => a - b);
+      try {
+        localStorage.setItem(`wf_read_pages_${currentWorkId}`, JSON.stringify(updated));
+      } catch (e) {
+        console.error('Failed to save read progress:', e);
+      }
+      return updated;
+    });
+  };
+
+  const isCurrentPageRead = readPages.includes(currentPage);
+
   // Bookmarks hook (cookie-backed)
   const {
     bookmarks,
@@ -1097,6 +1129,32 @@ export function UniversalReader({
             <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
               Page {currentPage} / {maxPages}
             </span>
+
+            {/* Read Page Toggle */}
+            <button
+              onClick={toggleCurrentPageRead}
+              className={`inline-flex items-center space-x-1 px-2 py-0.5 rounded text-[11px] font-medium transition-all cursor-pointer ${
+                isCurrentPageRead
+                  ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
+                  : 'bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-slate-200 border border-slate-700'
+              }`}
+              title={isCurrentPageRead ? 'Mark page as unread' : 'Mark page as read'}
+              aria-label={isCurrentPageRead ? 'Mark as unread' : 'Mark as read'}
+            >
+              <CheckCircle2 className={`w-3 h-3 ${isCurrentPageRead ? 'text-emerald-400' : 'text-slate-500'}`} />
+              <span>{isCurrentPageRead ? 'Read' : 'Mark Read'}</span>
+            </button>
+
+            {/* Progress Indicator */}
+            <div className="hidden xl:flex items-center space-x-1.5 text-[11px] text-slate-400 font-mono">
+              <span>Read: {readPages.length}/{maxPages} ({((readPages.length / maxPages) * 100).toFixed(0)}%)</span>
+              <div className="w-12 h-1.5 bg-slate-800 rounded-full overflow-hidden border border-slate-700/50">
+                <div
+                  className="h-full bg-emerald-500 rounded-full transition-all duration-300"
+                  style={{ width: `${Math.min(100, (readPages.length / maxPages) * 100)}%` }}
+                />
+              </div>
+            </div>
           </div>
 
           {/* Center: Page Navigation Controls */}
@@ -1353,10 +1411,22 @@ export function UniversalReader({
               <div className="p-5 rounded-xl bg-slate-950/80 border border-slate-800 text-xs space-y-3">
                 <div className="flex items-center space-x-2 text-amber-400 font-semibold text-sm">
                   <ShieldCheck className="w-4 h-4" />
-                  <span>U.S. Copyright Protection Notice (Title 17 U.S.C. § 107)</span>
+                  <span>
+                    {currentWorkId === 'ulysses'
+                      ? 'Public Domain Text Notice'
+                      : 'U.S. Copyright Protection Notice (Title 17 U.S.C. § 107)'}
+                  </span>
                 </div>
                 <p className="text-slate-300 leading-relaxed">
-                  <em>Finnegans Wake</em> is protected under U.S. copyright law through <strong>December 31, 2035</strong>. To ensure complete legal compliance, this static website does not host or distribute the copyrighted book text.
+                  {currentWorkId === 'ulysses' ? (
+                    <>
+                      <em>Ulysses</em> (1922) is in the <strong>Public Domain</strong> worldwide. To read the authentic book text alongside these annotations, load an EPUB scan or use the one-click Internet Archive loader below.
+                    </>
+                  ) : (
+                    <>
+                      <em>Finnegans Wake</em> is protected under U.S. copyright law through <strong>December 31, 2035</strong>. To ensure complete legal compliance, this static website does not host or distribute the copyrighted book text.
+                    </>
+                  )}
                 </p>
                 <p className="text-slate-300 leading-relaxed">
                   All <strong>scholarly annotations and glosses</strong> are 100% open-source and displayed in the right panel. To read the authentic book text alongside these annotations, set your local EPUB or source URL (saved in your cookie for as long as you want):
@@ -1965,10 +2035,13 @@ export function UniversalReader({
               </div>
               <div>
                 <h1 className="font-serif font-bold text-sm sm:text-base leading-tight">
-                  Finnegans Wake &bull; Book {bookInfo.bookRoman}, Chapter {bookInfo.chapter}
+                  {activeWork?.title || (currentWorkId === 'ulysses' ? 'Ulysses' : 'Finnegans Wake')} &bull;{' '}
+                  {currentWorkId === 'ulysses'
+                    ? bookInfo.chapterTitle
+                    : `Book ${bookInfo.bookRoman}, Chapter ${bookInfo.chapter}`}
                 </h1>
                 <p className="text-[11px] opacity-70 italic truncate max-w-xs sm:max-w-md">
-                  {bookInfo.chapterTitle}
+                  {currentWorkId === 'ulysses' ? (bookInfo.subtitle || '') : bookInfo.chapterTitle}
                 </p>
               </div>
             </div>

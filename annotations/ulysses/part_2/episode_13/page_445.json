@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 13,
+  "page_number": 445,
+  "annotations": [
+    {
+      "id": "445.01-na01",
+      "line_number": 1,
+      "target_phrase": "The summer evening had begun to fold the world in its mysterious embrace.",
+      "annotation_text": "Opening cadence of Episode 13 (Nausicaa). 8:00 PM. Sandymount Strand. Joyce adopts the sentimental, cliché-ridden prose of Victorian romantic magazines (The Lady's Pictorial) to narrate the inner fantasy world of Gerty MacDowell, who sits on the strand gazing across at Leopold Bloom.",
+      "categories": [
+        "parodic-stylistic",
+        "homeric-correspondence",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [
+        "051.01",
+        "071.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses: A Study. Faber, 1930.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988, p. 384."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "445.16-gm01",
+      "line_number": 16,
+      "target_phrase": "Gerty MacDowell",
+      "annotation_text": "Gerty represents Homer's Phaeacian princess Nausicaa, who discovers the shipwrecked Odysseus on the shore. Joyce pairs her youth and physical disability (a subtle limp) with the litany of the Virgin Mary sounding from the nearby Star of the Sea church.",
+      "categories": [
+        "homeric-correspondence",
+        "scholastic-theology",
+        "physio-anatomical"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Ellmann, Richard. James Joyce. Oxford UP, 1982.",
+        "Budgen, Frank. James Joyce and the Making of Ulysses. 1934."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

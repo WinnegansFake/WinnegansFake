@@ -6,21 +6,22 @@
   "page_number": 400,
   "annotations": [
     {
-      "id": "400.01-27f5",
+      "id": "400.01-b301",
       "line_number": 1,
-      "target_phrase": "[Page title/divider section",
-      "annotation_text": "Page 400 opens Book 3, Chapter 1 (\"Unknown\") during the Unknown phase. This passage continues the nocturnal dream, featuring HCE, ALP. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "target_phrase": "Book III: The People",
+      "annotation_text": "Divisional threshold preceding Book III (The Four Watches of Shaun, pages 403–590). Aligned with Giambattista Vico's third historical age—the Human or Democratic Age—in which heroic aristocracy yields to popular assemblies, rationalism, legal institutions, and bureaucratic oratory.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-3"
+        "viconian-cycles",
+        "sigla-archetypal",
+        "juridical-inquest"
       ],
-      "cross_references": [],
+      "cross_references": [
+        "003.01",
+        "403.01"
+      ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
-        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+        "Vico, Giambattista. The New Science (trans. Bergin and Fisch). Cornell University Press, 1948.",
+        "Campbell, Joseph, and Henry Morton Robinson. A Skeleton Key to Finnegans Wake. Harcourt, Brace, 1944."
       ],
       "contributors": [
         "joycean-scholar",

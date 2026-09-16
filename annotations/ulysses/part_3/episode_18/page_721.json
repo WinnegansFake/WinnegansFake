@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 3,
+  "episode": 18,
+  "page_number": 721,
+  "annotations": [
+    {
+      "id": "721.01-pe01",
+      "line_number": 1,
+      "target_phrase": "Yes because he never did a thing like that before as ask to get his breakfast in bed",
+      "annotation_text": "The triumphant opening phrase of Episode 18 (Penelope). The unpunctuated stream-of-consciousness monologue of Molly Bloom lying in bed at 7 Eccles Street beside her sleeping husband. Composed of eight unpunctuated giant paragraphs, beginning with the primordial affirmation 'Yes' and ending with the ecstatic embrace on Howth Head.",
+      "categories": [
+        "stream-of-consciousness",
+        "physio-anatomical",
+        "homeric-correspondence"
+      ],
+      "cross_references": [
+        "001.01",
+        "071.01",
+        "703.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses: A Study. Faber, 1930.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988, p. 610.",
+        "Ellmann, Richard. James Joyce. Oxford UP, 1982."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "721.18-hh01",
+      "line_number": 18,
+      "target_phrase": "Howth",
+      "annotation_text": "Howth Head, the dramatic promontory overlooking Dublin Bay where Leopold proposed to Molly among the rhododendrons sixteen years earlier in 1888. The geography anchors both Ulysses and Finnegans Wake (Howth Castle and Environs).",
+      "categories": [
+        "dublin-1904-topography",
+        "stream-of-consciousness"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Ellmann, Richard. James Joyce. Oxford UP, 1982.",
+        "Budgen, Frank. James Joyce and the Making of Ulysses. 1934."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

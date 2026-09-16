@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 1,
+  "episode": 2,
+  "page_number": 29,
+  "annotations": [
+    {
+      "id": "029.01-cc01",
+      "line_number": 1,
+      "target_phrase": "— You, Cochrane, what city sent for him?",
+      "annotation_text": "Opening line of Episode 2 (Nestor). Stephen Dedalus is teaching an ancient history lesson on Pyrrhus of Epirus at the Clifton School in Dalkey. The classroom setting establishes the episode's art (History) and catechistic technique.",
+      "categories": [
+        "homeric-correspondence",
+        "gilbert-linati-schema",
+        "dublin-1904-topography"
+      ],
+      "cross_references": [
+        "001.01"
+      ],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Gilbert, Stuart. James Joyce's Ulysses: A Study. Faber & Faber, 1930."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "029.15-py01",
+      "line_number": 15,
+      "target_phrase": "Another victory like that and we are done for.",
+      "annotation_text": "The classic definition of a Pyrrhic victory after the Battle of Asculum (279 BC). Stephen reflects on the futility of military triumphs, foreshadowing his upcoming discussion on the nightmare of history with the headmaster Mr. Deasy.",
+      "categories": [
+        "stream-of-consciousness",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Plutarch. Life of Pyrrhus.",
+        "Ellmann, Richard. James Joyce. Oxford University Press, 1982."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

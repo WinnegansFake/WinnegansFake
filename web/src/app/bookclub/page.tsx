@@ -21,7 +21,8 @@ import {
   Flame,
   Coffee,
   HeartHandshake,
-  Glasses
+  Glasses,
+  Printer
 } from 'lucide-react';
 import { GITHUB_REPO_URL } from '@/lib/constants';
 
@@ -503,6 +504,28 @@ No literature degree or prior knowledge needed. Check out our plan and join the 
                   <p className="text-[11px] text-slate-400">Confirm next meeting date. Assign zero required homework so everyone arrives eager and relaxed.</p>
                 </div>
               </div>
+            </div>
+
+            {/* Printable Meeting Worksheet Card */}
+            <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center justify-between flex-wrap gap-4">
+              <div className="space-y-1">
+                <div className="flex items-center space-x-2 text-emerald-400 text-xs font-mono font-semibold">
+                  <Printer className="w-4 h-4" />
+                  <span>OFFLINE FACILITATOR TOOLKIT</span>
+                </div>
+                <h4 className="text-base font-serif font-bold text-white">Print Official Meeting Worksheet</h4>
+                <p className="text-xs text-slate-400 max-w-md">
+                  Generates a clean, distraction-free PDF/printable session sheet with attendee roles, discussion prompts, 19-register checklist, and note spaces.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => window.print()}
+                className="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-100 hover:text-white border border-slate-700 text-xs font-medium transition-all cursor-pointer shadow-sm"
+              >
+                <Printer className="w-4 h-4 text-emerald-400" />
+                <span>Print Meeting Sheet (PDF)</span>
+              </button>
             </div>
           </div>
 

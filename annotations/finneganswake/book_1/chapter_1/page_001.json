@@ -4,5 +4,48 @@
   "book": 1,
   "chapter": 1,
   "page_number": 1,
-  "annotations": []
+  "annotations": [
+    {
+      "id": "001.01-ht01",
+      "line_number": 1,
+      "target_phrase": "FINNEGANS WAKE",
+      "annotation_text": "The half-title of James Joyce's final masterwork. For seventeen years (1922–1939), Joyce kept the title a strictly guarded secret, referring to the manuscript exclusively as 'Work in Progress'. Only Joyce and his wife Nora Barnacle knew the title until its formal announcement at a Paris publication dinner on Joyce's fifty-seventh birthday (February 2, 1939).",
+      "categories": [
+        "structural-genetic",
+        "musical-ballad"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Ellmann, Richard. James Joyce. Oxford University Press, 1982.",
+        "Slocum, John J., and Herbert Cahoon. A Bibliography of James Joyce. Yale University Press, 1953."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "001.02-au01",
+      "line_number": 2,
+      "target_phrase": "by JAMES JOYCE",
+      "annotation_text": "Joyce composed the text in Paris under conditions of near-blindness and failing health, assisted by Samuel Beckett, Stuart Gilbert, Frank Budgen, Eugene Jolas, and Paul Léon. The work synthesizes over sixty languages into a polyphonic dream-fugue.",
+      "categories": [
+        "structural-genetic",
+        "etymological-polyglot"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Ellmann, Richard. James Joyce. Oxford University Press, 1982.",
+        "Budgen, Frank. James Joyce and the Making of Ulysses and Other Writings. Oxford University Press, 1972."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
 }

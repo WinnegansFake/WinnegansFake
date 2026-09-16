@@ -27,6 +27,48 @@ const PAGE_FILE_PATTERN = /^page_(\d{3,4})\.json$/;
 const DIR_BOOK_PATTERN = /^book_([1-4])$/;
 const DIR_CHAPTER_PATTERN = /^chapter_([1-8])$/;
 
+// Canonical page boundaries per chapter/episode
+const FW_CHAPTER_PAGE_RANGES = {
+  '1:1': [1, 29],
+  '1:2': [30, 47],
+  '1:3': [48, 74],
+  '1:4': [75, 103],
+  '1:5': [104, 125],
+  '1:6': [126, 168],
+  '1:7': [169, 195],
+  '1:8': [196, 216],
+  '2:1': [217, 259],
+  '2:2': [260, 308],
+  '2:3': [309, 382],
+  '2:4': [383, 399],
+  '3:1': [400, 428],
+  '3:2': [429, 473],
+  '3:3': [474, 554],
+  '3:4': [555, 590],
+  '4:1': [591, 628],
+};
+
+const ULYSSES_EPISODE_PAGE_RANGES = {
+  1: [1, 28],
+  2: [29, 50],
+  3: [51, 70],
+  4: [71, 94],
+  5: [95, 116],
+  6: [117, 152],
+  7: [153, 198],
+  8: [199, 242],
+  9: [243, 282],
+  10: [283, 328],
+  11: [329, 372],
+  12: [373, 444],
+  13: [445, 486],
+  14: [487, 538],
+  15: [539, 658],
+  16: [659, 702],
+  17: [703, 720],
+  18: [721, 732],
+};
+
 /**
  * Recursively collects all JSON files under a directory.
  */
@@ -178,6 +220,25 @@ function validateFile(filePath, validator, schema) {
     errors.push(
       `Mismatch in '${relPath}': file name implies page ${expectedPage} but JSON 'page_number' is ${data.page_number}.`
     );
+  }
+
+  // Canonical Page Boundary Verification
+  const workNormalized = norm(data.work || expectedWork || (isLegacyFW ? 'finneganswake' : ''));
+  if (workNormalized === 'finneganswake' && data.book && data.chapter) {
+    const key = `${data.book}:${data.chapter}`;
+    const range = FW_CHAPTER_PAGE_RANGES[key];
+    if (range && (data.page_number < range[0] || data.page_number > range[1])) {
+      errors.push(
+        `Boundary violation in '${relPath}': page ${data.page_number} is outside canonical range for Book ${data.book} Chapter ${data.chapter} (${range[0]}–${range[1]}).`
+      );
+    }
+  } else if (workNormalized === 'ulysses' && data.episode) {
+    const range = ULYSSES_EPISODE_PAGE_RANGES[data.episode];
+    if (range && (data.page_number < range[0] || data.page_number > range[1])) {
+      errors.push(
+        `Boundary violation in '${relPath}': page ${data.page_number} is outside canonical range for Episode ${data.episode} (${range[0]}–${range[1]}).`
+      );
+    }
   }
 
   // 4. Copyright Guardrails & Semantic Annotation Checks

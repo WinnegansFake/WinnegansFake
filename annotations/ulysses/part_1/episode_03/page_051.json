@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 1,
+  "episode": 3,
+  "page_number": 51,
+  "annotations": [
+    {
+      "id": "051.01-im01",
+      "line_number": 1,
+      "target_phrase": "Ineluctable modality of the visible",
+      "annotation_text": "The famous philosophical opening of Episode 3 (Proteus). Stephen walks along Sandymount Strand meditating on Aristotle's De Anima and Sense and Sensibilia: that visual perception is constrained by light and color ('the diaphane').",
+      "categories": [
+        "scholastic-theology",
+        "stream-of-consciousness",
+        "homeric-correspondence"
+      ],
+      "cross_references": [
+        "002.09"
+      ],
+      "sources": [
+        "Aristotle. De Anima, II.vii (trans. W. D. Ross). Oxford UP.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988, p. 44."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "051.08-sr01",
+      "line_number": 8,
+      "target_phrase": "Signatures of all things I am here to read",
+      "annotation_text": "Allusion to German mystic Jacob Boehme's De Signatura Rerum (The Signature of All Things, 1621). The external natural world (seaspawn, seawrack, rusty boots) presents divine glyphs requiring hermeneutic interpretation.",
+      "categories": [
+        "scholastic-theology",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Boehme, Jacob. De Signatura Rerum. 1621.",
+        "Thornton, Weldon. Allusions in Ulysses. UNC Press, 1968."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

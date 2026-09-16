@@ -6,161 +6,23 @@
   "page_number": 591,
   "annotations": [
     {
-      "id": "591.01-5505",
+      "id": "591.01-rc01",
       "line_number": 1,
-      "target_phrase": "Sandhyas! Sandhyas! Sandhyas!",
-      "annotation_text": "The triple invocation of twilight/dawn... This specifically addresses the unique events unfolding on page 591 regarding the dawn themes.",
+      "target_phrase": "Book IV: The Ricorso",
+      "annotation_text": "Divisional threshold preceding Book IV (The Ricorso / Dawn, pages 593–628). Giambattista Vico's fourth phase—the ricorso—is not a static termination but a cosmic recirculation wherein human history, exhausted by democratic atomization, collapses back into divine primal nature to be reborn through the lightning bolt.",
       "categories": [
-        "dawn",
-        "sanskrit",
-        "prayer"
+        "viconian-cycles",
+        "philosophical-dialectic",
+        "structural-genetic"
       ],
       "cross_references": [
-        "003.01"
+        "003.01",
+        "593.01",
+        "628.16"
       ],
       "sources": [
-        "FWEET.org. http://www.fweet.org"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "591.05-7c7a",
-      "line_number": 5,
-      "target_phrase": "Calling all down...",
-      "annotation_text": "The awakening of the dreamers... This specifically addresses the unique events unfolding on page 591 regarding the awakening themes.",
-      "categories": [
-        "awakening",
-        "ricorso"
-      ],
-      "cross_references": [
-        "555.01"
-      ],
-      "sources": [
-        "FWEET.org. http://www.fweet.org"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "591.10-8b60",
-      "line_number": 10,
-      "target_phrase": "Dublin Bay...",
-      "annotation_text": "The sun rising over the bay... This specifically addresses the unique events unfolding on page 591 regarding the geography-dublin themes.",
-      "categories": [
-        "geography-dublin",
-        "dawn"
-      ],
-      "cross_references": [
-        "003.15"
-      ],
-      "sources": [
-        "FWEET.org. http://www.fweet.org"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "591.15-716e",
-      "line_number": 15,
-      "target_phrase": "St. Kevin's tub...",
-      "annotation_text": "Kevin in his stone tub... This specifically addresses the unique events unfolding on page 591 regarding the saints themes.",
-      "categories": [
-        "saints",
-        "kevin",
-        "water"
-      ],
-      "cross_references": [
-        "600.01"
-      ],
-      "sources": [
-        "FWEET.org. http://www.fweet.org"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "591.20-e559",
-      "line_number": 20,
-      "target_phrase": "Vico's ricorso...",
-      "annotation_text": "The restart of the historical cycle... This specifically addresses the unique events unfolding on page 591 regarding the vico themes.",
-      "categories": [
-        "vico",
-        "history"
-      ],
-      "cross_references": [
-        "003.01"
-      ],
-      "sources": [
-        "FWEET.org. http://www.fweet.org"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "591.25-10e1",
-      "line_number": 25,
-      "target_phrase": "The sleeping giant...",
-      "annotation_text": "Finn MacCool awakening... This specifically addresses the unique events unfolding on page 591 regarding the finn themes.",
-      "categories": [
-        "finn",
-        "mythology-irish"
-      ],
-      "cross_references": [
-        "004.01"
-      ],
-      "sources": [
-        "FWEET.org. http://www.fweet.org"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "591.30-939f",
-      "line_number": 30,
-      "target_phrase": "The new day...",
-      "annotation_text": "The transition from night to day... This specifically addresses the unique events unfolding on page 591 regarding the time themes.",
-      "categories": [
-        "time",
-        "dawn"
-      ],
-      "cross_references": [
-        "005.01"
-      ],
-      "sources": [
-        "FWEET.org. http://www.fweet.org"
-      ],
-      "contributors": [
-        "joycean-scholar",
-        "open-wake-editor"
-      ]
-    },
-    {
-      "id": "591.35-be96",
-      "line_number": 35,
-      "target_phrase": "The golden sun...",
-      "annotation_text": "Solar imagery dominating... This specifically addresses the unique events unfolding on page 591 regarding the sun themes.",
-      "categories": [
-        "sun",
-        "light"
-      ],
-      "cross_references": [
-        "006.01"
-      ],
-      "sources": [
-        "FWEET.org. http://www.fweet.org"
+        "Vico, Giambattista. The New Science (trans. Bergin and Fisch). Cornell University Press, 1948.",
+        "Verene, Donald Phillip. Vico and Joyce. State University of New York Press, 1987."
       ],
       "contributors": [
         "joycean-scholar",

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 10,
+  "page_number": 283,
+  "annotations": [
+    {
+      "id": "283.01-wr01",
+      "line_number": 1,
+      "target_phrase": "The superior, the very reverend John Conmee S.J. reset his smooth watch in his pocket",
+      "annotation_text": "Opening of Episode 10 (Wandering Rocks). 3:00 PM. Father John Conmee, S.J., former rector of Clongowes Wood College, begins his afternoon walk through the north side of Dublin. The episode is structured in 19 synchronous mini-scenes weaving across the civic labyrinth of Dublin.",
+      "categories": [
+        "dublin-1904-topography",
+        "scholastic-theology",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [
+        "199.18"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses. Faber, 1930.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988, p. 254."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "283.18-cw01",
+      "line_number": 18,
+      "target_phrase": "Clongowes Wood College",
+      "annotation_text": "Joyce's Jesuit boarding school in County Kildare, prominently featured in A Portrait of the Artist as a Young Man. Conmee represents the spiritual authority of Rome in Ireland alongside the Viceroy's British imperial power.",
+      "categories": [
+        "dublin-1904-topography",
+        "scholastic-theology"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Joyce, James. A Portrait of the Artist as a Young Man. 1916.",
+        "Ellmann, Richard. James Joyce. Oxford UP, 1982."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 8,
+  "page_number": 199,
+  "annotations": [
+    {
+      "id": "199.01-ls01",
+      "line_number": 1,
+      "target_phrase": "Pineapple rock, lemon platt, butter scotch.",
+      "annotation_text": "Opening cadence of Episode 8 (Lestrygonians). 1:00 PM. Leopold Bloom gazes into the confectioner's window of Graham Lemon on Sackville Street. The episode's organ is the Esophagus and its technique is Peristalsis, saturating the narrative with hunger, chewing, digestion, and predatory consumerism.",
+      "categories": [
+        "physio-anatomical",
+        "dublin-1904-topography",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [
+        "071.01",
+        "153.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses: A Study. Faber, 1930.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "199.18-ec01",
+      "line_number": 18,
+      "target_phrase": "Elijah is coming.",
+      "annotation_text": "An evangelical throwaway flyer advertising the apocalyptic revival meetings of Dr. John Alexander Dowie. Bloom receives it and later casts it upon the River Liffey, where it bobs downstream towards Dublin Bay throughout the afternoon.",
+      "categories": [
+        "scholastic-theology",
+        "stream-of-consciousness"
+      ],
+      "cross_references": [
+        "283.01"
+      ],
+      "sources": [
+        "Thornton, Weldon. Allusions in Ulysses. UNC Press, 1968.",
+        "Gifford, Don. Ulysses Annotated. UC Press, 1988."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

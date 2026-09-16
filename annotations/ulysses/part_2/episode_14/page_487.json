@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 14,
+  "page_number": 487,
+  "annotations": [
+    {
+      "id": "487.01-ox01",
+      "line_number": 1,
+      "target_phrase": "Deshil Holles Eamus. Deshil Holles Eamus. Deshil Holles Eamus.",
+      "annotation_text": "The incantatory opening of Episode 14 (Oxen of the Sun). 10:00 PM. Holles Street National Maternity Hospital. Fuses Irish 'deiseal' (sunwise, auspicious direction), Holles Street, and Latin 'eamus' ('Let us go sunwise to Holles Street'). Joyce constructs the episode as an exact chronological evolution of English prose style (from Latinate incantations and Old English alliteration to Carlyle and modern slang), mimicking the nine-month gestation of a human fetus.",
+      "categories": [
+        "parodic-stylistic",
+        "physio-anatomical",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [
+        "071.01",
+        "243.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses: A Study. Faber, 1930.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988, p. 408."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "487.14-ae01",
+      "line_number": 14,
+      "target_phrase": "Send us bright one, light one, Horhorn, quickening and wombfruit.",
+      "annotation_text": "Invocation mimicking early medieval Anglo-Saxon alliterative verse. The organ is the Womb and the art is Medicine, tracking Mina Purefoy's protracted labor within the hospital while Stephen and medical students drink beer in the common room.",
+      "categories": [
+        "parodic-stylistic",
+        "physio-anatomical"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Ellmann, Richard. James Joyce. Oxford UP, 1982.",
+        "Kenner, Hugh. Ulysses. Johns Hopkins UP, 1987."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

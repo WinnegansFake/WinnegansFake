@@ -16,6 +16,70 @@ export interface ValidationIssue {
   severity: 'error' | 'warning';
 }
 
+export const FW_CHAPTER_PAGE_RANGES: Record<string, [number, number]> = {
+  '1:1': [1, 29],
+  '1:2': [30, 47],
+  '1:3': [48, 74],
+  '1:4': [75, 103],
+  '1:5': [104, 125],
+  '1:6': [126, 168],
+  '1:7': [169, 195],
+  '1:8': [196, 216],
+  '2:1': [217, 259],
+  '2:2': [260, 308],
+  '2:3': [309, 382],
+  '2:4': [383, 399],
+  '3:1': [400, 428],
+  '3:2': [429, 473],
+  '3:3': [474, 554],
+  '3:4': [555, 590],
+  '4:1': [591, 628],
+};
+
+export const ULYSSES_EPISODE_PAGE_RANGES: Record<number, [number, number]> = {
+  1: [1, 28],
+  2: [29, 50],
+  3: [51, 70],
+  4: [71, 94],
+  5: [95, 116],
+  6: [117, 152],
+  7: [153, 198],
+  8: [199, 242],
+  9: [243, 282],
+  10: [283, 328],
+  11: [329, 372],
+  12: [373, 444],
+  13: [445, 486],
+  14: [487, 538],
+  15: [539, 658],
+  16: [659, 702],
+  17: [703, 720],
+  18: [721, 732],
+};
+
+export function validatePageBoundaries(data: any): string[] {
+  const errors: string[] = [];
+  const norm = (w: string | undefined) => (w || '').replace(/[-_]/g, '').toLowerCase();
+  const work = norm(data?.work || 'finneganswake');
+  const pageNum = data?.page_number;
+
+  if (typeof pageNum !== 'number') return errors;
+
+  if (work === 'finneganswake' && data.book && data.chapter) {
+    const key = `${data.book}:${data.chapter}`;
+    const range = FW_CHAPTER_PAGE_RANGES[key];
+    if (range && (pageNum < range[0] || pageNum > range[1])) {
+      errors.push(`Page ${pageNum} is outside canonical range for Book ${data.book} Chapter ${data.chapter} (${range[0]}–${range[1]}).`);
+    }
+  } else if (work === 'ulysses' && data.episode) {
+    const range = ULYSSES_EPISODE_PAGE_RANGES[data.episode];
+    if (range && (pageNum < range[0] || pageNum > range[1])) {
+      errors.push(`Page ${pageNum} is outside canonical range for Episode ${data.episode} (${range[0]}–${range[1]}).`);
+    }
+  }
+  return errors;
+}
+
 export interface ValidatorOptions {
   /**
    * Custom JSON Schema. Defaults to @winnegans/core standard schema.
@@ -59,6 +123,12 @@ export interface ValidatorOptions {
   requireCoordinatePrefix?: boolean;
 
   /**
+   * Enforce canonical page boundary limits per chapter or episode.
+   * Default: true.
+   */
+  enforcePageBoundaries?: boolean;
+
+  /**
    * Optional custom function to validate directory and filename paths.
    */
   validatePath?: (filePath: string, parsedData: any) => string[];
@@ -90,6 +160,7 @@ export class AnnotationValidator {
       forbidNewlinesInPhrase: options.forbidNewlinesInPhrase ?? true,
       requireNonDecreasingLines: options.requireNonDecreasingLines ?? true,
       requireCoordinatePrefix: options.requireCoordinatePrefix ?? true,
+      enforcePageBoundaries: options.enforcePageBoundaries ?? true,
       validatePath: options.validatePath,
     };
 
@@ -118,7 +189,20 @@ export class AnnotationValidator {
       }
     }
 
-    // 2. Custom path coherence validation if handler provided
+    // 2. Canonical page boundary validation
+    if (this.options.enforcePageBoundaries) {
+      const boundaryErrs = validatePageBoundaries(data);
+      for (const bErr of boundaryErrs) {
+        issues.push({
+          filePath,
+          property: 'page_number',
+          message: `Boundary violation: ${bErr}`,
+          severity: 'error',
+        });
+      }
+    }
+
+    // 3. Custom path coherence validation if handler provided
     if (filePath && this.options.validatePath) {
       const pathErrs = this.options.validatePath(filePath, data);
       for (const msg of pathErrs) {

@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 9,
+  "page_number": 243,
+  "annotations": [
+    {
+      "id": "243.01-sc01",
+      "line_number": 1,
+      "target_phrase": "Urbane, to comfort them, the quaker librarian purred:",
+      "annotation_text": "Opening of Episode 9 (Scylla and Charybdis). 2:00 PM. Set in the National Library of Ireland on Kildare Street. Introduces Thomas William Lyster, the scholarly quaker librarian, engaging with George Russell (A.E.), John Eglinton, and Stephen Dedalus as Stephen prepares his dialectical Hamlet theory.",
+      "categories": [
+        "shakespearean-allusion",
+        "dublin-1904-topography",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [
+        "003.18",
+        "051.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses: A Study. Faber, 1930.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988, p. 192."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "243.14-sh01",
+      "line_number": 14,
+      "target_phrase": "Shakespeare's grandson is Shakespeare's grandfather",
+      "annotation_text": "Stephen's celebrated theological-literary paradox: applying the Sabellian heresy and Trinitarian dogma to Shakespeare's ghost in Hamlet, arguing that the artist is the father of all his creations and his own spiritual progenitor.",
+      "categories": [
+        "shakespearean-allusion",
+        "scholastic-theology"
+      ],
+      "cross_references": [
+        "001.01"
+      ],
+      "sources": [
+        "Ellmann, Richard. James Joyce. Oxford UP, 1982.",
+        "Kenner, Hugh. Ulysses. Johns Hopkins UP, 1987."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

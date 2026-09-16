@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 11,
+  "page_number": 329,
+  "annotations": [
+    {
+      "id": "329.01-sr01",
+      "line_number": 1,
+      "target_phrase": "Bronze by gold heard the hoofirons, steelyringing.",
+      "annotation_text": "The famous polyphonic opening chord of Episode 11 (Sirens). 4:00 PM. Set in the Ormond Hotel bar on the Liffey quays. 'Bronze' represents the bronze-haired barmaid Lydia Douce; 'gold' represents Mina Kennedy. The first sixty lines form a musical overture announcing all acoustic themes developed across the episode.",
+      "categories": [
+        "parodic-stylistic",
+        "physio-anatomical",
+        "homeric-correspondence"
+      ],
+      "cross_references": [
+        "071.01",
+        "283.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses: A Study. Faber, 1930.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988, p. 288."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "329.08-ip01",
+      "line_number": 8,
+      "target_phrase": "Imperthnthn thnthnthn.",
+      "annotation_text": "Acoustic deformation of 'impertinent insolence', mimicking the rhythm and dissonance of musical notes sounding together in a fugue ('fuga per canonem').",
+      "categories": [
+        "parodic-stylistic",
+        "physio-anatomical"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Budgen, Frank. James Joyce and the Making of Ulysses. 1934.",
+        "Kenner, Hugh. Ulysses. Johns Hopkins UP, 1987."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

@@ -56,7 +56,7 @@ Through an analysis spanning the macro-cosmological structure of the four books,
    - 5.2 The Textual Editing Wars: The 1939 Errata and the Rose/O'Hanlon "Restored" Controversy
    - 5.3 The Digital Frontier: FWEET, the James Joyce Digital Archive (JJDA), and Genetic Editions
    - 5.4 The Architecture of *WinnegansFake*: Pure TypeScript EPUB Parsing and Next.js Streaming
-   - 5.5 The Eighteen Analytical Registers and the Corpus of 1,850 Curated Annotations
+   - 5.5 The Nineteen Analytical Registers and the Corpus of Curated Annotations
 6. [Chapter VI: Conclusion: The Unbroken Circle and the Future of Distributed Commentary](#chapter-vi-conclusion-the-unbroken-circle-and-the-future-of-distributed-commentary)
    - 6.1 The Endless Sentence: From *"riverrun"* to *"a long the"*
    - 6.2 The Living Archive: Open-Source Scholarship as Communal *Ricorso*
@@ -84,7 +84,7 @@ The sleeper at the heart of the text is simultaneously Humphrey Chimpden Earwick
 ### 1.3 The Zero-Copyright Legal Dilemma & The Coordinate-Based Glossematic Model (`PPP.LL`)
 A major dilemma confronts digital humanities scholars wishing to build open, collaborative tools for *Finnegans Wake*: **copyright law**. 
 - Under European Union law and in many Berne Convention territories, Joyce’s work entered the public domain 70 years after his death (January 1, 2012).
-- However, under **United States copyright law** (governed by the 1998 Sonny Bono Copyright Term Extension Act), works published with copyright notices between 1929 and 1963 receive 95 years of protection from publication date. Because *Finnegans Wake* was published in May 1939, it remains under full statutory copyright in the United States until **January 1, 2035**.
+- However, under **United States copyright law** (governed by the 1998 Sonny Bono Copyright Term Extension Act), works published with copyright notices between 1929 and 1963 receive 95 years of protection from publication date. Because *Finnegans Wake* was published in May 1939, it remains under full statutory copyright in the United States through **December 31, 2035** (entering the public domain on **January 1, 2036**).
 
 Any attempt to host, reproduce, or distribute the raw text of the *Wake* in a public GitHub repository or open-source web application within U.S. jurisdiction constitutes direct copyright infringement.
 
@@ -308,27 +308,28 @@ The **WinnegansFake** monorepo realizes this scholarly tradition in a modern com
 - **`web/`:** A Next.js 16 (Turbopack) web application utilizing Tailwind CSS and React 19. It streams pages directly from local archive buffers via `/api/epub`, serves line-indexed metadata through `/api/annotations`, and provides an inline collaborative editor for community contributions.
 - **`validate.js`:** A rigorous Node.js validator enforcing JSON Schema Draft 2020-12 compliance, canonical folder hierarchies, and strict copyright length restrictions ($\le 150$ characters).
 
-### 5.5 The Eighteen Analytical Registers and the Corpus of 1,850 Curated Annotations
-Through the automated pipeline developed in this project, **1,850 scholarly annotations** have been compiled and verified across all 628 pages of the *Wake*, systematically structured across **18 distinct analytical registers**:
+### 5.5 The Nineteen Analytical Registers and the Corpus of Curated Annotations
+Through the continuous curation and automated validation pipeline developed in this project, scholarly annotations have been compiled, verified, and mapped across all 628 pages of the *Wake*, systematically structured across **19 distinct analytical registers**:
 
-1. **HCE / Protagonist Archetype**
-2. **ALP / River Liffey / Feminine Principle**
-3. **Shem & Shaun Fraternal Dialectic**
-4. **Issy & The Rainbow Girls / Mirror-Self**
-5. **The Four Annalists / Evangelists (Mamalujo)**
-6. **Viconian Ricorso & Philosophical Cycles**
-7. **Cabalistic Numerology (1132, 566, 29, 12, 4)**
-8. **The Wellington Museyroom & Waterloo Battlefield**
-9. **Dublin Topography, Bridges, & Historic Monuments**
-10. **The Ten 100-letter Polysyllabic Thunderclaps**
-11. **Liturgical, Sacramental, & Vulgate Latin Puns**
-12. **Celtic Lore, Fianna Legends, & Early Saints**
-13. **The Letter in the Boston Dump (Biddy Doran)**
-14. **The Comic/Cosmic Fall & Humpty Dumpty**
-15. **Jonathan Swift, Stella, & Vanessa**
-16. **The Book of Kells & Irish Epigraphy**
-17. **Egyptian Book of the Dead & Osiris Myth**
-18. **The Nocturnal Oneiric Dimension & Dream Psychology**
+1. **Etymological & Polyglot Multilingualism** (portmanteaus across 60+ languages)
+2. **Dublin Topography & Micro-Geography** (Phoenix Park, Howth, Liffey bridges, Chapelizod)
+3. **Viconian Historical Cycles & Ricorso** (Theocratic, Heroic, Human, Ricorso)
+4. **Theological & Liturgical Parody** (Tridentine Mass, Thomism, heresies)
+5. **Sigla & Archetypal Characters** (∐, Δ, ⊏, ⊐, ⊣, ⊥, S)
+6. **Irish Mythology & Celtic Folklore** (Finn MacCool, Brian Boru, Tuatha Dé Danann)
+7. **Egyptian Book of the Dead & Solar Mythology** (Osiris, Isis, Ra, Book of the Dead spells)
+8. **Brunonian Polarity / Coincidentia Oppositorum** (Bruno of Nola, dialectical opposites)
+9. **Musical Acoustic Motifs & Street Ballads** (Tim Finnegan, Moore's Melodies, Wagner)
+10. **The 100-Letter Thunderclaps** (The ten thunder words of divine fiat and civilizational fall)
+11. **Psychoanalytic & Dreamwork Mechanisms** (Freud, Jung, condensation, displacement)
+12. **Arthurian Romance & Tristan and Isolde** (King Mark, Tristan, Isolde, love potion)
+13. **Satirical & Parodic Inversions (Swift & Carroll)** (Jonathan Swift, Stella, Vanessa, Humpty Dumpty)
+14. **Scientific & Technological Inventions** (Radio broadcasting, television, quantum theory)
+15. **Juridical Trial & Parliamentary Inquest** (Festy King, Twelve Jurors, Hansard debates)
+16. **Book of Kells & Scribal Illumination** (Tunc page, illuminated initials, insular calligraphy)
+17. **Botanical, Zoological, & Riverine Catalogs** (1,000+ world rivers in ALP, tree and stone)
+18. **Nursery Rhymes & Street Games** (Children's singing games of Chapter II.1)
+19. **Genetic Manuscripts & Draft Notebooks** (Buffalo Notebooks VI.B series, printer proofs)
 
 Every annotation is tethered directly to authoritative web links—allowing scholars to click from an annotation card directly to full-text scans on the Internet Archive, Project Gutenberg, the Stanford Encyclopedia of Philosophy, and academic portals.
 

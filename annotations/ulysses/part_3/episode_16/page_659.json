@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 3,
+  "episode": 16,
+  "page_number": 659,
+  "annotations": [
+    {
+      "id": "659.01-eu01",
+      "line_number": 1,
+      "target_phrase": "Preparatory to anything else Mr Bloom brushed off the dust from Stephen's clothes.",
+      "annotation_text": "Opening of Part III (The Nostos) and Episode 16 (Eumaeus). 1:00 AM. Leopold Bloom guides an exhausted, shaken Stephen Dedalus to the cabman's shelter under Loopline Bridge near Custom House Quay. Written in an intentionally fatigued, cliché-laden, and circumlocutory prose style reflecting somatic physical exhaustion.",
+      "categories": [
+        "parodic-stylistic",
+        "physio-anatomical",
+        "homeric-correspondence"
+      ],
+      "cross_references": [
+        "001.01",
+        "071.01",
+        "539.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses: A Study. Faber, 1930.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988, p. 534."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "659.18-sk01",
+      "line_number": 18,
+      "target_phrase": "Skin-the-Goat",
+      "annotation_text": "James Fitzharris (1833–1910), nicknamed 'Skin-the-Goat', driver of the getaway cab in the 1882 Phoenix Park Murders of Lord Frederick Cavendish and Thomas Henry Burke. He runs the cabman's shelter, embodying unrepentant Fenian physical force nationalism.",
+      "categories": [
+        "irish-nationalism",
+        "dublin-1904-topography"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Corballis, Richard. Joyce and the Phoenix Park Murders. 2004.",
+        "Gifford, Don. Ulysses Annotated. UC Press, 1988."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

@@ -6,21 +6,23 @@
   "page_number": 592,
   "annotations": [
     {
-      "id": "592.01-c1de",
+      "id": "592.01-dw01",
       "line_number": 1,
-      "target_phrase": "[Page title/divider section",
-      "annotation_text": "Page 592 opens Book 4, Chapter 1 (\"The Ricorso — Dawn\") during the Ricorso (The Return) phase. This passage continues dawn breaking over Dublin Bay, St. Kevin bathing at Glendalough, St. Patrick vs. the Archdruid Balkelly, ALP's dissolving final monologue into the sea, featuring St. Kevin, St. Patrick, Balkelly, ALP. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "target_phrase": "The Breaking of Dawn",
+      "annotation_text": "Editorial note on the threshold of Book IV. The dream shifts from the enclosed bedroom of Book III to the open morning skies over Dublin Bay. The ensuing text at 593.01 inaugurates the Eastern dawn prayer ('Sandhyas!'), Saint Kevin in his water-trough, Saint Patrick confronting the Druid Balkelly, and ALP's concluding dissolution into the sea.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-4"
+        "structural-genetic",
+        "somatic-oneiric",
+        "egyptian-resurrection"
       ],
-      "cross_references": [],
+      "cross_references": [
+        "591.01",
+        "593.01",
+        "628.16"
+      ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
-        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+        "Bishop, John. Joyce's Book of the Dark. University of Wisconsin Press, 1986.",
+        "Campbell, Joseph, and Henry Morton Robinson. A Skeleton Key to Finnegans Wake. Harcourt, Brace, 1944."
       ],
       "contributors": [
         "joycean-scholar",

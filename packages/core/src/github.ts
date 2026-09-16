@@ -8,7 +8,7 @@
 import { AnnotationItem, PageAnnotationsData } from './types.js';
 import { WorkDefinition, getWork, getPageFilePath, getBookAndChapterInfo } from './works.js';
 
-export const UPSTREAM_OWNER = 'tekromancy';
+export const UPSTREAM_OWNER = 'WinnegansFake';
 export const UPSTREAM_REPO = 'WinnegansFake';
 export const UPSTREAM_BRANCH = 'main';
 

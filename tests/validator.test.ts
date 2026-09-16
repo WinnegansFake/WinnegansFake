@@ -134,4 +134,15 @@ describe('@winnegans/validator: AnnotationValidator', () => {
     const issues = validator.validateFile(targetFile);
     expect(issues.length).toBe(0);
   });
+
+  it('should detect canonical chapter boundary violations', () => {
+    const boundaryViolator = {
+      ...validPageData,
+      book: 2,
+      chapter: 2, // Chapter 2 is pages 260-308
+      page_number: 257, // page 257 belongs in Chapter 1 (217-259)!
+    };
+    const issues = validator.validateData(boundaryViolator);
+    expect(issues.some((i) => i.message.includes('outside canonical range'))).toBe(true);
+  });
 });

@@ -56,7 +56,7 @@ describe('GitHub PR Service & Token Management', () => {
   });
 
   it('verifies upstream repository constants', () => {
-    expect(UPSTREAM_OWNER).toBe('tekromancy');
+    expect(UPSTREAM_OWNER).toBe('WinnegansFake');
     expect(UPSTREAM_REPO).toBe('WinnegansFake');
     expect(UPSTREAM_BRANCH).toBe('main');
   });

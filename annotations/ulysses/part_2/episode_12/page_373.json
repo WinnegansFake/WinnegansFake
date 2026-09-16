@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 12,
+  "page_number": 373,
+  "annotations": [
+    {
+      "id": "373.01-cy01",
+      "line_number": 1,
+      "target_phrase": "I was just passing the time of day with old Troy of the D.M.P.",
+      "annotation_text": "Opening of Episode 12 (Cyclops). 5:00 PM. Barney Kiernan's pub on Little Britain Street. Narrated by an unnamed Dublin debt-collector using cynical, vernacular Dublin slang, juxtaposed against 33 hyperbolic parodies written in heroic, Ossianic, legal, and biblical styles ('gigantism').",
+      "categories": [
+        "parodic-stylistic",
+        "dublin-1904-topography",
+        "irish-nationalism"
+      ],
+      "cross_references": [
+        "071.01",
+        "329.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses. Faber, 1930.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988, p. 314."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "373.18-cz01",
+      "line_number": 18,
+      "target_phrase": "The citizen",
+      "annotation_text": "Modeled closely on Michael Cusack (1847–1906), founder of the Gaelic Athletic Association (GAA). The Citizen embodies militant, narrow, and anti-Semitic Irish chauvinism, acting as the one-eyed Cyclops (Polyphemus) who hurls a biscuit-tin at Bloom.",
+      "categories": [
+        "irish-nationalism",
+        "judaica-semitic",
+        "homeric-correspondence"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Ellmann, Richard. James Joyce. Oxford UP, 1982.",
+        "Kenner, Hugh. Dublin's Joyce. Chatto & Windus, 1955."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

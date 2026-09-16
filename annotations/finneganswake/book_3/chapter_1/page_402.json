@@ -6,21 +6,22 @@
   "page_number": 402,
   "annotations": [
     {
-      "id": "402.01-fcf7",
+      "id": "402.01-sp01",
       "line_number": 1,
-      "target_phrase": "[Page title/divider section",
-      "annotation_text": "Page 402 opens Book 3, Chapter 1 (\"Unknown\") during the Unknown phase. This passage continues the nocturnal dream, featuring HCE, ALP. The nocturnal dream-narrative layers Dublin topography, world mythology, and linguistic alchemy into polysemic prose.",
+      "target_phrase": "Shaun the Post",
+      "annotation_text": "Genetic transition from Book II to Book III. Shaun (sigla ⊐), the corpulent, authoritarian son and bearer of state authority, embarks upon his nocturnal journey floating down the river in a postal barrel (coracle), bearing the maternal letter from ALP to the waiting populace.",
       "categories": [
-        "structural",
-        "narrative-strata",
-        "book-3"
+        "sigla-archetypal",
+        "bruno-polarity",
+        "dublin-topography"
       ],
-      "cross_references": [],
+      "cross_references": [
+        "403.01",
+        "404.01"
+      ],
       "sources": [
-        "Campbell, Joseph and Robinson, Henry Morton. A Skeleton Key to Finnegans Wake. https://archive.org/details/skeletonkeytofin00camp",
-        "McHugh, Roland. Annotations to Finnegans Wake. https://archive.org/details/annotationstofin0000mchu_h5g8",
-        "Gordon, John. Finnegans Wake: A Plot Summary. https://johngordonfinnegan.weebly.com",
-        "JJDA: Finnegans Wake Genetic Edition. https://jjda.ie"
+        "McHugh, Roland. The Sigla of Finnegans Wake. University of Texas Press, 1976.",
+        "Deane, Vincent, Daniel Ferrer, and Geert Lernout (eds.). The Finnegans Wake Notebooks at Buffalo. Brepols, 2001."
       ],
       "contributors": [
         "joycean-scholar",

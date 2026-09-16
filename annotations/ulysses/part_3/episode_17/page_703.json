@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 3,
+  "episode": 17,
+  "page_number": 703,
+  "annotations": [
+    {
+      "id": "703.01-it01",
+      "line_number": 1,
+      "target_phrase": "What parallel courses did Bloom and Stephen follow returning?",
+      "annotation_text": "The famous opening question of Episode 17 (Ithaca). 2:00 AM. 7 Eccles Street. Joyce's favorite episode, composed entirely in impersonal, scientific catechism (questions and answers). Reduces the heroic homecoming of Odysseus and Telemachus to mathematical equations, astronomical coordinates, and physical laws.",
+      "categories": [
+        "parodic-stylistic",
+        "scholastic-theology",
+        "homeric-correspondence"
+      ],
+      "cross_references": [
+        "001.01",
+        "071.01",
+        "659.01"
+      ],
+      "sources": [
+        "Gilbert, Stuart. James Joyce's Ulysses: A Study. Faber, 1930.",
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. UC Press, 1988, p. 566."
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "703.14-ky01",
+      "line_number": 14,
+      "target_phrase": "the key of the front door was in the pocket of the other trousers",
+      "annotation_text": "The comedic climax of the homecoming: Bloom has forgotten the latchkey of 7 Eccles Street in his morning trousers, mirroring Stephen's earlier dispossession of the Martello Tower key by Buck Mulligan in Episode 1.",
+      "categories": [
+        "homeric-correspondence",
+        "stream-of-consciousness"
+      ],
+      "cross_references": [
+        "003.25"
+      ],
+      "sources": [
+        "Ellmann, Richard. James Joyce. Oxford UP, 1982.",
+        "Kenner, Hugh. Ulysses. Johns Hopkins UP, 1987."
+      ],
+      "contributors": [
+        "joycean-scholar"
+      ]
+    }
+  ]
+}

@@ -124,10 +124,15 @@ function syncAnnotations() {
   walk(SOURCE_DIR);
   console.log(`✅ Synchronized ${count} annotation files across works:`, workCounts);
 
-  // Write compiled search index
+  // Write compiled search index (monolithic and per-work chunked)
   const indexDest = path.join(REPO_ROOT, 'web', 'public', 'search_index.json');
   fs.writeFileSync(indexDest, JSON.stringify(searchIndex), 'utf8');
-  console.log(`✅ Built search index with ${searchIndex.length} annotations at web/public/search_index.json`);
+
+  const fwIndex = searchIndex.filter((item) => item.work === 'finneganswake');
+  const ulyssesIndex = searchIndex.filter((item) => item.work === 'ulysses');
+  fs.writeFileSync(path.join(REPO_ROOT, 'web', 'public', 'search_index_finneganswake.json'), JSON.stringify(fwIndex), 'utf8');
+  fs.writeFileSync(path.join(REPO_ROOT, 'web', 'public', 'search_index_ulysses.json'), JSON.stringify(ulyssesIndex), 'utf8');
+  console.log(`✅ Built search index with ${searchIndex.length} annotations at web/public/search_index.json (FW: ${fwIndex.length}, Ulysses: ${ulyssesIndex.length})`);
 
   // Write works.json catalog
   let allWorks = [];

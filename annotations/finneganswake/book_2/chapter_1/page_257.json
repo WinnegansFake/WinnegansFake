@@ -11,10 +11,10 @@
       "target_phrase": "Izzy",
       "annotation_text": "Issy/daughter figure \"Izzy\" on page 257 (\"The Mime of Mick, Nick and the Maggies\"): the narcissistic mirror-daughter, modeled on Isolde and Swift's dual muses Stella and Vanessa, appears here within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. Her prismatic splitting into twenty-eight Rainbow Girls reflects the cycle's Age of Heroes phase through youthful seduction and self-reflection.",
       "categories": [
-        "issy",
-        "mirror-twin",
-        "tristan-and-isolde",
-        "psychology"
+        "sigla-archetypal",
+        "arthurian-tristan",
+        "swift-carroll",
+        "psychoanalytic-oneiric"
       ],
       "cross_references": [
         "143.28",
@@ -39,10 +39,9 @@
       "target_phrase": "stella",
       "annotation_text": "Swiftian presence \"stella\" on page 257 (\"The Mime of Mick, Nick and the Maggies\"): the Dean of St. Patrick's Cathedral haunts this passage within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. His dual lovers Stella and Vanessa mirror Issy's split personalities, while his savage satire infuses the Age of Heroes dream with political and scatological ferocity.",
       "categories": [
-        "jonathan-swift",
-        "dublin-history",
-        "eighteenth-century",
-        "satire"
+        "swift-carroll",
+        "dublin-topography",
+        "irish-mythology"
       ],
       "cross_references": [
         "140.08",
@@ -62,27 +61,179 @@
       ]
     },
     {
-      "id": "257.24-a399",
-      "line_number": 24,
-      "target_phrase": "Lukkedoerendunandurraskewdylooshoofermoyportertoo",
-      "annotation_text": "Polysyllabic thunderclap on page 257 (\"The Mime of Mick, Nick and the Maggies\"): one of ten 100-letter words synthesizing thunder across world languages, signaling a Viconian cataclysm within the children's games and pantomime on the green, Chuff vs. Glugg, the twenty-eight Rainbow Girls, the Angelus bell. This divine acoustic blast — fusing Hindi, Greek, Latin, French, Italian, Irish, and Norse roots — marks a civilizational transition in the Age of Heroes phase.",
+      "id": "257.03-3f65",
+      "line_number": 3,
+      "target_phrase": "Aun Do Tri",
+      "annotation_text": "Counting in Irish (aon, dó, trí), establishing the tripartite rhythm of the children's street games while linking back to Viconian triadic history.",
       "categories": [
-        "thunderclap",
-        "vico",
-        "voice-of-god",
-        "onomatopoeia"
+        "etymological-polyglot",
+        "viconian-cycles",
+        "nursery-rhymes"
+      ],
+      "cross_references": [
+        "260.05"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "257.08-df35",
+      "line_number": 8,
+      "target_phrase": "gluttonous",
+      "annotation_text": "Establishes the thematic link between the children's ravenous consumption of games and physical eating, merging intellect and appetite.",
+      "categories": [
+        "somatic-oneiric",
+        "nursery-rhymes"
+      ],
+      "cross_references": [
+        "258.11"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "257.14-fdff",
+      "line_number": 14,
+      "target_phrase": "cannibalism",
+      "annotation_text": "Theological undertones of the Eucharist (eating the god/father), framed through the savage lens of tribal survival and filial usurpation in the children's mime.",
+      "categories": [
+        "theological-liturgical",
+        "irish-mythology"
+      ],
+      "cross_references": [
+        "258.15"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "257.20-e7b1",
+      "line_number": 20,
+      "target_phrase": "sacramental",
+      "annotation_text": "Elevates the brute act of consumption into ritualistic communion, foreshadowing the collective ingestion of HCE's mythic body.",
+      "categories": [
+        "theological-liturgical",
+        "sigla-archetypal"
+      ],
+      "cross_references": [
+        "258.20"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "257.27-b24d",
+      "line_number": 27,
+      "target_phrase": "Bothallchoractorschumminaroundgansumuminarumdrumstrumtruminahumptadumpwaultopoofoolooderamaunsturnup!",
+      "annotation_text": "The seventh 100-letter thunder-word (FW 257.27-28). It synthesizes themes of choral singing, drumming, the fall of Humpty Dumpty from the wall ('humptadumpwaultopoofoolooderamaunsturnup'), and the gluttonous harvest, signaling the Viconian terror that drives humanity from bestial wandering into civil institutions.",
+      "categories": [
+        "thunderclaps",
+        "viconian-cycles",
+        "musical-rhythms"
       ],
       "cross_references": [
         "003.15",
         "023.05",
         "044.20",
-        "090.31"
+        "090.31",
+        "113.09",
+        "139.14",
+        "314.08",
+        "332.05",
+        "424.20"
       ],
       "sources": [
         "Vico, Giambattista. Scienza Nuova (On the Thunder). https://plato.stanford.edu/entries/vico/",
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
         "Atherton, James S. The Books at the Wake. https://archive.org/details/booksatwake0000athe",
-        "FinnegansWeb: Thunderwords Guide. https://www.finnegansweb.com",
         "FWEET: 100-letter Thunder Words. https://www.fweet.org"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "257.30-87a6",
+      "line_number": 30,
+      "target_phrase": "The Quadrivium",
+      "annotation_text": "Reference to the medieval university curriculum (arithmetic, geometry, music, astronomy), anchoring the children's study in scholastic tradition.",
+      "categories": [
+        "theological-liturgical",
+        "scientific-technological"
+      ],
+      "cross_references": [
+        "260.10"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "257.33-7b13",
+      "line_number": 33,
+      "target_phrase": "The Trivium",
+      "annotation_text": "The lower division of the liberal arts (grammar, logic, rhetoric), representing the foundational linguistic play that Joyce subverts.",
+      "categories": [
+        "theological-liturgical",
+        "etymological-polyglot"
+      ],
+      "cross_references": [
+        "260.12"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
+      ],
+      "contributors": [
+        "joycean-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "257.35-5af7",
+      "line_number": 35,
+      "target_phrase": "swallowing",
+      "annotation_text": "The physical act that unifies the consumption of food, words, and the father-figure in the nocturnal classroom setting.",
+      "categories": [
+        "somatic-oneiric",
+        "sigla-archetypal"
+      ],
+      "cross_references": [
+        "258.30"
+      ],
+      "sources": [
+        "McHugh, Roland. Annotations to Finnegans Wake. http://fweet.org",
+        "Gordon, John. Finnegans Blog. https://johngordonfinnegan.weebly.com/"
       ],
       "contributors": [
         "joycean-scholar",
