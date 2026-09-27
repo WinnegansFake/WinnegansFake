@@ -58,6 +58,21 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/library/coverage" className="hover:text-emerald-300 transition-colors">
+                  Annotation Coverage Heatmap
+                </Link>
+              </li>
+              <li>
+                <Link href="/sigla" className="hover:text-emerald-300 transition-colors">
+                  Sigla Constellation Graph
+                </Link>
+              </li>
+              <li>
+                <Link href="/vico" className="hover:text-emerald-300 transition-colors">
+                  Viconian Cycle Wheel
+                </Link>
+              </li>
+              <li>
                 <Link href="/dissertations" className="hover:text-emerald-300 transition-colors">
                   Dissertations Library
                 </Link>

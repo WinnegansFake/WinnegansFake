@@ -63,6 +63,21 @@ export default function RootLayout({
             gtag('config', 'G-LNDMB466MG');
           `}
         </Script>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#0f172a" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <Script id="register-sw" strategy="lazyOnload">
+          {`
+            if (typeof window !== 'undefined' && 'serviceWorker' in navigator && window.location.protocol === 'https:') {
+              window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').catch(function(err) {
+                  console.warn('SW registration skipped:', err);
+                });
+              });
+            }
+          `}
+        </Script>
       </head>
       <body className="min-h-full flex flex-col font-sans">
         <ThemeProvider>

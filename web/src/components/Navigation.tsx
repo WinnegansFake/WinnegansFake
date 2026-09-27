@@ -17,6 +17,9 @@ import {
   Library,
   Users,
   Zap,
+  BarChart3,
+  Sparkles,
+  RotateCw,
 } from 'lucide-react';
 import { GITHUB_REPO_URL } from '@/lib/constants';
 import { ThemeSwitcher } from './ThemeSwitcher';
@@ -41,13 +44,14 @@ export function Navigation() {
   const navLinks = [
     { href: '/', label: 'Overview', icon: Compass },
     { href: '/library', label: 'Works', icon: Library },
+    { href: '/library/coverage', label: 'Coverage', icon: BarChart3 },
     { href: '/reader', label: 'Reader', icon: BookOpen },
-    { href: '/search', label: 'Search', icon: Search },
     { href: '/thunders', label: 'Thunderwords', icon: Zap },
     { href: '/schemas/ulysses', label: 'Ulysses Schema', icon: Compass },
+    { href: '/sigla', label: 'Sigla Graph', icon: Sparkles },
+    { href: '/vico', label: 'Vico Wheel', icon: RotateCw },
     { href: '/bookclub', label: 'Book Club', icon: Users },
     { href: '/dissertations', label: 'Dissertations', icon: GraduationCap },
-    { href: '/guide', label: 'Local Setup', icon: Terminal },
     { href: '/contribute', label: 'Contribute', icon: Layers },
   ];
 

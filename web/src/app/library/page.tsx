@@ -15,6 +15,7 @@ import {
   ArrowRight,
   CheckCircle2,
   GraduationCap,
+  BarChart3,
 } from 'lucide-react';
 import { getAllWorks, FINNEGANS_WAKE, ULYSSES } from '@/lib/constants';
 
@@ -105,6 +106,23 @@ export default function LibraryPage() {
             to canonical page coordinates (<code className="text-emerald-400 font-mono text-sm">PPP.LL</code>),
             the platform turns any complex literary text into an interactive, collaborative research corpus.
           </p>
+
+          <div className="flex flex-wrap items-center gap-3 mt-6">
+            <Link
+              href="/library/coverage"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 hover:bg-amber-500/20 text-sm font-medium transition-colors"
+            >
+              <BarChart3 className="w-4 h-4 text-amber-400" />
+              <span>Annotation Coverage Heatmap</span>
+            </Link>
+            <Link
+              href="/schemas/ulysses"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-sky-500/10 border border-sky-500/30 text-sky-300 hover:bg-sky-500/20 text-sm font-medium transition-colors"
+            >
+              <Compass className="w-4 h-4 text-sky-400" />
+              <span>Ulysses Linati & Gilbert Schema</span>
+            </Link>
+          </div>
         </div>
 
         {/* Active Collections Section */}

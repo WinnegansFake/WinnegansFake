@@ -88,7 +88,8 @@ import { GithubPrModal } from './GithubPrModal';
 import { CitationModal } from './CitationModal';
 import { KeyboardShortcutsModal } from './KeyboardShortcutsModal';
 import { AcousticPlayer } from './AcousticPlayer';
-import { Keyboard } from 'lucide-react';
+import { DualPaneComparison } from './DualPaneComparison';
+import { Keyboard, Columns } from 'lucide-react';
 
 export interface UniversalReaderProps {
   initialWorkId?: string;
@@ -149,6 +150,7 @@ export function UniversalReader({
 
   // Reading Progress Tracker (localStorage)
   const [readPages, setReadPages] = useState<number[]>([]);
+  const [isDualPane, setIsDualPane] = useState<boolean>(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -1356,6 +1358,21 @@ export function UniversalReader({
                 ?
               </kbd>
             </button>
+ 
+            {/* Dual-Pane Comparative Split Reader Button */}
+            <button
+              type="button"
+              onClick={() => setIsDualPane(!isDualPane)}
+              className={`inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-medium border transition-colors cursor-pointer ${
+                isDualPane
+                  ? 'bg-amber-950/80 text-amber-300 border-amber-500/60 shadow-sm'
+                  : 'bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border-slate-700'
+              }`}
+              title="Toggle Dual-Pane Comparative Split Reader (Ouroboros & Intertextual Explorer)"
+            >
+              <Columns className="w-3.5 h-3.5 text-amber-400" />
+              <span className="hidden sm:inline">{isDualPane ? 'Split Active' : 'Split'}</span>
+            </button>
 
             <button
               type="button"
@@ -1438,8 +1455,23 @@ export function UniversalReader({
         </div>
       )}
 
-      {/* 3. Main Split View: Left = Book Lines, Right = Annotations */}
-      <div className="max-w-7xl mx-auto w-full px-4 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start flex-1">
+      {/* 3. Main View: Dual-Pane Comparative or Single Split View */}
+      {isDualPane ? (
+        <div className="max-w-7xl mx-auto w-full px-4 py-6 flex-1">
+          <DualPaneComparison
+            primaryWorkId={currentWorkId}
+            primaryPage={currentPage}
+            primaryLines={lines}
+            primaryAnnotations={allPageAnnotations}
+            epubLoaded={epubLoaded}
+            onNavigatePrimaryPage={goToPage}
+            onSwitchPrimaryWork={switchWork}
+            onClose={() => setIsDualPane(false)}
+            basePath={basePath}
+          />
+        </div>
+      ) : (
+        <div className="max-w-7xl mx-auto w-full px-4 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start flex-1">
         {/* LEFT COLUMN: Book Text (or Local EPUB Prompt) */}
         <section className="lg:col-span-7 wf-reader-viewport border border-slate-800 rounded-2xl p-5 sm:p-7 shadow-xl space-y-4 transition-colors">
           <div className="flex items-center justify-between pb-3 border-b border-slate-800 text-xs font-mono text-slate-400">
@@ -2087,6 +2119,7 @@ export function UniversalReader({
           </div>
         </section>
       </div>
+      )}
 
       {/* 4. Fullscreen Zen Reading Mode Overlay */}
       {isFullscreen && (

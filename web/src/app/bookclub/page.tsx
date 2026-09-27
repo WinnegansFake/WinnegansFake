@@ -26,6 +26,7 @@ import {
   Download,
 } from 'lucide-react';
 import { GITHUB_REPO_URL } from '@/lib/constants';
+import { BookClubFacilitator } from '@/components/BookClubFacilitator';
 
 const TIKTOK_URL = 'https://www.tiktok.com/@lily76412/video/7661924549893655839?_r=1&_t=ZN-99VlBXRExiY';
 
@@ -545,6 +546,13 @@ No literature degree or prior knowledge needed. Check out our plan and join the 
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Seminar Facilitator & Curated Discussion Prompts */}
+      <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950/40">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <BookClubFacilitator />
         </div>
       </section>
 

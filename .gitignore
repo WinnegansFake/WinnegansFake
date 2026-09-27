@@ -29,7 +29,7 @@ out/
 next-env.d.ts
 
 # Testing & Coverage
-coverage/
+/coverage/
 
 # OS and Editor files
 .DS_Store
@@ -56,4 +56,5 @@ yarn-error.log*
 web/public/annotations/
 web/public/dissertation.md
 web/public/search_index.json
+web/public/coverage_matrix.json
 

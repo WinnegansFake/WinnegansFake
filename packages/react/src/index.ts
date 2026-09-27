@@ -19,10 +19,15 @@ export { CookieConsentModal } from './CookieConsentModal';
 export { CitationModal, type CitationModalProps } from './CitationModal';
 export { KeyboardShortcutsModal, type KeyboardShortcutsModalProps } from './KeyboardShortcutsModal';
 export { AcousticPlayer, type AcousticPlayerProps } from './AcousticPlayer';
+export { DualPaneComparison, type DualPaneComparisonProps } from './DualPaneComparison';
 
 // Editor & Lemma Annotations
 export { InlineEditor } from './InlineEditor';
 export { AnnotationHoverPopup, type HoverPopupData } from './AnnotationHoverPopup';
+export { CoverageHeatmap, type CoverageMatrixData, type PageCoverage, type WorkCoverageStats } from './CoverageHeatmap';
+export { SiglaConstellation, type SigilNode, SIGLA_DATA } from './SiglaConstellation';
+export { ViconianWheel, type VicoAge, VICO_AGES } from './ViconianWheel';
+export { BookClubFacilitator, type SeminarPreset, SEMINAR_PRESETS } from './BookClubFacilitator';
 
 // Theme & Navigation
 export { ThemeSwitcher } from './ThemeSwitcher';

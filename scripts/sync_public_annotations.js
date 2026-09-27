@@ -124,6 +124,110 @@ function syncAnnotations() {
   walk(SOURCE_DIR);
   console.log(`✅ Synchronized ${count} annotation files across works:`, workCounts);
 
+  // Compile coverage matrix for all works
+  const coverageMatrix = {
+    generatedAt: new Date().toISOString(),
+    stats: {},
+    pages: {}
+  };
+
+  const canonicalTotals = {
+    finneganswake: 628,
+    ulysses: 732
+  };
+
+  for (const [wId, total] of Object.entries(canonicalTotals)) {
+    coverageMatrix.stats[wId] = {
+      totalPages: total,
+      annotatedPages: 0,
+      totalAnnotations: 0,
+      richPages: 0,     // 5+
+      standardPages: 0, // 2-4
+      sparsePages: 0,   // 1
+      emptyPages: 0,    // 0
+      coveragePercentage: 0,
+    };
+    coverageMatrix.pages[wId] = [];
+  }
+
+  // Populate coverage matrix from files
+  function indexCoverage(dir) {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const ent of entries) {
+      const full = path.join(dir, ent.name);
+      if (ent.isDirectory()) {
+        indexCoverage(full);
+      } else if (ent.isFile() && ent.name.endsWith('.json')) {
+        const rel = path.relative(SOURCE_DIR, full).split(path.sep).join('/');
+        const isLegacyFW = rel.startsWith('book_');
+        const rawWorkId = isLegacyFW ? 'finneganswake' : rel.split('/')[0];
+        const isFW = isLegacyFW || rawWorkId === 'finneganswake' || rawWorkId === 'finnegans-wake';
+        const workId = isFW ? 'finneganswake' : rawWorkId;
+
+        try {
+          const raw = fs.readFileSync(full, 'utf8');
+          const content = JSON.parse(raw);
+          const pageMatch = ent.name.match(/page_(\d+)\.json/);
+          const pageNum = pageMatch ? parseInt(pageMatch[1], 10) : content.page_number;
+          const annotations = Array.isArray(content.annotations) ? content.annotations : [];
+          const count = annotations.length;
+
+          const registers = new Set();
+          const scholars = new Set();
+          const lines = new Set();
+
+          for (const a of annotations) {
+            if (a.line_number) lines.add(a.line_number);
+            const cats = a.categories || a.registers || [];
+            cats.forEach(c => registers.add(c));
+            if (a.author) scholars.add(a.author);
+            if (a.contributors) a.contributors.forEach(c => scholars.add(c));
+            if (a.sources) a.sources.forEach(s => scholars.add(s.split('.')[0]));
+          }
+
+          const density = count >= 5 ? 'rich' : count >= 2 ? 'standard' : count === 1 ? 'sparse' : 'empty';
+
+          if (coverageMatrix.pages[workId]) {
+            coverageMatrix.pages[workId].push({
+              page: pageNum,
+              book: content.book || content.part,
+              chapter: content.chapter || content.episode,
+              count,
+              density,
+              annotatedLines: Array.from(lines).sort((a,b) => a-b),
+              registers: Array.from(registers).slice(0, 5),
+              scholars: Array.from(scholars).slice(0, 5)
+            });
+          }
+        } catch (e) {
+          // ignore
+        }
+      }
+    }
+  }
+
+  indexCoverage(SOURCE_DIR);
+
+  for (const [wId, pageList] of Object.entries(coverageMatrix.pages)) {
+    pageList.sort((a,b) => a.page - b.page);
+    const stat = coverageMatrix.stats[wId];
+    if (stat) {
+      stat.annotatedPages = pageList.length;
+      stat.emptyPages = Math.max(0, stat.totalPages - pageList.length);
+      stat.coveragePercentage = Number(((stat.annotatedPages / stat.totalPages) * 100).toFixed(1));
+      for (const p of pageList) {
+        stat.totalAnnotations += p.count;
+        if (p.density === 'rich') stat.richPages++;
+        else if (p.density === 'standard') stat.standardPages++;
+        else if (p.density === 'sparse') stat.sparsePages++;
+      }
+    }
+  }
+
+  const coverageDest = path.join(REPO_ROOT, 'web', 'public', 'coverage_matrix.json');
+  fs.writeFileSync(coverageDest, JSON.stringify(coverageMatrix, null, 2), 'utf8');
+  console.log(`✅ Built coverage matrix at web/public/coverage_matrix.json`);
+
   // Write compiled search index (monolithic and per-work chunked)
   const indexDest = path.join(REPO_ROOT, 'web', 'public', 'search_index.json');
   fs.writeFileSync(indexDest, JSON.stringify(searchIndex), 'utf8');
