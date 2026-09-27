@@ -86,6 +86,10 @@ import {
 } from '@winnegans/theme';
 import { EpubSourceModal } from './EpubSourceModal';
 import { GithubPrModal } from './GithubPrModal';
+import { CitationModal } from './CitationModal';
+import { KeyboardShortcutsModal } from './KeyboardShortcutsModal';
+import { AcousticPlayer } from './AcousticPlayer';
+import { Keyboard } from 'lucide-react';
 
 export interface UniversalReaderProps {
   initialWorkId?: string;
@@ -169,6 +173,11 @@ export function UniversalReader({
       return updated;
     });
   };
+
+  // Scholarly Tools & Acoustic / Shortcut Overlays
+  const [showCitationModal, setShowCitationModal] = useState<boolean>(false);
+  const [showShortcutsModal, setShowShortcutsModal] = useState<boolean>(false);
+  const [activeSpokenLine, setActiveSpokenLine] = useState<number | null>(null);
 
   const isCurrentPageRead = readPages.includes(currentPage);
 
@@ -845,34 +854,48 @@ export function UniversalReader({
         return;
       }
 
-      if ((e.key === 'f' || e.key === 'F') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      if (e.key === '?' || (e.shiftKey && e.key === '/')) {
+        e.preventDefault();
+        setShowShortcutsModal((prev) => !prev);
+      } else if ((e.key === 'c' || e.key === 'C') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        e.preventDefault();
+        setShowCitationModal((prev) => !prev);
+      } else if ((e.key === 'm' || e.key === 'M') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        e.preventDefault();
+        toggleCurrentPageRead();
+      } else if ((e.key === 'b' || e.key === 'B') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        e.preventDefault();
+        toggleBookmark(currentPage);
+      } else if ((e.key === 'f' || e.key === 'F') && !e.ctrlKey && !e.metaKey && !e.altKey) {
         e.preventDefault();
         toggleFullscreen();
       } else if (e.key === 'Escape') {
         if (hoverPopup) {
           setHoverPopup(null);
+        } else if (showCitationModal) {
+          setShowCitationModal(false);
+        } else if (showShortcutsModal) {
+          setShowShortcutsModal(false);
         } else if (isFullscreen) {
           setIsFullscreen(false);
           if (document.fullscreenElement && document.exitFullscreen) {
             document.exitFullscreen().catch(() => {});
           }
         }
-      } else if (isFullscreen) {
-        if (e.key === 'ArrowRight' || e.key === 'n') {
-          goToPage(currentPage + 1);
-        } else if (e.key === 'ArrowLeft' || e.key === 'p') {
-          goToPage(currentPage - 1);
-        } else if (e.key === '+' || e.key === '=') {
-          setFullscreenFontSize((prev) => Math.min(26, prev + 2));
-        } else if (e.key === '-' || e.key === '_') {
-          setFullscreenFontSize((prev) => Math.max(14, prev - 2));
-        }
+      } else if (e.key === 'ArrowRight' || e.key === 'n') {
+        goToPage(currentPage + 1);
+      } else if (e.key === 'ArrowLeft' || e.key === 'p') {
+        goToPage(currentPage - 1);
+      } else if (isFullscreen && (e.key === '+' || e.key === '=')) {
+        setFullscreenFontSize((prev) => Math.min(26, prev + 2));
+      } else if (isFullscreen && (e.key === '-' || e.key === '_')) {
+        setFullscreenFontSize((prev) => Math.max(14, prev - 2));
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isFullscreen, hoverPopup, currentPage]);
+  }, [isFullscreen, hoverPopup, currentPage, showCitationModal, showShortcutsModal]);
 
   // Sync state if user exits native fullscreen via browser Esc
   useEffect(() => {
@@ -1306,6 +1329,31 @@ export function UniversalReader({
               )}
             </button>
 
+            {/* Academic Citation Modal Button */}
+            <button
+              onClick={() => setShowCitationModal(true)}
+              className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 transition-colors cursor-pointer"
+              title="Cite this page in MLA, Chicago, APA, or BibTeX (Press C)"
+            >
+              <GraduationCap className="w-3.5 h-3.5 text-indigo-400" />
+              <span className="hidden sm:inline">Cite</span>
+              <kbd className="hidden lg:inline-block px-1 py-0.2 text-[9px] font-mono text-slate-400 bg-slate-900 rounded border border-slate-700/80">
+                C
+              </kbd>
+            </button>
+
+            {/* Keyboard Shortcuts Dialog */}
+            <button
+              onClick={() => setShowShortcutsModal(true)}
+              className="inline-flex items-center space-x-1 px-2 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-slate-200 border border-slate-700 transition-colors cursor-pointer"
+              title="Keyboard Shortcuts Cheat-sheet (Press ?)"
+            >
+              <Keyboard className="w-3.5 h-3.5" />
+              <kbd className="px-1 py-0.2 text-[9px] font-mono text-slate-300 bg-slate-900 rounded border border-slate-700/80">
+                ?
+              </kbd>
+            </button>
+
             <button
               type="button"
               onClick={toggleFullscreen}
@@ -1404,6 +1452,22 @@ export function UniversalReader({
               </span>
             )}
           </div>
+
+          {/* Acoustic Web Speech Synthesizer & Historic Joyce Player */}
+          <AcousticPlayer
+            pageNumber={currentPage}
+            workId={currentWorkId}
+            lines={
+              lines.length > 0
+                ? lines
+                : allPageAnnotations.map((a) => ({
+                    line: a.line_number,
+                    line_number: a.line_number,
+                    text: `${a.target_phrase || ''}. ${a.annotation_text || ''}`,
+                  }))
+            }
+            onActiveLineChange={setActiveSpokenLine}
+          />
 
           {/* If EPUB is NOT loaded, show friendly notice and instructions */}
           {!epubLoaded ? (
@@ -1618,7 +1682,9 @@ export function UniversalReader({
                     key={l.line}
                     id={`line-${l.line}`}
                     className={`group flex items-start py-1 px-2 rounded-lg transition-colors ${
-                      isSelected
+                      l.line === activeSpokenLine
+                        ? 'bg-indigo-950/70 ring-1 ring-indigo-500/60 shadow-md shadow-indigo-950/50'
+                        : isSelected
                         ? 'bg-emerald-950/50 border border-emerald-500/40'
                         : hasAnns
                         ? 'hover:bg-slate-800/60'
@@ -2381,7 +2447,9 @@ export function UniversalReader({
                           key={l.line}
                           id={`line-${l.line}`}
                           className={`group flex items-start py-1 px-3 rounded-xl transition-colors ${
-                            isSelected
+                            l.line === activeSpokenLine
+                              ? 'bg-indigo-950/70 ring-1 ring-indigo-500/60 shadow-md shadow-indigo-950/50'
+                              : isSelected
                               ? 'bg-emerald-950/40 border border-emerald-500/40'
                               : hasAnns
                               ? 'hover:bg-inherit/40'
@@ -3094,6 +3162,32 @@ export function UniversalReader({
           }}
         />
       )}
+
+      {/* 9. Academic Citation Modal */}
+      <CitationModal
+        isOpen={showCitationModal}
+        onClose={() => setShowCitationModal(false)}
+        work={
+          activeWork || {
+            id: currentWorkId,
+            title: 'James Joyce Corpus',
+            author: 'James Joyce',
+            year: 1939,
+            totalPages: 628,
+            defaultEpubUrl: '',
+            registers: [],
+          }
+        }
+        currentPage={currentPage}
+        chapterInfo={bookInfo}
+        annotations={allPageAnnotations}
+      />
+
+      {/* 10. Keyboard Shortcuts Guide Modal */}
+      <KeyboardShortcutsModal
+        isOpen={showShortcutsModal}
+        onClose={() => setShowShortcutsModal(false)}
+      />
     </div>
   );
 }

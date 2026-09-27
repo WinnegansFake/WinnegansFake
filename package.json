@@ -19,7 +19,8 @@
     "signatures:verify": "python3 verify_data.py",
     "setup": "pnpm install && node scripts/sync_public_annotations.js && make -C data && python3 build_page_index.py && python3 verify_data.py",
     "check": "pnpm validate && pnpm signatures:verify && pnpm test && pnpm build",
-    "sync": "node scripts/sync_public_annotations.js"
+    "sync": "node scripts/sync_public_annotations.js",
+    "coverage:annotations": "node scripts/coverage_report.js"
   },
   "packageManager": "pnpm@12.3.4",
   "keywords": [

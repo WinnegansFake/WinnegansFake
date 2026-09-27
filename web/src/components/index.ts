@@ -15,6 +15,9 @@ export { BookmarksModal } from './BookmarksModal';
 export { SearchModal } from './SearchModal';
 export { GithubPrModal } from './GithubPrModal';
 export { CookieConsentModal } from './CookieConsentModal';
+export { CitationModal, type CitationModalProps } from './CitationModal';
+export { KeyboardShortcutsModal, type KeyboardShortcutsModalProps } from './KeyboardShortcutsModal';
+export { AcousticPlayer, type AcousticPlayerProps } from './AcousticPlayer';
 
 // Editor & Lemma Annotations
 export { InlineEditor } from './InlineEditor';

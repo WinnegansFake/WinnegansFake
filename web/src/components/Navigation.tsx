@@ -16,6 +16,7 @@ import {
   Search,
   Library,
   Users,
+  Zap,
 } from 'lucide-react';
 import { GITHUB_REPO_URL } from '@/lib/constants';
 import { ThemeSwitcher } from './ThemeSwitcher';
@@ -42,6 +43,8 @@ export function Navigation() {
     { href: '/library', label: 'Works', icon: Library },
     { href: '/reader', label: 'Reader', icon: BookOpen },
     { href: '/search', label: 'Search', icon: Search },
+    { href: '/thunders', label: 'Thunderwords', icon: Zap },
+    { href: '/schemas/ulysses', label: 'Ulysses Schema', icon: Compass },
     { href: '/bookclub', label: 'Book Club', icon: Users },
     { href: '/dissertations', label: 'Dissertations', icon: GraduationCap },
     { href: '/guide', label: 'Local Setup', icon: Terminal },

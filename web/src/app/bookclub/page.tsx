@@ -22,7 +22,8 @@ import {
   Coffee,
   HeartHandshake,
   Glasses,
-  Printer
+  Printer,
+  Download,
 } from 'lucide-react';
 import { GITHUB_REPO_URL } from '@/lib/constants';
 
@@ -31,6 +32,85 @@ const TIKTOK_URL = 'https://www.tiktok.com/@lily76412/video/7661924549893655839?
 export default function BookClubPage() {
   const [copiedInvite, setCopiedInvite] = useState(false);
   const [selectedPace, setSelectedPace] = useState<'venice' | 'year' | 'seasons' | 'micro'>('venice');
+
+  const [calStartDate, setCalStartDate] = useState<string>(() => {
+    const d = new Date();
+    d.setDate(d.getDate() + ((2 + 7 - d.getDay()) % 7 || 7)); // Next Tuesday
+    return d.toISOString().split('T')[0];
+  });
+  const [calTime, setCalTime] = useState<string>('19:00');
+  const [calMeetingCount, setCalMeetingCount] = useState<number>(12);
+
+  const handleDownloadIcs = () => {
+    const start = new Date(`${calStartDate}T${calTime}:00`);
+    const pad = (n: number) => String(n).padStart(2, '0');
+    const formatIcsDate = (date: Date) => {
+      return `${date.getUTCFullYear()}${pad(date.getUTCMonth() + 1)}${pad(date.getUTCDate())}T${pad(date.getUTCHours())}${pad(date.getUTCMinutes())}00Z`;
+    };
+
+    let intervalDays = 14;
+    let pagesPerMeeting = 1;
+    const startPage = 3;
+
+    if (selectedPace === 'venice') {
+      intervalDays = 14;
+      pagesPerMeeting = 1;
+    } else if (selectedPace === 'year') {
+      intervalDays = 7;
+      pagesPerMeeting = 12;
+    } else if (selectedPace === 'seasons') {
+      intervalDays = 14;
+      pagesPerMeeting = 25;
+    } else if (selectedPace === 'micro') {
+      intervalDays = 7;
+      pagesPerMeeting = 7;
+    }
+
+    let icsEvents = '';
+    let curPage = startPage;
+
+    for (let i = 0; i < calMeetingCount; i++) {
+      const meetStart = new Date(start.getTime() + i * intervalDays * 24 * 60 * 60 * 1000);
+      const meetEnd = new Date(meetStart.getTime() + 90 * 60 * 1000); // 90 min meeting
+      const endPage = Math.min(628, curPage + pagesPerMeeting - 1);
+      const pageLabel = curPage === endPage ? `Page ${curPage}` : `Pages ${curPage}–${endPage}`;
+      const url = `https://winnegansfake.com/reader?page=${curPage}`;
+      const uid = `wf-bookclub-${i + 1}-${Date.now()}@winnegansfake.com`;
+
+      icsEvents += `BEGIN:VEVENT
+UID:${uid}
+DTSTAMP:${formatIcsDate(new Date())}
+DTSTART:${formatIcsDate(meetStart)}
+DTEND:${formatIcsDate(meetEnd)}
+SUMMARY:Finnegans Wake Circle: ${pageLabel}
+DESCRIPTION:Assignment: ${pageLabel} of James Joyce's Finnegans Wake.\\n\\nRead online with zero-copyright scholarly glosses: ${url}
+URL:${url}
+STATUS:CONFIRMED
+END:VEVENT
+`;
+      curPage = endPage + 1;
+      if (curPage > 628) curPage = 3; // ouroboros loop
+    }
+
+    const icsContent = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WinnegansFake//Finnegans Wake Reading Circle//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Finnegans Wake Reading Circle
+X-WR-TIMEZONE:UTC
+${icsEvents}END:VCALENDAR`;
+
+    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+    const downloadUrl = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = downloadUrl;
+    a.download = `finnegans_wake_${selectedPace}_schedule.ics`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(downloadUrl);
+  };
 
   const inviteText = `Hey friends! I'm starting a reading circle for James Joyce's Finnegans Wake using WinnegansFake (https://winnegansfake.com/bookclub). 
 
@@ -406,6 +486,64 @@ No literature degree or prior knowledge needed. Check out our plan and join the 
                 </div>
               </div>
             )}
+
+            {/* Calendar (.ics) Schedule Exporter */}
+            <div className="mt-6 pt-5 border-t border-slate-800/80 bg-slate-950/60 rounded-xl p-4 sm:p-5 border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
+              <div className="space-y-1 text-left">
+                <span className="font-semibold text-white text-xs flex items-center space-x-2">
+                  <Calendar className="w-4 h-4 text-emerald-400" />
+                  <span>Sync Reading Schedule with Apple / Google / Outlook Calendar</span>
+                </span>
+                <p className="text-[11px] text-slate-400 max-w-xl">
+                  Export a standard iCalendar (<code className="text-emerald-400 font-mono">.ics</code>) file pre-populated with your meetings, page assignments, and direct links to the reader apparatus.
+                </p>
+              </div>
+
+              <div className="flex items-center flex-wrap gap-2 w-full md:w-auto">
+                <div className="flex items-center space-x-1.5 text-xs">
+                  <span className="text-slate-500 text-[11px]">Start:</span>
+                  <input
+                    type="date"
+                    value={calStartDate}
+                    onChange={(e) => setCalStartDate(e.target.value)}
+                    className="px-2 py-1 rounded bg-slate-900 border border-slate-700 text-xs text-slate-200 focus:outline-none focus:border-emerald-500"
+                  />
+                </div>
+
+                <div className="flex items-center space-x-1.5 text-xs">
+                  <span className="text-slate-500 text-[11px]">Time:</span>
+                  <input
+                    type="time"
+                    value={calTime}
+                    onChange={(e) => setCalTime(e.target.value)}
+                    className="px-2 py-1 rounded bg-slate-900 border border-slate-700 text-xs text-slate-200 focus:outline-none focus:border-emerald-500"
+                  />
+                </div>
+
+                <div className="flex items-center space-x-1.5 text-xs">
+                  <span className="text-slate-500 text-[11px]">Events:</span>
+                  <select
+                    value={calMeetingCount}
+                    onChange={(e) => setCalMeetingCount(parseInt(e.target.value, 10))}
+                    className="px-2 py-1 rounded bg-slate-900 border border-slate-700 text-xs text-slate-200 focus:outline-none focus:border-emerald-500"
+                  >
+                    <option value="6">6 meetings</option>
+                    <option value="12">12 meetings</option>
+                    <option value="24">24 meetings</option>
+                    <option value="52">52 meetings</option>
+                  </select>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={handleDownloadIcs}
+                  className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow-md shadow-emerald-600/20 transition-all cursor-pointer"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Download .ics</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>

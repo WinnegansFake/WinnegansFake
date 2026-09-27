@@ -48,6 +48,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/thunders" className="hover:text-emerald-300 transition-colors">
+                  The 10 Thunderwords Laboratory
+                </Link>
+              </li>
+              <li>
+                <Link href="/schemas/ulysses" className="hover:text-emerald-300 transition-colors">
+                  Ulysses Schema Matrix (Linati & Gilbert)
+                </Link>
+              </li>
+              <li>
                 <Link href="/dissertations" className="hover:text-emerald-300 transition-colors">
                   Dissertations Library
                 </Link>
