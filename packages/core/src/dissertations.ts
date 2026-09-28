@@ -226,12 +226,81 @@ export const DISSERTATION_SIGLA_CYBERNETICS: DissertationDefinition = {
 };
 
 /**
+ * Fourth Dissertation: Consensual Hallucinations (Neuromancer)
+ */
+export const DISSERTATION_CONSENSUAL_HALLUCINATIONS: DissertationDefinition = {
+  id: 'consensual-hallucinations',
+  title: 'Consensual Hallucinations: Cybernetic Feudalism, AI Bifurcation, and the Poetics of the Sprawl in William Gibson’s Neuromancer',
+  subtitle: 'From Ninsei Neon to Villa Straylight: Neural Topography, Zaibatsu Hegemony, and Modernist Argot in Post-Industrial Science Fiction',
+  author: 'Dr. Maya Tessier-Gibson & The Sprawl Critical Studies Collective',
+  degree: 'Ph.D. in Cybernetic Narratology & Postmodern Literature',
+  institution: 'MIT Media Lab & Tokyo University of the Arts (Geidai)',
+  year: 2026,
+  defenseDate: 'July 1, 2026',
+  field: 'Cyberpunk Studies & Cybernetic Narratology',
+  abstract: 'A forensic critical study of William Gibson’s 1984 cyberpunk milestone, Neuromancer. The dissertation explores how Gibson synthesized hard-boiled noir with high-modernist verbal densities, tracing the Cartesian rupture between biological meat and the cyberspace matrix, zaibatsu corporate feudalism in high orbit, the bicameral artificial intelligence split between Wintermute and Neuromancer, and the coordinate-based digital humanities architecture required to gloss post-industrial science fiction without copyright infringement.',
+  keywords: [
+    'William Gibson',
+    'Neuromancer',
+    'Cyberpunk',
+    'Cyberspace',
+    'Consensual Hallucination',
+    'Wintermute',
+    'Tessier-Ashpool',
+    'Artificial Intelligence',
+    'Zaibatsu Feudalism',
+    'Postmodern Literature',
+    'Simstim'
+  ],
+  targetWorks: ['neuromancer'],
+  wordCount: 12600,
+  citationsCount: 58,
+  doi: '10.5281/zenodo.winnegans.neuromancer.2026',
+  coverAccent: 'cyan',
+  slug: 'consensual-hallucinations',
+  filePath: 'consensual-hallucinations/dissertation.md',
+  chapters: [
+    {
+      number: 1,
+      title: 'The Color of Television Tuned to a Dead Channel',
+      subtitle: 'Night City, Chiba Black Clinics, and Somatic Rupture',
+      summary: 'Analyzes the opening Chiba City topography, bodily contempt for the meat, surgical prosthetics, and Case’s traumatic exile.'
+    },
+    {
+      number: 2,
+      title: 'Lines of Light in the Nonspace of the Mind',
+      subtitle: 'Cyberspace as Consensual Hallucination and the Dixie Flatline',
+      summary: 'Investigates Gibson’s coining of cyberspace, the Cartesian matrix, the Ono-Sendai cyberdeck interface, simstim sensory substitution, and ROM construct consciousness.'
+    },
+    {
+      number: 3,
+      title: 'Zaibatsu Feudalism and Dynastic Necropolitics',
+      subtitle: 'Freeside and the Gothic Hive of Villa Straylight',
+      summary: 'Examines extraterritorial capital, the Tessier-Ashpool clone dynasty, cryonic succession, and the repressive apparatus of the Turing Registry.'
+    },
+    {
+      number: 4,
+      title: 'The Bicameral Mind in Orbit',
+      subtitle: 'The Wintermute-Neuromancer Dialectic and Synthetic Consciousness',
+      summary: 'Deconstructs the complementary AI halves: Wintermute’s cold operational drive vs. Neuromancer’s poetic memory preservation, concluding with their post-Turing cosmic merger.'
+    },
+    {
+      number: 5,
+      title: 'Cyberpunk Argot as Modernist Idiolect',
+      subtitle: 'Linguistic Densities, Street Slang, and Coordinate Hermeneutics',
+      summary: 'Connects Gibson’s unglossed techne to Joycean polysemy and establishes the legal coordinate methodology (NM PPP.LL) for open digital humanities.'
+    }
+  ]
+};
+
+/**
  * Universal Dissertations Library Catalog
  */
 const DISSERTATIONS_CATALOG: Map<string, DissertationDefinition> = new Map([
   [DISSERTATION_NIGHT_MIND.id, DISSERTATION_NIGHT_MIND],
   [DISSERTATION_ULYSSES_ANATOMY.id, DISSERTATION_ULYSSES_ANATOMY],
   [DISSERTATION_SIGLA_CYBERNETICS.id, DISSERTATION_SIGLA_CYBERNETICS],
+  [DISSERTATION_CONSENSUAL_HALLUCINATIONS.id, DISSERTATION_CONSENSUAL_HALLUCINATIONS],
 ]);
 
 /**

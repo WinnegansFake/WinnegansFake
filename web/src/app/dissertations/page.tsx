@@ -37,7 +37,8 @@ export default function DissertationsCatalogPage() {
       if (selectedFilter !== 'all') {
         if (selectedFilter === 'finnegans-wake' && !item.targetWorks.includes('finnegans-wake')) return false;
         if (selectedFilter === 'ulysses' && !item.targetWorks.includes('ulysses')) return false;
-        if (selectedFilter === 'cybernetics' && !item.field.toLowerCase().includes('information') && !item.field.toLowerCase().includes('graph')) return false;
+        if (selectedFilter === 'neuromancer' && !item.targetWorks.includes('neuromancer')) return false;
+        if (selectedFilter === 'cybernetics' && !item.field.toLowerCase().includes('information') && !item.field.toLowerCase().includes('graph') && !item.field.toLowerCase().includes('cybernetic')) return false;
       }
 
       // Search query check
@@ -144,6 +145,16 @@ export default function DissertationsCatalogPage() {
               Ulysses
             </button>
             <button
+              onClick={() => setSelectedFilter('neuromancer')}
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-medium font-mono transition-all ${
+                selectedFilter === 'neuromancer'
+                  ? 'bg-emerald-600 text-white shadow-md'
+                  : 'bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800'
+              }`}
+            >
+              Neuromancer
+            </button>
+            <button
               onClick={() => setSelectedFilter('cybernetics')}
               className={`px-3.5 py-1.5 rounded-lg text-xs font-medium font-mono transition-all ${
                 selectedFilter === 'cybernetics'
@@ -188,6 +199,8 @@ export default function DissertationsCatalogPage() {
                   ? 'border-indigo-500/30 hover:border-indigo-500/60'
                   : dissertation.coverAccent === 'purple'
                   ? 'border-purple-500/30 hover:border-purple-500/60'
+                  : dissertation.coverAccent === 'cyan'
+                  ? 'border-cyan-500/30 hover:border-cyan-500/60'
                   : 'border-emerald-500/30 hover:border-emerald-500/60';
 
               const glowClass =
@@ -195,6 +208,8 @@ export default function DissertationsCatalogPage() {
                   ? 'from-indigo-950/30 to-slate-900/60'
                   : dissertation.coverAccent === 'purple'
                   ? 'from-purple-950/30 to-slate-900/60'
+                  : dissertation.coverAccent === 'cyan'
+                  ? 'from-cyan-950/30 to-slate-900/60'
                   : 'from-emerald-950/30 to-slate-900/60';
 
               return (

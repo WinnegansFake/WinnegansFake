@@ -79,7 +79,7 @@ export function CitationModal({
       : 'WinnegansFake Contributors';
 
   // MLA 9th Edition
-  const mlaCitation = `${authorPrefix}. "Scholarly Glosses on ${work.title} Page ${currentPage} (${chapterInfo.chapterTitle})." WinnegansFake: Modernist Zero-Copyright Annotation Repository, v2.2, 2026, ${currentUrl}. Accessed ${new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}.`;
+  const mlaCitation = `${authorPrefix}. "Scholarly Glosses on ${work.title} Page ${currentPage} (${chapterInfo.chapterTitle})." WinnegansFake: Modernist Zero-Copyright Annotation Repository, v2.3, 2026, ${currentUrl}. Accessed ${new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}.`;
 
   // Chicago 17th Edition (Notes & Bibliography)
   const chicagoCitation = `${authorPrefix}. "Scholarly Apparatus to ${work.title}, Page ${currentPage}." WinnegansFake: Modernist Zero-Copyright Annotation Repository. 2026. ${currentUrl}.`;
@@ -94,7 +94,7 @@ export function CitationModal({
   title        = {Scholarly Apparatus to {${work.title}}, Page ${currentPage} (${chapterInfo.chapterTitle})},
   howpublished = {\\url{${currentUrl}}},
   year         = {2026},
-  note         = {WinnegansFake Digital Humanities Corpus v2.2}
+  note         = {WinnegansFake Digital Humanities Corpus v2.3}
 }`;
 
   const divisionLabel = chapterInfo.bookTitle || (chapterInfo.bookRoman ? `Book ${chapterInfo.bookRoman}` : '');

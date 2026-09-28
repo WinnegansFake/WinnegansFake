@@ -1,6 +1,6 @@
 {
   "name": "@winnegans/epub-reader",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Zero-dependency pure TypeScript library to read and extract chapters, spine, and pages directly from .epub archives",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

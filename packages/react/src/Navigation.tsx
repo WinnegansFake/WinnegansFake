@@ -69,7 +69,7 @@ export function Navigation({
   onNavigate,
   brandTitle = 'WinnegansFake',
   brandSubtitle = 'Zero-Copyright Joycean Gloss',
-  version = 'v2.2',
+  version = 'v2.3',
 }: NavigationProps = {}) {
   const pathname = currentPath || (typeof window !== 'undefined' ? window.location.pathname : '/');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

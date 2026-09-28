@@ -213,6 +213,7 @@ export {
   DISSERTATION_NIGHT_MIND,
   DISSERTATION_ULYSSES_ANATOMY,
   DISSERTATION_SIGLA_CYBERNETICS,
+  DISSERTATION_CONSENSUAL_HALLUCINATIONS,
   type DissertationDefinition,
   type DissertationChapter,
 } from '@winnegans/core';
