@@ -96,12 +96,27 @@
       "author": "William Gibson",
       "year": 1984,
       "publicationDate": "1984-07-01",
-      "edition": "First Edition (New York: Ace Books / Ace Science Fiction Special)",
+      "edition": "Ace Books 2004 20th Anniversary Edition (ISBN 9780441012039)",
+      "isbn": "9780441012039",
+      "archive": {
+        "provider": "BDeBooks / Internet Archive",
+        "itemId": "neuromancer0000gibs_t6z2",
+        "detailsUrl": "https://bdebooks.com/en/books/neuromancer-by-william-gibson/",
+        "downloadUrl": "https://bdebooks.com/en/book-download/?fmt=epub&cover=2",
+        "filename": "neuromancer.epub"
+      },
+      "hashes": {
+        "size_bytes": 396263,
+        "sha256": "d9126751d244b5299f683f527904eeb3883a3fb1e66eab4a3ee524bdbe98944f",
+        "md5": "cb50fb42dfbe448d2d6edb49f70f591d",
+        "calibre_uuid": "d55af934-a206-442e-9c64-4b872a85e118"
+      },
       "format": "application/epub+zip",
       "pagination": {
         "totalPages": 290,
         "startPage": 3,
         "endPage": 290,
+        "firstTextPage": 3,
         "citationFormat": "NM {page}.{line}"
       },
       "divisions": {

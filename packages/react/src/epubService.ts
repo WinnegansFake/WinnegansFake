@@ -32,6 +32,8 @@ export class BrowserEpubService {
   private fileName: string = '';
   private sourceLocation: string = '';
   private currentWorkId: string = 'finnegans-wake';
+  private loadedSha256: string = '';
+  private loadedSizeBytes: number = 0;
 
   public isLoaded(forWorkId?: string): boolean {
     if (!this.loaded) return false;
@@ -45,12 +47,22 @@ export class BrowserEpubService {
     return this.currentWorkId;
   }
 
+  public getLoadedSha256(): string {
+    return this.loadedSha256;
+  }
+
+  public getLoadedSizeBytes(): number {
+    return this.loadedSizeBytes;
+  }
+
   public clear(): void {
     this.zip = null;
     this.loaded = false;
     this.fileName = '';
     this.sourceLocation = '';
     this.currentWorkId = '';
+    this.loadedSha256 = '';
+    this.loadedSizeBytes = 0;
     this.manifest.clear();
     this.spine = [];
     this.pageMap.clear();
@@ -81,6 +93,27 @@ export class BrowserEpubService {
     location?: string,
     workId: string = 'finnegans-wake'
   ): Promise<number> {
+    // Compute cryptographic SHA-256 checksum and size
+    try {
+      if (typeof window !== 'undefined' && window.crypto && window.crypto.subtle) {
+        let arrayBuf: ArrayBuffer | null = null;
+        if (file instanceof ArrayBuffer) {
+          arrayBuf = file;
+          this.loadedSizeBytes = arrayBuf.byteLength;
+        } else if (typeof File !== 'undefined' && file instanceof File) {
+          this.loadedSizeBytes = file.size;
+          arrayBuf = await file.arrayBuffer();
+        }
+        if (arrayBuf) {
+          const hashBuf = await window.crypto.subtle.digest('SHA-256', arrayBuf);
+          const hashArr = Array.from(new Uint8Array(hashBuf));
+          this.loadedSha256 = hashArr.map((b) => b.toString(16).padStart(2, '0')).join('');
+        }
+      }
+    } catch (e) {
+      console.warn('Could not compute EPUB SHA-256 hash:', e);
+    }
+
     const zip = await JSZip.loadAsync(file);
     this.zip = zip;
     this.fileName = name;

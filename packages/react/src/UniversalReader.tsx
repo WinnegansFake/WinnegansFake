@@ -3229,6 +3229,14 @@ export function UniversalReader({
         currentLocation={epubLocation}
         isLoaded={epubLoaded}
         loadedFileName={epubFileName}
+        loadedSha256={browserEpub.getLoadedSha256()}
+        isVerifiedCanonical={
+          Boolean(
+            activeWork.epubSha256 &&
+              browserEpub.getLoadedSha256() &&
+              browserEpub.getLoadedSha256().toLowerCase() === activeWork.epubSha256.toLowerCase()
+          )
+        }
         savedCookiePayload={savedEpubCookie}
         onLoadFromUrl={loadEpubFromUrl}
         onSelectLocalFile={loadEpubFromFile}

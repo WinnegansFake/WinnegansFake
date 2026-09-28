@@ -83,6 +83,21 @@ describe('Neuromancer (1984) Integration & Zero-Copyright Architecture', () => {
       expect(getPageFilePath(3, NEUROMANCER)).toBe('annotations/neuromancer/part_01/chapter_01/page_003.json');
       expect(getPageFilePath(50, NEUROMANCER)).toBe('annotations/neuromancer/part_02/chapter_03/page_050.json');
     });
+
+    it('should specify exact cryptographic signatures and alternate mirrors', () => {
+      expect(NEUROMANCER.epubSha256).toBe('d9126751d244b5299f683f527904eeb3883a3fb1e66eab4a3ee524bdbe98944f');
+      expect(NEUROMANCER.epubMd5).toBe('cb50fb42dfbe448d2d6edb49f70f591d');
+      expect(NEUROMANCER.epubSizeBytes).toBe(396263);
+      expect(NEUROMANCER.calibreUuid).toBe('d55af934-a206-442e-9c64-4b872a85e118');
+      expect(NEUROMANCER.isbn).toBe('9780441012039');
+      expect(NEUROMANCER.alternateEpubUrls).toBeDefined();
+      expect(NEUROMANCER.alternateEpubUrls!.length).toBeGreaterThanOrEqual(3);
+
+      const mirrorUrls = NEUROMANCER.alternateEpubUrls!.map((s) => s.url);
+      expect(mirrorUrls).toContain('https://bdebooks.com/en/books/neuromancer-by-william-gibson/');
+      expect(mirrorUrls).toContain('https://bdebooks.com/en/book-download/?fmt=epub&cover=2');
+      expect(mirrorUrls).toContain('https://archive.org/details/neuromancer0000gibs_t6z2');
+    });
   });
 
   describe('Annotations & Zero-Copyright Guardrails', () => {

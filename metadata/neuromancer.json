@@ -45,5 +45,48 @@
       "startPage": 171,
       "endPage": 290
     }
-  ]
+  ],
+  "epub": {
+    "filename": "neuromancer.epub",
+    "sizeBytes": 396263,
+    "sha256": "d9126751d244b5299f683f527904eeb3883a3fb1e66eab4a3ee524bdbe98944f",
+    "md5": "cb50fb42dfbe448d2d6edb49f70f591d",
+    "calibreUuid": "d55af934-a206-442e-9c64-4b872a85e118",
+    "isbn": "9780441012039",
+    "edition": "Ace Books 2004 20th Anniversary Edition (Afterword by Jack Womack)",
+    "pageAnchors": {
+      "total": 489,
+      "novelStart": 3,
+      "novelEnd": 290,
+      "tagFormat": "<a id=\"p{N}\"></a>"
+    },
+    "alternateUrls": [
+      {
+        "label": "BDeBooks Book Page",
+        "url": "https://bdebooks.com/en/books/neuromancer-by-william-gibson/",
+        "note": "Web reader page (Click Free Download -> EPUB)"
+      },
+      {
+        "label": "BDeBooks Download Gateway",
+        "url": "https://bdebooks.com/en/book-download/?fmt=epub&cover=2",
+        "note": "Direct download countdown gateway"
+      },
+      {
+        "label": "BDeBooks CDN Direct",
+        "url": "https://bdebooks.com/dl/RKAIm0m_fsDK-x-MtsxFlkFNNvJ4_lUIXeiV43IATzvo_LKsYXSaVSa9-6tOuKksRRgGWx-pujtQfh0AYu124V3Stsm5sNSW8i-uDoGqVflQtmeWa2BeKY8hlrATE-AlQVtvHSOoOD9B6A.epub",
+        "note": "Direct file payload (browser navigation with referer)"
+      },
+      {
+        "label": "Internet Archive (Ace 2004 Edition)",
+        "url": "https://archive.org/details/neuromancer0000gibs_t6z2",
+        "note": "Archival lending copy (ISBN 9780441012039)"
+      },
+      {
+        "label": "Open Library",
+        "url": "https://openlibrary.org/books/OL3422194M/Neuromancer",
+        "note": "Open Library catalog record"
+      }
+    ]
+  }
 }
+

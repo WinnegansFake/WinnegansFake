@@ -52,9 +52,21 @@ export interface WorkDefinition {
   archiveUrl?: string; // e.g. "https://archive.org/details/ulysses00joyc_1"
   epubFilename?: string; // e.g. "ulysses00joyc_1.epub"
   epubSha256?: string; // SHA-256 digest of canonical archive scan EPUB
+  epubMd5?: string; // MD5 digest of canonical archive scan EPUB
   epubSizeBytes?: number; // File size in bytes
+  calibreUuid?: string; // Calibre UUID if standard electronic release
+  isbn?: string; // ISBN of canonical edition
+  alternateEpubUrls?: AlternateEpubSource[]; // Alternate mirrors and sources
   annotationsPath: string; // e.g. "annotations" or "annotations/ulysses"
   coverColor: string; // Tailwind/CSS color accent for UI badges
+}
+
+export interface AlternateEpubSource {
+  label: string;
+  url: string;
+  type?: 'direct_download' | 'landing_page' | 'lending_library' | 'gateway';
+  note?: string;
+  sha256?: string;
 }
 
 /**
@@ -355,7 +367,29 @@ export const FINNEGANS_WAKE: WorkDefinition = {
   archiveUrl: 'https://archive.org/details/finneganswake00joycuoft',
   epubFilename: 'finneganswake00joycuoft.epub',
   epubSha256: '93f80a2bd54e7c804b7cd0e88553315e3ebdba449a8a08dc83cd3a8c0e00e773',
+  epubMd5: '882eade4ca44389a4882b73c0c6ff5d4',
   epubSizeBytes: 41793329,
+  alternateEpubUrls: [
+    {
+      label: 'Internet Archive Canonical Scan',
+      url: 'https://archive.org/download/finneganswake00joycuoft/finneganswake00joycuoft.epub',
+      type: 'direct_download',
+      note: 'University of Toronto digitized copy (Faber & Faber 1939)',
+      sha256: '93f80a2bd54e7c804b7cd0e88553315e3ebdba449a8a08dc83cd3a8c0e00e773',
+    },
+    {
+      label: 'Internet Archive Book Details',
+      url: 'https://archive.org/details/finneganswake00joycuoft',
+      type: 'landing_page',
+      note: 'Item landing page with metadata and viewer',
+    },
+    {
+      label: 'Internet Archive Fallback Mirror',
+      url: 'https://archive.org/download/finnegans-wake-joyce-james/FinnegansWakeJoyceJames.epub',
+      type: 'direct_download',
+      note: 'Alternative archival mirror of standard edition',
+    },
+  ],
   annotationsPath: 'annotations/finneganswake',
   coverColor: 'emerald',
   divisions: [
@@ -403,7 +437,29 @@ export const ULYSSES: WorkDefinition = {
   archiveUrl: 'https://archive.org/details/ulysses00joyc_1',
   epubFilename: 'ulysses00joyc_1.epub',
   epubSha256: '06872aca1d98b412c284c3c8b22afdb09757ec9c702523e3ee75941de5d2010e',
+  epubMd5: '921d52e61cdf443771aa452ed196a02a',
   epubSizeBytes: 2040050,
+  alternateEpubUrls: [
+    {
+      label: 'Internet Archive Canonical Scan',
+      url: 'https://archive.org/download/ulysses00joyc_1/ulysses00joyc_1.epub',
+      type: 'direct_download',
+      note: 'Shakespeare and Company 1922 First Edition digitized scan',
+      sha256: '06872aca1d98b412c284c3c8b22afdb09757ec9c702523e3ee75941de5d2010e',
+    },
+    {
+      label: 'Internet Archive Book Details',
+      url: 'https://archive.org/details/ulysses00joyc_1',
+      type: 'landing_page',
+      note: 'Item landing page with metadata and viewer',
+    },
+    {
+      label: 'Project Gutenberg (Clean Text Edition)',
+      url: 'https://www.gutenberg.org/ebooks/4300',
+      type: 'landing_page',
+      note: 'Project Gutenberg public domain text edition #4300',
+    },
+  ],
   annotationsPath: 'annotations/ulysses',
   coverColor: 'indigo',
   divisions: [
@@ -828,6 +884,46 @@ export const NEUROMANCER: WorkDefinition = {
   defaultEpubUrl: 'https://bdebooks.com/en/books/neuromancer-by-william-gibson/',
   archiveUrl: 'https://bdebooks.com/en/books/neuromancer-by-william-gibson/',
   epubFilename: 'neuromancer.epub',
+  epubSha256: 'd9126751d244b5299f683f527904eeb3883a3fb1e66eab4a3ee524bdbe98944f',
+  epubMd5: 'cb50fb42dfbe448d2d6edb49f70f591d',
+  epubSizeBytes: 396263,
+  calibreUuid: 'd55af934-a206-442e-9c64-4b872a85e118',
+  isbn: '9780441012039',
+  alternateEpubUrls: [
+    {
+      label: 'BDeBooks Book Page',
+      url: 'https://bdebooks.com/en/books/neuromancer-by-william-gibson/',
+      type: 'landing_page',
+      note: 'Primary web catalog page (click Free Download -> EPUB)',
+      sha256: 'd9126751d244b5299f683f527904eeb3883a3fb1e66eab4a3ee524bdbe98944f',
+    },
+    {
+      label: 'BDeBooks Download Gateway',
+      url: 'https://bdebooks.com/en/book-download/?fmt=epub&cover=2',
+      type: 'gateway',
+      note: 'Direct format download handoff page with countdown',
+      sha256: 'd9126751d244b5299f683f527904eeb3883a3fb1e66eab4a3ee524bdbe98944f',
+    },
+    {
+      label: 'BDeBooks Static CDN Payload',
+      url: 'https://bdebooks.com/dl/RKAIm0m_fsDK-x-MtsxFlkFNNvJ4_lUIXeiV43IATzvo_LKsYXSaVSa9-6tOuKksRRgGWx-pujtQfh0AYu124V3Stsm5sNSW8i-uDoGqVflQtmeWa2BeKY8hlrATE-AlQVtvHSOoOD9B6A.epub',
+      type: 'direct_download',
+      note: 'Direct static CDN endpoint (requires browser referer)',
+      sha256: 'd9126751d244b5299f683f527904eeb3883a3fb1e66eab4a3ee524bdbe98944f',
+    },
+    {
+      label: 'Internet Archive (Ace 2004 20th Anniversary Edition)',
+      url: 'https://archive.org/details/neuromancer0000gibs_t6z2',
+      type: 'lending_library',
+      note: 'Archival library lending edition (ISBN 9780441012039)',
+    },
+    {
+      label: 'Open Library Catalog',
+      url: 'https://openlibrary.org/books/OL3422194M/Neuromancer',
+      type: 'landing_page',
+      note: 'Open Library canonical edition entry',
+    },
+  ],
   annotationsPath: 'annotations/neuromancer',
   coverColor: 'cyan',
   divisions: [

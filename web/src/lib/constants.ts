@@ -205,6 +205,7 @@ export {
   ULYSSES_REGISTERS,
   NEUROMANCER_REGISTERS,
   type WorkDefinition,
+  type AlternateEpubSource,
   type DivisionInfo,
   getAllDissertations,
   getDissertation,
