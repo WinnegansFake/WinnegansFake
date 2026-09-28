@@ -468,32 +468,55 @@ export default function UlyssesSchemaPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col">
       {/* Header */}
-      <section className="px-4 sm:px-6 lg:px-8 py-12 md:py-16 border-b border-slate-800 bg-gradient-to-b from-indigo-950/40 via-slate-950 to-slate-950">
-        <div className="max-w-5xl mx-auto space-y-4 text-center">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-950/80 border border-indigo-500/40 text-indigo-300 text-xs font-mono">
-            <Compass className="w-3.5 h-3.5" />
-            <span>Gilbert (1930) &amp; Linati (1920) Schemata Explorer</span>
-          </div>
+      <section className="px-4 sm:px-6 lg:px-8 py-10 md:py-14 border-b border-slate-800 bg-gradient-to-b from-indigo-950/40 via-slate-950 to-slate-950 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-8 space-y-4">
+              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-950/80 border border-indigo-500/40 text-indigo-300 text-xs font-mono">
+                <Compass className="w-3.5 h-3.5" />
+                <span>Gilbert (1930) &amp; Linati (1920) Schemata Explorer</span>
+              </div>
 
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white font-serif">
-            Ulysses Canonical Schema Matrix
-          </h1>
+              <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white font-serif">
+                Ulysses Canonical Schema Matrix
+              </h1>
 
-          <p className="max-w-3xl mx-auto text-sm sm:text-base text-slate-300 leading-relaxed font-serif">
-            James Joyce devised two legendary architectural schema tables for <em>Ulysses</em> to decipher the secret anatomy of Bloomsday:
-            the Homeric parallels, Dublin 1904 geography, somatic organs of the body, colors, symbols, and linguistic techniques.
-          </p>
+              <p className="max-w-3xl text-sm sm:text-base text-slate-300 leading-relaxed font-serif">
+                James Joyce devised two legendary architectural schema tables for <em>Ulysses</em> to decipher the secret anatomy of Bloomsday:
+                the Homeric parallels, Dublin 1904 geography, somatic organs of the body, colors, symbols, and linguistic techniques.
+              </p>
 
-          <div className="flex items-center justify-center flex-wrap gap-4 pt-2 text-xs font-mono text-slate-400">
-            <span className="px-3 py-1 rounded bg-slate-900 border border-slate-800">
-              Episodes: <strong className="text-slate-200">18 Episodes</strong>
-            </span>
-            <span className="px-3 py-1 rounded bg-slate-900 border border-slate-800">
-              Structure: <strong className="text-emerald-400">3 Parts (Telemachiad, Odyssey, Nostos)</strong>
-            </span>
-            <span className="px-3 py-1 rounded bg-slate-900 border border-slate-800">
-              Body Matrix: <strong className="text-rose-400">Human Body as Cathedral</strong>
-            </span>
+              <div className="flex items-center flex-wrap gap-3 pt-2 text-xs font-mono text-slate-400">
+                <span className="px-3 py-1 rounded bg-slate-900 border border-slate-800">
+                  Episodes: <strong className="text-slate-200">18 Episodes</strong>
+                </span>
+                <span className="px-3 py-1 rounded bg-slate-900 border border-slate-800">
+                  Structure: <strong className="text-emerald-400">3 Parts (Telemachiad, Odyssey, Nostos)</strong>
+                </span>
+                <span className="px-3 py-1 rounded bg-slate-900 border border-slate-800">
+                  Body Matrix: <strong className="text-rose-400">Human Body as Cathedral</strong>
+                </span>
+              </div>
+            </div>
+
+            <div className="lg:col-span-4">
+              <div className="relative rounded-2xl overflow-hidden border border-indigo-500/30 shadow-2xl group">
+                <img
+                  src="/images/ulysses-hero.jpg"
+                  alt="Sandycove Martello Tower overlooking Dublin Bay at morning"
+                  className="w-full h-56 lg:h-64 object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
+                <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-indigo-300">
+                  <span className="px-2 py-0.5 rounded bg-slate-900/80 border border-indigo-500/40 backdrop-blur-sm">
+                    Sandycove Martello Tower
+                  </span>
+                  <span className="px-2 py-0.5 rounded bg-indigo-950/80 border border-indigo-500/40 text-indigo-300 backdrop-blur-sm">
+                    June 16, 1904 &bull; 8 A.M.
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

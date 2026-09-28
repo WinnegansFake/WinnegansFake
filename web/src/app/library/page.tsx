@@ -89,48 +89,71 @@ export default function LibraryPage() {
       <div className="max-w-7xl mx-auto space-y-12">
         {/* Hero Section */}
         <div className="border-b border-slate-800 pb-10">
-          <div className="flex items-center space-x-3 mb-4">
-            <div className="p-2.5 rounded-xl bg-gradient-to-br from-indigo-500/20 to-emerald-500/20 border border-indigo-500/30">
-              <Library className="w-8 h-8 text-indigo-400" />
-            </div>
-            <div>
-              <span className="text-xs font-mono tracking-widest text-indigo-400 uppercase">
-                Universal Digital Humanities Repository
-              </span>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-black tracking-tight text-white">
-                The Literary Library
-              </h1>
-            </div>
-          </div>
-          <p className="max-w-3xl text-slate-400 text-base sm:text-lg leading-relaxed">
-            WinnegansFake provides an extensible, zero-copyright architecture for encyclopedic literature.
-            By mapping multi-layered critical glosses, historical topography, and analytical registers directly
-            to canonical page coordinates (<code className="text-emerald-400 font-mono text-sm">PPP.LL</code>),
-            the platform turns any complex literary text into an interactive, collaborative research corpus.
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-7 space-y-4">
+              <div className="flex items-center space-x-3 mb-2">
+                <div className="p-2.5 rounded-xl bg-gradient-to-br from-indigo-500/20 to-emerald-500/20 border border-indigo-500/30">
+                  <Library className="w-8 h-8 text-indigo-400" />
+                </div>
+                <div>
+                  <span className="text-xs font-mono tracking-widest text-indigo-400 uppercase">
+                    Universal Digital Humanities Repository
+                  </span>
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-black tracking-tight text-white">
+                    The Literary Library
+                  </h1>
+                </div>
+              </div>
+              <p className="text-slate-400 text-base sm:text-lg leading-relaxed">
+                WinnegansFake provides an extensible, zero-copyright architecture for encyclopedic literature.
+                By mapping multi-layered critical glosses, historical topography, and analytical registers directly
+                to canonical page coordinates (<code className="text-emerald-400 font-mono text-sm">PPP.LL</code>),
+                the platform turns any complex literary text into an interactive, collaborative research corpus.
+              </p>
 
-          <div className="flex flex-wrap items-center gap-3 mt-6">
-            <Link
-              href="/library/coverage"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 hover:bg-amber-500/20 text-sm font-medium transition-colors"
-            >
-              <BarChart3 className="w-4 h-4 text-amber-400" />
-              <span>Annotation Coverage Heatmap</span>
-            </Link>
-            <Link
-              href="/schemas/ulysses"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-sky-500/10 border border-sky-500/30 text-sky-300 hover:bg-sky-500/20 text-sm font-medium transition-colors"
-            >
-              <Compass className="w-4 h-4 text-sky-400" />
-              <span>Ulysses Linati & Gilbert Schema</span>
-            </Link>
-            <Link
-              href="/schemas/neuromancer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/20 text-sm font-medium transition-colors"
-            >
-              <Terminal className="w-4 h-4 text-cyan-400" />
-              <span>Neuromancer Matrix Dossier</span>
-            </Link>
+              <div className="flex flex-wrap items-center gap-3 pt-2">
+                <Link
+                  href="/library/coverage"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 hover:bg-amber-500/20 text-sm font-medium transition-colors"
+                >
+                  <BarChart3 className="w-4 h-4 text-amber-400" />
+                  <span>Annotation Coverage Heatmap</span>
+                </Link>
+                <Link
+                  href="/schemas/ulysses"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-sky-500/10 border border-sky-500/30 text-sky-300 hover:bg-sky-500/20 text-sm font-medium transition-colors"
+                >
+                  <Compass className="w-4 h-4 text-sky-400" />
+                  <span>Ulysses Linati & Gilbert Schema</span>
+                </Link>
+                <Link
+                  href="/schemas/neuromancer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/20 text-sm font-medium transition-colors"
+                >
+                  <Terminal className="w-4 h-4 text-cyan-400" />
+                  <span>Neuromancer Matrix Dossier</span>
+                </Link>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <div className="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                <img
+                  src="/images/library-hero.jpg"
+                  alt="Universal Digital Humanities Library with floating manuscripts"
+                  className="w-full h-64 lg:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
+                <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-[11px] font-mono text-slate-300">
+                  <span className="px-2 py-0.5 rounded bg-slate-900/80 border border-slate-700 backdrop-blur-sm">
+                    Decoupled Coordinate Corpus
+                  </span>
+                  <span className="px-2 py-0.5 rounded bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 backdrop-blur-sm">
+                    3 Active Editions
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -154,6 +177,19 @@ export default function LibraryPage() {
             {/* Finnegans Wake Card */}
             <div className="rounded-2xl bg-slate-900/80 border border-emerald-500/40 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden shadow-2xl shadow-emerald-950/20 group hover:border-emerald-500/70 transition-all">
               <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
+
+              {/* Card Artwork Banner */}
+              <div className="-mx-6 -mt-6 sm:-mx-8 sm:-mt-8 mb-6 h-44 overflow-hidden relative">
+                <img
+                  src="/images/finnegans-wake-hero.jpg"
+                  alt="Finnegans Wake - Dublin Bay and Howth Head nocturnal cosmogram"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
+                <div className="absolute top-3 left-3 bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 font-mono text-[11px] px-2 py-0.5 rounded backdrop-blur-sm">
+                  FW 003.01–628.16
+                </div>
+              </div>
               
               <div className="space-y-6 relative z-10">
                 <div className="flex items-start justify-between">
@@ -245,6 +281,19 @@ export default function LibraryPage() {
             {/* Ulysses Card */}
             <div className="rounded-2xl bg-slate-900/80 border border-indigo-500/40 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden shadow-2xl shadow-indigo-950/20 group hover:border-indigo-500/70 transition-all">
               <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/5 rounded-full blur-3xl pointer-events-none" />
+
+              {/* Card Artwork Banner */}
+              <div className="-mx-6 -mt-6 sm:-mx-8 sm:-mt-8 mb-6 h-44 overflow-hidden relative">
+                <img
+                  src="/images/ulysses-hero.jpg"
+                  alt="Ulysses - Sandycove Martello Tower overlooking Dublin Bay"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
+                <div className="absolute top-3 left-3 bg-indigo-950/80 border border-indigo-500/40 text-indigo-300 font-mono text-[11px] px-2 py-0.5 rounded backdrop-blur-sm">
+                  U 001.01–732.36
+                </div>
+              </div>
 
               <div className="space-y-6 relative z-10">
                 <div className="flex items-start justify-between">
@@ -342,6 +391,19 @@ export default function LibraryPage() {
             {/* Neuromancer Card */}
             <div className="rounded-2xl bg-slate-900/80 border border-cyan-500/40 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden shadow-2xl shadow-cyan-950/20 group hover:border-cyan-500/70 transition-all">
               <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
+
+              {/* Card Artwork Banner */}
+              <div className="-mx-6 -mt-6 sm:-mx-8 sm:-mt-8 mb-6 h-44 overflow-hidden relative">
+                <img
+                  src="/images/neuromancer-hero.jpg"
+                  alt="Neuromancer - Chiba City Ninsei neon rain and cyberspace matrix"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
+                <div className="absolute top-3 left-3 bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 font-mono text-[11px] px-2 py-0.5 rounded backdrop-blur-sm">
+                  NM 003.01–290.30
+                </div>
+              </div>
 
               <div className="space-y-6 relative z-10">
                 <div className="flex items-start justify-between">

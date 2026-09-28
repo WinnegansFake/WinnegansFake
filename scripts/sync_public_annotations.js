@@ -337,11 +337,29 @@ function syncAnnotations() {
     }
     const figs = fs.readdirSync(figuresSrc);
     for (const f of figs) {
-      if (f.endsWith('.svg') || f.endsWith('.png')) {
+      if (f.endsWith('.svg') || f.endsWith('.png') || f.endsWith('.jpg') || f.endsWith('.webp')) {
         fs.copyFileSync(path.join(figuresSrc, f), path.join(figuresDest, f));
       }
     }
     console.log(`✅ Synchronized ${figs.length} figures to web/public/figures/`);
+  }
+
+  // Synchronize images/ directory into web/public/images/
+  const imagesSrc = path.join(REPO_ROOT, 'images');
+  const imagesDest = path.join(REPO_ROOT, 'web', 'public', 'images');
+  if (fs.existsSync(imagesSrc)) {
+    if (!fs.existsSync(imagesDest)) {
+      fs.mkdirSync(imagesDest, { recursive: true });
+    }
+    const imgs = fs.readdirSync(imagesSrc);
+    let imgCount = 0;
+    for (const img of imgs) {
+      if (img.endsWith('.jpg') || img.endsWith('.jpeg') || img.endsWith('.png') || img.endsWith('.webp') || img.endsWith('.svg')) {
+        fs.copyFileSync(path.join(imagesSrc, img), path.join(imagesDest, img));
+        imgCount++;
+      }
+    }
+    console.log(`✅ Synchronized ${imgCount} images to web/public/images/`);
   }
 
   // Synchronize metadata/ directory into web/public/metadata/

@@ -363,9 +363,9 @@ export default function NeuromancerSchemaPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-900/20 via-slate-950/50 to-slate-950 pointer-events-none" />
         <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#06b6d4_1px,transparent_1px),linear-gradient(to_bottom,#06b6d4_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 relative z-10">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div className="space-y-3 max-w-3xl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-8 space-y-4">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-mono">
                 <Terminal className="w-3.5 h-3.5 text-cyan-400" />
                 <span>CYBERPUNK CORPUS DOSSIER &bull; SCHEMATA V3.4</span>
@@ -376,25 +376,45 @@ export default function NeuromancerSchemaPage() {
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 Interactive analytical schemata for science fiction&apos;s seminal cyberpunk masterpiece. Explore the dynastic decay of the Tessier-Ashpool clan in Villa Straylight, the theological AI duality of Wintermute vs. Neuromancer, Gibsonian Sprawl argot, and tactical cyberdeck architecture.
               </p>
+
+              {/* Metrics Chips */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 text-center font-mono pt-2">
+                <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                  <div className="text-cyan-400 text-xl font-bold">4</div>
+                  <div className="text-[10px] text-slate-400 uppercase tracking-wider">Parts</div>
+                </div>
+                <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                  <div className="text-cyan-400 text-xl font-bold">24</div>
+                  <div className="text-[10px] text-slate-400 uppercase tracking-wider">Chapters</div>
+                </div>
+                <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                  <div className="text-cyan-400 text-xl font-bold">290</div>
+                  <div className="text-[10px] text-slate-400 uppercase tracking-wider">Pages</div>
+                </div>
+                <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+                  <div className="text-cyan-400 text-xl font-bold">7</div>
+                  <div className="text-[10px] text-slate-400 uppercase tracking-wider">Registers</div>
+                </div>
+              </div>
             </div>
 
-            {/* Metrics Chips */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 shrink-0 text-center font-mono">
-              <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
-                <div className="text-cyan-400 text-xl font-bold">4</div>
-                <div className="text-[10px] text-slate-400 uppercase tracking-wider">Parts</div>
-              </div>
-              <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
-                <div className="text-cyan-400 text-xl font-bold">24</div>
-                <div className="text-[10px] text-slate-400 uppercase tracking-wider">Chapters</div>
-              </div>
-              <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
-                <div className="text-cyan-400 text-xl font-bold">290</div>
-                <div className="text-[10px] text-slate-400 uppercase tracking-wider">Pages</div>
-              </div>
-              <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
-                <div className="text-cyan-400 text-xl font-bold">7</div>
-                <div className="text-[10px] text-slate-400 uppercase tracking-wider">Registers</div>
+            {/* Artwork Hero Showcase */}
+            <div className="lg:col-span-4">
+              <div className="relative rounded-2xl overflow-hidden border border-cyan-500/30 shadow-2xl group">
+                <img
+                  src="/images/neuromancer-hero.jpg"
+                  alt="Chiba City Ninsei neon rain and cyberspace matrix"
+                  className="w-full h-56 lg:h-64 object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
+                <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-cyan-300">
+                  <span className="px-2 py-0.5 rounded bg-slate-900/80 border border-cyan-500/40 backdrop-blur-sm">
+                    Ninsei &bull; The Sprawl
+                  </span>
+                  <span className="px-2 py-0.5 rounded bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 backdrop-blur-sm">
+                    Ono-Sendai Cyberspace 7
+                  </span>
+                </div>
               </div>
             </div>
           </div>

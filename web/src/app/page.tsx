@@ -165,6 +165,168 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Active Literary Editions Showcase */}
+      <section className="py-16 bg-slate-900/40 border-b border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div className="space-y-2">
+              <div className="inline-flex items-center space-x-2 text-xs font-mono text-emerald-400 bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-500/40">
+                <Compass className="w-3.5 h-3.5" />
+                <span>Multi-Work Digital Corpus</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-serif font-black text-white">
+                Active Literary Editions
+              </h2>
+              <p className="text-sm text-slate-400 max-w-2xl">
+                Explore encyclopedic masterpieces through interactive reader interfaces, coordinate-mapped line glosses, and specialized analytical schemata.
+              </p>
+            </div>
+            <Link
+              href="/library"
+              className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold transition-all w-fit"
+            >
+              <span>Explore All Works in Library</span>
+              <ArrowRight className="w-3.5 h-3.5 text-emerald-400" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Finnegans Wake */}
+            <div className="rounded-2xl bg-slate-950 border border-emerald-500/40 overflow-hidden shadow-xl group hover:border-emerald-500/70 transition-all flex flex-col justify-between">
+              <div>
+                <div className="h-48 overflow-hidden relative">
+                  <img
+                    src="/images/finnegans-wake-hero.jpg"
+                    alt="Finnegans Wake - Dublin Bay and Howth Head nocturnal cosmogram"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
+                  <div className="absolute top-3 left-3 bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 font-mono text-[11px] px-2 py-0.5 rounded backdrop-blur-sm">
+                    Master Edition
+                  </div>
+                  <div className="absolute bottom-2.5 right-3 bg-slate-950/80 text-slate-300 font-mono text-[11px] px-2 py-0.5 rounded border border-slate-700 backdrop-blur-sm">
+                    FW 003.01–628.16
+                  </div>
+                </div>
+                <div className="p-6 space-y-3">
+                  <div>
+                    <h3 className="text-xl font-serif font-black text-white group-hover:text-emerald-300 transition-colors">
+                      Finnegans Wake
+                    </h3>
+                    <p className="text-xs text-slate-400">James Joyce (1939)</p>
+                  </div>
+                  <p className="text-xs text-slate-300 leading-relaxed">
+                    Nocturnal dream language, Viconian history cycles, Giordano Bruno opposites, and 10 world-shattering thunderclaps across Dublin Bay.
+                  </p>
+                </div>
+              </div>
+              <div className="p-6 pt-0 flex items-center justify-between border-t border-slate-900 mt-2">
+                <span className="text-[11px] font-mono text-emerald-400">630 Pages &bull; 10 Registers</span>
+                <Link
+                  href="/reader?work=finnegans-wake&page=3"
+                  className="inline-flex items-center space-x-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300"
+                >
+                  <span>Open Reader</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Ulysses */}
+            <div className="rounded-2xl bg-slate-950 border border-indigo-500/40 overflow-hidden shadow-xl group hover:border-indigo-500/70 transition-all flex flex-col justify-between">
+              <div>
+                <div className="h-48 overflow-hidden relative">
+                  <img
+                    src="/images/ulysses-hero.jpg"
+                    alt="Ulysses - Sandycove Martello Tower overlooking Dublin Bay"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
+                  <div className="absolute top-3 left-3 bg-indigo-950/80 border border-indigo-500/40 text-indigo-300 font-mono text-[11px] px-2 py-0.5 rounded backdrop-blur-sm">
+                    Public Domain (1922)
+                  </div>
+                  <div className="absolute bottom-2.5 right-3 bg-slate-950/80 text-slate-300 font-mono text-[11px] px-2 py-0.5 rounded border border-slate-700 backdrop-blur-sm">
+                    U 001.01–732.36
+                  </div>
+                </div>
+                <div className="p-6 space-y-3">
+                  <div>
+                    <h3 className="text-xl font-serif font-black text-white group-hover:text-indigo-300 transition-colors">
+                      Ulysses
+                    </h3>
+                    <p className="text-xs text-slate-400">James Joyce (1922)</p>
+                  </div>
+                  <p className="text-xs text-slate-300 leading-relaxed">
+                    Bloomsday across Dublin: 18 episodes with Gilbert & Linati schemas, somatic organ correspondences, and Homeric parallels.
+                  </p>
+                </div>
+              </div>
+              <div className="p-6 pt-0 flex items-center justify-between border-t border-slate-900 mt-2">
+                <Link
+                  href="/schemas/ulysses"
+                  className="text-[11px] font-mono text-indigo-400 hover:underline"
+                >
+                  View Schema Matrix &rarr;
+                </Link>
+                <Link
+                  href="/reader?work=ulysses&page=1"
+                  className="inline-flex items-center space-x-1.5 text-xs font-semibold text-indigo-400 hover:text-indigo-300"
+                >
+                  <span>Open Reader</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Neuromancer */}
+            <div className="rounded-2xl bg-slate-950 border border-cyan-500/40 overflow-hidden shadow-xl group hover:border-cyan-500/70 transition-all flex flex-col justify-between">
+              <div>
+                <div className="h-48 overflow-hidden relative">
+                  <img
+                    src="/images/neuromancer-hero.jpg"
+                    alt="Neuromancer - Chiba City Ninsei neon rain and cyberspace matrix"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
+                  <div className="absolute top-3 left-3 bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 font-mono text-[11px] px-2 py-0.5 rounded backdrop-blur-sm">
+                    Cyberpunk (1984)
+                  </div>
+                  <div className="absolute bottom-2.5 right-3 bg-slate-950/80 text-slate-300 font-mono text-[11px] px-2 py-0.5 rounded border border-slate-700 backdrop-blur-sm">
+                    NM 003.01–290.30
+                  </div>
+                </div>
+                <div className="p-6 space-y-3">
+                  <div>
+                    <h3 className="text-xl font-serif font-black text-white group-hover:text-cyan-300 transition-colors">
+                      Neuromancer
+                    </h3>
+                    <p className="text-xs text-slate-400">William Gibson (1984)</p>
+                  </div>
+                  <p className="text-xs text-slate-300 leading-relaxed">
+                    The birth of cyberspace: Case, Molly, Wintermute, the Tessier-Ashpool dynasty at Villa Straylight, and Sprawl street argot.
+                  </p>
+                </div>
+              </div>
+              <div className="p-6 pt-0 flex items-center justify-between border-t border-slate-900 mt-2">
+                <Link
+                  href="/schemas/neuromancer"
+                  className="text-[11px] font-mono text-cyan-400 hover:underline"
+                >
+                  Matrix Dossier &rarr;
+                </Link>
+                <Link
+                  href="/reader?work=neuromancer&page=3"
+                  className="inline-flex items-center space-x-1.5 text-xs font-semibold text-cyan-400 hover:text-cyan-300"
+                >
+                  <span>Open Reader</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 3. The Zero-Copyright Legal Architecture */}
       <section className="py-16 bg-slate-950 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -336,7 +498,25 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="max-w-3xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-6">
+          <div className="max-w-3xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-6 overflow-hidden">
+            {/* Artwork Banner for 003.01 */}
+            <div className="-mx-6 -mt-6 rounded-t-2xl overflow-hidden relative h-52 sm:h-64">
+              <img
+                src="/images/finnegans-wake-hero.jpg"
+                alt="Dublin Bay, Howth Head, and River Liffey cosmic nocturnal dreamscape"
+                className="w-full h-full object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/30 to-transparent" />
+              <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs font-mono text-slate-300">
+                <span className="px-2.5 py-1 rounded bg-slate-950/80 border border-emerald-500/40 text-emerald-300 backdrop-blur-sm">
+                  Howth Castle & Environs &bull; Dublin Bay
+                </span>
+                <span className="px-2.5 py-1 rounded bg-slate-950/80 border border-slate-700 text-slate-300 backdrop-blur-sm">
+                  FW 003.01
+                </span>
+              </div>
+            </div>
+
             <div className="p-4 bg-slate-950 rounded-xl border border-slate-800/90 font-serif text-base sm:text-lg text-amber-200 leading-relaxed italic">
               &ldquo;riverrun, past Eve and Adam&rsquo;s, from swerve of shore to bend of bay, brings us by a commodius vicus of recirculation back to Howth Castle and Environs.&rdquo;
             </div>
