@@ -6,6 +6,66 @@
   "page_number": 3,
   "annotations": [
     {
+      "id": "003.01-slemma",
+      "line_number": 1,
+      "target_phrase": "S",
+      "annotation_text": "Ulysses opens and closes with the serpentine letter S. This has been compared to the figures of serpents in the Book of Kells that have their tails in their mouths (ouroboros): Ulysses is a closed circle, ending where it began. In Finnegans Wake Joyce achieved a similar effect by linking the opening and closing sentences of the book so that the former completes the latter.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "003.03-slemma",
+      "line_number": 3,
+      "target_phrase": "S",
+      "annotation_text": "The three parts into which Joyce divides Ulysses open with significant letters:",
+      "categories": [
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
       "id": "003.05-lr01",
       "line_number": 5,
       "target_phrase": "Liliata rutilantium te confessorum",
@@ -26,6 +86,224 @@
       "contributors": [
         "joycean-scholar",
         "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.05-stately",
+      "line_number": 5,
+      "target_phrase": "Stately",
+      "annotation_text": "For all his cynicism and neo-paganism, Buck Mulligan is identified as an upholder of church and state.",
+      "categories": [
+        "scholastic-theology"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "003.07-plump",
+      "line_number": 7,
+      "target_phrase": "plump",
+      "annotation_text": "(1) Fat, chubby. Joyce's principal model for Buck Mulligan, Oliver St. John Gogarty, was hardly plump. Ellmann writes that when Joyce first met Gogarty in the National Library in 1903, Gogarty was \"handsome, lithe though inclined to fat, prosperous and merry.\"[4] In 1904 Gogarty attended Oxford, where, in his own words, he \"became mentally and physically pinguis [Latin: fat]\".[5] Whether plump is an accurate description of Gogarty, there is no doubt that Joyce intended Buck Mulligan to be fat: in Oxen of the Sun (384.33-36), Dixon jocosely inquires whether Mulligan's \"incipient ventripotence\" indicates that he is pregnant. It is possible that, in the Shakespearean context of Ulysses, Joyce intended Mulligan to represent the fat knight Falstaff to Stephen's Prince Hal.",
+      "categories": [
+        "scholastic-theology",
+        "shakespearean-allusion",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "003.09-plump",
+      "line_number": 9,
+      "target_phrase": "plump",
+      "annotation_text": "(2) Blunt (in manners); crude; rude; clownish.[6] These adjectives accurately describe Mulligan's character.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "003.11-buck-mulliga",
+      "line_number": 11,
+      "target_phrase": "Buck Mulligan",
+      "annotation_text": "Malachi Mulligan is a portrait of Oliver St. John Gogarty, a young writer and medical student with whom Joyce (portrayed here as Stephen Dedalus) lived for six nights (9-14 June 1904) in the Martello Tower at Sandycove. According to the two schemas which Joyce provided for Ulysses, Buck Mulligan here represents Antinous, the leader of the suitors of Penelope in the Odyssey. As Stephen represents Hamlet as well as the Odyssey's Telemachus, Mulligan can also be identified with Claudius.",
+      "categories": [
+        "homeric-correspondence",
+        "dublin-1904-topography",
+        "shakespearean-allusion",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "003.13-stairhead",
+      "line_number": 13,
+      "target_phrase": "stairhead",
+      "annotation_text": "A stairhead is a level space at the top of a flight of steps. In the Martello tower at Sandycove, a narrow spiral staircase of stone steps leads from the interior of the tower to the roof or terreplein. Buck Mulligan, in mockery of the Catholic ceremony of the Mass, has just ascended these steps in imitation of a Catholic priest ascending the steps to the altar.",
+      "categories": [
+        "scholastic-theology",
+        "dublin-1904-topography",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "003.15-bearing",
+      "line_number": 15,
+      "target_phrase": "bearing",
+      "annotation_text": "A more solemn word than carrying. One also bears arms, appropriate here, as Mulligan and Stephen will cross swords in this episode. The military setting in the Martello tower underscores the sense or meaning Joyce assigned to this episode in the Linati schema: Il figlio spodestato alla lotta (\"The dispossessed son in combat\").",
+      "categories": [
+        "dublin-1904-topography",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "003.17-bowl",
+      "line_number": 17,
+      "target_phrase": "bowl",
+      "annotation_text": "Mulligan's shaving bowl represents the chalice that holds the wine, which becomes the blood of Christ in the Mass.",
+      "categories": [
+        "scholastic-theology"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
       ]
     },
     {
@@ -53,6 +331,97 @@
       ]
     },
     {
+      "id": "003.19-razor",
+      "line_number": 19,
+      "target_phrase": "razor",
+      "annotation_text": "The first of many allusions in this episode to blades and cutting. Mulligan is a shaver, and also a future surgeon, but the deadliest weapon in this episode is neither the razor nor the scalpel. Rather than belonging to Mulligan, it is in the possession of Stephen (at least as he sees it). It is the lancet of his (Stephen's) art, the cold steel pen. This allusion is a play on the phrase \"the pen is mightier than the sword\".",
+      "categories": [
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "003.21-introibo-ad-",
+      "line_number": 21,
+      "target_phrase": "Introibo ad altare Dei",
+      "annotation_text": "(Latin) I will go in to the altar of God. The Latin Tridentine Mass opens with the Prayers at the Foot of the Altar. After making the Sign of the Cross, the priest and his servers intone an antiphon based on Psalm 43 (Vulgate 42), Iudica Me, Deus (Judge Me, O God), the fourth verse of which Mulligan quotes. By intoning these words after he has ascended the steps, Mulligan has perverted the order of the liturgy.[8]",
+      "categories": [
+        "scholastic-theology"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "003.23-chrysostomos",
+      "line_number": 23,
+      "target_phrase": "Chrysostomos",
+      "annotation_text": "(Greek) Χρυσόστομος is Greek for golden-mouthed, a common epithet meaning eloquent, though here it refers literally to Mulligan's gold-pointed teeth.[10] The epithet was applied to St John Chrysostomos, one of the fathers of the Greek church, whose name recalls that of Oliver St John Gogarty, Joyce's principal model for Buck Mulligan. On 16 June, the feast of the confessor St John Francis Regis, the fourth lesson of the Second Nocturn would have been taken from one of John Chrysostom's sermons.[11]",
+      "categories": [
+        "scholastic-theology",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
       "id": "003.25-us01",
       "line_number": 25,
       "target_phrase": "the usurper",
@@ -73,6 +442,70 @@
       "contributors": [
         "joycean-scholar",
         "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.25-two-strong-s",
+      "line_number": 25,
+      "target_phrase": "Two strong shrill whistles",
+      "annotation_text": "The two whistles represent the sacring bell, which is rung during the elevation of the consecrated Host during Mass. The origin of these helpful whistles is still a mystery. There are two obvious sources: (1) the mailboat, which is just about to leave Kingtown Harbour, about 1200 metres away (see 005.17) (2) a train arriving at Sandycove Railway Station, about 900 metres away.",
+      "categories": [
+        "scholastic-theology",
+        "dublin-1904-topography"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "003.27-is-buck-mull",
+      "line_number": 27,
+      "target_phrase": "Is Buck Mulligan Sancho Panza?",
+      "annotation_text": "To raise a possible parallel with or echo of Cervantes, Roger B. Salomon[16] suggests Joyce in Portrait and Ulysses has Stephen play out the mock-heroic mode invented by Cervantes in Don Quixote, combining both nostalgic creator and ironic critic. (The mock hero aligns his deepest emotional attachments to dead mythologies and forgotten codes of ethics; an alienated figure in a landscape hostile to the possibility of any kind of attainment. The reader is witness to a dialogue between the real and a faded ideal, between the sensible and the admirable.) He suggests Buck Mulligan plays the part of both supportive friend and deflating realist a la Sancho Panza in Don Quixote. This role, though in a more kindly and distant way, seems to transfer to Leopold Bloom. This is just one thread in a myriad of literary allusions Joyce draws upon, but nevertheless a powerful one.",
+      "categories": [
+        "scholastic-theology",
+        "homeric-correspondence",
+        "gilbert-linati-schema",
+        "parodic-stylistic"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 3)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/6",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
       ]
     }
   ]

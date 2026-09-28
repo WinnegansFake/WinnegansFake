@@ -119,6 +119,29 @@
             "type": "string",
             "pattern": "^[a-z0-9-]+$",
             "description": "Optional work identifier for the annotation (e.g. 'finnegans-wake', 'ulysses')."
+          },
+          "external_links": {
+            "type": "array",
+            "description": "Authoritative external scholarly links, portals, or digital facsimiles.",
+            "items": {
+              "type": "object",
+              "required": ["title", "url"],
+              "additionalProperties": false,
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 120
+                },
+                "url": {
+                  "type": "string",
+                  "pattern": "^https?://"
+                },
+                "source": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       }

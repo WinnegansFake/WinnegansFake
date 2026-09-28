@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 1,
+  "episode": 2,
+  "page_number": 32,
+  "annotations": [
+    {
+      "id": "032.01-lord-hasting",
+      "line_number": 1,
+      "target_phrase": "lord Hastings' Repulse",
+      "annotation_text": "Henry Weysford Charles Plantagenet (1842–1868), was a British peer.[1] In the Irish peerage he held the titles Earl of Moira and Baron Rawdon of Moira, both of which became extinct upon his death. His racehorse Repulse won the 1000 Guineas Stakes at Newmarket in 1866 over a distance of 1 mile (1609 metres).[2] The winning jockey was Tom Cannon, Sr, a greatgrandfather of Lester Piggott.[3] The horse was trained by John Day, Jr. The 1000 Guineas is run by three-year old thoroughbred fillies.",
+      "categories": [
+        "dublin-1904-topography"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 32)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/35",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Nestor)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "032.03-the-duke-of-",
+      "line_number": 3,
+      "target_phrase": "the duke of Westminster's Shotover",
+      "annotation_text": "Hugh Grosvenor (1825–1899) was a successful racehorse onwer and Master of the Horse from 1880-1885. His horse Shotover won the Epsom Derby in 1882 over a distance of 1½ miles (2414 metres).[4] The winning jockey was Tom Cannon, who had ridden Repulse to victory in the 1000 Guineas sixteen years earlier.[5] The horse was trained by John Porter. Shotover also won the 2000 Guineas Stakes in 1882 with the same jockey. The Epsom Derby and the 2000 Guineas are run by three-year old thoroughbreds.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 32)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/35",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Nestor)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "032.05-the-duke-of-",
+      "line_number": 5,
+      "target_phrase": "the duke of Beaufort's Ceylon, prix de Paris, 1866",
+      "annotation_text": "(French) The Grand Prix de Paris is a French flat horse race for three-year old thoroughbreds.[6] Inaugurated in 1863, it is run every July at Longchamp Racecourse in Paris. In 1866 it was indeed won by Henry Somerset, 8th Duke of Beaufort's Ceylon over a distance of 3000 metres.[7] The winning jockey was once again Tom Cannon,[8] and the trainer John Day. Beaufort (1824–1899) was the Master of the Horse from 1858–1859 and from 1866-1868.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 32)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/35",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Nestor)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "032.07-elfin-riders",
+      "line_number": 7,
+      "target_phrase": "Elfin riders sat them",
+      "annotation_text": "Presumably Repulse, Shotover and Ceylon are carrying the same rider: the jockey Tom Cannon, Sr, who rode them to victory in their Classic triumphs. Is Mr Deasy an admirer of Cannon?",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 32)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/35",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Nestor)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    }
+  ]
+}

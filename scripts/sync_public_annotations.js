@@ -97,12 +97,16 @@ function syncAnnotations() {
                 work: workId,
                 page: pageNum,
                 line: ann.line_number,
+                episode: content.episode !== undefined ? content.episode : undefined,
+                part: content.part !== undefined ? content.part : undefined,
                 lemma,
                 quote: ann.quote || lemma,
                 gloss,
                 registers,
                 tags,
                 scholars: Array.from(new Set(scholars)),
+                hasExternalLinks: Boolean(ann.external_links && ann.external_links.length > 0),
+                externalLinks: ann.external_links || [],
                 displayAuthor:
                   ann.author ||
                   (ann.contributors && ann.contributors[0]) ||

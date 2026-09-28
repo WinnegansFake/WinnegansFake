@@ -52,9 +52,20 @@ export interface Annotation {
   work?: string;
 
   /**
+   * External authoritative scholarly portals or digital facsimiles.
+   */
+  external_links?: ExternalLinkRef[];
+
+  /**
    * Optional custom metadata fields for specialized editions.
    */
   metadata?: Record<string, unknown>;
+}
+
+export interface ExternalLinkRef {
+  title: string;
+  url: string;
+  source?: 'joyce-project' | 'wikisource' | 'fweet' | 'open-editions' | 'other' | string;
 }
 
 export interface PageAnnotations {

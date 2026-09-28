@@ -1105,6 +1105,29 @@ export function UniversalReader({
           </div>
         )}
 
+        {/* External Scholarly Portals & Facsimiles */}
+        {ann.external_links && ann.external_links.length > 0 && (
+          <div className="flex flex-wrap items-center gap-1.5 pt-1 border-t border-slate-900">
+            <span className="text-[10px] text-cyan-400 font-medium flex items-center gap-1">
+              <ExternalLink className="w-2.5 h-2.5" />
+              Portals:
+            </span>
+            {ann.external_links.map((link, idx) => (
+              <a
+                key={idx}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-1 text-[10px] px-1.5 py-0.5 rounded bg-cyan-950/60 text-cyan-300 border border-cyan-800/50 hover:bg-cyan-900/80 hover:text-cyan-200 transition-colors"
+                title={`Open ${link.title}`}
+              >
+                <span>{link.title}</span>
+                <ExternalLink className="w-2.5 h-2.5 opacity-60" />
+              </a>
+            ))}
+          </div>
+        )}
+
         {/* Contributors */}
         <div className="text-[10px] text-slate-600 font-mono">
           By: {ann.contributors.join(', ')}
@@ -2699,6 +2722,25 @@ export function UniversalReader({
                               </button>
                             ))}
                           </div>
+                          {/* External Portals */}
+                          {ann.external_links && ann.external_links.length > 0 && (
+                            <div className="flex flex-wrap gap-1 pt-1 border-t border-inherit/20">
+                              {ann.external_links.map((link, idx) => (
+                                <a
+                                  key={idx}
+                                  href={link.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  onClick={(e) => e.stopPropagation()}
+                                  className="inline-flex items-center space-x-1 text-[9px] px-1.5 py-0.2 rounded bg-cyan-950/60 text-cyan-300 border border-cyan-800/40 hover:bg-cyan-900 hover:text-cyan-200 transition-colors"
+                                  title={`Open ${link.title}`}
+                                >
+                                  <span>{link.title}</span>
+                                  <ExternalLink className="w-2 h-2 opacity-70" />
+                                </a>
+                              ))}
+                            </div>
+                          )}
                         </div>
                       );
                     })
@@ -2783,6 +2825,25 @@ export function UniversalReader({
                                         </button>
                                       ))}
                                     </div>
+                                    {/* External Portals */}
+                                    {ann.external_links && ann.external_links.length > 0 && (
+                                      <div className="flex flex-wrap gap-1 pt-1 border-t border-inherit/20">
+                                        {ann.external_links.map((link, idx) => (
+                                          <a
+                                            key={idx}
+                                            href={link.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            onClick={(e) => e.stopPropagation()}
+                                            className="inline-flex items-center space-x-1 text-[9px] px-1.5 py-0.2 rounded bg-cyan-950/60 text-cyan-300 border border-cyan-800/40 hover:bg-cyan-900 hover:text-cyan-200 transition-colors"
+                                            title={`Open ${link.title}`}
+                                          >
+                                            <span>{link.title}</span>
+                                            <ExternalLink className="w-2 h-2 opacity-70" />
+                                          </a>
+                                        ))}
+                                      </div>
+                                    )}
                                   </div>
                                 );
                               })}

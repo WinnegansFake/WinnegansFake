@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 4,
+  "page_number": 61,
+  "annotations": [
+    {
+      "id": "061.01-l-ci-darem",
+      "line_number": 1,
+      "target_phrase": "Là ci darem",
+      "annotation_text": "(Italian) There we shall join [hands].[1] These are the opening words of the duettino Là ci darem la mano, Act I, Number 7 of Mozart's comic opera Don Giovanni, in which the Don, a sexual predator, begins his seduction of the peasant Masetto's young bride Zerlina. The opera occupies Bloom's mind for the rest of the day on account of the similarity between his and Masetto's predicaments:[2]",
+      "categories": [
+        "homeric-correspondence",
+        "gilbert-linati-schema",
+        "stream-of-consciousness"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 61)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/64",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "061.03-voglio-e-non",
+      "line_number": 3,
+      "target_phrase": "Voglio e non vorrei",
+      "annotation_text": "(Italian) I want to but I wouldn't like to.[3] Bloom has misremembered Zerlina's line. He will correct it in Hades, but he continually makes the same mistake throughout the day. It has been suggested that Bloom is thinking of a pair of lines spoken by Don Giovanni's servant Leporello in the opening scene: Voglio far il gentiluomo/E non voglio più servir (I want to be a gentleman/And I no longer wish to serve).[4] In Circe, two pages before repeating the mistake, Bloom addresses Molly with the words At your service.",
+      "categories": [
+        "homeric-correspondence"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 61)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/64",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "061.05-wonder-if-sh",
+      "line_number": 5,
+      "target_phrase": "Wonder if she pronounces that right : voglio",
+      "annotation_text": "(Italian) The word voglio (I want to) is pronounced [ˈvɔʎo] in IPA, (vOLo in X-SAMPA, vawl-yo phonetically). Of course, this is all irrelevant to Molly, who won't be called upon to sing this word.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 61)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/64",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    }
+  ]
+}

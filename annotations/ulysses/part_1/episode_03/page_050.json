@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 1,
+  "episode": 3,
+  "page_number": 50,
+  "annotations": [
+    {
+      "id": "050.01-prix-de-pari",
+      "line_number": 1,
+      "target_phrase": "Prix de Paris",
+      "annotation_text": "(French) The Grand Prix de Paris (Great Prize of Paris) was the most important event in French horse racing.[1] The mention of Old Father Ocean has reminded Stephen, perhaps, of the steeds of Mananaan See 032.17.",
+      "categories": [
+        "stream-of-consciousness"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 50)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/53",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "050.03-beware-of-im",
+      "line_number": 3,
+      "target_phrase": "beware of imitations",
+      "annotation_text": "In a palinode attributed to the Greek poet Stesichorus, the Trojan War was fought over a phantom Helen, while the real Helen was living in Egypt under the protection of King Proteus.[2] The historian Herodotus recounts a similar tradition in his Histories.[3] The Greek playwright Euripides also draws upon this tradition for his drama Helen, in which Helen is reunited with her husband Menelaus when he is marooned in Egypt on his way home from Troy.[4] This latter event, of course, is the Homeric background Joyce drew upon when he wrote the Proteus episode of Ulysses.",
+      "categories": [
+        "homeric-correspondence"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 50)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/53",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "050.05-lucifer-dico",
+      "line_number": 5,
+      "target_phrase": "Lucifer, dico, qui nescit occasum",
+      "annotation_text": "(Latin) The Morning Star, I say, who knows no setting.[5]",
+      "categories": [
+        "scholastic-theology"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 50)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/53",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "050.07-gi",
+      "line_number": 7,
+      "target_phrase": "Già",
+      "annotation_text": "(Italian) Indeed.[9] According to Gifford, Stephen is using the word to express impatience; he feels that he has spent enough time wandering across Sandymount Strand and is urging himself to get a move on.",
+      "categories": [
+        "dublin-1904-topography"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 50)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/53",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    }
+  ]
+}

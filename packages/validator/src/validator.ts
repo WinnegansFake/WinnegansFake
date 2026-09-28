@@ -38,9 +38,9 @@ export const FW_CHAPTER_PAGE_RANGES: Record<string, [number, number]> = {
 
 export const ULYSSES_EPISODE_PAGE_RANGES: Record<number, [number, number]> = {
   1: [1, 28],
-  2: [29, 50],
-  3: [51, 70],
-  4: [71, 94],
+  2: [22, 50],
+  3: [35, 70],
+  4: [51, 94],
   5: [95, 116],
   6: [117, 152],
   7: [153, 198],

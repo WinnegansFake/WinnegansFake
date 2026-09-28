@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 1,
+  "episode": 1,
+  "page_number": 18,
+  "annotations": [
+    {
+      "id": "018.01-we-have-grow",
+      "line_number": 1,
+      "target_phrase": "We have grown out of Wilde and paradoxes",
+      "annotation_text": "Oscar Wilde, The Picture of Dorian Gray, Chapter Two: \"The few words that Basil's friend [Lord Henry Wotton] had said to him—words spoken by chance, no doubt, and with wilful paradox in them....\"",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 18)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/21",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    }
+  ]
+}

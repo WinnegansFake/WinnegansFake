@@ -19,16 +19,39 @@ import {
 import { SearchScope, SearchAnnotationItem } from '@/components/SearchContext';
 import { getBasePath, getBookAndChapterInfo, ANALYTICAL_REGISTERS } from '@/lib/constants';
 
+const ULYSSES_EPISODES = [
+  { num: 1, name: '1: Telemachus' },
+  { num: 2, name: '2: Nestor' },
+  { num: 3, name: '3: Proteus' },
+  { num: 4, name: '4: Calypso' },
+  { num: 5, name: '5: Lotus Eaters' },
+  { num: 6, name: '6: Hades' },
+  { num: 7, name: '7: Aeolus' },
+  { num: 8, name: '8: Lestrygonians' },
+  { num: 9, name: '9: Scylla & Charybdis' },
+  { num: 10, name: '10: Wandering Rocks' },
+  { num: 11, name: '11: Sirens' },
+  { num: 12, name: '12: Cyclops' },
+  { num: 13, name: '13: Nausicaa' },
+  { num: 14, name: '14: Oxen of the Sun' },
+  { num: 15, name: '15: Circe' },
+  { num: 16, name: '16: Eumaeus' },
+  { num: 17, name: '17: Ithaca' },
+  { num: 18, name: '18: Penelope' },
+];
+
 function SearchPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const initialQ = searchParams?.get('q') || '';
   const initialWork = searchParams?.get('work') || 'all';
+  const initialEpisode = searchParams?.get('episode') || 'all';
   const initialScope = (searchParams?.get('scope') as SearchScope) || 'all';
   const initialRegister = searchParams?.get('register') || 'all';
 
   const [query, setQuery] = useState<string>(initialQ);
   const [workFilter, setWorkFilter] = useState<string>(initialWork);
+  const [episodeFilter, setEpisodeFilter] = useState<string>(initialEpisode);
   const [scope, setScope] = useState<SearchScope>(initialScope);
   const [registerFilter, setRegisterFilter] = useState<string>(initialRegister);
   const [items, setItems] = useState<SearchAnnotationItem[]>([]);
@@ -39,10 +62,12 @@ function SearchPageContent() {
     if (searchParams) {
       const q = searchParams.get('q');
       const w = searchParams.get('work');
+      const ep = searchParams.get('episode');
       const s = searchParams.get('scope') as SearchScope;
       const r = searchParams.get('register');
       if (q !== null) setQuery(q);
       if (w) setWorkFilter(w);
+      if (ep) setEpisodeFilter(ep);
       if (s) setScope(s);
       if (r) setRegisterFilter(r);
     }
@@ -73,34 +98,50 @@ function SearchPageContent() {
   }, []);
 
   // Update URL on filter changes
-  const updateUrl = (newQuery: string, newWork: string, newScope: string, newReg: string) => {
+  const updateUrl = (
+    newQuery: string,
+    newWork: string,
+    newScope: string,
+    newReg: string,
+    newEp: string
+  ) => {
     const params = new URLSearchParams();
     if (newQuery.trim()) params.set('q', newQuery.trim());
     if (newWork !== 'all') params.set('work', newWork);
     if (newScope !== 'all') params.set('scope', newScope);
     if (newReg !== 'all') params.set('register', newReg);
+    if (newEp !== 'all') params.set('episode', newEp);
     const qs = params.toString();
     router.replace(qs ? `/search?${qs}` : '/search');
   };
 
   const handleQueryChange = (val: string) => {
     setQuery(val);
-    updateUrl(val, workFilter, scope, registerFilter);
+    updateUrl(val, workFilter, scope, registerFilter, episodeFilter);
   };
 
   const handleWorkChange = (val: string) => {
     setWorkFilter(val);
-    updateUrl(query, val, scope, registerFilter);
+    const nextEp = val === 'finnegans-wake' || val === 'finneganswake' ? 'all' : episodeFilter;
+    setEpisodeFilter(nextEp);
+    updateUrl(query, val, scope, registerFilter, nextEp);
+  };
+
+  const handleEpisodeChange = (val: string) => {
+    setEpisodeFilter(val);
+    const effectiveWork = val !== 'all' && (workFilter === 'finnegans-wake' || workFilter === 'finneganswake') ? 'ulysses' : workFilter;
+    if (effectiveWork !== workFilter) setWorkFilter(effectiveWork);
+    updateUrl(query, effectiveWork, scope, registerFilter, val);
   };
 
   const handleScopeChange = (val: SearchScope) => {
     setScope(val);
-    updateUrl(query, workFilter, val, registerFilter);
+    updateUrl(query, workFilter, val, registerFilter, episodeFilter);
   };
 
   const handleRegisterChange = (val: string) => {
     setRegisterFilter(val);
-    updateUrl(query, workFilter, scope, val);
+    updateUrl(query, workFilter, scope, val, episodeFilter);
   };
 
   // Filtered results
@@ -117,14 +158,30 @@ function SearchPageContent() {
       });
     }
 
-    // 2. Register filter
+    // 2. Episode filter
+    if (episodeFilter !== 'all') {
+      const epNum = parseInt(episodeFilter, 10);
+      filtered = filtered.filter((it) => {
+        if (it.episode !== undefined && it.episode !== null) {
+          return Number(it.episode) === epNum;
+        }
+        const normWork = (it.work || '').replace(/[-_]/g, '').toLowerCase();
+        if (normWork === 'ulysses') {
+          const info = getBookAndChapterInfo(it.page, 'ulysses');
+          return info.chapter === epNum;
+        }
+        return false;
+      });
+    }
+
+    // 3. Register filter
     if (registerFilter !== 'all') {
       filtered = filtered.filter(
         (it) => it.registers && it.registers.includes(registerFilter)
       );
     }
 
-    // 3. Search query filter
+    // 4. Search query filter
     const q = query.trim().toLowerCase();
     if (!q) return filtered;
 
@@ -158,7 +215,7 @@ function SearchPageContent() {
         (item.tags || []).some((t) => t.toLowerCase().includes(q))
       );
     });
-  }, [items, query, workFilter, scope, registerFilter]);
+  }, [items, query, workFilter, episodeFilter, scope, registerFilter]);
 
   const scopeTabs: { id: SearchScope; label: string }[] = [
     { id: 'all', label: 'All Fields' },
@@ -259,22 +316,44 @@ function SearchPageContent() {
             </div>
           </div>
 
-          {/* Register Filter */}
-          <div className="flex items-center space-x-1.5">
-            <Filter className="w-4 h-4 text-slate-400" />
-            <span className="text-slate-400 font-medium">Register:</span>
-            <select
-              value={registerFilter}
-              onChange={(e) => handleRegisterChange(e.target.value)}
-              className="bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1 text-slate-300 text-xs focus:outline-none focus:ring-1 focus:ring-emerald-500 cursor-pointer"
-            >
-              <option value="all">All Registers (19)</option>
-              {ANALYTICAL_REGISTERS.map((reg) => (
-                <option key={reg.id} value={reg.id}>
-                  {reg.name}
-                </option>
-              ))}
-            </select>
+          <div className="flex items-center flex-wrap gap-3">
+            {/* Episode Filter (Active for Ulysses or All Works) */}
+            {workFilter !== 'finnegans-wake' && workFilter !== 'finneganswake' && (
+              <div className="flex items-center space-x-1.5">
+                <Layers className="w-4 h-4 text-slate-400" />
+                <span className="text-slate-400 font-medium">Episode:</span>
+                <select
+                  value={episodeFilter}
+                  onChange={(e) => handleEpisodeChange(e.target.value)}
+                  className="bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1 text-slate-300 text-xs focus:outline-none focus:ring-1 focus:ring-indigo-500 cursor-pointer"
+                >
+                  <option value="all">All Episodes (1–18)</option>
+                  {ULYSSES_EPISODES.map((ep) => (
+                    <option key={ep.num} value={String(ep.num)}>
+                      {ep.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
+
+            {/* Register Filter */}
+            <div className="flex items-center space-x-1.5">
+              <Filter className="w-4 h-4 text-slate-400" />
+              <span className="text-slate-400 font-medium">Register:</span>
+              <select
+                value={registerFilter}
+                onChange={(e) => handleRegisterChange(e.target.value)}
+                className="bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1 text-slate-300 text-xs focus:outline-none focus:ring-1 focus:ring-emerald-500 cursor-pointer"
+              >
+                <option value="all">All Registers (19)</option>
+                {ANALYTICAL_REGISTERS.map((reg) => (
+                  <option key={reg.id} value={reg.id}>
+                    {reg.name}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
         </div>
 
@@ -337,11 +416,12 @@ function SearchPageContent() {
             </span>
           )}
         </div>
-        {(query || workFilter !== 'all' || registerFilter !== 'all' || scope !== 'all') && (
+        {(query || workFilter !== 'all' || episodeFilter !== 'all' || registerFilter !== 'all' || scope !== 'all') && (
           <button
             onClick={() => {
               setQuery('');
               setWorkFilter('all');
+              setEpisodeFilter('all');
               setScope('all');
               setRegisterFilter('all');
               router.replace('/search');
@@ -357,7 +437,7 @@ function SearchPageContent() {
       {loading ? (
         <div className="py-16 text-center text-slate-500 text-sm animate-pulse space-y-2">
           <div className="w-8 h-8 mx-auto border-2 border-emerald-500 border-t-transparent rounded-full animate-spin" />
-          <p>Searching index across 648 pages...</p>
+          <p>Searching index across annotation corpus...</p>
         </div>
       ) : results.length === 0 ? (
         <div className="py-16 text-center space-y-3 bg-slate-900/30 rounded-2xl border border-slate-800/60 p-8">
@@ -400,6 +480,8 @@ function SearchPageContent() {
                     <span className="text-[11px] text-slate-400 italic">
                       {isFW
                         ? `Book ${bookInfo.bookRoman}, Ch. ${bookInfo.chapter}`
+                        : item.episode
+                        ? `Episode ${item.episode}: ${bookInfo.chapterTitle}`
                         : bookInfo.chapterTitle}
                     </span>
                   </div>
@@ -413,6 +495,26 @@ function SearchPageContent() {
                   <p className="text-xs text-slate-300 leading-relaxed line-clamp-4">
                     {item.gloss}
                   </p>
+
+                  {/* External Portals & Links if available */}
+                  {item.externalLinks && item.externalLinks.length > 0 && (
+                    <div className="flex flex-wrap items-center gap-1.5 pt-1">
+                      <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider">Portals:</span>
+                      {item.externalLinks.map((link, idx) => (
+                        <a
+                          key={idx}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center space-x-1 px-2 py-0.5 rounded text-[10px] font-medium bg-indigo-950/70 text-indigo-300 border border-indigo-500/30 hover:bg-indigo-900/90 transition-colors cursor-pointer"
+                          title={link.url}
+                        >
+                          <span>{link.title}</span>
+                          <ExternalLink className="w-2.5 h-2.5 opacity-70" />
+                        </a>
+                      ))}
+                    </div>
+                  )}
 
                   {/* Registers & Tags */}
                   {item.registers && item.registers.length > 0 && (

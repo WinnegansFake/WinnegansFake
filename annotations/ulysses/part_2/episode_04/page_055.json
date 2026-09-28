@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 4,
+  "page_number": 55,
+  "annotations": [
+    {
+      "id": "055.01-in-the-swim",
+      "line_number": 1,
+      "target_phrase": "In the swim",
+      "annotation_text": ": collusion, secret or deceitful cooperation.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 55)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/58",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "055.03-potato",
+      "line_number": 3,
+      "target_phrase": "Potato",
+      "annotation_text": ": carried in Bloom’s pocket as a talisman.",
+      "categories": [
+        "homeric-correspondence"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 55)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/58",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "055.05-arthur-griff",
+      "line_number": 5,
+      "target_phrase": "Arthur Griffith",
+      "annotation_text": ": Irish politician and founder of the Irish political party for independence from the British, Sinn Féin(Ourselves or We Ourselves).",
+      "categories": [
+        "dublin-1904-topography",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 55)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/58",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "055.07-ikey",
+      "line_number": 7,
+      "target_phrase": "Ikey",
+      "annotation_text": ": anti-Semitic reference, possibly related to the bank of Ireland.",
+      "categories": [
+        "dublin-1904-topography"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 55)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/58",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    }
+  ]
+}

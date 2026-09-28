@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 1,
+  "episode": 2,
+  "page_number": 28,
+  "annotations": [
+    {
+      "id": "028.01-subjective-a",
+      "line_number": 1,
+      "target_phrase": "subjective and objective genitive",
+      "annotation_text": "In grammar, the genitive or possessive case has several different forms. The Latin phrase Amor matris is ambiguous to Stephen because it means two different things depending on whether matris is subjective genitive or objective genitive:",
+      "categories": [
+        "scholastic-theology"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 28)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/31",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Nestor)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "028.03-subjective-g",
+      "line_number": 3,
+      "target_phrase": "subjective genitive:",
+      "annotation_text": "A mother's love [for her child]",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 28)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/31",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Nestor)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "028.05-objective-ge",
+      "line_number": 5,
+      "target_phrase": "objective genitive:",
+      "annotation_text": "[A child's] love for his mother",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 28)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/31",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Nestor)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    }
+  ]
+}

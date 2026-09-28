@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 1,
+  "episode": 3,
+  "page_number": 47,
+  "annotations": [
+    {
+      "id": "047.01-the-red-egyp",
+      "line_number": 1,
+      "target_phrase": "the red Egyptians",
+      "annotation_text": "Gypsies.[1] In Ireland, however, Gypsies usually refers to members of the Travelling Community, who are ethnically Irish. In this passage Stephen is relying for his quotations and information on Richard Head's The Canting Academy of 1673. Head describes the Gypsies thus:",
+      "categories": [
+        "dublin-1904-topography"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 47)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/50",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "047.03-oinopa-ponto",
+      "line_number": 3,
+      "target_phrase": "oinopa ponton, a winedark sea",
+      "annotation_text": "See 005.13.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 47)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/50",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    }
+  ]
+}

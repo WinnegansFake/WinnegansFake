@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 2,
+  "episode": 4,
+  "page_number": 54,
+  "annotations": [
+    {
+      "id": "054.01-chookchooks",
+      "line_number": 1,
+      "target_phrase": "chookchooks",
+      "annotation_text": ": Chook is an Australian/New Zealand call made to chickens.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 54)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/57",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "054.03-drouth",
+      "line_number": 3,
+      "target_phrase": "drouth",
+      "annotation_text": ": A variation of the word drought, a period of drier than normal conditions.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 54)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/57",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "054.05-quoits",
+      "line_number": 5,
+      "target_phrase": "quoits",
+      "annotation_text": ": iron or brass rings, perhaps washers to secure part of Bloom's bed.",
+      "categories": [
+        "homeric-correspondence",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 54)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/57",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "054.07-short-knock",
+      "line_number": 7,
+      "target_phrase": "short knock",
+      "annotation_text": ": The sound of a gavel at the end of a hastily concluded bidding process heard at an auction.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 54)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/57",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "054.09-tweedy",
+      "line_number": 9,
+      "target_phrase": "Tweedy",
+      "annotation_text": ": Bloom's father-in-law, Brian Tweedy.",
+      "categories": [
+        "homeric-correspondence"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 54)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/57",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "054.11-plevna",
+      "line_number": 11,
+      "target_phrase": "Plevna",
+      "annotation_text": ": A city in North Bulgaria, the site of a major battle of the Russo-Turkish War fought in 1877.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 54)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/57",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "054.13-corner",
+      "line_number": 13,
+      "target_phrase": "corner",
+      "annotation_text": ": Buying up controlling shares of a limited supply, in this case valuable stamps.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 54)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/57",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Calypso)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    }
+  ]
+}

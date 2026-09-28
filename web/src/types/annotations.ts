@@ -8,6 +8,13 @@ export interface AnnotationItem {
   sources?: string[];
   contributors: string[];
   work?: string;
+  external_links?: ExternalLinkRef[];
+}
+
+export interface ExternalLinkRef {
+  title: string;
+  url: string;
+  source?: 'joyce-project' | 'wikisource' | 'fweet' | 'open-editions' | 'other' | string;
 }
 
 export interface PageAnnotationsData {

@@ -52,6 +52,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# Cache
+.cache/
+
 # Generated public static web assets
 web/public/annotations/
 web/public/dissertation.md

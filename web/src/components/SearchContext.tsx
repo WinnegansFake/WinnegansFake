@@ -17,6 +17,8 @@ export interface SearchAnnotationItem {
   work?: string;
   page: number;
   line: number;
+  episode?: number | string;
+  part?: number | string;
   lemma: string;
   quote?: string;
   gloss: string;
@@ -24,6 +26,8 @@ export interface SearchAnnotationItem {
   tags: string[];
   scholars: string[];
   displayAuthor?: string;
+  hasExternalLinks?: boolean;
+  externalLinks?: { title: string; url: string; source?: string }[];
 }
 
 interface SearchContextType {

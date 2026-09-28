@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 1,
+  "episode": 3,
+  "page_number": 40,
+  "annotations": [
+    {
+      "id": "040.01-descende-cal",
+      "line_number": 1,
+      "target_phrase": "Descende, calve, ut ne nimium decalveris.",
+      "annotation_text": "(Latin) Come down, O bald head, lest you be made excessively bald.[1]",
+      "categories": [
+        "scholastic-theology"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 40)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/43",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "040.03-the-fat-of-k",
+      "line_number": 3,
+      "target_phrase": "The fat of kidneys of wheat.",
+      "annotation_text": "This is a quotation from Deuteronomy 32:13-15: \"and he made him to suck honey out of the rock, and oil out of the flinty rock; Butter of kine, and milk of sheep, with fat of lambs, and rams of the breed of Bashan, and goats, with the fat of kidneys of wheat; and thou didst drink the pure blood of the grape. But Jeshurun waxed fat, and kicked: thou art waxen fat, thou art grown thick, thou art covered with fatness; then he forsook God which made him\".",
+      "categories": [
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 40)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/43",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "040.05-o-si-certo",
+      "line_number": 5,
+      "target_phrase": "O si, certo !",
+      "annotation_text": "(Italian) O yes, certainly![7] In Italian the word for yes is usually spelt sì (or, rarely, sí). Sì certo, without the comma, means certainly.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 40)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/43",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    }
+  ]
+}

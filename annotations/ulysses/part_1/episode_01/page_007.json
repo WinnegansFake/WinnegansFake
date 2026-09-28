@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 1,
+  "episode": 1,
+  "page_number": 7,
+  "annotations": [
+    {
+      "id": "007.01-navel",
+      "line_number": 1,
+      "target_phrase": "Navel",
+      "annotation_text": "symbolical of birth and the interconnectedness of all life; the seat of the soul and the point at which mystics stare while meditating. Stephen may be suggesting that contemporary Irish nationalism was little more than self-centred navel-gazing. See 038.11 ff.",
+      "categories": [
+        "dublin-1904-topography",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 7)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/10",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "007.03-centre-of-th",
+      "line_number": 3,
+      "target_phrase": "Centre of the world",
+      "annotation_text": "The Oracle of Delphi was believed to be located at the centre of the world, which was represented by a stone known as the omphalos.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 7)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/10",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Telemachus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.0.0",
+  "work": "ulysses",
+  "part": 1,
+  "episode": 3,
+  "page_number": 38,
+  "annotations": [
+    {
+      "id": "038.01-the-black-ad",
+      "line_number": 1,
+      "target_phrase": "the black adiaphane",
+      "annotation_text": "See the discussion on the previous page on Limits of the diaphane.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 38)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/41",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "038.03-basta",
+      "line_number": 3,
+      "target_phrase": "Basta !",
+      "annotation_text": "(Italian) Enough!.[1]",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 38)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/41",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "038.05-frauenzimmer",
+      "line_number": 5,
+      "target_phrase": "Frauenzimmer",
+      "annotation_text": "(German) women.[2] Originally the term was used when referring to women of the better classes, or ladies, but by the end of the 19th century it had acquired a pejorative meaning: wenches, drabs, slovens.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 38)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/41",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "038.07-omphalos",
+      "line_number": 7,
+      "target_phrase": "omphalos",
+      "annotation_text": "(Greek) navel. See 007.31.",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 38)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/41",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "038.09-aleph-alpha",
+      "line_number": 9,
+      "target_phrase": "Aleph, alpha",
+      "annotation_text": "(Hebrew, Greek) The first letters of the Hebrew and Greek alphabets respectively.[3]",
+      "categories": [
+        "literary-allusion"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 38)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/41",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "038.11-lex-eterna",
+      "line_number": 11,
+      "target_phrase": "lex eterna",
+      "annotation_text": "(Latin) eternal law. St Thomas Aquinas discusses the various kinds of law in his Summa Theologica. In the First Part of Part 2, Question 91, Article 1, he writes:",
+      "categories": [
+        "scholastic-theology",
+        "gilbert-linati-schema"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 38)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/41",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    },
+    {
+      "id": "038.13-omophorion",
+      "line_number": 13,
+      "target_phrase": "omophorion",
+      "annotation_text": "(Byzantine Greek) An omophorion is the distinctive vestment of a bishop in the Eastern Orthodox Church.[7] Originally made of wool or sheepskin, the omophorion now resembles a long broad scarf of white brocade decorated with four crosses and an eight-pointed star. It is worn about the neck and shoulders in such a manner that the ends cross on the left shoulder, one end falling to the knees in front, the other behind. As a presbyter, Arius would have been entitled to wear an omophorion.[8] In the Western Church, the omophorion evolved into the pallium.",
+      "categories": [
+        "scholastic-theology"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gifford, Don, and Robert J. Seidman. Ulysses Annotated. University of California Press, 1988.",
+        "Wikibooks: Annotations to James Joyce's Ulysses (CC-BY-SA 4.0)."
+      ],
+      "contributors": [
+        "wikibooks-community",
+        "joycean-scholar"
+      ],
+      "external_links": [
+        {
+          "title": "Wikisource 1922 Facsimile (p. 38)",
+          "url": "https://en.wikisource.org/wiki/Page:Ulysses,_1922.djvu/41",
+          "source": "wikisource"
+        },
+        {
+          "title": "The Joyce Project (Proteus)",
+          "url": "https://joyceproject.com",
+          "source": "joyceproject"
+        }
+      ]
+    }
+  ]
+}
