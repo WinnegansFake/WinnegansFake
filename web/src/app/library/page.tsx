@@ -16,8 +16,10 @@ import {
   CheckCircle2,
   GraduationCap,
   BarChart3,
+  Terminal,
+  Cpu,
 } from 'lucide-react';
-import { getAllWorks, FINNEGANS_WAKE, ULYSSES } from '@/lib/constants';
+import { getAllWorks, FINNEGANS_WAKE, ULYSSES, NEUROMANCER } from '@/lib/constants';
 
 export const metadata = {
   title: 'Library Catalog | WinnegansFake Universal Digital Humanities',
@@ -122,6 +124,13 @@ export default function LibraryPage() {
               <Compass className="w-4 h-4 text-sky-400" />
               <span>Ulysses Linati & Gilbert Schema</span>
             </Link>
+            <Link
+              href="/schemas/neuromancer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/20 text-sm font-medium transition-colors"
+            >
+              <Terminal className="w-4 h-4 text-cyan-400" />
+              <span>Neuromancer Matrix Dossier</span>
+            </Link>
           </div>
         </div>
 
@@ -141,7 +150,7 @@ export default function LibraryPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Finnegans Wake Card */}
             <div className="rounded-2xl bg-slate-900/80 border border-emerald-500/40 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden shadow-2xl shadow-emerald-950/20 group hover:border-emerald-500/70 transition-all">
               <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -174,7 +183,7 @@ export default function LibraryPage() {
                 </p>
 
                 {/* Specs Grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-3 text-xs">
                   <div className="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800">
                     <span className="text-slate-500 block">Structure</span>
                     <span className="font-semibold text-slate-200">4 Books, 17 Ch.</span>
@@ -221,13 +230,13 @@ export default function LibraryPage() {
               <div className="pt-6 border-t border-slate-800/80 mt-6 flex items-center justify-between">
                 <div className="flex items-center space-x-2 text-xs text-slate-400">
                   <ShieldCheck className="w-4 h-4 text-amber-400" />
-                  <span>Zero-Copyright Separation</span>
+                  <span>Zero-Copyright</span>
                 </div>
                 <Link
                   href="/reader?work=finnegans-wake&page=3"
                   className="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-sm transition-all shadow-lg shadow-emerald-950/40 hover:scale-[1.02]"
                 >
-                  <span>Open Wake Reader</span>
+                  <span>Open Reader</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -251,7 +260,7 @@ export default function LibraryPage() {
                     <h3 className="text-3xl font-serif font-black text-white group-hover:text-indigo-300 transition-colors">
                       Ulysses
                     </h3>
-                    <p className="text-slate-400 text-sm">James Joyce (February 2, 1922, Shakespeare & Co.)</p>
+                    <p className="text-slate-400 text-sm">James Joyce (1922, Shakespeare & Co.)</p>
                   </div>
                   <div className="w-12 h-12 rounded-xl bg-indigo-950/80 border border-indigo-500/30 flex items-center justify-center text-indigo-400 font-serif font-black text-xl">
                     U
@@ -265,7 +274,7 @@ export default function LibraryPage() {
                 </p>
 
                 {/* Specs Grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-3 text-xs">
                   <div className="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800">
                     <span className="text-slate-500 block">Structure</span>
                     <span className="font-semibold text-slate-200">3 Parts, 18 Ep.</span>
@@ -309,15 +318,124 @@ export default function LibraryPage() {
               <div className="pt-6 border-t border-slate-800/80 mt-6 flex items-center justify-between">
                 <div className="flex items-center space-x-2 text-xs text-slate-400">
                   <Globe className="w-4 h-4 text-emerald-400" />
-                  <span>Public Domain Worldwide</span>
+                  <span>Public Domain</span>
                 </div>
-                <Link
-                  href="/reader?work=ulysses&page=1"
-                  className="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-all shadow-lg shadow-indigo-950/40 hover:scale-[1.02]"
-                >
-                  <span>Open Ulysses Reader</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="flex items-center space-x-2">
+                  <Link
+                    href="/schemas/ulysses"
+                    className="inline-flex items-center space-x-1 px-2.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-indigo-300 font-medium text-xs transition-colors border border-indigo-500/30"
+                  >
+                    <Compass className="w-3.5 h-3.5" />
+                    <span>Schema</span>
+                  </Link>
+                  <Link
+                    href="/reader?work=ulysses&page=1"
+                    className="inline-flex items-center space-x-2 px-3.5 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-all shadow-lg shadow-indigo-950/40 hover:scale-[1.02]"
+                  >
+                    <span>Open Reader</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Neuromancer Card */}
+            <div className="rounded-2xl bg-slate-900/80 border border-cyan-500/40 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden shadow-2xl shadow-cyan-950/20 group hover:border-cyan-500/70 transition-all">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
+
+              <div className="space-y-6 relative z-10">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <div className="flex items-center space-x-2 mb-1">
+                      <span className="text-xs font-mono uppercase tracking-wider text-cyan-400 font-semibold">
+                        Cyberpunk Milestone
+                      </span>
+                      <span className="bg-amber-950/80 text-amber-300 border border-amber-500/40 text-[11px] px-2 py-0.5 rounded-full font-mono">
+                        Protected (© 1984)
+                      </span>
+                    </div>
+                    <h3 className="text-3xl font-serif font-black text-white group-hover:text-cyan-300 transition-colors">
+                      Neuromancer
+                    </h3>
+                    <p className="text-slate-400 text-sm">William Gibson (1984, Ace Books)</p>
+                  </div>
+                  <div className="w-12 h-12 rounded-xl bg-cyan-950/80 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-serif font-black text-xl">
+                    NM
+                  </div>
+                </div>
+
+                <p className="text-slate-300 text-sm leading-relaxed">
+                  William Gibson&apos;s Hugo, Nebula, and Philip K. Dick Award-winning masterpiece that coined
+                  cyberspace, explored console cowboys, black-clinic implants, and tracked the emergence of
+                  the super-AI Wintermute and Neuromancer in high orbit.
+                </p>
+
+                {/* Specs Grid */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-3 text-xs">
+                  <div className="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800">
+                    <span className="text-slate-500 block">Structure</span>
+                    <span className="font-semibold text-slate-200">4 Parts, 24 Ch.</span>
+                  </div>
+                  <div className="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800">
+                    <span className="text-slate-500 block">Pagination</span>
+                    <span className="font-semibold text-slate-200">290 Pages</span>
+                  </div>
+                  <div className="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800">
+                    <span className="text-slate-500 block">Citation</span>
+                    <span className="font-mono text-cyan-400">NM 003.01</span>
+                  </div>
+                  <div className="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800">
+                    <span className="text-slate-500 block">Status</span>
+                    <span className="font-semibold text-cyan-400 flex items-center space-x-1">
+                      <CheckCircle2 className="w-3 h-3" />
+                      <span>37 P. / 93 Notes</span>
+                    </span>
+                  </div>
+                </div>
+
+                {/* Registers preview */}
+                <div>
+                  <span className="text-xs text-slate-400 block mb-2 font-medium">
+                    7 Cyberpunk Matrix Registers:
+                  </span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {NEUROMANCER.registers.slice(0, 5).map((reg) => (
+                      <span
+                        key={reg.id}
+                        className="text-[11px] px-2 py-0.5 rounded-md bg-slate-800/80 text-slate-300 border border-slate-700/60"
+                      >
+                        {reg.name.split(' ')[0]} {reg.name.split(' ')[1] || ''}
+                      </span>
+                    ))}
+                    <span className="text-[11px] px-2 py-0.5 rounded-md bg-cyan-950/40 text-cyan-400 border border-cyan-500/20">
+                      +2 more
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Action Link */}
+              <div className="pt-6 border-t border-slate-800/80 mt-6 flex items-center justify-between">
+                <div className="flex items-center space-x-2 text-xs text-slate-400">
+                  <ShieldCheck className="w-4 h-4 text-cyan-400" />
+                  <span>Zero-Copyright</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Link
+                    href="/schemas/neuromancer"
+                    className="inline-flex items-center space-x-1 px-2.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-cyan-300 font-medium text-xs transition-colors border border-cyan-500/30"
+                  >
+                    <Terminal className="w-3.5 h-3.5" />
+                    <span>Dossier</span>
+                  </Link>
+                  <Link
+                    href="/reader?work=neuromancer&page=3"
+                    className="inline-flex items-center space-x-2 px-3.5 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-medium text-sm transition-all shadow-lg shadow-cyan-950/40 hover:scale-[1.02]"
+                  >
+                    <span>Open Reader</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -407,7 +525,7 @@ export default function LibraryPage() {
               <h3 className="font-serif font-bold text-white text-base">Standard Coordinate System</h3>
               <p className="text-xs text-slate-400 leading-relaxed">
                 Every passage maps to an immutable printed coordinate (<code className="text-emerald-400">PPP.LL</code>).
-                For <em>Finnegans Wake</em>, 1939 pagination (pp. 1–628). For <em>Ulysses</em>, the 1922 first edition pagination (pp. 1–732).
+                For <em>Finnegans Wake</em>, 1939 pagination (pp. 1–628). For <em>Ulysses</em>, 1922 first edition (pp. 1–732). For <em>Neuromancer</em>, Ace 1984 pagination (pp. 3–290).
               </p>
             </div>
 
@@ -428,7 +546,7 @@ export default function LibraryPage() {
               </div>
               <h3 className="font-serif font-bold text-white text-base">Custom Layer Registers</h3>
               <p className="text-xs text-slate-400 leading-relaxed">
-                Each work defines its own domain-specific analytical registers (e.g. Viconian cycles for the Wake, Gilbert/Linati schemas for Ulysses, fourfold exegesis for Dante).
+                Each work defines its own domain-specific analytical registers (e.g. Viconian cycles for the Wake, Gilbert/Linati schemas for Ulysses, cyberspace and zaibatsu power for Neuromancer).
               </p>
             </div>
           </div>
