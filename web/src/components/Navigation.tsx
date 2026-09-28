@@ -48,6 +48,7 @@ export function Navigation() {
     { href: '/reader', label: 'Reader', icon: BookOpen },
     { href: '/thunders', label: 'Thunderwords', icon: Zap },
     { href: '/schemas/ulysses', label: 'Ulysses Schema', icon: Compass },
+    { href: '/schemas/neuromancer', label: 'Matrix Dossier', icon: Terminal },
     { href: '/sigla', label: 'Sigla Graph', icon: Sparkles },
     { href: '/vico', label: 'Vico Wheel', icon: RotateCw },
     { href: '/bookclub', label: 'Book Club', icon: Users },

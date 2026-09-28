@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 1,
+  "page_number": 29,
+  "annotations": [
+    {
+      "id": "029.04-wr01",
+      "line_number": 4,
+      "target_phrase": "I guess it’s just the way I’m wired",
+      "annotation_text": "Molly's signature self-characterization, articulating the somatic and psychological reconfiguration of human nature through military cybernetic augmentation.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "286.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 29."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "029.07-sb01",
+      "line_number": 7,
+      "target_phrase": "ten double-edged, four-centimeter scalpel blades slid from their housings beneath the burgundy nails",
+      "annotation_text": "The somatic weaponization of the female body. Molly's retractable fingertip scalpels subvert conventional domestic or decorative femininity (burgundy nail polish) into lethal tactical weaponry.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "016.03",
+        "028.13"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 29.",
+        "Sponsler, Claire. 'Cyberpunk and the Dilemmas of Postmodern Subjectivity.' (1992)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

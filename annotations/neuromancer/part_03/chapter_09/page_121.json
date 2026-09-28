@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 9,
+  "page_number": 121,
+  "annotations": [
+    {
+      "id": "121.02-mg01",
+      "line_number": 2,
+      "target_phrase": "The tug Marcus Garvey, a steel drum nine meters long",
+      "annotation_text": "The Marcus Garvey, an orbital tugboat operated by the Rastafarian Zionites, representing subcultural resistance and counter-hegemonic technology operating on the margins of corporate aerospace.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "121.05"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 121."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "121.05-dr01",
+      "line_number": 5,
+      "target_phrase": "Sister, time, it be time, ya know wha mean? Dread",
+      "annotation_text": "Zionite temporal philosophy: Maelcum's Rastafarian rejection of mechanical, corporate clock-time in favor of organic, spiritual presence ('time be time'), contrasting with the rigid microsecond precision of cyberdecks.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "250.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 121."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

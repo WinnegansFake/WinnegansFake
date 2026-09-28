@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 13,
+  "page_number": 171,
+  "annotations": [
+    {
+      "id": "171.01-sr01",
+      "line_number": 1,
+      "target_phrase": "PART FOUR. THE STRAYLIGHT RUN",
+      "annotation_text": "Title of the climactic final section of the novel, chronicling the coordinated physical and cybernetic assault on Villa Straylight to breach the Turing locks and unite the twin AIs.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "108.01",
+        "275.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 171."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "171.03-hc01",
+      "line_number": 3,
+      "target_phrase": "Your name is Henry Dorsett Case.",
+      "annotation_text": "The Turing Police agent interrogating Case, reciting his official civil registry and BAMA identity number, demonstrating the extensive administrative apparatus designed to police AI sentience.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "046.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 171."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

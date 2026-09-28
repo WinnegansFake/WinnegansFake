@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 2,
+  "page_number": 35,
+  "annotations": [
+    {
+      "id": "035.01-ns01",
+      "line_number": 1,
+      "target_phrase": "Cold steel odor. Ice caressed his spine.",
+      "annotation_text": "Case undergoing black-clinic neurosurgery in Chiba: the somatic terror of surgical reconstruction where his neural tissue is spliced and micro-grafted under artificial hypothermia.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "006.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 35.",
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "035.08-sh01",
+      "line_number": 8,
+      "target_phrase": "shuriken, his stars",
+      "annotation_text": "The ninja throwing star (shuriken) functions as Case's personal talisman, connecting traditional Japanese martial lethality with the cutting-edge cybernetic underworld of Chiba.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "286.03",
+        "290.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 35."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "035.10-ei01",
+      "line_number": 10,
+      "target_phrase": "endorphin inhibitors",
+      "annotation_text": "Chemical leverage employed by black clinics and fixers to control operative pain thresholds and enforce bio-chemical dependency during radical neuro-restoration.",
+      "categories": [
+        "body-modification-cybernetics",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "012.03"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 35."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

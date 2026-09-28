@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 1,
+  "page_number": 28,
+  "annotations": [
+    {
+      "id": "028.08-di01",
+      "line_number": 8,
+      "target_phrase": "dry ice",
+      "annotation_text": "Street slang for amphetamine crystals or crystalline stimulants, consumed in Night City to sustain hyper-alert wakefulness in the twenty-four-hour sprawl.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "012.03"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 28."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "028.13-sl01",
+      "line_number": 13,
+      "target_phrase": "the glasses were surgically inset, sealing her sockets",
+      "annotation_text": "Molly's iconic silver mirrored lenses, surgically bonded flush with the bone of her eye sockets. They contain internal digital readouts, time displays, and low-light amplification, erasing the human gaze.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "016.03",
+        "029.07"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 28.",
+        "Hayles, N. Katherine. How We Became Posthuman. U of Chicago P, 1999."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

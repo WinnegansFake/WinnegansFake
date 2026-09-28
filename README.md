@@ -9,10 +9,13 @@ Inspired by this [tiktok video](https://www.tiktok.com/@lily76412/video/76619245
 ### 🌐 Live Static Website: [winnegansfake.com](https://winnegansfake.com)
 
 Visit the complete interactive static site deployed on GitHub Pages:
-- **[Interactive Scholarly Reader](https://winnegansfake.com/reader/)**: Browse all 630 pages with 19 analytical registers, or load your local EPUB directly in your browser.
-- **[Doctoral Dissertation](https://winnegansfake.com/dissertation/)**: Read the complete scholarly monograph on the cosmology, philology, and legal architecture.
-- **[Local Setup & EPUB Guide](https://winnegansfake.com/guide/)**: Complete guide to downloading the EPUB from Archive.org and running the application locally.
-- **[Contributing Annotations & Pull Requests Guide](https://winnegansfake.com/contribute/)**: Step-by-step tutorial on Git workflows, branches, schemas, and opening pull requests.
+- **[Interactive Scholarly Reader](https://winnegansfake.com/reader/)**: Browse all 630 pages of *Finnegans Wake*, 18 episodes of *Ulysses*, and 24 chapters of *Neuromancer* with specialized analytical registers.
+- **[Universal Works Library](https://winnegansfake.com/library/)**: Explore the catalog spanning Joyce's modernist epics and Gibson's cyberpunk milestone.
+- **[Neuromancer Matrix Dossier](https://winnegansfake.com/schemas/neuromancer/)**: Interactive schemata for William Gibson's *Neuromancer* (1984), exploring the Tessier-Ashpool dynasty in Villa Straylight, the Wintermute/Neuromancer AI duality, and Sprawl cyberpunk argot.
+- **[Ulysses Schemata Explorer](https://winnegansfake.com/schemas/ulysses/)**: Complete Linati and Gilbert schema matrices mapping all 18 episodes with Homeric correspondences and somatic techniques.
+- **[Doctoral Dissertation](https://winnegansfake.com/dissertation/)**: Read the complete scholarly monograph on cosmology, philology, and legal architecture.
+- **[Local Setup & EPUB Guide](https://winnegansfake.com/guide/)**: Complete guide to downloading EPUBs and running the application locally.
+- **[Contributing Annotations & Pull Requests Guide](https://winnegansfake.com/contribute/)**: Step-by-step tutorial on Git workflows, schemas, and opening pull requests.
 
 ---
 
@@ -103,10 +106,10 @@ Because copyrighted text cannot be hosted directly in this repository, the web a
 > [!IMPORTANT]
 > **CRITICAL LEGAL & ARCHITECTURAL RULE:** Never upload, commit, or push the EPUB, extracted HTML chapters, or raw book text to any part of this repository.
 
-### Why James Joyce's *Finnegans Wake* is Protected
-- *Finnegans Wake* was published in May 1939.
-- Under **United States copyright law** (specifically the 1998 Sonny Bono Copyright Term Extension Act), works published with notice between 1929 and 1977 remain protected for **95 years from the publication date**.
-- Consequently, James Joyce's text remains under U.S. copyright protection **through December 31, 2035**, entering the public domain on **January 1, 2036**.
+### Why Texts are Protected
+- **James Joyce's *Finnegans Wake* (1939):** Under United States copyright law (specifically the 1998 Sonny Bono Copyright Term Extension Act), works published with notice between 1929 and 1977 remain protected for 95 years from the publication date. Consequently, *Finnegans Wake* remains under U.S. copyright protection **through December 31, 2035**, entering the public domain on January 1, 2036.
+- **William Gibson's *Neuromancer* (1984):** Protected under international copyright law (© 1984 by William Gibson). No novel text or source EPUB binaries are stored in git.
+- **James Joyce's *Ulysses* (1922):** In the **Public Domain** worldwide.
 
 ### Why the Local Source Files MUST Stay Gitignored
 To protect the project, its contributors, and the public repository from copyright infringement and DMCA takedowns:

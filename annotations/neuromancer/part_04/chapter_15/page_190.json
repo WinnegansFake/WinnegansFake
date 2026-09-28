@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 15,
+  "page_number": 190,
+  "annotations": [
+    {
+      "id": "190.02-bd01",
+      "line_number": 2,
+      "target_phrase": "You were braindead again, five seconds.",
+      "annotation_text": "Case's recurrent electroencephalographic 'flatlines' while jacking into the Tessier-Ashpool ICE: crossing the physiological threshold of brain death, guided back only by the Dixie Flatline's construct.",
+      "categories": [
+        "cyberspace-matrix",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "006.02",
+        "218.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 190.",
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "190.08-jm01",
+      "line_number": 8,
+      "target_phrase": "Johnny, his name was.",
+      "annotation_text": "Molly's revelation about Johnny Mnemonic, her murdered former lover whose memory motivates her cynicism and loyalty, interweaving Gibson's short fiction into the Sprawl narrative.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "029.04",
+        "286.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 190.",
+        "Gibson, William. 'Johnny Mnemonic' (1981)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

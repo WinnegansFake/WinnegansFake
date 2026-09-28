@@ -58,6 +58,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/schemas/neuromancer" className="hover:text-cyan-300 transition-colors">
+                  Neuromancer Matrix Dossier &amp; Straylight Schemata
+                </Link>
+              </li>
+              <li>
                 <Link href="/library/coverage" className="hover:text-emerald-300 transition-colors">
                   Annotation Coverage Heatmap
                 </Link>

@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 2,
+  "page_number": 31,
+  "annotations": [
+    {
+      "id": "031.02-sf01",
+      "line_number": 2,
+      "target_phrase": "Screaming Fist, Case. You’ve heard the name.",
+      "annotation_text": "Operation Screaming Fist: a clandestine cyber-warfare military assault launched by the US military against Soviet computer installations in Siberia during a fictional third world conflict.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "030.03",
+        "087.08"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 31."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "031.07-ml01",
+      "line_number": 7,
+      "target_phrase": "assault on the Kirensk computer nexus. Basic module was a Nightwing micro light",
+      "annotation_text": "The historical origin of cyber-warfare in Gibson's universe: military-grade polymorphic virus programs developed to penetrate enemy military mainframes, later privatized into criminal icebreakers.",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "218.02",
+        "266.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 31."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "031.09-ic01",
+      "line_number": 9,
+      "target_phrase": "Ice from ICE, intrusion countermeasures electronics",
+      "annotation_text": "Gibson's foundational coinage of ICE (Intrusion Countermeasures Electronics), the defensive software barriers and lethal Black ICE firewalls that protect corporate and military databases in cyberspace.",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "056.16",
+        "218.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 31.",
+        "Paul Brians. Study Guide for William Gibson: Neuromancer (1984)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

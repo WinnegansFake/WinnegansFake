@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 7,
+  "page_number": 93,
+  "annotations": [
+    {
+      "id": "093.02-cr01",
+      "line_number": 2,
+      "target_phrase": "It was raining in Beyoglu",
+      "annotation_text": "The Istanbul setting introduces Old World historical texture to the cyberpunk narrative, contrasting ancient Byzantine-Ottoman architecture with corporate surveillance and high-tech intrigue.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "046.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 93."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "093.08-sm01",
+      "line_number": 8,
+      "target_phrase": "The Finn, in a new Shinjuku suit, sarariman black",
+      "annotation_text": "The Finn's comical masquerade as a Japanese corporate 'salaryman' (sarariman), highlighting the cultural domination of Japanese corporate etiquette across international criminal operations.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "006.06",
+        "051.04"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 93.",
+        "Tatsumi, Takayuki. Full Metal Apache. (2006)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

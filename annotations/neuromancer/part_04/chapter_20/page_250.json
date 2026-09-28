@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 20,
+  "page_number": 250,
+  "annotations": [
+    {
+      "id": "250.03-mr01",
+      "line_number": 3,
+      "target_phrase": "Maelcum, the Remington across his knees, and Case, deck and construct against his chest.",
+      "annotation_text": "The incongruous assault team navigating the ornate corridors of Straylight: a Rastafarian tugboat pilot with a 12-gauge shotgun alongside a cyber-jockey clutching a console deck and a dead man's ROM.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "121.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 250."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "250.06-tt01",
+      "line_number": 6,
+      "target_phrase": "Time be time.",
+      "annotation_text": "Maelcum's recurring Zen-Rastafarian aphorism, emphasizing non-linear, organic presence against the frantic nanosecond synchronization of the matrix virus run.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "121.05"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 250."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 3,
+  "page_number": 56,
+  "annotations": [
+    {
+      "id": "056.03-pr01",
+      "line_number": 3,
+      "target_phrase": "Peter Riviera. Real ugly customer.",
+      "annotation_text": "Introduction of Peter Riviera, a sociopathic holographic performer and sadomasochist whose subdermal optic implants project living hallucinations, recruited to exploit 3Jane's aesthetic tastes.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "093.02",
+        "266.07"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 56."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "056.09-mr01",
+      "line_number": 9,
+      "target_phrase": "The matrix has its roots in primitive arcade games",
+      "annotation_text": "The historical lineage connecting 1970s and 1980s coin-op video arcade games directly to military flight simulators and neural cyberspace navigation.",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "008.05"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 56."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "056.16-ch01",
+      "line_number": 16,
+      "target_phrase": "Cyberspace. A consensual hallucination experienced daily by billions of legitimate operators",
+      "annotation_text": "The seminal passage in modern science fiction defining 'Cyberspace'—coined by Gibson as a shared, virtual-reality spatialization of global computer data networks, inspiring the real-world development of the World Wide Web.",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "005.02",
+        "031.09",
+        "275.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 56.",
+        "Benedikt, Michael. Cyberspace: First Steps. MIT Press, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "056.18-cl01",
+      "line_number": 18,
+      "target_phrase": "Lines of light ranged in the non space of the mind, clusters and constellations of data. Like city lights, receding...",
+      "annotation_text": "Gibson's lyrical spatialization of digital information as infinite illuminated geometric grids, drawing on cognitive mapping and architectural perspectives of nocturnal urban sprawl.",
+      "categories": [
+        "cyberspace-matrix",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "056.16"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 56.",
+        "Jameson, Fredric. Postmodernism. (1991)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 11,
+  "page_number": 148,
+  "annotations": [
+    {
+      "id": "148.02-vs01",
+      "line_number": 2,
+      "target_phrase": "Vingtieme Siecle. It was the smallest and most expensive of several floating restaurants",
+      "annotation_text": "The hyper-exclusive floating restaurants of Freeside where aristocratic diners consume real agricultural meat ('not vat stuff'), underscoring the extreme class polarization between Sprawl citizens and orbital plutocrats.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "108.05"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 148."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "148.06-df01",
+      "line_number": 6,
+      "target_phrase": "thick dull grease congealing on the wrinkled lobes, shot through with greenish-purple flashes of pain",
+      "annotation_text": "Case's somatic experience of drug comedown and neural overdrive: physiological pain described as tactile neuro-visceral degradation, reinforcing Hayles's thesis that the body ('meat') can never be truly escaped.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "006.02",
+        "035.01"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 148.",
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 4,
+  "page_number": 60,
+  "annotations": [
+    {
+      "id": "060.02-mt01",
+      "line_number": 2,
+      "target_phrase": "Cowboys didn’t get into Simstim, he thought, because it was basically a meat toy.",
+      "annotation_text": "The ideological hierarchy of console cowboys: rejecting simstim (broadcast sensory recording of other human bodies) as passive, vulgar entertainment ('meat toy') in favor of the disembodied mathematical purity of matrix navigation.",
+      "categories": [
+        "cyberspace-matrix",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "005.02",
+        "056.16"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 60.",
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "060.05-cp01",
+      "line_number": 5,
+      "target_phrase": "Cyberspace slid into existence from the cardinal points.",
+      "annotation_text": "The phenomenal experience of 'jacking in' through neural dermatrodes: an instantaneous displacement of physical somatic reality by the luminous Cartesian coordinates of the global matrix.",
+      "categories": [
+        "cyberspace-matrix",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "056.16"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 60."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "060.08-of01",
+      "line_number": 8,
+      "target_phrase": "The abrupt jolt into other flesh. Matrix gone, a wave of sound and color...",
+      "annotation_text": "Sensorium crossover: Case switching his deck link to Molly's simstim feed, experiencing her augmented biological body, pulse, eyesight, and environmental sensations in real time.",
+      "categories": [
+        "body-modification-cybernetics",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "028.13",
+        "060.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 60."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

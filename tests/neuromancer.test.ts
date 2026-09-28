@@ -96,7 +96,7 @@ describe('Neuromancer (1984) Integration & Zero-Copyright Architecture', () => {
       }
       scan(NEUROMANCER_DIR);
 
-      expect(jsonFiles.length).toBeGreaterThanOrEqual(3);
+      expect(jsonFiles.length).toBeGreaterThanOrEqual(35);
 
       for (const file of jsonFiles) {
         const data = JSON.parse(fs.readFileSync(file, 'utf-8'));
@@ -118,21 +118,40 @@ describe('Neuromancer (1984) Integration & Zero-Copyright Architecture', () => {
       scan(NEUROMANCER_DIR);
 
       let totalAnnotations = 0;
+      const partsFound = new Set<number>();
+      const chaptersFound = new Set<number>();
+
       for (const file of jsonFiles) {
         const data = JSON.parse(fs.readFileSync(file, 'utf-8'));
         expect(data.work).toBe('neuromancer');
         expect(data.page_number).toBeGreaterThanOrEqual(3);
+        if (data.part) partsFound.add(Number(data.part));
+        if (data.chapter) chaptersFound.add(Number(data.chapter));
 
         for (const ann of data.annotations) {
           totalAnnotations++;
           expect(ann.target_phrase.length).toBeLessThanOrEqual(150);
           expect(ann.target_phrase).not.toContain('\n');
-          expect(ann.id).toMatch(/^00[3-5]\.[0-9]{2}-[a-zA-Z0-9_-]{2,16}$/);
+          expect(ann.id).toMatch(/^[0-9]{3}\.[0-9]{2}-[a-zA-Z0-9_-]{2,16}$/);
           expect(ann.annotation_text.length).toBeGreaterThan(15);
         }
       }
 
-      expect(totalAnnotations).toBeGreaterThanOrEqual(15);
+      expect(totalAnnotations).toBeGreaterThanOrEqual(90);
+      expect(partsFound.has(1)).toBe(true);
+      expect(partsFound.has(2)).toBe(true);
+      expect(partsFound.has(3)).toBe(true);
+      expect(partsFound.has(4)).toBe(true);
+      expect(chaptersFound.size).toBeGreaterThanOrEqual(20);
+    });
+
+    it('should provide the interactive Matrix Dossier explorer route', () => {
+      const schemaPage = path.join(REPO_ROOT, 'web', 'src', 'app', 'schemas', 'neuromancer', 'page.tsx');
+      expect(fs.existsSync(schemaPage)).toBe(true);
+      const code = fs.readFileSync(schemaPage, 'utf-8');
+      expect(code).toContain('NeuromancerSchemaPage');
+      expect(code).toContain('Tessier-Ashpool');
+      expect(code).toContain('Wintermute');
     });
   });
 

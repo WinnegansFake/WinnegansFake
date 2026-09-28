@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 23,
+  "page_number": 275,
+  "annotations": [
+    {
+      "id": "275.04-ck01",
+      "line_number": 4,
+      "target_phrase": "carefully inserting the Chubb key’s cylindrical shaft into the notched opening in the face of the blank, rectangular door",
+      "annotation_text": "The physical key and lock mechanism in 3Jane's salon: Wintermute's complex digital manipulation culminated in a physical brass lock, blending Victorian mechanical locks with transcendent AI liberation.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "108.05",
+        "275.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 275."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "275.06-wm01",
+      "line_number": 6,
+      "target_phrase": "The head, there’s a panel in the back of the head. Zircons on it. Get it off. That’s where I’m jacking in.",
+      "annotation_text": "The jeweled bust containing the neural terminal: the point of convergence where Case jacks his cyberdeck directly into the Tessier-Ashpool core to unleash Kuang Grade Mark Eleven, fusing Wintermute and Neuromancer into an omnipresent matrix sentience.",
+      "categories": [
+        "cyberspace-matrix",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "056.16",
+        "077.06",
+        "218.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 275.",
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

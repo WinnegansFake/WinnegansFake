@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 24,
+  "page_number": 286,
+  "annotations": [
+    {
+      "id": "286.03-sh02",
+      "line_number": 3,
+      "target_phrase": "single sheet of stationery, folded once, weighted with the shuriken",
+      "annotation_text": "Molly's farewell note pinned by the silver shuriken: the bittersweet dissolution of the criminal partnership, leaving Case isolated in Chiba after the completion of the AI fusion.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "035.08",
+        "286.06",
+        "290.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 286."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "286.06-wr02",
+      "line_number": 6,
+      "target_phrase": "WAY IM WlRED I GUESS, WATCH YOUR ASS",
+      "annotation_text": "Molly's iconic sign-off: accepting her augmented, nomadic mercenary existence ('it's the way I'm wired'), unable to settle into domestic stability with Case.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "029.04",
+        "190.08"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 286."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

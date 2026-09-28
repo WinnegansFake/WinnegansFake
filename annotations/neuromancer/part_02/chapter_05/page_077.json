@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 5,
+  "page_number": 77,
+  "annotations": [
+    {
+      "id": "077.02-cr01",
+      "line_number": 2,
+      "target_phrase": "The building was modular, like some giant version of Cheap Hotel each coffin forty meters long.",
+      "annotation_text": "Urban architectural decay in Baltimore: modular condo racks functioning as industrial human filing cabinets, reflecting the total commodification and spatial compression of human shelter.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "030.02",
+        "046.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 77."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "077.06-wm01",
+      "line_number": 6,
+      "target_phrase": "W I N T E R M U T E printed in red felt pen",
+      "annotation_text": "The first direct physical manifestation of the name 'Wintermute' delivered via Lupus Yonderboy and the Panther Moderns, signaling the artificial intelligence's covert orchestration of the heist.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "132.06",
+        "275.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 77."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 1,
+  "page_number": 16,
+  "annotations": [
+    {
+      "id": "016.03-mm01",
+      "line_number": 3,
+      "target_phrase": "Dark hair, mirrored glasses, dark clothing, slender...",
+      "annotation_text": "The first visual appearance of Molly Millions (the 'razor girl'). Her mirrored lenses reflect the visual grammar of the 1980s cyberpunk movement, functioning as both tactical prosthetics and psychological masks.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "028.13",
+        "029.07"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 16.",
+        "Sterling, Bruce. Mirrorshades: The Cyberpunk Anthology. Arbor House, 1986."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "016.08-ts01",
+      "line_number": 8,
+      "target_phrase": "Taser. One hour, twenty New Yen. Thirty deposit.",
+      "annotation_text": "The rental economy of black-market weaponry in Chiba, showcasing Gibson's meticulous attention to the micro-economics of street crime and temporary tactical equipment.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "006.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 16."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

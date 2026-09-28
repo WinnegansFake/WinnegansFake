@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 16,
+  "page_number": 203,
+  "annotations": [
+    {
+      "id": "203.03-am02",
+      "line_number": 3,
+      "target_phrase": "calm, perfectly focused, utterly crazy face of Armitage",
+      "annotation_text": "The psychological collapse of Armitage as his synthetic persona disintegrates under pressure, revealing the catatonic trauma of Colonel Willis Corto before Wintermute executes him.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "030.03",
+        "087.08"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 203."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "203.11-sc01",
+      "line_number": 11,
+      "target_phrase": "A high-rez simstim construct.",
+      "annotation_text": "Case describing Wintermute's communication strategy: projecting simulated human avatars (Lonny Zone, the Finn) because an AI cannot communicate directly with the human sensorium without psychic rupture.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "077.06",
+        "275.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 203."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

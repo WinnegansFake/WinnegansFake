@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 8,
+  "page_number": 108,
+  "annotations": [
+    {
+      "id": "108.01-rj01",
+      "line_number": 1,
+      "target_phrase": "PART THREE. MIDNIGHT IN THE RUE JULES VERNE",
+      "annotation_text": "Section title for the orbital phase of the mission, shifting the narrative to the orbital resort of Freeside and the artificial gravity spindle where the Tessier-Ashpool dynasty resides.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "046.01",
+        "132.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 108."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "108.04-gw01",
+      "line_number": 4,
+      "target_phrase": "Human DNA spreading out from gravity’s steep well like an oilslick.",
+      "annotation_text": "Gibson's biological metaphor for space colonization: orbital habitats as an ecological and genetic spill from Earth's gravity well, driven by corporate surplus capital rather than humanitarian idealism.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "108.05"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 108."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "108.05-ta01",
+      "line_number": 5,
+      "target_phrase": "home to a family inbred and most carefully refined, the industrial clan of Tessier and Ashpool",
+      "annotation_text": "Introduction of the Tessier-Ashpool corporate dynasty: an inbred transnational family whose gothic orbital stronghold, Villa Straylight, symbolizes the late-capitalist fusion of feudal aristocracy and autonomous AI infrastructure.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "178.06",
+        "243.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 108.",
+        "Jameson, Fredric. Postmodernism. (1991)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

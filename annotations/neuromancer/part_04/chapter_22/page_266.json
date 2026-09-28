@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 22,
+  "page_number": 266,
+  "annotations": [
+    {
+      "id": "266.02-ku02",
+      "line_number": 2,
+      "target_phrase": "The service cart was crying. The Betaphenethylamine gave it a voice.",
+      "annotation_text": "The chemical hallucinations of Betaphenethylamine overdrive: Case's sensory perceptions become synesthetic and anthropomorphic as he rushes toward the Straylight terminal.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "035.01",
+        "148.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 266."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "266.07-rh01",
+      "line_number": 7,
+      "target_phrase": "Riviera’s holos waited for them, the torture scenes and the cannibal children. Molly had broken the triptych.",
+      "annotation_text": "The horrifying holographic fantasies projected by Riviera across the terminal salon: sadomasochistic aestheticization of violence and madness, finally shattered by Molly's physical intervention.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "056.03"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 266."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 18,
+  "page_number": 230,
+  "annotations": [
+    {
+      "id": "230.04-tj01",
+      "line_number": 4,
+      "target_phrase": "Lady 3Jane Marie-France Tessier-Ashpool had carved herself a low country flush with the inner surface of Straylight’s hull",
+      "annotation_text": "Lady 3Jane's decadent living quarters inside Straylight: an engineered architectural rupture within the spindle's core, displaying the aristocratic indifference of the Tessier-Ashpool clan.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "108.05",
+        "243.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 230."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

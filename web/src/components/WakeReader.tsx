@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
+import Link from 'next/link';
 import { AnnotationItem, PageAnnotationsData, PageLine } from '@/types/annotations';
 import { InlineEditor } from './InlineEditor';
 import {
@@ -21,6 +22,7 @@ import {
   Info,
   Archive,
   Compass,
+  Terminal,
   CornerDownRight,
   UploadCloud,
   FileUp,
@@ -1174,6 +1176,26 @@ export function UniversalReader({
                 <span className="hidden sm:inline text-xs text-slate-400 italic truncate max-w-[200px]">
                   {currentWorkId === 'ulysses' ? (bookInfo.subtitle || '') : bookInfo.chapterTitle}
                 </span>
+                {(currentWorkId === 'neuromancer' || currentWorkId === 'nm') && (
+                  <Link
+                    href="/schemas/neuromancer"
+                    className="hidden lg:inline-flex items-center space-x-1 px-1.5 py-0.5 rounded bg-cyan-950/60 hover:bg-cyan-900/60 text-cyan-300 border border-cyan-500/40 text-[10px] font-mono transition-colors ml-2"
+                    title="Open Neuromancer Matrix Dossier & Schemata"
+                  >
+                    <Terminal className="w-3 h-3 text-cyan-400" />
+                    <span>Matrix Dossier</span>
+                  </Link>
+                )}
+                {currentWorkId === 'ulysses' && (
+                  <Link
+                    href="/schemas/ulysses"
+                    className="hidden lg:inline-flex items-center space-x-1 px-1.5 py-0.5 rounded bg-indigo-950/60 hover:bg-indigo-900/60 text-indigo-300 border border-indigo-500/40 text-[10px] font-mono transition-colors ml-2"
+                    title="Open Ulysses Linati/Gilbert Schemata"
+                  >
+                    <Compass className="w-3 h-3 text-indigo-400" />
+                    <span>Linati Schema</span>
+                  </Link>
+                )}
               </div>
             </div>
             <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">

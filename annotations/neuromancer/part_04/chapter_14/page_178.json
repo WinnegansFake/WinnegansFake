@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 14,
+  "page_number": 178,
+  "annotations": [
+    {
+      "id": "178.06-vs01",
+      "line_number": 6,
+      "target_phrase": "Garvey captive. Yacht, came before, she came back. Now she lockin’ steady on Marcus Garvey.",
+      "annotation_text": "Tessier-Ashpool corporate security seizing the Marcus Garvey tugboat, intensifying the spatial trap around Case and Maelcum as they prepare the final cyberdeck run.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "121.02",
+        "243.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 178."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

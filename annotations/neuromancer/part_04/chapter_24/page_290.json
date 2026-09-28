@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 24,
+  "page_number": 290,
+  "annotations": [
+    {
+      "id": "290.02-sh03",
+      "line_number": 2,
+      "target_phrase": "the star leaving his fingers, flash of silver, to bury itself in the face of the wall screen",
+      "annotation_text": "Case discarding his talisman by hurling the shuriken into the video monitor, symbolically severing his obsession with the lethal romanticism of the street.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "035.08",
+        "286.03"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 290."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "290.04-np01",
+      "line_number": 4,
+      "target_phrase": "new pancreas and liver, the rest on a new Ono-Sendai and a ticket back to the Sprawl",
+      "annotation_text": "Case's financial payout from the run: purchasing biological organ replacements to cure his toxic addiction, upgrading his cyberdeck, and returning to the Sprawl to resume life as a console cowboy.",
+      "categories": [
+        "body-modification-cybernetics",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "006.02",
+        "046.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 290."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "290.06-tr01",
+      "line_number": 6,
+      "target_phrase": "the boy’s grin, his pink gums, the glitter of the long gray eyes that had been Riviera’s... third figure was himself",
+      "annotation_text": "The enigmatic concluding vision in the matrix: Case encounters Neuromancer, Linda Lee, and a digital construct of himself smiling eternally within the lattice of cyberspace light, achieving a paradoxical virtual immortality.",
+      "categories": [
+        "cyberspace-matrix",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "008.08",
+        "261.06",
+        "275.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 290.",
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "290.07-lh01",
+      "line_number": 7,
+      "target_phrase": "Somewhere, very close, the laugh that wasn’t laughter.",
+      "annotation_text": "The haunting acoustic coda of the novel: the digital laugh of McCoy Pauley (the Dixie Flatline) lingering in the matrix, echoing the theme of consciousness persevering as pure algorithmic pattern.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "218.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 290."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

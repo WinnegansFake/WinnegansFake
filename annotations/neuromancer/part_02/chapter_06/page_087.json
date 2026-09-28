@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 6,
+  "page_number": 87,
+  "annotations": [
+    {
+      "id": "087.03-pp01",
+      "line_number": 3,
+      "target_phrase": "pirate’s paradise",
+      "annotation_text": "Underground digital havens and outlaw bulletin boards hidden on the fringes of academic and municipal networks where deckers trade stolen passwords, codes, and illicit software.",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "056.16"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 87."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "087.08-co01",
+      "line_number": 8,
+      "target_phrase": "Contents are primarily video recordings of postwar military trials. Central figure is Colonel Willis Corto.",
+      "annotation_text": "The discovery of Armitage's suppressed psychiatric past: a decorated Special Forces commander broken during Screaming Fist, whose identity was reconstructed and animated by Wintermute.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "030.03",
+        "031.02",
+        "203.03"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 87."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

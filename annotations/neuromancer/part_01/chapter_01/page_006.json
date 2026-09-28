@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 1,
+  "page_number": 6,
+  "annotations": [
+    {
+      "id": "006.02-mc01",
+      "line_number": 2,
+      "target_phrase": "Russian wartime mycotoxin",
+      "annotation_text": "The Russian wartime mycotoxin is a neurotoxic bioweapon that permanently damaged Case's central nervous system as punishment for embezzling from his former employers, exiling him from cyberspace to 'the meat'.",
+      "categories": [
+        "body-modification-cybernetics",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "003.01",
+        "005.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 6.",
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "006.06-ny01",
+      "line_number": 6,
+      "target_phrase": "New Yen",
+      "annotation_text": "New Yen (¥) reflects 1980s economic anxieties regarding Japanese financial ascendancy and transnational zaibatsu hegemony, dominating the black-market underworld of Chiba City.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "003.03"
+      ],
+      "sources": [
+        "Tatsumi, Takayuki. Full Metal Apache. Duke UP, 2006."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "006.09-bz01",
+      "line_number": 9,
+      "target_phrase": "Biz here was a constant subliminal hum",
+      "annotation_text": "The ethos of Night City as an unmitigated social-Darwinist marketplace where economic transactions ('biz') constitute the sole measure of survival and human worth.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "008.02"
+      ],
+      "sources": [
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 2,
+  "page_number": 30,
+  "annotations": [
+    {
+      "id": "030.02-ch01",
+      "line_number": 2,
+      "target_phrase": "room on the twenty-fifth floor of the Chiba Hilton seemed enormous",
+      "annotation_text": "The architectural contrast between the coffin-sized capsule hotels of the urban underclass and the hyper-sterile corporate luxury of international zaibatsu hotels.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 30."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "030.03-am01",
+      "line_number": 3,
+      "target_phrase": "My name is Armitage",
+      "annotation_text": "Introduction of Armitage, the enigmatic military fixer whose synthetic personality and blank, bleach-colored gaze mask the shattered psyche of Colonel Willis Corto.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "031.02",
+        "087.08",
+        "203.03"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 30."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "030.05-fl01",
+      "line_number": 5,
+      "target_phrase": "fieldstrip the fletcher",
+      "annotation_text": "Molly's weapon: a silent, compressed-air handgun that fires explosive or neurotoxin-coated flechettes, designed to defeat metal detectors and personal body armor.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "028.13"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 30."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

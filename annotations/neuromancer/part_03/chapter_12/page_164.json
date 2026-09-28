@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 12,
+  "page_number": 164,
+  "annotations": [
+    {
+      "id": "164.02-jv02",
+      "line_number": 2,
+      "target_phrase": "Rue Jules Verne was a circumferential avenue, looping the spindle’s midpoint",
+      "annotation_text": "The non-Euclidean cylindrical geography of Freeside: a closed, looping orbital topography where traveling straight eventually returns the walker to their starting point, mirroring the recursive logic of AI and the matrix.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "132.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 164."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "164.03-dm01",
+      "line_number": 3,
+      "target_phrase": "drone microlight bank gracefully in an updraft",
+      "annotation_text": "Autonomous winged security drones disguised as butterflies patrolling the artificial thermal currents of Freeside, blurring the boundary between mechanical surveillance and ornamental wildlife.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "108.05"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 164."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

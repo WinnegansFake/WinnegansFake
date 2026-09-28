@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 17,
+  "page_number": 218,
+  "annotations": [
+    {
+      "id": "218.02-ku01",
+      "line_number": 2,
+      "target_phrase": "Kuang Grade Mark Eleven was filling the grid between itself and the T-A ice with hypnotically intricate traceries of rainbow",
+      "annotation_text": "The deployment of the Kuang Grade Mark Eleven: a Chinese military-grade icebreaker program that writes shimmering mathematical virus code across the defensive cores of Straylight's security matrix.",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "031.07",
+        "266.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 218."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "218.06-la01",
+      "line_number": 6,
+      "target_phrase": "The construct’s hideous approximation of laughter scraped Case’s nerves like a dull blade.",
+      "annotation_text": "The uncanny horror of McCoy Pauley's ROM construct: digital laughter without human vocal cords or emotional depth, highlighting the simulation of personality in post-biological constructs.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "190.02",
+        "290.07"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 218.",
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

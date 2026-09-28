@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 3,
+  "page_number": 51,
+  "annotations": [
+    {
+      "id": "051.04-mh01",
+      "line_number": 4,
+      "target_phrase": "Metro Holografix",
+      "annotation_text": "The Finn's shop in Manhattan: a subterranean archive of obsolete electronics, cathode ray tubes, and discarded cybernetic components representing the material archaeological strata of technological obsolescence.",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "003.03"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 51."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "051.07-vt01",
+      "line_number": 7,
+      "target_phrase": "the guts of a television so old it was studded with the glass stumps of vacuum tubes",
+      "annotation_text": "The tactile debris of mid-20th-century media technology rotting in the backrooms of the Sprawl, contrasting the physical antiquity of hardware with the pure mathematical light of cyberspace.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "003.03"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 51."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

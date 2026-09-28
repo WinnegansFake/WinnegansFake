@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 1,
+  "page_number": 12,
+  "annotations": [
+    {
+      "id": "012.02-ns01",
+      "line_number": 2,
+      "target_phrase": "Ninsei",
+      "annotation_text": "Ninsei, the neon-lit entertainment strip of Night City, is mapped by Gibson with hardboiled noir topography overlaid with Japanese commercial signage and clandestine bio-clinics.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "003.01"
+      ],
+      "sources": [
+        "Tatsumi, Takayuki. Full Metal Apache. Duke UP, 2006."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "012.03-ge01",
+      "line_number": 3,
+      "target_phrase": "synthetic glandular extract",
+      "annotation_text": "The illicit chemical economy of Chiba, where neurohormones and designer neurotransmitters are trafficked as high-margin commodities beyond zaibatsu customs.",
+      "categories": [
+        "body-modification-cybernetics",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "035.10"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 12."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

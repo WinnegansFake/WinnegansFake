@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 1,
+  "page_number": 8,
+  "annotations": [
+    {
+      "id": "008.02-sd01",
+      "line_number": 2,
+      "target_phrase": "Night City was like a deranged experiment in social Darwinism",
+      "annotation_text": "Gibson's description of Night City as a hyper-capitalist borderzone where technological obsolescence meets unregulated black markets, anticipating Mike Davis's concept of urban dystopias.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "006.09"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 8.",
+        "Jameson, Fredric. Postmodernism. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "008.05-ag01",
+      "line_number": 5,
+      "target_phrase": "arcade game consoles",
+      "annotation_text": "The video arcade serves as the training ground and somatic precursor for cyberspace navigation, linking arcade motor reflexivity directly to the console cowboy archetype.",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "056.09"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "008.08-ll01",
+      "line_number": 8,
+      "target_phrase": "Linda Lee",
+      "annotation_text": "Linda Lee represents Case's fragile emotional tether to unmediated human affection in the meat world, whose murder in Chiba catalyzes his guilt and descent.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "261.06",
+        "290.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 8."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

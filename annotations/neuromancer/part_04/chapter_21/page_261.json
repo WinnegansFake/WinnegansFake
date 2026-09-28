@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 21,
+  "page_number": 261,
+  "annotations": [
+    {
+      "id": "261.03-gh01",
+      "line_number": 3,
+      "target_phrase": "His vision crawled with ghost hieroglyphs, translucent lines of symbols arranging themselves against the neutral backdrop",
+      "annotation_text": "Case experiencing the matrix bleeding through into his optical perception: digital code and matrix coordinates projecting onto physical reality, illustrating the breakdown of the boundary between virtual and material space.",
+      "categories": [
+        "cyberspace-matrix",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "056.16",
+        "060.05"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 261.",
+        "Bukatman, Scott. Terminal Identity. (1993)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "261.06-ll02",
+      "line_number": 6,
+      "target_phrase": "Linda, who told you? Who told you I’d come? Who?",
+      "annotation_text": "Case confronting Linda Lee inside Neuromancer's simulated beach in Morocco, discovering that the AI preserves human subjectivity and memory within subjective virtual realities.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "008.08",
+        "290.06"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 261."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

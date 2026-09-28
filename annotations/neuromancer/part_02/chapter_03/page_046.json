@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 3,
+  "page_number": 46,
+  "annotations": [
+    {
+      "id": "046.01-se01",
+      "line_number": 1,
+      "target_phrase": "PART TWO. THE SHOPPING EXPEDITION",
+      "annotation_text": "Section title marking the heist crew's procurement phase across the Boston-Atlanta Metropolitan Axis (BAMA) and Istanbul to assemble military icebreakers, constructs, and holographic hardware.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "003.01",
+        "108.01"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 46."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "046.02-ba01",
+      "line_number": 2,
+      "target_phrase": "Home was BAMA, the Sprawl, the Boston-Atlanta Metropolitan Axis",
+      "annotation_text": "The Sprawl: the continuous megalopolis running along the northeastern seaboard of the United States, enclosed in geodesic domes with synthetic weather and neon-choked transit subways.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "008.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 46.",
+        "Jameson, Fredric. Postmodernism. (1991)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

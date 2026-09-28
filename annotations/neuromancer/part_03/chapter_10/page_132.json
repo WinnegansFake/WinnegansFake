@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 10,
+  "page_number": 132,
+  "annotations": [
+    {
+      "id": "132.02-jv01",
+      "line_number": 2,
+      "target_phrase": "Welcome to the Rue Jules Verne",
+      "annotation_text": "The main circumferential boulevard of Freeside, named after science fiction pioneer Jules Verne, built as an artificial terrestrial paradise for Earth's ultra-wealthy elite.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "108.01",
+        "164.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 132."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "132.04-la01",
+      "line_number": 4,
+      "target_phrase": "Lado-Acheson system whose two-millimeter armature ran the length of the spindle",
+      "annotation_text": "The artificial sunlight and projection apparatus of Freeside: simulating Mediterranean skies (Cannes) along the curved inner hull of the rotating spindle, an engineered simulacrum of terrestrial nature.",
+      "categories": [
+        "cyberspace-matrix",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "108.05"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 132."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}
