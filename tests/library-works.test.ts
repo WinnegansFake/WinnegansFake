@@ -54,6 +54,11 @@ describe('Universal Literary Library Catalog (@winnegans/core)', () => {
     expect(fw.archiveId).toBe('finneganswake00joycuoft');
     expect(fw.epubSha256).toBe('93f80a2bd54e7c804b7cd0e88553315e3ebdba449a8a08dc83cd3a8c0e00e773');
     expect(fw.epubFilename).toBe('finneganswake00joycuoft.epub');
+
+    const nm = getWork('neuromancer');
+    expect(nm.title).toBe('Neuromancer');
+    expect(nm.defaultEpubUrl).toBe('https://bdebooks.com/en/book-download/?fmt=epub&cover=2');
+    expect(nm.epubFilename).toBe('neuromancer.epub');
   });
 
   it('defaults to Finnegans Wake when work ID is unknown or omitted', () => {

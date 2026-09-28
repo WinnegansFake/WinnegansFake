@@ -825,6 +825,9 @@ export const NEUROMANCER: WorkDefinition = {
   divisionType: 'part',
   subdivisionType: 'chapter',
   citationFormat: 'NM {page}.{line}',
+  defaultEpubUrl: 'https://bdebooks.com/en/book-download/?fmt=epub&cover=2',
+  archiveUrl: 'https://bdebooks.com/en/books/neuromancer-by-william-gibson/',
+  epubFilename: 'neuromancer.epub',
   annotationsPath: 'annotations/neuromancer',
   coverColor: 'cyan',
   divisions: [
@@ -1065,6 +1068,7 @@ export function getBookAndChapterInfo(
 export const ARCHIVE_EPUB_URL = "https://archive.org/download/finneganswake00joycuoft/finneganswake00joycuoft.epub";
 export const FW_FALLBACK_EPUB_URL = "https://archive.org/download/finnegans-wake-joyce-james/FinnegansWakeJoyceJames.epub";
 export const ULYSSES_EPUB_URL = "https://archive.org/download/ulysses00joyc_1/ulysses00joyc_1.epub";
+export const NEUROMANCER_EPUB_URL = "https://bdebooks.com/en/book-download/?fmt=epub&cover=2";
 export const GITHUB_REPO_URL = "https://github.com/WinnegansFake/WinnegansFake";
 
 

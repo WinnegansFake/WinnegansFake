@@ -196,6 +196,11 @@ export {
   FINNEGANS_WAKE,
   ULYSSES,
   NEUROMANCER,
+  ARCHIVE_EPUB_URL,
+  FW_FALLBACK_EPUB_URL,
+  ULYSSES_EPUB_URL,
+  NEUROMANCER_EPUB_URL,
+  GITHUB_REPO_URL,
   FINNEGANS_WAKE_REGISTERS,
   ULYSSES_REGISTERS,
   NEUROMANCER_REGISTERS,
@@ -341,8 +346,3 @@ export function getBookAndChapterInfo(page: number, workId: string = 'finnegans-
     chapterTitle: title,
   };
 }
-
-export const ARCHIVE_EPUB_URL = "https://archive.org/download/finneganswake00joycuoft/finneganswake00joycuoft.epub";
-export const FW_FALLBACK_EPUB_URL = "https://archive.org/download/finnegans-wake-joyce-james/FinnegansWakeJoyceJames.epub";
-export const ULYSSES_EPUB_URL = "https://archive.org/download/ulysses00joyc_1/ulysses00joyc_1.epub";
-export const GITHUB_REPO_URL = "https://github.com/tekromancy/WinnegansFake";

@@ -101,9 +101,11 @@ export function EpubSourceModal({
     ...(activeWork.defaultEpubUrl
       ? [
           {
-            label: `Internet Archive Public Scan (${activeWork.epubSizeBytes ? (activeWork.epubSizeBytes / 1048576).toFixed(1) + ' MB' : 'Public Edition'})`,
+            label: activeWork.id === 'neuromancer' || activeWork.id === 'nm'
+              ? 'Online EPUB Source (bdebooks.com)'
+              : `Internet Archive Public Scan (${activeWork.epubSizeBytes ? (activeWork.epubSizeBytes / 1048576).toFixed(1) + ' MB' : 'Public Edition'})`,
             url: activeWork.defaultEpubUrl,
-            description: `Direct scan download from ${activeWork.archiveUrl || 'Internet Archive'}`,
+            description: `Direct scan download from ${activeWork.archiveUrl || (activeWork.id === 'neuromancer' || activeWork.id === 'nm' ? 'bdebooks.com' : 'Internet Archive')}`,
           },
         ]
       : []),
@@ -307,7 +309,7 @@ export function EpubSourceModal({
               <span>Option 2: Select Local File on Disk</span>
             </label>
             <p className="text-xs opacity-75 leading-relaxed">
-              Select an EPUB from your local hard drive (e.g. <code className="font-mono text-emerald-400">data/finneganswake00joycuoft.epub</code> or your Downloads folder). The file name and source reference will be saved in your cookie.
+              Select an EPUB from your local hard drive (e.g. <code className="font-mono text-emerald-400">data/{activeWork.epubFilename || `${activeWork.id}.epub`}</code> or your Downloads folder). The file name and source reference will be saved in your cookie.
             </p>
             <input
               type="file"

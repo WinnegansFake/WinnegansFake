@@ -4,6 +4,7 @@ import path from 'path';
 import {
   NEUROMANCER,
   NEUROMANCER_REGISTERS,
+  NEUROMANCER_EPUB_URL,
   getWork,
   getBookAndChapterInfo,
   getPageFilePath,
@@ -28,6 +29,9 @@ describe('Neuromancer (1984) Integration & Zero-Copyright Architecture', () => {
       expect(NEUROMANCER.divisions.length).toBe(24);
       expect(NEUROMANCER.citationFormat).toBe('NM {page}.{line}');
       expect(NEUROMANCER.isPublicDomain).toBe(false);
+      expect(NEUROMANCER.defaultEpubUrl).toBe('https://bdebooks.com/en/book-download/?fmt=epub&cover=2');
+      expect(NEUROMANCER_EPUB_URL).toBe('https://bdebooks.com/en/book-download/?fmt=epub&cover=2');
+      expect(NEUROMANCER.epubFilename).toBe('neuromancer.epub');
     });
 
     it('should retrieve Neuromancer via getWork() with aliases', () => {

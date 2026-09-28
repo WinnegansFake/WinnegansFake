@@ -791,6 +791,9 @@
     "divisionType": "part",
     "subdivisionType": "chapter",
     "citationFormat": "NM {page}.{line}",
+    "defaultEpubUrl": "https://bdebooks.com/en/book-download/?fmt=epub&cover=2",
+    "archiveUrl": "https://bdebooks.com/en/books/neuromancer-by-william-gibson/",
+    "epubFilename": "neuromancer.epub",
     "annotationsPath": "annotations/neuromancer",
     "coverColor": "cyan",
     "divisions": [
