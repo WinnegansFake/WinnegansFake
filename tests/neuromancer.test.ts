@@ -100,7 +100,7 @@ describe('Neuromancer (1984) Integration & Zero-Copyright Architecture', () => {
       }
       scan(NEUROMANCER_DIR);
 
-      expect(jsonFiles.length).toBeGreaterThanOrEqual(35);
+      expect(jsonFiles.length).toBeGreaterThanOrEqual(100);
 
       for (const file of jsonFiles) {
         const data = JSON.parse(fs.readFileSync(file, 'utf-8'));
@@ -141,12 +141,12 @@ describe('Neuromancer (1984) Integration & Zero-Copyright Architecture', () => {
         }
       }
 
-      expect(totalAnnotations).toBeGreaterThanOrEqual(90);
+      expect(totalAnnotations).toBeGreaterThanOrEqual(230);
       expect(partsFound.has(1)).toBe(true);
       expect(partsFound.has(2)).toBe(true);
       expect(partsFound.has(3)).toBe(true);
       expect(partsFound.has(4)).toBe(true);
-      expect(chaptersFound.size).toBeGreaterThanOrEqual(20);
+      expect(chaptersFound.size).toBe(24);
     });
 
     it('should provide the interactive Matrix Dossier explorer route', () => {

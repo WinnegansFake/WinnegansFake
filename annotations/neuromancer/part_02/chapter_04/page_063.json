@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 4,
+  "page_number": 63,
+  "annotations": [
+    {
+      "id": "063.02-pm01",
+      "line_number": 2,
+      "target_phrase": "the Panther Moderns, mimetic polycarbon suits, chameleon camouflage",
+      "annotation_text": "The Panther Moderns are a nihilistic cybernetic youth subculture who weaponize media chaos and sensory overload. Their mimetic polycarbon suits dynamically alter surface pigmentation to blend into urban backgrounds, combining stealth technology with high-fashion terrorism.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "060.01"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "063.05-sw01",
+      "line_number": 5,
+      "target_phrase": "semiotic sabotage, terror through media misinformation",
+      "annotation_text": "The Moderns' tactical doctrine relies on semiotic disruption rather than physical destruction: hijacking news feeds, transmitting bogus nerve gas alerts, and generating informational panic. This tactic directly reflects William S. Burroughs' theory of language as a virus and semiotic subversion.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "060.01"
+      ],
+      "sources": [
+        "Burroughs, William S. The Electronic Revolution, 1970.",
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

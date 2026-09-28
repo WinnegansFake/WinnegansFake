@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 7,
+  "page_number": 100,
+  "annotations": [
+    {
+      "id": "100.02-am02",
+      "line_number": 2,
+      "target_phrase": "Armitage controlling Riviera with precise dosage injections",
+      "annotation_text": "The psychological warfare between Armitage and Riviera demonstrates the fragility of the heist team. Armitage uses algorithmic precision to dispense Demerol, treating Riviera not as a human colleague but as an unstable organic component.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "033.02",
+        "091.05"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "100.05-ml03",
+      "line_number": 5,
+      "target_phrase": "Molly's cold fury, scalpel blades clicking silently in their housings",
+      "annotation_text": "Molly's physical reaction to Riviera's grotesque cabaret underscores her professional lethality. Her concealed scalpel implants serve as an extension of her nervous system, poised to execute Riviera the moment Armitage's protection ends.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "029.01",
+        "096.06"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

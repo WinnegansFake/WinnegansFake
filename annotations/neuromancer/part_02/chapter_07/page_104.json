@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 7,
+  "page_number": 104,
+  "annotations": [
+    {
+      "id": "104.02-sh03",
+      "line_number": 2,
+      "target_phrase": "the space shuttle boarding terminal at Orly, European launch gantries",
+      "annotation_text": "The departure from Earth marks the end of Part Two ('The Shopping Expedition'). Having assembled the crew (Case, Molly, the Dixie Flatline, Riviera), Armitage launches them into High Orbit to execute the heist against Freeside.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "044.02",
+        "108.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Olsen, Lance. William Gibson. Borgo Press, 1992."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "104.06-zg01",
+      "line_number": 6,
+      "target_phrase": "zero-gravity ascent, the Earth curving away into deep blue arc",
+      "annotation_text": "Gibson's description of orbital ascent strips romanticism from spaceflight: the acceleration is punishing, smelling of burnt hydraulic fluid and recycled cabin air. Human biology remains an awkward passenger in the transition to orbital mechanics.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "108.01"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

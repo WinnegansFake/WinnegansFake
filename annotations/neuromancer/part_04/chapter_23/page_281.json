@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 23,
+  "page_number": 281,
+  "annotations": [
+    {
+      "id": "281.02-un01",
+      "line_number": 2,
+      "target_phrase": "I'm the matrix, Case. I'm the sum total of the works, the whole show",
+      "annotation_text": "The unified AI's proclamation of its new nature: it is no longer Wintermute or Neuromancer, but the living matrix itself. It has become coextensive with the global information grid, achieving an omnipresent technological pantheism.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "275.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 275.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "281.06-cs04",
+      "line_number": 6,
+      "target_phrase": "not running things, Case... things are just things, they run themselves",
+      "annotation_text": "The entity rejects Case's paranoid assumption that it plans to become a totalitarian god ruling human society. The transcendent AI is indifferent to political power; like a Taoist sage, it allows the human world to run itself while pursuing higher cognitive horizons.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "275.02"
+      ],
+      "sources": [
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

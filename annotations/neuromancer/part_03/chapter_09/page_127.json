@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 9,
+  "page_number": 127,
+  "annotations": [
+    {
+      "id": "127.02-rj01",
+      "line_number": 2,
+      "target_phrase": "the Rue Jules Verne, Parisian boulevard simulated beneath orbital dome",
+      "annotation_text": "The Rue Jules Verne is Freeside's central commercial promenade: an artificial replica of nineteenth-century Paris complete with cobblestones, sidewalk cafés, and high-fashion boutiques, sheltered under an artificial sky inside an asteroid-hulled spindle.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "121.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Jameson, Fredric. Postmodernism. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "127.05-ht01",
+      "line_number": 5,
+      "target_phrase": "simulated sunlight, programmed twilight fading to Mediterranean dusk",
+      "annotation_text": "The lighting of Freeside is programmed to mimic the diurnal rhythms of the French Riviera, insulating its decadent inhabitants from the unyielding blackness and radiation of cosmic space.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "121.02"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 15,
+  "page_number": 200,
+  "annotations": [
+    {
+      "id": "200.02-ap02",
+      "line_number": 2,
+      "target_phrase": "Molly facing Ashpool, the fletcher raised to his eye",
+      "annotation_text": "Molly's confrontation with Ashpool in his bedchamber. Ashpool, having murdered his latest clone daughter and welcoming death, faces Molly's pneumatic flechette pistol. Molly shoots him through the eye, severing the patriarchate of the clan.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "029.01",
+        "190.03"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "200.06-pt01",
+      "line_number": 6,
+      "target_phrase": "the death of the patriarch, blood blossoming in zero-gravity droplets",
+      "annotation_text": "Ashpool's death in microgravity: blood forming floating spheres in the chamber air. This visual marks the collapse of the founding biological generation of Tessier-Ashpool, leaving only Lady 3Jane to determine the clan's fate.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "190.03"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

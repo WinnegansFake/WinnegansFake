@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 4,
+  "page_number": 73,
+  "annotations": [
+    {
+      "id": "073.02-sm01",
+      "line_number": 2,
+      "target_phrase": "simstim link, Case tapped into Molly’s sensory input",
+      "annotation_text": "Simstim (simulation stimulation) enables full-sensorium broadcast. When Case connects to Molly's transmitter, he experiences an intimate phenomenological dislocation: tasting her chewing gum, feeling the weight of her body, and seeing the world through her silver inset lenses.",
+      "categories": [
+        "body-modification-cybernetics",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "016.03",
+        "028.02"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999).",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "073.06-gd02",
+      "line_number": 6,
+      "target_phrase": "gender disjunction, riding a female body through the combat zone",
+      "annotation_text": "Case's passive ride inside Molly's sensorium disrupts traditional gender dynamics. The masculine console cowboy becomes a passive observer inhabiting an active, hyper-competent female cyborg warrior, destabilizing patriarchal mastery over action narrative conventions.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "029.01",
+        "073.02"
+      ],
+      "sources": [
+        "Sponsler, Claire. 'Cyberpunk and the Dilemmas of Postmodern Subjectivity.' (1992).",
+        "Hollinger, Veronica. 'Cybernetic Deconstructions: Cyberpunk and Postmodernism.' Mosaic, 1990."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

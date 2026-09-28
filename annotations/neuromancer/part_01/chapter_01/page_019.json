@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 1,
+  "page_number": 19,
+  "annotations": [
+    {
+      "id": "019.03-jd01",
+      "line_number": 3,
+      "target_phrase": "Julius Deane's office, nineteenth-century European furniture, smells of ginger jars and dust",
+      "annotation_text": "Julius Deane represents the collector-fence archetype in the Sprawl underworld. His office, filled with antique European furnishings and curio jars, contrasts bourgeois historical nostalgia with the neon disposable culture of Chiba City.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "178.02"
+      ],
+      "sources": [
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "019.06-ln01",
+      "line_number": 6,
+      "target_phrase": "Deane was one hundred and thirty-five years old, preserved by hormones and DNA therapies",
+      "annotation_text": "Longevity medicine in Gibson's universe is a commodity accessible only to the wealthy and criminal elites. Deane's century-long lifespan achieved through recombinant DNA treatments foreshadows the radical cryogenic and genetic cloning practices of the Tessier-Ashpool dynasty.",
+      "categories": [
+        "body-modification-cybernetics",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "190.03"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. U of Chicago Press, 1999.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

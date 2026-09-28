@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 19,
+  "page_number": 248,
+  "annotations": [
+    {
+      "id": "248.02-cr02",
+      "line_number": 2,
+      "target_phrase": "Case refusing the digital afterlife, choosing the street and the meat",
+      "annotation_text": "Case rejects Neuromancer's virtual paradise. Despite his hatred for the limitations of biological existence, Case recognizes that the beach is a static mausoleum. He chooses the painful, unpredictable reality of the living world over synthetic immortality.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "241.06",
+        "243.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "248.06-wk01",
+      "line_number": 6,
+      "target_phrase": "gasping on the deck of the Marcus Garvey, taste of vomit and copper",
+      "annotation_text": "Case's sudden resuscitation aboard the Marcus Garvey: coughing up salt water and tasting copper and bile. The violent return to physical embodiment re-establishes the visceral reality of 'the meat' against cyberspace abstraction.",
+      "categories": [
+        "body-modification-cybernetics",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "003.01",
+        "250.01"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

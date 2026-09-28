@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 16,
+  "page_number": 214,
+  "annotations": [
+    {
+      "id": "214.02-st01",
+      "line_number": 2,
+      "target_phrase": "simstim tap into Molly's sensory feed, chemical paralysis and pain",
+      "annotation_text": "Case experiences Molly's capture through the simstim link: the numbness of neuromuscular blocking agents, blurred vision, and the physical threat of Riviera's proximity. The link transmits visceral somatic distress directly into Case's cortex.",
+      "categories": [
+        "body-modification-cybernetics",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "073.02",
+        "203.01"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999).",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "214.06-ds01",
+      "line_number": 6,
+      "target_phrase": "the impotence of the decker, floating in orbit while Molly suffers",
+      "annotation_text": "The psychological agony of the console cowboy: in cyberspace Case possesses godlike agency, but in the physical meat world he remains helpless, miles away in orbit, listening to his partner's heartbeat slow under sedation.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "056.02",
+        "203.01"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

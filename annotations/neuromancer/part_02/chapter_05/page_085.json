@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 5,
+  "page_number": 85,
+  "annotations": [
+    {
+      "id": "085.02-hs01",
+      "line_number": 2,
+      "target_phrase": "Hosaka mainframe bus, high-speed optical routing",
+      "annotation_text": "The Hosaka computer system acts as the hardware bridge linking the Ono-Sendai deck to the stolen Sense/Net construct module. The dominance of Japanese manufacturing brands (Hosaka, Ono-Sendai, Hitachi) in Gibson's 1984 world reflects 1980s American techno-orientalist anxieties.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "053.02"
+      ],
+      "sources": [
+        "Tatsumi, Takayuki. Full Metal Apache. Duke UP, 2006.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "085.05-cd01",
+      "line_number": 5,
+      "target_phrase": "decompression of the construct file, data streaming across the optocouplers",
+      "annotation_text": "Gibson describes data transfer through tangible physical metaphors of liquid pressure, streaming optocouplers, and sensory glow, creating a tactile vocabulary for software processes that would influence decades of computing visual culture.",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "056.02"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

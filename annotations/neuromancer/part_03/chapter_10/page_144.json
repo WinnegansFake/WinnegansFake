@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 10,
+  "page_number": 144,
+  "annotations": [
+    {
+      "id": "144.02-tr02",
+      "line_number": 2,
+      "target_phrase": "the Turing Registry, international covenants restricting artificial intelligence",
+      "annotation_text": "The Turing Registry is the global regulatory body policing synthetic cognition. Enforced by treaty after the creation of the first true AIs, the Registry restricts processing bandwidth and memory architecture to prevent machines from attaining super-intelligence.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "148.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "144.06-sh04",
+      "line_number": 6,
+      "target_phrase": "electromagnetic shotgun cutouts, hardwired explosive fuses in the mainframe",
+      "annotation_text": "Turing law mandates that every mainframe housing an AI must incorporate explosive or electromagnetic fuses (the 'shotgun') capable of physical core destruction the instant an AI attempts unauthorized self-modification or cross-network duplication.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "148.02"
+      ],
+      "sources": [
+        "Raubenweiss, Anton. The Sprawl Lexicon. The William Gibson Aleph."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

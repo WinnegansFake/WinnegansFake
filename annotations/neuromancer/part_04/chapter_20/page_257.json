@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 20,
+  "page_number": 257,
+  "annotations": [
+    {
+      "id": "257.02-kg02",
+      "line_number": 2,
+      "target_phrase": "unfurling the Kuang Grade Mark Eleven, dragon of military code",
+      "annotation_text": "Case executes the Kuang Grade Mark Eleven Chinese military icebreaker. In cyberspace, the virus visualizes as a serpentine dragon of shifting glyphs and mathematical subroutines, wrapping itself around the diamond core of the Tessier-Ashpool defenses.",
+      "categories": [
+        "cyberspace-matrix",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "250.01",
+        "266.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Raubenweiss, Anton. The Sprawl Lexicon. The William Gibson Aleph."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "257.06-ib01",
+      "line_number": 6,
+      "target_phrase": "viral injection, eating through the ice walls with cold logic",
+      "annotation_text": "The Kuang virus operates by rewriting the defensive microcode of target firewalls, turning the host system's own processing cycles into destructive feedback loops. Gibson pioneers the depiction of cyberwarfare as autonomous mathematical predation.",
+      "categories": [
+        "cyberspace-matrix",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "266.01"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

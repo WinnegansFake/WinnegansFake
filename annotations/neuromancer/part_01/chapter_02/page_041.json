@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 2,
+  "page_number": 41,
+  "annotations": [
+    {
+      "id": "041.02-tx01",
+      "line_number": 2,
+      "target_phrase": "toxin sacs bonded to carotid lining, slow-dissolving biochemical timer",
+      "annotation_text": "The toxin sacs implanted in Case's carotid arteries represent the quintessential cyberpunk coercive contract: biotechnology weaponized as hostage collateral. Unless Case receives periodic enzyme injections from Armitage, the sacs dissolve, destroying his nervous system once more.",
+      "categories": [
+        "body-modification-cybernetics",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "035.03",
+        "286.01"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "041.06-ml02",
+      "line_number": 6,
+      "target_phrase": "Molly watched him, the blank silver mirrors of her glasses reflecting the clinic lights",
+      "annotation_text": "Molly's mirror-shades act as an impenetrable visual barrier, reversing the male gaze and establishing her cyborg autonomy. In Donna Haraway's framework (*A Cyborg Manifesto*), Molly rejects essentialist femininity through radical cybernetic self-authorship.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "016.03",
+        "028.02"
+      ],
+      "sources": [
+        "Haraway, Donna. 'A Cyborg Manifesto.' Socialist Review, 1985.",
+        "Sponsler, Claire. 'Cyberpunk and the Dilemmas of Postmodern Subjectivity.' (1992)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

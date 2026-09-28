@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 4,
+  "page_number": 69,
+  "annotations": [
+    {
+      "id": "069.02-sn02",
+      "line_number": 2,
+      "target_phrase": "Sense/Net Atlanta complex, black mirrored glass monolith",
+      "annotation_text": "The Sense/Net corporate headquarters embodies late-capitalist architectural intimidation: an opaque mirrored glass pyramid reflecting the sky while concealing the information-production factories within. It represents the monopolistic commodification of human experience.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "060.01"
+      ],
+      "sources": [
+        "Jameson, Fredric. Postmodernism. Duke UP, 1991.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "069.05-ng01",
+      "line_number": 5,
+      "target_phrase": "the hoax evacuation, sirens wailing, panic in the corporate concourses",
+      "annotation_text": "The Moderns' diversionary strike exploits corporate emergency protocols. By triggering automatic fire and chemical containment shutters, the hacker team turns the building's automated defense architecture against its own security personnel.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "063.05"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

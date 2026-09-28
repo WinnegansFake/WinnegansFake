@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 1,
+  "page_number": 10,
+  "annotations": [
+    {
+      "id": "010.02-cf01",
+      "line_number": 2,
+      "target_phrase": "a coffin rack, three tiers of cubicles, sleep capsules",
+      "annotation_text": "The Tokyo/Chiba 'coffin hotel' (capsule hotel) serves as Gibson's spatial emblem of hyper-dense urban proletarian existence. Measuring roughly two meters by one meter, these plastic sleeping tubes reflect the spatial compression of late-capitalist megalopolises and the reduction of human shelter to a biological docking station.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "003.05",
+        "046.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Tatsumi, Takayuki. Full Metal Apache. Duke UP, 2006."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.05-sh01",
+      "line_number": 5,
+      "target_phrase": "a steel throwing star, a shuriken, cold chrome edges",
+      "annotation_text": "The Japanese ninja throwing star (shuriken) functions as Case's central material talisman throughout the novel. Acquired in Night City, it symbolizes lethal precision, romanticized martial violence, and an analog physical weapon counterpoised against disembodied software viruses.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "035.08",
+        "290.02"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "Olsen, Lance. William Gibson. Borgo Press, 1992."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "010.08-bp01",
+      "line_number": 8,
+      "target_phrase": "derms, betaphenethylamine, pink transdermal patches",
+      "annotation_text": "Derms are transdermal drug delivery patches adhering to the skin for rapid neurochemical absorption. Case's reliance on synthetic stimulants like betaphenethylamine highlights the biochemical self-regulation necessary for survival in the street economy of Night City.",
+      "categories": [
+        "body-modification-cybernetics",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "006.02",
+        "035.03"
+      ],
+      "sources": [
+        "Raubenweiss, Anton. The Sprawl Lexicon. The William Gibson Aleph.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

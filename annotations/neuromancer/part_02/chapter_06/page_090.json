@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 6,
+  "page_number": 90,
+  "annotations": [
+    {
+      "id": "090.02-tz01",
+      "line_number": 2,
+      "target_phrase": "Terzibashjian, Turkish state security liaison, scarred fingertips",
+      "annotation_text": "Terzibashjian represents the localized intelligence operative who negotiates between international criminal syndicates and weakening nation-state apparatuses. His archaic manners and tactile physical presence contrast with Armitage's automated corporate efficiency.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "087.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "090.05-pr01",
+      "line_number": 5,
+      "target_phrase": "Peter Riviera, aristocratic decadence, synthetic drug dependency",
+      "annotation_text": "Introduction to Peter Riviera, the psychopathic illusionist whose cybernetic implants allow him to project hyper-realistic three-dimensional holograms directly from his mind. Riviera combines European aristocratic decadence with sadistic sociopathy.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "087.01",
+        "093.02"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

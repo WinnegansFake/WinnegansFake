@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 6,
+  "page_number": 91,
+  "annotations": [
+    {
+      "id": "091.02-hl02",
+      "line_number": 2,
+      "target_phrase": "subdermal holographic projectors, optical fibers woven into the thoracic cage",
+      "annotation_text": "Riviera's bio-implant architecture: microscopic laser diodes and optoelectronic transmitters grafted beneath his skin and connected to his visual cortex. This cybernetic augmentation transforms his psychic imagination and perversions into shared physical spectacle.",
+      "categories": [
+        "body-modification-cybernetics",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "087.01",
+        "093.02"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999).",
+        "Raubenweiss, Anton. The Sprawl Lexicon. The William Gibson Aleph."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "091.05-dm01",
+      "line_number": 5,
+      "target_phrase": "demerol tap, subcutaneous analgesic catheter",
+      "annotation_text": "Riviera's drug addiction is hardwired into his body via an implanted catheter. Armitage exploits this somatic vulnerability by controlling Riviera's narcotic dosage, turning pharmacological dependency into absolute operational leverage.",
+      "categories": [
+        "body-modification-cybernetics",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "041.02",
+        "093.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 17,
+  "page_number": 221,
+  "annotations": [
+    {
+      "id": "221.02-hd02",
+      "line_number": 2,
+      "target_phrase": "Hideo the ninja clone, traditional bow and carbon-fiber arrows",
+      "annotation_text": "Hideo is 3Jane's bio-engineered clone bodyguard. Trained from birth in traditional Japanese martial arts and Zen archery (Kyudo), Hideo represents the lethal synthesis of feudal discipline and modern cloning technology.",
+      "categories": [
+        "body-modification-cybernetics",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "218.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Tatsumi, Takayuki. Full Metal Apache. Duke UP, 2006."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "221.06-za01",
+      "line_number": 6,
+      "target_phrase": "Kyudo in zero-g, the archer's breath and release in orbital stillness",
+      "annotation_text": "Hideo practicing archery in Straylight's microgravity garden illustrates the novel's juxtaposition of ancient spiritual rituals with space habitats. Zen mindfulness provides an anchor in an otherwise decadent, hyper-technological environment.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "218.02"
+      ],
+      "sources": [
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

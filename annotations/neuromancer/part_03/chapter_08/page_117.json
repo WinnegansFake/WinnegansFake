@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 8,
+  "page_number": 117,
+  "annotations": [
+    {
+      "id": "117.02-bb01",
+      "line_number": 2,
+      "target_phrase": "Babylon, the corporate cities of Earth beneath the orbital clouds",
+      "annotation_text": "In Zion's theological framework, Earth and its zaibatsu oligopoly represent Babylon: a fallen, corrupt economic order devoted to idolatrous accumulation and spiritual deadening.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "108.01",
+        "114.05"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "Hebdige, Dick. Subculture: The Meaning of Style. Routledge, 1979."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "117.05-th01",
+      "line_number": 5,
+      "target_phrase": "diaspora in orbit, Caribbean culture transplanted into vacuum",
+      "annotation_text": "Gibson's depiction of the Rastafarian space diaspora highlights subcultural adaptation: rather than Euro-American aerospace monoculture, low-earth orbit is populated by Caribbean laborers who brought their linguistic, musical, and religious traditions into vacuum.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "108.01"
+      ],
+      "sources": [
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 3,
+  "page_number": 58,
+  "annotations": [
+    {
+      "id": "058.02-jk01",
+      "line_number": 2,
+      "target_phrase": "jacking in, the bodily disjunction, the sudden vertigo of nonspace",
+      "annotation_text": "The sensory sensation of 'jacking in' marks the psychic rupture between somatic embodiment ('the meat') and disembodied matrix navigation. Scott Bukatman identifies this transition as the birth of 'terminal identity,' where human subjectivity dissolves into the machine circuit.",
+      "categories": [
+        "cyberspace-matrix",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "056.02",
+        "077.02"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993.",
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "058.06-tc01",
+      "line_number": 6,
+      "target_phrase": "the Cartesian coordinate grid, infinite lines of neon vector data",
+      "annotation_text": "Cyberspace visual architecture: a three-dimensional Cartesian vector grid reminiscent of early 1980s computer graphics (Evans & Sutherland simulators, Disney's Tron). Gibson spatializes information as architectural geometries, making financial capital tangibly navigable.",
+      "categories": [
+        "cyberspace-matrix",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "056.02"
+      ],
+      "sources": [
+        "Jameson, Fredric. Postmodernism. Duke UP, 1991.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

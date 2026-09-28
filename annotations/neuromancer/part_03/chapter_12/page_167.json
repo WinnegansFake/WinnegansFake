@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 12,
+  "page_number": 167,
+  "annotations": [
+    {
+      "id": "167.02-ar03",
+      "line_number": 2,
+      "target_phrase": "Armitage's personality unraveling, military coordinates spoken in trance",
+      "annotation_text": "Armitage's artificial ego disintegrates under cognitive stress. The veneer of corporate authority dissolves, exposing Willis Corto trapped in traumatic hallucinations of the Kirovsk raid, shouting obsolete tactical call-signs.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "031.02",
+        "164.01"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "167.05-ct01",
+      "line_number": 5,
+      "target_phrase": "Corto crying out for his flight crew, reliving the helicopter crash in the snow",
+      "annotation_text": "The psychological tragedy of Willis Corto illustrates the limits of cybernetic identity engineering. Wintermute could reconstruct Corto's facial bone structure and synaptic pathways, but could not erase the trauma of catastrophic battlefield betrayal.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "164.01"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

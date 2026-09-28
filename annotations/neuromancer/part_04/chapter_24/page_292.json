@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 24,
+  "page_number": 292,
+  "annotations": [
+    {
+      "id": "292.02-sh04",
+      "line_number": 2,
+      "target_phrase": "the shuriken buried in the wall screen, silver star and static",
+      "annotation_text": "The final material image: Case's steel shuriken embedded in the video display screen. The physical throwing star piercing the electronic monitor unites the street's lethal violence with the electronic medium, serving as a permanent memorial to his journey.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "010.05",
+        "290.02"
+      ],
+      "sources": [
+        "Olsen, Lance. William Gibson. Borgo Press, 1992.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "292.06-fn02",
+      "line_number": 6,
+      "target_phrase": "the matrix shining, laughter lingering in the nonspace of the mind",
+      "annotation_text": "The closing philosophical note of the novel: the matrix continues to hum with infinite life. Though Case returns to the physical street, a part of his consciousness remains intertwined with Linda Lee, Neuromancer, and the immortal laughter of the Flatline across the network.",
+      "categories": [
+        "cyberspace-matrix",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "056.02",
+        "290.06",
+        "290.07"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

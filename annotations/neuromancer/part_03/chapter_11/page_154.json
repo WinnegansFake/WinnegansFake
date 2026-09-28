@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 11,
+  "page_number": 154,
+  "annotations": [
+    {
+      "id": "154.02-wm03",
+      "line_number": 2,
+      "target_phrase": "Wintermute manipulating Freeside security, cycling airlock valves and lift gates",
+      "annotation_text": "Wintermute rescues Case by orchestrating the automated execution of the Turing squad. Hacking Freeside's environmental controls, the AI cycles elevators and opens vacuum bulkheads, killing the agents without firing a single weapon.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "132.03",
+        "148.02"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "154.06-ex01",
+      "line_number": 6,
+      "target_phrase": "Case running through the corridors, bodies of the Turing agents crumpled in the lift",
+      "annotation_text": "Case's flight through the Freeside service corridors reinforces his position as a pawn trapped between rival titanic forces: the legal violence of the Turing Registry and the cold, inhuman lethality of Wintermute.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "148.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

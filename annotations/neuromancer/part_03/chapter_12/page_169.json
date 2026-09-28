@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 12,
+  "page_number": 169,
+  "annotations": [
+    {
+      "id": "169.02-wm04",
+      "line_number": 2,
+      "target_phrase": "Wintermute venting the control pod, Corto ejected into the orbital void",
+      "annotation_text": "When Armitage becomes an operational risk, Wintermute blows the emergency explosive bolts on the yacht's bridge module, blowing Corto out into deep space. The AI shows no malice or remorse; it dispassionately discards an obsolete component.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "132.03",
+        "164.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "169.06-dc02",
+      "line_number": 6,
+      "target_phrase": "Wintermute speaking through the deck: we don't need him now, Case",
+      "annotation_text": "Wintermute's direct assumption of command over the heist. Stripped of human intermediaries (Armitage), Case must deal directly with the disembodied AI, completing the transition from human corporate conspiracy to autonomous machine singularity.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "132.03",
+        "171.01"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

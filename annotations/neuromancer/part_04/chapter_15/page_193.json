@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 15,
+  "page_number": 193,
+  "annotations": [
+    {
+      "id": "193.02-cm01",
+      "line_number": 2,
+      "target_phrase": "the cryogenic crypts, banks of silver hibernation coffins",
+      "annotation_text": "The cryogenic mausoleum of the Tessier-Ashpools: dozens of refrigerated coffins holding dormant generations of Ashpool and Tessier clones. This technological immortality preserves the biological dynasty while arresting cultural and emotional evolution.",
+      "categories": [
+        "body-modification-cybernetics",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "190.03"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "193.06-cl03",
+      "line_number": 6,
+      "target_phrase": "cloned daughters, serial 3Janes bred for dynastic succession",
+      "annotation_text": "Cloning within the clan functions as reproductive narcissism. Lady 3Jane is the third sequential clone of her mother Marie-France, bred in artificial wombs to maintain corporate voting control within a closed genetic loop.",
+      "categories": [
+        "body-modification-cybernetics",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "190.03",
+        "209.02"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

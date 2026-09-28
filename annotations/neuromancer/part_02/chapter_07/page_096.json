@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 7,
+  "page_number": 96,
+  "annotations": [
+    {
+      "id": "096.02-cb04",
+      "line_number": 2,
+      "target_phrase": "Riviera's holographic cabaret, grotesque morphing phantom figures",
+      "annotation_text": "Riviera's performance in a Parisian-style nightclub demonstrates the aesthetic power of his projection implants. His performance begins with delicate surrealist illusions before descending into sadomasochistic horror, exposing his psychological disturbance.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "093.02"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "096.06-dm02",
+      "line_number": 6,
+      "target_phrase": "the dismemberment of the doll, cannibalistic holographic feast",
+      "annotation_text": "Riviera projects an image of himself lovingly dismembering and consuming a mechanical doll that resembles Molly Millions. This sequence highlights his misogynistic sadism and foreshadows his inevitable betrayal during the Straylight infiltration.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "029.01",
+        "093.02",
+        "207.02"
+      ],
+      "sources": [
+        "Sponsler, Claire. 'Cyberpunk and the Dilemmas of Postmodern Subjectivity.' (1992).",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

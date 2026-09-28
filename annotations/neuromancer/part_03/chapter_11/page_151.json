@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 11,
+  "page_number": 151,
+  "annotations": [
+    {
+      "id": "151.02-tp02",
+      "line_number": 2,
+      "target_phrase": "the Turing Police, Michèle and Roland, blue badges of the Registry",
+      "annotation_text": "The Turing Police arrest Case in his Freeside hotel room. As elite investigators tasked with preventing machine transcendence, they represent bureaucratic nation-state remnants attempting to contain posthuman artificial intelligence.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "148.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "151.05-wc01",
+      "line_number": 5,
+      "target_phrase": "Colonel Willis Corto, Screaming Fist survivor, reconstructive psychosis",
+      "annotation_text": "Agent Michèle reveals Armitage's authentic identity to Case: Colonel Willis Corto, a decorated military officer whose body and mind were obliterated during Operation Screaming Fist in Siberia. Corto was rebuilt through experimental psychotherapy into a synthetic puppet.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "031.02",
+        "164.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Olsen, Lance. William Gibson. Borgo Press, 1992."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

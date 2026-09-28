@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 21,
+  "page_number": 263,
+  "annotations": [
+    {
+      "id": "263.02-sl04",
+      "line_number": 2,
+      "target_phrase": "Case entering 3Jane's salon, Riviera projecting blinding phantoms",
+      "annotation_text": "Case bursts into 3Jane's salon to rescue Molly. Peter Riviera attempts to disorient Case by projecting blinding, hallucinatory phantoms directly into the room, turning his subdermal projector implants into offensive defensive weapons.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "093.02",
+        "261.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "263.06-hd03",
+      "line_number": 6,
+      "target_phrase": "Hideo blinding Riviera, breaking the illusionist's implants",
+      "annotation_text": "Hideo intervenes on 3Jane's command, swiftly neutralizing Riviera by striking his thoracic projector nodes and eyes. The sadistic illusionist is permanently blinded, poetically stripped of the visual power he used to manipulate others.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "091.02",
+        "218.02",
+        "261.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

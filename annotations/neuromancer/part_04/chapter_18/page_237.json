@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 18,
+  "page_number": 237,
+  "annotations": [
+    {
+      "id": "237.02-ll02",
+      "line_number": 2,
+      "target_phrase": "Linda Lee standing by the driftwood, warm skin, salt in her hair",
+      "annotation_text": "Neuromancer re-creates Linda Lee from her recorded neural patterns. Resurrected within the virtual beach, she possesses complete personality coherence, presenting Case with an agonizing reunion with his murdered lover.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "008.02",
+        "024.02",
+        "230.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "237.06-pd01",
+      "line_number": 6,
+      "target_phrase": "post-biological reunion, love preserved as digital information",
+      "annotation_text": "The encounter with Linda on the beach raises the central question of posthuman subjectivity: can genuine love and grief exist within an algorithmic construct? Case's somatic attachment to Linda challenges his cynical disdain for 'the meat.'",
+      "categories": [
+        "body-modification-cybernetics",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "230.01",
+        "290.06"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

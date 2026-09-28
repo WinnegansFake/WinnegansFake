@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 15,
+  "page_number": 196,
+  "annotations": [
+    {
+      "id": "196.02-ja01",
+      "line_number": 2,
+      "target_phrase": "John Harness Ashpool, awakened from cryo, stained silk dressing gown",
+      "annotation_text": "John Harness Ashpool, the clan's patriarch, awakened after decades of cryo-sleep. Prematurely senile, suicidal, and decayed, Ashpool represents the horrific dead end of bodily longevity without psychological renewal.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "190.03"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "196.06-mf01",
+      "line_number": 6,
+      "target_phrase": "strangling Marie-France, Ashpool's murder of his visionary wife",
+      "annotation_text": "Ashpool confesses to strangling Marie-France in her bed. Terrified by her vision of unleashing the twin AIs to birth a post-human collective consciousness, Ashpool murdered her to preserve his stagnant patriarchate.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "190.03",
+        "264.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

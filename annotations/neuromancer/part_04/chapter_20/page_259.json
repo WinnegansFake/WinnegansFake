@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 20,
+  "page_number": 259,
+  "annotations": [
+    {
+      "id": "259.02-df04",
+      "line_number": 2,
+      "target_phrase": "the Flatline coaching Case, navigating the shifting polyhedra",
+      "annotation_text": "The Dixie Flatline construct provides real-time tactical navigation, spotting weaknesses in the Tessier-Ashpool security architecture and advising Case on when to inject viral subroutines to avoid triggering lethal black ICE retaliation.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "077.02",
+        "250.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "259.06-hw01",
+      "line_number": 6,
+      "target_phrase": "heat sinks screaming on the deck, smell of burning flux",
+      "annotation_text": "The immense computational load of running the military icebreaker strains the Ono-Sendai hardware to its limits. The smell of scorched flux and overheating copper bridges the abstract software battle with physical machinery.",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "053.02",
+        "266.01"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 11,
+  "page_number": 159,
+  "annotations": [
+    {
+      "id": "159.02-sf02",
+      "line_number": 2,
+      "target_phrase": "Operation Screaming Fist, the Siberian assault, Soviet EMP strikes",
+      "annotation_text": "Detailed backstory of Screaming Fist: an ultrasecret joint US-NATO cyber-assault on the Soviet military data fortress at Kirovsk. The military deployed experimental icebreaker programs, but Soviet electromagnetic countermeasures incinerated the assault craft.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "031.02",
+        "164.01"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "159.06-md01",
+      "line_number": 6,
+      "target_phrase": "Corto surviving in the burning wreckage, abandoned by the Joint Chiefs",
+      "annotation_text": "Corto's escape across the frozen Siberian tundra in a damaged glider and his subsequent betrayal by US military intelligence who covered up the mission. This trauma serves as the psychic foundation upon which Wintermute constructed the Armitage persona.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "031.02",
+        "164.01"
+      ],
+      "sources": [
+        "Olsen, Lance. William Gibson. Borgo Press, 1992."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

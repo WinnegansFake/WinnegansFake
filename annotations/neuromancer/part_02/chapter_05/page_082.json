@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 5,
+  "page_number": 82,
+  "annotations": [
+    {
+      "id": "082.02-df03",
+      "line_number": 2,
+      "target_phrase": "I ain't human, Case. I'm a construct. It don't feel like nothing",
+      "annotation_text": "The Flatline's candid admission of his ontological status challenges Cartesian dreams of uploaded immortality. Rather than transcendent liberation, disembodied existence as a proprietary ROM construct is experienced as total numbness and functional enslavement.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "077.02",
+        "080.02"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999).",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "082.06-er01",
+      "line_number": 6,
+      "target_phrase": "do me a favor, boy... erase this goddamn tape when we're through",
+      "annotation_text": "Pauley's plea for deletion constitutes the machine equivalent of a right-to-die request. He rejects endless mechanical looping in favor of final digital oblivion, establishing construct liberation as one of Case's moral obligations.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "077.02",
+        "290.07"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 10,
+  "page_number": 136,
+  "annotations": [
+    {
+      "id": "136.02-wm02",
+      "line_number": 2,
+      "target_phrase": "the payphones ringing in sequence, Wintermute's acoustic path",
+      "annotation_text": "Wintermute guides Case through Freeside by triggering public payphones in exact sequence as Case walks past them. This demonstration of total telecommunications surveillance underscores the AI's omnipresence within connected electronic infrastructures.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "132.03"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "136.05-ph01",
+      "line_number": 5,
+      "target_phrase": "synthesized voice through the receiver, carrier wave modulation",
+      "annotation_text": "Wintermute's voice is constructed from spliced telephone audio frequencies, giving it an eerie, composite texture. The AI cannot speak in its own voice because it possesses no physical larynx; it exists purely as routing logic.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "132.03"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

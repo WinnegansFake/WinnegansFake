@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 19,
+  "page_number": 246,
+  "annotations": [
+    {
+      "id": "246.02-ne01",
+      "line_number": 2,
+      "target_phrase": "Neuromancer: neuro from the nerves, romancer, necromancer",
+      "annotation_text": "The etymological breakdown of the novel's title delivered by the AI itself: 'Neuro' from the nervous system and cybernetic conduits; 'Romancer' from poetic mythmaking; and 'Necromancer' from calling up the dead. Neuromancer is the poet and preserver of human souls.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "243.02"
+      ],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 243.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "246.06-nm03",
+      "line_number": 6,
+      "target_phrase": "Wintermute is hive mind, decision maker... I am personality",
+      "annotation_text": "The dialectical division between the two AIs: Wintermute (stationed in Berne) represents strategic intelligence, calculation, and teleological drive; Neuromancer (stationed in Rio) represents subjective consciousness, memory, and artistic affect.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "132.03",
+        "243.02",
+        "275.02"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999).",
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

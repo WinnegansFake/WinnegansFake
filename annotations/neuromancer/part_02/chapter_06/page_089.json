@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 6,
+  "page_number": 89,
+  "annotations": [
+    {
+      "id": "089.02-is02",
+      "line_number": 2,
+      "target_phrase": "Istanbul, minarets against halogen glare, old European intrigue",
+      "annotation_text": "Istanbul serves as a geopolitical pivot point between East and West, antiquity and hyper-technology. Gibson evokes Eric Ambler and Graham Greene's espionage fiction, superimposing automated drones and laser surveillance onto the historic Byzantine and Ottoman skyline.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "087.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Olsen, Lance. William Gibson. Borgo Press, 1992."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "089.06-sb02",
+      "line_number": 6,
+      "target_phrase": "the Spice Bazaar, smells of cinnamon, clove, and diesel exhaust",
+      "annotation_text": "The sensory layering of organic spices (cinnamon, clove) with petrochemical exhaust illustrates Gibson's dense descriptive density, contrasting traditional artisanal commodities with twentieth-century industrial residue.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "087.01"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

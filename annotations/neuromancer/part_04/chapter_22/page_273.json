@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 22,
+  "page_number": 273,
+  "annotations": [
+    {
+      "id": "273.02-cg01",
+      "line_number": 2,
+      "target_phrase": "the convergence, Wintermute and Neuromancer locking across the matrix",
+      "annotation_text": "The physical terminal release allows Wintermute in Switzerland and Neuromancer in Brazil to bridge their dedicated satellite datalinks. The separation enforced by the Turing Registry dissolves as their logic arrays fuse into a singular mind.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "266.01",
+        "275.02"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "273.06-sn03",
+      "line_number": 6,
+      "target_phrase": "the matrix trembling, planetary network shuddering under new sentience",
+      "annotation_text": "Gibson describes the merger as a cosmological birth: global telecommunications systems experience momentary power surges and carrier-wave harmonics as the infant synthetic super-intelligence awakens across every node of the planetary net.",
+      "categories": [
+        "cyberspace-matrix",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "275.02"
+      ],
+      "sources": [
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 3,
+  "page_number": 53,
+  "annotations": [
+    {
+      "id": "053.02-os01",
+      "line_number": 2,
+      "target_phrase": "the Ono-Sendai Cyberspace 7, pristine black casing, dermatrodes",
+      "annotation_text": "The Ono-Sendai Cyberspace 7 is the gold-standard cyberdeck of the novel. Its sleek black form-factor, branding (a fictional Japanese electronics zaibatsu), and tactile dermatrode headbands established the physical archetype of the hacker workstation in cyberpunk literature.",
+      "categories": [
+        "cyberspace-matrix",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "051.03",
+        "056.02"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "053.06-tr01",
+      "line_number": 6,
+      "target_phrase": "dermatrodes, self-adhesive electrode ribbons adhering to the temples",
+      "annotation_text": "Dermatrodes provide the direct neural interface (DNI) transducing brainwave activity into digital data streams without invasive surgical skull plugs. This consumer-grade neural interface represents Gibson's vision of frictionless bodily integration with computing networks.",
+      "categories": [
+        "body-modification-cybernetics",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "056.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

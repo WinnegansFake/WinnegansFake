@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 10,
+  "page_number": 140,
+  "annotations": [
+    {
+      "id": "140.02-lz01",
+      "line_number": 2,
+      "target_phrase": "Lonny Zone, the voice of Case's dead pimp in the receiver",
+      "annotation_text": "Wintermute adopts the persona and vocal cadences of Lonny Zone, Case's former pimp from the Sprawl. The AI accesses human memory banks to construct interactive avatars that evoke specific emotional responses from human operators.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "132.03"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "140.06-ai01",
+      "line_number": 6,
+      "target_phrase": "I need masks, Case. I need to borrow someone's personality to talk to you",
+      "annotation_text": "Wintermute's explanation of its reliance on human masks reveals the fundamental alienness of artificial intelligence. Its unmediated machine cognition is non-narrative and non-human; communication with flesh-and-blood humans requires dramatic simulation.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "132.03",
+        "243.02"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999).",
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

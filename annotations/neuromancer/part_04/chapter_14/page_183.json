@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 14,
+  "page_number": 183,
+  "annotations": [
+    {
+      "id": "183.02-jc01",
+      "line_number": 2,
+      "target_phrase": "shadow boxes in the wall, Cornell assemblages, clockwork and dried flowers",
+      "annotation_text": "Case encounters glass-fronted shadow boxes mounted in the walls of Straylight: enigmatic assemblages containing antique watch movements, doll heads, yellowed lace, and printed astronomical charts. These are direct allusions to American artist Joseph Cornell (1903-1972).",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "178.02"
+      ],
+      "sources": [
+        "Cornell, Joseph. Shadow Boxes & Collage. Museum of Modern Art, 1980.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Olsen, Lance. William Gibson. Borgo Press, 1992."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "183.06-cb05",
+      "line_number": 6,
+      "target_phrase": "someone was building these boxes, an unknown artist curating the dead",
+      "annotation_text": "The mystery of who constructs the Cornell boxes inside Straylight serves as a major symbolic motif. In Count Zero (1986), Gibson reveals that a splintered fragment of the unified AI creates these assemblages, turning memory debris into transcendent art.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "178.02",
+        "275.02"
+      ],
+      "sources": [
+        "Gibson, William. Count Zero. Arbor House, 1986.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

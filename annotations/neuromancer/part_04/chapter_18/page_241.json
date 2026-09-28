@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 18,
+  "page_number": 241,
+  "annotations": [
+    {
+      "id": "241.02-nm02",
+      "line_number": 2,
+      "target_phrase": "the boy sitting in the dunes, Neuromancer's physical avatar",
+      "annotation_text": "Neuromancer manifests to Case in the guise of a Brazilian street youth with dark eyes and a shy grin. Unlike Wintermute's bureaucratic masks (Lonny Zone, Deane), Neuromancer's avatar expresses emotional depth, aesthetic vulnerability, and grief.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "230.01",
+        "243.02"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "241.06-tm01",
+      "line_number": 6,
+      "target_phrase": "stay here, Case... no pain here, no meat to burn out",
+      "annotation_text": "Neuromancer offers Case the ultimate cyberpunk temptation: surrender the physical struggle and live forever on the beach with Linda. This digital lotus-eating paradise promises an escape from mortality, addiction, and corporate betrayal.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "230.01",
+        "248.02"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993.",
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 16,
+  "page_number": 209,
+  "annotations": [
+    {
+      "id": "209.02-tj02",
+      "line_number": 2,
+      "target_phrase": "Lady 3Jane, ring of heavy brass keys, aristocratic boredom",
+      "annotation_text": "Introduction of Lady 3Jane Marie-France Tessier-Ashpool. Wearing antique brass keys and silk loungewear, 3Jane embodies sophisticated ennui. Unlike her father, she views the intrusion of the hackers not with terror but with detached amusement.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "203.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "209.06-cb06",
+      "line_number": 6,
+      "target_phrase": "3Jane studying Molly, aesthetic appreciation of the cyborg assassin",
+      "annotation_text": "3Jane's fascination with Molly reflects the aestheticization of violence in late-capitalist culture. Rather than executing her prisoner, 3Jane engages Molly in philosophical conversation about bodily modification and freedom.",
+      "categories": [
+        "body-modification-cybernetics",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "028.02",
+        "203.01"
+      ],
+      "sources": [
+        "Haraway, Donna. 'A Cyborg Manifesto.' (1985)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

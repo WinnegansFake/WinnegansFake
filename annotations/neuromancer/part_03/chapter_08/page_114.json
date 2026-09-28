@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 8,
+  "page_number": 114,
+  "annotations": [
+    {
+      "id": "114.02-mg01",
+      "line_number": 2,
+      "target_phrase": "Maelcum, pilot of the Marcus Garvey, dreadlocks floating in zero-g",
+      "annotation_text": "Maelcum serves as the orbital tug pilot whose space vessel, the Marcus Garvey (named after the Pan-Africanist leader), bridges Rastafarian liberation theology with hard vacuum orbital mechanics.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "108.01",
+        "173.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "114.05-ar01",
+      "line_number": 5,
+      "target_phrase": "Aerol and the Zion elders, reading scripture and consulting the dub console",
+      "annotation_text": "The Zion elders interpret technological telemetry through prophetic Rastafarian scripture. They view Case's mission not as a corporate theft but as an assault on Babylon, sanctifying their participation in the heist.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "108.01",
+        "117.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 17,
+  "page_number": 227,
+  "annotations": [
+    {
+      "id": "227.02-gd03",
+      "line_number": 2,
+      "target_phrase": "the zero-g garden, floating globes of water, miniature bonsai trees",
+      "annotation_text": "Straylight's interior garden features miniature bonsai trees rooted in nutrient moss and free-floating water spheres held together by surface tension. Gibson creates an eerie, sterile Eden that symbolizes the clan's complete detachment from Earth's biosphere.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "218.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "227.06-sl03",
+      "line_number": 6,
+      "target_phrase": "silence in the corridors, approaching the terminal core of the AI",
+      "annotation_text": "The oppressive silence of Straylight contrasts with the roaring data-streams of cyberspace. Here at the apex of corporate power, the architecture is hushed, cold, and dead, awaiting the seismic shock of the Kuang virus.",
+      "categories": [
+        "cyberspace-matrix",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "218.02",
+        "266.01"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

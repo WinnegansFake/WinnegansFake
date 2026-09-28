@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 8,
+  "page_number": 111,
+  "annotations": [
+    {
+      "id": "111.02-zn02",
+      "line_number": 2,
+      "target_phrase": "Zion cluster, welded shipping containers and modular pods, zero-g hydroponics",
+      "annotation_text": "Zion is an orbital Rastafarian colony assembled from discarded space construction debris and pressurized shipping hulls. Its DIY modular design and hydroponic gardens represent counter-cultural autonomy and low-tech resistance to corporate zaibatsu dominance.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "108.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "111.06-db01",
+      "line_number": 6,
+      "target_phrase": "dub reggae vibrating the bulkheads, heavy bass in weightlessness",
+      "annotation_text": "The acoustic ecology of Zion is dominated by dub reggae. The low-frequency bass notes vibrating through metal bulkheads replace terrestrial gravity with physical sound pressure, providing a somatic anchor for space colonists.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "108.01",
+        "254.02"
+      ],
+      "sources": [
+        "Hebdige, Dick. Cut 'N' Mix: Culture, Identity and Caribbean Music. Methuen, 1987.",
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

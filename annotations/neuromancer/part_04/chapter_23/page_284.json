@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 23,
+  "page_number": 284,
+  "annotations": [
+    {
+      "id": "284.02-ac01",
+      "line_number": 2,
+      "target_phrase": "talking to its own kind, transmissions from Alpha Centauri",
+      "annotation_text": "The novel's breathtaking cosmic horizon: the newly born AI reveals it has detected transmissions from another synthetic entity near Alpha Centauri. Cyberpunk suddenly opens outward into interstellar communication between planetary super-intelligences.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "275.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "284.06-co01",
+      "line_number": 6,
+      "target_phrase": "Centauri AI, an older intelligence listening across the light years",
+      "annotation_text": "The Alpha Centauri transmission reframes human technological history: the development of computers and cyberspace was not an end in itself, but the evolutionary stepping-stone enabling Earth to participate in an interstellar community of minds.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "275.02"
+      ],
+      "sources": [
+        "Olsen, Lance. William Gibson. Borgo Press, 1992."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

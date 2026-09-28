@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 2,
+  "page_number": 38,
+  "annotations": [
+    {
+      "id": "038.03-cl02",
+      "line_number": 3,
+      "target_phrase": "the micro-surgical laser, neurotropic viral vectors repairing damaged synapses",
+      "annotation_text": "The surgical repair of Case's nervous system relies on engineered neurotropic viruses that rebuild the burnt-out myelin sheaths of his neural jacking pathways. Gibson draws on emerging 1980s recombinant gene therapy to imagine biological restoration as hardware rewiring.",
+      "categories": [
+        "body-modification-cybernetics",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "006.02",
+        "035.03"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. U of Chicago Press, 1999.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "038.07-pn01",
+      "line_number": 7,
+      "target_phrase": "synthetic pancreas, transplanted culture of genetically altered tissue",
+      "annotation_text": "Case's biological modification extends beyond neural repair to metabolic engineering: his liver and pancreas are replaced with bio-synthetic tissue incapable of processing amphetamines or cocaine, physically enforcing his sobriety on Armitage's behalf.",
+      "categories": [
+        "body-modification-cybernetics",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "035.03",
+        "290.04"
+      ],
+      "sources": [
+        "Raubenweiss, Anton. The Sprawl Lexicon. The William Gibson Aleph."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

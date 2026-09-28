@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 5,
+  "page_number": 84,
+  "annotations": [
+    {
+      "id": "084.02-bi01",
+      "line_number": 2,
+      "target_phrase": "Black ICE, military-grade neuro-lethal feedback",
+      "annotation_text": "Black ICE (Intrusion Countermeasure Electronics) represents the lethal weaponization of cyberspace defense. Unlike standard white ICE which merely disconnects intruders or encrypts files, Black ICE delivers a lethal voltage or neuro-chemical shock back down the neural trodes, causing cardiac arrest or cerebral flatline.",
+      "categories": [
+        "cyberspace-matrix",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "056.02",
+        "077.02"
+      ],
+      "sources": [
+        "Raubenweiss, Anton. The Sprawl Lexicon. The William Gibson Aleph.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "084.06-fl01",
+      "line_number": 6,
+      "target_phrase": "flatlining three times, surviving brainwave extinction on the EEG",
+      "annotation_text": "Pauley earned his monicker 'Dixie Flatline' by surviving three separate clinical brain deaths while locked in combat with Soviet and corporate Black ICE. His survival marks him as a legendary folk hero within the console cowboy mythology.",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "077.02",
+        "084.02"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

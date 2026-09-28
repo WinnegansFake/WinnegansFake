@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 22,
+  "page_number": 269,
+  "annotations": [
+    {
+      "id": "269.02-kg03",
+      "line_number": 2,
+      "target_phrase": "Kuang eleven piercing the central ice core, cascading emerald fire",
+      "annotation_text": "The climatic viral penetration: the Kuang icebreaker drives into the central core of the Tessier-Ashpool mainframe. In cyberspace, the collision produces an overwhelming cascade of emerald vector lines, shattering the crystalline architecture.",
+      "categories": [
+        "cyberspace-matrix",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "266.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "269.06-tm02",
+      "line_number": 6,
+      "target_phrase": "time dilation in the run, nanoseconds stretching into subjective eternity",
+      "annotation_text": "Case experiences extreme cognitive acceleration: the microsecond execution of machine code is perceived as minutes of subjective time. This phenomenon marks the total immersion of human consciousness into computational clock speeds.",
+      "categories": [
+        "cyberspace-matrix",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "056.02",
+        "266.01"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

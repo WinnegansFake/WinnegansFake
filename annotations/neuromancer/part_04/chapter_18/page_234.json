@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 18,
+  "page_number": 234,
+  "annotations": [
+    {
+      "id": "234.02-mb01",
+      "line_number": 2,
+      "target_phrase": "the Moroccan beach simulation, grey sky, cold Atlantic surf",
+      "annotation_text": "Neuromancer intercepts Case's consciousness and pulls him into a hyper-realistic virtual simulation of a beach near Tangier. Unlike the abstract vector geometries of cyberspace, Neuromancer's construct possesses complete sensory fidelity: salt wind, grit in the teeth, and grey melancholy.",
+      "categories": [
+        "cyberspace-matrix",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "230.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "234.06-sr03",
+      "line_number": 6,
+      "target_phrase": "sensory fidelity surpassing simstim, reality of the digital prison",
+      "annotation_text": "Neuromancer's simulation represents a breakthrough in posthuman ontology: a virtuality so complete that the biological distinction between physical reality and computational simulation ceases to exist. Case cannot tell if his physical body in orbit has died.",
+      "categories": [
+        "cyberspace-matrix",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "073.02",
+        "230.01"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999).",
+        "Baudrillard, Jean. Simulacra and Simulation. (1994)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

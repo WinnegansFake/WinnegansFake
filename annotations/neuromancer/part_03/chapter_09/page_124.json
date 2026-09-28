@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 9,
+  "page_number": 124,
+  "annotations": [
+    {
+      "id": "124.02-fs02",
+      "line_number": 2,
+      "target_phrase": "Freeside, spindle-shaped luxury habitat, centrifugal gravity",
+      "annotation_text": "Freeside is a cylindrical orbital spindle engineered by the Tessier-Ashpool clan. Rotating to generate artificial centrifugal gravity, its interior terrarium hosts luxury resorts, gambling casinos, and private villas for Earth's billionaire class.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "121.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "O'Neill, Gerard K. The High Frontier: Human Colonies in Space. Morrow, 1977."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "124.06-ar02",
+      "line_number": 6,
+      "target_phrase": "the Desiderata, artificial lake curved across the inner cylinder hull",
+      "annotation_text": "The Desiderata is an artificial body of water clinging to the interior curve of the rotating spindle. Gibson renders the surreal physics of high-orbital habitats where swimmers look straight up to see the opposite shore hanging overhead.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "121.02"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

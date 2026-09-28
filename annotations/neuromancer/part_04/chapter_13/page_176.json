@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 13,
+  "page_number": 176,
+  "annotations": [
+    {
+      "id": "176.02-ml04",
+      "line_number": 2,
+      "target_phrase": "Molly's spacewalk, thermal cutting laser slicing Straylight's ceramic skin",
+      "annotation_text": "Molly's extravehicular insertion into Villa Straylight. Clad in a pressurized vacuum suit, she uses an industrial laser to penetrate the outer ceramic hull, infiltrating the gothic fortress through its maintenance air ducts.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "029.01",
+        "171.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "176.06-sr02",
+      "line_number": 6,
+      "target_phrase": "monomolecular filament, spool of lethal microscopic wire",
+      "annotation_text": "Molly's arsenal includes monomolecular filament: ultra-dense molecular wire capable of slicing through steel and flesh under slight tension. This weapon represents Gibson's signature fusion of nanoscale physics with ninja weaponry.",
+      "categories": [
+        "body-modification-cybernetics",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "029.01"
+      ],
+      "sources": [
+        "Raubenweiss, Anton. The Sprawl Lexicon. The William Gibson Aleph."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

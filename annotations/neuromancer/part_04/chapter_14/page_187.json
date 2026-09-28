@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 14,
+  "page_number": 187,
+  "annotations": [
+    {
+      "id": "187.02-md02",
+      "line_number": 2,
+      "target_phrase": "cracked glass panels, Marcel Duchamp's Bride Stripped Bare",
+      "annotation_text": "Gibson references Marcel Duchamp's iconic 1915-1923 kinetic sculpture 'The Bride Stripped Bare by Her Bachelors, Even' (The Large Glass). Straylight's fractured glass panels and mechanical erotics mirror Duchamp's Dadaist critique of machine sexuality.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "178.02"
+      ],
+      "sources": [
+        "Duchamp, Marcel. The Bride Stripped Bare by Her Bachelors, Even. Green Box, 1934.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "187.06-ta02",
+      "line_number": 6,
+      "target_phrase": "art treasures of old Earth looted and locked in orbital vaults",
+      "annotation_text": "The presence of original twentieth-century masterpieces (Duchamp, Cornell) in Straylight critiques late-capitalist hoarding. Art is severed from public culture and interred in private orbital mausoleums for the viewing of senile clones.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "178.02"
+      ],
+      "sources": [
+        "Jameson, Fredric. Postmodernism. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

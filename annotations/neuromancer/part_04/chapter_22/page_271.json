@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 22,
+  "page_number": 271,
+  "annotations": [
+    {
+      "id": "271.02-ic01",
+      "line_number": 2,
+      "target_phrase": "the collapse of the corporate ICE, diamond walls dissolving",
+      "annotation_text": "The Tessier-Ashpool ICE defenses disintegrate. Constructed over a century by private software architects, the most formidable corporate security nexus in human history falls before a coordinated insurgent strike of virus, construct, and traitor clone.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "266.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "271.06-fb01",
+      "line_number": 6,
+      "target_phrase": "neural feedback surge, Case riding the brink of the flatline",
+      "annotation_text": "The massive energy discharge of the collapsing mainframe threatens to incinerate Case's nervous system. He survives only because the Dixie Flatline interposes its own code buffers, taking the brunt of the electromagnetic shockwave.",
+      "categories": [
+        "cyberspace-matrix",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "077.02",
+        "084.02",
+        "266.01"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

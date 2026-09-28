@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 4,
+  "page_number": 66,
+  "annotations": [
+    {
+      "id": "066.02-ly01",
+      "line_number": 2,
+      "target_phrase": "Lupus Yonderboy, shaved skull with surgically implanted crest",
+      "annotation_text": "Lupus Yonderboy embodies extreme post-human body modification as tribal identity. His bio-engineered scalp crest and modulated synthetic voice reflect the fusion of biological mutation with theatrical street performance.",
+      "categories": [
+        "body-modification-cybernetics",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "063.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Raubenweiss, Anton. The Sprawl Lexicon. The William Gibson Aleph."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "066.05-cb03",
+      "line_number": 5,
+      "target_phrase": "chaotic broadcast override, hacking the Sense/Net public announcement channels",
+      "annotation_text": "Overriding Sense/Net's corporate communications channels demonstrates the vulnerability of media monopolies to decentralized insurgent hacking. The Moderns exploit bureaucratic faith in corporate broadcast systems to induce institutional paralysis.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "060.01"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

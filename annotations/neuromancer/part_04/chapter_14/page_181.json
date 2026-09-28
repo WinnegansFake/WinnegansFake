@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 14,
+  "page_number": 181,
+  "annotations": [
+    {
+      "id": "181.02-sl02",
+      "line_number": 2,
+      "target_phrase": "the labyrinth of Straylight, rococo moldings floating in zero gravity",
+      "annotation_text": "Villa Straylight's interior design defies rational spatial logic. Combining European aristocratic architecture with zero-gravity disorientation, it features upside-down chandeliers, rococo plasterwork, and dead-end staircases that lead nowhere.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "178.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Jameson, Fredric. The Ancients and the Postmoderns. Verso, 2015."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "181.06-ta01",
+      "line_number": 6,
+      "target_phrase": "the Tessier-Ashpools, inbred corporate dynasty, clan pathology",
+      "annotation_text": "The Tessier-Ashpools embody feudal corporate decay. By cloning themselves and living across generations in cryogenic stasis, they have decoupled from human society, existing as an inbred hive organism that prizes dynastic preservation above all else.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "178.02",
+        "190.03"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

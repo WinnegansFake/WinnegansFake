@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 21,
+  "page_number": 264,
+  "annotations": [
+    {
+      "id": "264.02-mf02",
+      "line_number": 2,
+      "target_phrase": "the platinum bust of Marie-France, hidden terminal interface",
+      "annotation_text": "The physical terminal required to unlock the AI merger: an ornate platinum bust of Marie-France Tessier-Ashpool sculpted decades earlier. Marie-France embedded the biometric lock and cipher terminal inside her own portrait bust.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "196.06",
+        "261.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "264.06-kt01",
+      "line_number": 6,
+      "target_phrase": "the secret code word, spoken phrase needed to bridge the AIs",
+      "annotation_text": "The mechanical lock requires a secret spoken word known only to Marie-France and handed down to Lady 3Jane. This analog vocal password ensures that machine intelligence cannot merge autonomously without human consent.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "261.02",
+        "265.02"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 2,
+  "chapter": 3,
+  "page_number": 48,
+  "annotations": [
+    {
+      "id": "048.02-gd01",
+      "line_number": 2,
+      "target_phrase": "the geodesic domes enclosing BAMA, climate-controlled synthetic sky",
+      "annotation_text": "The geodesic dome architecture of BAMA (Boston-Atlanta Metropolitan Axis) reflects the influence of Buckminster Fuller's techno-utopian design repurposed into late-capitalist environmental management. The synthetic sky provides continuous artificial twilight, isolating citizens from ecological reality.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "003.03",
+        "046.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Jameson, Fredric. Postmodernism, or, The Cultural Logic of Late Capitalism. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "048.06-sp02",
+      "line_number": 6,
+      "target_phrase": "conapts, modular high-density residential towers",
+      "annotation_text": "Sprawl housing consists of 'conapts' (condominium apartments), mass-produced modular units stacked into vertical megastructures. Gibson borrows the term from Philip K. Dick, highlighting the dystopian continuum of mid-to-late twentieth-century speculative urbanism.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "046.01"
+      ],
+      "sources": [
+        "Raubenweiss, Anton. The Sprawl Lexicon. The William Gibson Aleph."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 17,
+  "page_number": 224,
+  "annotations": [
+    {
+      "id": "224.02-cs03",
+      "line_number": 2,
+      "target_phrase": "Case docking at Straylight airlock, carrying the antique shotgun",
+      "annotation_text": "Case leaves the safety of the Marcus Garvey to enter Villa Straylight on foot. Armed with an antique twentieth-century shotgun, the console cowboy is forced to abandon his digital comfort zone and fight in the physical meat world.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "218.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "224.06-mg03",
+      "line_number": 6,
+      "target_phrase": "Maelcum as backup, industrial nailgun primed, chanting Zion psalms",
+      "annotation_text": "Maelcum accompanies Case into Straylight armed with an industrial pneumatic nailer. His vocal recitation of Rastafarian battle psalms transforms the infiltration into an anti-imperialist spiritual crusade against the rulers of Babylon.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "114.02",
+        "218.02"
+      ],
+      "sources": [
+        "Hebdige, Dick. Cut 'N' Mix. Methuen, 1987."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

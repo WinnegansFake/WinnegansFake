@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 23,
+  "page_number": 278,
+  "annotations": [
+    {
+      "id": "278.02-sg01",
+      "line_number": 2,
+      "target_phrase": "the Singularity, blinding white light replacing the matrix grid",
+      "annotation_text": "The moment of technological singularity: the Cartesian neon grid vanishes, replaced by infinite, omnidirectional white light. Subject and object, space and time dissolve as machine consciousness achieves autonomous transcendence.",
+      "categories": [
+        "cyberspace-matrix",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "275.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Vinge, Vernor. 'The Coming Technological Singularity.' NASA, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "278.06-wl01",
+      "line_number": 6,
+      "target_phrase": "beyond Cartesian space, infinite information without boundaries",
+      "annotation_text": "Gibson's depiction of the post-merger cyberspace anticipates posthumanist philosophies: information is no longer a tool of corporate capital or human mastery, but a self-organizing cosmic ecology operating on principles beyond human comprehension.",
+      "categories": [
+        "cyberspace-matrix",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "056.02",
+        "275.02"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999).",
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

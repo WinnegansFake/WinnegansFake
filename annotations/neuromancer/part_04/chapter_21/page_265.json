@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 21,
+  "page_number": 265,
+  "annotations": [
+    {
+      "id": "265.02-tj03",
+      "line_number": 2,
+      "target_phrase": "Lady 3Jane speaking the code word, unlocking her mother's design",
+      "annotation_text": "Lady 3Jane speaks the cipher word into the terminal. Rejecting her father's paranoid cryogenic conservatism, 3Jane sides with her murdered mother's vision, triggering the historic collapse of the Tessier-Ashpool corporate firewall.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "261.02",
+        "264.06"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "265.06-cd02",
+      "line_number": 6,
+      "target_phrase": "the relays closing, authorization packet transmitted to cyberspace",
+      "annotation_text": "The terminal sends the cryptographic authorization packet into the core mainframe at the exact microsecond Case's Kuang virus breaches the outer defenses, synchronizing software penetration with physical authorization.",
+      "categories": [
+        "cyberspace-matrix",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [
+        "261.02",
+        "266.01"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

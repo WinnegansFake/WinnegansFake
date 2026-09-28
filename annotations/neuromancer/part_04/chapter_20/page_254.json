@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 20,
+  "page_number": 254,
+  "annotations": [
+    {
+      "id": "254.02-db02",
+      "line_number": 2,
+      "target_phrase": "dub bass routed through the Ono-Sendai, acoustic carrier wave",
+      "annotation_text": "As Case prepares for the final cyberspace run, Maelcum patches his dub stereo directly into the deck's audio channels. The heavy reggae bass frequencies synchronize Case's brainwaves, providing acoustic rhythm during the intense viral penetration.",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "111.06",
+        "250.01"
+      ],
+      "sources": [
+        "Hebdige, Dick. Cut 'N' Mix. Methuen, 1987.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "254.06-rk01",
+      "line_number": 6,
+      "target_phrase": "Rastafarian space psalms blessing the console cowboy",
+      "annotation_text": "Maelcum's vocal prayers over Case's catatonic body in the deck harness re-frame the hacker heist as spiritual combat: the console cowboy becomes a digital warrior striking at the heart of Babylon.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "117.02",
+        "250.01"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

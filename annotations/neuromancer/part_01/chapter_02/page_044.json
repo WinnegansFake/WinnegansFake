@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 2,
+  "page_number": 44,
+  "annotations": [
+    {
+      "id": "044.02-ss01",
+      "line_number": 2,
+      "target_phrase": "the suborbital flight to Narita, stratospheric arc above the Pacific",
+      "annotation_text": "The departure from Japan via suborbital transport marks the geographical transition from East Asian technological fringe to the American continental core. Gibson visualizes the Pacific Rim as a seamless network of hypersonic transit lanes connecting corporate fiefdoms.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "003.01",
+        "046.01"
+      ],
+      "sources": [
+        "Tatsumi, Takayuki. Full Metal Apache. Duke UP, 2006."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "044.05-sh02",
+      "line_number": 5,
+      "target_phrase": "fingering the shuriken in his pocket, points pressing against denim",
+      "annotation_text": "Case gripping the shuriken during flight underscores the transition between physical danger and virtual conflict. The weapon anchors his tactile memory of the street as he prepares to re-enter cyberspace.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "010.05",
+        "290.02"
+      ],
+      "sources": [
+        "Olsen, Lance. William Gibson. Borgo Press, 1992."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

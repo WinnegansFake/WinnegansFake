@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 3,
+  "chapter": 9,
+  "page_number": 129,
+  "annotations": [
+    {
+      "id": "129.02-cs02",
+      "line_number": 2,
+      "target_phrase": "Case walking the concourses, neon luxury masking corporate rot",
+      "annotation_text": "Case's stroll through Freeside reveals the moral and biological exhaustion of the ultra-wealthy. Underneath the platinum facades and designer stimulants lies the stagnation of an elite class sustained by cryogenics and cloned organs.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "121.02",
+        "127.02"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "129.06-bd01",
+      "line_number": 6,
+      "target_phrase": "hyperreality of Freeside, the simulation replacing the original earth",
+      "annotation_text": "Freeside illustrates Jean Baudrillard's concept of the third order of simulacra: a space constructed entirely of signs and synthetic atmospheres that no longer refers to any terrestrial reality, functioning as pure consumer simulacrum.",
+      "categories": [
+        "cyberspace-matrix",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "121.02"
+      ],
+      "sources": [
+        "Baudrillard, Jean. Simulacra and Simulation. U of Michigan Press, 1994.",
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

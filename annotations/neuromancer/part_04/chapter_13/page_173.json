@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 13,
+  "page_number": 173,
+  "annotations": [
+    {
+      "id": "173.02-vs02",
+      "line_number": 2,
+      "target_phrase": "the approach to Villa Straylight, dark spindle tip, cold orbital shadows",
+      "annotation_text": "The orbital approach of the Marcus Garvey to Villa Straylight at the narrow tip of the Freeside spindle. Gibson contrasts the bustling commercial resort of Freeside with the dead, hermetic silence of Straylight, the clan's private gothic sanctuary.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "171.01",
+        "178.02"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "173.06-mg02",
+      "line_number": 6,
+      "target_phrase": "Maelcum navigating manual RCS thrusters, cold nitrogen jets in vacuum",
+      "annotation_text": "Maelcum's piloting of the Marcus Garvey relies on analog thruster bursts rather than automated guidance computers, evading Freeside's corporate radar net through tactile seamanship in microgravity.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "114.02",
+        "171.01"
+      ],
+      "sources": [
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

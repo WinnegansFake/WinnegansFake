@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 24,
+  "page_number": 291,
+  "annotations": [
+    {
+      "id": "291.02-cs05",
+      "line_number": 2,
+      "target_phrase": "Case back in the Sprawl, new pancreas, new liver, new Ono-Sendai",
+      "annotation_text": "With his cut of the payout from Zurich, Case returns to the Sprawl. He purchases a fresh cyberdeck and replaces his damaged biological organs, resuming his profession as a console cowboy, but forever transformed by having touched the mind of the matrix.",
+      "categories": [
+        "body-modification-cybernetics",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "006.02",
+        "046.01",
+        "290.04"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "291.06-df05",
+      "line_number": 6,
+      "target_phrase": "erasing the Dixie Flatline construct, keeping his promise to Pauley",
+      "annotation_text": "Case honors his pact with McCoy Pauley: he overwrites and deletes the Dixie Flatline ROM cassette. By granting Pauley his sought-after oblivion, Case performs an act of moral loyalty that distinguishes him from the sociopathic corporate powers he served.",
+      "categories": [
+        "ai-consciousness-pantheon",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "077.02",
+        "082.06",
+        "290.07"
+      ],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman. (1999).",
+        "McCaffery, Larry. Storming the Reality Studio. Duke UP, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

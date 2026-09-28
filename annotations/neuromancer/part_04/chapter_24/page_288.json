@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 24,
+  "page_number": 288,
+  "annotations": [
+    {
+      "id": "288.02-ml05",
+      "line_number": 2,
+      "target_phrase": "Molly's note, written on hotel stationery: it's the way I'm wired",
+      "annotation_text": "Molly Millions leaves Case while he sleeps, leaving a brief farewell note. Her explanation ('It's the way I'm wired') encapsulates the cyborg mercenary's refusal of domestic romance. She remains committed to solitary street independence.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "029.01",
+        "286.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Sponsler, Claire. 'Cyberpunk and the Dilemmas of Postmodern Subjectivity.' (1992)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "288.06-cb07",
+      "line_number": 6,
+      "target_phrase": "the lone cyborg heroine vanishing into the Sprawl's neon night",
+      "annotation_text": "Molly's departure subverts traditional hardboiled endings where the female lead is either punished, redeemed, or domesticated. Molly remains an autonomous free agent who moves on to her own independent adventures in Mona Lisa Overdrive.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [
+        "286.01"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "Gibson, William. Mona Lisa Overdrive. Bantam, 1988."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

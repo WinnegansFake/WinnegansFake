@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 4,
+  "chapter": 16,
+  "page_number": 206,
+  "annotations": [
+    {
+      "id": "206.02-rv01",
+      "line_number": 2,
+      "target_phrase": "Riviera's betrayal, defecting to Lady 3Jane in Straylight's salon",
+      "annotation_text": "Peter Riviera betrays the crew, seeking sanctuary and patronage with Lady 3Jane. Riviera's perfidy is motivated by sadism and an aesthetic affinity with 3Jane's decadent aristocratic ennui.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "093.02",
+        "203.01"
+      ],
+      "sources": [
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU.",
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "206.06-th02",
+      "line_number": 6,
+      "target_phrase": "drugged and bound, Molly captured in Straylight's holding quarters",
+      "annotation_text": "Molly is drugged and captured by Riviera and 3Jane's security retinue. Her temporary subjugation raises narrative tension, depriving Case of his physical protector and forcing him into an active rescue role.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "body-modification-cybernetics"
+      ],
+      "cross_references": [
+        "029.01",
+        "203.01"
+      ],
+      "sources": [
+        "Sponsler, Claire. 'Cyberpunk and the Dilemmas of Postmodern Subjectivity.' (1992)."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

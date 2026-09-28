@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 2,
+  "page_number": 33,
+  "annotations": [
+    {
+      "id": "033.02-am01",
+      "line_number": 2,
+      "target_phrase": "Armitage sat behind the desk, military posture, tailored suit",
+      "annotation_text": "Armitage's demeanor combines corporate executive authority with rigid military discipline. His tailored Western business suit and featureless affect conceal a synthetic personality constructed to mask deep psychic fragmentation.",
+      "categories": [
+        "corporate-zaibatsu-power",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [
+        "030.01",
+        "164.01"
+      ],
+      "sources": [
+        "Murphy, Graham J. William Gibson's Neuromancer: A Critical Companion. Palgrave, 2024.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "033.06-op01",
+      "line_number": 6,
+      "target_phrase": "a dossier on Case, police records, neural scan graphs",
+      "annotation_text": "The exhaustive surveillance dossier demonstrates Armitage's intelligence apparatus. In the cyberpunk corporate ecosystem, privacy is non-existent; individual identity is quantified as medical telemetry, biometric scans, and police arrest logs.",
+      "categories": [
+        "cyberspace-matrix",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [
+        "006.02"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}

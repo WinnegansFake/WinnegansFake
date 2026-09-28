@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 1,
+  "page_number": 24,
+  "annotations": [
+    {
+      "id": "024.02-ll01",
+      "line_number": 2,
+      "target_phrase": "Linda Lee at the video arcade, face lit by the green phosphor of Tank War",
+      "annotation_text": "Linda Lee's illumination by green CRT phosphor connects her character to the archaic arcade technology of the early 1980s. Her relationship with Case is defined by shared drug dependency, street precarity, and an emotional vulnerability that Case views as dangerous liability.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [
+        "008.02",
+        "230.01"
+      ],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity. Duke UP, 1993.",
+        "Brians, Paul. Study Guide for William Gibson: Neuromancer (1984). WSU."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "024.06-mc01",
+      "line_number": 6,
+      "target_phrase": "magnetic tapes, obsolete Hitachi storage cassettes",
+      "annotation_text": "Gibson's retro-technological archaeology: physical magnetic audio/data cassettes sold in Night City flea markets. This juxtaposition of obsolete 1970s tape storage with direct neural cyberspace illustrates the uneven development characteristic of cyberpunk's 'the street finds its own uses for things'.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "cyberspace-matrix"
+      ],
+      "cross_references": [
+        "056.02"
+      ],
+      "sources": [
+        "Gibson, William. 'The Gernsback Continuum' & Sprawl stories, 1981.",
+        "Olsen, Lance. William Gibson. Borgo Press, 1992."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    }
+  ]
+}
