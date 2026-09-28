@@ -1,6 +1,6 @@
 {
   "name": "@winnegans/react",
-  "version": "0.1.0",
+  "version": "2.2.0",
   "description": "Modular React components and hooks for zero-copyright literary annotation platforms and digital humanities readers",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

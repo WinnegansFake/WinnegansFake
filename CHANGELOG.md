@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.2.0] - 2026-09-28
+
+### Added
+- **William Gibson's *Neuromancer* (1984) Digital Humanities Corpus**:
+  - Full corpus integration of William Gibson's seminal cyberpunk masterwork into the WinnegansFake digital humanities architecture.
+  - Complete 24-chapter annotation coverage across all 4 parts (*Chiba City Blues*, *The Shopping Expedition*, *Midnight in the Rue Jules Verne*, *The Straylight Run*).
+  - 109 annotated pages and 238 scholarly annotations exploring cyberspace matrix architectures, Ono-Sendai decks, Black Clinics, AI consciousness (Wintermute / Neuromancer duality), Cornell box assemblages, Burroughs semiotic warfare, and cyberpunk etymology.
+  - Integration of foundational scholarship from Paul Brians (WSU), Graham J. Murphy (Palgrave 2024), Lance Olsen (Borgo), Scott Bukatman (*Terminal Identity*), N. Katherine Hayles (*How We Became Posthuman*), and Larry McCaffery (*Storming the Reality Studio*).
+  - Seven dedicated cyberpunk analytical registers: `cyberspace-matrix`, `sprawl-cyberpunk-slang`, `body-modification-cybernetics`, `corporate-zaibatsu-power`, `ai-consciousness-pantheon`, `hardboiled-noir-intertext`, and `chiba-sprawl-geography`.
+  - Interactive Matrix Dossier and Schema Explorer at `/schemas/neuromancer`.
+- **Client-Side Cryptographic Verification & Alternate EPUB Mirrors**:
+  - Real-time in-browser Web Crypto API verification (`crypto.subtle.digest('SHA-256')`) in `EpubSourceModal` and reader components.
+  - Automated zero-knowledge verification ensuring the user's local EPUB matches the canonical Ace Books 2004 20th Anniversary Edition (SHA-256: `d9126751d244b5299f683f527904eeb3883a3fb1e66eab4a3ee524bdbe98944f`, MD5: `cb50fb42dfbe448d2d6edb49f70f591d`, 396,263 bytes).
+  - Comprehensive directory of verified alternate download mirrors and catalog sources (BDeBooks book catalog, BDeBooks download gateway, BDeBooks CDN direct payload, Internet Archive lending library, Open Library).
+  - Resilient anchor fallback parsing (`<a id="p{N}">`) in `@winnegans/epub-reader` with chapter heading fallback alignment for non-canonical scans.
+  - Cryptographic catalog entries in `metadata/editions.json`, `metadata/neuromancer.json`, and `metadata/SHA256SUMS.txt`.
+- **Multi-Monograph Dissertation Reader**:
+  - Added new academic dissertations: *The Anatomy of the City* (Ulysses spatial & bodily schema) and *Sigla, Graph Theory, and Cybernetics* (algorithmic Joyce & digital humanities).
+  - Interactive multi-monograph reader at `/dissertations` and `/dissertations/[id]`.
+- **Library Coverage & Visual Assets**:
+  - Multi-work visual artwork assets for Finnegans Wake, Ulysses, Neuromancer, and the Universal Library.
+  - Multi-work coverage matrix and heatmap at `/library/coverage`.
+
+---
+
 ## [2.1.0] - 2026-09-16
 
 ### Added

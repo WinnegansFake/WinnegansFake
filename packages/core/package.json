@@ -1,6 +1,6 @@
 {
   "name": "@winnegans/core",
-  "version": "0.1.0",
+  "version": "2.2.0",
   "description": "Universal coordinate system, data models, analytical registers, and concordance index for book annotations",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
