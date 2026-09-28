@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
@@ -20,52 +20,176 @@ import {
   BarChart3,
   Sparkles,
   RotateCw,
+  ChevronDown,
+  ArrowRight,
 } from 'lucide-react';
 import { GITHUB_REPO_URL } from '@/lib/constants';
 import { ThemeSwitcher } from './ThemeSwitcher';
 import { useBookmarks } from './BookmarkContext';
 import { useSearch } from './SearchContext';
-import { BookmarksModal } from './BookmarksModal';
 
-function GithubIcon({ className = "w-4 h-4" }: { className?: string }) {
+function GithubIcon({ className = 'w-4 h-4' }: { className?: string }) {
   return (
     <svg className={className} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-      <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+      <path
+        fillRule="evenodd"
+        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+        clipRule="evenodd"
+      />
     </svg>
   );
+}
+
+interface DropdownItem {
+  href: string;
+  label: string;
+  description: string;
+  icon: React.ComponentType<{ className?: string }>;
+  badge?: string;
+}
+
+interface NavSection {
+  href: string;
+  label: string;
+  icon: React.ComponentType<{ className?: string }>;
+  subItems?: DropdownItem[];
 }
 
 export function Navigation() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
   const { bookmarks, setShowBookmarksModal } = useBookmarks();
   const { openSearch } = useSearch();
 
-  const navLinks = [
-    { href: '/', label: 'Overview', icon: Compass },
-    { href: '/library', label: 'Works', icon: Library },
-    { href: '/library/coverage', label: 'Coverage', icon: BarChart3 },
-    { href: '/reader', label: 'Reader', icon: BookOpen },
-    { href: '/thunders', label: 'Thunderwords', icon: Zap },
-    { href: '/schemas/ulysses', label: 'Ulysses Schema', icon: Compass },
-    { href: '/schemas/neuromancer', label: 'Matrix Dossier', icon: Terminal },
-    { href: '/sigla', label: 'Sigla Graph', icon: Sparkles },
-    { href: '/vico', label: 'Vico Wheel', icon: RotateCw },
-    { href: '/bookclub', label: 'Book Club', icon: Users },
-    { href: '/dissertations', label: 'Dissertations', icon: GraduationCap },
-    { href: '/contribute', label: 'Contribute', icon: Layers },
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileMenuOpen(false);
+    setOpenDropdown(null);
+  }, [pathname]);
+
+  const navSections: NavSection[] = [
+    {
+      href: '/reader',
+      label: 'Reader',
+      icon: BookOpen,
+    },
+    {
+      href: '/library',
+      label: 'Library',
+      icon: Library,
+      subItems: [
+        {
+          href: '/library',
+          label: 'Works Catalog',
+          description: 'Browse Finnegans Wake, Ulysses, Neuromancer & upcoming editions',
+          icon: Library,
+          badge: '3 Editions',
+        },
+        {
+          href: '/library/coverage',
+          label: 'Coverage Heatmap',
+          description: 'Line-by-line annotation matrix & scholarly density diagnostic',
+          icon: BarChart3,
+          badge: '782 Pages',
+        },
+      ],
+    },
+    {
+      href: '/schemas',
+      label: 'Schemata',
+      icon: Compass,
+      subItems: [
+        {
+          href: '/schemas',
+          label: 'All Schemata & Apparatus',
+          description: 'Central hub for visual hermeneutics and critical architectures',
+          icon: Compass,
+        },
+        {
+          href: '/schemas/ulysses',
+          label: 'Ulysses Schema Matrix',
+          description: 'Gilbert & Linati 18-episode somatic organs and Homeric parallels',
+          icon: Compass,
+          badge: 'Joyce 1922',
+        },
+        {
+          href: '/schemas/neuromancer',
+          label: 'Matrix Dossier',
+          description: 'Tessier-Ashpool dynasty, AI duality & Sprawl cyberpunk argot',
+          icon: Terminal,
+          badge: 'Gibson 1984',
+        },
+        {
+          href: '/sigla',
+          label: 'Sigla Constellation',
+          description: 'Buffalo Notebooks hieroglyphic characters & Brunonian dialectic',
+          icon: Sparkles,
+          badge: 'Genetic Joyce',
+        },
+        {
+          href: '/vico',
+          label: 'Vico Cycles Wheel',
+          description: 'Scienza Nuova four-stage radial cyclical cosmogram & Ricorso',
+          icon: RotateCw,
+          badge: '4 Ages',
+        },
+        {
+          href: '/thunders',
+          label: '10 Thunderwords Laboratory',
+          description: 'Acoustic laboratory decoding 1,001 letters across 60+ tongues',
+          icon: Zap,
+          badge: '1,001 Letters',
+        },
+      ],
+    },
+    {
+      href: '/dissertations',
+      label: 'Dissertations',
+      icon: GraduationCap,
+    },
+    {
+      href: '/bookclub',
+      label: 'Book Club',
+      icon: Users,
+    },
+    {
+      href: '/contribute',
+      label: 'Contribute',
+      icon: Layers,
+    },
   ];
 
-  const isActive = (href: string) => {
-    if (href === '/') return pathname === '/' || pathname === '';
-    if (href === '/dissertations') return pathname?.startsWith('/dissertation');
-    return pathname?.startsWith(href);
+  const isSectionActive = (section: NavSection) => {
+    if (section.href === '/reader') return pathname?.startsWith('/reader');
+    if (section.href === '/dissertations') return pathname?.startsWith('/dissertation');
+    if (section.subItems) {
+      return section.subItems.some((sub) =>
+        sub.href === '/'
+          ? pathname === '/'
+          : pathname?.startsWith(sub.href)
+      );
+    }
+    return pathname?.startsWith(section.href);
+  };
+
+  const handleMouseEnter = (key: string) => {
+    if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
+    setOpenDropdown(key);
+  };
+
+  const handleMouseLeave = () => {
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setOpenDropdown(null);
+    }, 150);
   };
 
   return (
     <header className="sticky top-0 z-50 wf-nav-surface backdrop-blur-md border-b border-slate-800 text-slate-100 transition-colors">
       {/* Top Book Club Announcement Bar */}
-      <div className="bg-gradient-to-r from-emerald-950/90 via-slate-900 to-indigo-950/90 border-b border-emerald-500/20 text-xs py-1.5 px-4 text-slate-300">
+      <div className="bg-gradient-to-r from-emerald-950/90 via-slate-900 to-indigo-950/90 border-b border-emerald-500/20 text-xs py-1 px-4 text-slate-300">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center space-x-2 text-[11px] sm:text-xs">
             <span className="inline-flex items-center space-x-1 px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono font-semibold">
@@ -91,15 +215,16 @@ export function Navigation() {
               className="inline-flex items-center space-x-1 text-indigo-300 hover:text-indigo-200 transition-colors"
               title="Watch TikTok video by @lily76412"
             >
-              <span>Watch TikTok Inspiration Video &#9658;</span>
+              <span>TikTok Inspiration &#9658;</span>
             </a>
           </div>
         </div>
       </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Brand Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
+          <Link href="/" className="flex items-center space-x-3 group shrink-0">
             <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-emerald-500 to-indigo-600 p-0.5 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform">
               <div className="w-full h-full bg-slate-950 rounded-[7px] flex items-center justify-center">
                 <span className="font-serif font-black text-emerald-400 text-lg leading-none">W</span>
@@ -114,36 +239,123 @@ export function Navigation() {
                   v2.2
                 </span>
               </div>
-              <p className="text-[11px] text-slate-400 font-sans tracking-tight">
+              <p className="text-[11px] text-slate-400 font-sans tracking-tight hidden sm:block">
                 Crowdsourced Annotations for <span className="italic">Finnegans Wake</span>
               </p>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-1 lg:space-x-2">
-            {navLinks.map((item) => {
-              const Icon = item.icon;
-              const active = isActive(item.href);
+          {/* Streamlined Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-1 xl:space-x-1.5">
+            {navSections.map((section) => {
+              const Icon = section.icon;
+              const active = isSectionActive(section);
+              const hasDropdown = Boolean(section.subItems && section.subItems.length > 0);
+              const isDropdownOpen = openDropdown === section.label;
+
+              if (!hasDropdown) {
+                return (
+                  <Link
+                    key={section.href}
+                    href={section.href}
+                    className={`flex items-center space-x-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                      active
+                        ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 shadow-sm'
+                        : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+                    }`}
+                  >
+                    <Icon className={`w-4 h-4 ${active ? 'text-emerald-400' : 'text-slate-400'}`} />
+                    <span>{section.label}</span>
+                  </Link>
+                );
+              }
+
               return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`flex items-center space-x-1.5 px-3 py-2 rounded-lg text-xs lg:text-sm font-medium transition-all ${
-                    active
-                      ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 shadow-sm'
-                      : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
-                  }`}
+                <div
+                  key={section.href}
+                  className="relative"
+                  onMouseEnter={() => handleMouseEnter(section.label)}
+                  onMouseLeave={handleMouseLeave}
                 >
-                  <Icon className={`w-4 h-4 ${active ? 'text-emerald-400' : 'text-slate-400'}`} />
-                  <span>{item.label}</span>
-                </Link>
+                  <Link
+                    href={section.href}
+                    className={`flex items-center space-x-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                      active
+                        ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 shadow-sm'
+                        : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+                    }`}
+                  >
+                    <Icon className={`w-4 h-4 ${active ? 'text-emerald-400' : 'text-slate-400'}`} />
+                    <span>{section.label}</span>
+                    <ChevronDown
+                      className={`w-3.5 h-3.5 opacity-60 transition-transform duration-200 ${
+                        isDropdownOpen ? 'rotate-180 opacity-100 text-emerald-400' : ''
+                      }`}
+                    />
+                  </Link>
+
+                  {/* Dropdown Menu */}
+                  {isDropdownOpen && section.subItems && (
+                    <div className="absolute top-full left-0 w-72 sm:w-80 pt-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                      <div className="rounded-2xl bg-slate-900/95 border border-slate-800 shadow-2xl p-2.5 backdrop-blur-xl space-y-1">
+                        {section.subItems.map((sub) => {
+                          const SubIcon = sub.icon;
+                          const subActive =
+                            sub.href === '/'
+                              ? pathname === '/'
+                              : pathname === sub.href ||
+                                (sub.href !== '/library' &&
+                                  sub.href !== '/schemas' &&
+                                  pathname?.startsWith(sub.href));
+
+                          return (
+                            <Link
+                              key={sub.href}
+                              href={sub.href}
+                              onClick={() => setOpenDropdown(null)}
+                              className={`flex items-start space-x-3 p-2.5 rounded-xl transition-all ${
+                                subActive
+                                  ? 'bg-emerald-950/60 border border-emerald-500/30 text-white'
+                                  : 'hover:bg-slate-800/70 text-slate-300 hover:text-white'
+                              }`}
+                            >
+                              <div
+                                className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 border ${
+                                  subActive
+                                    ? 'bg-emerald-900/50 border-emerald-500/50 text-emerald-300'
+                                    : 'bg-slate-950 border-slate-800 text-slate-400'
+                                }`}
+                              >
+                                <SubIcon className="w-4 h-4" />
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <div className="flex items-center justify-between gap-1">
+                                  <span className="text-xs font-semibold truncate text-white">
+                                    {sub.label}
+                                  </span>
+                                  {sub.badge && (
+                                    <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-slate-800 border border-slate-700/80 text-emerald-400 shrink-0">
+                                      {sub.badge}
+                                    </span>
+                                  )}
+                                </div>
+                                <p className="text-[11px] text-slate-400 line-clamp-1 mt-0.5">
+                                  {sub.description}
+                                </p>
+                              </div>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </div>
               );
             })}
           </nav>
 
           {/* Right Action buttons */}
-          <div className="hidden md:flex items-center space-x-2.5">
+          <div className="hidden sm:flex items-center space-x-2">
             {/* Universal Search Trigger */}
             <button
               type="button"
@@ -153,12 +365,13 @@ export function Navigation() {
               aria-label="Universal Search"
             >
               <Search className="w-3.5 h-3.5 text-emerald-400 group-hover:text-emerald-300" />
-              <span className="text-slate-300 group-hover:text-white">Search</span>
-              <kbd className="hidden lg:inline-block px-1.5 py-0.5 text-[10px] font-mono rounded bg-slate-800/90 text-slate-400 border border-slate-700/60 shadow-xs">
+              <span className="text-slate-300 group-hover:text-white hidden md:inline">Search</span>
+              <kbd className="hidden xl:inline-block px-1.5 py-0.5 text-[10px] font-mono rounded bg-slate-800/90 text-slate-400 border border-slate-700/60 shadow-xs">
                 Ctrl F
               </kbd>
             </button>
 
+            {/* Reading Bookmarks */}
             <button
               type="button"
               onClick={() => setShowBookmarksModal(true)}
@@ -167,31 +380,41 @@ export function Navigation() {
               aria-label="Open Reading Bookmarks"
             >
               <Bookmark className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Bookmarks</span>
+              <span className="hidden md:inline">Bookmarks</span>
               {bookmarks.length > 0 && (
                 <span className="px-1.5 py-0.2 rounded-full text-[10px] font-mono font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">
                   {bookmarks.length}
                 </span>
               )}
             </button>
+
             <ThemeSwitcher />
-            <div className="flex items-center space-x-1 text-[11px] font-mono text-slate-400 bg-slate-900/80 px-2.5 py-1 rounded-md border border-slate-800">
+
+            {/* Compact Zero-Copyright Link */}
+            <Link
+              href="/guide"
+              className="hidden 2xl:flex items-center space-x-1.5 text-[11px] font-mono text-slate-400 hover:text-slate-200 bg-slate-900/80 px-2.5 py-1.5 rounded-md border border-slate-800 hover:border-slate-700 transition-colors"
+              title="Zero-Copyright Architecture: No raw book text is stored on GitHub; annotations map to canonical coordinates"
+            >
               <Shield className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Zero-Copyright Architecture</span>
-            </div>
+              <span>Zero-Copyright</span>
+            </Link>
+
+            {/* GitHub Repo Link */}
             <a
               href={GITHUB_REPO_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 transition-colors"
+              className="inline-flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 transition-colors"
+              title="View repository on GitHub"
             >
               <GithubIcon className="w-4 h-4" />
-              <span>GitHub</span>
+              <span className="hidden xl:inline">GitHub</span>
             </a>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="flex md:hidden items-center space-x-2">
+          {/* Mobile menu trigger */}
+          <div className="flex lg:hidden items-center space-x-2">
             <button
               type="button"
               onClick={() => openSearch()}
@@ -217,7 +440,7 @@ export function Navigation() {
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white"
+              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white cursor-pointer"
               aria-label="Toggle Navigation Menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -226,81 +449,157 @@ export function Navigation() {
         </div>
       </div>
 
-      {/* Mobile Drawer */}
+      {/* Structured Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-slate-950 border-b border-slate-800 px-4 pt-2 pb-5 space-y-2">
-          {navLinks.map((item) => {
-            const Icon = item.icon;
-            const active = isActive(item.href);
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className={`flex items-center space-x-2 px-3 py-2.5 rounded-lg text-sm font-medium transition-all ${
-                  active
-                    ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30'
-                    : 'text-slate-300 hover:text-white hover:bg-slate-900'
-                }`}
-              >
-                <Icon className={`w-4 h-4 ${active ? 'text-emerald-400' : 'text-slate-400'}`} />
-                <span>{item.label}</span>
-              </Link>
-            );
-          })}
-          <button
-            type="button"
-            onClick={() => {
-              setMobileMenuOpen(false);
-              openSearch();
-            }}
-            className="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900 transition-all cursor-pointer"
-          >
-            <div className="flex items-center space-x-2">
-              <Search className="w-4 h-4 text-emerald-400" />
-              <span>Universal Search</span>
+        <div className="lg:hidden bg-slate-950 border-b border-slate-800 px-4 pt-3 pb-6 space-y-5 max-h-[80vh] overflow-y-auto">
+          {/* Section 1: Reading Core */}
+          <div className="space-y-1">
+            <div className="text-[10px] font-mono uppercase tracking-wider text-slate-400 px-3 py-1 font-semibold">
+              Reading Core
             </div>
-            <kbd className="px-1.5 py-0.5 text-[10px] font-mono rounded bg-slate-800 text-slate-400 border border-slate-700">
-              Ctrl+F
-            </kbd>
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setMobileMenuOpen(false);
-              setShowBookmarksModal(true);
-            }}
-            className="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900 transition-all cursor-pointer"
-          >
-            <div className="flex items-center space-x-2">
-              <Bookmark className="w-4 h-4 text-emerald-400" />
-              <span>Reading Bookmarks</span>
-            </div>
-            {bookmarks.length > 0 && (
-              <span className="px-2 py-0.5 rounded-full text-xs font-mono font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">
-                {bookmarks.length}
+            <Link
+              href="/reader"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`flex items-center space-x-2.5 px-3 py-2 rounded-lg text-sm font-medium ${
+                pathname?.startsWith('/reader')
+                  ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30'
+                  : 'text-slate-200 hover:bg-slate-900'
+              }`}
+            >
+              <BookOpen className="w-4 h-4 text-emerald-400" />
+              <span>Scholarly Reader</span>
+            </Link>
+            <Link
+              href="/library"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`flex items-center space-x-2.5 px-3 py-2 rounded-lg text-sm font-medium ${
+                pathname === '/library'
+                  ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30'
+                  : 'text-slate-200 hover:bg-slate-900'
+              }`}
+            >
+              <Library className="w-4 h-4 text-indigo-400" />
+              <span>Works Catalog</span>
+            </Link>
+            <Link
+              href="/library/coverage"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`flex items-center space-x-2.5 px-3 py-2 rounded-lg text-sm font-medium ${
+                pathname === '/library/coverage'
+                  ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30'
+                  : 'text-slate-200 hover:bg-slate-900'
+              }`}
+            >
+              <BarChart3 className="w-4 h-4 text-amber-400" />
+              <span>Coverage Matrix</span>
+            </Link>
+          </div>
+
+          {/* Section 2: Critical Apparatus & Schemata */}
+          <div className="space-y-1 pt-2 border-t border-slate-800/80">
+            <div className="flex items-center justify-between px-3 py-1">
+              <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400 font-semibold">
+                Critical Schemata &amp; Apparatus
               </span>
-            )}
-          </button>
-          <div className="pt-3 border-t border-slate-800 flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <ThemeSwitcher />
+              <Link
+                href="/schemas"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-[10px] font-mono text-emerald-400 hover:underline"
+              >
+                View Hub &rarr;
+              </Link>
+            </div>
+            <Link
+              href="/schemas/ulysses"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center space-x-2.5 px-3 py-2 rounded-lg text-sm text-slate-200 hover:bg-slate-900"
+            >
+              <Compass className="w-4 h-4 text-sky-400" />
+              <span>Ulysses Linati &amp; Gilbert Schemata</span>
+            </Link>
+            <Link
+              href="/schemas/neuromancer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center space-x-2.5 px-3 py-2 rounded-lg text-sm text-slate-200 hover:bg-slate-900"
+            >
+              <Terminal className="w-4 h-4 text-cyan-400" />
+              <span>Neuromancer Matrix Dossier</span>
+            </Link>
+            <Link
+              href="/sigla"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center space-x-2.5 px-3 py-2 rounded-lg text-sm text-slate-200 hover:bg-slate-900"
+            >
+              <Sparkles className="w-4 h-4 text-rose-400" />
+              <span>Sigla Constellation Graph</span>
+            </Link>
+            <Link
+              href="/vico"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center space-x-2.5 px-3 py-2 rounded-lg text-sm text-slate-200 hover:bg-slate-900"
+            >
+              <RotateCw className="w-4 h-4 text-emerald-400" />
+              <span>Viconian Historical Cycles Wheel</span>
+            </Link>
+            <Link
+              href="/thunders"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center space-x-2.5 px-3 py-2 rounded-lg text-sm text-slate-200 hover:bg-slate-900"
+            >
+              <Zap className="w-4 h-4 text-amber-400" />
+              <span>10 Thunderwords Laboratory</span>
+            </Link>
+          </div>
+
+          {/* Section 3: Scholarship & Community */}
+          <div className="space-y-1 pt-2 border-t border-slate-800/80">
+            <div className="text-[10px] font-mono uppercase tracking-wider text-slate-400 px-3 py-1 font-semibold">
+              Scholarship &amp; Community
+            </div>
+            <Link
+              href="/dissertations"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center space-x-2.5 px-3 py-2 rounded-lg text-sm text-slate-200 hover:bg-slate-900"
+            >
+              <GraduationCap className="w-4 h-4 text-indigo-400" />
+              <span>Doctoral Dissertations</span>
+            </Link>
+            <Link
+              href="/bookclub"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center space-x-2.5 px-3 py-2 rounded-lg text-sm text-slate-200 hover:bg-slate-900"
+            >
+              <Users className="w-4 h-4 text-emerald-400" />
+              <span>Start a Book Club</span>
+            </Link>
+            <Link
+              href="/contribute"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center space-x-2.5 px-3 py-2 rounded-lg text-sm text-slate-200 hover:bg-slate-900"
+            >
+              <Layers className="w-4 h-4 text-purple-400" />
+              <span>Contributing Guide</span>
+            </Link>
+          </div>
+
+          {/* Mobile Footer Links */}
+          <div className="pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+            <div className="flex items-center space-x-1 font-mono">
+              <Shield className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Zero-Copyright</span>
             </div>
             <a
               href={GITHUB_REPO_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800"
+              className="flex items-center space-x-1.5 hover:text-white text-slate-300"
             >
-              <GithubIcon className="w-3.5 h-3.5" />
+              <GithubIcon className="w-4 h-4" />
               <span>GitHub</span>
             </a>
           </div>
         </div>
       )}
-
-      {/* Global Bookmarks Modal when not on reader page */}
-      {pathname !== '/reader' && <BookmarksModal />}
     </header>
   );
 }

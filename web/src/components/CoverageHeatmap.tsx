@@ -16,6 +16,8 @@ import {
   ExternalLink,
   ChevronRight,
   Info,
+  Library,
+  Compass,
 } from 'lucide-react';
 
 export interface PageCoverage {
@@ -157,7 +159,41 @@ export function CoverageHeatmap() {
   }
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-8 space-y-8">
+    <div className="w-full max-w-7xl mx-auto px-4 py-6 sm:py-8 space-y-6 sm:space-y-8">
+      {/* Contextual Sub-Navigation Bar */}
+      <div className="flex flex-wrap items-center justify-between gap-3 p-2 rounded-2xl bg-slate-900/80 border border-slate-800 backdrop-blur-md">
+        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+          <Link
+            href="/library"
+            className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors"
+          >
+            <Library className="w-3.5 h-3.5 text-indigo-400" />
+            <span>Works Catalog</span>
+          </Link>
+          <Link
+            href="/library/coverage"
+            className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-amber-600 text-white shadow-md shadow-amber-600/30"
+          >
+            <BarChart3 className="w-3.5 h-3.5" />
+            <span>Coverage Heatmap</span>
+          </Link>
+          <Link
+            href="/schemas"
+            className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors"
+          >
+            <Compass className="w-3.5 h-3.5 text-sky-400" />
+            <span>Critical Schemata</span>
+          </Link>
+        </div>
+        <Link
+          href={`/reader?work=${selectedWork === 'finneganswake' ? 'finnegans-wake' : selectedWork}`}
+          className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium text-emerald-400 hover:text-emerald-300 bg-emerald-950/40 border border-emerald-500/30 hover:bg-emerald-950/70 transition-colors ml-auto"
+        >
+          <BookOpen className="w-3.5 h-3.5" />
+          <span>Open in Reader &rarr;</span>
+        </Link>
+      </div>
+
       {/* Header & Controls */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-slate-800 pb-8">
         <div>

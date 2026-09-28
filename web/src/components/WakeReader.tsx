@@ -23,6 +23,8 @@ import {
   Archive,
   Compass,
   Terminal,
+  Zap,
+  RotateCw,
   CornerDownRight,
   UploadCloud,
   FileUp,
@@ -1177,6 +1179,34 @@ export function UniversalReader({
                 <span className="hidden sm:inline text-xs text-slate-400 italic truncate max-w-[200px]">
                   {currentWorkId === 'ulysses' ? (bookInfo.subtitle || '') : bookInfo.chapterTitle}
                 </span>
+                {(currentWorkId === 'finnegans-wake' || currentWorkId === 'fw') && (
+                  <div className="hidden lg:flex items-center space-x-1.5 ml-2">
+                    <Link
+                      href="/sigla"
+                      className="inline-flex items-center space-x-1 px-1.5 py-0.5 rounded bg-rose-950/60 hover:bg-rose-900/60 text-rose-300 border border-rose-500/40 text-[10px] font-mono transition-colors"
+                      title="Sigla Constellation Graph"
+                    >
+                      <Sparkles className="w-3 h-3 text-rose-400" />
+                      <span>Sigla</span>
+                    </Link>
+                    <Link
+                      href="/vico"
+                      className="inline-flex items-center space-x-1 px-1.5 py-0.5 rounded bg-emerald-950/60 hover:bg-emerald-900/60 text-emerald-300 border border-emerald-500/40 text-[10px] font-mono transition-colors"
+                      title="Viconian Historical Cycles Wheel"
+                    >
+                      <RotateCw className="w-3 h-3 text-emerald-400" />
+                      <span>Vico</span>
+                    </Link>
+                    <Link
+                      href="/thunders"
+                      className="inline-flex items-center space-x-1 px-1.5 py-0.5 rounded bg-amber-950/60 hover:bg-amber-900/60 text-amber-300 border border-amber-500/40 text-[10px] font-mono transition-colors"
+                      title="10 Thunderwords Laboratory"
+                    >
+                      <Zap className="w-3 h-3 text-amber-400" />
+                      <span>Thunders</span>
+                    </Link>
+                  </div>
+                )}
                 {(currentWorkId === 'neuromancer' || currentWorkId === 'nm') && (
                   <Link
                     href="/schemas/neuromancer"
@@ -1317,6 +1347,15 @@ export function UniversalReader({
               <Download className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">Export</span>
             </button>
+
+            <Link
+              href="/schemas"
+              className="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-sky-300 hover:text-white border border-slate-700 transition-colors"
+              title="Open Critical Schemata & Apparatus Hub"
+            >
+              <Compass className="w-3.5 h-3.5 text-sky-400" />
+              <span className="hidden md:inline">Schemata</span>
+            </Link>
 
             <button
               onClick={() => setIsCreatingInPanel(!isCreatingInPanel)}

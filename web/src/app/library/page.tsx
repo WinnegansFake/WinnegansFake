@@ -18,6 +18,8 @@ import {
   BarChart3,
   Terminal,
   Cpu,
+  Zap,
+  RotateCw,
 } from 'lucide-react';
 import { getAllWorks, FINNEGANS_WAKE, ULYSSES, NEUROMANCER } from '@/lib/constants';
 
@@ -85,8 +87,49 @@ export default function LibraryPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto space-y-12">
+    <div className="min-h-screen bg-slate-950 text-slate-100 py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto space-y-10 sm:space-y-12">
+        {/* Contextual Sub-Navigation Bar */}
+        <div className="flex flex-wrap items-center justify-between gap-3 p-2 rounded-2xl bg-slate-900/80 border border-slate-800 backdrop-blur-md">
+          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+            <Link
+              href="/library"
+              className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-indigo-600 text-white shadow-md shadow-indigo-600/30"
+            >
+              <Library className="w-3.5 h-3.5" />
+              <span>Works Catalog</span>
+            </Link>
+            <Link
+              href="/library/coverage"
+              className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors"
+            >
+              <BarChart3 className="w-3.5 h-3.5 text-amber-400" />
+              <span>Coverage Heatmap</span>
+            </Link>
+            <Link
+              href="/schemas"
+              className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors"
+            >
+              <Compass className="w-3.5 h-3.5 text-sky-400" />
+              <span>Critical Schemata</span>
+            </Link>
+            <Link
+              href="/dissertations"
+              className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors"
+            >
+              <GraduationCap className="w-3.5 h-3.5 text-purple-400" />
+              <span>Dissertations</span>
+            </Link>
+          </div>
+          <Link
+            href="/reader"
+            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium text-emerald-400 hover:text-emerald-300 bg-emerald-950/40 border border-emerald-500/30 hover:bg-emerald-950/70 transition-colors ml-auto"
+          >
+            <BookOpen className="w-3.5 h-3.5" />
+            <span>Launch Reader &rarr;</span>
+          </Link>
+        </div>
+
         {/* Hero Section */}
         <div className="border-b border-slate-800 pb-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -263,14 +306,36 @@ export default function LibraryPage() {
               </div>
 
               {/* Action Link */}
-              <div className="pt-6 border-t border-slate-800/80 mt-6 flex items-center justify-between">
-                <div className="flex items-center space-x-2 text-xs text-slate-400">
-                  <ShieldCheck className="w-4 h-4 text-amber-400" />
-                  <span>Zero-Copyright</span>
+              <div className="pt-6 border-t border-slate-800/80 mt-6 flex flex-wrap items-center justify-between gap-3">
+                <div className="flex items-center space-x-1.5 flex-wrap gap-1">
+                  <Link
+                    href="/sigla"
+                    className="inline-flex items-center space-x-1 px-2 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-rose-300 font-medium text-xs transition-colors border border-rose-500/30"
+                    title="Sigla Constellation Graph"
+                  >
+                    <Sparkles className="w-3 h-3 text-rose-400" />
+                    <span>Sigla</span>
+                  </Link>
+                  <Link
+                    href="/vico"
+                    className="inline-flex items-center space-x-1 px-2 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-emerald-300 font-medium text-xs transition-colors border border-emerald-500/30"
+                    title="Viconian Cycles Wheel"
+                  >
+                    <RotateCw className="w-3 h-3 text-emerald-400" />
+                    <span>Vico</span>
+                  </Link>
+                  <Link
+                    href="/thunders"
+                    className="inline-flex items-center space-x-1 px-2 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-300 font-medium text-xs transition-colors border border-amber-500/30"
+                    title="10 Thunderwords Laboratory"
+                  >
+                    <Zap className="w-3 h-3 text-amber-400" />
+                    <span>Thunders</span>
+                  </Link>
                 </div>
                 <Link
                   href="/reader?work=finnegans-wake&page=3"
-                  className="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-sm transition-all shadow-lg shadow-emerald-950/40 hover:scale-[1.02]"
+                  className="inline-flex items-center space-x-2 px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-sm transition-all shadow-lg shadow-emerald-950/40 hover:scale-[1.02]"
                 >
                   <span>Open Reader</span>
                   <ArrowRight className="w-4 h-4" />
