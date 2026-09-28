@@ -385,6 +385,55 @@ export class CustomOffsetMapper implements EpubPageMapper {
   }
 }
 
+/**
+ * Page Mapper for William Gibson's Neuromancer (1984).
+ * Parses exact page anchors (<a id="p(\d+)">) from Calibre/EPUB spine documents.
+ */
+export class NeuromancerPageMapper implements EpubPageMapper {
+  public readonly name = 'neuromancer-anchor';
+
+  public async mapPages(archive: any): Promise<Map<number, { href: string; text: string }>> {
+    const pageMap = new Map<number, { href: string; text: string }>();
+    const spine = archive.getSpine();
+
+    for (const href of spine) {
+      try {
+        const rawHtml = await archive.getText(href);
+        if (!rawHtml || !rawHtml.includes('id="p')) continue;
+
+        // Split HTML by page anchors: <a id="p<PAGE>"></a>
+        const chunks = rawHtml.split(/<a\s+id=["']p(\d+)["'][^>]*><\/a>/i);
+        // chunks[0] is preamble before first anchor
+        // chunks[1] = pageNum, chunks[2] = page text, chunks[3] = next pageNum...
+        for (let i = 1; i < chunks.length; i += 2) {
+          const pageNum = parseInt(chunks[i], 10);
+          const chunkHtml = chunks[i + 1] || '';
+          const cleanText = chunkHtml
+            .replace(/<[^>]+>/g, ' ')
+            .replace(/&nbsp;/g, ' ')
+            .replace(/&amp;/g, '&')
+            .replace(/&quot;/g, '"')
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+          if (!isNaN(pageNum) && pageNum > 0 && pageNum <= 320) {
+            pageMap.set(pageNum, {
+              href,
+              text: cleanText,
+            });
+          }
+        }
+      } catch {
+        continue;
+      }
+    }
+
+    return pageMap;
+  }
+}
+
 /** Runtime registry for work-specific page mappers */
 const WORK_MAPPERS = new Map<string, EpubPageMapper>();
 
@@ -404,6 +453,9 @@ export function getMapperForWork(workId?: string): EpubPageMapper {
   if (WORK_MAPPERS.has(normalized)) {
     return WORK_MAPPERS.get(normalized)!;
   }
+  if (normalized === 'neuromancer' || normalized === 'nm') {
+    return new NeuromancerPageMapper();
+  }
   if (normalized === 'ulysses') {
     return new UlyssesEpisodeMapper();
   }
@@ -412,4 +464,5 @@ export function getMapperForWork(workId?: string): EpubPageMapper {
   }
   return new SequentialSpineMapper();
 }
+
 

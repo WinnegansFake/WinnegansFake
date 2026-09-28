@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 1,
+  "page_number": 5,
+  "annotations": [
+    {
+      "id": "005.01-mx01",
+      "line_number": 1,
+      "target_phrase": "matrix in his sleep, bright lattices of logic unfolding across that colorless void",
+      "annotation_text": "One of Gibson's definitive descriptions of cyberspace: an infinite abstract non-space where digital data, corporate architectures, and bank transactions are rendered as luminous geometrical lattices against a sensory void.",
+      "categories": [
+        "cyberspace-matrix"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 5.",
+        "Benedikt, Michael, ed. Cyberspace: First Steps. MIT Press, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "005.02-cb01",
+      "line_number": 2,
+      "target_phrase": "no console man, no cyberspace cowboy",
+      "annotation_text": "'Cowboy' is Gibson's romanticized, frontier-inflected moniker for rogue deckers who penetrate corporate ICE. Stripped of his neural connection, Case experiences the visceral humiliation of being grounded in physical embodiment (the 'meat').",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Sterling, Bruce. Preface to Mirrorshades: The Cyberpunk Anthology. Arbor House, 1986."
+      ],
+      "contributors": [
+        "cyberpunk-scholar"
+      ]
+    },
+    {
+      "id": "005.02-ch01",
+      "line_number": 2,
+      "target_phrase": "curled in his capsule in some coffin hotel",
+      "annotation_text": "Coffin hotels (capsule hotels) signify the extreme rationalization of urban space in near-future East Asia. They reduce private human habitation to a minimal fiberglass sleeping tube, contrasting sharply with the boundless Cartesian expanse of cyberspace.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 5."
+      ],
+      "contributors": [
+        "cyberpunk-scholar"
+      ]
+    },
+    {
+      "id": "005.05-ll01",
+      "line_number": 5,
+      "target_phrase": "Miss Linda Lee.",
+      "annotation_text": "Case's drug-addicted Chiba lover. Her subsequent murder by Wage's street associates and her digital simulacrum constructed by Neuromancer in the matrix beach simulation form the emotional core of Case's grief and moral reckoning.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 5.",
+        "Olsen, Lance. William Gibson. Starmont House, 1992."
+      ],
+      "contributors": [
+        "cyberpunk-scholar"
+      ]
+    },
+    {
+      "id": "005.07-ct01",
+      "line_number": 7,
+      "target_phrase": "wind up in the clinic tanks, spare parts",
+      "annotation_text": "The commodification of the biological body in Night City: debtors and failed hustlers are reduced to biological spare parts harvested for corporate vat culture and black-clinic transplant recipients.",
+      "categories": [
+        "body-modification-cybernetics",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 5."
+      ],
+      "contributors": [
+        "cyberpunk-scholar"
+      ]
+    },
+    {
+      "id": "005.09-mp01",
+      "line_number": 9,
+      "target_phrase": "McCoy Pauley and Bobby Quine, legends in the biz",
+      "annotation_text": "McCoy Pauley, known as 'The Dixie Flatline' because he survived three EEG flatlines while hacking corporate defense ICE, and Bobby Quine are Case's mentors. Dixie's ROM personality construct plays a central role in breaking the Tessier-Ashpool cores.",
+      "categories": [
+        "cyberspace-matrix",
+        "sprawl-cyberpunk-slang",
+        "ai-consciousness-pantheon"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 5."
+      ],
+      "contributors": [
+        "cyberpunk-scholar"
+      ]
+    }
+  ]
+}

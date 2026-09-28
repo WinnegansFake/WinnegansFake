@@ -57,6 +57,33 @@ export const ULYSSES_EPISODE_PAGE_RANGES: Record<number, [number, number]> = {
   18: [721, 732],
 };
 
+export const NEUROMANCER_CHAPTER_PAGE_RANGES: Record<number, [number, number]> = {
+  1: [1, 29],
+  2: [30, 45],
+  3: [46, 59],
+  4: [60, 76],
+  5: [77, 86],
+  6: [87, 92],
+  7: [93, 107],
+  8: [108, 120],
+  9: [121, 131],
+  10: [132, 147],
+  11: [148, 163],
+  12: [164, 170],
+  13: [171, 177],
+  14: [178, 189],
+  15: [190, 202],
+  16: [203, 217],
+  17: [218, 229],
+  18: [230, 242],
+  19: [243, 249],
+  20: [250, 260],
+  21: [261, 265],
+  22: [266, 274],
+  23: [275, 285],
+  24: [286, 292],
+};
+
 export function validatePageBoundaries(data: any): string[] {
   const errors: string[] = [];
   const norm = (w: string | undefined) => (w || '').replace(/[-_]/g, '').toLowerCase();
@@ -75,6 +102,11 @@ export function validatePageBoundaries(data: any): string[] {
     const range = ULYSSES_EPISODE_PAGE_RANGES[data.episode];
     if (range && (pageNum < range[0] || pageNum > range[1])) {
       errors.push(`Page ${pageNum} is outside canonical range for Episode ${data.episode} (${range[0]}–${range[1]}).`);
+    }
+  } else if (work === 'neuromancer' && data.chapter) {
+    const range = NEUROMANCER_CHAPTER_PAGE_RANGES[data.chapter];
+    if (range && (pageNum < range[0] || pageNum > range[1])) {
+      errors.push(`Page ${pageNum} is outside canonical range for Chapter ${data.chapter} (${range[0]}–${range[1]}).`);
     }
   }
   return errors;

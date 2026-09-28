@@ -19,6 +19,8 @@ export interface SearchAnnotationItem {
   line: number;
   episode?: number | string;
   part?: number | string;
+  chapter?: number | string;
+  book?: number | string;
   lemma: string;
   quote?: string;
   gloss: string;

@@ -99,6 +99,8 @@ function syncAnnotations() {
                 line: ann.line_number,
                 episode: content.episode !== undefined ? content.episode : undefined,
                 part: content.part !== undefined ? content.part : undefined,
+                chapter: content.chapter !== undefined ? content.chapter : undefined,
+                book: content.book !== undefined ? content.book : undefined,
                 lemma,
                 quote: ann.quote || lemma,
                 gloss,
@@ -137,7 +139,8 @@ function syncAnnotations() {
 
   const canonicalTotals = {
     finneganswake: 628,
-    ulysses: 732
+    ulysses: 732,
+    neuromancer: 290,
   };
 
   for (const [wId, total] of Object.entries(canonicalTotals)) {
@@ -238,9 +241,11 @@ function syncAnnotations() {
 
   const fwIndex = searchIndex.filter((item) => item.work === 'finneganswake');
   const ulyssesIndex = searchIndex.filter((item) => item.work === 'ulysses');
+  const nmIndex = searchIndex.filter((item) => item.work === 'neuromancer');
   fs.writeFileSync(path.join(REPO_ROOT, 'web', 'public', 'search_index_finneganswake.json'), JSON.stringify(fwIndex), 'utf8');
   fs.writeFileSync(path.join(REPO_ROOT, 'web', 'public', 'search_index_ulysses.json'), JSON.stringify(ulyssesIndex), 'utf8');
-  console.log(`✅ Built search index with ${searchIndex.length} annotations at web/public/search_index.json (FW: ${fwIndex.length}, Ulysses: ${ulyssesIndex.length})`);
+  fs.writeFileSync(path.join(REPO_ROOT, 'web', 'public', 'search_index_neuromancer.json'), JSON.stringify(nmIndex), 'utf8');
+  console.log(`✅ Built search index with ${searchIndex.length} annotations at web/public/search_index.json (FW: ${fwIndex.length}, Ulysses: ${ulyssesIndex.length}, Neuromancer: ${nmIndex.length})`);
 
   // Write works.json catalog
   let allWorks = [];
@@ -254,6 +259,7 @@ function syncAnnotations() {
     allWorks = [
       { id: 'finnegans-wake', title: 'Finnegans Wake', totalPages: 628 },
       { id: 'ulysses', title: 'Ulysses', totalPages: 732 },
+      { id: 'neuromancer', title: 'Neuromancer', totalPages: 290 },
     ];
   }
 

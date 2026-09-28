@@ -17,7 +17,13 @@ import {
   X,
 } from 'lucide-react';
 import { SearchScope, SearchAnnotationItem } from '@/components/SearchContext';
-import { getBasePath, getBookAndChapterInfo, ANALYTICAL_REGISTERS } from '@/lib/constants';
+import {
+  getBasePath,
+  getBookAndChapterInfo,
+  ANALYTICAL_REGISTERS,
+  ULYSSES_REGISTERS,
+  NEUROMANCER_REGISTERS,
+} from '@/lib/constants';
 
 const ULYSSES_EPISODES = [
   { num: 1, name: '1: Telemachus' },
@@ -38,6 +44,33 @@ const ULYSSES_EPISODES = [
   { num: 16, name: '16: Eumaeus' },
   { num: 17, name: '17: Ithaca' },
   { num: 18, name: '18: Penelope' },
+];
+
+const NEUROMANCER_CHAPTERS = [
+  { num: 1, name: '1: The Dead Channel' },
+  { num: 2, name: '2: Ninsei Alleyways' },
+  { num: 3, name: '3: The Sprawl & BAMA' },
+  { num: 4, name: '4: Sense/Net Penetration' },
+  { num: 5, name: '5: The Flatline ROM' },
+  { num: 6, name: '6: Istanbul Intrigue' },
+  { num: 7, name: '7: The Holographic Cabaret' },
+  { num: 8, name: '8: High Orbit & Freeside' },
+  { num: 9, name: '9: The Spindle and Freeside' },
+  { num: 10, name: '10: Wintermute Manifests' },
+  { num: 11, name: '11: The Turing Police' },
+  { num: 12, name: '12: Corto\'s Collapse' },
+  { num: 13, name: '13: Infiltration of Straylight' },
+  { num: 14, name: '14: Inside the Gothic Maze' },
+  { num: 15, name: '15: The Ashpool Chamber' },
+  { num: 16, name: '16: The Death of Armitage' },
+  { num: 17, name: '17: Entering the Ghost World' },
+  { num: 18, name: '18: The Cyberspace Beach' },
+  { num: 19, name: '19: The Music of the Spheres' },
+  { num: 20, name: '20: Return to the Meat' },
+  { num: 21, name: '21: Confronting 3Jane' },
+  { num: 22, name: '22: The Chinese Virus Unleashed' },
+  { num: 23, name: '23: Fusion & Transcendence' },
+  { num: 24, name: '24: Departure and Arrival' },
 ];
 
 function SearchPageContent() {
@@ -158,16 +191,23 @@ function SearchPageContent() {
       });
     }
 
-    // 2. Episode filter
+    // 2. Episode / Chapter filter
     if (episodeFilter !== 'all') {
       const epNum = parseInt(episodeFilter, 10);
       filtered = filtered.filter((it) => {
         if (it.episode !== undefined && it.episode !== null) {
           return Number(it.episode) === epNum;
         }
+        if (it.chapter !== undefined && it.chapter !== null) {
+          return Number(it.chapter) === epNum;
+        }
         const normWork = (it.work || '').replace(/[-_]/g, '').toLowerCase();
         if (normWork === 'ulysses') {
           const info = getBookAndChapterInfo(it.page, 'ulysses');
+          return info.chapter === epNum;
+        }
+        if (normWork === 'neuromancer') {
+          const info = getBookAndChapterInfo(it.page, 'neuromancer');
           return info.chapter === epNum;
         }
         return false;
@@ -217,6 +257,15 @@ function SearchPageContent() {
     });
   }, [items, query, workFilter, episodeFilter, scope, registerFilter]);
 
+  const availableRegisters = useMemo(() => {
+    const norm = (w?: string) => (w || '').replace(/[-_]/g, '').toLowerCase();
+    const w = norm(workFilter);
+    if (w === 'neuromancer' || w === 'nm') return NEUROMANCER_REGISTERS;
+    if (w === 'ulysses' || w === 'u') return ULYSSES_REGISTERS;
+    if (w === 'finneganswake' || w === 'finnegans-wake' || w === 'fw') return ANALYTICAL_REGISTERS;
+    return [...ANALYTICAL_REGISTERS, ...ULYSSES_REGISTERS, ...NEUROMANCER_REGISTERS];
+  }, [workFilter]);
+
   const scopeTabs: { id: SearchScope; label: string }[] = [
     { id: 'all', label: 'All Fields' },
     { id: 'lemmas', label: 'Phrases / Lemmas' },
@@ -229,12 +278,16 @@ function SearchPageContent() {
   const suggestedQueries = [
     { label: 'Thunderclaps', query: 'thunder' },
     { label: 'River Liffey', query: 'liffey' },
+    { label: 'Cyberspace', query: 'cyberspace', work: 'neuromancer' },
     { label: 'Leopold Bloom', query: 'bloom', work: 'ulysses' },
     { label: 'Buck Mulligan', query: 'mulligan', work: 'ulysses' },
+    { label: 'Wintermute', query: 'wintermute', work: 'neuromancer' },
     { label: 'Viconian Cycles', query: 'vico' },
     { label: 'Molly Bloom', query: 'penelope', work: 'ulysses' },
+    { label: 'Case & Molly', query: 'molly', work: 'neuromancer' },
     { label: 'Shem & Shaun', query: 'shaun' },
-    { label: 'Sandhyas', query: 'sandhyas' },
+    { label: 'Ono-Sendai', query: 'ono-sendai', work: 'neuromancer' },
+    { label: 'Black Clinics', query: 'black clinics', work: 'neuromancer' },
   ];
 
   return (
@@ -249,7 +302,7 @@ function SearchPageContent() {
           Search Scholarly Annotations
         </h1>
         <p className="text-sm text-slate-400">
-          Query over 2,000 glosses, multilingual lemmata, Homeric parallels, and historical registers across Finnegans Wake and Ulysses.
+          Query over 2,100 glosses, multilingual lemmata, Homeric parallels, and cyberpunk registers across Finnegans Wake, Ulysses, and Neuromancer.
         </p>
       </div>
 
@@ -313,15 +366,44 @@ function SearchPageContent() {
               >
                 Ulysses
               </button>
+              <button
+                onClick={() => handleWorkChange('neuromancer')}
+                className={`px-2.5 py-1 rounded-md transition-all cursor-pointer ${
+                  workFilter === 'neuromancer'
+                    ? 'bg-cyan-600 text-white font-semibold'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                Neuromancer
+              </button>
             </div>
           </div>
 
           <div className="flex items-center flex-wrap gap-3">
-            {/* Episode Filter (Active for Ulysses or All Works) */}
-            {workFilter !== 'finnegans-wake' && workFilter !== 'finneganswake' && (
+            {/* Division Filter: Chapter for Neuromancer, Episode for Ulysses */}
+            {workFilter === 'neuromancer' && (
               <div className="flex items-center space-x-1.5">
                 <Layers className="w-4 h-4 text-slate-400" />
-                <span className="text-slate-400 font-medium">Episode:</span>
+                <span className="text-slate-400 font-medium">Chapter:</span>
+                <select
+                  value={episodeFilter}
+                  onChange={(e) => handleEpisodeChange(e.target.value)}
+                  className="bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1 text-slate-300 text-xs focus:outline-none focus:ring-1 focus:ring-cyan-500 cursor-pointer"
+                >
+                  <option value="all">All Chapters (1–24)</option>
+                  {NEUROMANCER_CHAPTERS.map((ch) => (
+                    <option key={ch.num} value={String(ch.num)}>
+                      {ch.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
+
+            {(workFilter === 'ulysses' || workFilter === 'all') && (
+              <div className="flex items-center space-x-1.5">
+                <Layers className="w-4 h-4 text-slate-400" />
+                <span className="text-slate-400 font-medium">{workFilter === 'all' ? 'Ulysses Ep:' : 'Episode:'}</span>
                 <select
                   value={episodeFilter}
                   onChange={(e) => handleEpisodeChange(e.target.value)}
@@ -346,8 +428,8 @@ function SearchPageContent() {
                 onChange={(e) => handleRegisterChange(e.target.value)}
                 className="bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1 text-slate-300 text-xs focus:outline-none focus:ring-1 focus:ring-emerald-500 cursor-pointer"
               >
-                <option value="all">All Registers (19)</option>
-                {ANALYTICAL_REGISTERS.map((reg) => (
+                <option value="all">All Registers ({availableRegisters.length})</option>
+                {availableRegisters.map((reg) => (
                   <option key={reg.id} value={reg.id}>
                     {reg.name}
                   </option>
@@ -449,17 +531,32 @@ function SearchPageContent() {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {results.map((item) => {
-            const isFW = (item.work || 'finneganswake').includes('finnegans');
-            const workSlug = isFW ? 'finnegans-wake' : 'ulysses';
-            const workBadgeColor = isFW
-              ? 'bg-emerald-950/60 text-emerald-300 border-emerald-500/40'
-              : 'bg-indigo-950/60 text-indigo-300 border-indigo-500/40';
-            const workLabel = isFW ? 'Finnegans Wake' : 'Ulysses';
+            const norm = (w?: string) => (w || '').replace(/[-_]/g, '').toLowerCase();
+            const itWork = norm(item.work || 'finneganswake');
+            let workSlug = 'finnegans-wake';
+            let workBadgeColor = 'bg-emerald-950/60 text-emerald-300 border-emerald-500/40';
+            let workLabel = 'Finnegans Wake';
+            let coordPrefix = 'FW';
+
+            if (itWork === 'neuromancer' || itWork === 'nm') {
+              workSlug = 'neuromancer';
+              workBadgeColor = 'bg-cyan-950/60 text-cyan-300 border-cyan-500/40';
+              workLabel = 'Neuromancer';
+              coordPrefix = 'NM';
+            } else if (itWork === 'ulysses' || itWork === 'u') {
+              workSlug = 'ulysses';
+              workBadgeColor = 'bg-indigo-950/60 text-indigo-300 border-indigo-500/40';
+              workLabel = 'Ulysses';
+              coordPrefix = 'U';
+            }
+
             const padP = String(item.page).padStart(3, '0');
             const padL = String(item.line).padStart(2, '0');
-            const coord = `${isFW ? 'FW' : 'U'} ${padP}.${padL}`;
+            const coord = `${coordPrefix} ${padP}.${padL}`;
 
             const bookInfo = getBookAndChapterInfo(item.page, workSlug);
+            const isFW = itWork === 'finneganswake' || itWork === 'fw';
+            const isNM = itWork === 'neuromancer' || itWork === 'nm';
 
             return (
               <div
@@ -480,6 +577,8 @@ function SearchPageContent() {
                     <span className="text-[11px] text-slate-400 italic">
                       {isFW
                         ? `Book ${bookInfo.bookRoman}, Ch. ${bookInfo.chapter}`
+                        : isNM
+                        ? `Part ${bookInfo.bookRoman}, Ch. ${bookInfo.chapter}`
                         : item.episode
                         ? `Episode ${item.episode}: ${bookInfo.chapterTitle}`
                         : bookInfo.chapterTitle}

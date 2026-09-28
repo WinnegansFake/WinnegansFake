@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 1,
+  "page_number": 4,
+  "annotations": [
+    {
+      "id": "004.02-lz01",
+      "line_number": 2,
+      "target_phrase": "Zone, he’s a close personal friend of mine",
+      "annotation_text": "Lonny Zone is a manipulative Night City pimp. His persona and voice are later hijacked by the autonomous artificial intelligence Wintermute in Chapter 10 to communicate with Case across payphones.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984."
+      ],
+      "contributors": [
+        "cyberpunk-scholar"
+      ]
+    },
+    {
+      "id": "004.08-ap01",
+      "line_number": 8,
+      "target_phrase": "An angel passed.",
+      "annotation_text": "Ratz's laconic invocation of the traditional French idiom 'un ange passe', referencing the sudden, inexplicable hush that falls simultaneously over a crowded room. Ratz applies classical European idiom to a futuristic underworld dive.",
+      "categories": [
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984."
+      ],
+      "contributors": [
+        "cyberpunk-scholar"
+      ]
+    },
+    {
+      "id": "004.09-ns01",
+      "line_number": 9,
+      "target_phrase": "Chinese bloody invented nerve-splicing",
+      "annotation_text": "Reflects the geopolitical technological rivalry between Chinese research laboratories and Japanese zaibatsus. Mainland China later features as the originator of the Kuang Grade Mark Eleven military icebreaker virus.",
+      "categories": [
+        "body-modification-cybernetics",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Cavallaro, Dani. Cyberpunk and Cyberculture: Science Fiction and the Work of William Gibson. Athlone Press, 2000."
+      ],
+      "contributors": [
+        "cyberpunk-scholar"
+      ]
+    },
+    {
+      "id": "004.11-bc01",
+      "line_number": 11,
+      "target_phrase": "black clinics of Chiba were the cutting edge",
+      "annotation_text": "Chiba's black clinics operate in the regulatory vacuum of Night City, pioneering unlicensed neural augmentation, organ trafficking, and experimental microsurgery ahead of institutional medicine.",
+      "categories": [
+        "body-modification-cybernetics",
+        "chiba-sprawl-geography"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 4."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "004.11-mh01",
+      "line_number": 11,
+      "target_phrase": "damage he’d suffered in that Memphis hotel",
+      "annotation_text": "Case's foundational trauma: after stealing from his corporate underworld employers, they injected him with a wartime Russian mycotoxin that selectively burned out his neural capacity to interface with cyberdecks, exiling him from cyberspace into the 'meat'.",
+      "categories": [
+        "cyberspace-matrix",
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 4.",
+        "Hollinger, Veronica. 'Cybernetic Deconstructions: Cyberpunk and Postmodernism.' Mosaic 23.2 (1990): 29-44."
+      ],
+      "contributors": [
+        "cyberpunk-scholar"
+      ]
+    }
+  ]
+}

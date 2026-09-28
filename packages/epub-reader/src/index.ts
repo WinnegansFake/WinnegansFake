@@ -10,6 +10,7 @@ export {
   CalibratedNumberMapper,
   JoyceanPageMapper,
   UlyssesEpisodeMapper,
+  NeuromancerPageMapper,
   RegexPaginationMapper,
   CustomOffsetMapper,
   registerMapper,

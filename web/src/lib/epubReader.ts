@@ -124,7 +124,49 @@ class BrowserEpubService {
       }
     }
 
-    // 4. Map pages
+    // 4. Map pages based on work
+    const normWork = (workId || '').replace(/[-_\s]/g, '').toLowerCase();
+
+    if (normWork === 'neuromancer' || normWork === 'nm') {
+      for (const href of this.spine) {
+        const fullPath = this.opfDir ? `${this.opfDir}/${href}` : href;
+        const fileEntry = zip.file(fullPath);
+        if (!fileEntry) continue;
+
+        try {
+          const rawHtml = await fileEntry.async('text');
+          if (!rawHtml || !rawHtml.includes('id="p')) continue;
+
+          const chunks = rawHtml.split(/<a\s+id=["']p(\d+)["'][^>]*><\/a>/i);
+          for (let i = 1; i < chunks.length; i += 2) {
+            const pageNum = parseInt(chunks[i], 10);
+            const chunkHtml = chunks[i + 1] || '';
+            const cleanText = chunkHtml
+              .replace(/<[^>]+>/g, ' ')
+              .replace(/&nbsp;/g, ' ')
+              .replace(/&amp;/g, '&')
+              .replace(/&quot;/g, '"')
+              .replace(/&lt;/g, '<')
+              .replace(/&gt;/g, '>')
+              .replace(/\s+/g, ' ')
+              .trim();
+
+            if (!isNaN(pageNum) && pageNum > 0 && pageNum <= 320) {
+              this.pageMap.set(pageNum, {
+                href,
+                text: cleanText,
+              });
+            }
+          }
+        } catch {
+          continue;
+        }
+      }
+      this.loaded = true;
+      return this.pageMap.size;
+    }
+
+    // Default: Finnegans Wake
     // Front matter
     this.pageMap.set(1, { href: 'page_7.html', text: 'FINNEGANS WAKE' });
     this.pageMap.set(2, { href: 'page_8.html', text: '[Page 2: Frontispiece / Facing Page: Blank]' });

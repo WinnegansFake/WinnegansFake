@@ -1,0 +1,49 @@
+{
+  "id": "neuromancer",
+  "title": "Neuromancer",
+  "author": "William Gibson",
+  "year": 1984,
+  "edition": "First Edition (New York: Ace Books, July 1984; Ace Science Fiction Special)",
+  "publisher": "Ace Books",
+  "pagination": {
+    "totalPages": 290,
+    "startPage": 3,
+    "endPage": 290,
+    "citationFormat": "NM {page}.{line}"
+  },
+  "copyright": {
+    "status": "Protected by Copyright",
+    "notice": "Copyright © 1984 by William Gibson. All rights reserved. No copyrighted text is stored in this repository.",
+    "isPublicDomain": false
+  },
+  "parts": [
+    {
+      "part": 1,
+      "title": "Part One: Chiba City Blues",
+      "chapters": [1, 2],
+      "startPage": 3,
+      "endPage": 45
+    },
+    {
+      "part": 2,
+      "title": "Part Two: The Shopping Expedition",
+      "chapters": [3, 4, 5, 6, 7],
+      "startPage": 46,
+      "endPage": 107
+    },
+    {
+      "part": 3,
+      "title": "Part Three: Midnight in the Rue Jules Verne",
+      "chapters": [8, 9, 10, 11, 12],
+      "startPage": 108,
+      "endPage": 170
+    },
+    {
+      "part": 4,
+      "title": "Part Four: The Straylight Run",
+      "chapters": [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+      "startPage": 171,
+      "endPage": 290
+    }
+  ]
+}

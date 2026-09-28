@@ -201,7 +201,12 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal, workId }: Searc
 
   const filteredIndex = useMemo(() => {
     if (workFilter === 'all') return searchIndex;
-    return searchIndex.filter((item) => (item.work || 'finnegans-wake') === workFilter);
+    const norm = (w?: string) => (w || '').replace(/[-_\s]/g, '').toLowerCase();
+    const target = norm(workFilter);
+    return searchIndex.filter((item) => {
+      const iw = norm(item.work || 'finnegans-wake');
+      return iw === target;
+    });
   }, [searchIndex, workFilter]);
 
   // Counts for each tab badge computed over the active work scope
@@ -370,6 +375,17 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal, workId }: Searc
               }`}
             >
               Ulysses
+            </button>
+            <button
+              type="button"
+              onClick={() => setWorkFilter('neuromancer')}
+              className={`px-2.5 py-0.5 rounded-md text-xs font-medium transition-all cursor-pointer ${
+                workFilter === 'neuromancer'
+                  ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-semibold'
+                  : 'border border-transparent opacity-70 hover:opacity-100 hover:bg-inherit/30'
+              }`}
+            >
+              Neuromancer
             </button>
             <button
               type="button"
@@ -546,12 +562,18 @@ export function SearchModal({ onNavigateToPage, onOpenEpubModal, workId }: Searc
                         {workFilter === 'all' && (
                           <span
                             className={`px-1.5 py-0.2 rounded text-[10px] font-bold tracking-wider ${
-                              workId === 'ulysses'
+                              workId === 'neuromancer' || workId === 'nm'
+                                ? 'bg-cyan-950 text-cyan-300 border border-cyan-500/40'
+                                : workId === 'ulysses' || workId === 'u'
                                 ? 'bg-indigo-950 text-indigo-300 border border-indigo-500/40'
                                 : 'bg-emerald-950 text-emerald-300 border border-emerald-500/40'
                             }`}
                           >
-                            {workId === 'ulysses' ? 'ULYSSES' : 'FINNEGANS WAKE'}
+                            {workId === 'neuromancer' || workId === 'nm'
+                              ? 'NEUROMANCER'
+                              : workId === 'ulysses' || workId === 'u'
+                              ? 'ULYSSES'
+                              : 'FINNEGANS WAKE'}
                           </span>
                         )}
                         <span

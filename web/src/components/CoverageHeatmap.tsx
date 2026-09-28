@@ -50,7 +50,7 @@ export function CoverageHeatmap() {
   const [data, setData] = useState<CoverageMatrixData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedWork, setSelectedWork] = useState<'finneganswake' | 'ulysses'>('finneganswake');
+  const [selectedWork, setSelectedWork] = useState<'finneganswake' | 'ulysses' | 'neuromancer'>('finneganswake');
   const [densityFilter, setDensityFilter] = useState<'all' | 'rich' | 'standard' | 'sparse' | 'empty'>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedPage, setSelectedPage] = useState<PageCoverage | null>(null);
@@ -202,6 +202,19 @@ export function CoverageHeatmap() {
           >
             Ulysses (732 pp)
           </button>
+          <button
+            onClick={() => {
+              setSelectedWork('neuromancer');
+              setSelectedPage(null);
+            }}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+              selectedWork === 'neuromancer'
+                ? 'bg-cyan-600 text-white shadow-lg shadow-cyan-600/20'
+                : 'text-slate-400 hover:text-white'
+            }`}
+          >
+            Neuromancer (290 pp)
+          </button>
         </div>
       </div>
 
@@ -210,7 +223,9 @@ export function CoverageHeatmap() {
         <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
           <span className="text-xs text-slate-400 uppercase tracking-wider font-semibold">Total Pages</span>
           <div className="text-2xl font-mono font-bold text-white mt-1">{stats.totalPages}</div>
-          <div className="text-xs text-slate-500 mt-1">1939 Viking / Faber</div>
+          <div className="text-xs text-slate-500 mt-1">
+            {selectedWork === 'finneganswake' ? '1939 Viking / Faber' : selectedWork === 'ulysses' ? '1922 Shakespeare & Co.' : '1984 Ace Science Fiction'}
+          </div>
         </div>
 
         <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">

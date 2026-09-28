@@ -1166,6 +1166,8 @@ export function UniversalReader({
                 <span className="font-serif font-bold text-sm sm:text-base text-emerald-400">
                   {currentWorkId === 'ulysses'
                     ? bookInfo.chapterTitle
+                    : (currentWorkId === 'neuromancer' || currentWorkId === 'nm')
+                    ? `Part ${bookInfo.bookRoman}, Chapter ${bookInfo.chapter}`
                     : `Book ${bookInfo.bookRoman}, Chapter ${bookInfo.chapter}`}
                 </span>
                 <span className="hidden sm:inline text-slate-500">&bull;</span>
@@ -1532,6 +1534,8 @@ export function UniversalReader({
                   <span>
                     {currentWorkId === 'ulysses'
                       ? 'Public Domain Text Notice'
+                      : currentWorkId === 'neuromancer' || currentWorkId === 'nm'
+                      ? 'International Copyright Protection Notice'
                       : 'U.S. Copyright Protection Notice (Title 17 U.S.C. § 107)'}
                   </span>
                 </div>
@@ -1539,6 +1543,10 @@ export function UniversalReader({
                   {currentWorkId === 'ulysses' ? (
                     <>
                       <em>Ulysses</em> (1922) is in the <strong>Public Domain</strong> worldwide. To read the authentic book text alongside these annotations, load an EPUB scan or use the one-click Internet Archive loader below.
+                    </>
+                  ) : currentWorkId === 'neuromancer' || currentWorkId === 'nm' ? (
+                    <>
+                      <em>Neuromancer</em> (1984) is protected under international copyright law (&copy; William Gibson). To ensure complete legal compliance, this static website does not host or distribute the copyrighted book text.
                     </>
                   ) : (
                     <>
@@ -2156,13 +2164,15 @@ export function UniversalReader({
               </div>
               <div>
                 <h1 className="font-serif font-bold text-sm sm:text-base leading-tight">
-                  {activeWork?.title || (currentWorkId === 'ulysses' ? 'Ulysses' : 'Finnegans Wake')} &bull;{' '}
+                  {activeWork?.title || (currentWorkId === 'neuromancer' || currentWorkId === 'nm' ? 'Neuromancer' : currentWorkId === 'ulysses' ? 'Ulysses' : 'Finnegans Wake')} &bull;{' '}
                   {currentWorkId === 'ulysses'
                     ? bookInfo.chapterTitle
+                    : (currentWorkId === 'neuromancer' || currentWorkId === 'nm')
+                    ? `Part ${bookInfo.bookRoman}, Chapter ${bookInfo.chapter}`
                     : `Book ${bookInfo.bookRoman}, Chapter ${bookInfo.chapter}`}
                 </h1>
                 <p className="text-[11px] opacity-70 italic truncate max-w-xs sm:max-w-md">
-                  {currentWorkId === 'ulysses' ? (bookInfo.subtitle || '') : bookInfo.chapterTitle}
+                  {currentWorkId === 'ulysses' ? (bookInfo.subtitle || '') : (currentWorkId === 'neuromancer' || currentWorkId === 'nm') ? `${bookInfo.chapterTitle}${bookInfo.subtitle ? ' (' + bookInfo.subtitle + ')' : ''}` : bookInfo.chapterTitle}
                 </p>
               </div>
             </div>

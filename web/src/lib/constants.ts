@@ -195,8 +195,10 @@ export {
   getWorkDivision,
   FINNEGANS_WAKE,
   ULYSSES,
+  NEUROMANCER,
   FINNEGANS_WAKE_REGISTERS,
   ULYSSES_REGISTERS,
+  NEUROMANCER_REGISTERS,
   type WorkDefinition,
   type DivisionInfo,
   getAllDissertations,
@@ -217,7 +219,48 @@ export function getBookAndChapterInfo(page: number, workId: string = 'finnegans-
   subtitle?: string;
   schemaDetails?: Record<string, string | undefined>;
 } {
-  if (workId === 'ulysses') {
+  const normWork = workId.replace(/[-_\s]/g, '').toLowerCase();
+
+  if (normWork === 'neuromancer' || normWork === 'nm') {
+    const chapters = [
+      { part: 1, chapter: 1, title: 'Chapter 1: The Dead Channel', subtitle: 'Part One: Chiba City Blues', startPage: 3, endPage: 29, schemaDetails: { scene: 'Chatsubo Bar, Night City, Chiba', tech: 'Prosthetics & Black Clinics', characters: 'Case, Ratz, Linda Lee, Wage' } },
+      { part: 1, chapter: 2, title: 'Chapter 2: Ninsei Alleyways', subtitle: 'Part One: Chiba City Blues', startPage: 30, endPage: 45, schemaDetails: { scene: 'Cheap Hotel & Ninsei Streets', tech: 'Shuriken & Scalpel Blades', characters: 'Case, Molly Millions, Armitage' } },
+      { part: 2, chapter: 3, title: 'Chapter 3: The Sprawl & BAMA', subtitle: 'Part Two: The Shopping Expedition', startPage: 46, endPage: 59, schemaDetails: { scene: 'Eastern Seaboard (Boston-Atlanta)', tech: 'Ono-Sendai Cyberspace 7', characters: 'Case, Molly, Armitage, Dixie Flatline' } },
+      { part: 2, chapter: 4, title: 'Chapter 4: Sense/Net Penetration', subtitle: 'Part Two: The Shopping Expedition', startPage: 60, endPage: 76, schemaDetails: { scene: 'Sense/Net Pyramid, Atlanta', tech: 'Modern Panthers, Simstim Link', characters: 'Case, Molly, Lupus Yonderboy' } },
+      { part: 2, chapter: 5, title: 'Chapter 5: The Flatline ROM', subtitle: 'Part Two: The Shopping Expedition', startPage: 77, endPage: 86, schemaDetails: { scene: 'Safehouse & Cyberdeck Run', tech: 'Lazarus Construct & ICE', characters: 'Case, Dixie Flatline, McCoy Pauley' } },
+      { part: 2, chapter: 6, title: 'Chapter 6: Istanbul Intrigue', subtitle: 'Part Two: The Shopping Expedition', startPage: 87, endPage: 92, schemaDetails: { scene: 'The Spice Bazaar, Istanbul', tech: 'Subdermal Optics', characters: 'Peter Riviera, Terzibashjian' } },
+      { part: 2, chapter: 7, title: 'Chapter 7: The Holographic Cabaret', subtitle: 'Part Two: The Shopping Expedition', startPage: 93, endPage: 107, schemaDetails: { scene: 'Riviera\'s Performance Space', tech: 'Holographic Projection Implants', characters: 'Riviera, Armitage, Molly, Case' } },
+      { part: 3, chapter: 8, title: 'Chapter 8: High Orbit & Freeside', subtitle: 'Part Three: Midnight in the Rue Jules Verne', startPage: 108, endPage: 120, schemaDetails: { scene: 'Zion Cluster & High Orbit', tech: 'Garvey Tugboat, Dub Sound Systems', characters: 'Aerol, Maelcum, Case' } },
+      { part: 3, chapter: 9, title: 'Chapter 9: The Spindle and Freeside', subtitle: 'Part Three: Midnight in the Rue Jules Verne', startPage: 121, endPage: 131, schemaDetails: { scene: 'Freeside Orbital Casino', tech: 'Artificial Gravity & Terrarium', characters: 'Case, Molly, Armitage' } },
+      { part: 3, chapter: 10, title: 'Chapter 10: Wintermute Manifests', subtitle: 'Part Three: Midnight in the Rue Jules Verne', startPage: 132, endPage: 147, schemaDetails: { scene: 'Cyberdeck Matrix & Payphone Grid', tech: 'Autonomous AI Masking', characters: 'Wintermute (as Lonny Zone & Deane)' } },
+      { part: 3, chapter: 11, title: 'Chapter 11: The Turing Police', subtitle: 'Part Three: Midnight in the Rue Jules Verne', startPage: 148, endPage: 163, schemaDetails: { scene: 'Rue Jules Verne, Freeside', tech: 'Turing Code Enforcement & Stunners', characters: 'Turing Agents, Wintermute, Case' } },
+      { part: 3, chapter: 12, title: 'Chapter 12: Corto\'s Collapse', subtitle: 'Part Three: Midnight in the Rue Jules Verne', startPage: 164, endPage: 170, schemaDetails: { scene: 'Screaming Fist Flashback', tech: 'Schizophrenic Breakdown', characters: 'Colonel Willis Corto, Armitage' } },
+      { part: 4, chapter: 13, title: 'Chapter 13: Infiltration of Straylight', subtitle: 'Part Four: The Straylight Run', startPage: 171, endPage: 177, schemaDetails: { scene: 'Villa Straylight Approach', tech: 'Kuang Grade Mark Eleven', characters: 'Maelcum, Case, Dixie Flatline' } },
+      { part: 4, chapter: 14, title: 'Chapter 14: Inside the Gothic Maze', subtitle: 'Part Four: The Straylight Run', startPage: 178, endPage: 189, schemaDetails: { scene: 'Straylight Core & Decadent Art', tech: 'Bespoke AI Architecture', characters: 'Molly, 3Jane Tessier-Ashpool' } },
+      { part: 4, chapter: 15, title: 'Chapter 15: The Ashpool Chamber', subtitle: 'Part Four: The Straylight Run', startPage: 190, endPage: 202, schemaDetails: { scene: 'Cryogenic Cryo-Tomb', tech: 'Cryonic Suspended Animation', characters: 'Ashpool, Molly' } },
+      { part: 4, chapter: 16, title: 'Chapter 16: The Death of Armitage', subtitle: 'Part Four: The Straylight Run', startPage: 203, endPage: 217, schemaDetails: { scene: 'Bridge of the Yacht Marcus Garvey', tech: 'Ejection Airlock', characters: 'Wintermute, Corto, Case' } },
+      { part: 4, chapter: 17, title: 'Chapter 17: Entering the Ghost World', subtitle: 'Part Four: The Straylight Run', startPage: 218, endPage: 229, schemaDetails: { scene: 'Straylight Tunnels', tech: 'Ninja Assassination & Drones', characters: 'Molly, Hideo the Clone' } },
+      { part: 4, chapter: 18, title: 'Chapter 18: The Cyberspace Beach', subtitle: 'Part Four: The Straylight Run', startPage: 230, endPage: 242, schemaDetails: { scene: 'Digital Simulation of Morocco', tech: 'Simulated Sensory Reality', characters: 'Neuromancer, Linda Lee, Case' } },
+      { part: 4, chapter: 19, title: 'Chapter 19: The Music of the Spheres', subtitle: 'Part Four: The Straylight Run', startPage: 243, endPage: 249, schemaDetails: { scene: 'The Simulated Cottage', tech: 'Digital Immortality & Soul Preservation', characters: 'Neuromancer, Case, Linda' } },
+      { part: 4, chapter: 20, title: 'Chapter 20: Return to the Meat', subtitle: 'Part Four: The Straylight Run', startPage: 250, endPage: 260, schemaDetails: { scene: 'Marcus Garvey Flight Deck', tech: 'Neural Defibrillation', characters: 'Maelcum, Case' } },
+      { part: 4, chapter: 21, title: 'Chapter 21: Confronting 3Jane', subtitle: 'Part Four: The Straylight Run', startPage: 261, endPage: 265, schemaDetails: { scene: 'Straylight Throne Room', tech: 'The Terminal Head & Secret Word', characters: 'Lady 3Jane, Peter Riviera, Hideo, Molly' } },
+      { part: 4, chapter: 22, title: 'Chapter 22: The Chinese Virus Unleashed', subtitle: 'Part Four: The Straylight Run', startPage: 266, endPage: 274, schemaDetails: { scene: 'Deep Cyberspace Matrix', tech: 'Kuang Virus & T-A Ice Breaking', characters: 'Case, Dixie Flatline, Kuang 11' } },
+      { part: 4, chapter: 23, title: 'Chapter 23: Fusion & Transcendence', subtitle: 'Part Four: The Straylight Run', startPage: 275, endPage: 285, schemaDetails: { scene: 'Center of the Matrix', tech: 'AI Fusion of Wintermute & Neuromancer', characters: 'Wintermute/Neuromancer unified, Case' } },
+      { part: 4, chapter: 24, title: 'Chapter 24: Departure and Arrival', subtitle: 'Part Four: The Straylight Run', startPage: 286, endPage: 290, schemaDetails: { scene: 'Hyatt Regency, Chiba & The Sprawl', tech: 'New Organs & Ghost in the Matrix', characters: 'Case, Molly (farewell note), Michael' } },
+    ];
+    const match = chapters.find((ch) => page >= ch.startPage && page <= ch.endPage) || chapters[0];
+    const romans = ['I', 'II', 'III', 'IV'];
+    return {
+      book: match.part,
+      chapter: match.chapter,
+      bookRoman: romans[match.part - 1] || 'I',
+      chapterTitle: match.title,
+      subtitle: match.subtitle,
+      schemaDetails: match.schemaDetails,
+    };
+  }
+
+  if (normWork === 'ulysses' || normWork === 'u') {
     const episodes = [
       { part: 1, episode: 1, title: 'Telemachus', subtitle: 'Part I: The Telemachiad', startPage: 1, endPage: 28, schemaDetails: { time: '8:00 AM', scene: 'The Tower (Sandycove)', art: 'Theology', color: 'White, gold', symbol: 'Heir', technique: 'Narrative (young)' } },
       { part: 1, episode: 2, title: 'Nestor', subtitle: 'Part I: The Telemachiad', startPage: 29, endPage: 50, schemaDetails: { time: '10:00 AM', scene: 'The School (Dalkey)', art: 'History', color: 'Brown', symbol: 'Horse', technique: 'Catechism (personal)' } },

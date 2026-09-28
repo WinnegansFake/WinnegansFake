@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.0",
+  "work": "neuromancer",
+  "part": 1,
+  "chapter": 1,
+  "page_number": 3,
+  "annotations": [
+    {
+      "id": "003.01-cb01",
+      "line_number": 1,
+      "target_phrase": "PART ONE. CHIBA CITY BLUES",
+      "annotation_text": "Section title inaugurating the novel. Pairs the Japanese industrial seaport of Chiba with the American musical genre of 'blues', signaling the hybrid hardboiled noir-cyberpunk aesthetic and Case's personal exile and despair.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984.",
+        "Sponsler, Claire. 'Cyberpunk and the Dilemmas of Postmodern Subjectivity.' Contemporary Literature 33.4 (1992): 625-644."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.03-dc01",
+      "line_number": 3,
+      "target_phrase": "The sky above the port was the color of television, tuned to a dead channel.",
+      "annotation_text": "The iconic opening sentence of Neuromancer. Gibson subverts pastoral romantic imagery by describing the atmosphere through domestic telecommunications technology. For readers in 1984, an analog CRT television set to a dead frequency displayed flickering black-and-white static ('snow'); for 21st-century digital viewers, an unassigned channel often produces a blank blue screen or blackout, transforming the historical reception of the image.",
+      "categories": [
+        "hardboiled-noir-intertext",
+        "chiba-sprawl-geography",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984, p. 3.",
+        "McCaffery, Larry. Storming the Reality Studio: A Casebook of Cyberpunk and Postmodern Science Fiction. Duke University Press, 1991."
+      ],
+      "contributors": [
+        "cyberpunk-scholar",
+        "open-wake-editor"
+      ]
+    },
+    {
+      "id": "003.05-cb02",
+      "line_number": 5,
+      "target_phrase": "The Chatsubo was a bar for professional expatriates",
+      "annotation_text": "Chatsubo (Japanese 茶壷, 'tea urn' or 'tea jar') functions as an extraterritorial enclave in Night City. It caters to Western outlaws, console cowboys, smugglers, and cybernetic fixers operating outside corporate Japanese law.",
+      "categories": [
+        "chiba-sprawl-geography",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Tatsumi, Takayuki. Full Metal Apache: Transactions Between Cyberpunk Japan and Transpacific Cyberculture. Duke University Press, 2006."
+      ],
+      "contributors": [
+        "cyberpunk-scholar"
+      ]
+    },
+    {
+      "id": "003.05-rz01",
+      "line_number": 5,
+      "target_phrase": "Ratz was tending bar, his prosthetic arm jerking monotonously",
+      "annotation_text": "Ratz embodies the visceral cybernetic grotesque: combining biological decrepitude (brown rotting teeth) with an obsolescent Soviet mechanical limb. Unlike sleek corporate prosthetics, his arm is crude, functional, and industrial.",
+      "categories": [
+        "body-modification-cybernetics",
+        "hardboiled-noir-intertext"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Bukatman, Scott. Terminal Identity: The Virtual Subject in Postmodern Science Fiction. Duke University Press, 1993."
+      ],
+      "contributors": [
+        "cyberpunk-scholar"
+      ]
+    },
+    {
+      "id": "003.05-wg01",
+      "line_number": 5,
+      "target_phrase": "Wage was in here early, with two Joe boys",
+      "annotation_text": "Wage is a mid-tier Night City dealer and loan shark. 'Joe boys' (joeboys) is Sprawl slang for adolescent street hoods, muscle-for-hire, or low-level syndicate enforcers.",
+      "categories": [
+        "sprawl-cyberpunk-slang",
+        "corporate-zaibatsu-power"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Gibson, William. Neuromancer. Ace Books, 1984."
+      ],
+      "contributors": [
+        "cyberpunk-scholar"
+      ]
+    },
+    {
+      "id": "003.06-rp01",
+      "line_number": 6,
+      "target_phrase": "Russian military prosthesis, a seven-function force-feedback manipulator",
+      "annotation_text": "Military surplus cyberware recycled into civilian black markets. The force-feedback manipulator demonstrates tactile telemetry technology stripped down to cheap pink plastic.",
+      "categories": [
+        "body-modification-cybernetics",
+        "sprawl-cyberpunk-slang"
+      ],
+      "cross_references": [],
+      "sources": [
+        "Hayles, N. Katherine. How We Became Posthuman: Virtual Bodies in Cybernetics, Literature, and Informatics. University of Chicago Press, 1999."
+      ],
+      "contributors": [
+        "cyberpunk-scholar"
+      ]
+    }
+  ]
+}

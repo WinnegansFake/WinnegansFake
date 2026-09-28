@@ -88,6 +88,33 @@
         "euStatus": "Public Domain (70 years p.m.a., entered PD Jan 1, 2012)",
         "notice": "Source text protected under U.S. copyright law through 2035. Annotations distributed under CC BY-SA 4.0."
       }
+    },
+    {
+      "id": "neuromancer",
+      "title": "Neuromancer",
+      "shortTitle": "NM",
+      "author": "William Gibson",
+      "year": 1984,
+      "publicationDate": "1984-07-01",
+      "edition": "First Edition (New York: Ace Books / Ace Science Fiction Special)",
+      "format": "application/epub+zip",
+      "pagination": {
+        "totalPages": 290,
+        "startPage": 3,
+        "endPage": 290,
+        "citationFormat": "NM {page}.{line}"
+      },
+      "divisions": {
+        "type": "part",
+        "subdivisionType": "chapter",
+        "totalDivisions": 24
+      },
+      "copyright": {
+        "status": "In Copyright Worldwide",
+        "usStatus": "Protected under U.S. and international copyright law (c) William Gibson",
+        "euStatus": "In Copyright",
+        "notice": "Source text protected under international copyright law. Annotations distributed under CC BY-SA 4.0."
+      }
     }
   ]
 }
