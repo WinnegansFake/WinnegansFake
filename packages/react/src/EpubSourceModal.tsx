@@ -102,10 +102,12 @@ export function EpubSourceModal({
       ? [
           {
             label: activeWork.id === 'neuromancer' || activeWork.id === 'nm'
-              ? 'Online EPUB Source (bdebooks.com)'
+              ? 'bdebooks.com Neuromancer Book Page'
               : `Internet Archive Public Scan (${activeWork.epubSizeBytes ? (activeWork.epubSizeBytes / 1048576).toFixed(1) + ' MB' : 'Public Edition'})`,
             url: activeWork.defaultEpubUrl,
-            description: `Direct scan download from ${activeWork.archiveUrl || (activeWork.id === 'neuromancer' || activeWork.id === 'nm' ? 'bdebooks.com' : 'Internet Archive')}`,
+            description: activeWork.id === 'neuromancer' || activeWork.id === 'nm'
+              ? 'Visit bdebooks.com to download the EPUB version, then load the downloaded file via the "Select EPUB File" tab'
+              : `Direct scan download from ${activeWork.archiveUrl || 'Internet Archive'}`,
           },
         ]
       : []),
@@ -116,6 +118,14 @@ export function EpubSourceModal({
     const target = urlToLoad.trim();
     if (!target) {
       setStatusMessage({ type: 'error', text: 'Please enter a valid URL or path.' });
+      return;
+    }
+
+    if (target.includes('bdebooks.com')) {
+      setStatusMessage({
+        type: 'error',
+        text: 'bdebooks.com is protected by Cloudflare bot verification and cannot be fetched directly via in-browser requests. Please open https://bdebooks.com/en/books/neuromancer-by-william-gibson/, click "Download EPUB", and select the downloaded file in the "Select EPUB File" tab.',
+      });
       return;
     }
 

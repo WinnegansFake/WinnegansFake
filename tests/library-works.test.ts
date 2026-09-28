@@ -57,7 +57,7 @@ describe('Universal Literary Library Catalog (@winnegans/core)', () => {
 
     const nm = getWork('neuromancer');
     expect(nm.title).toBe('Neuromancer');
-    expect(nm.defaultEpubUrl).toBe('https://bdebooks.com/en/book-download/?fmt=epub&cover=2');
+    expect(nm.defaultEpubUrl).toBe('https://bdebooks.com/en/books/neuromancer-by-william-gibson/');
     expect(nm.epubFilename).toBe('neuromancer.epub');
   });
 

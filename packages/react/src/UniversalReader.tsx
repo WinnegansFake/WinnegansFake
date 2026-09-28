@@ -1603,28 +1603,47 @@ export function UniversalReader({
                     </button>
                   </div>
 
-                  <div className="p-3 bg-slate-900 rounded-lg border border-slate-800 space-y-2">
+                  <div className={`p-3 rounded-lg border space-y-2 ${currentWorkId === 'neuromancer' || currentWorkId === 'nm' ? 'bg-slate-900/90 border-cyan-500/40' : 'bg-slate-900 border-slate-800'}`}>
                     <div className="font-semibold text-white text-xs flex items-center space-x-1.5">
-                      <ExternalLink className="w-3.5 h-3.5 text-indigo-400" />
-                      <span>{currentWorkId === 'neuromancer' || currentWorkId === 'nm' ? '3: Download EPUB' : '3: Download Scan'}</span>
+                      <ExternalLink className={`w-3.5 h-3.5 ${currentWorkId === 'neuromancer' || currentWorkId === 'nm' ? 'text-cyan-400' : 'text-indigo-400'}`} />
+                      <span>{currentWorkId === 'neuromancer' || currentWorkId === 'nm' ? '3: Get Neuromancer EPUB' : '3: Download Scan'}</span>
                     </div>
-                    <p className="text-[11px] text-slate-400">
-                      {currentWorkId === 'neuromancer' || currentWorkId === 'nm'
-                        ? 'Download the Neuromancer EPUB directly for offline local reading:'
-                        : currentWorkId === 'ulysses'
-                        ? 'Grab the 2.0MB 1922 first edition scan directly from Internet Archive:'
-                        : 'Grab the 41.8MB 1939 first edition scan directly from Internet Archive:'}
-                    </p>
-                    <a
-                      href={activeWork?.defaultEpubUrl || (currentWorkId === 'neuromancer' || currentWorkId === 'nm' ? NEUROMANCER_EPUB_URL : currentWorkId === 'ulysses' ? ULYSSES_EPUB_URL : ARCHIVE_EPUB_URL)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block text-center w-full py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 transition-all cursor-pointer"
-                    >
-                      {currentWorkId === 'neuromancer' || currentWorkId === 'nm'
-                        ? 'Download Neuromancer EPUB'
-                        : `Archive.org Scan (${activeWork?.epubFilename || (currentWorkId === 'ulysses' ? 'ulysses00joyc_1.epub' : 'finneganswake00joycuoft.epub')})`}
-                    </a>
+                    {currentWorkId === 'neuromancer' || currentWorkId === 'nm' ? (
+                      <div className="space-y-2">
+                        <p className="text-[11px] text-slate-300 leading-normal">
+                          Download the EPUB version from bdebooks.com:
+                        </p>
+                        <ol className="list-decimal list-inside text-[10px] text-slate-400 space-y-1 bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
+                          <li>Click the button below to open the book page</li>
+                          <li>Click the green <strong className="text-slate-200">&ldquo;Download EPUB&rdquo;</strong> button</li>
+                          <li>Return here and click <strong className="text-cyan-300">&ldquo;1: Load Local File&rdquo;</strong> above</li>
+                        </ol>
+                        <a
+                          href="https://bdebooks.com/en/books/neuromancer-by-william-gibson/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-center w-full py-1.5 rounded-lg bg-cyan-950/80 hover:bg-cyan-900 text-cyan-300 text-xs font-medium border border-cyan-500/40 transition-all cursor-pointer shadow-sm"
+                        >
+                          Open bdebooks.com Book Page ↗
+                        </a>
+                      </div>
+                    ) : (
+                      <>
+                        <p className="text-[11px] text-slate-400">
+                          {currentWorkId === 'ulysses'
+                            ? 'Grab the 2.0MB 1922 first edition scan directly from Internet Archive:'
+                            : 'Grab the 41.8MB 1939 first edition scan directly from Internet Archive:'}
+                        </p>
+                        <a
+                          href={activeWork?.defaultEpubUrl || (currentWorkId === 'ulysses' ? ULYSSES_EPUB_URL : ARCHIVE_EPUB_URL)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-center w-full py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 transition-all cursor-pointer"
+                        >
+                          Archive.org Scan ({activeWork?.epubFilename || (currentWorkId === 'ulysses' ? 'ulysses00joyc_1.epub' : 'finneganswake00joycuoft.epub')})
+                        </a>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
@@ -2347,15 +2366,31 @@ export function UniversalReader({
                     <div className="p-6 rounded-xl border border-inherit/40 bg-inherit/30 space-y-4 text-center max-w-xl mx-auto">
                       <BookOpen className="w-10 h-10 mx-auto text-emerald-400 opacity-90" />
                       <h2 className="text-base font-serif font-bold">
-                        Read the Original Text in Fullscreen
-                      </h2>
-                      <p className="text-xs leading-relaxed opacity-80">
                         {currentWorkId === 'neuromancer' || currentWorkId === 'nm'
-                          ? 'To read William Gibson\'s Neuromancer alongside these annotations, please select your local EPUB file (or download from the reader toolbar). Text will appear centered with interactive hover popups.'
-                          : currentWorkId === 'ulysses'
-                          ? 'To read James Joyce\'s Ulysses alongside these annotations, please select your local EPUB file (or downloaded scan from Archive.org). Text will appear centered with interactive hover popups.'
-                          : 'To protect Joyce\'s copyrighted text under Title 17 U.S.C. § 107, please select your local EPUB file (or downloaded scan from Archive.org). Text will appear centered with interactive hover popups.'}
-                      </p>
+                          ? 'Read William Gibson’s Neuromancer in Fullscreen'
+                          : 'Read the Original Text in Fullscreen'}
+                      </h2>
+                      {currentWorkId === 'neuromancer' || currentWorkId === 'nm' ? (
+                        <div className="space-y-3 text-left bg-slate-950/80 p-4 rounded-xl border border-cyan-500/30 max-w-lg mx-auto">
+                          <p className="text-xs text-slate-300 leading-relaxed">
+                            Under U.S. copyright law (© 1984 William Gibson), source book text is never hosted on our servers. To read alongside the 93+ cyberpunk annotations, please load your EPUB locally:
+                          </p>
+                          <ol className="list-decimal list-inside text-xs text-slate-300 space-y-1.5">
+                            <li>
+                              Visit the <a href="https://bdebooks.com/en/books/neuromancer-by-william-gibson/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold inline-flex items-center gap-0.5"><span>bdebooks.com Neuromancer page</span><ExternalLink className="w-3 h-3 inline" /></a> and click <strong>&ldquo;Download EPUB&rdquo;</strong>.
+                            </li>
+                            <li>
+                              Click <strong>&ldquo;Load Local .epub File&rdquo;</strong> below to select your downloaded <code className="font-mono text-cyan-300">neuromancer.epub</code> (or drag and drop it into this window).
+                            </li>
+                          </ol>
+                        </div>
+                      ) : (
+                        <p className="text-xs leading-relaxed opacity-80">
+                          {currentWorkId === 'ulysses'
+                            ? 'To read James Joyce\'s Ulysses alongside these annotations, please select your local EPUB file (or downloaded scan from Archive.org). Text will appear centered with interactive hover popups.'
+                            : 'To protect Joyce\'s copyrighted text under Title 17 U.S.C. § 107, please select your local EPUB file (or downloaded scan from Archive.org). Text will appear centered with interactive hover popups.'}
+                        </p>
+                      )}
                       {savedEpubCookie && (
                         <div className="p-3 rounded-lg bg-emerald-950/60 border border-emerald-500/40 text-xs font-mono text-emerald-300 flex items-center justify-between gap-2 text-left">
                           <div className="truncate">
@@ -2372,12 +2407,23 @@ export function UniversalReader({
                         </div>
                       )}
                       <div className="pt-2 flex flex-wrap justify-center gap-3">
+                        {(currentWorkId === 'neuromancer' || currentWorkId === 'nm') && (
+                          <a
+                            href="https://bdebooks.com/en/books/neuromancer-by-william-gibson/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-4 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-medium shadow-md transition-all flex items-center space-x-2 cursor-pointer"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                            <span>1. Open bdebooks Download Page ↗</span>
+                          </a>
+                        )}
                         <button
                           onClick={() => fileInputRef.current?.click()}
                           className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-medium shadow-md transition-all flex items-center space-x-2 cursor-pointer"
                         >
                           <FileUp className="w-4 h-4" />
-                          <span>Load Local .epub File</span>
+                          <span>{(currentWorkId === 'neuromancer' || currentWorkId === 'nm') ? '2. Load Local .epub File' : 'Load Local .epub File'}</span>
                         </button>
                         <button
                           onClick={() => setEpubModalOpen(true)}

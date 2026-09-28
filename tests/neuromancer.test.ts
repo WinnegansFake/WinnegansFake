@@ -29,8 +29,8 @@ describe('Neuromancer (1984) Integration & Zero-Copyright Architecture', () => {
       expect(NEUROMANCER.divisions.length).toBe(24);
       expect(NEUROMANCER.citationFormat).toBe('NM {page}.{line}');
       expect(NEUROMANCER.isPublicDomain).toBe(false);
-      expect(NEUROMANCER.defaultEpubUrl).toBe('https://bdebooks.com/en/book-download/?fmt=epub&cover=2');
-      expect(NEUROMANCER_EPUB_URL).toBe('https://bdebooks.com/en/book-download/?fmt=epub&cover=2');
+      expect(NEUROMANCER.defaultEpubUrl).toBe('https://bdebooks.com/en/books/neuromancer-by-william-gibson/');
+      expect(NEUROMANCER_EPUB_URL).toBe('https://bdebooks.com/en/books/neuromancer-by-william-gibson/');
       expect(NEUROMANCER.epubFilename).toBe('neuromancer.epub');
     });
 
