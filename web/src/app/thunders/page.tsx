@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import {
   Zap,
@@ -239,9 +239,54 @@ export default function ThundersPage() {
   const [selectedThunder, setSelectedThunder] = useState<number>(1);
   const [copied, setCopied] = useState<boolean>(false);
   const [speaking, setSpeaking] = useState<boolean>(false);
+  const activeUtteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
 
   const thunder = THUNDERWORDS.find((t) => t.number === selectedThunder) || THUNDERWORDS[0];
   const basePath = getBasePath();
+
+  const playThunderRumble = () => {
+    if (typeof window === 'undefined') return;
+    const AudioContextClass =
+      window.AudioContext ||
+      (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+    if (!AudioContextClass) return;
+
+    try {
+      const ctx = new AudioContextClass();
+      if (ctx.state === 'suspended') {
+        ctx.resume().catch(() => {});
+      }
+
+      const now = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(65, now);
+      osc.frequency.exponentialRampToValueAtTime(28, now + 1.2);
+
+      const filter = ctx.createBiquadFilter();
+      filter.type = 'lowpass';
+      filter.frequency.setValueAtTime(140, now);
+      filter.frequency.exponentialRampToValueAtTime(60, now + 1.2);
+
+      gain.gain.setValueAtTime(0, now);
+      gain.gain.linearRampToValueAtTime(0.35, now + 0.05);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 1.2);
+
+      osc.connect(filter);
+      filter.connect(gain);
+      gain.connect(ctx.destination);
+
+      osc.start(now);
+      osc.stop(now + 1.2);
+
+      setTimeout(() => {
+        ctx.close().catch(() => {});
+      }, 1500);
+    } catch (err) {
+      console.warn('[ThundersPage] Web Audio thunder warning:', err);
+    }
+  };
 
   const handleCopy = (text: string) => {
     if (navigator.clipboard) {
@@ -252,24 +297,45 @@ export default function ThundersPage() {
   };
 
   const handleSpeak = (word: string) => {
+    // Play physical acoustic thunder rumble
+    playThunderRumble();
+
     if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
-    window.speechSynthesis.cancel();
 
-    const utterance = new SpeechSynthesisUtterance(word);
-    utterance.rate = 0.8; // slower for phoneme parsing
-    utterance.pitch = 0.9;
+    try {
+      window.speechSynthesis.cancel();
+      if (window.speechSynthesis.paused) {
+        window.speechSynthesis.resume();
+      }
 
-    const voices = window.speechSynthesis.getVoices();
-    const irishOrBritish = voices.find(
-      (v) => v.lang.toLowerCase().includes('ie') || v.lang.toLowerCase().includes('gb')
-    );
-    if (irishOrBritish) utterance.voice = irishOrBritish;
+      const utterance = new SpeechSynthesisUtterance(word);
+      utterance.rate = 0.8;
+      utterance.pitch = 0.9;
 
-    utterance.onstart = () => setSpeaking(true);
-    utterance.onend = () => setSpeaking(false);
-    utterance.onerror = () => setSpeaking(false);
+      activeUtteranceRef.current = utterance;
+      (window as unknown as { __winnegansThunderUtterance: SpeechSynthesisUtterance }).__winnegansThunderUtterance = utterance;
 
-    window.speechSynthesis.speak(utterance);
+      const voices = window.speechSynthesis.getVoices();
+      const irishOrBritish = voices.find(
+        (v) => v.lang.toLowerCase().includes('ie') || v.lang.toLowerCase().includes('gb')
+      );
+      if (irishOrBritish) utterance.voice = irishOrBritish;
+
+      utterance.onstart = () => setSpeaking(true);
+      utterance.onend = () => {
+        activeUtteranceRef.current = null;
+        setSpeaking(false);
+      };
+      utterance.onerror = () => {
+        activeUtteranceRef.current = null;
+        setSpeaking(false);
+      };
+
+      window.speechSynthesis.speak(utterance);
+    } catch (err) {
+      console.warn('[ThundersPage] Speech synthesis error:', err);
+      setSpeaking(false);
+    }
   };
 
   const totalLetters = THUNDERWORDS.reduce((acc, curr) => acc + curr.letters, 0);

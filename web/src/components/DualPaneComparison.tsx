@@ -237,7 +237,9 @@ export function DualPaneComparison({
                 ? primaryLines
                 : primaryAnnotations.map((a) => ({
                     line: a.line_number,
-                    text: `${a.target_phrase || ''}. ${a.annotation_text || ''}`,
+                    text: a.target_phrase
+                      ? `Line ${a.line_number}: "${a.target_phrase}". ${a.annotation_text || ''}`
+                      : `Line ${a.line_number}: ${a.annotation_text || ''}`,
                   }))
             }
             onActiveLineChange={setPrimaryActiveLine}
@@ -335,7 +337,9 @@ export function DualPaneComparison({
             workId={secondaryWorkId}
             lines={secondaryAnnotations.map((a) => ({
               line: a.line_number,
-              text: `${a.target_phrase || ''}. ${a.annotation_text || ''}`,
+              text: a.target_phrase
+                ? `Line ${a.line_number}: "${a.target_phrase}". ${a.annotation_text || ''}`
+                : `Line ${a.line_number}: ${a.annotation_text || ''}`,
             }))}
             onActiveLineChange={setSecondaryActiveLine}
           />

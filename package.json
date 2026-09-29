@@ -22,7 +22,7 @@
     "sync": "node scripts/sync_public_annotations.js",
     "coverage:annotations": "node scripts/coverage_report.js"
   },
-  "packageManager": "pnpm@12.3.4",
+  "packageManager": "pnpm@9.15.4",
   "keywords": [
     "finnegans-wake",
     "james-joyce",

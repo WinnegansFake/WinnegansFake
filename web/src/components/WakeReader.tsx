@@ -1581,7 +1581,9 @@ export function UniversalReader({
                 : allPageAnnotations.map((a) => ({
                     line: a.line_number,
                     line_number: a.line_number,
-                    text: `${a.target_phrase || ''}. ${a.annotation_text || ''}`,
+                    text: a.target_phrase
+                      ? `Line ${a.line_number}: "${a.target_phrase}". ${a.annotation_text || ''}`
+                      : `Line ${a.line_number}: ${a.annotation_text || ''}`,
                   }))
             }
             onActiveLineChange={setActiveSpokenLine}
